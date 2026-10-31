@@ -453,6 +453,8 @@ def cmd_check(_args) -> int:
         for f in ("summary", "state", "for_you"):
             if not s.get(f):
                 errs.append(f"{sid}: missing {f}")
+        if not s.get("value"):
+            warns.append(f"{sid}: no value (the board shows an empty Reading cell)")
         for f, lim in LIMITS.items():
             if s.get(f) and len(s[f]) > lim:
                 errs.append(f"{sid}: {f} is {len(s[f])} chars (max {lim})")

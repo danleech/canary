@@ -72,7 +72,7 @@ Create `work/updates.json` (the folder is git-ignored) like this:
 ```
 
 - Include **every due signal**. Omitted signals keep their old `checked_at` and will go ⚪ stale on the site.
-- `value` may be omitted for metric signals; the metric's display string is used.
+- `value` (≤ 48 chars) is shown in its own column on the board, so **give one for every signal**. Metric signals may omit it (the metric's display string is used). Qualitative signals need a short state descriptor, for example `Hormuz 2–8 transits/day`, `Threat level: Severe`, `10,274 cases (29 Oct)`, `No PHEIC since May`.
 - `value_num` is optional, but give it when the signal has a natural number. It drives sparklines for non-metric signals.
 - `override_reason` (string) is needed only to go below a metric floor or to jump green↔red. Use it sparingly and explain it.
 

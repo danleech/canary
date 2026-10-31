@@ -1,0 +1,12 @@
+{
+  "name": "canary-design",
+  "private": true,
+  "type": "module",
+  "description": "Builds Canary's Carbon CSS and icon bundle into site/assets. Run: npm install && npm run build",
+  "scripts": { "build": "node build.mjs" },
+  "devDependencies": {
+    "@carbon/styles": "1.70.0",
+    "@carbon/icons": "11.53.0",
+    "sass": "1.83.0"
+  }
+}

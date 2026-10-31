@@ -3,85 +3,191 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Canary — the state of the world at a glance</title>
-<meta name="description" content="Canary tracks around 70 global risk signals across markets, geopolitics, conflict, extreme weather, climate and health, and rates each one Normal, Watch or Alert four times a day.">
-<meta name="theme-color" content="#F6F7F5" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#15191D" media="(prefers-color-scheme: dark)">
-<meta property="og:title" content="Canary — the state of the world at a glance">
-<meta property="og:description" content="About 70 global risk signals, rated Normal, Watch or Alert, refreshed four times a day.">
+<title>Canary — global risk status</title>
+<meta name="description" content="Canary tracks 72 global risk signals across markets, geopolitics, conflict, extreme weather, climate and health, and rates each one Normal, Watch or Alert four times a day.">
+<meta property="og:title" content="Canary — global risk status">
+<meta property="og:description" content="72 global risk signals, rated Normal, Watch or Alert, refreshed four times a day.">
 <meta property="og:type" content="website">
+<meta name="theme-color" content="#161616">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/atom+xml" title="Canary status changes" href="feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/carbon.css">
+<link rel="stylesheet" href="assets/app.css">
+<script>try{var t=localStorage.getItem('canary.theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
 <body>
-<a class="skip" href="#board">Skip to the board</a>
+<a class="cnry-skip" href="#main">Skip to main content</a>
 
-<header class="masthead">
-  <div class="masthead-inner">
-    <a class="brand" href="./" aria-label="Canary home">
-      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M7 20c0-6 4.5-11 10.5-11 2.2 0 3.6.9 4.5 2.2l4 .3-3 2.2c.4 4.9-2.6 9.3-8 10.3l-2 4-1.6-3.6C9 24 7 22.4 7 20Z" fill="currentColor"/><circle cx="20" cy="12.6" r="1.1" fill="var(--paper)"/></svg>
-      <span>Canary</span>
-    </a>
-    <p class="tagline">The state of the world, checked four times a day.</p>
-    <nav class="mast-nav" aria-label="Site">
-      <span id="updated" class="updated">Loading…</span>
-      <a href="methodology.html">How it works</a>
-      <a href="feed.xml">Feed</a>
-    </nav>
+<header class="cds--header cds--g100" aria-label="Canary">
+  <a class="cds--header__name" href="./">
+    <span class="cds--header__name--prefix">Canary</span>&nbsp;Global risk status
+  </a>
+  <nav class="cds--header__nav" aria-label="Canary">
+    <ul class="cds--header__menu-bar">
+      <li><a class="cds--header__menu-item cds--header__menu-item--current" href="./" aria-current="page"><span class="cds--text-truncate--end">Board</span></a></li>
+      <li><a class="cds--header__menu-item" href="methodology.html"><span class="cds--text-truncate--end">Methodology</span></a></li>
+    </ul>
+  </nav>
+  <div class="cds--header__global">
+    <button class="cds--header__action" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme" data-icon="asleep"></button>
+    <a class="cds--header__action" href="feed.xml" aria-label="Status change feed (Atom)" title="Status change feed" data-icon="rss"></a>
   </div>
 </header>
 
-<main id="main">
-  <section class="hero" aria-labelledby="world-h">
-    <div class="world">
-      <h1 id="world-h" class="sr-only">World State</h1>
-      <div class="world-score" id="world-score" aria-live="polite"></div>
-      <div class="world-meta">
-        <p class="world-band" id="world-band"></p>
-        <p class="world-counts" id="world-counts"></p>
+<main id="main" class="cnry-main">
+  <div class="cnry-wrap">
+
+    <section class="cnry-pagehead" aria-labelledby="page-title">
+      <div>
+        <h1 id="page-title" class="cds--type-productive-heading-04">Global risk status</h1>
+        <p class="cnry-pagehead__meta cds--type-body-compact-01" id="updated">Loading the latest assessment…</p>
+      </div>
+      <p class="cnry-pagehead__note cds--type-helper-text-01">Assessed by an AI model against <a class="cds--link cds--link--sm" href="methodology.html">published rubrics</a>. Describes conditions; not a forecast or advice.</p>
+    </section>
+
+    <section class="cnry-kpis" aria-label="Summary">
+      <div class="cds--tile cnry-kpi cnry-kpi--index">
+        <p class="cnry-kpi__label">World State index</p>
+        <p class="cnry-kpi__value"><span id="kpi-score">–</span><span class="cnry-kpi__unit">/100</span></p>
+        <p class="cnry-kpi__status" id="kpi-band"></p>
+        <div class="cds--progress-bar cds--progress-bar--small cnry-kpi__bar" aria-hidden="true">
+          <div class="cds--progress-bar__track"><div class="cds--progress-bar__bar" id="kpi-bar"></div></div>
+        </div>
+      </div>
+      <button type="button" class="cds--tile cds--tile--clickable cnry-kpi cnry-kpi--count" data-filter="red">
+        <p class="cnry-kpi__label"><span class="cnry-icon cnry-st--red" data-icon="error--filled"></span>Alert</p>
+        <p class="cnry-kpi__value" id="kpi-red">–</p>
+        <p class="cnry-kpi__hint">Acute or material risk now</p>
+      </button>
+      <button type="button" class="cds--tile cds--tile--clickable cnry-kpi cnry-kpi--count" data-filter="amber">
+        <p class="cnry-kpi__label"><span class="cnry-icon cnry-st--amber" data-icon="warning--alt--filled"></span>Watch</p>
+        <p class="cnry-kpi__value" id="kpi-amber">–</p>
+        <p class="cnry-kpi__hint">Elevated or deteriorating</p>
+      </button>
+      <button type="button" class="cds--tile cds--tile--clickable cnry-kpi cnry-kpi--count" data-filter="green">
+        <p class="cnry-kpi__label"><span class="cnry-icon cnry-st--green" data-icon="checkmark--filled"></span>Normal</p>
+        <p class="cnry-kpi__value" id="kpi-green">–</p>
+        <p class="cnry-kpi__hint">Background noise</p>
+      </button>
+      <div class="cds--tile cnry-kpi">
+        <p class="cnry-kpi__label">Changed in 24 hours</p>
+        <p class="cnry-kpi__value" id="kpi-changed">–</p>
+        <p class="cnry-kpi__hint" id="kpi-changed-hint">Status changes</p>
+      </div>
+      <div class="cds--tile cnry-kpi">
+        <p class="cnry-kpi__label">Data freshness</p>
+        <p class="cnry-kpi__value cnry-kpi__value--sm" id="kpi-fresh">–</p>
+        <p class="cnry-kpi__hint" id="kpi-fresh-hint"></p>
+      </div>
+    </section>
+
+    <section class="cds--tile cnry-overview" aria-labelledby="overview-title">
+      <div class="cnry-section-head">
+        <h2 id="overview-title" class="cds--type-productive-heading-02">Domains</h2>
+        <p class="cds--type-helper-text-01">Each square is one signal. Domain score is the share of attention needed, 0–100. Select a domain to jump to it.</p>
+      </div>
+      <ol class="cnry-domains" id="domains"></ol>
+    </section>
+
+    <section class="cnry-split">
+      <div class="cds--data-table-container cnry-panel" id="alerts-panel">
+        <div class="cds--data-table-header">
+          <h2 class="cds--data-table-header__title">Active alerts</h2>
+          <p class="cds--data-table-header__description" id="alerts-desc">Signals rated Alert, most recently changed first</p>
+        </div>
+        <div class="cds--data-table-content">
+          <table class="cds--data-table cds--data-table--sm cnry-table" aria-labelledby="alerts-panel">
+            <thead><tr>
+              <th scope="col"><div class="cds--table-header-label">Signal</div></th>
+              <th scope="col" class="cnry-col-sum"><div class="cds--table-header-label">Summary</div></th>
+              <th scope="col" class="cnry-col-trend"><div class="cds--table-header-label">Trend</div></th>
+            </tr></thead>
+            <tbody id="alerts-body"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="cds--data-table-container cnry-panel" id="changes-panel">
+        <div class="cds--data-table-header">
+          <h2 class="cds--data-table-header__title">Recent changes</h2>
+          <p class="cds--data-table-header__description">Status changes in the last 7 days</p>
+        </div>
+        <div class="cds--data-table-content">
+          <table class="cds--data-table cds--data-table--sm cnry-table" aria-labelledby="changes-panel">
+            <thead><tr>
+              <th scope="col"><div class="cds--table-header-label">Signal</div></th>
+              <th scope="col"><div class="cds--table-header-label">Change</div></th>
+              <th scope="col" class="cnry-col-num"><div class="cds--table-header-label">When</div></th>
+            </tr></thead>
+            <tbody id="changes-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="signals-title" class="cnry-signals">
+      <div class="cnry-section-head cnry-section-head--bar">
+        <h2 id="signals-title" class="cds--type-productive-heading-03">All signals</h2>
+      </div>
+      <section class="cds--table-toolbar cnry-toolbar" aria-label="Filter signals">
+        <div class="cds--toolbar-content">
+          <div class="cds--search cds--search--lg cnry-search" role="search">
+            <div class="cds--search-magnifier" aria-hidden="true"><span class="cds--search-magnifier-icon" data-icon="search"></span></div>
+            <label class="cds--label cds--visually-hidden" for="filter-text">Filter signals</label>
+            <input class="cds--search-input" type="text" role="searchbox" id="filter-text" placeholder="Filter by signal, reading or summary" autocomplete="off">
+            <button class="cds--search-close cds--search-close--hidden" type="button" id="filter-clear" aria-label="Clear filter" data-icon="close"></button>
+          </div>
+          <div class="cds--content-switcher cds--content-switcher--sm cnry-switcher" role="tablist" aria-label="Show signals by status" id="status-switcher">
+            <button class="cds--content-switcher-btn cds--content-switcher--selected" role="tab" aria-selected="true" data-status="all" type="button"><span class="cds--content-switcher__label">All</span></button>
+            <button class="cds--content-switcher-btn" role="tab" aria-selected="false" data-status="red" type="button"><span class="cds--content-switcher__label">Alert</span></button>
+            <button class="cds--content-switcher-btn" role="tab" aria-selected="false" data-status="amber" type="button"><span class="cds--content-switcher__label">Watch</span></button>
+            <button class="cds--content-switcher-btn" role="tab" aria-selected="false" data-status="green" type="button"><span class="cds--content-switcher__label">Normal</span></button>
+          </div>
+          <button class="cds--btn cds--btn--ghost cds--btn--sm cnry-expand-all" type="button" id="expand-all"><span>Expand all</span></button>
+        </div>
+      </section>
+      <p class="cnry-empty cds--type-body-compact-01" id="empty" hidden>No signals match this filter.</p>
+      <div class="cnry-tables" id="board"></div>
+    </section>
+
+    <div class="cds--inline-notification cds--inline-notification--error" role="alert" id="error" hidden>
+      <div class="cds--inline-notification__details">
+        <div class="cds--inline-notification__text-wrapper">
+          <div class="cds--inline-notification__title">Data unavailable</div>
+          <div class="cds--inline-notification__subtitle">Canary couldn't load its data. Refresh the page; if this persists, an update may still be deploying.</div>
+        </div>
       </div>
     </div>
-    <div class="strip-wrap">
-      <div class="strip" id="strip" role="list" aria-label="Every signal, grouped by domain"></div>
-    </div>
-    <p class="headline" id="headline"></p>
-  </section>
-
-  <section class="changes" id="changes" aria-labelledby="changes-h" hidden>
-    <h2 id="changes-h">Changed in the last 24 hours</h2>
-    <ul id="changes-list"></ul>
-  </section>
-
-  <div class="toolbar">
-    <div class="legend" aria-label="Legend">
-      <span class="lg"><i class="shape s-green"></i>Normal</span>
-      <span class="lg"><i class="shape s-amber"></i>Watch</span>
-      <span class="lg"><i class="shape s-red"></i>Alert</span>
-      <span class="lg"><i class="shape s-stale"></i>Not checked recently</span>
-    </div>
-    <label class="filter"><input type="checkbox" id="only-flagged"> Show only Watch and Alert</label>
   </div>
-
-  <section id="board" class="board" aria-label="Signals by domain"></section>
-
-  <p class="error" id="error" hidden></p>
 </main>
 
-<footer class="foot">
-  <p><strong>Canary is assessed by an AI model</strong> (Anthropic's Claude) against <a href="methodology.html">published rubrics</a>, using open data and news sources cited on every signal. It describes conditions; it does not forecast and is not financial, medical, legal or safety advice. For anything that affects your safety, follow official guidance.</p>
-  <p class="foot-small">Data: USGS, NOAA, NSIDC, GDACS, Met Office, FRED, Climate Reanalyzer, Yahoo Finance and the outlets cited per signal. <a href="https://github.com/" id="repo-link">Source and history</a>.</p>
+<footer class="cnry-footer cds--g100">
+  <div class="cnry-wrap">
+    <div class="cnry-footer__grid">
+      <div>
+        <p class="cds--type-productive-heading-01">Canary</p>
+        <p class="cds--type-body-compact-01">Canary is assessed by an AI model (Anthropic's Claude) against <a class="cds--link cds--link--inline" href="methodology.html">published rubrics</a>, using open data and the sources cited on every signal. It describes conditions; it is not a forecast and not financial, medical, legal or safety advice. For anything affecting your safety, follow official guidance.</p>
+      </div>
+      <div>
+        <p class="cds--type-productive-heading-01">Data</p>
+        <p class="cds--type-body-compact-01">USGS, NOAA, NSIDC, GDACS, Met Office, FRED, Climate Reanalyzer, Yahoo Finance and the outlets cited per signal.</p>
+      </div>
+      <div>
+        <p class="cds--type-productive-heading-01">More</p>
+        <ul class="cnry-footer__links">
+          <li><a class="cds--link" href="methodology.html">Methodology</a></li>
+          <li><a class="cds--link" href="feed.xml">Status change feed</a></li>
+          <li><a class="cds--link" href="https://github.com/danleech/canary">Source and history</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="cds--type-helper-text-01 cnry-footer__small">Built with the IBM Carbon Design System. Not affiliated with IBM.</p>
+  </div>
 </footer>
 
-<div class="scrim" id="scrim" hidden></div>
-<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="d-title" hidden tabindex="-1">
-  <button class="drawer-close" id="drawer-close" aria-label="Close details">Close</button>
-  <div id="drawer-body"></div>
-</aside>
-
+<script src="assets/icons.js"></script>
 <script src="app.js" defer></script>
 </body>
 </html>

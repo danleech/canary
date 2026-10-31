@@ -29,7 +29,8 @@ See [`CHARTER.md`](CHARTER.md) for the scope and design decisions, and [`site/me
 | `signals/catalogue.yaml` | Every signal: copy, tier, metrics and the green/amber/red rubric. **This is where you tune Canary.** |
 | `scripts/fetch_metrics.py` | Open-data fetchers: Yahoo Finance, FRED, USGS, GDACS, NOAA, NSIDC, ERA5 and the Met Office. No API keys needed. |
 | `scripts/canary.py` | `plan` / `apply` / `build` / `check` |
-| `site/` | The website. `site/data/*.json` is the whole "database". |
+| `site/` | The website, built on the IBM Carbon Design System. `site/data/*.json` is the whole "database". |
+| `design/` | Builds `site/assets/carbon.css` and `site/assets/icons.js` from pinned `@carbon/styles` and `@carbon/icons`. |
 | `CLAUDE.md` | Editorial rules every Claude session follows |
 | `.claude/skills/canary-update/SKILL.md` | The step-by-step update procedure |
 
@@ -83,6 +84,25 @@ Ask Claude in this project to "set up the Canary scheduled task", or create one 
 | Pause updates | Disable the scheduled task. The site keeps its last state and marks signals stale after 14h (or 36h for daily signals). |
 | See what happened | `site/data/runs.json` holds the run log. `site/data/changes.json` and `/feed.xml` hold status changes. |
 | Preview locally | `cd site && python3 -m http.server 8000`, then open http://localhost:8000 |
+
+## Design system
+
+The UI uses **IBM Carbon** components and patterns:
+- the UI shell header
+- tiles for the KPIs
+- compact data tables with expandable rows for the signals
+- status indicators (icon plus label)
+- the content switcher and search for filtering
+- structured lists for the rubrics
+- the g10 theme, with g100 for dark mode
+
+The compiled Carbon CSS and icons are committed, so Cloudflare still needs no build step. To change which Carbon components are included, or to upgrade Carbon:
+
+```bash
+cd design && npm install && npm run build   # writes site/assets/carbon.css + icons.js
+```
+
+Layout and composition live in `site/assets/app.css`. It uses only Carbon tokens (`--cds-*`).
 
 ## Guard-rails built in
 
