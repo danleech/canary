@@ -20,7 +20,7 @@
    ],
    "value": "VIX 19.4, S&P -3.0%",
    "value_num": 19.42,
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "ftse": {
@@ -38,7 +38,7 @@
    ],
    "value": "10,730, -1.7% from high",
    "value_num": 10729.78,
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "bond-volatility": {
@@ -66,7 +66,7 @@
    ],
    "value": "MOVE 100, 10y 4.93%",
    "value_num": 100.198,
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "credit-spreads": {
@@ -84,7 +84,7 @@
    ],
    "value": "HY OAS 3.26%",
    "value_num": 3.26,
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "dollar": {
@@ -102,7 +102,7 @@
    ],
    "value": "DXY 102.0, 3m +2.1%",
    "value_num": 101.964,
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "banking-stress": {
@@ -125,7 +125,7 @@
    ],
    "value": "STLFSI -0.58",
    "value_num": -0.5837,
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "gold": {
@@ -143,14 +143,14 @@
    ],
    "value": "$3,899, 3m -6.1%",
    "value_num": 3898.9,
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "crypto": {
    "status": "green",
    "trend": "flat",
    "summary": "Bitcoin 11% below its high; no stablecoin or exchange stress reported",
-   "state": "Bitcoin traded around $77,350 on 31 Oct, about 11% below its 52-week high and well inside the 25% Watch line. No major stablecoin de-peg or exchange failure has been reported.",
+   "state": "Bitcoin traded around $77,500 on 31 Oct, about 11% below its 52-week high and well inside the 25% Watch line. No major stablecoin de-peg or exchange failure has been reported.",
    "for_you": "Crypto markets are not currently a source of wider financial stress.",
    "sources": [
     {
@@ -159,9 +159,9 @@
      "date": "2026-10-31"
     }
    ],
-   "value": "BTC $77,349, -11% from high",
+   "value": "BTC $77,471, -11% from high",
    "value_num": 77268.65,
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "us-recession": {
@@ -184,7 +184,7 @@
    ],
    "value": "Sahm 0.00, 10y–2y +0.38",
    "value_num": 0.0,
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "us-inflation": {
@@ -317,7 +317,7 @@
    "status": "red",
    "trend": "up",
    "summary": "Brent above $110 as Hormuz stays largely closed",
-   "state": "Brent was $113 on 30 Oct, having topped $117 the previous week, its highest since April, after Iranian attacks on tankers near the Strait of Hormuz. The strait has been closed or restricted since 28 Feb. ANZ estimates Hormuz crude flows at about 60% of normal.",
+   "state": "Brent settled at $113 on 30 Oct, having topped $117 the previous week, its highest since April. Iran claimed four tankers hit mines near the Strait of Hormuz on 29 Oct, and two more vessels were attacked off Oman on 29–30 Oct. The strait has been closed or restricted since 28 Feb, with single-digit daily transits.",
    "for_you": "Expect continued high petrol, diesel and heating-oil prices, with knock-on effects on transport costs and inflation.",
    "sources": [
     {
@@ -326,14 +326,14 @@
      "date": "2026-10-30"
     },
     {
-     "title": "Euronews — Qatar urges Iran to reopen the Strait of Hormuz",
-     "url": "https://www.euronews.com/2026/10/27/qatar-urges-iran-to-show-goodwill-by-ending-threats-to-the-region-and-reopening-the-strait",
-     "date": "2026-10-27"
+     "title": "Euronews — IRGC reports tankers on fire in Strait of Hormuz as talks continue",
+     "url": "https://www.euronews.com/2026/10/30/irans-revolutionary-guard-reports-two-tankers-on-fire-in-strait-of-hormuz-as-talks-continu",
+     "date": "2026-10-30"
     }
    ],
    "value": "$113.4, 1m +11%",
    "value_num": 113.43,
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "eu-gas": {
@@ -356,33 +356,33 @@
    ],
    "value": "€104/MWh",
    "value_num": 103.944,
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "chokepoints": {
    "status": "red",
-   "trend": "flat",
-   "summary": "Hormuz severely restricted; Red Sea route still contested",
-   "state": "IMF PortWatch recorded 2–8 Hormuz transits a day in October, against about 85 before the war, and October was the worst month on record for attacks on shipping there. Iran claimed two tankers hit mines on 23–24 Oct. Houthi forces continue attacks on Saudi Arabia near Bab el-Mandeb.",
+   "trend": "up",
+   "summary": "Fresh tanker attacks near Hormuz; Red Sea route still contested",
+   "state": "The IRGC said three tankers hit mines on the strait's southern route on 29 Oct and Iran's army reported a fourth fire east of the strait; AFP could not confirm the claims. UKMTO reported a limpet-mine attack on a tanker off Khasab, and Oman evacuated 25 crew from a burning vessel on 30 Oct. CENTCOM says the main lanes are clear of mines. Transits remain in single digits a day.",
    "for_you": "Disrupted shipping lanes raise fuel and goods prices and lengthen delivery times. FCDO advice applies for travel to the Gulf region.",
    "sources": [
+    {
+     "title": "Euronews — IRGC reports tankers on fire in Strait of Hormuz as talks continue",
+     "url": "https://www.euronews.com/2026/10/30/irans-revolutionary-guard-reports-two-tankers-on-fire-in-strait-of-hormuz-as-talks-continu",
+     "date": "2026-10-30"
+    },
+    {
+     "title": "Greek City Times — Iran says four Hormuz tankers hit mines; US says lanes clear",
+     "url": "https://greekcitytimes.com/2026/10/31/hormuz-tankers-mines-iran-claim",
+     "date": "2026-10-31"
+    },
     {
      "title": "straits.live — Strait of Hormuz brief, 24 October 2026",
      "url": "https://straits.live/briefs/2026-10-24",
      "date": "2026-10-24"
-    },
-    {
-     "title": "CGTN — Iran reports tanker blasts in Hormuz as Trump hints at renewed strikes",
-     "url": "https://news.cgtn.com/news/2026-10-24/Iran-reports-tanker-blasts-in-Hormuz-as-Trump-hints-at-renewed-strikes-1RuSG1ODy0M/p.html",
-     "date": "2026-10-24"
-    },
-    {
-     "title": "Critical Threats — Iran Update, 29 October 2026",
-     "url": "https://www.criticalthreats.org/analysis/iran-update-october-29-2026",
-     "date": "2026-10-29"
     }
    ],
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "freight": {
@@ -457,7 +457,7 @@
      "url": "https://www.armscontrol.org/act/2026-10/focus/trump-xi-putin-failing-tackle-nuclear-threat"
     }
    ],
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "russia-nato": {
@@ -477,28 +477,28 @@
      "url": "https://cepa.org/article/russian-strikes-rise-across-natos-eastern-flank/"
     }
    ],
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "iran-nuclear": {
    "status": "amber",
    "trend": "up",
    "summary": "No IAEA access amid war; US demands nuclear talks first as strike plans reported",
-   "state": "The IAEA reported Iran to the UN Security Council on 1 Oct. A US letter sent via Qatar on 28 Oct proposes direct talks that address the nuclear programme first, which Tehran rejects. Reports say US and Israeli militaries have drawn up plans for renewed strikes after the 3 Nov midterms.",
+   "state": "The IAEA reported Iran to the UN Security Council on 1 Oct and has no access to Iranian sites. Qatari mediators took a revised US proposal to Tehran on 30 Oct; Axios reports both sides seek common ground on inspections and sanctions relief. Washington has warned regional allies of possible renewed strikes after the 3 Nov midterms, with no final decision (AP, 29 Oct).",
    "for_you": "Renewed strikes would likely push oil and gas prices higher again.",
    "sources": [
+    {
+     "title": "Euronews — IRGC reports tankers on fire in Strait of Hormuz as talks continue",
+     "url": "https://www.euronews.com/2026/10/30/irans-revolutionary-guard-reports-two-tankers-on-fire-in-strait-of-hormuz-as-talks-continu",
+     "date": "2026-10-30"
+    },
     {
      "title": "Critical Threats — Iran Update, 29 October 2026",
      "url": "https://www.criticalthreats.org/analysis/iran-update-october-29-2026",
      "date": "2026-10-29"
-    },
-    {
-     "title": "CGTN — Trump hints at renewed strikes",
-     "url": "https://news.cgtn.com/news/2026-10-24/Iran-reports-tanker-blasts-in-Hormuz-as-Trump-hints-at-renewed-strikes-1RuSG1ODy0M/p.html",
-     "date": "2026-10-24"
     }
    ],
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "korea": {
@@ -519,7 +519,7 @@
      "date": "2026-10-29"
     }
    ],
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "trade-war": {
@@ -539,7 +539,7 @@
      "url": "https://www.debevoise.com/insights/publications/2026/10/lindsey-graham-act-expands-us-sanctions-and-tariff"
     }
    ],
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "sanctions": {
@@ -587,29 +587,34 @@
    "status": "red",
    "trend": "up",
    "summary": "Russia escalates daytime strikes; 14 killed on a Dnipro commuter train",
-   "state": "On 29 Oct Russian drone strikes killed at least 19 people, including 14 when a jet-powered drone hit a commuter train in Dnipro (ISW). ISW assesses Russia is escalating strikes to make daily life untenable before winter. Trilateral talks are not expected before 4 Nov, and front lines changed little.",
+   "state": "A Russian jet-powered drone hit Dnipro's main railway station on 29 Oct as a train waited at the platform, killing at least 13 civilians (UN); other reports put the toll at 14. ISW assesses Russia is escalating strikes to make daily life untenable before winter, and Ukraine's railway reports 1,700 attacks on its facilities so far in 2026. Front lines changed little.",
    "for_you": "Follow FCDO advice against all travel to Ukraine. Strikes on energy infrastructure may affect European power and gas markets this winter.",
    "sources": [
+    {
+     "title": "UN News — Russia drone strike on Ukrainian railway station kills 13",
+     "url": "https://news.un.org/en/story/2026/10/1168702",
+     "date": "2026-10-29"
+    },
     {
      "title": "ISW/CTP — Russian Offensive Campaign Assessment, 29 October 2026",
      "url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-october-29-2026",
      "date": "2026-10-29"
     }
    ],
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "middle-east": {
    "status": "red",
    "trend": "flat",
-   "summary": "US–Iran war in a tense stalemate; Gaza and Lebanon truces repeatedly violated",
-   "state": "The war that began with US–Israeli strikes on Iran on 28 Feb continues at lower intensity, with a US naval blockade and Iranian attacks on shipping. Talks via Qatar have stalled (29 Oct). Israeli operations continue in southern Lebanon (25 Oct) and strikes continue in Gaza despite its October 2025 ceasefire.",
+   "summary": "US–Iran war in tense stalemate as Qatar presses talks; Gaza and Lebanon truces strained",
+   "state": "The war that began with US–Israeli strikes on Iran on 28 Feb continues at lower intensity, with a US naval blockade and attacks on shipping near Hormuz (29–30 Oct). Qatari mediators returned to Tehran on 30 Oct with a revised proposal, while Axios reported US and Israeli strike planning for after the 3 Nov midterms. Israeli operations continue in southern Lebanon and Gaza.",
    "for_you": "Follow FCDO travel advice for Israel, Lebanon, Iran and the Gulf states, where conditions can change quickly.",
    "sources": [
     {
-     "title": "Critical Threats — Iran Update, 29 October 2026",
-     "url": "https://www.criticalthreats.org/analysis/iran-update-october-29-2026",
-     "date": "2026-10-29"
+     "title": "Euronews — IRGC reports tankers on fire in Strait of Hormuz as talks continue",
+     "url": "https://www.euronews.com/2026/10/30/irans-revolutionary-guard-reports-two-tankers-on-fire-in-strait-of-hormuz-as-talks-continu",
+     "date": "2026-10-30"
     },
     {
      "title": "Arab News — Lebanon bets on diplomacy to avert another war",
@@ -617,12 +622,12 @@
      "date": "2026-10-29"
     },
     {
-     "title": "Al Jazeera — What has Trump's Board of Peace achieved in a year since Gaza 'ceasefire'?",
-     "url": "https://www.aljazeera.com/news/2026/10/10/what-has-trumps-board-of-peace-achieved-in-a-year-since-gaza",
-     "date": "2026-10-10"
+     "title": "Critical Threats — Iran Update, 29 October 2026",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-october-29-2026",
+     "date": "2026-10-29"
     }
    ],
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "sudan": {
@@ -724,7 +729,7 @@
      "url": "https://www.ces-intelligence.com/analysis/india-pakistan-border-tensions-punjab-2026-daily-signal"
     }
    ],
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "nuclear-risk": {
@@ -739,7 +744,7 @@
      "url": "https://www.armscontrol.org/act/2026-10/focus/trump-xi-putin-failing-tackle-nuclear-threat"
     }
    ],
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "atlantic-cyclones": {
@@ -755,7 +760,7 @@
      "date": "2026-10-30"
     }
    ],
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "other-cyclones": {
@@ -776,7 +781,7 @@
      "date": "2026-10-29"
     }
    ],
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "heat": {
@@ -818,7 +823,7 @@
      "date": "2026-10-17"
     }
    ],
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "floods": {
@@ -839,7 +844,7 @@
      "date": "2026-10-31"
     }
    ],
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "earthquakes": {
@@ -862,7 +867,7 @@
    ],
    "value": "Max M6.5, 5× M6+ (7d)",
    "value_num": 6.5,
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "volcanic": {
@@ -921,7 +926,7 @@
    ],
    "value": "G0 S0 R0",
    "value_num": 0,
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "global-temp": {
@@ -1039,27 +1044,32 @@
      "date": "2026-10-27"
     }
    ],
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "ebola": {
    "status": "red",
    "trend": "up",
-   "summary": "Over 10,000 Ebola cases in DR Congo; spread to Kenya and Nigeria",
-   "state": "DR Congo has reported 10,274 confirmed Bundibugyo Ebola cases (29 Oct) and 4,887 deaths (25 Oct), rising by 50–80 cases a day across eight provinces. Kenya has nine cases linked to one import, and Nigeria reported a case on 20 Oct. ECDC rates the risk to the EU/EEA public as very low.",
+   "summary": "Over 10,000 Ebola cases in DR Congo; imported cases in Kenya and Nigeria",
+   "state": "DR Congo had 10,193 confirmed Bundibugyo Ebola cases and 4,960 deaths as of 27 Oct, with 52 new cases that day across four provinces; Ituri accounts for 71% of cases. 66 of 178 health zones in eight provinces are affected. Kenya has nine cases linked to one import, and Nigeria confirmed an imported case on 20 Oct. ECDC rates EU/EEA risk as very low.",
    "for_you": "Risk to the UK public is very low. Travellers to affected areas should follow NaTHNaC and FCDO advice.",
    "sources": [
+    {
+     "title": "Outbreak News Today — Ebola outbreak update through October 27",
+     "url": "https://outbreaknewstoday.substack.com/p/ebola-outbreak-update-through-october-41b",
+     "date": "2026-10-29"
+    },
+    {
+     "title": "WHO — Disease Outbreak News: Ebola (Bundibugyo), DR Congo, Kenya and Nigeria",
+     "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON622"
+    },
     {
      "title": "ECDC — Ebola disease caused by Bundibugyo virus (update 27 Oct)",
      "url": "https://www.ecdc.europa.eu/en/public-health-events/2026-eip-00026/2026-10-27",
      "date": "2026-10-27"
-    },
-    {
-     "title": "WHO — Disease Outbreak News: Ebola (Bundibugyo), DRC, Kenya and Nigeria",
-     "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON622"
     }
    ],
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "h5n1": {
@@ -1075,7 +1085,7 @@
      "date": "2026-10-07"
     }
    ],
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "mpox": {
@@ -1150,7 +1160,7 @@
      "date": "2026-10-10"
     }
    ],
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "cyber": {
@@ -1160,6 +1170,11 @@
    "state": "Most University Hospitals (Cleveland) websites and patient portals were still down on 29 Oct, a week after a cybersecurity incident, and an extortion group claimed an attack disrupting University of New Mexico hospitals (27 Oct).",
    "for_you": "Be alert to phishing that exploits high-profile incidents. The NCSC publishes guidance for individuals and businesses.",
    "sources": [
+    {
+     "title": "Cleveland 19 — University Hospitals working to restore MyChart",
+     "url": "https://www.cleveland19.com/2026/10/28/university-hospitals-working-restore-mychart-appointments-continue-normal/",
+     "date": "2026-10-28"
+    },
     {
      "title": "Ideastream — Most University Hospitals websites still down a week after cybersecurity incident",
      "url": "https://ideastream.org/health/2026-10-29/most-university-hospitals-websites-still-down-a-week-after-cybersecurity-incident",
@@ -1171,7 +1186,7 @@
      "date": "2026-10-27"
     }
    ],
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "outages": {
@@ -1187,7 +1202,7 @@
      "date": "2026-10-27"
     }
    ],
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "cables-gnss": {
@@ -1338,7 +1353,7 @@
      "date": "2026-10-30"
     }
    ],
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "uk-energy-cap": {
@@ -1375,7 +1390,7 @@
     }
    ],
    "value": "No warnings",
-   "checked_at": "2026-10-31T11:44:16Z",
+   "checked_at": "2026-10-31T17:48:45Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "nhs-pressure": {
@@ -1435,8 +1450,8 @@
    "changed_at": "2026-10-31T11:26:06Z"
   }
  },
- "headline": "The Iran war's grip on Hormuz drives the board: oil above $110, European gas near three-year highs and record-low EU gas storage heading into winter. Ebola has spread beyond DR Congo, and the UK terrorism threat level is Severe.",
- "generated_at": "2026-10-31T11:44:16Z",
+ "headline": "Fresh tanker attacks near Hormuz (29–30 Oct) keep Brent above $110 and Gulf talks in the balance ahead of the 3 Nov US midterms. Russia's strikes on Ukrainian rail and Ebola's spread in DR Congo continue.",
+ "generated_at": "2026-10-31T17:48:45Z",
  "world": {
   "score": 42,
   "band": "Strained",
