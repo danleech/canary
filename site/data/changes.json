@@ -1,1 +1,10 @@
-[]
+[
+ {
+  "t": "2026-10-31T23:53:37Z",
+  "id": "uk-weather",
+  "name": "UK weather warnings",
+  "from": "green",
+  "to": "amber",
+  "reason": "Yellow fog warnings across most of England and Wales for 1 Nov"
+ }
+]

@@ -1,5 +1,21 @@
 [
  {
+  "t": "2026-10-31T23:53:42Z",
+  "applied": 35,
+  "changed": [],
+  "warnings": [],
+  "note": "Weekend run ~6h after the previous one: markets closed, few new developments. Several qualitative signals carried forward with prior sources as searches returned nothing newer. uk-weather raised to amber on a widespread yellow fog warning."
+ },
+ {
+  "t": "2026-10-31T23:53:37Z",
+  "applied": 35,
+  "changed": [
+   "uk-weather"
+  ],
+  "warnings": [],
+  "note": "Weekend run ~6h after the previous one: markets closed, few new developments. Several qualitative signals carried forward with prior sources as searches returned nothing newer. uk-weather raised to amber on a widespread yellow fog warning."
+ },
+ {
   "t": "2026-10-31T17:48:45Z",
   "applied": 35,
   "changed": [],

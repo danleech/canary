@@ -4,7 +4,7 @@
    "status": "green",
    "trend": "flat",
    "summary": "US stocks near highs and volatility contained despite the energy shock",
-   "state": "The S&P 500 closed 30 Oct about 3% below its 52-week high, and the VIX was 19.4, just under the 20 Watch line. US stocks have so far absorbed oil above $110 and the prospect of another Fed hike, helped by strong Q3 growth (3.4%, released 29 Oct).",
+   "state": "The S&P 500 closed 30 Oct about 3% below its 52-week high, and the VIX was 19.4, just under the 20 Watch line. US stocks have so far absorbed oil above $110 and the prospect of another Fed hike, helped by strong Q3 growth (3.4%, released 29 Oct). Markets were closed on 31 Oct.",
    "for_you": "Conditions in US equities are calm by historical standards. Volatility near 20 means sharper daily swings are plausible if energy or rate news worsens.",
    "sources": [
     {
@@ -20,14 +20,14 @@
    ],
    "value": "VIX 19.4, S&P -3.0%",
    "value_num": 19.42,
-   "checked_at": "2026-10-31T17:48:45Z",
+   "checked_at": "2026-10-31T23:53:42Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "ftse": {
    "status": "green",
    "trend": "flat",
    "summary": "FTSE 100 within 2% of its high, supported by energy and mining shares",
-   "state": "The FTSE 100 closed 30 Oct at 10,730, about 1.7% below its 52-week high and up 2.6% over the month. Its heavy weighting to oil, gas and mining companies has cushioned it from the energy shock that is weighing on UK households.",
+   "state": "The FTSE 100 closed 30 Oct at 10,730, about 1.7% below its 52-week high and up 2.6% over the month. Its heavy weighting to oil, gas and mining companies has cushioned it from the energy shock that is weighing on UK households. Markets were closed on 31 Oct.",
    "for_you": "The index's resilience reflects its global, commodity-heavy make-up rather than the domestic UK economy, which faces higher energy bills and rising rates.",
    "sources": [
     {
@@ -38,14 +38,14 @@
    ],
    "value": "10,730, -1.7% from high",
    "value_num": 10729.78,
-   "checked_at": "2026-10-31T17:48:45Z",
+   "checked_at": "2026-10-31T23:53:42Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "bond-volatility": {
    "status": "amber",
    "trend": "flat",
    "summary": "Treasury volatility at the Watch line as yields hover near 5%",
-   "state": "The MOVE index of Treasury volatility stood at 100 on 30 Oct, right on the Watch threshold. The US 10-year yield is 4.93%, having touched about 5.2% in mid-October. The Fed held rates on 28 Oct after hiking in September, and markets price a December hike.",
+   "state": "The MOVE index of Treasury volatility stood at 100 on 30 Oct, right on the Watch threshold. The US 10-year yield is 4.93%, having touched about 5.2% in mid-October. The Fed held rates on 28 Oct after hiking in September, and markets price a December hike. Markets were closed on 31 Oct.",
    "for_you": "Long-term borrowing costs, including US mortgage rates, are elevated and moving more than usual. This feeds through to global bond markets, including UK gilts.",
    "sources": [
     {
@@ -66,7 +66,7 @@
    ],
    "value": "MOVE 100, 10y 4.93%",
    "value_num": 100.198,
-   "checked_at": "2026-10-31T17:48:45Z",
+   "checked_at": "2026-10-31T23:53:42Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "credit-spreads": {
@@ -84,14 +84,14 @@
    ],
    "value": "HY OAS 3.26%",
    "value_num": 3.26,
-   "checked_at": "2026-10-31T17:48:45Z",
+   "checked_at": "2026-10-31T23:53:42Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "dollar": {
    "status": "green",
    "trend": "flat",
    "summary": "Dollar index steady around 102",
-   "state": "The DXY dollar index was 102.0 on 30 Oct, up about 2% over three months, a normal range. Fed hikes have supported the dollar without the violent moves that squeeze dollar borrowers abroad.",
+   "state": "The DXY dollar index was 102.0 on 30 Oct, up about 2% over three months, a normal range. Fed hikes have supported the dollar without the violent moves that squeeze dollar borrowers abroad. Markets were closed on 31 Oct.",
    "for_you": "Currency conditions are orderly. A stronger dollar would raise the sterling cost of oil, which is priced in dollars.",
    "sources": [
     {
@@ -102,7 +102,7 @@
    ],
    "value": "DXY 102.0, 3m +2.1%",
    "value_num": 101.964,
-   "checked_at": "2026-10-31T17:48:45Z",
+   "checked_at": "2026-10-31T23:53:42Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "banking-stress": {
@@ -125,14 +125,14 @@
    ],
    "value": "STLFSI -0.58",
    "value_num": -0.5837,
-   "checked_at": "2026-10-31T17:48:45Z",
+   "checked_at": "2026-10-31T23:53:42Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "gold": {
    "status": "green",
    "trend": "down",
    "summary": "Gold off its highs at about $3,900 as real yields rise",
-   "state": "Gold futures traded at $3,899 on 30 Oct, about 6% lower over three months. The fall despite the Gulf war is consistent with rising US yields and Fed hikes, and gold is not signalling financial panic.",
+   "state": "Gold futures traded at $3,899 on 30 Oct, about 6% lower over three months. The fall despite the Gulf war is consistent with rising US yields and Fed hikes, and gold is not signalling financial panic. Markets were closed on 31 Oct.",
    "for_you": "Gold's fall suggests markets see the energy shock as an inflation and rates problem rather than a financial-system crisis.",
    "sources": [
     {
@@ -143,14 +143,14 @@
    ],
    "value": "$3,899, 3m -6.1%",
    "value_num": 3898.9,
-   "checked_at": "2026-10-31T17:48:45Z",
+   "checked_at": "2026-10-31T23:53:42Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "crypto": {
    "status": "green",
    "trend": "flat",
    "summary": "Bitcoin 11% below its high; no stablecoin or exchange stress reported",
-   "state": "Bitcoin traded around $77,500 on 31 Oct, about 11% below its 52-week high and well inside the 25% Watch line. No major stablecoin de-peg or exchange failure has been reported.",
+   "state": "Bitcoin traded around $77,400 late on 31 Oct, about 11% below its 52-week high and well inside the 25% Watch line. No major stablecoin de-peg or exchange failure has been reported.",
    "for_you": "Crypto markets are not currently a source of wider financial stress.",
    "sources": [
     {
@@ -159,9 +159,9 @@
      "date": "2026-10-31"
     }
    ],
-   "value": "BTC $77,471, -11% from high",
+   "value": "BTC $77,381, -11% from high",
    "value_num": 77268.65,
-   "checked_at": "2026-10-31T17:48:45Z",
+   "checked_at": "2026-10-31T23:53:42Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "us-recession": {
@@ -184,7 +184,7 @@
    ],
    "value": "Sahm 0.00, 10y–2y +0.38",
    "value_num": 0.0,
-   "checked_at": "2026-10-31T17:48:45Z",
+   "checked_at": "2026-10-31T23:53:42Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "us-inflation": {
@@ -317,7 +317,7 @@
    "status": "red",
    "trend": "up",
    "summary": "Brent above $110 as Hormuz stays largely closed",
-   "state": "Brent settled at $113 on 30 Oct, having topped $117 the previous week, its highest since April. Iran claimed four tankers hit mines near the Strait of Hormuz on 29 Oct, and two more vessels were attacked off Oman on 29–30 Oct. The strait has been closed or restricted since 28 Feb, with single-digit daily transits.",
+   "state": "Brent settled at $113 on 30 Oct, having topped $117 the previous week. Iran claimed four tankers hit mines near the Strait of Hormuz on 29 Oct, and UKMTO reported a tanker struck by a projectile that evening. The strait has been closed or restricted since 28 Feb, with single-digit daily transits.",
    "for_you": "Expect continued high petrol, diesel and heating-oil prices, with knock-on effects on transport costs and inflation.",
    "sources": [
     {
@@ -326,19 +326,19 @@
      "date": "2026-10-30"
     },
     {
-     "title": "Euronews — IRGC reports tankers on fire in Strait of Hormuz as talks continue",
-     "url": "https://www.euronews.com/2026/10/30/irans-revolutionary-guard-reports-two-tankers-on-fire-in-strait-of-hormuz-as-talks-continu",
+     "title": "CNBC — Iran claims four tankers struck mines in Hormuz as strike fears grow",
+     "url": "https://www.cnbc.com/2026/10/30/iran-trump-hormuz-oil-middle-east-.html",
      "date": "2026-10-30"
     }
    ],
    "value": "$113.4, 1m +11%",
    "value_num": 113.43,
-   "checked_at": "2026-10-31T17:48:45Z",
+   "checked_at": "2026-10-31T23:53:42Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "eu-gas": {
    "status": "red",
-   "trend": "up",
+   "trend": "flat",
    "summary": "TTF above €100/MWh; EU storage lowest for the time of year on record",
    "state": "Dutch TTF gas traded near €104/MWh on 30 Oct, up from about €28 in January, after Qatari LNG deliveries to Europe stopped in May. EU storage was 74.6% full on 24 Oct against 82.9% a year earlier, the lowest for the date since records began in 2011, per IEEFA.",
    "for_you": "UK and European energy bills are set to rise sharply this winter. A cold winter would add further pressure on supply.",
@@ -356,25 +356,25 @@
    ],
    "value": "€104/MWh",
    "value_num": 103.944,
-   "checked_at": "2026-10-31T17:48:45Z",
+   "checked_at": "2026-10-31T23:53:42Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "chokepoints": {
    "status": "red",
    "trend": "up",
    "summary": "Fresh tanker attacks near Hormuz; Red Sea route still contested",
-   "state": "The IRGC said three tankers hit mines on the strait's southern route on 29 Oct and Iran's army reported a fourth fire east of the strait; AFP could not confirm the claims. UKMTO reported a limpet-mine attack on a tanker off Khasab, and Oman evacuated 25 crew from a burning vessel on 30 Oct. CENTCOM says the main lanes are clear of mines. Transits remain in single digits a day.",
+   "state": "Iran's navy said four tankers hit mines on the strait's southern route on 29 Oct; the claims are unconfirmed, and CENTCOM says the main lanes are clear. UKMTO reported a tanker struck by a projectile on 29 Oct, and Oman evacuated crew from a burning vessel on 30 Oct. Saudi forces intercepted Houthi missiles and drones on 29–30 Oct. Transits remain in single digits a day.",
    "for_you": "Disrupted shipping lanes raise fuel and goods prices and lengthen delivery times. FCDO advice applies for travel to the Gulf region.",
    "sources": [
     {
-     "title": "Euronews — IRGC reports tankers on fire in Strait of Hormuz as talks continue",
-     "url": "https://www.euronews.com/2026/10/30/irans-revolutionary-guard-reports-two-tankers-on-fire-in-strait-of-hormuz-as-talks-continu",
+     "title": "CBS News — Iran war live updates: tankers strike mines, Qatar proposal",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-donald-trump-qatar-mediators-new-proposal-end-war/",
      "date": "2026-10-30"
     },
     {
-     "title": "Greek City Times — Iran says four Hormuz tankers hit mines; US says lanes clear",
-     "url": "https://greekcitytimes.com/2026/10/31/hormuz-tankers-mines-iran-claim",
-     "date": "2026-10-31"
+     "title": "Gulf News — Saudi Arabia intercepts Houthi drones, tanker attack fuels Hormuz crisis",
+     "url": "https://gulfnews.com/world/mena/middle-east-war-iran-claims-tankers-hit-mines-in-strait-of-hormuz-ukmto-confirms-strike-off-oman-fired-us-general-reportedly-admitted-iran-leaks-1.500729137",
+     "date": "2026-10-30"
     },
     {
      "title": "straits.live — Strait of Hormuz brief, 24 October 2026",
@@ -382,8 +382,9 @@
      "date": "2026-10-24"
     }
    ],
-   "checked_at": "2026-10-31T17:48:45Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-10-31T23:53:42Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "value": "Hormuz: single-digit transits/day"
   },
   "freight": {
    "status": "red",
@@ -457,8 +458,9 @@
      "url": "https://www.armscontrol.org/act/2026-10/focus/trump-xi-putin-failing-tackle-nuclear-threat"
     }
    ],
-   "checked_at": "2026-10-31T17:48:45Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-10-31T23:53:42Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "value": "No major PLA exercise since Dec 2025"
   },
   "russia-nato": {
    "status": "amber",
@@ -477,19 +479,20 @@
      "url": "https://cepa.org/article/russian-strikes-rise-across-natos-eastern-flank/"
     }
    ],
-   "checked_at": "2026-10-31T17:48:45Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-10-31T23:53:42Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "value": "Rising incidents on eastern flank"
   },
   "iran-nuclear": {
    "status": "amber",
    "trend": "up",
    "summary": "No IAEA access amid war; US demands nuclear talks first as strike plans reported",
-   "state": "The IAEA reported Iran to the UN Security Council on 1 Oct and has no access to Iranian sites. Qatari mediators took a revised US proposal to Tehran on 30 Oct; Axios reports both sides seek common ground on inspections and sanctions relief. Washington has warned regional allies of possible renewed strikes after the 3 Nov midterms, with no final decision (AP, 29 Oct).",
+   "state": "The IAEA reported Iran to the UN Security Council on 1 Oct and has no access to Iranian sites. Qatar handed Iran a new draft deal on 25 Oct; a senior Iranian official called its ideas 'unacceptable', and a US official expected a reply around 31 Oct. Washington has reportedly warned allies of renewed strikes after the 3 Nov midterms, with no final decision.",
    "for_you": "Renewed strikes would likely push oil and gas prices higher again.",
    "sources": [
     {
-     "title": "Euronews — IRGC reports tankers on fire in Strait of Hormuz as talks continue",
-     "url": "https://www.euronews.com/2026/10/30/irans-revolutionary-guard-reports-two-tankers-on-fire-in-strait-of-hormuz-as-talks-continu",
+     "title": "CBS News — Iran war live updates: tankers strike mines, Qatar proposal",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-donald-trump-qatar-mediators-new-proposal-end-war/",
      "date": "2026-10-30"
     },
     {
@@ -498,8 +501,9 @@
      "date": "2026-10-29"
     }
    ],
-   "checked_at": "2026-10-31T17:48:45Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-10-31T23:53:42Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "value": "No IAEA access"
   },
   "korea": {
    "status": "amber",
@@ -519,8 +523,9 @@
      "date": "2026-10-29"
     }
    ],
-   "checked_at": "2026-10-31T17:48:45Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-10-31T23:53:42Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "value": "17 launches in 2026"
   },
   "trade-war": {
    "status": "amber",
@@ -539,8 +544,9 @@
      "url": "https://www.debevoise.com/insights/publications/2026/10/lindsey-graham-act-expands-us-sanctions-and-tariff"
     }
    ],
-   "checked_at": "2026-10-31T17:48:45Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-10-31T23:53:42Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "value": "US effective tariff ~7%"
   },
   "sanctions": {
    "status": "amber",
@@ -601,34 +607,36 @@
      "date": "2026-10-29"
     }
    ],
-   "checked_at": "2026-10-31T17:48:45Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-10-31T23:53:42Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "value": "Full-scale war; winter strike campaign"
   },
   "middle-east": {
    "status": "red",
    "trend": "flat",
-   "summary": "US–Iran war in tense stalemate as Qatar presses talks; Gaza and Lebanon truces strained",
-   "state": "The war that began with US–Israeli strikes on Iran on 28 Feb continues at lower intensity, with a US naval blockade and attacks on shipping near Hormuz (29–30 Oct). Qatari mediators returned to Tehran on 30 Oct with a revised proposal, while Axios reported US and Israeli strike planning for after the 3 Nov midterms. Israeli operations continue in southern Lebanon and Gaza.",
+   "summary": "US–Iran war in tense stalemate; Iran's reply to Qatari proposal awaited",
+   "state": "The war that began with US–Israeli strikes on Iran on 28 Feb continues at lower intensity, with a US naval blockade and attacks on shipping near Hormuz (29–30 Oct). A US official said Iran's response to Qatar's latest draft was expected around 31 Oct; the US has reportedly told Gulf allies to prepare for renewed strikes after the 3 Nov midterms. The Pentagon put US military deaths at 23 on 30 Oct.",
    "for_you": "Follow FCDO travel advice for Israel, Lebanon, Iran and the Gulf states, where conditions can change quickly.",
    "sources": [
     {
-     "title": "Euronews — IRGC reports tankers on fire in Strait of Hormuz as talks continue",
-     "url": "https://www.euronews.com/2026/10/30/irans-revolutionary-guard-reports-two-tankers-on-fire-in-strait-of-hormuz-as-talks-continu",
+     "title": "CBS News — Iran war live updates: tankers strike mines, Qatar proposal",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-donald-trump-qatar-mediators-new-proposal-end-war/",
+     "date": "2026-10-30"
+    },
+    {
+     "title": "Gulf News — Saudi Arabia intercepts Houthi drones, tanker attack fuels Hormuz crisis",
+     "url": "https://gulfnews.com/world/mena/middle-east-war-iran-claims-tankers-hit-mines-in-strait-of-hormuz-ukmto-confirms-strike-off-oman-fired-us-general-reportedly-admitted-iran-leaks-1.500729137",
      "date": "2026-10-30"
     },
     {
      "title": "Arab News — Lebanon bets on diplomacy to avert another war",
      "url": "https://www.arabnews.com/middle-east/lebanon-bets-on-diplomacy-to-avert-another-war-amid-reports-of-hezbollah-preparing-for-battle-3008917",
      "date": "2026-10-29"
-    },
-    {
-     "title": "Critical Threats — Iran Update, 29 October 2026",
-     "url": "https://www.criticalthreats.org/analysis/iran-update-october-29-2026",
-     "date": "2026-10-29"
     }
    ],
-   "checked_at": "2026-10-31T17:48:45Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-10-31T23:53:42Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "value": "US–Iran war since 28 Feb"
   },
   "sudan": {
    "status": "red",
@@ -729,8 +737,9 @@
      "url": "https://www.ces-intelligence.com/analysis/india-pakistan-border-tensions-punjab-2026-daily-signal"
     }
    ],
-   "checked_at": "2026-10-31T17:48:45Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-10-31T23:53:42Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "value": "LoC tension, no strikes"
   },
   "nuclear-risk": {
    "status": "amber",
@@ -744,8 +753,9 @@
      "url": "https://www.armscontrol.org/act/2026-10/focus/trump-xi-putin-failing-tackle-nuclear-threat"
     }
    ],
-   "checked_at": "2026-10-31T17:48:45Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-10-31T23:53:42Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "value": "No US–Russia treaty limits"
   },
   "atlantic-cyclones": {
    "status": "green",
@@ -760,14 +770,15 @@
      "date": "2026-10-30"
     }
    ],
-   "checked_at": "2026-10-31T17:48:45Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-10-31T23:53:42Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "value": "No active systems"
   },
   "other-cyclones": {
    "status": "green",
    "trend": "down",
    "summary": "Cyclone weakens after lashing India's south-east coast; no GDACS alerts",
-   "state": "A Bay of Bengal storm that lashed India's south-eastern coast was easing on 29 Oct. GDACS lists only green alerts for current tropical cyclones (In-Fa near Japan and the Marshall Islands, Vance off Mexico) as of 31 Oct.",
+   "state": "GDACS lists only a green alert for current tropical cyclones (In-Fa near Japan and the Marshall Islands) as of 31 Oct. A Bay of Bengal storm that lashed India's south-eastern coast was easing on 29 Oct.",
    "for_you": "No major cyclone threat to populated coasts at present.",
    "sources": [
     {
@@ -781,8 +792,9 @@
      "date": "2026-10-29"
     }
    ],
-   "checked_at": "2026-10-31T17:48:45Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-10-31T23:53:42Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "value": "GDACS: green only"
   },
   "heat": {
    "status": "green",
@@ -823,8 +835,9 @@
      "date": "2026-10-17"
     }
    ],
-   "checked_at": "2026-10-31T17:48:45Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-10-31T23:53:42Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "value": "GDACS: no orange/red"
   },
   "floods": {
    "status": "green",
@@ -844,14 +857,15 @@
      "date": "2026-10-31"
     }
    ],
-   "checked_at": "2026-10-31T17:48:45Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-10-31T23:53:42Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "value": "GDACS: no orange/red"
   },
   "earthquakes": {
    "status": "green",
    "trend": "flat",
    "summary": "Largest quake this week M6.5; no high-impact alerts",
-   "state": "USGS recorded 153 earthquakes of M4.5+ in the past 7 days, the largest an M6.5 near the Bonin Islands, Japan, with no orange or red PAGER impact alerts. About 4,500 people remain in shelters after Panama's M7.5 quake on 9 Oct (OCHA, 28 Oct).",
+   "state": "USGS recorded 144 earthquakes of M4.5+ in the past 7 days, six of them M6+, the largest an M6.5 near the Bonin Islands (25 Oct); an M6.0 struck off Shima, Japan on 31 Oct. There were no orange or red PAGER impact alerts and no M7+.",
    "for_you": "No current high-impact earthquake. Earthquakes cannot be forecast; follow local guidance in seismic zones.",
    "sources": [
     {
@@ -860,14 +874,14 @@
      "date": "2026-10-31"
     },
     {
-     "title": "PAHO — Natural hazards monitoring, 30 October 2026",
-     "url": "https://www.paho.org/en/natural-hazards-monitoring/natural-hazards-monitoring-30-october-2026",
-     "date": "2026-10-30"
+     "title": "USGS — M6.0, 58 km SSE of Shima, Japan",
+     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tuku",
+     "date": "2026-10-31"
     }
    ],
-   "value": "Max M6.5, 5× M6+ (7d)",
+   "value": "Max M6.5, 6× M6+ (7d)",
    "value_num": 6.5,
-   "checked_at": "2026-10-31T17:48:45Z",
+   "checked_at": "2026-10-31T23:53:42Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "volcanic": {
@@ -913,10 +927,10 @@
   },
   "space-weather": {
    "status": "green",
-   "trend": "flat",
-   "summary": "Quiet: no geomagnetic, radiation or radio storms",
-   "state": "NOAA's space weather scales showed G0, S0 and R0 on 31 Oct, with at most minor (G1) geomagnetic activity forecast over the next three days.",
-   "for_you": "No disruption expected to satellites, GPS or power grids.",
+   "trend": "up",
+   "summary": "Moderate (G2) geomagnetic storm reached; no radiation or radio storms",
+   "state": "NOAA's scales reached G2 (moderate) geomagnetic storm levels in the 24 hours to 31 Oct, with S0 and R0. Conditions had eased to G0 by late on 31 Oct, and at most G1 is forecast over the next three days. G2 is within the Normal band of the rubric.",
+   "for_you": "Minor effects on high-latitude power grids and satellite navigation are possible during G2 storms; aurora may be visible in Scotland and northern England.",
    "sources": [
     {
      "title": "NOAA Space Weather Prediction Center",
@@ -924,9 +938,9 @@
      "date": "2026-10-31"
     }
    ],
-   "value": "G0 S0 R0",
+   "value": "G2 S0 R0 (24h max)",
    "value_num": 0,
-   "checked_at": "2026-10-31T17:48:45Z",
+   "checked_at": "2026-10-31T23:53:42Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "global-temp": {
@@ -1039,13 +1053,14 @@
      "date": "2026-05-17"
     },
     {
-     "title": "ECDC — Ebola disease caused by Bundibugyo virus",
-     "url": "https://www.ecdc.europa.eu/en/public-health-events/2026-eip-00026/2026-10-27",
-     "date": "2026-10-27"
+     "title": "ECDC — Ebola disease: multi-country outbreak 2026",
+     "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
+     "date": "2026-10-31"
     }
    ],
-   "checked_at": "2026-10-31T17:48:45Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-10-31T23:53:42Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "value": "1 PHEIC (Ebola)"
   },
   "ebola": {
    "status": "red",
@@ -1055,22 +1070,23 @@
    "for_you": "Risk to the UK public is very low. Travellers to affected areas should follow NaTHNaC and FCDO advice.",
    "sources": [
     {
-     "title": "Outbreak News Today — Ebola outbreak update through October 27",
-     "url": "https://outbreaknewstoday.substack.com/p/ebola-outbreak-update-through-october-41b",
-     "date": "2026-10-29"
-    },
-    {
      "title": "WHO — Disease Outbreak News: Ebola (Bundibugyo), DR Congo, Kenya and Nigeria",
      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON622"
     },
     {
-     "title": "ECDC — Ebola disease caused by Bundibugyo virus (update 27 Oct)",
-     "url": "https://www.ecdc.europa.eu/en/public-health-events/2026-eip-00026/2026-10-27",
-     "date": "2026-10-27"
+     "title": "ECDC — Ebola disease: multi-country outbreak 2026",
+     "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
+     "date": "2026-10-31"
+    },
+    {
+     "title": "Outbreak News Today — Ebola outbreak update through October 27",
+     "url": "https://outbreaknewstoday.substack.com/p/ebola-outbreak-update-through-october-41b",
+     "date": "2026-10-29"
     }
    ],
-   "checked_at": "2026-10-31T17:48:45Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-10-31T23:53:42Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "value": "10,193 cases (27 Oct)"
   },
   "h5n1": {
    "status": "green",
@@ -1085,8 +1101,9 @@
      "date": "2026-10-07"
     }
    ],
-   "checked_at": "2026-10-31T17:48:45Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-10-31T23:53:42Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "value": "No human-to-human spread"
   },
   "mpox": {
    "status": "amber",
@@ -1160,8 +1177,9 @@
      "date": "2026-10-10"
     }
    ],
-   "checked_at": "2026-10-31T17:48:45Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-10-31T23:53:42Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "value": "No unexplained clusters"
   },
   "cyber": {
    "status": "amber",
@@ -1186,8 +1204,9 @@
      "date": "2026-10-27"
     }
    ],
-   "checked_at": "2026-10-31T17:48:45Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-10-31T23:53:42Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "value": "US hospital systems disrupted"
   },
   "outages": {
    "status": "green",
@@ -1202,8 +1221,9 @@
      "date": "2026-10-27"
     }
    ],
-   "checked_at": "2026-10-31T17:48:45Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-10-31T23:53:42Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "value": "No major outages"
   },
   "cables-gnss": {
    "status": "amber",
@@ -1353,8 +1373,9 @@
      "date": "2026-10-30"
     }
    ],
-   "checked_at": "2026-10-31T17:48:45Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-10-31T23:53:42Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "value": "10y 5.29% (30 Oct)"
   },
   "uk-energy-cap": {
    "status": "red",
@@ -1377,21 +1398,22 @@
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "uk-weather": {
-   "status": "green",
-   "trend": "flat",
-   "summary": "No Met Office weather warnings in force",
-   "state": "The Met Office had no National Severe Weather Warnings in force for the UK on 31 Oct.",
-   "for_you": "No weather warnings at present. Check the Met Office before travel as autumn storms develop.",
+   "status": "amber",
+   "trend": "up",
+   "summary": "Yellow fog warnings across most of England and Wales for 1 Nov",
+   "state": "The Met Office issued a yellow warning of fog for 1 Nov covering eight regions: South West, London & South East, East of England, East and West Midlands, North West, Yorkshire & Humber, and Wales. This is a widespread yellow warning, which meets the Watch line in the rubric. No amber or red warnings are in force.",
+   "for_you": "Follow Met Office advice: allow extra time for journeys on 1 Nov, as dense fog can slow travel and delay flights.",
    "sources": [
     {
-     "title": "Met Office — UK weather warnings",
-     "url": "https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings",
+     "title": "Met Office — UK weather warnings (yellow fog warning, 1 Nov)",
+     "url": "https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings#?date=2026-11-01&id=9fc7470f-5654-4899-a475-9952f452789d&referrer=rss",
      "date": "2026-10-31"
     }
    ],
-   "value": "No warnings",
-   "checked_at": "2026-10-31T17:48:45Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "value": "Yellow fog warnings, 8 regions (1 Nov)",
+   "checked_at": "2026-10-31T23:53:42Z",
+   "changed_at": "2026-10-31T23:53:37Z",
+   "value_num": 8
   },
   "nhs-pressure": {
    "status": "green",
@@ -1450,15 +1472,15 @@
    "changed_at": "2026-10-31T11:26:06Z"
   }
  },
- "headline": "Fresh tanker attacks near Hormuz (29–30 Oct) keep Brent above $110 and Gulf talks in the balance ahead of the 3 Nov US midterms. Russia's strikes on Ukrainian rail and Ebola's spread in DR Congo continue.",
- "generated_at": "2026-10-31T17:48:45Z",
+ "headline": "Iran's reply to a Qatari peace draft is awaited after fresh tanker attacks near Hormuz (29–30 Oct), with Brent above $110 ahead of the 3 Nov US midterms. Russia's winter strikes on Ukraine and Ebola's spread in DR Congo continue.",
+ "generated_at": "2026-10-31T23:53:42Z",
  "world": {
-  "score": 42,
+  "score": 43,
   "band": "Strained",
   "status": "amber",
   "counts": {
-   "green": 29,
-   "amber": 28,
+   "green": 28,
+   "amber": 29,
    "red": 15
   },
   "by_domain": {
@@ -1472,7 +1494,7 @@
    "health": 43,
    "tech": 40,
    "humanitarian": 33,
-   "uk": 50
+   "uk": 57
   }
  }
 }

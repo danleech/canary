@@ -4,7 +4,13 @@
   <link href="https://canary-board.pages.dev/"/>
   <link rel="self" href="https://canary-board.pages.dev/feed.xml"/>
   <id>https://canary-board.pages.dev/</id>
-  <updated>2026-10-31T17:48:45Z</updated>
+  <updated>2026-10-31T23:53:37Z</updated>
   <author><name>Canary</name></author>
-
+  <entry>
+    <title>UK weather warnings: Normal → Watch</title>
+    <id>tag:canary,2026-10-31:uk-weather:2026-10-31T23:53:37Z</id>
+    <updated>2026-10-31T23:53:37Z</updated>
+    <link href="https://canary-board.pages.dev/#uk-weather"/>
+    <summary>Yellow fog warnings across most of England and Wales for 1 Nov</summary>
+  </entry>
 </feed>
