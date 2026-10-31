@@ -1,0 +1,56 @@
+# Canary — instructions for Claude
+
+Canary is a public, static, single-page status board. It shows red/amber/green **attention levels** for about 70 global risk signals. The site is in `site/` (vanilla HTML/CSS/JS, no build step) and deploys to Cloudflare Pages on every push to `main`. All state lives in JSON under `site/data/`.
+
+To run a scheduled update (the most common job in this repo), use the **`canary-update` skill** (`.claude/skills/canary-update/SKILL.md`) and follow it exactly.
+
+## Repo map
+
+| Path | What it is |
+|---|---|
+| `signals/catalogue.yaml` | Source of truth: signal definitions, static copy, rubrics. Never rename an `id`. |
+| `scripts/fetch_metrics.py` | Pulls hard numbers from open APIs → `site/data/metrics.json` |
+| `scripts/canary.py` | `plan` / `apply` / `build` / `check` pipeline |
+| `site/data/status.json` | Current state. **Only change it through `canary.py apply`**, never by hand-editing. |
+| `site/data/{history,changes,runs}.json` | Append-only logs maintained by `apply` |
+| `site/index.html`, `site/app.js`, `site/style.css` | The board |
+| `site/methodology.html` | Public methodology and disclaimers (renders rubrics from `catalogue.json`) |
+| `.github/workflows/metrics.yml` | Fetches metrics 4×/day and validates every push |
+| `CHARTER.md` | The signed-off project charter |
+
+## Editorial rules (non-negotiable)
+
+1. **Status = attention level, not a forecast or advice.**
+   - 🟢 Normal: background noise.
+   - 🟠 Watch: elevated or deteriorating.
+   - 🔴 Alert: acute or material risk now.
+2. **No financial advice, ever.** In the markets, economy, energy and UK domains, never tell readers to buy, sell, switch, move money, rebalance or "consider" a trade. Describe conditions only ("markets are in a stress regime"). `canary.py check` enforces a banned-phrase list. Don't work around it with synonyms.
+3. **"What this means for you" can be prescriptive only by pointing to official guidance.** Examples: Met Office, FCDO travel advice, UKHSA, NHS, MI5, WHO, national emergency agencies. Otherwise keep it descriptive and practical: who is exposed, and what tends to follow.
+4. **Every claim needs a source from this run.** Use 1–3 sources per signal, with a real URL you actually opened or saw in search results. Never invent URLs, figures or quotes. If you can't verify something, say less.
+5. **Neutral, factual tone.** No adjectives that take sides in conflicts or politics. Name actors plainly. No graphic detail. No casualty speculation: only cite figures from credible bodies (UN, WHO, ministries, with attribution where contested).
+6. **Rubrics are binding.** Numeric thresholds in `catalogue.yaml` decide the status. Prose criteria guide judgement.
+   - `canary.py` applies a metric floor: you may raise a metric-based status for qualitative evidence, but lowering it needs an `override_reason`.
+   - The one-step rule: no green↔red jump in one run without a hard trigger or `override_reason`.
+7. **Hysteresis:** only change a qualitative status when the evidence clearly crosses a rubric line. When in doubt, keep the previous status and explain why in `state`.
+8. **Chronic ≠ new.** A long-running war at steady intensity is Watch. Alert is for significant escalation or acute events, per the rubric.
+9. **Brevity:**
+   - `summary` ≤ 120 chars (one line, shown on the board).
+   - `state` ≤ 700 chars, 2–4 sentences: why it's at this level now, with dates.
+   - `for_you` ≤ 320 chars.
+   - `value` ≤ 48 chars.
+   - British English throughout.
+10. **Dates:** write absolute dates ("30 Oct"), never "yesterday" or "this week". Readers see the page hours later.
+
+## Changing the catalogue
+
+- To add a signal, append it to `catalogue.yaml` with a full rubric, then run `python scripts/canary.py check`.
+- If it has a numeric metric, add a fetcher to `fetch_metrics.py` and a rule to `suggest()` in `canary.py`.
+- Never delete a signal that has history without the owner's (Dan's) say-so.
+- Keep `site/methodology.html` accurate if you change how statuses are computed.
+
+## Git
+
+- Work on `main`.
+- Commit messages follow the form `update: <UTC time> — <n> changes` for scheduled runs, or `feat:`/`fix:` for code.
+- Before pushing: `git pull --rebase`, which handles the metrics workflow committing in between.
+- Never force-push.

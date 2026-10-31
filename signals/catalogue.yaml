@@ -1,0 +1,928 @@
+# Canary signal catalogue — the source of truth for what Canary tracks and how it is judged.
+#
+# Fields
+#   id        stable kebab-case key (never rename; history is keyed on it)
+#   domain    one of the domain ids below
+#   name      short display name (≤ 28 chars)
+#   tier      fast  = re-assessed every run (4×/day)
+#             daily = re-assessed on the first run after 05:00 UK each day; carried forward otherwise
+#   metrics   optional list of keys in site/data/metrics.json that inform this signal
+#   why       why it matters (static, ≤ 220 chars)
+#   drivers   what moves it (static, ≤ 200 chars)
+#   rubric    green / amber / red criteria. Numeric thresholds are binding; prose criteria are guidance.
+#   hints     preferred sources to check first
+#
+# Status meaning: green = Normal, amber = Watch, red = Alert (attention level, not a forecast).
+
+domains:
+  - { id: markets,      name: Markets, short: "Markets",                 weight: 1.0 }
+  - { id: economy,      name: Economy, short: "Economy",                 weight: 1.0 }
+  - { id: energy,       name: Energy & Commodities, short: "Energy",    weight: 1.0 }
+  - { id: geopolitics,  name: Geopolitics, short: "Geopolitics",             weight: 1.2 }
+  - { id: conflict,     name: Armed Conflict, short: "Conflict",          weight: 1.2 }
+  - { id: hazards,      name: Weather & Hazards, short: "Hazards",       weight: 1.0 }
+  - { id: climate,      name: Climate, short: "Climate",                 weight: 0.6 }
+  - { id: health,       name: Global Health, short: "Health",           weight: 1.1 }
+  - { id: tech,         name: Technology & Cyber, short: "Tech",      weight: 0.8 }
+  - { id: humanitarian, name: Humanitarian, short: "Humanit.",            weight: 0.8 }
+  - { id: uk,           name: UK Watch, short: "UK",                weight: 0.8 }
+
+signals:
+
+# ───────────────────────────── MARKETS ─────────────────────────────
+  - id: equity-stress
+    domain: markets
+    name: US equity stress
+    tier: fast
+    metrics: [vix, spx]
+    why: The S&P 500 is the world's risk barometer; sharp falls and spiking volatility transmit to pensions, credit and confidence globally.
+    drivers: Earnings, interest-rate expectations, liquidity, geopolitical shocks, positioning and leverage.
+    rubric:
+      green: VIX < 20 and S&P 500 drawdown from 52-week high < 5%.
+      amber: VIX 20–30, or drawdown 5–15%.
+      red: VIX > 30, or drawdown > 15%, or a market-wide circuit breaker trips.
+    hints: [Yahoo Finance ^VIX ^GSPC, Reuters markets, FT markets]
+
+  - id: ftse
+    domain: markets
+    name: FTSE 100
+    tier: fast
+    metrics: [ftse]
+    why: The UK's main index — a gauge of UK-listed multinationals, pensions and sterling-area sentiment.
+    drivers: Commodity prices, sterling, global risk appetite, UK policy and banking sector news.
+    rubric:
+      green: Drawdown from 52-week high < 5% and no single-day fall > 2.5% this week.
+      amber: Drawdown 5–12%, or a single-day fall > 2.5% this week.
+      red: Drawdown > 12%, or a single-day fall > 4%.
+    hints: [Yahoo Finance ^FTSE, LSE, FT]
+
+  - id: bond-volatility
+    domain: markets
+    name: Bond market volatility
+    tier: fast
+    metrics: [move, us10y]
+    why: US Treasuries price almost every asset on earth; when the 'risk-free' market becomes volatile, funding and collateral chains strain.
+    drivers: Inflation data, Fed path, deficits and auction demand, foreign holder flows, liquidity.
+    rubric:
+      green: MOVE index < 100 and US 10y moved < 40bp over the past month.
+      amber: MOVE 100–140, or US 10y moved ≥ 40bp in a month, or weak auctions flagged.
+      red: MOVE > 140, or disorderly Treasury trading (failed/tailed auctions with Fed action, emergency buybacks).
+    hints: [Yahoo ^MOVE ^TNX, FRED DGS10, Reuters bonds]
+
+  - id: credit-spreads
+    domain: markets
+    name: Credit spreads
+    tier: fast
+    metrics: [hy_oas]
+    why: High-yield spreads show how much lenders demand to fund weaker companies — an early warning of defaults and credit crunches.
+    drivers: Default expectations, risk appetite, rates, private-credit stress, fund outflows.
+    rubric:
+      green: US HY option-adjusted spread < 4.0%.
+      amber: HY OAS 4.0–6.0%, or widened > 100bp in a month.
+      red: HY OAS > 6.0%, or widened > 200bp in a month.
+    hints: [FRED BAMLH0A0HYM2, Bloomberg, FT Alphaville]
+
+  - id: dollar
+    domain: markets
+    name: US dollar
+    tier: fast
+    metrics: [dxy]
+    why: The dollar is the world's funding currency; violent moves squeeze emerging markets and anyone with dollar debts.
+    drivers: Fed vs other central banks, safe-haven demand, trade policy, reserve diversification.
+    rubric:
+      green: DXY moved < 5% over 3 months and is between 90 and 108.
+      amber: DXY moved 5–8% in 3 months, or outside 90–108.
+      red: DXY moved > 8% in 3 months, or dollar funding stress (Fed swap lines drawn materially).
+    hints: [Yahoo DX-Y.NYB, Reuters FX]
+
+  - id: banking-stress
+    domain: markets
+    name: Banking system stress
+    tier: fast
+    metrics: [stlfsi]
+    why: Bank failures turn market losses into credit crunches; 2008 and 2023 both began as 'contained' bank problems.
+    drivers: Rate shocks to bond portfolios, commercial property losses, deposit flight, private-credit links.
+    rubric:
+      green: St Louis Fed Financial Stress Index < 0 and no notable bank failures or rescues.
+      amber: STLFSI 0–1.5, or a mid-sized bank failure/rescue, or a large bank under visible funding pressure.
+      red: STLFSI > 1.5, or a systemically important bank fails or needs rescue, or emergency central-bank facilities launched.
+    hints: [FRED STLFSI4, FDIC failed bank list, Reuters banking]
+
+  - id: gold
+    domain: markets
+    name: Gold (fear gauge)
+    tier: fast
+    metrics: [gold]
+    why: Gold is the oldest crisis hedge; disorderly surges signal fear about currencies, inflation or geopolitics.
+    drivers: Real interest rates, central-bank buying, geopolitical fear, dollar moves.
+    rubric:
+      green: 3-month change between −8% and +10%.
+      amber: 3-month gain 10–20%, or a fall > 8%.
+      red: 3-month gain > 20%, or a single-week move > 7% either way.
+    hints: [Yahoo GC=F, World Gold Council]
+
+  - id: crypto
+    domain: markets
+    name: Crypto stress
+    tier: fast
+    metrics: [btc]
+    why: Crypto is now plumbed into mainstream finance via ETFs and stablecoins; a crash or de-peg can spill into funding markets.
+    drivers: Liquidity, leverage, regulation, stablecoin reserves, exchange solvency.
+    rubric:
+      green: Bitcoin drawdown from 52-week high < 25% and no major stablecoin/exchange incidents.
+      amber: Drawdown 25–45%, or a top-10 exchange/stablecoin under stress.
+      red: Drawdown > 45%, or a major stablecoin de-pegs (> 3% for > 24h), or a top-10 exchange fails.
+    hints: [Yahoo BTC-USD, CoinDesk, The Block]
+
+# ───────────────────────────── ECONOMY ─────────────────────────────
+  - id: us-recession
+    domain: economy
+    name: US recession risk
+    tier: fast
+    metrics: [sahm, t10y2y]
+    why: A US recession drags world trade, earnings and jobs; it is the single biggest swing factor for the global cycle.
+    drivers: Labour market, consumer spending, credit conditions, rates and fiscal policy.
+    rubric:
+      green: Sahm rule indicator < 0.30 and no negative GDP quarter in the latest two releases.
+      amber: Sahm 0.30–0.49, or one negative GDP quarter, or payrolls negative in a release.
+      red: Sahm ≥ 0.50, or two consecutive negative GDP quarters, or NBER declares recession.
+    hints: [FRED SAHMREALTIME, BLS jobs report, BEA GDP]
+
+  - id: us-inflation
+    domain: economy
+    name: US inflation
+    tier: daily
+    metrics: [us_cpi]
+    why: Inflation sets Fed policy and thus global borrowing costs; a resurgence would keep rates high for everyone.
+    drivers: Energy, tariffs, wages, housing costs, supply chains.
+    rubric:
+      green: Headline CPI y/y < 3.0%.
+      amber: CPI 3.0–4.5%, or rising for 3 consecutive months.
+      red: CPI > 4.5%.
+    hints: [BLS CPI, FRED CPIAUCSL]
+
+  - id: euro-growth
+    domain: economy
+    name: Euro-area economy
+    tier: daily
+    why: The euro area is the UK's largest trading partner; stagnation there hits UK exports and European markets.
+    drivers: Energy prices, German industry, ECB policy, fiscal rules, China demand.
+    rubric:
+      green: Positive GDP growth and composite PMI > 50.
+      amber: Stagnation (GDP ~0), or composite PMI 45–50.
+      red: Technical recession, or PMI < 45, or bond-spread fragmentation forcing ECB action.
+    hints: [Eurostat, HCOB PMI, ECB]
+
+  - id: china-economy
+    domain: economy
+    name: China economy
+    tier: daily
+    why: China is the world's factory and the biggest marginal buyer of commodities; a hard landing would ripple through every supply chain.
+    drivers: Property sector, local-government debt, exports and tariffs, deflation, stimulus.
+    rubric:
+      green: Growth near official target, stable property sales, no financial contagion.
+      amber: Deflation, renewed property-developer defaults, or growth clearly below target.
+      red: Hard landing (growth < 3%), financial contagion, or capital controls tightened sharply.
+    hints: [NBS China, Caixin PMI, Reuters China]
+
+  - id: central-banks
+    domain: economy
+    name: Central bank stress
+    tier: daily
+    why: Central banks are the shock absorbers; when they are boxed in or their independence is challenged, markets lose their backstop.
+    drivers: Inflation vs growth trade-off, political pressure, currency moves, financial stability.
+    rubric:
+      green: Fed, ECB and BoJ acting orderly and on schedule; independence unquestioned.
+      amber: Stagflationary dilemma, open political pressure on a major central bank, or FX intervention by a G7 bank.
+      red: Emergency inter-meeting moves, attempt to remove a central-bank head, or coordinated intervention.
+    hints: [Federal Reserve, ECB, Bank of Japan, Reuters]
+
+  - id: sovereign-debt
+    domain: economy
+    name: Sovereign debt stress
+    tier: daily
+    why: When big governments struggle to borrow, it raises everyone's costs and can force sudden austerity or money-printing.
+    drivers: Deficits, auction demand, ratings actions, political shocks, long-end yields.
+    rubric:
+      green: Auctions orderly; France–Bund spread < 80bp; Italy–Bund < 150bp; no G7 downgrades this month.
+      amber: G7 30-year yields at multi-decade highs, a G7 downgrade, or France–Bund 80–150bp / Italy–Bund 150–250bp.
+      red: Failed G7 auction, emergency central-bank purchases, France–Bund > 150bp, or Italy–Bund > 250bp.
+    hints: [Reuters bonds, FT, Investing.com bond spreads]
+
+  - id: global-pmi
+    domain: economy
+    name: Global activity (PMI)
+    tier: daily
+    why: Purchasing-manager surveys are the fastest read on whether the world economy is expanding or contracting.
+    drivers: Orders, inventories, trade policy, energy costs, credit conditions.
+    rubric:
+      green: J.P.Morgan Global Composite PMI > 51.
+      amber: Global composite 49–51, or manufacturing < 49.
+      red: Global composite < 49.
+    hints: [S&P Global PMI releases, J.P.Morgan Global PMI]
+
+# ───────────────────────────── ENERGY & COMMODITIES ─────────────────────────────
+  - id: oil
+    domain: energy
+    name: Oil (Brent)
+    tier: fast
+    metrics: [brent]
+    why: Oil feeds inflation, transport and household budgets; price spikes have preceded most post-war recessions.
+    drivers: OPEC+ output, Middle East supply risk, sanctions, demand, inventories, shipping disruption.
+    rubric:
+      green: Brent < $85 and 1-month change < +15%.
+      amber: Brent $85–110, or 1-month change +15–30%.
+      red: Brent > $110, or 1-month change > +30%, or a major physical supply outage (> 2 mb/d).
+    hints: [Yahoo BZ=F, FRED DCOILBRENTEU, IEA, Reuters energy]
+
+  - id: eu-gas
+    domain: energy
+    name: European gas (TTF)
+    tier: fast
+    metrics: [ttf]
+    why: European gas sets UK and EU power prices and heating bills; Europe has had no cushion since losing Russian pipeline gas.
+    drivers: LNG supply, storage levels, weather, Norwegian outages, Middle East LNG routes.
+    rubric:
+      green: TTF < €40/MWh and EU storage at or above seasonal norm.
+      amber: TTF €40–70/MWh, or storage > 10 points below seasonal norm.
+      red: TTF > €70/MWh, or a major supply cut-off (e.g. Qatar LNG or Norway outage > 1 week).
+    hints: [Yahoo TTF=F, GIE AGSI storage, Reuters]
+
+  - id: chokepoints
+    domain: energy
+    name: Shipping chokepoints
+    tier: fast
+    why: Around 30% of seaborne oil and much container trade passes Hormuz, Bab el-Mandeb/Suez, Panama and Malacca; disruption raises prices worldwide.
+    drivers: Houthi/Iran attacks, war-risk insurance, drought (Panama), naval incidents, piracy.
+    rubric:
+      green: All major chokepoints operating normally.
+      amber: One chokepoint disrupted (attacks, large-scale diversions, draught restrictions).
+      red: Hormuz traffic materially impeded, or any chokepoint closed, or two or more disrupted at once.
+    hints: [Lloyd's List, UKMTO, Reuters shipping, Panama Canal Authority]
+
+  - id: freight
+    domain: energy
+    name: Container freight
+    tier: daily
+    why: Container rates feed through to goods prices months later; spikes are an early inflation and supply-chain warning.
+    drivers: Chokepoint diversions, capacity, demand, port congestion, tariffs front-running.
+    rubric:
+      green: Drewry World Container Index < $2,500/FEU and 1-month change < +30%.
+      amber: WCI $2,500–4,000/FEU, or +30–60% in a month.
+      red: WCI > $4,000/FEU, or > +60% in a month.
+    hints: [Drewry WCI, Freightos FBX]
+
+  - id: food-prices
+    domain: energy
+    name: Global food prices
+    tier: daily
+    why: Food prices drive inflation, hunger and political unrest; poorer countries spend up to half of income on food.
+    drivers: Harvests, weather, fertiliser and energy costs, export bans, conflict in breadbaskets.
+    rubric:
+      green: FAO Food Price Index < 120 and y/y change < +5%.
+      amber: FFPI 120–135, or y/y > +5%, or a major exporter restricts exports.
+      red: FFPI > 135, or multiple major exporters ban exports of a staple.
+    hints: [FAO Food Price Index, AMIS Market Monitor]
+
+  - id: critical-minerals
+    domain: energy
+    name: Critical minerals
+    tier: daily
+    why: Rare earths, gallium, germanium and graphite are chokepoints for chips, EVs and defence — and China dominates processing.
+    drivers: Export controls, trade disputes, mine outages, stockpiling.
+    rubric:
+      green: No new export restrictions in the past month.
+      amber: New export controls announced or licensing slowed.
+      red: Export bans in force that are causing reported production stoppages outside China.
+    hints: [Reuters commodities, Benchmark Minerals, MOFCOM announcements]
+
+# ───────────────────────────── GEOPOLITICS ─────────────────────────────
+  - id: us-china
+    domain: geopolitics
+    name: US–China / Taiwan
+    tier: fast
+    why: The world's two largest economies; a Taiwan crisis would halt most advanced chip supply and risk great-power war.
+    drivers: PLA exercises, tariffs and tech controls, diplomacy, Taiwan politics, South China Sea incidents.
+    rubric:
+      green: Managed relations; dialogue channels open; routine PLA activity.
+      amber: Large-scale PLA exercises around Taiwan, major new sanctions/controls, or a naval/air incident.
+      red: Blockade or 'quarantine' of Taiwan, military clash, or severed diplomatic channels.
+    hints: [Taiwan MND, Reuters, CSIS ChinaPower]
+
+  - id: russia-nato
+    domain: geopolitics
+    name: Russia–NATO
+    tier: fast
+    why: Direct Russia–NATO confrontation is the most likely path to a European war involving the UK.
+    drivers: Airspace and drone incursions, sabotage, Baltic incidents, nuclear signalling, Ukraine war spillover.
+    rubric:
+      green: No notable incidents on NATO territory in the past two weeks.
+      amber: Airspace/drone violations, sabotage attributed to Russia, or explicit threats against members.
+      red: Article 4 consultations, a direct military clash, or an attack on NATO territory.
+    hints: [NATO, ISW, Reuters Europe]
+
+  - id: iran-nuclear
+    domain: geopolitics
+    name: Iran nuclear programme
+    tier: fast
+    why: A nuclear-armed Iran — or strikes to prevent one — could ignite the Gulf and send oil far higher.
+    drivers: Enrichment levels, IAEA access, Israeli/US military posture, snapback sanctions, talks.
+    rubric:
+      green: IAEA access and active diplomacy; no escalation.
+      amber: Enrichment at ≥ 60% or inspector access curtailed, or credible strike threats.
+      red: Strikes on nuclear sites, NPT withdrawal, or evidence of weaponisation.
+    hints: [IAEA, Reuters, Arms Control Association]
+
+  - id: korea
+    domain: geopolitics
+    name: Korean peninsula
+    tier: fast
+    why: North Korea is a nuclear state with ICBMs; tension here involves the US, China, Japan and Russia simultaneously.
+    drivers: Missile tests, Russia–DPRK military cooperation, US–ROK exercises, border incidents.
+    rubric:
+      green: No missile launches in two weeks; no border incidents.
+      amber: Ballistic or cruise missile launches, or troop deployments abroad.
+      red: Nuclear test, ICBM overflight of Japan, or military clash.
+    hints: [Yonhap, 38 North, Reuters]
+
+  - id: trade-war
+    domain: geopolitics
+    name: Trade war & tariffs
+    tier: fast
+    why: Tariffs raise prices, reroute supply chains and slow growth; escalation cycles hurt export-heavy economies like the UK's partners.
+    drivers: US tariff policy, retaliation, court rulings, trade deals, WTO disputes.
+    rubric:
+      green: Tariff regime stable; no new major measures in the past two weeks.
+      amber: New major tariffs announced or threatened between large economies.
+      red: Broad new tariffs in force with retaliation under way, or US average effective tariff rising sharply.
+    hints: [Yale Budget Lab tariff tracker, Reuters trade, WTO]
+
+  - id: sanctions
+    domain: geopolitics
+    name: Sanctions & coercion
+    tier: daily
+    why: Sanctions are now a frontline weapon; secondary sanctions and asset seizures fragment global finance and trade.
+    drivers: Russia/Iran sanctions packages, secondary sanctions, frozen-asset decisions, export controls.
+    rubric:
+      green: No major new sanctions packages this week.
+      amber: Major new packages, secondary-sanction threats on large economies, or asset-seizure moves.
+      red: Major economy cut off from payment systems, or large-scale seizure of sovereign assets.
+    hints: [OFAC, EU Council, UK OFSI, Reuters]
+
+  - id: political-instability
+    domain: geopolitics
+    name: Political instability
+    tier: daily
+    why: Coups, contested elections and constitutional crises in large economies unsettle markets, alliances and policy.
+    drivers: Elections, government collapses, coups, emergency rule, mass protest movements.
+    rubric:
+      green: No G20 government collapse, contested election or coup in the past month.
+      amber: Government collapse or contested election in a G20 country, or a coup anywhere.
+      red: Coup or constitutional crisis in a G20 country, or deadly unrest threatening a G20 government.
+    hints: [Reuters world, International Crisis Group CrisisWatch]
+
+# ───────────────────────────── ARMED CONFLICT ─────────────────────────────
+  - id: russia-ukraine
+    domain: conflict
+    name: Russia–Ukraine
+    tier: fast
+    why: Europe's largest war since 1945 shapes European security, energy, food exports and defence budgets.
+    drivers: Front-line offensives, strike campaigns on energy, Western aid, negotiations, nuclear plant safety.
+    rubric:
+      green: Ceasefire or peace deal holding.
+      amber: Active war at sustained intensity, or a ceasefire under strain.
+      red: Significant escalation — major new offensive, mass-casualty strikes, a nuclear-plant safety incident, or new state involvement.
+    hints: [ISW, Reuters, IAEA (Zaporizhzhia), UN OHCHR]
+
+  - id: middle-east
+    domain: conflict
+    name: Israel, Gaza & region
+    tier: fast
+    why: Conflict involving Israel, Gaza, Lebanon, Iran, Yemen and Syria threatens civilians, oil, shipping and great-power involvement.
+    drivers: Ceasefire status, Iran-linked groups, hostage talks, humanitarian access, US posture.
+    rubric:
+      green: Ceasefires holding across fronts; no state-on-state strikes.
+      amber: Ongoing hostilities on one front, or ceasefire repeatedly violated.
+      red: Multi-front escalation, state-on-state strikes (e.g. Israel–Iran), or mass-casualty events.
+    hints: [Reuters, UN OCHA, ACLED, ISW Iran Update]
+
+  - id: sudan
+    domain: conflict
+    name: Sudan
+    tier: daily
+    why: The world's largest displacement and hunger crisis; regional spillover into Chad, South Sudan and the Red Sea.
+    drivers: SAF–RSF fighting, sieges, foreign arms supplies, aid access, famine.
+    rubric:
+      green: Ceasefire holding and aid flowing.
+      amber: Active war at sustained intensity.
+      red: Major sieges or massacres reported, or famine spreading to new areas.
+    hints: [UN OCHA, ACLED, Sudan War Monitor, Reuters]
+
+  - id: drc-east
+    domain: conflict
+    name: DR Congo (east)
+    tier: daily
+    why: A long war over mineral-rich territory, drawing in Rwanda and threatening a wider Great Lakes conflict.
+    drivers: M23/AFC advances, Rwanda involvement, peace deals, mineral trade.
+    rubric:
+      green: Peace agreements holding; no major offensives.
+      amber: Active fighting or a fragile ceasefire.
+      red: Capture of a major city, or direct interstate fighting.
+    hints: [Reuters Africa, UN MONUSCO, ACLED]
+
+  - id: sahel
+    domain: conflict
+    name: Sahel insurgency
+    tier: daily
+    why: Jihadist groups control growing territory across Mali, Burkina Faso and Niger, driving displacement and coastal-state spillover.
+    drivers: JNIM/IS-Sahel offensives, juntas, Russian forces, blockades, coastal-state attacks.
+    rubric:
+      green: Declining violence trend.
+      amber: Sustained insurgency at current levels.
+      red: Blockade or fall of a capital or major city, or mass-casualty attacks spreading to coastal states.
+    hints: [ACLED, Crisis Group, Reuters Africa]
+
+  - id: myanmar
+    domain: conflict
+    name: Myanmar
+    tier: daily
+    why: A multi-sided civil war affecting 50 million people, with spillover to China, Thailand, India and Bangladesh.
+    drivers: Resistance offensives, junta airstrikes, Chinese mediation, elections, humanitarian access.
+    rubric:
+      green: Nationwide ceasefire holding.
+      amber: Civil war at sustained intensity.
+      red: Major city falls, mass-casualty airstrikes, or cross-border escalation.
+    hints: [Irrawaddy, Reuters Asia, ACLED]
+
+  - id: india-pakistan
+    domain: conflict
+    name: India–Pakistan
+    tier: fast
+    why: Two nuclear-armed neighbours with a history of rapid escalation after terrorist attacks.
+    drivers: Kashmir attacks, Line of Control firing, water disputes (Indus), domestic politics.
+    rubric:
+      green: Ceasefire holding along the Line of Control; no major attacks.
+      amber: Ceasefire violations, a major terrorist attack with blame assigned, or treaty suspensions.
+      red: Cross-border military strikes or mobilisation.
+    hints: [Reuters South Asia, Dawn, The Hindu]
+
+  - id: nuclear-risk
+    domain: conflict
+    name: Nuclear risk
+    tier: fast
+    why: Nuclear use anywhere would be a civilisational shock; arms-control treaties are weaker than at any time since the 1960s.
+    drivers: Threats in active wars, testing, doctrine changes, arms-control collapse, proliferation.
+    rubric:
+      green: No explicit nuclear threats or tests; arms-control dialogue active.
+      amber: Explicit threats, unusual exercises, doctrine changes, or arms-control lapses without replacement.
+      red: A nuclear test, changes in deployment/alert levels, or threatened use in an active conflict.
+    hints: [Bulletin of the Atomic Scientists, Arms Control Association, Reuters]
+
+# ───────────────────────────── WEATHER & HAZARDS ─────────────────────────────
+  - id: atlantic-cyclones
+    domain: hazards
+    name: Atlantic hurricanes
+    tier: fast
+    metrics: [gdacs]
+    why: Atlantic hurricanes hit the US Gulf coast, Caribbean and Central America — and refinery and insurance markets with them.
+    drivers: Sea-surface temperatures, ENSO, wind shear, season timing (Jun–Nov peak Aug–Oct).
+    rubric:
+      green: No hurricane active, or none threatening land within 5 days.
+      amber: Tropical storm or hurricane threatening land within 5 days.
+      red: Category 3+ landfall expected within 72 hours or occurring.
+    hints: [NOAA National Hurricane Center, GDACS]
+
+  - id: other-cyclones
+    domain: hazards
+    name: Pacific & Indian cyclones
+    tier: fast
+    metrics: [gdacs]
+    why: Typhoons and cyclones are the deadliest weather events, threatening densely populated coasts in Asia and the Indian Ocean.
+    drivers: Ocean heat, ENSO phase, season (W Pacific peaks Jul–Oct; N Indian Apr–Jun & Oct–Dec).
+    rubric:
+      green: No GDACS orange/red tropical cyclone alerts.
+      amber: GDACS orange cyclone alert, or a typhoon/cyclone threatening land within 72h.
+      red: GDACS red cyclone alert, or a super-typhoon/severe cyclone landfall on a populated coast.
+    hints: [GDACS, JTWC, JMA, IMD]
+
+  - id: heat
+    domain: hazards
+    name: Extreme heat
+    tier: daily
+    why: Heat is the deadliest weather hazard globally, straining power grids, crops and health systems.
+    drivers: Heat domes, climate warming, season, humidity, urban heat islands.
+    rubric:
+      green: No major heatwaves affecting large populations.
+      amber: Heatwave warnings across a major region, or national temperature records.
+      red: Deadly heatwave with top-tier official warnings across a large population.
+    hints: [WMO, national met services, Reuters]
+
+  - id: wildfires
+    domain: hazards
+    name: Wildfires
+    tier: fast
+    metrics: [gdacs]
+    why: Large fires destroy towns, cause hazardous smoke over continents and drive insurance losses.
+    drivers: Drought, heat, wind, fuel load, ignition, season.
+    rubric:
+      green: No GDACS orange/red wildfire alerts and no major evacuations.
+      amber: Large fires forcing evacuations, or GDACS orange.
+      red: Fires burning into populated areas with fatalities or mass evacuation, or GDACS red.
+    hints: [GDACS, Copernicus EFFIS, NIFC, Reuters]
+
+  - id: floods
+    domain: hazards
+    name: Major floods
+    tier: fast
+    metrics: [gdacs]
+    why: Floods affect more people than any other hazard, displacing millions each year.
+    drivers: Extreme rainfall, monsoons, cyclones, snowmelt, dam failures.
+    rubric:
+      green: No GDACS orange/red flood alerts.
+      amber: GDACS orange flood alert, or a flood displacing > 50,000.
+      red: GDACS red flood alert, or > 100 deaths in a single event.
+    hints: [GDACS, ReliefWeb, Copernicus EMS]
+
+  - id: earthquakes
+    domain: hazards
+    name: Earthquakes & tsunami
+    tier: fast
+    metrics: [quakes]
+    why: Large earthquakes can kill thousands in seconds and disrupt global supply chains (chips, cars).
+    drivers: Tectonics — unpredictable; impact depends on depth, location and building standards.
+    rubric:
+      green: No USGS PAGER orange/red alert and no M7+ in the past 7 days.
+      amber: M7+ in the past 7 days, or PAGER orange, or a tsunami warning issued.
+      red: PAGER red, or a tsunami causing damage.
+    hints: [USGS, GDACS, PTWC]
+
+  - id: volcanic
+    domain: hazards
+    name: Volcanic & aviation ash
+    tier: daily
+    why: Major eruptions ground flights (Iceland 2010) and can cool the climate for years.
+    drivers: Volcanic unrest; impact depends on ash plume height and jet-stream direction.
+    rubric:
+      green: No aviation colour code red; no large eruptions.
+      amber: Aviation colour code orange/red at a volcano near major air routes, or a large eruption.
+      red: Major airspace closures from ash, or a VEI 4+ eruption.
+    hints: [Smithsonian GVP weekly report, VAAC London, GDACS]
+
+  - id: drought
+    domain: hazards
+    name: Drought
+    tier: daily
+    why: Drought slowly destroys harvests, hydropower and river shipping, and drives famine and migration.
+    drivers: Rainfall deficits, heat, ENSO, groundwater depletion.
+    rubric:
+      green: No major breadbasket in severe drought.
+      amber: Severe drought in a major crop region or a major river at record low.
+      red: Drought driving famine conditions or a major exporter's harvest failure.
+    hints: [Global Drought Observatory, GEOGLAM Crop Monitor, US Drought Monitor]
+
+  - id: space-weather
+    domain: hazards
+    name: Space weather
+    tier: fast
+    metrics: [swpc]
+    why: Severe solar storms can disrupt satellites, GPS, HF radio and power grids.
+    drivers: Solar flares and coronal mass ejections; solar cycle 25 is near its peak.
+    rubric:
+      green: NOAA scales G0–G2, S0–S1, R0–R2.
+      amber: G3, S2 or R3.
+      red: G4+, S3+ or R4+.
+    hints: [NOAA SWPC, UK Met Office MOSWOC]
+
+# ───────────────────────────── CLIMATE ─────────────────────────────
+  - id: global-temp
+    domain: climate
+    name: Global temperature
+    tier: daily
+    metrics: [global_temp]
+    why: Global temperature is the master climate variable; each tenth of a degree raises extreme-weather risk.
+    drivers: Greenhouse gases, El Niño/La Niña, aerosols, solar cycle.
+    rubric:
+      green: Daily global anomaly < +1.3°C above pre-industrial (ERA5 vs 1991–2020 + 0.88°C).
+      amber: +1.3°C to +1.6°C.
+      red: "> +1.6°C, or a record high for the calendar date."
+    hints: [Climate Reanalyzer ERA5, Copernicus C3S]
+
+  - id: sea-ice
+    domain: climate
+    name: Polar sea ice
+    tier: daily
+    metrics: [sea_ice]
+    why: Sea ice reflects sunlight and regulates ocean circulation; record lows accelerate warming.
+    drivers: Air and ocean temperatures, winds, season.
+    rubric:
+      green: Arctic and Antarctic extent anomalies both above −1.0 million km² vs 1981–2010.
+      amber: Either pole below −1.0 million km².
+      red: Either pole at a record low for the calendar date.
+    hints: [NSIDC Sea Ice Index]
+
+  - id: co2
+    domain: climate
+    name: Atmospheric CO₂
+    tier: daily
+    metrics: [co2]
+    why: CO₂ concentration is the main long-run driver of warming; the growth rate shows whether emissions cuts are biting.
+    drivers: Fossil emissions, land sinks, El Niño (weakens sinks), wildfires.
+    rubric:
+      green: Year-on-year growth < 2.0 ppm.
+      amber: 2.0–3.0 ppm.
+      red: "> 3.0 ppm."
+    hints: [NOAA GML Mauna Loa]
+
+  - id: enso
+    domain: climate
+    name: El Niño / La Niña
+    tier: daily
+    metrics: [oni]
+    why: ENSO reshapes global weather for a year at a time — droughts, floods, hurricanes and crop yields.
+    drivers: Pacific trade winds and ocean heat content.
+    rubric:
+      green: Oceanic Niño Index between −0.5 and +0.5 (neutral).
+      amber: "|ONI| 0.5–1.5 (weak/moderate event)."
+      red: "|ONI| ≥ 1.5 (strong event)."
+    hints: [NOAA CPC ENSO, BoM]
+
+  - id: coral-bleaching
+    domain: climate
+    name: Coral bleaching
+    tier: daily
+    why: Reefs support a quarter of marine species and coastal economies; mass bleaching is a direct sign of ocean heat stress.
+    drivers: Marine heatwaves, El Niño, warming trend.
+    rubric:
+      green: No global bleaching event in progress.
+      amber: Global bleaching event in progress, or regional mass bleaching.
+      red: Bleaching extent at record levels with active new alerts in the past month.
+    hints: [NOAA Coral Reef Watch]
+
+# ───────────────────────────── GLOBAL HEALTH ─────────────────────────────
+  - id: who-emergencies
+    domain: health
+    name: WHO emergencies
+    tier: fast
+    why: A WHO Public Health Emergency of International Concern (PHEIC) or 'pandemic emergency' is the top official global health alarm.
+    drivers: Outbreak spread, IHR Emergency Committee decisions.
+    rubric:
+      green: No PHEIC in effect other than long-running polio.
+      amber: A PHEIC in effect, or an IHR Emergency Committee convened.
+      red: A new PHEIC declared in the past 30 days, or a pandemic emergency declared.
+    hints: [WHO Disease Outbreak News, WHO IHR Emergency Committees]
+
+  - id: ebola
+    domain: health
+    name: Ebola & haemorrhagic fevers
+    tier: fast
+    why: Ebola, Marburg and similar viruses kill a large share of those infected; outbreaks that reach cities or cross borders can overwhelm health systems.
+    drivers: Surveillance and contact tracing, vaccine availability (none licensed for some strains), conflict, cross-border travel, health-worker infections.
+    rubric:
+      green: No active Ebola/Marburg outbreak, or outbreaks declining with no new countries affected in 60 days.
+      amber: An active outbreak contained within one country, or fewer than 1,000 cases.
+      red: More than 1,000 cases, or spread to a new country in the past 30 days.
+    hints: [WHO Disease Outbreak News, ECDC, Africa CDC]
+
+  - id: h5n1
+    domain: health
+    name: H5N1 bird flu
+    tier: fast
+    why: H5N1 is the flu strain scientists most fear could become a pandemic; it has spread to mammals and dairy cattle.
+    drivers: Human cases, mammal-to-mammal spread, mutations, surveillance.
+    rubric:
+      green: Sporadic animal-to-human cases only.
+      amber: Human clusters under investigation, rising human cases, or new mammalian species spread.
+      red: Confirmed sustained human-to-human transmission.
+    hints: [WHO, CDC, UKHSA, CIDRAP]
+
+  - id: mpox
+    domain: health
+    name: Mpox
+    tier: daily
+    why: Clade I mpox is more severe and has spread beyond Central Africa.
+    drivers: Case growth, vaccine access, travel-linked spread.
+    rubric:
+      green: Cases declining; no PHEIC.
+      amber: Clade I spreading outside Africa or a regional surge.
+      red: PHEIC in effect with accelerating growth.
+    hints: [WHO, Africa CDC, UKHSA]
+
+  - id: measles
+    domain: health
+    name: Measles & vaccine-preventable
+    tier: daily
+    why: Falling vaccination rates are bringing back diseases once eliminated; measles is the canary for the rest.
+    drivers: Vaccine coverage, misinformation, health-system disruption.
+    rubric:
+      green: No large outbreaks in high-income countries.
+      amber: Large outbreaks in high-income countries, or loss of elimination status.
+      red: Multi-country surge with rising deaths, or polio/diphtheria resurgence in high-income countries.
+    hints: [WHO, CDC, UKHSA, ECDC]
+
+  - id: cholera-dengue
+    domain: health
+    name: Cholera & dengue
+    tier: daily
+    why: Climate-sensitive diseases that are hitting record levels and spreading to new regions.
+    drivers: Conflict, floods, heat, water and sanitation, mosquito range expansion.
+    rubric:
+      green: Seasonal levels.
+      amber: Record-level seasons or spread to new countries.
+      red: Large outbreaks with high mortality in conflict zones, or WHO grade 3 emergency.
+    hints: [WHO, ECDC, ReliefWeb]
+
+  - id: novel-outbreaks
+    domain: health
+    name: Novel / unexplained outbreaks
+    tier: fast
+    why: The next pandemic will start as an unexplained cluster; early signals matter.
+    drivers: Surveillance reports, unknown illnesses, new pathogens.
+    rubric:
+      green: No unexplained clusters under international investigation.
+      amber: An unexplained cluster or novel pathogen under investigation.
+      red: A novel pathogen with evidence of human-to-human spread across borders.
+    hints: [WHO DON, ProMED, CIDRAP, BlueDot]
+
+# ───────────────────────────── TECHNOLOGY & CYBER ─────────────────────────────
+  - id: cyber
+    domain: tech
+    name: Major cyber incidents
+    tier: fast
+    why: Ransomware and state hacking now shut down hospitals, retailers, carmakers and airports for weeks.
+    drivers: Ransomware gangs, state actors, zero-days, supply-chain compromises.
+    rubric:
+      green: No major incidents disrupting critical services this week.
+      amber: Ransomware or attack disrupting a large company or critical service, or a mass-exploited zero-day.
+      red: National-scale attack on critical infrastructure (power, health, finance), or a destructive state-attributed attack.
+    hints: [NCSC, CISA KEV, BleepingComputer, The Record]
+
+  - id: outages
+    domain: tech
+    name: Internet & cloud outages
+    tier: fast
+    why: A handful of cloud and CDN providers carry much of the internet; one bad update can halt airlines, banks and payments.
+    drivers: Software updates, configuration errors, attacks, power failures.
+    rubric:
+      green: No major multi-hour outages in the past 48h.
+      amber: A major cloud/CDN/payments outage > 2h in the past 48h.
+      red: Multi-hour global outage hitting payments, airlines or emergency services, ongoing or within 24h.
+    hints: [Cloudflare Radar, provider status pages, Downdetector, The Register]
+
+  - id: cables-gnss
+    domain: tech
+    name: Undersea cables & GPS
+    tier: daily
+    why: Subsea cables carry ~99% of intercontinental data; GPS jamming affects aviation and shipping.
+    drivers: Anchor drags, sabotage, conflict-zone jamming and spoofing.
+    rubric:
+      green: No new cable cuts or major jamming escalations.
+      amber: Cable damage incident, or widespread GNSS interference affecting aviation.
+      red: Multiple cable cuts isolating a region, or confirmed sabotage.
+    hints: [TeleGeography, GPSJam, Reuters]
+
+  - id: semiconductors
+    domain: tech
+    name: Chip supply
+    tier: daily
+    why: Advanced chips underpin everything from phones to AI to weapons; supply is concentrated in Taiwan and Korea.
+    drivers: Export controls, Taiwan risk, fab outages, AI demand, materials.
+    rubric:
+      green: Supply normal; no new major controls.
+      amber: New export controls, shortages reported in key segments, or a fab outage.
+      red: Major disruption to TSMC/Samsung output, or controls halting a major supply chain.
+    hints: [Reuters tech, TrendForce, SEMI]
+
+  - id: ai-governance
+    domain: tech
+    name: AI incidents & governance
+    tier: daily
+    why: Powerful AI systems are being deployed faster than safeguards; serious incidents or governance breakdowns carry systemic risk.
+    drivers: Model releases, misuse incidents, regulation, compute controls, deepfakes in elections.
+    rubric:
+      green: No serious AI-attributed harm events or governance shocks this week.
+      amber: A significant AI misuse incident, major deepfake disruption, or regulatory confrontation.
+      red: AI-enabled attack on critical infrastructure, or AI-attributed mass harm event.
+    hints: [AI Incident Database, Reuters tech, UK AISI]
+
+# ───────────────────────────── HUMANITARIAN ─────────────────────────────
+  - id: famine
+    domain: humanitarian
+    name: Famine
+    tier: daily
+    why: Famine is the most extreme humanitarian failure, almost always man-made by conflict.
+    drivers: War, sieges, aid access, harvest failure, funding cuts.
+    rubric:
+      green: No IPC Phase 5 (Famine) classifications or projections.
+      amber: IPC Phase 5 projected or 'risk of famine' alerts.
+      red: Famine (IPC Phase 5) confirmed in at least one area.
+    hints: [IPC, FEWS NET, WFP]
+
+  - id: displacement
+    domain: humanitarian
+    name: Forced displacement
+    tier: daily
+    why: Over 120 million people are forcibly displaced; new mass displacement drives regional instability and migration politics.
+    drivers: Conflict, disasters, persecution, economic collapse.
+    rubric:
+      green: No new mass displacement events this month.
+      amber: A new event displacing > 500,000 people in a month.
+      red: A new event displacing > 1 million in a month.
+    hints: [UNHCR, IOM DTM, IDMC]
+
+  - id: civil-unrest
+    domain: humanitarian
+    name: Civil unrest
+    tier: daily
+    why: Mass protest and state crackdowns signal political fragility and can topple governments.
+    drivers: Cost of living, elections, corruption, repression, food and fuel prices.
+    rubric:
+      green: No deadly mass unrest in large countries.
+      amber: Significant protests in several countries or deadly unrest in one.
+      red: Deadly nationwide unrest or a state crackdown in a major country.
+    hints: [ACLED, Carnegie Protest Tracker, Reuters]
+
+# ───────────────────────────── UK WATCH ─────────────────────────────
+  - id: uk-rates
+    domain: uk
+    name: UK inflation & rates
+    tier: daily
+    why: UK inflation and the Bank Rate set mortgage, savings and business borrowing costs for the whole country.
+    drivers: Energy prices, wages, services inflation, sterling, global rates.
+    rubric:
+      green: CPI ≤ 2.5% and Bank of England moving gradually or on hold.
+      amber: CPI 2.5–4.0%, or the BoE reversing course.
+      red: CPI > 4.0%, or an emergency BoE move.
+    hints: [ONS CPI, Bank of England]
+
+  - id: gilts
+    domain: uk
+    name: Gilt market
+    tier: fast
+    why: Gilt yields set UK mortgage rates and the government's borrowing costs; the 2022 LDI crisis showed how fast it can break.
+    drivers: Fiscal credibility, BoE policy, inflation, global bond moves, pension-fund flows.
+    rubric:
+      green: 10y gilt moved < 40bp in a month and auctions orderly.
+      amber: 30y gilt at multi-decade highs, or 10y moved 40–75bp in a month, or a weak auction.
+      red: BoE intervention, or 10y moved > 75bp in a month.
+    hints: [Bank of England, DMO, FT, Reuters]
+
+  - id: uk-energy-cap
+    domain: uk
+    name: UK energy price cap
+    tier: daily
+    why: The Ofgem cap sets bills for most UK households — a direct cost-of-living signal.
+    drivers: Wholesale gas and power prices, network costs, policy levies.
+    rubric:
+      green: Typical dual-fuel cap < £1,700/yr and next forecast change < +5%.
+      amber: Cap £1,700–2,200, or forecast rise ≥ 5%.
+      red: Cap > £2,200, or forecast rise ≥ 20%.
+    hints: [Ofgem, Cornwall Insight]
+
+  - id: uk-weather
+    domain: uk
+    name: UK weather warnings
+    tier: fast
+    metrics: [metoffice]
+    why: Met Office warnings are the official signal for disruption to travel, power and safety in the UK.
+    drivers: Storms, heavy rain, snow and ice, heat, fog, thunderstorms.
+    rubric:
+      green: No warnings, or only localised yellow warnings.
+      amber: Widespread yellow or any amber warning in force.
+      red: Any red warning in force.
+    hints: [Met Office warnings, Environment Agency flood warnings]
+
+  - id: nhs-pressure
+    domain: uk
+    name: NHS & respiratory
+    tier: daily
+    why: Winter respiratory waves and NHS capacity directly affect access to care for everyone in the UK.
+    drivers: Flu, COVID, RSV, norovirus, staffing, strikes.
+    rubric:
+      green: Respiratory activity at baseline and no widespread critical incidents.
+      amber: Respiratory activity above baseline and rising, or several trusts in critical incidents.
+      red: High or very high flu activity nationally, or widespread critical incidents.
+    hints: [UKHSA surveillance reports, NHS England winter sitreps]
+
+  - id: uk-threat-level
+    domain: uk
+    name: UK terrorism threat level
+    tier: daily
+    why: The official MI5 assessment of the likelihood of a terrorist attack in the UK.
+    drivers: Intelligence assessment by JTAC.
+    rubric:
+      green: Low or Moderate.
+      amber: Substantial.
+      red: Severe or Critical.
+    hints: [MI5 threat levels]
+
+  - id: uk-disruption
+    domain: uk
+    name: UK strikes & disruption
+    tier: daily
+    why: Strikes and infrastructure failures in rail, health, ports and power disrupt daily life and the economy.
+    drivers: Pay disputes, infrastructure failures, cyber incidents, weather.
+    rubric:
+      green: No national-scale strikes or disruption this week.
+      amber: National strike in one sector or major infrastructure disruption.
+      red: Multiple simultaneous national strikes, or nationwide infrastructure failure.
+    hints: [BBC News, National Rail, gov.uk]

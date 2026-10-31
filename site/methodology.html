@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Canary works</title>
+<meta name="description" content="How Canary rates about 70 global risk signals: the rubrics, data sources, update schedule and limits of an AI-assessed status board.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .doc { max-width: 760px; margin: 0 auto; padding: 28px 24px 40px; }
+  .doc h1 { font: 600 40px/1.1 var(--serif); letter-spacing: -.015em; margin: 0 0 14px; }
+  .doc h2 { font: 600 24px/1.2 var(--serif); margin: 36px 0 8px; padding-top: 10px; border-top: 2px solid var(--rule-strong); }
+  .doc h3 { font: 600 18px/1.25 var(--serif); margin: 24px 0 6px; }
+  .doc p, .doc li { font: 400 17.5px/1.6 var(--serif); }
+  .doc .lede { font-size: 21px; line-height: 1.5; color: var(--ink-2); }
+  .doc ul { padding-left: 20px; }
+  .levels { display: grid; gap: 10px; margin: 14px 0; }
+  .levels div { display: grid; grid-template-columns: 90px 1fr; gap: 12px; align-items: baseline; font: 400 16px/1.5 var(--sans); }
+  .levels b { display: inline-flex; gap: 7px; align-items: center; }
+  .rub { margin: 0 0 18px; border-bottom: 1px solid var(--rule); padding-bottom: 14px; }
+  .rub h4 { font: 600 15px/1.3 var(--sans); margin: 0 0 4px; display: flex; justify-content: space-between; gap: 10px; }
+  .rub h4 span { font-weight: 400; color: var(--muted); font-size: 13px; }
+  .rub p { font: 400 14.5px/1.45 var(--sans) !important; margin: 0 0 6px; color: var(--ink-2); }
+  .rub ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 3px; }
+  .rub li { font: 400 14px/1.45 var(--sans) !important; display: grid; grid-template-columns: 70px 1fr; gap: 8px; }
+  .rub li b { display: inline-flex; gap: 6px; align-items: center; font-weight: 600; }
+  @media (max-width: 640px) { .doc { padding: 20px 16px 32px; } .doc h1 { font-size: 32px; } }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="brand" href="./" aria-label="Canary home">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M7 20c0-6 4.5-11 10.5-11 2.2 0 3.6.9 4.5 2.2l4 .3-3 2.2c.4 4.9-2.6 9.3-8 10.3l-2 4-1.6-3.6C9 24 7 22.4 7 20Z" fill="currentColor"/><circle cx="20" cy="12.6" r="1.1" fill="var(--paper)"/></svg>
+      <span>Canary</span>
+    </a>
+    <p class="tagline">The state of the world, checked four times a day.</p>
+    <nav class="mast-nav" aria-label="Site"><a href="./">Back to the board</a><a href="feed.xml">Feed</a></nav>
+  </div>
+</header>
+
+<main class="doc">
+  <h1>How Canary works</h1>
+  <p class="lede">Miners once carried canaries underground because the birds reacted to danger before people could sense it. Canary does the same job for the world: one page that shows which risks deserve attention right now, and why.</p>
+
+  <h2>What the colours mean</h2>
+  <p>Each colour is an <em>attention level</em>. It describes conditions as they are now. It is not a forecast, a probability, or advice.</p>
+  <div class="levels">
+    <div><b><i class="shape s-green"></i>Normal</b><span>Within normal range. Background noise; nothing to watch.</span></div>
+    <div><b><i class="shape s-amber"></i>Watch</b><span>Elevated or deteriorating. Worth keeping an eye on.</span></div>
+    <div><b><i class="shape s-red"></i>Alert</b><span>An acute or material risk is happening now. If it could affect you, look into it.</span></div>
+    <div><b><i class="shape s-stale"></i>Stale</b><span>Not verified recently: 14 hours for fast-moving signals, 36 hours for daily ones. The page flags this automatically.</span></div>
+  </div>
+  <p>The arrow beside each signal shows the direction of <em>risk</em> over roughly the past week, not the direction of the number. ↑ means worsening, → stable and ↓ easing.</p>
+  <p>A long-running situation at steady intensity, such as an ongoing war, is usually rated Watch. Alert is reserved for significant escalation or acute events, as each rubric defines.</p>
+
+  <h2>How each signal is assessed</h2>
+  <p>Four times a day, at about 05:40, 11:40, 17:40 and 23:40 UK time, an automated run does the following:</p>
+  <ul>
+    <li><strong>Fetches hard numbers</strong> from open data: market prices and indices, US Federal Reserve data (FRED), USGS earthquakes, the UN/EC disaster alert system (GDACS), NOAA space weather, CO₂ and El Niño data, NSIDC sea ice, ERA5 global temperature and Met Office warnings.</li>
+    <li><strong>Applies the published rubric</strong> for each signal. Where a rubric has numeric thresholds, the number sets a floor: news can raise a status but cannot lower it below what the data says.</li>
+    <li><strong>Researches the qualitative signals</strong> (conflicts, diplomacy, outbreaks, cyber incidents) from recent reporting by established outlets and official bodies. The AI model doing this is Anthropic's Claude, working to the editorial rules in the project repository.</li>
+    <li><strong>Writes short context</strong> for each signal (why it's at this level and what it means for you) and cites its sources.</li>
+    <li><strong>Validates everything</strong> before publishing. A run that fails the checks publishes nothing, and the board keeps its last good state.</li>
+  </ul>
+  <p>Slower-moving signals, such as climate indicators, food prices and humanitarian classifications, are re-assessed once a day.</p>
+
+  <h3>Keeping the ratings stable</h3>
+  <ul>
+    <li><strong>Hysteresis.</strong> To step down a level, a number must clear the threshold by a 10% margin. For example, the VIX must fall below 27, not just below 30, to leave Alert. This stops statuses flickering.</li>
+    <li><strong>One step at a time.</strong> A signal cannot jump straight from Normal to Alert, or back, in one run unless a hard threshold is crossed or an official trigger fires. Any exception carries a written note.</li>
+    <li><strong>Every change is logged</strong> with a reason, and published in the <a href="feed.xml">feed</a>.</li>
+  </ul>
+
+  <h2>The World State index</h2>
+  <p>The headline number from 0 to 100 summarises the board. Each signal scores 0 for Normal, 1 for Watch and 2 for Alert. Signals are averaged within each domain, so a domain with more signals doesn't count for more. Domains are then combined with these weights: geopolitics and armed conflict 1.2, global health 1.1, markets, economy, energy and hazards 1.0, technology, humanitarian and UK 0.8, and climate 0.6 (climate moves slowly and is already reflected in the hazards domain). A score of 0 would mean every signal is Normal; 100 would mean every signal is on Alert.</p>
+  <div class="levels">
+    <div><b><i class="shape s-green"></i>0–24</b><span>Calm</span></div>
+    <div><b><i class="shape s-amber"></i>25–39</b><span>Unsettled</span></div>
+    <div><b><i class="shape s-amber"></i>40–59</b><span>Strained</span></div>
+    <div><b><i class="shape s-red"></i>60–100</b><span>Severe</span></div>
+  </div>
+
+  <h2>What Canary is not</h2>
+  <ul>
+    <li><strong>Not advice.</strong> Nothing here is financial, investment, medical, legal or safety advice. Market signals describe conditions; they are not trading signals. Market stress indicators are poor at timing decisions.</li>
+    <li><strong>Not a forecast.</strong> Canary describes the present, not what will happen.</li>
+    <li><strong>Not official.</strong> For anything affecting your safety, follow official guidance: the Met Office, FCDO travel advice, UKHSA and NHS, or your local emergency services.</li>
+    <li><strong>Not infallible.</strong> An AI model makes the qualitative judgements. It works to strict rules and cites sources, but it can be wrong. Check the sources on any signal that matters to you.</li>
+  </ul>
+
+  <h2>Every signal and its rubric</h2>
+  <p>These criteria are applied on every run. Numeric thresholds are binding; written criteria guide judgement.</p>
+  <div id="rubrics">Loading…</div>
+</main>
+
+<footer class="foot">
+  <p>Canary is an independent project. Corrections and suggestions are welcome via the project repository.</p>
+</footer>
+
+<script>
+(async () => {
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const el = document.getElementById("rubrics");
+  try {
+    const cat = await (await fetch("data/catalogue.json", { cache: "no-cache" })).json();
+    const L = { green: "Normal", amber: "Watch", red: "Alert" };
+    el.innerHTML = cat.domains.map((d) => `<h3>${esc(d.name)}</h3>` + cat.signals.filter((s) => s.domain === d.id).map((s) => `
+      <div class="rub" id="r-${s.id}"><h4>${esc(s.name)}<span>${s.tier === "daily" ? "Daily" : "Every run"}</span></h4>
+      <p>${esc(s.why)}</p>
+      <ul>${["green", "amber", "red"].map((k) => `<li><b><i class="shape s-${k}"></i>${L[k]}</b><span>${esc(s.rubric[k])}</span></li>`).join("")}</ul></div>`).join("")).join("");
+  } catch {
+    el.textContent = "The rubric list couldn't load. Refresh the page to try again.";
+  }
+})();
+</script>
+</body>
+</html>

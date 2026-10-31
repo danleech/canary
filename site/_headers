@@ -1,0 +1,9 @@
+/data/*
+  Cache-Control: public, max-age=300
+  Access-Control-Allow-Origin: *
+/feed.xml
+  Content-Type: application/atom+xml; charset=utf-8
+  Cache-Control: public, max-age=600
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin

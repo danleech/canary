@@ -1,0 +1,47 @@
+name: metrics
+
+on:
+  schedule:
+    # ~30 min before each Claude assessment run (05:40 / 11:40 / 17:40 / 23:40 UK)
+    - cron: "10 5,11,17,23 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["site/data/**", "signals/**", "scripts/**"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: canary-data
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install pyyaml
+      - run: python scripts/fetch_metrics.py
+      - run: python scripts/canary.py check
+      - name: Commit metrics
+        run: |
+          git config user.name "canary-bot"
+          git config user.email "canary-bot@users.noreply.github.com"
+          git add site/data/metrics.json
+          git diff --cached --quiet && exit 0
+          git commit -m "metrics: $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase && git push
+
+  validate:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install pyyaml
+      - run: python scripts/canary.py check
