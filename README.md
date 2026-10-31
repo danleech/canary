@@ -57,7 +57,7 @@ See [`CHARTER.md`](CHARTER.md) for the scope and design decisions, and [`site/me
    - **Build command:** leave empty
    - **Build output directory:** `site`
 4. Click **Save and deploy**. The site appears at `https://<project>.pages.dev`.
-5. Update `SITE_URL` in `scripts/canary.py`. It's used for feed links.
+5. `SITE_URL` in `scripts/canary.py` is set to https://canary-board.pages.dev; change it if you add a custom domain.
 6. Later, add a custom domain under **Custom domains**.
 
 ### 3. Connect GitHub to Claude

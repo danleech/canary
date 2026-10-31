@@ -28,7 +28,7 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "site" / "data"
 CATALOGUE = ROOT / "signals" / "catalogue.yaml"
-SITE_URL = "https://canary.pages.dev"  # update when the custom domain is live
+SITE_URL = "https://canary-board.pages.dev"  # update when the custom domain is live
 
 LEVEL = {"green": 0, "amber": 1, "red": 2}
 NAME = {0: "green", 1: "amber", 2: "red"}

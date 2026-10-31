@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Canary — status changes</title>
-  <link href="https://canary.pages.dev/"/>
-  <link rel="self" href="https://canary.pages.dev/feed.xml"/>
-  <id>https://canary.pages.dev/</id>
+  <link href="https://canary-board.pages.dev/"/>
+  <link rel="self" href="https://canary-board.pages.dev/feed.xml"/>
+  <id>https://canary-board.pages.dev/</id>
   <updated>2026-10-31T11:44:16Z</updated>
   <author><name>Canary</name></author>
 
