@@ -20,7 +20,7 @@
    ],
    "value": "VIX 19.4, S&P -3.0%",
    "value_num": 19.42,
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "ftse": {
@@ -38,7 +38,7 @@
    ],
    "value": "10,730, -1.7% from high",
    "value_num": 10729.78,
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "bond-volatility": {
@@ -66,7 +66,7 @@
    ],
    "value": "MOVE 100, 10y 4.93%",
    "value_num": 100.198,
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "credit-spreads": {
@@ -84,7 +84,7 @@
    ],
    "value": "HY OAS 3.26%",
    "value_num": 3.26,
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "dollar": {
@@ -102,7 +102,7 @@
    ],
    "value": "DXY 102.0, 3m +2.1%",
    "value_num": 101.964,
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "banking-stress": {
@@ -125,7 +125,7 @@
    ],
    "value": "STLFSI -0.58",
    "value_num": -0.5837,
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "gold": {
@@ -143,14 +143,14 @@
    ],
    "value": "$3,899, 3m -6.1%",
    "value_num": 3898.9,
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "crypto": {
    "status": "green",
    "trend": "flat",
    "summary": "Bitcoin 11% below its high; no stablecoin or exchange stress reported",
-   "state": "Bitcoin traded around $77,400 on 31 Oct, about 11% below its 52-week high and well inside the 25% Watch line. No major stablecoin de-peg or exchange failure has been reported.",
+   "state": "Bitcoin traded around $77,350 on 31 Oct, about 11% below its 52-week high and well inside the 25% Watch line. No major stablecoin de-peg or exchange failure has been reported.",
    "for_you": "Crypto markets are not currently a source of wider financial stress.",
    "sources": [
     {
@@ -159,9 +159,9 @@
      "date": "2026-10-31"
     }
    ],
-   "value": "BTC $77,370, -11% from high",
+   "value": "BTC $77,349, -11% from high",
    "value_num": 77268.65,
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "us-recession": {
@@ -184,7 +184,7 @@
    ],
    "value": "Sahm 0.00, 10y–2y +0.38",
    "value_num": 0.0,
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "us-inflation": {
@@ -333,7 +333,7 @@
    ],
    "value": "$113.4, 1m +11%",
    "value_num": 113.43,
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "eu-gas": {
@@ -356,7 +356,7 @@
    ],
    "value": "€104/MWh",
    "value_num": 103.944,
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "chokepoints": {
@@ -382,7 +382,7 @@
      "date": "2026-10-29"
     }
    ],
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "freight": {
@@ -457,7 +457,7 @@
      "url": "https://www.armscontrol.org/act/2026-10/focus/trump-xi-putin-failing-tackle-nuclear-threat"
     }
    ],
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "russia-nato": {
@@ -477,7 +477,7 @@
      "url": "https://cepa.org/article/russian-strikes-rise-across-natos-eastern-flank/"
     }
    ],
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "iran-nuclear": {
@@ -498,7 +498,7 @@
      "date": "2026-10-24"
     }
    ],
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "korea": {
@@ -519,7 +519,7 @@
      "date": "2026-10-29"
     }
    ],
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "trade-war": {
@@ -539,7 +539,7 @@
      "url": "https://www.debevoise.com/insights/publications/2026/10/lindsey-graham-act-expands-us-sanctions-and-tariff"
     }
    ],
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "sanctions": {
@@ -596,7 +596,7 @@
      "date": "2026-10-29"
     }
    ],
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "middle-east": {
@@ -622,7 +622,7 @@
      "date": "2026-10-10"
     }
    ],
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "sudan": {
@@ -724,7 +724,7 @@
      "url": "https://www.ces-intelligence.com/analysis/india-pakistan-border-tensions-punjab-2026-daily-signal"
     }
    ],
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "nuclear-risk": {
@@ -739,7 +739,7 @@
      "url": "https://www.armscontrol.org/act/2026-10/focus/trump-xi-putin-failing-tackle-nuclear-threat"
     }
    ],
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "atlantic-cyclones": {
@@ -755,7 +755,7 @@
      "date": "2026-10-30"
     }
    ],
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "other-cyclones": {
@@ -776,7 +776,7 @@
      "date": "2026-10-29"
     }
    ],
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "heat": {
@@ -818,7 +818,7 @@
      "date": "2026-10-17"
     }
    ],
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "floods": {
@@ -839,7 +839,7 @@
      "date": "2026-10-31"
     }
    ],
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "earthquakes": {
@@ -862,7 +862,7 @@
    ],
    "value": "Max M6.5, 5× M6+ (7d)",
    "value_num": 6.5,
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "volcanic": {
@@ -921,7 +921,7 @@
    ],
    "value": "G0 S0 R0",
    "value_num": 0,
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "global-temp": {
@@ -1039,7 +1039,7 @@
      "date": "2026-10-27"
     }
    ],
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "ebola": {
@@ -1059,7 +1059,7 @@
      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON622"
     }
    ],
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "h5n1": {
@@ -1075,7 +1075,7 @@
      "date": "2026-10-07"
     }
    ],
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "mpox": {
@@ -1150,7 +1150,7 @@
      "date": "2026-10-10"
     }
    ],
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "cyber": {
@@ -1171,7 +1171,7 @@
      "date": "2026-10-27"
     }
    ],
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "outages": {
@@ -1187,7 +1187,7 @@
      "date": "2026-10-27"
     }
    ],
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "cables-gnss": {
@@ -1338,7 +1338,7 @@
      "date": "2026-10-30"
     }
    ],
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "uk-energy-cap": {
@@ -1375,7 +1375,7 @@
     }
    ],
    "value": "No warnings",
-   "checked_at": "2026-10-31T11:43:28Z",
+   "checked_at": "2026-10-31T11:44:16Z",
    "changed_at": "2026-10-31T11:26:06Z"
   },
   "nhs-pressure": {
@@ -1436,7 +1436,7 @@
   }
  },
  "headline": "The Iran war's grip on Hormuz drives the board: oil above $110, European gas near three-year highs and record-low EU gas storage heading into winter. Ebola has spread beyond DR Congo, and the UK terrorism threat level is Severe.",
- "generated_at": "2026-10-31T11:43:28Z",
+ "generated_at": "2026-10-31T11:44:16Z",
  "world": {
   "score": 42,
   "band": "Strained",
