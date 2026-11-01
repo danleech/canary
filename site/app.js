@@ -213,7 +213,7 @@
             <thead><tr>
               <th class="cds--table-expand w-expand" scope="col"><span class="cds--visually-hidden">Details</span></th>
               <th scope="col" class="w-status"><span class="cds--visually-hidden">Status</span></th>
-              <th scope="col" class="w-signal"><div class="cds--table-header-label">Signal and reading</div></th>
+              <th scope="col" class="w-signal"><span class="cds--visually-hidden">Signal and reading</span></th>
               <th scope="col" class="w-trend"><span class="cds--visually-hidden">Trend</span></th>
             </tr></thead>
             <tbody>${rows}</tbody>
