@@ -810,7 +810,7 @@ def board_html(m: Model) -> str:
         tables.append((len(sigs) + 3, f"""<div class="cds--data-table-container cnry-domain-table" id="domain-{d['id']}" data-domain="{d['id']}" data-weight="{len(sigs) + 3}">
 <div class="cds--data-table-header"><h3 class="cds--data-table-header__title">{e(d['name'])}</h3><p class="cds--data-table-header__description">{tally}</p></div>
 <div class="cds--data-table-content"><table class="cds--data-table cds--data-table--sm cnry-dt" aria-label="{e(d['name'])} signals">
-<thead><tr><th class="cds--table-expand w-expand" scope="col"><span class="cds--visually-hidden">Details</span></th><th scope="col" class="w-status"><span class="cds--visually-hidden">Status</span></th><th scope="col" class="w-signal"><div class="cds--table-header-label">Signal and reading</div></th><th scope="col" class="w-trend"><span class="cds--visually-hidden">Trend</span></th></tr></thead>
+<thead><tr><th class="cds--table-expand w-expand" scope="col"><span class="cds--visually-hidden">Details</span></th><th scope="col" class="w-status"><span class="cds--visually-hidden">Status</span></th><th scope="col" class="w-signal"><span class="cds--visually-hidden">Signal and reading</span></th><th scope="col" class="w-trend"><span class="cds--visually-hidden">Trend</span></th></tr></thead>
 <tbody>{''.join(rows)}</tbody></table></div></div>"""))
     groups = balance([w for w, _ in tables], 3)
     return "".join('<div class="cnry-col">' + "".join(tables[i][1] for i in grp) + "</div>" for grp in groups)
