@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Canary — status changes</title>
-  <link href="https://canary-board.pages.dev/"/>
-  <link rel="self" href="https://canary-board.pages.dev/feed.xml"/>
-  <id>https://canary-board.pages.dev/</id>
+  <link href="https://canary.danleech.com/"/>
+  <link rel="self" href="https://canary.danleech.com/feed.xml"/>
+  <id>https://canary.danleech.com/</id>
   <updated>2026-11-01T11:52:42Z</updated>
   <author><name>Canary</name></author>
   <entry>
     <title>UK weather warnings: Watch → Normal</title>
     <id>tag:canary,2026-11-01:uk-weather:2026-11-01T11:52:42Z</id>
     <updated>2026-11-01T11:52:42Z</updated>
-    <link href="https://canary-board.pages.dev/#uk-weather"/>
+    <link href="https://canary.danleech.com/#uk-weather"/>
     <summary>No Met Office weather warnings in force</summary>
   </entry>
   <entry>
     <title>Atmospheric CO₂: Normal → Watch</title>
     <id>tag:canary,2026-11-01:co2:2026-11-01T11:52:42Z</id>
     <updated>2026-11-01T11:52:42Z</updated>
-    <link href="https://canary-board.pages.dev/#co2"/>
+    <link href="https://canary.danleech.com/#co2"/>
     <summary>CO₂ growth reaches 2 ppm a year as El Niño weakens carbon sinks</summary>
   </entry>
   <entry>
     <title>Pacific &amp; Indian cyclones: Normal → Alert</title>
     <id>tag:canary,2026-11-01:other-cyclones:2026-11-01T11:52:42Z</id>
     <updated>2026-11-01T11:52:42Z</updated>
-    <link href="https://canary-board.pages.dev/#other-cyclones"/>
+    <link href="https://canary.danleech.com/#other-cyclones"/>
     <summary>GDACS red alert as Cyclone Murasu heads for Andhra Pradesh landfall on 3 Nov</summary>
   </entry>
   <entry>
     <title>UK weather warnings: Normal → Watch</title>
     <id>tag:canary,2026-10-31:uk-weather:2026-10-31T23:53:37Z</id>
     <updated>2026-10-31T23:53:37Z</updated>
-    <link href="https://canary-board.pages.dev/#uk-weather"/>
+    <link href="https://canary.danleech.com/#uk-weather"/>
     <summary>Yellow fog warnings across most of England and Wales for 1 Nov</summary>
   </entry>
 </feed>

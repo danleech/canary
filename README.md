@@ -58,7 +58,7 @@ See [`CHARTER.md`](CHARTER.md) for the scope and design decisions, and [`site/me
    - **Build command:** leave empty
    - **Build output directory:** `site`
 4. Click **Save and deploy**. The site appears at `https://<project>.pages.dev`.
-5. `SITE_URL` in `scripts/canary.py` is set to https://canary-board.pages.dev; change it if you add a custom domain.
+5. The site is live at **https://canary.danleech.com** (Cloudflare custom domain: CNAME `canary` → `canary-board.pages.dev`, certificate managed by Cloudflare). `SITE_URL` in `scripts/canary.py` matches it, for the feed links.
 6. Later, add a custom domain under **Custom domains**.
 
 ### 3. Connect GitHub to Claude
