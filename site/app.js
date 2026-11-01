@@ -120,11 +120,12 @@
     $('#kpi-bar').style.transform = `scaleX(${(w.score || 0) / 100})`;
 
     const counts = { red: 0, amber: 0, green: 0 };
-    let stale = 0, oldest = null;
+    let stale = 0, pending = 0, oldest = null;
     D.cat.signals.forEach((s) => {
       const st = effective(s);
       if (counts[st] !== undefined) counts[st]++;
       if (st === 'stale') stale++;
+      if (st === 'pending') pending++;
       const c = D.status.signals[s.id];
       if (c && (!oldest || c.checked_at < oldest)) oldest = c.checked_at;
     });
@@ -132,7 +133,7 @@
     $('#kpi-amber').textContent = counts.amber;
     $('#kpi-green').textContent = counts.green;
 
-    $('#kpi-fresh').textContent = stale ? `${stale} stale` : 'All current';
+    $('#kpi-fresh').textContent = [stale && `${stale} stale`, pending && `${pending} pending`].filter(Boolean).join(', ') || 'All current';
     $('#kpi-fresh-hint').textContent = oldest ? `Oldest check ${ago(oldest, true)}` : '';
   }
 
@@ -142,7 +143,7 @@
       const score = (D.status.world?.by_domain || {})[d.id];
       const cells = sigs.map((s) => { const st = effective(s); return `<span class="cnry-icon cnry-st--${st}" title="${esc(s.name)}: ${LABEL[st]}">${icon(ICON_FOR[st])}</span>`; }).join('');
       const n = sigs.reduce((a, s) => { const st = effective(s); a[st] = (a[st] || 0) + 1; return a; }, {});
-      const sr = ['red', 'amber', 'green'].filter((k) => n[k]).map((k) => `${n[k]} ${LABEL[k]}`).join(', ');
+      const sr = ['red', 'amber', 'green', 'stale', 'pending'].filter((k) => n[k]).map((k) => `${n[k]} ${LABEL[k]}`).join(', ');
       return `<li class="cnry-domain"><a href="#domain-${d.id}" aria-label="${esc(d.name)}: score ${score ?? 'not available'}; ${sr}">
         <span class="cnry-domain__name">${esc(d.name)}</span>
         <span class="cnry-domain__score">${score ?? '–'}<small>/100</small></span>
@@ -175,7 +176,7 @@
     }).join('') : `<tr class="cnry-empty-row"><td colspan="3">No status changes in the last 7 days.</td></tr>`;
     $('#changes-more').innerHTML = all.length > MAX
       ? `${all.length - MAX} older change${all.length - MAX === 1 ? '' : 's'} not shown. <a class="cds--link cds--link--sm" href="feed.xml">Full history in the status change feed</a>`
-      : `<a class="cds--link cds--link--sm" href="feed.xml">Subscribe to status changes</a>`;
+      : `<a class="cds--link cds--link--sm" href="feed.xml">Subscribe to status changes</a> · <a class="cds--link cds--link--sm" href="/changes.md">Plain text</a>`;
   }
 
 
@@ -185,7 +186,7 @@
     const tables = D.cat.domains.map((d) => {
       const sigs = D.cat.signals.filter((s) => s.domain === d.id);
       const n = sigs.reduce((a, s) => { const st = effective(s); a[st] = (a[st] || 0) + 1; return a; }, {});
-      const tally = ['red', 'amber', 'green', 'stale'].filter((k) => n[k])
+      const tally = ['red', 'amber', 'green', 'stale', 'pending'].filter((k) => n[k])
         .map((k) => `<span class="cnry-tally">${statusIcon(k)}${n[k]} ${LABEL[k]}</span>`).join('');
       const rows = sigs.map((s) => {
         const c = D.status.signals[s.id];
@@ -266,7 +267,9 @@
     }
     left.push(`<div class="cnry-detail__block cnry-detail__muted"><h3>Why it matters</h3><p>${esc(s.why)}</p></div>`);
     left.push(`<div class="cnry-detail__block cnry-detail__muted"><h3>What moves it</h3><p>${esc(s.drivers)}</p></div>`);
-    left.push(`<div class="cnry-detail__meta">${tag(dom?.name || '', 'cool-gray')}${tag(s.tier === 'daily' ? 'Checked daily' : 'Checked every run')}${c ? `<span class="cnry-meta-text">Checked ${esc(fmtUK.format(new Date(c.checked_at)))}. At this level since ${esc(fmtUK.format(new Date(c.changed_at)))}.</span>` : ''}</div>`);
+    const horizon = { chronic: 'Chronic', seasonal: 'Seasonal' }[s.horizon];
+    left.push(`<div class="cnry-detail__meta">${tag(dom?.name || '', 'cool-gray')}${tag(s.tier === 'daily' ? 'Checked daily' : 'Checked every run')}${horizon ? tag(horizon, 'warm-gray') : ''}${c ? `<span class="cnry-meta-text">Checked ${esc(fmtUK.format(new Date(c.checked_at)))}. At this level since ${esc(fmtUK.format(new Date(c.changed_at)))}.</span>` : ''}</div>`);
+    left.push(`<p class="cnry-meta-text cnry-permalinks"><a class="cds--link cds--link--sm" href="/s/${s.id}">Permalink</a> · <a class="cds--link cds--link--sm" href="/s/${s.id}.md">Markdown</a> · <a class="cds--link cds--link--sm" href="/s/${s.id}.json">JSON</a></p>`);
     if (c?.override_reason) left.push(`<p class="cnry-meta-text">Assessor note: ${esc(c.override_reason)}</p>`);
 
     const right = [];
@@ -274,7 +277,8 @@
     if (hist.length > 1) {
       right.push(`<div class="cnry-detail__block"><h3>Status at each of the last ${hist.length} checks</h3><div class="cnry-hist" role="img" aria-label="Status history">${hist.map((p) => `<i class="${p[1]}" title="${esc(fmtUK.format(new Date(p[0])))}"></i>`).join('')}</div></div>`);
     }
-    right.push(`<div class="cnry-detail__block"><h3>How it's rated</h3>
+    const hit = c && c.rubric_hit && c.rubric_hit !== s.rubric[c.status] ? `<p class="cnry-meta-text cnry-rubric-hit">Rated on: ${esc(c.rubric_hit)}</p>` : '';
+    right.push(`<div class="cnry-detail__block"><h3>How it's rated</h3>${hit}
       <div class="cds--structured-list cds--structured-list--condensed cds--structured-list--flush" role="table" aria-label="Rating criteria">
         <div class="cds--structured-list-tbody" role="rowgroup">
           ${['red', 'amber', 'green'].map((k) => `<div class="cds--structured-list-row${c && c.status === k ? ' is-current' : ''}" role="row">
@@ -434,6 +438,7 @@
       const id = location.hash.slice(1);
       if (id && document.getElementById(id)?.matches('tr')) goTo(id, false);
     } catch (e) {
+      $('#error-text').textContent = "Canary couldn't load its latest data, so the board below may be out of date. Refresh the page; if this persists, an update may still be deploying.";
       $('#error').hidden = false;
       console.error(e);
     }

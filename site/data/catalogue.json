@@ -180,17 +180,19 @@
    "name": "Banking system stress",
    "tier": "fast",
    "metrics": [
-    "stlfsi"
+    "stlfsi",
+    "ciss"
    ],
    "why": "Bank failures turn market losses into credit crunches; 2008 and 2023 both began as 'contained' bank problems.",
    "drivers": "Rate shocks to bond portfolios, commercial property losses, deposit flight, private-credit links.",
    "rubric": {
-    "green": "St Louis Fed Financial Stress Index < 0 and no notable bank failures or rescues.",
-    "amber": "STLFSI 0–1.5, or a mid-sized bank failure/rescue, or a large bank under visible funding pressure.",
-    "red": "STLFSI > 1.5, or a systemically important bank fails or needs rescue, or emergency central-bank facilities launched."
+    "green": "St Louis Fed Financial Stress Index < 0, ECB CISS < 0.25, and no notable bank failures or rescues.",
+    "amber": "STLFSI 0–1.5, or ECB CISS 0.25–0.45, or a mid-sized bank failure/rescue, or a large bank under visible funding pressure.",
+    "red": "STLFSI > 1.5, or ECB CISS > 0.45, or a systemically important bank fails or needs rescue, or emergency central-bank facilities launched."
    },
    "hints": [
     "FRED STLFSI4",
+    "ECB CISS",
     "FDIC failed bank list",
     "Reuters banking"
    ]
@@ -234,6 +236,70 @@
     "Yahoo BTC-USD",
     "CoinDesk",
     "The Block"
+   ]
+  },
+  {
+   "id": "funding-stress",
+   "domain": "markets",
+   "name": "Dollar funding stress",
+   "tier": "fast",
+   "metrics": [
+    "sofr_iorb",
+    "repo_ops"
+   ],
+   "why": "Overnight dollar funding is the plumbing of global finance; repo-rate spikes came before the market seizures of September 2019 and March 2020.",
+   "drivers": "Bank reserves, Treasury issuance and cash balances, quarter-end window dressing, Fed balance-sheet policy.",
+   "rubric": {
+    "green": "SOFR less than 10bp above the Fed's interest on reserves (IORB) on every day of the past week, and Fed repo operations under $15bn.",
+    "amber": "SOFR 10–25bp above IORB on any day in the past week (the top ~10% of weeks since 2024), or Fed repo operations of $15–50bn in a day.",
+    "red": "SOFR more than 25bp above IORB, or Fed repo operations above $50bn in a day, or emergency Fed liquidity facilities."
+   },
+   "hints": [
+    "FRED SOFR IORB RPONTSYD",
+    "New York Fed",
+    "Reuters"
+   ]
+  },
+  {
+   "id": "private-credit",
+   "domain": "markets",
+   "name": "Private credit stress",
+   "tier": "daily",
+   "why": "Private credit has grown fast outside bank regulation; its losses surface late and can spill into banks, insurers and pension funds.",
+   "drivers": "Defaults among leveraged mid-sized borrowers, payment-in-kind interest, fund redemption requests, bank lending to funds.",
+   "rubric": {
+    "green": "No notable fund gates, defaults or markdowns beyond the routine.",
+    "amber": "A large fund limits redemptions, listed BDCs trade at wide discounts to NAV, or a cluster of borrower defaults with heavy losses.",
+    "red": "Several large funds gate at once, forced asset sales, or losses spreading to banks or insurers."
+   },
+   "hints": [
+    "FT",
+    "Bloomberg",
+    "Reuters",
+    "Moody's",
+    "Fitch"
+   ]
+  },
+  {
+   "id": "yen-carry",
+   "domain": "markets",
+   "name": "Yen & carry trade",
+   "tier": "fast",
+   "metrics": [
+    "usdjpy"
+   ],
+   "why": "Cheap yen borrowing funds positions worldwide; a sharp yen rally forces those trades to unwind, as in the global sell-off of August 2024.",
+   "drivers": "Bank of Japan policy, the US–Japan rate gap, JGB yields, currency intervention, risk appetite.",
+   "rubric": {
+    "green": "The yen moves less than 3% against the dollar in a week and less than 6% in a month.",
+    "amber": "A 3–5% move in a week, a 6–10% move in a month, or Japanese currency intervention.",
+    "red": "A move of more than 5% in a week or 10% in a month, with stress spreading to other markets."
+   },
+   "hints": [
+    "Yahoo Finance JPY=X",
+    "Reuters",
+    "Nikkei Asia",
+    "Bank of Japan"
    ]
   },
   {
@@ -369,6 +435,46 @@
    ]
   },
   {
+   "id": "jobless-claims",
+   "domain": "economy",
+   "name": "US jobless claims",
+   "tier": "daily",
+   "metrics": [
+    "icsa"
+   ],
+   "why": "Weekly claims are the earliest hard data on US layoffs; a sustained rise usually comes before the unemployment rate turns.",
+   "drivers": "Layoffs, hiring freezes, federal job cuts, storms, strikes and seasonal quirks.",
+   "rubric": {
+    "green": "The 4-week average of initial claims is less than 15% above its 52-week low.",
+    "amber": "15–30% above its 52-week low.",
+    "red": "More than 30% above its 52-week low."
+   },
+   "hints": [
+    "FRED ICSA",
+    "US Department of Labor",
+    "Reuters"
+   ]
+  },
+  {
+   "id": "em-stress",
+   "domain": "economy",
+   "name": "Emerging-market stress",
+   "tier": "daily",
+   "why": "Energy-importing and heavily indebted emerging economies crack first in oil shocks and strong-dollar periods, with knock-on defaults and unrest.",
+   "drivers": "Oil and food import bills, dollar strength, FX reserves, debt maturities, IMF programmes.",
+   "rubric": {
+    "green": "No major emerging economy in acute currency or debt distress.",
+    "amber": "A major emerging economy's currency falls more than 10% in a month, its reserves fall fast, or it seeks emergency IMF support.",
+    "red": "A sovereign default or capital controls in a major emerging economy, or several in crisis at once."
+   },
+   "hints": [
+    "IMF",
+    "Reuters",
+    "FT",
+    "central bank statements"
+   ]
+  },
+  {
    "id": "oil",
    "domain": "energy",
    "name": "Oil (Brent)",
@@ -480,6 +586,43 @@
     "Reuters commodities",
     "Benchmark Minerals",
     "MOFCOM announcements"
+   ]
+  },
+  {
+   "id": "fertiliser",
+   "domain": "energy",
+   "name": "Fertiliser supply",
+   "tier": "daily",
+   "why": "Fertiliser prices lead food prices by months; much of the world's urea and ammonia is exported from Russia, the Gulf and China.",
+   "drivers": "Gas prices, Gulf shipping, export bans and quotas, sanctions, planting seasons.",
+   "rubric": {
+    "green": "Urea and ammonia prices within their normal range; no major export restrictions.",
+    "amber": "Urea up more than 30% in three months, or a major exporter restricts exports.",
+    "red": "Urea up more than 60% in three months, several major exporters restricting at once, or a key export route closed."
+   },
+   "hints": [
+    "World Bank Pink Sheet",
+    "IFPRI",
+    "Reuters",
+    "Argus"
+   ]
+  },
+  {
+   "id": "nuclear-plants",
+   "domain": "energy",
+   "name": "Nuclear plant safety",
+   "tier": "daily",
+   "why": "Fighting near nuclear power plants risks a radiological release; the IAEA reports on Zaporizhzhia and other plants in or near war zones.",
+   "drivers": "Off-site power losses, strikes near plants, staffing, cooling water, military occupation.",
+   "rubric": {
+    "green": "No new IAEA safety concerns at plants in or near conflict zones.",
+    "amber": "A plant loses all off-site power, strikes land near a plant, or the IAEA reports a deteriorating safety situation.",
+    "red": "Damage to safety-critical systems, an INES level 2 or higher event, or a radiological release."
+   },
+   "hints": [
+    "IAEA",
+    "Reuters",
+    "national nuclear regulators"
    ]
   },
   {
@@ -609,6 +752,25 @@
    ]
   },
   {
+   "id": "hybrid-threats",
+   "domain": "geopolitics",
+   "name": "Europe hybrid attacks",
+   "tier": "fast",
+   "why": "Sabotage, arson and drone incursions over airports and bases are how state confrontation reaches daily life in the UK and Europe.",
+   "drivers": "Russia–NATO tensions, drone and cyber capabilities, proxy recruitment, elections.",
+   "rubric": {
+    "green": "No significant attributed sabotage or airspace incursions in Europe this week.",
+    "amber": "Drone incursions close an airport or military base, or a sabotage incident is attributed to a state.",
+    "red": "Repeated airport or infrastructure shutdowns across several countries, or sabotage causing casualties or a major outage."
+   },
+   "hints": [
+    "Reuters",
+    "BBC",
+    "NATO",
+    "national police and security services"
+   ]
+  },
+  {
    "id": "russia-ukraine",
    "domain": "conflict",
    "name": "Russia–Ukraine",
@@ -632,12 +794,12 @@
    "domain": "conflict",
    "name": "Israel, Gaza & region",
    "tier": "fast",
-   "why": "Conflict involving Israel, Gaza, Lebanon, Iran, Yemen and Syria threatens civilians, oil, shipping and great-power involvement.",
+   "why": "Conflict involving Israel, Gaza, Lebanon, Syria and Yemen threatens civilians, shipping and wider escalation. Direct hostilities with Iran are tracked under Gulf / US–Iran war.",
    "drivers": "Ceasefire status, Iran-linked groups, hostage talks, humanitarian access, US posture.",
    "rubric": {
-    "green": "Ceasefires holding across fronts; no state-on-state strikes.",
-    "amber": "Ongoing hostilities on one front, or ceasefire repeatedly violated.",
-    "red": "Multi-front escalation, state-on-state strikes (e.g. Israel–Iran), or mass-casualty events."
+    "green": "Ceasefires holding across fronts (Gaza, Lebanon, Syria, Yemen).",
+    "amber": "Ongoing hostilities on one front, or a ceasefire repeatedly violated.",
+    "red": "Multi-front escalation, major cross-border strikes between Israel and its neighbours, or mass-casualty events."
    },
    "hints": [
     "Reuters",
@@ -752,6 +914,45 @@
    "hints": [
     "Bulletin of the Atomic Scientists",
     "Arms Control Association",
+    "Reuters"
+   ]
+  },
+  {
+   "id": "gulf-iran",
+   "domain": "conflict",
+   "name": "Gulf / US–Iran war",
+   "tier": "fast",
+   "why": "Direct hostilities between Iran and the US or Israel threaten Gulf energy infrastructure, the Strait of Hormuz and the wider region.",
+   "drivers": "Strikes and retaliation, attacks on shipping and Gulf states, mediation and ceasefire talks, US force posture.",
+   "rubric": {
+    "green": "No direct state-on-state hostilities; diplomacy active.",
+    "amber": "A ceasefire or stalemate with sporadic strikes, or credible threats of renewed strikes.",
+    "red": "Active strikes between states, attacks on Gulf energy infrastructure or shipping, or the Strait of Hormuz substantially closed."
+   },
+   "hints": [
+    "Reuters",
+    "ISW Iran Update",
+    "IAEA",
+    "UKMTO",
+    "US CENTCOM"
+   ]
+  },
+  {
+   "id": "other-conflicts",
+   "domain": "conflict",
+   "name": "Other armed conflicts",
+   "tier": "daily",
+   "why": "Wars and flashpoints outside Canary's named list — such as Yemen, Haiti, Ethiopia–Eritrea, Afghanistan–Pakistan, Libya and Somalia — can escalate with little warning.",
+   "drivers": "Coups, border clashes, insurgencies, state collapse, outside intervention.",
+   "rubric": {
+    "green": "No conflict outside the named list is escalating sharply.",
+    "amber": "Crisis Group's CrisisWatch or credible reporting shows a significant deterioration in a conflict not tracked elsewhere.",
+    "red": "A new interstate war, a capital under attack, or mass-atrocity warnings in a conflict not tracked elsewhere."
+   },
+   "hints": [
+    "International Crisis Group CrisisWatch",
+    "ACLED",
+    "UN OCHA",
     "Reuters"
    ]
   },
@@ -906,10 +1107,11 @@
    "drivers": "Rainfall deficits, heat, ENSO, groundwater depletion.",
    "rubric": {
     "green": "No major breadbasket in severe drought.",
-    "amber": "Severe drought in a major crop region or a major river at record low.",
-    "red": "Drought driving famine conditions or a major exporter's harvest failure."
+    "amber": "Severe drought in a major crop region, a major river at record low, or a monsoon running more than 20% below normal.",
+    "red": "Drought driving famine conditions, a major exporter's harvest failure, or monsoon failure across a major breadbasket."
    },
    "hints": [
+    "India Meteorological Department",
     "Global Drought Observatory",
     "GEOGLAM Crop Monitor",
     "US Drought Monitor"
@@ -936,10 +1138,30 @@
    ]
   },
   {
+   "id": "cold-storms",
+   "domain": "hazards",
+   "name": "Cold waves & winter storms",
+   "tier": "daily",
+   "why": "Severe cold and winter storms kill, cut power and spike gas demand, as in Texas in 2021; they matter most when energy supplies are tight.",
+   "drivers": "Polar vortex disruption, blocking highs, ENSO, Arctic outbreaks.",
+   "rubric": {
+    "green": "No major cold wave or winter storm affecting large populations.",
+    "amber": "Top-tier cold or winter-storm warnings across a major region, or a cold wave lifting gas demand sharply.",
+    "red": "Deadly cold or winter storms with widespread power or gas outages."
+   },
+   "hints": [
+    "Met Office",
+    "ECMWF",
+    "NOAA Weather Prediction Center",
+    "Meteoalarm"
+   ]
+  },
+  {
    "id": "global-temp",
    "domain": "climate",
    "name": "Global temperature",
    "tier": "daily",
+   "horizon": "chronic",
    "metrics": [
     "global_temp"
    ],
@@ -960,6 +1182,7 @@
    "domain": "climate",
    "name": "Polar sea ice",
    "tier": "daily",
+   "horizon": "chronic",
    "metrics": [
     "sea_ice"
    ],
@@ -979,6 +1202,7 @@
    "domain": "climate",
    "name": "Atmospheric CO₂",
    "tier": "daily",
+   "horizon": "chronic",
    "metrics": [
     "co2"
    ],
@@ -998,6 +1222,7 @@
    "domain": "climate",
    "name": "El Niño / La Niña",
    "tier": "daily",
+   "horizon": "seasonal",
    "metrics": [
     "oni"
    ],
@@ -1018,6 +1243,7 @@
    "domain": "climate",
    "name": "Coral bleaching",
    "tier": "daily",
+   "horizon": "chronic",
    "why": "Reefs support a quarter of marine species and coastal economies; mass bleaching is a direct sign of ocean heat stress.",
    "drivers": "Marine heatwaves, El Niño, warming trend.",
    "rubric": {
@@ -1123,14 +1349,14 @@
   {
    "id": "cholera-dengue",
    "domain": "health",
-   "name": "Cholera & dengue",
+   "name": "Cholera & mosquito-borne",
    "tier": "daily",
-   "why": "Climate-sensitive diseases that are hitting record levels and spreading to new regions.",
-   "drivers": "Conflict, floods, heat, water and sanitation, mosquito range expansion.",
+   "why": "Climate-sensitive diseases — cholera, dengue, chikungunya, Oropouche, West Nile and yellow fever — are hitting record levels and reaching new regions.",
+   "drivers": "Conflict, floods, heat, El Niño, water and sanitation, mosquito range expansion.",
    "rubric": {
     "green": "Seasonal levels.",
-    "amber": "Record-level seasons or spread to new countries.",
-    "red": "Large outbreaks with high mortality in conflict zones, or WHO grade 3 emergency."
+    "amber": "Record-level seasons, or local transmission in countries where the disease was not established (including Europe).",
+    "red": "Large outbreaks with high mortality in conflict zones, or a WHO grade 3 emergency."
    },
    "hints": [
     "WHO",
@@ -1155,6 +1381,45 @@
     "ProMED",
     "CIDRAP",
     "BlueDot"
+   ]
+  },
+  {
+   "id": "respiratory",
+   "domain": "health",
+   "name": "Respiratory variants & flu",
+   "tier": "daily",
+   "why": "Known viruses change; a new COVID-19 variant or a severe flu strain can strain health systems without being 'novel'.",
+   "drivers": "Viral evolution, waning immunity, seasonal patterns, vaccine match.",
+   "rubric": {
+    "green": "No WHO variant of interest rising fast; flu seasons of normal severity.",
+    "amber": "WHO designates a new variant of interest, or a hemisphere's flu season is unusually early or severe.",
+    "red": "WHO designates a variant of concern, or flu or COVID-19 hospitalisations strain several countries' health systems."
+   },
+   "hints": [
+    "WHO",
+    "WHO FluNet",
+    "ECDC",
+    "UKHSA",
+    "CDC"
+   ]
+  },
+  {
+   "id": "medicine-shortages",
+   "domain": "health",
+   "name": "Medicine shortages",
+   "tier": "daily",
+   "why": "Shipping disruption, factory failures and export curbs can leave essential medicines short, as with US IV fluids after Hurricane Helene in 2024.",
+   "drivers": "Manufacturing concentrated in India and China, shipping, raw materials, demand spikes, regulation.",
+   "rubric": {
+    "green": "No widespread shortages of essential medicines in major health systems.",
+    "amber": "A shortage of an essential medicine or supply across several countries, or a UK Serious Shortage Protocol for a widely used medicine.",
+    "red": "Shortages forcing widespread rationing or cancelled treatment across major health systems."
+   },
+   "hints": [
+    "FDA drug shortages",
+    "EMA shortages catalogue",
+    "NHSBSA Serious Shortage Protocols",
+    "Reuters"
    ]
   },
   {
@@ -1250,6 +1515,29 @@
    ]
   },
   {
+   "id": "exploited-vulns",
+   "domain": "tech",
+   "name": "Exploited vulnerabilities",
+   "tier": "fast",
+   "metrics": [
+    "kev"
+   ],
+   "why": "Mass exploitation of a flaw in widely used software usually starts days or weeks before the breach headlines.",
+   "drivers": "Zero-days in edge devices and enterprise software, exploit sharing, slow patching, ransomware crews.",
+   "rubric": {
+    "green": "Fewer than 11 vulnerabilities added to CISA's Known Exploited Vulnerabilities catalogue in the past 7 days.",
+    "amber": "11 or more added in 7 days (the busiest ~5% of weeks since 2024), or mass exploitation of a widely used product.",
+    "red": "An emergency directive or equivalent for mass exploitation of a ubiquitous product, with confirmed widespread compromise."
+   },
+   "hints": [
+    "CISA KEV",
+    "CISA alerts",
+    "NCSC",
+    "BleepingComputer",
+    "vendor advisories"
+   ]
+  },
+  {
    "id": "famine",
    "domain": "humanitarian",
    "name": "Famine",
@@ -1301,6 +1589,25 @@
     "ACLED",
     "Carnegie Protest Tracker",
     "Reuters"
+   ]
+  },
+  {
+   "id": "aid-funding",
+   "domain": "humanitarian",
+   "name": "Humanitarian funding gap",
+   "tier": "daily",
+   "why": "When appeals go unfunded, food aid and health services are cut first; funding gaps lead famine and displacement by months.",
+   "drivers": "Donor budgets and aid cuts, new crises competing for funds, access constraints.",
+   "rubric": {
+    "green": "UN global appeal funding in line with recent years; no major ration cuts.",
+    "amber": "Funding more than 10 percentage points behind recent years at the same point, or major ration cuts announced.",
+    "red": "Pipeline breaks forcing large-scale suspension of food or health aid in famine-risk countries."
+   },
+   "hints": [
+    "OCHA Financial Tracking Service",
+    "WFP",
+    "UNHCR",
+    "ReliefWeb"
    ]
   },
   {
@@ -1425,6 +1732,47 @@
     "BBC News",
     "National Rail",
     "gov.uk"
+   ]
+  },
+  {
+   "id": "uk-supply-margins",
+   "domain": "uk",
+   "name": "GB energy supply margins",
+   "tier": "daily",
+   "why": "When gas or electricity margins tighten, Britain risks price spikes and, at worst, controlled disconnections in winter.",
+   "drivers": "Gas imports and storage, wind output, interconnectors, plant outages, cold weather.",
+   "rubric": {
+    "green": "NESO and National Gas report adequate margins; no notices issued.",
+    "amber": "NESO issues an Electricity Margin Notice or capacity market notice, or National Gas issues a Gas Margins Notice.",
+    "red": "A Gas Deficit Warning, a high risk of demand control notice, or demand control used."
+   },
+   "hints": [
+    "NESO",
+    "National Gas",
+    "Ofgem",
+    "Elexon"
+   ]
+  },
+  {
+   "id": "uk-floods",
+   "domain": "uk",
+   "name": "UK flood warnings",
+   "tier": "fast",
+   "metrics": [
+    "ea_floods"
+   ],
+   "why": "Flooding is the UK's most common natural hazard; Environment Agency flood warnings are separate from Met Office weather warnings.",
+   "drivers": "Heavy rain, saturated ground, storm surges, high river levels.",
+   "rubric": {
+    "green": "No severe flood warnings and fewer than 10 Environment Agency flood warnings in force.",
+    "amber": "10 or more flood warnings in force in England, or major flooding in Scotland, Wales or Northern Ireland.",
+    "red": "Any severe flood warning (danger to life) in force in the UK."
+   },
+   "hints": [
+    "Environment Agency flood warnings",
+    "SEPA",
+    "Natural Resources Wales",
+    "Met Office"
    ]
   }
  ]

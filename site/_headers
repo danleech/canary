@@ -1,9 +1,44 @@
-/data/*
-  Cache-Control: public, max-age=300
-  Access-Control-Allow-Origin: *
-/feed.xml
-  Content-Type: application/atom+xml; charset=utf-8
-  Cache-Control: public, max-age=600
 /*
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
+  Link: <https://creativecommons.org/licenses/by/4.0/>; rel="license"
+
+/data/*
+  Cache-Control: public, max-age=300
+  Access-Control-Allow-Origin: *
+
+/api/*
+  Cache-Control: public, max-age=300
+  Access-Control-Allow-Origin: *
+
+/s/*
+  Cache-Control: public, max-age=300
+  Access-Control-Allow-Origin: *
+
+/now.md
+  Content-Type: text/markdown; charset=utf-8
+  Cache-Control: public, max-age=300
+  Access-Control-Allow-Origin: *
+
+/status.md
+  Content-Type: text/markdown; charset=utf-8
+  Cache-Control: public, max-age=300
+  Access-Control-Allow-Origin: *
+
+/changes.md
+  Content-Type: text/markdown; charset=utf-8
+  Cache-Control: public, max-age=300
+  Access-Control-Allow-Origin: *
+
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=300
+  Access-Control-Allow-Origin: *
+
+/openapi.json
+  Access-Control-Allow-Origin: *
+
+/feed.xml
+  Content-Type: application/atom+xml; charset=utf-8
+  Cache-Control: public, max-age=600
+  Access-Control-Allow-Origin: *

@@ -4,13 +4,24 @@
 Writes site/data/metrics.json. Each metric is fetched independently; a failure
 keeps the previous value (flagged with "error") so one broken API never wipes data.
 
-Usage: python scripts/fetch_metrics.py
+Licensing: site/data/ is public (and the repo is public), so metrics.json must not
+republish third-party series we have no licence to redistribute. For RESTRICTED
+sources (Yahoo Finance, ICE BofA indices, Cboe VIX on FRED, the academic EPU/GPR
+indices) only the latest value and derived statistics are written, never the raw
+daily series. US-government and agency data (FRED/BLS/EIA series, NOAA, NSIDC,
+USGS, ECB, CISA, Environment Agency) keep a short series for sparklines.
+
+Optional environment variables:
+  AGSI_API_KEY   free key from agsi.gie.eu → EU gas storage (skipped if unset)
+
+Usage: python scripts/fetch_metrics.py [metric ...]
 """
 from __future__ import annotations
 
 import csv
 import io
 import json
+import os
 import re
 import sys
 import time
@@ -21,15 +32,17 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "site" / "data" / "metrics.json"
-UA = "Mozilla/5.0 (compatible; CanaryBot/1.0; +https://github.com/)"
+UA = "Mozilla/5.0 (compatible; CanaryBot/1.1; +https://canary.danleech.com/methodology)"
+RESTRICTED_FRED = {"BAMLH0A0HYM2", "VIXCLS"}  # ICE BofA and Cboe series carry redistribution limits
+RESTRICTED_NOTE = "derived values only; raw series not republished (licence)"
 NOW = datetime.now(timezone.utc)
 
 
-def get(url: str, timeout: int = 25) -> bytes:
+def get(url: str, timeout: int = 25, headers: dict | None = None) -> bytes:
     last = None
     for attempt in range(3):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
+            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*", **(headers or {})})
             with urllib.request.urlopen(req, timeout=timeout) as r:
                 return r.read()
         except Exception as e:  # noqa: BLE001
@@ -67,6 +80,7 @@ def series_stats(dates: list, vals: list) -> dict:
         "as_of": iso(dates[-1]),
         "high_52w": round(hi, 4),
         "drawdown_pct": round((last / hi - 1) * 100, 2),
+        "chg_1w_pct": pct(last, back(5)),
         "chg_1m_pct": pct(last, back(21)),
         "chg_3m_pct": pct(last, back(63)),
         "chg_1m_abs": round(last - back(21), 4),
@@ -91,7 +105,9 @@ def yahoo(symbol: str) -> dict:
         else:
             pairs[-1] = (meta["regularMarketTime"], meta["regularMarketPrice"])
     s = series_stats([p[0] for p in pairs], [p[1] for p in pairs])
-    s.update(source="Yahoo Finance", url=f"https://finance.yahoo.com/quote/{urllib.request.quote(symbol)}")
+    s.pop("series")
+    s.update(source="Yahoo Finance", url=f"https://finance.yahoo.com/quote/{urllib.request.quote(symbol)}",
+             licence=RESTRICTED_NOTE)
     return s
 
 
@@ -106,6 +122,9 @@ def fred_metric(series_id: str, label: str) -> dict:
     d, v = fred(series_id)
     s = series_stats(d, v)
     s.update(source=f"FRED {series_id} ({label})", url=f"https://fred.stlouisfed.org/series/{series_id}")
+    if series_id in RESTRICTED_FRED:
+        s.pop("series")
+        s["licence"] = RESTRICTED_NOTE
     return s
 
 
@@ -294,6 +313,161 @@ def metoffice() -> dict:
             "url": "https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings"}
 
 
+# ─────────── quantitative anchors added Nov 2026 ───────────
+
+def _on_or_before(dates: list[str], vals: list[float], day: str) -> float | None:
+    best = None
+    for d, v in zip(dates, vals):
+        if d <= day:
+            best = v
+    return best
+
+
+def sofr_iorb() -> dict:
+    """Overnight funding stress: SOFR minus the Fed's interest on reserve balances, in bp."""
+    sd, sv = fred("SOFR")
+    idates, ivals = fred("IORB")
+    spreads = []
+    for d, v in list(zip(sd, sv))[-90:]:
+        i = _on_or_before(idates, ivals, d)
+        if i is not None:
+            spreads.append((d, round((v - i) * 100, 1)))
+    if not spreads:
+        raise RuntimeError("no overlapping SOFR/IORB dates")
+    last5 = [s for _, s in spreads[-5:]]
+    return {"value": spreads[-1][1], "as_of": spreads[-1][0], "max_5d_bp": max(last5),
+            "sofr": sv[-1], "iorb": _on_or_before(idates, ivals, sd[-1]),
+            "series": [s for _, s in spreads],
+            "source": "FRED SOFR minus IORB (New York Fed / Federal Reserve)",
+            "url": "https://fred.stlouisfed.org/series/SOFR"}
+
+
+def repo_ops() -> dict:
+    """Fed overnight repo operations (Standing Repo Facility take-up), $bn."""
+    d, v = fred("RPONTSYD")
+    return {"value": round(v[-1], 3), "as_of": d[-1], "max_5d": round(max(v[-5:]), 3), "series": v[-90:],
+            "source": "FRED RPONTSYD (Fed overnight repo operations, $bn)",
+            "url": "https://fred.stlouisfed.org/series/RPONTSYD"}
+
+
+def icsa() -> dict:
+    """US initial jobless claims: 4-week average versus its 52-week low."""
+    d, v = fred("ICSA")
+    avg4 = [sum(v[i - 3:i + 1]) / 4 for i in range(3, len(v))]
+    low = min(avg4[-52:])
+    return {"value": v[-1], "as_of": d[-1], "avg4": round(avg4[-1]), "low52_avg4": round(low),
+            "above_low_pct": round((avg4[-1] / low - 1) * 100, 1), "series": v[-52:],
+            "source": "FRED ICSA (US Department of Labor initial claims)",
+            "url": "https://fred.stlouisfed.org/series/ICSA"}
+
+
+def usdjpy() -> dict:
+    return with_fallback(lambda: yahoo("JPY=X"), lambda: fred_metric("DEXJPUS", "USD/JPY"))
+
+
+def kev() -> dict:
+    """CISA Known Exploited Vulnerabilities: additions in the past 7 and 30 days."""
+    k = json.loads(get("https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"))
+    vs = k.get("vulnerabilities", [])
+    today = NOW.date()
+    def age(x):
+        return (today - date.fromisoformat(x["dateAdded"])).days
+    recent = sorted((x for x in vs if age(x) < 30), key=lambda x: x["dateAdded"], reverse=True)
+    week = [x for x in recent if age(x) < 7]
+    return {"value": len(week), "as_of": k.get("dateReleased", iso(NOW))[:10], "count_7d": len(week),
+            "count_30d": len(recent),
+            "ransomware_30d": sum(1 for x in recent if x.get("knownRansomwareCampaignUse") == "Known"),
+            "latest": [{"cve": x["cveID"], "vendor": x["vendorProject"], "product": x["product"],
+                        "added": x["dateAdded"]} for x in recent[:6]],
+            "source": "CISA Known Exploited Vulnerabilities catalogue",
+            "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"}
+
+
+def ea_floods() -> dict:
+    """Environment Agency (England) flood warnings currently in force."""
+    d = json.loads(get("https://environment.data.gov.uk/flood-monitoring/id/floods"))
+    items = d.get("items", [])
+    counts = {"severe": 0, "warning": 0, "alert": 0}
+    for it in items:
+        k = {1: "severe", 2: "warning", 3: "alert"}.get(it.get("severityLevel"))
+        if k:
+            counts[k] += 1
+    worst = [{"area": it.get("description"), "level": it.get("severity")}
+             for it in sorted(items, key=lambda x: x.get("severityLevel") or 9)[:5]
+             if it.get("severityLevel") in (1, 2)]
+    return {"value": counts["warning"], "as_of": iso(NOW), "counts": counts, "worst": worst,
+            "source": "Environment Agency flood warnings (England)",
+            "url": "https://check-for-flooding.service.gov.uk/"}
+
+
+def ciss() -> dict:
+    """ECB Composite Indicator of Systemic Stress for the euro area (0–1)."""
+    raw = get("https://data-api.ecb.europa.eu/service/data/CISS/D.U2.Z0Z.4F.EC.SS_CIN.IDX"
+              "?lastNObservations=120&format=csvdata").decode()
+    rows = list(csv.DictReader(io.StringIO(raw)))
+    pts = [(r["TIME_PERIOD"], float(r["OBS_VALUE"])) for r in rows if r.get("OBS_VALUE")]
+    return {"value": round(pts[-1][1], 4), "as_of": pts[-1][0], "max_20d": round(max(v for _, v in pts[-20:]), 4),
+            "series": [round(v, 4) for _, v in pts[-90:]],
+            "source": "ECB CISS (Composite Indicator of Systemic Stress, euro area)",
+            "url": "https://data.ecb.europa.eu/data/datasets/CISS"}
+
+
+def _median(xs: list[float]) -> float:
+    s = sorted(xs)
+    return s[len(s) // 2]
+
+
+def epu() -> dict:
+    """Baker–Bloom–Davis daily US Economic Policy Uncertainty (context anchor; derived values only)."""
+    raw = get("https://www.policyuncertainty.com/media/All_Daily_Policy_Data.csv").decode()
+    rows = [r for r in csv.DictReader(io.StringIO(raw)) if r.get("daily_policy_index")]
+    vals = [float(r["daily_policy_index"]) for r in rows]
+    last = rows[-1]
+    ma7 = sum(vals[-7:]) / 7
+    return {"value": round(ma7, 1), "as_of": f"{last['year']}-{int(last['month']):02d}-{int(last['day']):02d}",
+            "latest_day": vals[-1], "vs_1y_median": round(ma7 / _median(vals[-365:]), 2),
+            "licence": RESTRICTED_NOTE,
+            "source": "Economic Policy Uncertainty index, daily US, 7-day average (Baker, Bloom & Davis)",
+            "url": "https://www.policyuncertainty.com/us_daily.html"}
+
+
+def gpr() -> dict:
+    """Caldara–Iacoviello daily Geopolitical Risk index (context anchor; derived values only)."""
+    try:
+        import xlrd  # noqa: PLC0415 — optional dependency, listed in requirements.txt
+    except ImportError as e:
+        raise RuntimeError("xlrd not installed (pip install xlrd)") from e
+    book = xlrd.open_workbook(file_contents=get("https://www.matteoiacoviello.com/gpr_files/data_gpr_daily_recent.xls", 60))
+    sh = book.sheet_by_index(0)
+    head = sh.row_values(0)
+    col = {k: head.index(k) for k in ("DAY", "GPRD", "GPRD_MA7")}
+    rows = [sh.row_values(i) for i in range(1, sh.nrows)]
+    rows = [r for r in rows if isinstance(r[col["GPRD"]], float)]
+    day = str(rows[-1][col["DAY"]]).split(".")[0]
+    ma7 = rows[-1][col["GPRD_MA7"]]
+    return {"value": round(ma7, 1), "as_of": f"{day[:4]}-{day[4:6]}-{day[6:8]}",
+            "latest_day": round(rows[-1][col["GPRD"]], 1),
+            "vs_1y_median": round(ma7 / _median([r[col["GPRD"]] for r in rows[-365:]]), 2),
+            "licence": RESTRICTED_NOTE,
+            "source": "Geopolitical Risk index, daily, 7-day average (Caldara & Iacoviello)",
+            "url": "https://www.matteoiacoviello.com/gpr.htm"}
+
+
+def gas_storage() -> dict | None:
+    """EU gas storage fill (GIE AGSI+). Needs a free API key; skipped when AGSI_API_KEY is unset."""
+    key = os.environ.get("AGSI_API_KEY")
+    if not key:
+        return None
+    d = json.loads(get("https://agsi.gie.eu/api?type=eu&size=30", headers={"x-key": key}))
+    rows = d.get("data") or []
+    if not rows:
+        raise RuntimeError(d.get("message") or "no data")
+    cur = rows[0]
+    return {"value": float(cur["full"]), "as_of": cur["gasDayStart"], "trend": float(cur.get("trend") or 0),
+            "series": [float(r["full"]) for r in reversed(rows)],
+            "source": "GIE AGSI+ (EU gas storage, % full)", "url": "https://agsi.gie.eu/"}
+
+
 FETCHERS = {
     "vix": lambda: with_fallback(lambda: yahoo("^VIX"), lambda: fred_metric("VIXCLS", "VIX")),
     "spx": lambda: yahoo("^GSPC"),
@@ -318,6 +492,16 @@ FETCHERS = {
     "sea_ice": sea_ice,
     "global_temp": global_temp,
     "metoffice": metoffice,
+    "sofr_iorb": sofr_iorb,
+    "repo_ops": repo_ops,
+    "icsa": icsa,
+    "usdjpy": usdjpy,
+    "kev": kev,
+    "ea_floods": ea_floods,
+    "ciss": ciss,
+    "epu": epu,
+    "gpr": gpr,
+    "gas_storage": gas_storage,
 }
 
 
@@ -329,11 +513,19 @@ def main(only: list[str] | None = None) -> int:
         except json.JSONDecodeError:
             prev = {}
     out, ok, failed = dict(prev), 0, []
+    for m in out.values():  # never carry restricted raw series forward from an older file
+        src = m.get("source", "") if isinstance(m, dict) else ""
+        if src == "Yahoo Finance" or any(f"FRED {s} " in src for s in RESTRICTED_FRED):
+            m.pop("series", None)
+            m["licence"] = RESTRICTED_NOTE
     for key, fn in FETCHERS.items():
         if only and key not in only:
             continue
         try:
             m = fn()
+            if m is None:  # optional source without credentials
+                print(f"skip {key:12} (not configured)")
+                continue
             m["fetched_at"] = iso(NOW)
             out[key] = m
             ok += 1

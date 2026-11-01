@@ -1,0 +1,203 @@
+{
+ "openapi": "3.1.0",
+ "info": {
+  "title": "Canary global risk status",
+  "version": "1.1",
+  "description": "Static, read-only endpoints. Attention levels describing current conditions; not a forecast, and not financial, medical, legal or safety advice. For safety, follow official guidance. Licence CC BY 4.0. Start with /now.md (smallest). Poll /api/v1/meta.json and refetch only when as_of changes.",
+  "license": {
+   "name": "CC BY 4.0",
+   "url": "https://creativecommons.org/licenses/by/4.0/"
+  }
+ },
+ "servers": [
+  {
+   "url": "https://canary.danleech.com"
+  }
+ ],
+ "paths": {
+  "/now.md": {
+   "get": {
+    "operationId": "getBrief",
+    "summary": "Current brief: situations, Alerts, 24h changes (~1k tokens)",
+    "responses": {
+     "200": {
+      "description": "Markdown",
+      "content": {
+       "text/markdown": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/status.md": {
+   "get": {
+    "operationId": "getAllSignalsTable",
+    "summary": "Every signal, one row each",
+    "responses": {
+     "200": {
+      "description": "Markdown",
+      "content": {
+       "text/markdown": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/changes.md": {
+   "get": {
+    "operationId": "getRecentChanges",
+    "summary": "Status changes in the last 7 days",
+    "responses": {
+     "200": {
+      "description": "Markdown",
+      "content": {
+       "text/markdown": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/s/{id}.md": {
+   "get": {
+    "operationId": "getSignalMarkdown",
+    "summary": "One signal: state, rubric, sources",
+    "parameters": [
+     {
+      "name": "id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string"
+      },
+      "description": "Signal id, e.g. oil, russia-ukraine, uk-weather. Listed in /api/v1/catalogue.json."
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Markdown",
+      "content": {
+       "text/markdown": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/s/{id}.json": {
+   "get": {
+    "operationId": "getSignal",
+    "summary": "One signal as JSON, with recent history",
+    "parameters": [
+     {
+      "name": "id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string"
+      },
+      "description": "Signal id, e.g. oil, russia-ukraine, uk-weather. Listed in /api/v1/catalogue.json."
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "JSON",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/meta.json": {
+   "get": {
+    "operationId": "getMeta",
+    "summary": "Run metadata: as_of, counts, ids changed in 24h",
+    "responses": {
+     "200": {
+      "description": "JSON",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/status.json": {
+   "get": {
+    "operationId": "getStatus",
+    "summary": "Full public state",
+    "responses": {
+     "200": {
+      "description": "JSON",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "https://canary.danleech.com/api/v1/schema.json"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/changes.json": {
+   "get": {
+    "operationId": "getChanges",
+    "summary": "Status change log",
+    "responses": {
+     "200": {
+      "description": "JSON",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/catalogue.json": {
+   "get": {
+    "operationId": "getCatalogue",
+    "summary": "Signal definitions and rubrics",
+    "responses": {
+     "200": {
+      "description": "JSON",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

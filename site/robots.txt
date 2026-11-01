@@ -1,0 +1,6 @@
+# Canary welcomes search engines and AI assistants. Start at /llms.txt or /now.md.
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+
+Sitemap: https://canary.danleech.com/sitemap.xml

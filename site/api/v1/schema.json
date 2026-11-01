@@ -1,0 +1,330 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://canary.danleech.com/api/v1/schema.json",
+ "title": "Canary status (api/v1/status.json)",
+ "type": "object",
+ "required": [
+  "version",
+  "as_of",
+  "valid_until",
+  "world",
+  "signals"
+ ],
+ "properties": {
+  "version": {
+   "type": "string"
+  },
+  "as_of": {
+   "type": "string",
+   "format": "date-time"
+  },
+  "valid_until": {
+   "type": "string",
+   "format": "date-time",
+   "description": "If now is later than this, the whole board is stale"
+  },
+  "next_run": {
+   "type": "string",
+   "format": "date-time"
+  },
+  "headline": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "world": {
+   "type": "object",
+   "properties": {
+    "score": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "minimum": 0,
+     "maximum": 100
+    },
+    "band": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "enum": [
+      "Calm",
+      "Unsettled",
+      "Strained",
+      "Severe",
+      null
+     ]
+    },
+    "counts": {
+     "type": "object"
+    },
+    "by_domain": {
+     "type": "object"
+    }
+   }
+  },
+  "situations": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "name",
+     "status",
+     "signals"
+    ],
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "status": {
+      "type": "string",
+      "enum": [
+       "alert",
+       "watch",
+       "normal",
+       "pending"
+      ]
+     },
+     "trend": {
+      "type": "string"
+     },
+     "summary": {
+      "type": "string"
+     },
+     "signals": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     }
+    }
+   }
+  },
+  "emerging": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "name",
+     "status",
+     "summary",
+     "sources"
+    ],
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "status": {
+      "type": "string",
+      "enum": [
+       "alert",
+       "watch",
+       "normal",
+       "pending"
+      ]
+     },
+     "summary": {
+      "type": "string"
+     },
+     "sources": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "required": [
+        "title",
+        "url"
+       ],
+       "properties": {
+        "title": {
+         "type": "string"
+        },
+        "url": {
+         "type": "string",
+         "format": "uri"
+        },
+        "date": {
+         "type": "string"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "signals": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "name",
+     "domain",
+     "status",
+     "horizon",
+     "url"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "description": "Stable kebab-case id; never renamed"
+     },
+     "name": {
+      "type": "string"
+     },
+     "domain": {
+      "type": "string"
+     },
+     "domain_name": {
+      "type": "string"
+     },
+     "status": {
+      "type": "string",
+      "enum": [
+       "alert",
+       "watch",
+       "normal",
+       "pending"
+      ],
+      "description": "Attention level now. Treat as stale after stale_after."
+     },
+     "trend": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "enum": [
+       "worsening",
+       "stable",
+       "improving",
+       null
+      ],
+      "description": "Direction of risk over about a week (not the direction of the number)"
+     },
+     "horizon": {
+      "type": "string",
+      "enum": [
+       "acute",
+       "seasonal",
+       "chronic"
+      ],
+      "description": "Chronic signals (climate trends) can sit at Alert for years"
+     },
+     "tier": {
+      "type": "string",
+      "enum": [
+       "fast",
+       "daily"
+      ]
+     },
+     "value": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "value_num": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "summary": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "maxLength": 120
+     },
+     "state": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "maxLength": 700
+     },
+     "for_you": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "maxLength": 320
+     },
+     "rubric_hit": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "The rubric criterion that set this status"
+     },
+     "situations": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "provenance": {
+      "type": "string",
+      "enum": [
+       "metric",
+       "reporting"
+      ],
+      "description": "metric: an open data feed sets a status floor; reporting: judged from sources"
+     },
+     "checked_at": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "format": "date-time"
+     },
+     "changed_at": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "format": "date-time"
+     },
+     "stale_after": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "format": "date-time"
+     },
+     "sources": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "required": [
+        "title",
+        "url"
+       ],
+       "properties": {
+        "title": {
+         "type": "string"
+        },
+        "url": {
+         "type": "string",
+         "format": "uri"
+        },
+        "date": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "url": {
+      "type": "string",
+      "format": "uri"
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,207 @@
+# Source domains Canary treats as known-good. `canary.py check` WARNS (never errors) when a
+# signal cites a domain outside this list, so a human can look before it becomes habit.
+#
+# Why: Canary is a shortcut other AI agents trust. Someone who wants to flip a status, or
+# smuggle instructions into agents' context windows, has to get a source cited first. Keeping
+# citations to established outlets and official bodies makes that much harder.
+#
+# Matching is by suffix: "gov.uk" covers www.gov.uk and assets.publishing.service.gov.uk.
+# Bare TLD-like entries ("gov", "int", "mil") cover every host under them.
+# To add a domain: confirm it is an established outlet, official body or primary data source.
+
+domains:
+  # Governments, militaries, treaty bodies (suffixes)
+  - gov
+  - mil
+  - int
+  - gov.uk
+  - europa.eu
+  - un.org
+  - parliament.uk
+  - nhs.uk
+  - gc.ca
+  - gov.au
+  - go.jp
+  - edu
+  - ac.uk
+  # Central banks, statistics and multilateral finance
+  - federalreserve.gov
+  - newyorkfed.org
+  - stlouisfed.org
+  - bankofengland.co.uk
+  - ecb.europa.eu
+  - boj.or.jp
+  - imf.org
+  - worldbank.org
+  - bis.org
+  - oecd.org
+  - ons.gov.uk
+  - obr.uk
+  - dmo.gov.uk
+  # UN agencies and humanitarian
+  - who.int
+  - fao.org
+  - wfp.org
+  - unhcr.org
+  - unicef.org
+  - iom.int
+  - reliefweb.int
+  - ipcinfo.org
+  - fews.net
+  - unocha.org
+  - fts.unocha.org
+  - icrc.org
+  - msf.org
+  - hias.org
+  - gcrmn.net
+  - iaea.org
+  # Science, hazards and climate data
+  - noaa.gov
+  - usgs.gov
+  - nasa.gov
+  - nsidc.org
+  - climatereanalyzer.org
+  - copernicus.eu
+  - ecmwf.int
+  - metoffice.gov.uk
+  - meteoalarm.org
+  - gdacs.org
+  - emdat.be
+  - volcano.si.edu
+  - bom.gov.au
+  - imd.gov.in
+  - ecdc.europa.eu
+  - cdc.gov
+  - cidrap.umn.edu
+  - nature.com
+  - science.org
+  - thelancet.com
+  - nejm.org
+  - statnews.com
+  - medscape.com
+  - nhsemployers.org
+  # Energy and shipping
+  - iea.org
+  - eia.gov
+  - opec.org
+  - neso.energy
+  - nationalgas.com
+  - ofgem.gov.uk
+  - elexon.co.uk
+  - agsi.gie.eu
+  - gie.eu
+  - ukmto.org
+  - lloydslist.com
+  - spglobal.com
+  - argusmedia.com
+  - drewry.co.uk
+  - freightos.com
+  - xeneta.com
+  - hellenicshippingnews.com
+  - splash247.com
+  - windward.ai
+  - cornwall-insight.com
+  - uswitch.com
+  # Security, conflict and policy research
+  - crisisgroup.org
+  - acleddata.com
+  - understandingwar.org
+  - criticalthreats.org
+  - armscontrol.org
+  - sipri.org
+  - iiss.org
+  - csis.org
+  - cfr.org
+  - chathamhouse.org
+  - rusi.org
+  - brookings.edu
+  - cepa.org
+  - nato.int
+  - news.usni.org
+  - mi5.gov.uk
+  - ncsc.gov.uk
+  - cisa.gov
+  - matteoiacoviello.com
+  - policyuncertainty.com
+  - debevoise.com
+  # Cyber and technology
+  - bleepingcomputer.com
+  - therecord.media
+  - krebsonsecurity.com
+  - securityweek.com
+  - cloudflare.com
+  - radar.cloudflare.com
+  - ioda.inetintel.cc.gatech.edu
+  - thousandeyes.com
+  - status.aws.amazon.com
+  - netblocks.org
+  - oecd.ai
+  - incidentdatabase.ai
+  # Markets data
+  - finance.yahoo.com
+  - fred.stlouisfed.org
+  - cboe.com
+  - ice.com
+  - tradingeconomics.com
+  - investing.com
+  - borsaitaliana.it
+  # Wires and established news
+  - reuters.com
+  - apnews.com
+  - afp.com
+  - bbc.co.uk
+  - bbc.com
+  - ft.com
+  - bloomberg.com
+  - wsj.com
+  - economist.com
+  - nytimes.com
+  - washingtonpost.com
+  - theguardian.com
+  - thetimes.com
+  - telegraph.co.uk
+  - independent.co.uk
+  - sky.com
+  - itv.com
+  - cnbc.com
+  - cnn.com
+  - npr.org
+  - axios.com
+  - politico.com
+  - politico.eu
+  - aljazeera.com
+  - france24.com
+  - dw.com
+  - euronews.com
+  - lemonde.fr
+  - spiegel.de
+  - rte.ie
+  - japantimes.co.jp
+  - asia.nikkei.com
+  - nikkei.com
+  - scmp.com
+  - focustaiwan.tw
+  - yna.co.kr
+  - koreaherald.com
+  - thehindu.com
+  - aninews.in
+  - businesstoday.in
+  - dawn.com
+  - thenationalnews.com
+  - khaleejtimes.com
+  - timesofisrael.com
+  - haaretz.com
+  - kyivindependent.com
+  - pravda.com.ua
+  - meduza.io
+  - themoscowtimes.com
+  - aa.com.tr
+  - mercopress.com
+  - abc.net.au
+  - cbc.ca
+  - irrawaddy.com
+  - mizzima.com
+  - sudantribune.com
+  - radiodabanga.org
+  - africanews.com
+  - theafricareport.com

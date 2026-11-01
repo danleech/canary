@@ -1,5 +1,12 @@
 [
  {
+  "t": "2026-11-01T12:37:15Z",
+  "applied": 0,
+  "changed": [],
+  "warnings": [],
+  "note": "Situations seeded from existing signal assessments when the situations layer was introduced; no signals re-assessed."
+ },
+ {
   "t": "2026-11-01T11:52:42Z",
   "applied": 72,
   "changed": [

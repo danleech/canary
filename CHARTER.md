@@ -170,3 +170,18 @@ Dan's favourite, **canary.ai**, is registered (taken). I checked these via regis
 - Working name **Canary**; domain decided later (launch on `*.pages.dev`).
 - No push alerts in v1.
 - At the first run, an **Ebola & haemorrhagic fevers** signal was added (72 signals total), and the sovereign-debt rubric was given an explicit France–Bund > 150bp Alert threshold. The original catalogue had no category for either situation.
+
+## 15. v1.1 — agent interface and catalogue expansion (1 Nov 2026)
+
+Dan asked for Canary to be optimised for AI/LLM agents: a shortcut to the key information without burning tokens. Changes:
+
+- **Pre-rendered HTML.** The board, methodology rubrics and per-signal pages are rendered at build time, so fetchers that don't run JavaScript see the real board (before this, they saw "Loading…" and an error message).
+- **Layered, token-budgeted outputs:** `now.md` (~1k tokens), `status.md` (~3k), `s/{id}.md|json` and citable `s/{id}` pages, `api/v1/{meta,status,changes,catalogue,schema}.json`, `llms.txt`, `openapi.json`, `sitemap.xml`, `robots.txt` (with Content Signals), a real `404.html`.
+- **MCP server** at `/mcp` (Pages Function, read-only, three tools) and Markdown content negotiation for `/` and `/s/{id}`.
+- **Atom feed** kept but demoted: entries link to `/s/{id}`, carry the current state, use valid tag URIs, and a rolling daily digest entry carries the brief.
+- **New schema fields:** `situations` (cross-domain events grouping signals), `emerging` (max 3 risks outside the catalogue), per-signal `rubric_hit`, catalogue `horizon` (acute/seasonal/chronic). Machine outputs use the public vocabulary (alert/watch/normal; worsening/stable/improving) plus `as_of`, `valid_until` and `stale_after`.
+- **Safety:** `apply` rejects instruction-like text, invisible Unicode and URLs in prose before writing; source domains outside `trusted_sources.yaml` are flagged in the run log.
+- **Data licensing:** `metrics.json` no longer republishes raw series from restricted sources (Yahoo Finance, ICE BofA, Cboe VIX, EPU/GPR); only latest values and derived statistics. Earlier commits still contain the old series in git history.
+- **Licence:** Canary's statuses and text are CC BY 4.0.
+- **17 new signals (89 total):** dollar funding stress, private credit, yen & carry trade, US jobless claims, emerging-market stress, fertiliser supply, nuclear plant safety, Europe hybrid attacks, Gulf / US–Iran war (split out of "Israel, Gaza & region"), other armed conflicts, cold waves & winter storms, respiratory variants & flu, medicine shortages, exploited vulnerabilities (CISA KEV), humanitarian funding gap, GB energy supply margins, UK flood warnings. Banking stress gained the ECB CISS; "Cholera & dengue" widened to mosquito-borne disease; drought now covers monsoon failure. New metrics: SOFR–IORB, Fed repo operations, initial claims, USD/JPY, CISA KEV, EA floods, ECB CISS; GPR and EPU as context anchors.
+- **Open decisions for Dan:** World State still counts every signal (one event can lift several); `ai-train=yes` in robots.txt; CC BY 4.0 as the licence.

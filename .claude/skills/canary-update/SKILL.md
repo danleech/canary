@@ -1,6 +1,6 @@
 ---
 name: canary-update
-description: Run a Canary assessment — refresh metrics, research every due signal, apply rubric-based RAG statuses with sources, validate, and push. Use for the scheduled 4×-daily run or whenever asked to "update Canary" or "refresh the board".
+description: Run a Canary assessment — refresh metrics, research every due signal, group situations, apply rubric-based RAG statuses with sources, validate, and push. Use for the scheduled 4×-daily run or whenever asked to "update Canary" or "refresh the board".
 ---
 
 # Canary update run
@@ -14,7 +14,7 @@ Read `CLAUDE.md` first if it isn't already in context. Its editorial rules apply
 ```bash
 cd <repo root>
 git pull --rebase
-pip install pyyaml --quiet 2>/dev/null || pip install pyyaml --break-system-packages --quiet
+pip install -r requirements.txt --quiet 2>/dev/null || pip install -r requirements.txt --break-system-packages --quiet
 python scripts/fetch_metrics.py          # refresh hard numbers (safe to re-run)
 python scripts/canary.py plan > /tmp/plan.txt; cat /tmp/plan.txt
 ```
@@ -24,6 +24,10 @@ The plan lists every **due** signal:
 - `daily` signals are due once they're more than 20h old.
 
 For each due signal the plan shows its previous status and value. Metric-backed signals also show a **metric floor**: the status the numeric rubric implies, with hysteresis already applied.
+
+The plan also prints **context anchors** (the daily Geopolitical Risk and Economic Policy Uncertainty indices, ECB systemic stress, EU gas storage when configured). They inform judgement on qualitative signals; they never set a status on their own.
+
+Signals marked `prev=—` have **never been assessed**. Give them a full first assessment; the one-step rule doesn't apply to a first rating.
 
 ## 1. Research (the main work)
 
@@ -40,7 +44,9 @@ Work through the plan **domain by domain**. For each due signal:
    - `flat` = stable
    - `down` = easing
 
-**Budget:** aim for at most ~90 searches per full run.
+5. **Surprise check (once per run, 1–2 searches).** Look for anything significant that no signal covers: scan the latest International Crisis Group CrisisWatch and the top world news of the last 24 hours. If something would rate Watch or higher and fits no catalogue signal, add it to `run.emerging` (max 3, with sources). If an existing emerging item is still live, carry it forward with fresh sources; drop it when it fades or a signal now covers it.
+
+**Budget:** aim for at most ~100 searches per full run (89 signals).
 - Batch independent searches in parallel. Send several WebSearch calls in one turn, one per signal in the same domain.
 - Don't search for a qualitative signal if a search for a neighbouring signal already covered it. For example, one Middle East search often informs `middle-east`, `iran-nuclear` and `chokepoints`.
 - If the Agent tool is available and the run is large, you may hand 2–3 domains each to subagents. Pass each one the plan lines, the catalogue entries and these instructions, and have it return JSON in the update format below.
@@ -65,11 +71,31 @@ Create `work/updates.json` (the folder is git-ignored) like this:
       "summary": "Brent above $110 as Gulf supply disruption persists",
       "state": "Brent settled at $113 on 30 Oct, above the $110 Alert threshold for a third week… (2–4 sentences, dated facts)",
       "for_you": "Expect higher fuel and transport costs to feed through over coming weeks. (descriptive for finance; official guidance links for safety topics)",
+      "rubric_hit": "Brent $113 > $110 Alert line",
       "sources": [{"title": "Reuters — Oil prices …", "url": "https://…", "date": "2026-10-30"}]
     }
   ]
 }
 ```
+
+`run` may also carry the two cross-signal layers. Each **replaces** the previous list when present; omit the key to keep the previous one unchanged.
+
+```json
+"run": {
+  "headline": "…",
+  "situations": [
+    {"id": "us-iran-war", "name": "US–Iran war and Gulf energy shock", "status": "red", "trend": "up",
+     "summary": "≤ 160 chars, dated facts", "signals": ["gulf-iran", "oil", "eu-gas", "chokepoints"]}
+  ],
+  "emerging": [
+    {"name": "≤ 60 chars", "status": "amber", "summary": "≤ 160 chars",
+     "sources": [{"title": "…", "url": "https://…", "date": "2026-11-01"}], "first_seen": "2026-11-01"}
+  ]
+}
+```
+
+- **Situations:** send the full list every run (3–10 items). A situation groups two or more signals driven by the same event, or one Alert that is a discrete named event (a cyclone, an outbreak). Keep ids stable from run to run. Its status is the highest status among its signals unless you explain otherwise in the summary. Copy the previous list from `site/data/status.json` and edit it.
+- **Emerging:** only Watch or Alert (`amber`/`red`) situations that no signal covers, each with 1–3 sources. Send `"emerging": []` to clear the list.
 
 - Include **every due signal**. Omitted signals keep their old `checked_at` and will go ⚪ stale on the site.
 - `value` (≤ 48 chars) is shown in its own column on the board, so **give one for every signal**. Metric signals may omit it (the metric's display string is used). Qualitative signals need a short state descriptor, for example `Hormuz 2–8 transits/day`, `Threat level: Severe`, `10,274 cases (29 Oct)`, `No PHEIC since May`.
@@ -82,16 +108,18 @@ Create `work/updates.json` (the folder is git-ignored) like this:
 python scripts/canary.py apply work/updates.json
 ```
 
-`apply` does the following:
+`apply` first validates the whole file (lengths, sources, advice-like wording, instruction-like text, URLs in prose, situation and emerging structure). **If anything fails, it writes nothing**: fix `work/updates.json` and run `apply` again.
+
+It then:
 - merges the updates
 - enforces the metric floor and the one-step rule (it prints `WARN` lines when it adjusts something)
 - logs status changes
 - appends history
 - recomputes the World State index
-- rebuilds `feed.xml`
+- rebuilds the public outputs (pre-rendered pages, `now.md`, `s/*`, `api/v1/*`, `llms.txt`, `feed.xml`)
 - runs `check`
 
-**If `check` reports errors, fix `work/updates.json`** (too long, missing a source, advice-like wording) and **re-run apply**. Re-applying in the same run is fine. Read every `WARN` line. If the floor or the clamp changed a status, make sure `state` still matches the final status. If it doesn't, fix the text and re-apply.
+**If `check` reports errors, fix `work/updates.json`** (too long, missing a source, advice-like wording, instruction-like text) and **re-run apply**. Re-applying in the same run is fine. Read the untrusted-source warning: replace weak sources with established ones where you can. Read every `WARN` line. If the floor or the clamp changed a status, make sure `state` still matches the final status. If it doesn't, fix the text and re-apply.
 
 ## 4. Commit and push
 
@@ -118,3 +146,5 @@ If the run could not complete, say exactly which step failed. Do not push partia
 - [ ] Conflict and politics copy is neutral, with casualty figures attributed.
 - [ ] Each source URL is a real page you saw this run.
 - [ ] Each status matches its rubric. A chronic situation is not an Alert unless the rubric says so.
+- [ ] Every Alert sits in a situation or is genuinely standalone; situation summaries carry dated facts.
+- [ ] Open `site/now.md`: it should read as a correct one-minute briefing (about 1,000 tokens).

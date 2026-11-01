@@ -3,7 +3,7 @@
 
   python scripts/canary.py plan            # what is due this run + metric-based suggestions
   python scripts/canary.py apply FILE      # merge an updates JSON into status, then build + check
-  python scripts/canary.py build           # rebuild derived files (catalogue.json, world index, feed)
+  python scripts/canary.py build           # rebuild derived files (catalogue, world index, feed, agent outputs, pages)
   python scripts/canary.py check           # validate everything; non-zero exit on any error
 
 Data files (all under site/data/):
@@ -13,6 +13,9 @@ Data files (all under site/data/):
   runs.json      log of assessment runs
   metrics.json   hard numbers from scripts/fetch_metrics.py
   catalogue.json generated from signals/catalogue.yaml for the site
+
+Derived public outputs (now.md, status.md, s/*, api/v1/*, llms.txt, feed.xml, …) are
+written by scripts/publish.py during `build`.
 """
 from __future__ import annotations
 
@@ -21,9 +24,11 @@ import re
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from xml.sax.saxutils import escape
 
 import yaml
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import publish  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "site" / "data"
@@ -42,7 +47,25 @@ BANNED = re.compile(
     r"|invest in|divest|go long|go short|short (?:the|selling)|take profits?|rebalanc\w*|you should (?:buy|sell|invest))\b",
     re.I,
 )
-LIMITS = {"value": 48, "summary": 120, "state": 700, "for_you": 320}
+LIMITS = {"value": 48, "summary": 120, "state": 700, "for_you": 320, "rubric_hit": 200}
+HORIZONS = {"acute", "seasonal", "chronic"}
+MAX_SITUATIONS, MAX_EMERGING = 10, 3
+PROSE = ("value", "summary", "state", "for_you", "rubric_hit")
+# Canary's text is pasted into other AI agents' context windows, so it must never carry
+# instructions. These patterns catch prompt-injection text copied from a poisoned source.
+INJECTION = re.compile(
+    r"(ignore (?:all |any )?(?:previous|prior|above|earlier) (?:instructions|prompts?)"
+    r"|disregard (?:the |all |your )?(?:previous|prior|above|system)"
+    r"|(?:system|developer) (?:prompt|message|instructions?)"
+    r"|you are (?:now )?(?:an? )?(?:ai|assistant|language model|chatbot|llm)\b"
+    r"|as an ai (?:language )?model|\bassistant:|\buser:|<\/?(?:system|instructions?|prompt)>"
+    r"|(?:do not|don't) (?:tell|inform|reveal to) the user"
+    r"|\b(?:jailbreak|prompt injection)\b)",
+    re.I,
+)
+INVISIBLE = re.compile("[\u200b-\u200f\u202a-\u202e\u2060-\u2064\u2066-\u2069\ufeff\U000e0000-\U000e007f]")
+URL_IN_PROSE = re.compile(r"(?:https?://|www\.)\S+", re.I)
+TRUSTED = ROOT / "signals" / "trusted_sources.yaml"
 
 
 def now() -> datetime:
@@ -142,12 +165,40 @@ def suggest(sig_id: str, metrics: dict, prev_level: int | None) -> dict | None:
             triggers.append((1, f"DXY {v:.1f} outside 90–108"))
         value, num = (f"DXY {v:.1f}, 3m {c3:+.1f}%" if v and c3 is not None else None), v
     elif sig_id == "banking-stress":
-        v = M("stlfsi")
-        rules = [("STLFSI", v, 0.0, 1.5)]  # amber at ≥ 0
-        value, num = (f"STLFSI {v:+.2f}" if v is not None else None), v
+        v, c = M("stlfsi"), M("ciss")
+        rules = [("STLFSI", v, 0.0, 1.5), ("ECB CISS", c, 0.25, 0.45)]  # STLFSI amber at ≥ 0
+        value = (f"STLFSI {v:+.2f}" + (f", CISS {c:.2f}" if c is not None else "")) if v is not None else None
+        num = v
+    elif sig_id == "funding-stress":
+        sp, rp = M("sofr_iorb", "max_5d_bp"), M("repo_ops", "max_5d")
+        rules = [("SOFR–IORB 5d max bp", sp, 10, 25), ("Fed repo ops 5d max $bn", rp, 15, 50)]
+        cur = M("sofr_iorb")
+        value = f"SOFR–IORB {cur:+.0f}bp, repo ${rp:.1f}bn" if cur is not None and rp is not None else None
+        num = cur
+    elif sig_id == "yen-carry":
+        v, w, m1 = M("usdjpy"), M("usdjpy", "chg_1w_pct"), M("usdjpy", "chg_1m_pct")
+        rules = [("USD/JPY 1w move %", _abs(w), 3, 5), ("USD/JPY 1m move %", _abs(m1), 6, 10)]
+        value = f"¥{v:.1f}/$, 1w {w:+.1f}%" if v is not None and w is not None else None
+        num = v
+    elif sig_id == "jobless-claims":
+        a4, up = M("icsa", "avg4"), M("icsa", "above_low_pct")
+        rules = [("4wk avg % above 52w low", up, 15, 30)]
+        value = f"{a4/1000:.0f}k 4wk avg, +{up:.0f}% vs low" if a4 is not None and up is not None else None
+        num = a4
+    elif sig_id == "exploited-vulns":
+        n7, n30 = M("kev", "count_7d"), M("kev", "count_30d")
+        rules = [("KEV additions 7d", n7, 11, 1e9)]
+        value = f"{n7} KEV adds (7d), {n30} (30d)" if n7 is not None else None
+        num = n7
+    elif sig_id == "uk-floods":
+        c = M("ea_floods", "counts") or {}
+        if c:
+            sev, warn = c.get("severe", 0), c.get("warning", 0)
+            triggers.append((2 if sev else 1 if warn >= 10 else 0, f"EA: {sev} severe, {warn} warnings"))
+            value = "No flood warnings" if not (sev or warn) else f"{sev} severe, {warn} flood warnings"
+            num = warn
     elif sig_id == "gold":
-        v, c3, s = M("gold"), M("gold", "chg_3m_pct"), M("gold", "series") or []
-        wk = (s[-1] / s[-6] - 1) * 100 if len(s) > 6 else None
+        v, c3, wk = M("gold"), M("gold", "chg_3m_pct"), M("gold", "chg_1w_pct")
         rules = [("Gold 3m gain %", c3 if c3 is not None else None, 10, 20)]
         if c3 is not None and c3 < -8:
             triggers.append((1, f"3m fall {c3:.1f}%"))
@@ -270,7 +321,17 @@ def cmd_plan(_args) -> int:
     todo, carry = [], []
     for s in cat["signals"]:
         (todo if due(s, sigs.get(s["id"]), t) else carry).append(s)
-    print(f"due: {len(todo)}   carried forward (daily, fresh): {len(carry)}\n")
+    print(f"due: {len(todo)}   carried forward (daily, fresh): {len(carry)}")
+    anchors = []
+    for key, label in (("gpr", "Geopolitical Risk index (7d avg)"), ("epu", "US policy uncertainty (7d avg)"),
+                       ("ciss", "ECB systemic stress"), ("gas_storage", "EU gas storage % full")):
+        m = metrics.get(key) or {}
+        if m.get("value") is not None:
+            rel = f", {m['vs_1y_median']}× its 1-year median" if m.get("vs_1y_median") else ""
+            anchors.append(f"  {label}: {m['value']}{rel} (as of {m.get('as_of')})")
+    if anchors:
+        print("context anchors (inform judgement; not floors):\n" + "\n".join(anchors))
+    print()
     dom = None
     for s in todo:
         if s["domain"] != dom:
@@ -296,6 +357,12 @@ def cmd_apply(args) -> int:
     upd = json.loads(Path(args[0]).read_text())
     cat = catalogue()
     by_id = {s["id"]: s for s in cat["signals"]}
+    bad = validate_updates(upd, by_id)
+    if bad:  # reject before touching any data file, so a fixed file can simply be re-applied
+        for e in bad:
+            print("ERROR:", e)
+        print(f"apply aborted: {len(bad)} problem(s) in {args[0]}; nothing was written")
+        return 1
     status = load("status.json", {"signals": {}})
     history = load("history.json", {})
     changes = load("changes.json", [])
@@ -353,7 +420,16 @@ def cmd_apply(args) -> int:
     run = upd.get("run", {})
     if run.get("headline"):
         status["headline"] = run["headline"]
-    status["generated_at"] = iso(t)
+    if "situations" in run:  # replaces the whole list; omit the key to keep the previous one
+        status["situations"] = [
+            {k: s.get(k) for k in ("id", "name", "status", "trend", "summary", "signals")}
+            for s in (run.get("situations") or [])][:MAX_SITUATIONS]
+    if "emerging" in run:
+        status["emerging"] = [
+            {k: x.get(k) for k in ("name", "status", "summary", "sources", "first_seen") if x.get(k) is not None}
+            for x in (run.get("emerging") or [])][:MAX_EMERGING]
+    if applied:
+        status["generated_at"] = iso(t)
     status["world"] = world_index(cat, sigs)
     runs.insert(0, {"t": iso(t), "applied": applied, "changed": changed, "warnings": warnings,
                     "note": run.get("note", "")})
@@ -399,32 +475,99 @@ def cmd_build(_args) -> int:
     status = load("status.json", {"signals": {}})
     status["world"] = world_index(cat, status.get("signals", {}))
     save("status.json", status)
-    changes = load("changes.json", [])
-    feed_updated = changes[0]["t"] if changes else status.get("generated_at") or iso(now())
-    entries = []
-    for c in changes[:60]:
-        title = f"{c['name']}: {LABEL[c['from']]} → {LABEL[c['to']]}"
-        entries.append(
-            f"  <entry>\n    <title>{escape(title)}</title>\n"
-            f"    <id>tag:canary,{c['t'][:10]}:{c['id']}:{c['t']}</id>\n"
-            f"    <updated>{c['t']}</updated>\n"
-            f"    <link href=\"{SITE_URL}/#{c['id']}\"/>\n"
-            f"    <summary>{escape(c.get('reason') or '')}</summary>\n  </entry>")
-    feed = ("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<feed xmlns=\"http://www.w3.org/2005/Atom\">\n"
-            "  <title>Canary — status changes</title>\n"
-            f"  <link href=\"{SITE_URL}/\"/>\n  <link rel=\"self\" href=\"{SITE_URL}/feed.xml\"/>\n"
-            f"  <id>{SITE_URL}/</id>\n  <updated>{feed_updated}</updated>\n"
-            "  <author><name>Canary</name></author>\n" + "\n".join(entries) + "\n</feed>\n")
-    (ROOT / "site" / "feed.xml").write_text(feed)
-    print("built catalogue.json, world index, feed.xml")
+    written = publish.build(SITE_URL, cat, status, load("changes.json", []), load("history.json", {}),
+                            load("metrics.json", {}).get("metrics", {}),
+                            {"fast": FAST_STALE_H, "daily": DAILY_STALE_H})
+    print(f"built catalogue.json, world index and public outputs ({len(written)} files changed)")
     return 0
 
 
 # ───────────────────────── check ─────────────────────────
 
+def validate_updates(upd: dict, by_id: dict) -> list[str]:
+    """Structural and safety checks on an updates file, run before anything is merged."""
+    errs: list[str] = []
+    run = upd.get("run") or {}
+    if run.get("headline"):
+        check_text("run.headline", {"headline": run["headline"]}, errs, limit=260)
+        m = BANNED.search(run["headline"])
+        if m:
+            errs.append(f"run.headline: advice-like phrase '{m.group(0)}' (the headline must stay descriptive)")
+    for x in run.get("situations") or []:
+        xid = x.get("id") or "?"
+        if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", xid):
+            errs.append(f"situation '{xid}': id must be kebab-case")
+        if x.get("status") not in LEVEL or x.get("trend") not in TRENDS:
+            errs.append(f"situation {xid}: status must be green|amber|red and trend up|flat|down")
+        unknown = [i for i in x.get("signals") or [] if i not in by_id]
+        if not x.get("signals") or unknown:
+            errs.append(f"situation {xid}: needs signal ids from the catalogue (unknown: {unknown})")
+        check_text(f"situation {xid}", {"name": x.get("name")}, errs, limit=60, required=True)
+        check_text(f"situation {xid}", {"summary": x.get("summary")}, errs, limit=160, required=True)
+    if len(run.get("situations") or []) > MAX_SITUATIONS:
+        errs.append(f"run.situations: max {MAX_SITUATIONS}")
+    for x in run.get("emerging") or []:
+        nm = x.get("name") or "?"
+        if x.get("status") not in ("amber", "red"):
+            errs.append(f"emerging '{nm}': status must be amber or red (otherwise leave it out)")
+        check_text(f"emerging '{nm}'", {"name": x.get("name")}, errs, limit=60, required=True)
+        check_text(f"emerging '{nm}'", {"summary": x.get("summary")}, errs, limit=160, required=True)
+        if not x.get("sources"):
+            errs.append(f"emerging '{nm}': no sources")
+        check_sources(f"emerging '{nm}'", x.get("sources") or [], set(), errs, {})
+    if len(run.get("emerging") or []) > MAX_EMERGING:
+        errs.append(f"run.emerging: max {MAX_EMERGING}")
+    for u in upd.get("signals", []):
+        sid = u.get("id", "?")
+        if sid in by_id:
+            check_text(sid, {f: u.get(f) for f in PROSE}, errs)
+            check_sources(sid, u.get("sources") or [], set(), errs, {})
+    return errs
+
+
+def check_text(where: str, fields: dict, errs: list, limit: int | None = None, required: bool = False) -> None:
+    """Prose that other AI agents will read: no instructions, no hidden characters, no inline URLs."""
+    for f, v in fields.items():
+        if v is None or v == "":
+            if required:
+                errs.append(f"{where}: missing {f}")
+            continue
+        if not isinstance(v, str):
+            errs.append(f"{where}: {f} must be text")
+            continue
+        if limit and len(v) > limit:
+            errs.append(f"{where}: {f} is {len(v)} chars (max {limit})")
+        if INVISIBLE.search(v):
+            errs.append(f"{where}: invisible or bidi control characters in {f}")
+        m = INJECTION.search(v)
+        if m:
+            errs.append(f"{where}: instruction-like text '{m.group(0)}' in {f} (possible prompt injection from a source)")
+        if URL_IN_PROSE.search(v):
+            errs.append(f"{where}: URL in {f} (put links in sources, not in prose)")
+
+
+def check_sources(where: str, srcs: list, trusted: set, errs: list, untrusted: dict) -> None:
+    for src in srcs:
+        url = src.get("url", "")
+        if not re.match(r"https?://", url) or not src.get("title"):
+            errs.append(f"{where}: bad source {src}")
+            continue
+        check_text(where, {"source title": src.get("title")}, errs, limit=200)
+        host = re.sub(r"^www\.", "", url.split("/")[2].split(":")[0].lower())
+        if trusted and not any(host == d or host.endswith("." + d) for d in trusted):
+            untrusted.setdefault(host, set()).add(where)
+
+
+def trusted_domains() -> set:
+    if not TRUSTED.exists():
+        return set()
+    return {d.lower().strip() for d in (yaml.safe_load(TRUSTED.read_text()) or {}).get("domains", [])}
+
+
 def cmd_check(_args) -> int:
     errs, warns = [], []
     cat = catalogue()
+    trusted, untrusted = trusted_domains(), {}
     dom_ids = {d["id"] for d in cat["domains"]}
     ids = [s["id"] for s in cat["signals"]]
     if len(ids) != len(set(ids)):
@@ -439,6 +582,10 @@ def cmd_check(_args) -> int:
             errs.append(f"catalogue {s['id']}: tier must be fast|daily")
         if set((s.get("rubric") or {}).keys()) != {"green", "amber", "red"}:
             errs.append(f"catalogue {s['id']}: rubric needs green/amber/red")
+        if s.get("horizon", "acute") not in HORIZONS:
+            errs.append(f"catalogue {s['id']}: horizon must be acute|seasonal|chronic")
+        if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", s.get("id") or ""):
+            errs.append(f"catalogue {s.get('id')}: id must be kebab-case")
     status = load("status.json", {"signals": {}})
     sigs = status.get("signals", {})
     by_id = {s["id"]: s for s in cat["signals"]}
@@ -461,9 +608,8 @@ def cmd_check(_args) -> int:
         srcs = s.get("sources") or []
         if not srcs:
             errs.append(f"{sid}: no sources")
-        for src in srcs:
-            if not re.match(r"https?://", src.get("url", "")) or not src.get("title"):
-                errs.append(f"{sid}: bad source {src}")
+        check_sources(sid, srcs, trusted, errs, untrusted)
+        check_text(sid, {f: s.get(f) for f in PROSE}, errs)
         if not parse(s.get("checked_at")):
             errs.append(f"{sid}: bad checked_at")
         if by_id[sid]["domain"] in ADVICE_DOMAINS:
@@ -471,6 +617,51 @@ def cmd_check(_args) -> int:
                 m = BANNED.search(s.get(f) or "")
                 if m:
                     errs.append(f"{sid}: advice-like phrase '{m.group(0)}' in {f} (finance copy must be descriptive)")
+    if status.get("headline"):
+        check_text("headline", {"headline": status["headline"]}, errs, limit=260)
+        m = BANNED.search(status["headline"])
+        if m:
+            errs.append(f"headline: advice-like phrase '{m.group(0)}' (the headline must stay descriptive)")
+    sits = status.get("situations") or []
+    if len(sits) > MAX_SITUATIONS:
+        errs.append(f"situations: {len(sits)} listed (max {MAX_SITUATIONS})")
+    seen = set()
+    for x in sits:
+        xid = x.get("id") or "?"
+        if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", xid) or xid in seen:
+            errs.append(f"situation '{xid}': id must be unique kebab-case")
+        seen.add(xid)
+        if x.get("status") not in LEVEL:
+            errs.append(f"situation {xid}: bad status {x.get('status')}")
+        if x.get("trend") not in TRENDS:
+            errs.append(f"situation {xid}: trend must be up|flat|down")
+        if not x.get("name") or len(x["name"]) > 60:
+            errs.append(f"situation {xid}: name missing or over 60 chars")
+        unknown = [i for i in x.get("signals") or [] if i not in by_id]
+        if not x.get("signals") or unknown:
+            errs.append(f"situation {xid}: needs signal ids from the catalogue (unknown: {unknown})")
+        check_text(f"situation {xid}", {"summary": x.get("summary")}, errs, limit=160, required=True)
+    emer = status.get("emerging") or []
+    if len(emer) > MAX_EMERGING:
+        errs.append(f"emerging: {len(emer)} listed (max {MAX_EMERGING})")
+    for x in emer:
+        nm = x.get("name") or "?"
+        if x.get("status") not in ("amber", "red"):
+            errs.append(f"emerging '{nm}': status must be amber or red (otherwise leave it out)")
+        if not x.get("name") or len(x["name"]) > 60:
+            errs.append(f"emerging '{nm}': name missing or over 60 chars")
+        check_text(f"emerging '{nm}'", {"summary": x.get("summary")}, errs, limit=160, required=True)
+        if not x.get("sources"):
+            errs.append(f"emerging '{nm}': no sources")
+        check_sources(f"emerging '{nm}'", x.get("sources") or [], trusted, errs, untrusted)
+    if untrusted:
+        warns.append(f"{len(untrusted)} source domain(s) not in signals/trusted_sources.yaml (prefer established "
+                     "outlets; add a domain only after checking it): "
+                     + "; ".join(f"{h} ({', '.join(sorted(w))})" for h, w in sorted(untrusted.items())))
+    for name, budget in (("now.md", 1600), ("status.md", 4500)):
+        f = ROOT / "site" / name
+        if f.exists() and publish.est_tokens(f.read_text()) > budget:
+            warns.append(f"{name} is ~{publish.est_tokens(f.read_text())} tokens (budget {budget}); tighten summaries")
     missing = [i for i in ids if i not in sigs]
     if missing:
         warns.append(f"{len(missing)} catalogue signals not yet assessed: {', '.join(missing[:8])}…")

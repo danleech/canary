@@ -1,0 +1,22 @@
+# UK energy price cap — ALERT (worsening)
+id uk-energy-cap · UK Watch · horizon acute · checked 2026-11-01T11:52Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T23:52Z
+Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/uk-energy-cap
+
+Value: £1,723 now; Jan forecast +27%
+Rated on: Cap > £2,200, or forecast rise ≥ 20%.
+Situation: US–Iran war and Gulf energy shock [us-iran-war]
+
+Energy price cap forecast to rise about 25% in January
+
+Why it's at this level: The Ofgem cap for October to December is £1,723 a year for a typical dual-fuel household. Uswitch's average of British Gas, EDF and E.ON forecasts (updated 30 Oct) points to a 27% rise in January 2027, above the 20% Alert line, driven by the wholesale gas surge. Ofgem announces the January cap by 25 Nov.
+
+What this means for you: Household energy bills are likely to rise sharply from 1 January. Ofgem and Citizens Advice publish guidance on support if you're struggling to pay.
+
+Why it matters: The Ofgem cap sets bills for most UK households — a direct cost-of-living signal.
+What moves it: Wholesale gas and power prices, network costs, policy levies.
+
+Rubric — Alert: Cap > £2,200, or forecast rise ≥ 20%. | Watch: Cap £1,700–2,200, or forecast rise ≥ 5%. | Normal: Typical dual-fuel cap < £1,700/yr and next forecast change < +5%.
+
+Sources:
+- Uswitch — Energy price cap January 2027 latest predictions (2026-10-30) https://www.uswitch.com/gas-electricity/news/energy-price-cap-january-2027-latest-predictions-and-news/
+- Energy Plus — Ofgem January 2027 price cap forecast (2026-10-30) https://www.energyplus.co.uk/price-cap/ofgem-january-2027-price-cap-forecast-uk
