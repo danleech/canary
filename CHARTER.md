@@ -185,3 +185,26 @@ Dan asked for Canary to be optimised for AI/LLM agents: a shortcut to the key in
 - **Licence:** Canary's statuses and text are CC BY 4.0.
 - **17 new signals (89 total):** dollar funding stress, private credit, yen & carry trade, US jobless claims, emerging-market stress, fertiliser supply, nuclear plant safety, Europe hybrid attacks, Gulf / US–Iran war (split out of "Israel, Gaza & region"), other armed conflicts, cold waves & winter storms, respiratory variants & flu, medicine shortages, exploited vulnerabilities (CISA KEV), humanitarian funding gap, GB energy supply margins, UK flood warnings. Banking stress gained the ECB CISS; "Cholera & dengue" widened to mosquito-borne disease; drought now covers monsoon failure. New metrics: SOFR–IORB, Fed repo operations, initial claims, USD/JPY, CISA KEV, EA floods, ECB CISS; GPR and EPU as context anchors.
 - **Open decisions for Dan:** World State still counts every signal (one event can lift several); `ai-train=yes` in robots.txt; CC BY 4.0 as the licence.
+
+## 16. v1.2 — sentiment track (1 Nov 2026)
+
+Dan asked for a sentiment track for global issues and how the intelligence could be sourced. The track shows how the news and the public *feel* about the issues Canary rates, next to how Canary rates them. It is **measured, not judged**: a script computes it from open data, it has no red/amber/green colours, it never changes a status and the World State index ignores it.
+
+**Sources evaluated (tested live on 1 Nov 2026):**
+
+| Source | What it measures | Verdict |
+|---|---|---|
+| GDELT Global Knowledge Graph bulk files | Tone and volume of world online news, English plus ~65 machine-translated languages, every 15 min | **Used.** Free to reuse with a citation, no key. The bulk files avoid GDELT's DOC API, which returned HTTP 429 to shared cloud IPs in testing. |
+| OECD composite consumer confidence | Household mood, ~50 economies, monthly (long-run average = 100) | **Used**, latest values and derived statistics only (national survey inputs can be third-party). |
+| EPU, GPR, VIX | Text- and market-based uncertainty | **Reused** from `metrics.json` (VIX now carries a 1-year percentile). |
+| Opinion polls (Ipsos What Worries the World, YouGov issues tracker, ONS OPN) | What people say worries them | **Not automated.** The most valid measure of public concern, but no open machine-readable feed. Candidate for a monthly reading maintained by the Claude run. |
+| Social media (X, Reddit, Bluesky) | Online chatter | Rejected: paid or restricted access, unrepresentative samples. |
+| Search attention (Google Trends, Wikipedia pageviews) | What people look up | Rejected for now: no stable open Google API; Wikimedia's API rate-limited the cloud IP and asks for contact details in the User-Agent. |
+| Prediction markets | Crowd probabilities | Rejected: forecasts are a charter non-goal. |
+| Claude-judged sentiment | — | Rejected: circular (Claude already reads the news for statuses) and not reproducible. |
+
+**Method:** nine issues (economy, war & security, energy, trade, climate change, disasters, health, cyber & tech, migration) are defined by GDELT themes in `signals/sentiment.yaml`, each linked to Canary domains. Four 15-minute samples a day per stream (00/06/12/18 UTC, ~7–13k articles a day) are pooled into 7-day windows and ranked against every 7-day window in the previous 180 days, so each issue is compared only with itself. History was backfilled for 200 days at launch.
+
+**Files:** `scripts/fetch_sentiment.py` (runs in the metrics workflow, `continue-on-error`), `signals/sentiment.yaml`, `site/data/sentiment.json`, pre-rendered Sentiment panel (collapsed, under Situations), a section in `now.md`, `api/v1/sentiment.json`, and a methodology section listing every theme counted.
+
+**Open decision for Dan:** whether to add a monthly public-concern reading from published polls (Claude-maintained, with sources), accepting the extra run cost and that the figures would be cited rather than redistributed.

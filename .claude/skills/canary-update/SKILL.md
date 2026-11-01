@@ -127,7 +127,9 @@ It then:
 git add site/ && git commit -m "update: $(date -u +%Y-%m-%dT%H:%MZ) — <n> changes" && git pull --rebase && git push
 ```
 
-If the push fails because of a conflict on `site/data/metrics.json`, keep the newer file: `git checkout --theirs site/data/metrics.json && git add … && git rebase --continue`.
+If the push fails because of a conflict on `site/data/metrics.json` or `site/data/sentiment.json` (both written by the metrics workflow), keep the newer file: `git checkout --theirs site/data/metrics.json site/data/sentiment.json && git add … && git rebase --continue`.
+
+Never edit `site/data/sentiment.json` or use the Sentiment panel as evidence for a status: it is measured by a script, and it is context, not an attention level.
 
 ## 5. Report
 

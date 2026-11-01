@@ -315,6 +315,7 @@ def now_md(m: Model) -> str:
     pending = [r["id"] for r in m.records if r["status"] == "pending"]
     if pending:
         out += ["", "## Pending first assessment", ", ".join(pending)]
+    out += sentiment_md(m.sentiment_v)
     out += ["", f"More: {m.url}/status.md (all signals) · {m.url}/s/{{id}}.md (detail + sources) · "
                 f"{m.url}/api/v1/status.json · MCP {m.url}/mcp · {DATA_NOTE}"]
     return "\n".join(out) + "\n"
@@ -510,6 +511,7 @@ def openapi_json(m: Model) -> dict:
             "/api/v1/status.json": {"get": {"operationId": "getStatus", "summary": "Full public state", "responses": js(f"{m.url}/api/v1/schema.json")}},
             "/api/v1/changes.json": {"get": {"operationId": "getChanges", "summary": "Status change log", "responses": js()}},
             "/api/v1/catalogue.json": {"get": {"operationId": "getCatalogue", "summary": "Signal definitions and rubrics", "responses": js()}},
+            "/api/v1/sentiment.json": {"get": {"operationId": "getSentiment", "summary": "Sentiment track: news tone by issue (GDELT), consumer confidence (OECD), uncertainty gauges. Measured, never part of a status", "responses": js()}},
         },
     }
 
@@ -542,12 +544,16 @@ def llms_txt(m: Model, sizes: dict) -> str:
         f"- [Catalogue and rubrics]({m.url}/api/v1/catalogue.json) ({tok('api/v1/catalogue.json')})",
         f"- [JSON Schema]({m.url}/api/v1/schema.json) · [OpenAPI]({m.url}/openapi.json) · [Atom feed]({m.url}/feed.xml)",
         f"- [MCP server]({m.url}/mcp): Streamable HTTP, no auth; tools get_world_state, get_signal, get_changes",
+        f"- [Sentiment JSON]({m.url}/api/v1/sentiment.json): news tone by issue, consumer confidence, uncertainty gauges; "
+        f"measured by a script, never part of a status ({tok('api/v1/sentiment.json')})",
         "",
         "## How to read it",
         "- alert = acute or material risk now; watch = elevated or deteriorating; normal = background; "
         "pending = not yet assessed; stale = not verified within 14h (36h for daily-tier signals).",
         "- horizon chronic or seasonal = a structural situation (e.g. climate trends), not breaking news.",
         "- Situations group several signals driven by one event; count situations, not Alerts, for breadth.",
+        "- Sentiment (now.md, api/v1/sentiment.json) is how the news and consumers feel, measured from open data and "
+        "compared with its own history. It is context, not an attention level, and never changes a status.",
         f"- {DATA_NOTE}",
         f"- Methodology and rubrics: {m.url}/methodology",
         "",
@@ -902,6 +908,308 @@ def situations_html(m: Model) -> str:
 </details>"""
 
 
+# ───────────────────────── sentiment track ─────────────────────────
+# Measured by scripts/fetch_sentiment.py (GDELT news tone, OECD consumer confidence) plus the EPU,
+# GPR and VIX readings already in metrics.json. Never rated by the model; never changes a status.
+
+MOOD_STALE_DAYS = 3
+MOOD_BANDS = {"much-gloomier": 2, "gloomier": 1, "typical": 0, "brighter": -1, "much-brighter": -2}
+CONF_BAND = {"above": "above average", "below": "below average", "near": "near average"}
+
+
+def _lc(name: str) -> str:
+    return name[:1].lower() + name[1:]
+
+
+def _month(period: str | None) -> str:
+    try:
+        return datetime.strptime(period or "", "%Y-%m").strftime("%b %Y")
+    except ValueError:
+        return period or "—"
+
+
+def _day(d: str | None) -> str:
+    try:
+        x = datetime.strptime(d or "", "%Y-%m-%d")
+        return f"{x.day} {x:%b}"
+    except ValueError:
+        return d or "—"
+
+
+def _join(xs: list[str]) -> str:
+    return xs[0] if len(xs) == 1 else ", ".join(xs[:-1]) + " and " + xs[-1]
+
+
+def _signed(x: float | None, dp: int = 1) -> str:
+    if x is None:
+        return "—"
+    return ("+" if x > 0 else "−" if x < 0 else "±") + f"{abs(x):.{dp}f}"
+
+
+def sentiment_view(m: Model) -> dict:
+    """One normalised view of the sentiment track for the board, now.md and the JSON API."""
+    s = m.sentiment or {}
+    media = s.get("summary") or {}
+    conf = s.get("confidence") or {}
+    view: dict = {"media": None, "confidence": None, "gauges": [], "headline": None, "stale": False}
+    if media.get("issues"):
+        as_of = parse(media["as_of"] + "T00:00:00Z") if media.get("as_of") else None
+        ref = parse(m.as_of) or datetime.now(timezone.utc)
+        view["stale"] = bool(as_of and (ref - as_of).days > MOOD_STALE_DAYS)
+        by_dom = m.world.get("by_domain") or {}
+        issues = []
+        for i in media["issues"]:
+            issues.append({**{k: i.get(k) for k in ("id", "name", "band", "label", "trend", "gloom_pct", "tone",
+                                                       "tone_typical", "share", "share_pct", "share_typical",
+                                                       "articles")},
+                           "spark": i.get("spark") or [],
+                           "domains": [{"id": d, "name": m.domains[d]["name"], "short": m.domains[d].get("short") or m.domains[d]["name"],
+                                        "score": by_dom.get(d)}
+                                       for d in i.get("domains", []) if d in m.domains]})
+        view["media"] = {"as_of": media.get("as_of"), "window_days": media.get("window_days"),
+                         "baseline_days": media.get("baseline_days"), "articles": media.get("articles"),
+                         "spark_start": media.get("spark_start"),
+                         "overall": {k: (media.get("overall") or {}).get(k)
+                                     for k in ("band", "label", "trend", "gloom_pct", "tone", "tone_typical")},
+                         "overall_spark": (media.get("overall") or {}).get("spark") or [],
+                         "issues": issues, "source": media.get("source"), "source_url": media.get("source_url")}
+    if conf.get("areas"):
+        view["confidence"] = {"areas": conf["areas"], "source": conf.get("source"),
+                              "source_url": conf.get("source_url"), "error": conf.get("error")}
+    met = m.metrics or {}
+    epu, gpr, vix = met.get("epu") or {}, met.get("gpr") or {}, met.get("vix") or {}
+    if epu.get("vs_1y_median"):
+        view["gauges"].append({"id": "epu", "name": "US policy uncertainty", "ratio": epu["vs_1y_median"],
+                               "text": f"{epu['vs_1y_median']:.1f}× its 1-year median", "as_of": epu.get("as_of"),
+                               "source": "Economic Policy Uncertainty index (Baker, Bloom & Davis)", "url": epu.get("url")})
+    if gpr.get("vs_1y_median"):
+        view["gauges"].append({"id": "gpr", "name": "Geopolitical risk in the news", "ratio": gpr["vs_1y_median"],
+                               "text": f"{gpr['vs_1y_median']:.1f}× its 1-year median", "as_of": gpr.get("as_of"),
+                               "source": "Geopolitical Risk index (Caldara & Iacoviello)", "url": gpr.get("url")})
+    if vix.get("pct_1y") is not None:
+        view["gauges"].append({"id": "vix", "name": "Market fear (VIX)", "pct_1y": vix["pct_1y"],
+                               "text": f"higher than {vix['pct_1y']}% of the past year" if vix["pct_1y"] >= 50
+                               else f"lower than {100 - vix['pct_1y']}% of the past year",
+                               "as_of": (vix.get("as_of") or "")[:10], "source": vix.get("source"), "url": vix.get("url")})
+    view["headline"] = sentiment_headline(view)
+    return view
+
+
+def sentiment_headline(v: dict) -> str | None:
+    parts = []
+    md = v.get("media")
+    if md:
+        rated = [i for i in md["issues"] if i.get("band") in MOOD_BANDS]
+        gloomy = sorted((i for i in rated if MOOD_BANDS[i["band"]] > 0), key=lambda i: -(i.get("gloom_pct") or 0))
+        bright = sorted((i for i in rated if MOOD_BANDS[i["band"]] < 0), key=lambda i: i.get("gloom_pct") or 0)
+        if gloomy:
+            parts.append("News coverage is gloomier than usual on " + _join([_lc(i["name"]) for i in gloomy]))
+        if bright:
+            parts.append(("and brighter on " if gloomy else "News coverage is brighter than usual on ")
+                         + _join([_lc(i["name"]) for i in bright]))
+        if rated and not gloomy and not bright:
+            parts.append(f"News tone is within its usual range on all {len(rated)} issues")
+        if not rated:
+            parts.append("News tone baseline is still building")
+    line = " ".join(parts)
+    c = v.get("confidence")
+    if c and c["areas"]:
+        a = c["areas"][0]
+        line = (line + ". " if line else "") + (f"{a['name']} consumer confidence is {a['value']:.1f} "
+                                                f"({_month(a['period'])}), {CONF_BAND[a['band']]}")
+    return (line + ".") if line else None
+
+
+def mood_spark(vals: list, typical: float | None, label: str, w: int = 120, h: int = 28) -> str:
+    pts = [(k, v) for k, v in enumerate(vals) if isinstance(v, (int, float))]
+    if len(pts) < 2:
+        return ""
+    ys = [v for _, v in pts] + ([typical] if typical is not None else [])
+    lo, hi = min(ys), max(ys)
+    if hi - lo < 0.2:
+        mid = (hi + lo) / 2
+        lo, hi = mid - 0.1, mid + 0.1
+    n = max(1, len(vals) - 1)
+    X = lambda k: 2 + k / n * (w - 4)  # noqa: E731
+    Y = lambda v: 2 + (1 - (v - lo) / (hi - lo)) * (h - 4)  # noqa: E731
+    d = "".join(f"{'L' if j else 'M'}{X(k):.1f} {Y(v):.1f}" for j, (k, v) in enumerate(pts))
+    base = (f'<line x1="2" x2="{w - 2}" y1="{Y(typical):.1f}" y2="{Y(typical):.1f}" stroke="var(--cds-border-strong-01)" '
+            f'stroke-width="1" stroke-dasharray="2 2"/>') if typical is not None else ""
+    lx, ly = X(pts[-1][0]), Y(pts[-1][1])
+    return (f'<svg class="cnry-mood__spark" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-label="{e(label)}">'
+            f'{base}<path d="{d}" fill="none" stroke="var(--cds-icon-secondary)" stroke-width="1.25" stroke-linejoin="round"/>'
+            f'<circle cx="{lx:.1f}" cy="{ly:.1f}" r="2.5" fill="var(--cds-icon-primary)"/></svg>')
+
+
+def mood_meter(pct: int | None, band: str | None) -> str:
+    if pct is None:
+        return ""
+    return (f'<span class="cnry-mood__meter" aria-hidden="true" data-band="{e(band or "")}">'
+            f'<span class="cnry-mood__mark" style="inset-inline-start: {min(max(pct, 0), 100)}%"></span></span>')
+
+
+TREND_WORDS = {"gloomier": "getting gloomier", "brighter": "getting brighter"}
+
+
+def gloom_phrase(pct: int) -> str:
+    if pct >= 100:
+        return "Gloomier than any week in the past 6 months"
+    if pct <= 0:
+        return "Brighter than any week in the past 6 months"
+    return f"Gloomier than {pct}% of past weeks" if pct >= 50 else f"Brighter than {100 - pct}% of past weeks"
+
+
+def share_phrase(pct: int) -> str:
+    if pct >= 100:
+        return "highest in 6 months"
+    if pct <= 0:
+        return "lowest in 6 months"
+    return f"higher than {pct}% of past weeks" if pct >= 50 else f"lower than {100 - pct}% of past weeks"
+
+
+def sentiment_html(m: Model) -> str:
+    v = m.sentiment_v
+    md, conf, gauges = v["media"], v["confidence"], v["gauges"]
+    if not md and not conf:
+        return ""
+    rows = []
+    if md:
+        since = _day(md.get("spark_start"))
+        for i in md["issues"]:
+            rated = i.get("band") in MOOD_BANDS
+            trend = TREND_WORDS.get(i.get("trend") or "")
+            label = e(i.get("label") or "—")
+            detail = (f"{gloom_phrase(i['gloom_pct'])}{' · ' + trend if trend else ''} · tone "
+                      f"{_signed(i['tone'], 2)}, usual {_signed(i['tone_typical'], 2)}"
+                      if rated else "Not enough comparable history yet")
+            share = (f'<span class="cnry-mood__val"><span class="cnry-mood__k">Coverage </span>{i["share"]:.1f}%</span>'
+                     f'<span class="cnry-mood__sub">usual {i["share_typical"]:.1f}% · {share_phrase(i["share_pct"])}</span>'
+                     if rated and i.get("share") is not None and i.get("share_typical") is not None else
+                     f'<span class="cnry-mood__val">{i["share"]:.1f}%</span>' if i.get("share") is not None else "—")
+            spark = mood_spark(i["spark"], i.get("tone_typical"),
+                               f"{i['name']}: 7-day news tone each day since {since}; dashed line is the 6-month typical value")
+            doms = "".join(f'<a class="cnry-mood__dom" href="#domain-{d["id"]}">{e(d["short"])} '
+                           f'<span class="cnry-num">{d["score"] if d["score"] is not None else "–"}</span></a>'
+                           for d in i["domains"])
+            rows.append(
+                f'<tr data-band="{e(i.get("band") or "")}"><th scope="row" class="cnry-mood__issue">{e(i["name"])}</th>'
+                f'<td class="cnry-mood__tone">{mood_meter(i.get("gloom_pct") if rated else None, i.get("band"))}'
+                f'<span class="cnry-mood__val">{label}</span><span class="cnry-mood__sub">{e(detail)}</span></td>'
+                f'<td class="cnry-mood__share">{share}</td>'
+                f'<td class="cnry-mood__chart">{spark}</td>'
+                f'<td class="cnry-mood__doms">{doms}</td></tr>')
+    table = ""
+    if md:
+        ov = md["overall"]
+        ov_line = (f'All coverage: {e(ov.get("label") or "—").lower()}' + (f', gloomier than {ov["gloom_pct"]}% of past weeks'
+                   if ov.get("gloom_pct") is not None else "") + ".") if ov.get("label") else ""
+        table = (f'<div class="cnry-mood__media"><h3 class="cnry-mood__h">News tone by issue</h3>'
+                 f'<p class="cnry-mood__note">{md.get("articles", 0):,} articles in the 7 days to {_day(md["as_of"])}, in English and '
+                 f'~65 languages machine-translated by GDELT. Each issue is compared only with its own past 6 months. {ov_line}</p>'
+                 '<table class="cds--data-table cds--data-table--sm cnry-mood-table" aria-label="News tone by issue">'
+                 '<thead><tr><th scope="col" class="cnry-mood__h-issue"><div class="cds--table-header-label">Issue</div></th>'
+                 '<th scope="col" class="cnry-mood__h-tone"><div class="cds--table-header-label">Tone vs usual</div></th>'
+                 '<th scope="col" class="cnry-mood__h-share"><div class="cds--table-header-label">Share of coverage</div></th>'
+                 '<th scope="col" class="cnry-mood__h-chart"><div class="cds--table-header-label">Tone, 90 days</div></th>'
+                 '<th scope="col" class="cnry-mood__h-doms"><div class="cds--table-header-label">Canary score</div></th></tr></thead>'
+                 f'<tbody>{"".join(rows)}</tbody></table></div>')
+    side = []
+    if conf:
+        crow = "".join(
+            f'<div class="cds--structured-list-row" role="row"><div class="cds--structured-list-td" role="cell">{e(a["name"])}</div>'
+            f'<div class="cds--structured-list-td cnry-num" role="cell">{a["value"]:.1f}</div>'
+            f'<div class="cds--structured-list-td cnry-num" role="cell">{_signed(a.get("chg_12m"))}</div>'
+            f'<div class="cds--structured-list-td cnry-mood__month" role="cell">{_month(a["period"])}</div></div>' for a in conf["areas"])
+        head = ('<div class="cds--structured-list-thead" role="rowgroup"><div class="cds--structured-list-row '
+                'cds--structured-list-row--header-row" role="row">' + "".join(
+                    f'<div class="cds--structured-list-th" role="columnheader">{h}</div>'
+                    for h in ("Economy", "Index", "On a year", "Latest")) + "</div></div>")
+        side.append('<div class="cnry-mood__block"><h3 class="cnry-mood__h">Consumer confidence</h3>'
+                    '<p class="cnry-mood__note">OECD harmonised index from household surveys; 100 is each economy\'s long-run '
+                    'average, so below 100 means gloomier than usual. Monthly, published with a lag.</p>'
+                    '<div class="cds--structured-list cds--structured-list--condensed cds--structured-list--flush cnry-mood__list" role="table" '
+                    f'aria-label="Consumer confidence">{head}<div class="cds--structured-list-tbody" role="rowgroup">{crow}</div></div></div>')
+    if gauges:
+        grow = "".join(
+            f'<div class="cds--structured-list-row" role="row"><div class="cds--structured-list-td" role="cell">{e(g["name"])}</div>'
+            f'<div class="cds--structured-list-td" role="cell">{e(g["text"])}</div></div>' for g in gauges)
+        side.append('<div class="cnry-mood__block"><h3 class="cnry-mood__h">Uncertainty</h3>'
+                    '<p class="cnry-mood__note">Text- and market-based fear gauges, compared with their own past year.</p>'
+                    '<div class="cds--structured-list cds--structured-list--condensed cds--structured-list--flush cnry-mood__list" role="table" '
+                    f'aria-label="Uncertainty gauges"><div class="cds--structured-list-tbody" role="rowgroup">{grow}</div></div></div>')
+    rated = [i for i in (md or {}).get("issues", []) if i.get("band") in MOOD_BANDS]
+    gloomy = sum(1 for i in rated if MOOD_BANDS[i["band"]] > 0)
+    count_bits = []
+    if rated:
+        count_bits.append(f"News gloomier than usual on {gloomy} of {len(rated)} issues")
+    if conf:
+        a = conf["areas"][0]
+        count_bits.append(f"{a['name']} consumer confidence {a['value']:.1f}")
+    marks = "".join(f'<span class="cnry-mood__dot" data-band="{e(i["band"])}" title="{e(i["name"])}: {e(i["label"])}"></span>'
+                    for i in rated)
+    stale = (f'<p class="cnry-mood__stale">News tone not updated since {_day(md["as_of"])}; the open-data feed may be down.</p>'
+             if v["stale"] and md else "")
+    return f"""<details class="cnry-situations cnry-mood" id="sentiment">
+<summary class="cnry-sit__bar"><span class="cnry-sit__chevron">{svg('chevron--right')}</span><span class="cnry-sit__title">Sentiment</span><span class="cnry-sit__count">{e(' · '.join(count_bits))}</span><span class="cnry-mood__dots" aria-hidden="true">{marks}</span></summary>
+<div class="cnry-sit__body"><p class="cnry-sit__intro">How the news and the public feel about the issues Canary tracks, measured from open data by a script. It is context, not an attention level: it never changes a signal's status or the World State index. {e(v.get('headline') or '')} <a class="cds--link cds--link--sm" href="/methodology#sentiment">How it's measured</a></p>{stale}
+<div class="cnry-mood__grid">{table}<div class="cnry-mood__side">{''.join(side)}</div></div></div>
+</details>"""
+
+
+def sentiment_md(v: dict) -> list[str]:
+    """Lines for now.md (~100 tokens)."""
+    if not v.get("media") and not v.get("confidence"):
+        return []
+    out = ["", "## Sentiment (measured from open data; context only, never changes a status)"]
+    md = v.get("media")
+    if md:
+        rated = [i for i in md["issues"] if i.get("band") in MOOD_BANDS]
+        grp: dict[str, list[str]] = {}
+        for i in rated:
+            k = "gloomier" if MOOD_BANDS[i["band"]] > 0 else "brighter" if MOOD_BANDS[i["band"]] < 0 else "typical"
+            grp.setdefault(k, []).append(f"{i['id']} ({i['gloom_pct']})" if k != "typical" else i["id"])
+        bits = "; ".join(f"{k}: {', '.join(grp[k])}" for k in ("gloomier", "brighter", "typical") if k in grp)
+        stale = " STALE" if v.get("stale") else ""
+        out.append(f"News tone vs own past 6 months (GDELT, 7 days to {md['as_of']}{stale}; number = % of past weeks less "
+                   f"negative): {bits or 'baseline building'}")
+    c = v.get("confidence")
+    if c:
+        out.append("Consumer confidence (OECD, long-run avg 100): " + ", ".join(
+            f"{a['id']} {a['value']:.1f} ({a['period']})" for a in c["areas"]))
+    if v.get("gauges"):
+        out.append("Uncertainty: " + " · ".join(f"{g['name']} {g['text']}" for g in v["gauges"]))
+    return out
+
+
+def sentiment_json(m: Model) -> dict:
+    v = m.sentiment_v
+    note = ("Measured from open data by a script; not assessed by the AI model and never part of a signal's status "
+            "or the World State index. News tone is GDELT's lexicon-based score of how coverage is written, not a poll "
+            "of what people think.")
+    return {**envelope(m), "assessed_by": "script (no AI judgement)", "about": note,
+            "headline": v.get("headline"), "stale": v.get("stale"),
+            "media": v.get("media"), "confidence": v.get("confidence"), "gauges": v.get("gauges"),
+            "bands": {"gloom_pct": "share of 7-day windows in the past 180 days with less negative tone than now",
+                      "much-gloomier": ">= 90", "gloomier": "75-89", "typical": "26-74", "brighter": "11-25",
+                      "much-brighter": "<= 10"},
+            "attribution": ["GDELT Project (https://www.gdeltproject.org/)", "OECD", "Baker, Bloom & Davis (EPU)",
+                            "Caldara & Iacoviello (GPR)"]}
+
+
+def sentiment_method_html(cfg: dict | None) -> str:
+    if not cfg:
+        return ""
+    rows = "".join(
+        f'<tr><td><strong>{e(i["name"])}</strong></td><td>{e(", ".join(i.get("domains", [])))}</td>'
+        f'<td class="cnry-mood__themes">{e(", ".join(t.replace("*", "…") for t in i["themes"]))}</td></tr>'
+        for i in cfg.get("media", {}).get("issues", []))
+    return ('<table class="cds--data-table cds--data-table--sm cnry-mood-themes" aria-label="Sentiment issues and GDELT themes">'
+            '<thead><tr><th scope="col" style="inline-size:22%"><div class="cds--table-header-label">Issue</div></th>'
+            '<th scope="col" style="inline-size:18%"><div class="cds--table-header-label">Canary domains</div></th>'
+            '<th scope="col"><div class="cds--table-header-label">GDELT themes counted</div></th></tr></thead>'
+            f'<tbody>{rows}</tbody></table>')
+
+
 def legend_html() -> str:
     st = "".join(f'<span class="cnry-legend__item">{status_icon(k)}{LABEL[k]}</span>' for k in ("red", "amber", "green", "stale"))
     tr = "".join(f'<span class="cnry-legend__item cnry-trend cnry-trend--{k}">{svg(TREND_ICON[k])}<span>{TREND_LABEL[k]}</span></span>'
@@ -989,6 +1297,7 @@ def render_index(m: Model, doc: str) -> str:
     doc = fill(doc, "kpi-fresh", f"{c['pending']} pending" if c["pending"] else "All current")
     doc = fill(doc, "kpi-fresh-hint", e(f"As of {uk(m.as_of)} UK"))
     doc = fill(doc, "situations", situations_html(m))
+    doc = fill(doc, "sentiment", sentiment_html(m))
     doc = fill(doc, "domains", domains_html(m))
     nch = len(m.changes_7d)
     doc = fill(doc, "changes-desc", e(f"{nch} status change{'' if nch == 1 else 's'} in the last 7 days, newest first"
@@ -1028,8 +1337,10 @@ def render_methodology(m: Model, doc: str, sizes: dict) -> str:
         for k, what in (("now.md", "Brief: situations, every Alert, 24h changes, Watch ids"),
                         ("status.md", "Every signal, one row"), ("changes.md", "Status changes, last 7 days"),
                         ("api/v1/meta.json", "Run metadata — poll this first"),
-                        ("api/v1/status.json", "Full state as JSON"), ("api/v1/catalogue.json", "Signal definitions and rubrics")))
+                        ("api/v1/status.json", "Full state as JSON"), ("api/v1/catalogue.json", "Signal definitions and rubrics"),
+                        ("api/v1/sentiment.json", "Sentiment track: news tone, consumer confidence, uncertainty")))
     doc = fill(doc, "agent-sizes", size_rows)
+    doc = fill(doc, "sentiment-method", sentiment_method_html(m.sentiment_cfg))
     n = len(m.cat["signals"])
     doc = re.sub(r"\b\d+ global risk signals", f"{n} global risk signals", doc)
     return hydrate_icons(doc)
@@ -1038,11 +1349,14 @@ def render_methodology(m: Model, doc: str, sizes: dict) -> str:
 # ───────────────────────── entry point ─────────────────────────
 
 def build(site_url: str, cat: dict, status: dict, changes: list, history: dict, metrics: dict,
-          stale_h: dict, world: list | None = None) -> list[str]:
+          stale_h: dict, world: list | None = None, sentiment: dict | None = None,
+          sentiment_cfg: dict | None = None) -> list[str]:
     global ICONS
     ICONS = load_icons()
     m = Model(site_url, cat, status, changes, history, metrics, stale_h)
     m.world_series = world or []
+    m.sentiment, m.sentiment_cfg = sentiment or {}, sentiment_cfg
+    m.sentiment_v = sentiment_view(m)
     written: list[str] = []
 
     texts = {"now.md": now_md(m), "status.md": status_md(m), "changes.md": changes_md(m)}
@@ -1051,6 +1365,7 @@ def build(site_url: str, cat: dict, status: dict, changes: list, history: dict, 
                {**c, "from": PUBLIC[c["from"]], "to": PUBLIC[c["to"]], "url": f"{m.url}/s/{c['id']}"}
                for c in changes[:200]]}),
            "api/v1/catalogue.json": dump(catalogue_json(m)),
+           "api/v1/sentiment.json": dump(sentiment_json(m)),
            "api/v1/schema.json": json.dumps(schema_json(m), ensure_ascii=False, indent=1) + "\n"}
     sizes = {k: est_tokens(v) for k, v in {**texts, **api}.items()}
     meta = dump(meta_json(m, {**sizes, "api/v1/meta.json": 0}))

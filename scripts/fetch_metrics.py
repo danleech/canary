@@ -75,10 +75,13 @@ def series_stats(dates: list, vals: list) -> dict:
         return vals[-n - 1] if len(vals) > n else vals[0]
     week = vals[-6:]
     daily = [pct(week[i], week[i - 1]) for i in range(1, len(week))]
+    year = vals[-253:-1] or [last]
     return {
         "value": round(last, 4),
         "as_of": iso(dates[-1]),
         "high_52w": round(hi, 4),
+        # share of the past year's closes below the latest one (a derived statistic)
+        "pct_1y": round(100 * sum(1 for v in year if v < last) / len(year)),
         "drawdown_pct": round((last / hi - 1) * 100, 2),
         "chg_1w_pct": pct(last, back(5)),
         "chg_1m_pct": pct(last, back(21)),

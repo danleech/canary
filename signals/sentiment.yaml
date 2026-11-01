@@ -1,0 +1,81 @@
+# Canary sentiment track: how the news and the public feel about global issues.
+#
+# Measured, not rated. scripts/fetch_sentiment.py computes everything here from open data in the
+# metrics workflow. No AI judgement is involved, nothing here changes a signal's status, and the
+# World State index ignores it. Edit this file to change the issues or areas; ids must stay stable
+# because history is stored against them.
+
+media:
+  source: GDELT Global Knowledge Graph 2.1
+  source_url: https://www.gdeltproject.org/
+  # One 15-minute GKG file per stream at each slot. English + machine-translated (~65 languages).
+  streams: ["", "translation."]
+  slots_utc: ["00", "06", "12", "18"]
+  window_days: 7          # headline = pooled tone over the last 7 UTC days
+  baseline_days: 180      # compared with every 7-day window in the previous 180 days
+  min_baseline: 60        # fewer comparable windows than this → "building baseline"
+  min_words: 100          # skip stubs, promos and live-blog fragments
+  # An article counts towards an issue if any of its GKG themes is listed, or starts with a
+  # listed prefix ending in "*". Themes are GDELT's own taxonomy (keyword-based, imperfect);
+  # every theme listed was seen in live files on 1 Nov 2026. Changing an issue's themes resets
+  # its history: run `python scripts/fetch_sentiment.py --backfill 200` afterwards.
+  issues:
+    - id: economy
+      name: Economy & cost of living
+      domains: [economy, markets, uk]
+      themes: [ECON_INFLATION, WB_442_INFLATION, ECON_COST_OF_LIVING, ECON_INTEREST_RATES, ECON_CENTRALBANK,
+               ECON_DEBT, ECON_HOUSING_PRICES, UNEMPLOYMENT, ECON_STOCKMARKET, WB_471_ECONOMIC_GROWTH,
+               WB_1104_MACROECONOMIC_VULNERABILITY_AND_DEBT, ECON_BANKRUPTCY]
+    - id: conflict
+      name: War & security
+      domains: [conflict, geopolitics]
+      themes: [ARMEDCONFLICT, MILITARY, WB_2462_POLITICAL_VIOLENCE_AND_WAR, WB_739_POLITICAL_VIOLENCE_AND_CIVIL_WAR,
+               TERROR, WB_2467_TERRORISM, BLOCKADE, CEASEFIRE]
+    - id: energy
+      name: Energy & fuel
+      domains: [energy]
+      themes: [ENV_OIL, ECON_OILPRICE, ENV_NATURALGAS, ECON_GASOLINEPRICE, ECON_ELECTRICALPRICE, ENV_NUCLEARPOWER,
+               WB_525_RENEWABLE_ENERGY, WB_539_OIL_AND_GAS_POLICY_STRATEGY_AND_INSTITUTIONS, FUELPRICES]
+    - id: trade
+      name: Trade & sanctions
+      domains: [geopolitics, economy]
+      themes: [EPU_CATS_TRADE_POLICY, SANCTIONS, ECON_FREETRADE, ECON_TRADE_DISPUTE, "TAX_ECON_FREETRADEAGREEMENTS*",
+               WB_2601_TRADE_LINKAGES_SPILLOVERS_AND_CONNECTIVITY, WB_772_TRADE_FACILITATION_AND_LOGISTICS]
+    - id: climate
+      name: Climate change
+      domains: [climate]
+      themes: [ENV_CLIMATECHANGE, UNGP_CLIMATE_CHANGE_ACTION, WB_567_CLIMATE_CHANGE]
+    - id: disasters
+      name: Disasters & extreme weather
+      domains: [hazards]
+      themes: [NATURAL_DISASTER, "NATURAL_DISASTER_*", WB_2166_HEALTH_EMERGENCY_PREPAREDNESS_AND_DISASTER_RESPONSE]
+    - id: health
+      name: Health & disease
+      domains: [health]
+      themes: [WB_1406_DISEASES, WB_635_PUBLIC_HEALTH, WB_2165_HEALTH_EMERGENCIES, WB_2167_PANDEMICS, HEALTH_PANDEMIC,
+               HEALTH_VACCINATION, TAX_DISEASE_OUTBREAK, TAX_DISEASE_EPIDEMIC]
+    - id: tech
+      name: Cyber & technology
+      domains: [tech]
+      themes: [CYBER_ATTACK, WB_2457_CYBER_CRIME, SOC_EMERGINGTECH, TECH_AUTOMATION]
+    - id: migration
+      name: Migration & refugees
+      domains: [humanitarian]
+      themes: [IMMIGRATION, REFUGEES, WB_2837_IMMIGRATION, WB_2836_MIGRATION_POLICIES_AND_JOBS,
+               EPU_CATS_MIGRATION_FEAR_MIGRATION, TAX_FNCACT_IMMIGRANTS, DISPLACED]
+
+confidence:
+  source: OECD composite consumer confidence (harmonised, amplitude adjusted; long-run average = 100)
+  source_url: https://www.oecd.org/en/data/indicators/consumer-confidence-index-cci.html
+  dataflow: OECD.SDD.STES,DSD_STES@DF_CLI,
+  key: ".M.CCICP...AA...H"
+  since: "2000-01"
+  # Order matters: the first area is the headline.
+  areas:
+    - { id: OECD, name: OECD }
+    - { id: GBR,  name: United Kingdom }
+    - { id: USA,  name: United States }
+    - { id: EA20, name: Euro area }
+    - { id: JPN,  name: Japan }
+    - { id: CHN,  name: China }
+    - { id: IND,  name: India }

@@ -198,6 +198,24 @@
      }
     }
    }
+  },
+  "/api/v1/sentiment.json": {
+   "get": {
+    "operationId": "getSentiment",
+    "summary": "Sentiment track: news tone by issue (GDELT), consumer confidence (OECD), uncertainty gauges. Measured, never part of a status",
+    "responses": {
+     "200": {
+      "description": "JSON",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     }
+    }
+   }
   }
  }
 }

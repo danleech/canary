@@ -501,6 +501,12 @@ def world_series(cat: dict, status: dict, history: dict, series: list) -> list:
     return series[-WORLD_CAP:]
 
 
+def sentiment_config() -> dict | None:
+    """signals/sentiment.yaml (issues and areas for the measured sentiment track), if present."""
+    p = ROOT / "signals" / "sentiment.yaml"
+    return yaml.safe_load(p.read_text()) if p.exists() else None
+
+
 def cmd_build(_args) -> int:
     cat = catalogue()
     save("catalogue.json", cat)
@@ -512,7 +518,8 @@ def cmd_build(_args) -> int:
     save("world.json", world)
     written = publish.build(SITE_URL, cat, status, load("changes.json", []), history,
                             load("metrics.json", {}).get("metrics", {}),
-                            {"fast": FAST_STALE_H, "daily": DAILY_STALE_H}, world=world)
+                            {"fast": FAST_STALE_H, "daily": DAILY_STALE_H}, world=world,
+                            sentiment=load("sentiment.json", {}), sentiment_cfg=sentiment_config())
     print(f"built catalogue.json, world index and public outputs ({len(written)} files changed)")
     return 0
 
