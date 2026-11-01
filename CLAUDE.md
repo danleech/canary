@@ -48,6 +48,15 @@ To run a scheduled update (the most common job in this repo), use the **`canary-
 - Never delete a signal that has history without the owner's (Dan's) say-so.
 - Keep `site/methodology.html` accurate if you change how statuses are computed.
 
+## Shipping and verifying site changes
+
+Cloudflare Pages auto-deploys `site/` on every push to `main`. There is no separate deploy step, so "done" means pushed **and** confirmed live.
+
+1. **Look before you push.** For any visual change, screenshot the local site (a local static server in `site/` plus headless Chromium) and check it. Hiding an element's text is not the same as removing it: check that no empty header, gap or band is left behind.
+2. **Push:** `git pull --rebase`, then `git push origin HEAD:main`. Check that `git log origin/main` shows your commit.
+3. **Confirm the deploy.** Wait about a minute, then fetch the live file (for example `https://canary.danleech.com/app.js` or `assets/app.css`) and check that your change is in it. If it isn't, check the Cloudflare Pages deployment for a failed build before assuming a cache problem.
+4. **Tell the owner what was verified**, and say if a hard refresh may be needed to see it. Don't say "deployed" on the strength of the push alone.
+
 ## Git
 
 - Work on `main`.
