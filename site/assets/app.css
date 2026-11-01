@@ -173,6 +173,11 @@ button.cnry-kpi { font: inherit; cursor: pointer; }
 .cnry-dt th.w-status { inline-size: 2.5rem; }
 .cnry-dt th.w-signal { inline-size: auto; }
 .cnry-dt th.w-trend { inline-size: 2.75rem; }
+/* Header row only sets column widths and accessible names; collapse it visually. */
+.cnry-dt.cds--data-table thead { background: transparent; }
+.cnry-dt.cds--data-table thead tr { block-size: 0; }
+.cnry-dt.cds--data-table thead th,
+.cnry-dt.cds--data-table.cds--data-table--sm thead th.cds--table-expand { block-size: 0; padding: 0; border: 0; line-height: 0; overflow: hidden; background: transparent; }
 .cnry-dt td { white-space: normal; overflow-wrap: anywhere; vertical-align: top; }
 .cnry-dt tr.cds--parent-row > td { padding-block: 0.4375rem; }
 .cnry-dt td.w-status, .cnry-dt td.w-trend { padding-inline: 0.75rem 0.5rem; }
