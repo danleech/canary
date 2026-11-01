@@ -12,7 +12,7 @@
   const STALE_H = { fast: 14, daily: 36 };
   const RUN_TIMES = ['05:40', '11:40', '17:40', '23:40'];
   const SPARK_SKIP = new Set(['sea_ice', 'quakes', 'gdacs', 'swpc', 'metoffice']);
-  const COLS = 8;
+  const COLS = 4;
 
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
@@ -27,7 +27,7 @@
     const i = (window.CARBON_ICONS || {})[name];
     if (!i) return '';
     const a11y = label ? `role="img" aria-label="${esc(label)}"` : 'aria-hidden="true" focusable="false"';
-    return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${i.viewBox}" width="16" height="16" class="${cls}" ${a11y}>${i.inner}</svg>`;
+    return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${i.viewBox}" width="16" height="16" fill="currentColor" class="${cls}" ${a11y}>${i.inner}</svg>`;
   }
   function hydrateIcons(root = document) {
     $$('[data-icon]', root).forEach((el) => { if (!el.querySelector('svg')) el.insertAdjacentHTML('afterbegin', icon(el.dataset.icon)); });
@@ -35,6 +35,8 @@
   const statusIcon = (st, label) => `<span class="cnry-icon cnry-st--${st}">${icon(ICON_FOR[st], '', label)}</span>`;
   const statusIndicator = (st) => `<span class="cnry-status">${statusIcon(st)}<span class="cnry-status__label">${LABEL[st]}</span></span>`;
   const trendCell = (t) => { const x = TREND[t] || TREND.flat; return `<span class="cnry-trend cnry-trend--${t || 'flat'}">${icon(x.icon)}<span>${x.text}</span></span>`; };
+  const trendIcon = (t) => { const x = TREND[t] || TREND.flat; return `<span class="cnry-trend cnry-trend--${t || 'flat'}" title="Trend: ${x.text}">${icon(x.icon, '', 'Trend: ' + x.text)}</span>`; };
+  const statusOnly = (st) => `<span class="cnry-icon cnry-st--${st}" title="Status: ${LABEL[st]}">${icon(ICON_FOR[st], '', 'Status: ' + LABEL[st])}</span>`;
 
   // Time
   const fmtUK = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/London', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
@@ -142,7 +144,7 @@
     $('#domains').innerHTML = D.cat.domains.map((d) => {
       const sigs = D.cat.signals.filter((s) => s.domain === d.id);
       const score = (D.status.world?.by_domain || {})[d.id];
-      const cells = sigs.map((s) => { const st = effective(s); return `<span class="cnry-cell ${st === 'pending' ? 'stale' : st}" title="${esc(s.name)}: ${LABEL[st]}"></span>`; }).join('');
+      const cells = sigs.map((s) => { const st = effective(s); return `<span class="cnry-icon cnry-st--${st}" title="${esc(s.name)}: ${LABEL[st]}">${icon(ICON_FOR[st])}</span>`; }).join('');
       const n = sigs.reduce((a, s) => { const st = effective(s); a[st] = (a[st] || 0) + 1; return a; }, {});
       const sr = ['red', 'amber', 'green'].filter((k) => n[k]).map((k) => `${n[k]} ${LABEL[k]}`).join(', ');
       return `<li class="cnry-domain"><a href="#domain-${d.id}" aria-label="${esc(d.name)}: score ${score ?? 'not available'}; ${sr}">
@@ -153,6 +155,14 @@
   }
 
   const sigLink = (s) => `<a class="cnry-sig__link" href="#${s.id}" data-goto="${s.id}">${esc(s.name)}</a>`;
+
+  function renderLegend() {
+    const st = ['red', 'amber', 'green', 'stale'].map((k) => `<span class="cnry-legend__item">${statusIcon(k)}${LABEL[k]}</span>`).join('');
+    const tr = ['up', 'flat', 'down'].map((k) => `<span class="cnry-legend__item cnry-trend cnry-trend--${k}">${icon(TREND[k].icon)}<span>${TREND[k].text}</span></span>`).join('');
+    $('#legend').innerHTML = `<span class="cnry-legend__group"><span class="cnry-legend__title">Status</span>${st}</span>
+      <span class="cnry-legend__group"><span class="cnry-legend__title">Trend</span>${tr}</span>
+      <span class="cnry-legend__group">Select a row to see why, what it means for you, the rating criteria and sources.</span>`;
+  }
 
   function renderAlerts() {
     const alerts = D.cat.signals.filter((s) => effective(s) === 'red')
@@ -180,7 +190,7 @@
   // ───────── Domain tables with Carbon expandable rows ─────────
   function renderBoard() {
     const fresh = new Set((D.changes || []).filter((c) => hoursSince(c.t) < 24).map((c) => c.id));
-    $('#board').innerHTML = D.cat.domains.map((d) => {
+    const tables = D.cat.domains.map((d) => {
       const sigs = D.cat.signals.filter((s) => s.domain === d.id);
       const n = sigs.reduce((a, s) => { const st = effective(s); a[st] = (a[st] || 0) + 1; return a; }, {});
       const tally = ['red', 'amber', 'green', 'stale'].filter((k) => n[k])
@@ -188,22 +198,21 @@
       const rows = sigs.map((s) => {
         const c = D.status.signals[s.id];
         const st = effective(s);
-        const sp = c ? seriesFor(s) : null;
-        const age = c ? (st === 'stale' ? `<span class="cnry-age--stale">Stale</span>` : ago(c.checked_at)) : '–';
-        return `<tr class="cds--parent-row${fresh.has(s.id) ? ' cnry-row--fresh' : ''}" data-parent-row data-id="${s.id}" data-st="${st}" id="${s.id}">
+        const changed = fresh.has(s.id) ? ' <span class="cds--tag cds--tag--blue cds--tag--sm cnry-changed"><span class="cds--tag__label">Changed</span></span>' : '';
+        return `<tr class="cds--parent-row" data-parent-row data-id="${s.id}" data-st="${st}" id="${s.id}">
             <td class="cds--table-expand"><button type="button" class="cds--table-expand__button" aria-expanded="false" aria-controls="x-${s.id}" aria-label="Show details for ${esc(s.name)}">${icon('chevron--right', 'cds--table-expand__svg')}</button></td>
-            <td class="w-status">${statusIndicator(st)}</td>
-            <td><span class="cnry-sig__name">${esc(s.name)}</span></td>
-            <td class="cnry-reading">${esc(c?.value || '—')}</td>
-            <td class="w-sum"><span class="cnry-sum" title="${esc(c?.summary || '')}">${esc(c?.summary || 'Not yet assessed')}</span></td>
-            <td>${c ? trendCell(c.trend) : ''}</td>
-            <td class="w-spark">${sp ? sparkSVG(sp.series.slice(-60), st) : ''}</td>
-            <td class="w-age cnry-num" title="${c ? esc('Checked ' + fmtUK.format(new Date(c.checked_at))) : ''}">${age}</td>
+            <td class="w-status">${statusOnly(st)}</td>
+            <td class="w-signal"><span class="cnry-sig__name">${esc(s.name)}</span>${changed}<span class="cnry-sig__reading">${c?.value ? esc(c.value) : '<span class="cnry-none">No reading yet</span>'}</span></td>
+            <td class="w-trend">${c ? trendIcon(c.trend) : ''}</td>
           </tr>
           <tr class="cds--expandable-row" data-child-row id="x-${s.id}" data-id="${s.id}" hidden><td colspan="${COLS}"><div class="cds--child-row-inner-container"></div></td></tr>`;
       }).join('');
-      return `<div class="cds--data-table-container cnry-domain-table" id="domain-${d.id}" data-domain="${d.id}">
-        <div class="cds--data-table-header">
+      const el = document.createElement('div');
+      el.className = 'cds--data-table-container cnry-domain-table';
+      el.id = `domain-${d.id}`;
+      el.dataset.domain = d.id;
+      el.dataset.weight = String(sigs.length + 3);
+      el.innerHTML = `<div class="cds--data-table-header">
           <h3 class="cds--data-table-header__title">${esc(d.name)}</h3>
           <p class="cds--data-table-header__description">${tally}</p>
         </div>
@@ -211,19 +220,39 @@
           <table class="cds--data-table cds--data-table--sm cnry-dt" aria-label="${esc(d.name)} signals">
             <thead><tr>
               <th class="cds--table-expand w-expand" scope="col"><span class="cds--visually-hidden">Details</span></th>
-              <th scope="col" class="w-status"><div class="cds--table-header-label">Status</div></th>
-              <th scope="col" class="w-signal"><div class="cds--table-header-label">Signal</div></th>
-              <th scope="col" class="w-reading"><div class="cds--table-header-label">Reading</div></th>
-              <th scope="col" class="w-sum"><div class="cds--table-header-label">Summary</div></th>
-              <th scope="col" class="w-trend"><div class="cds--table-header-label">Trend</div></th>
-              <th scope="col" class="w-spark"><div class="cds--table-header-label">Recent</div></th>
-              <th scope="col" class="w-age cnry-col-num"><div class="cds--table-header-label">Checked</div></th>
+              <th scope="col" class="w-status"><span class="cds--visually-hidden">Status</span></th>
+              <th scope="col" class="w-signal"><div class="cds--table-header-label">Signal and reading</div></th>
+              <th scope="col" class="w-trend"><span class="cds--visually-hidden">Trend</span></th>
             </tr></thead>
             <tbody>${rows}</tbody>
           </table>
-        </div>
-      </div>`;
-    }).join('');
+        </div>`;
+      return el;
+    });
+    layoutBoard(tables);
+  }
+
+  // Multi-column layout: contiguous domain groups balanced by row count. Each column
+  // stacks its tables, so expanding a row never moves tables between columns.
+  const MQ3 = matchMedia('(min-width: 82rem)');
+  const MQ2 = matchMedia('(min-width: 60rem)');
+  function layoutBoard(tables = $$('.cnry-domain-table')) {
+    const cols = MQ3.matches ? 3 : MQ2.matches ? 2 : 1;
+    const board = $('#board');
+    board.dataset.cols = String(cols);
+    const weights = tables.map((t) => +t.dataset.weight);
+    const total = weights.reduce((a, b) => a + b, 0);
+    const groups = Array.from({ length: cols }, () => []);
+    let g = 0, acc = 0;
+    tables.forEach((t, i) => {
+      const remainingCols = cols - g - 1;
+      const target = (total / cols) * (g + 1);
+      if (g < cols - 1 && acc > 0 && acc + weights[i] / 2 > target && tables.length - i > remainingCols - 1) g++;
+      groups[g].push(t); acc += weights[i];
+    });
+    const frag = document.createDocumentFragment();
+    groups.forEach((grp) => { const col = document.createElement('div'); col.className = 'cnry-col'; grp.forEach((t) => col.appendChild(t)); frag.appendChild(col); });
+    board.replaceChildren(frag);
   }
 
   function detailHTML(id) {
@@ -236,6 +265,7 @@
     const tag = (t, kind = 'gray') => `<span class="cds--tag cds--tag--${kind} cds--tag--sm"><span class="cds--tag__label">${esc(t)}</span></span>`;
     const left = [];
     if (c) {
+      left.push(`<div class="cnry-detail__lead">${statusIndicator(st)}${trendCell(c.trend)}${c.value ? `<span class="cnry-reading">${esc(c.value)}</span>` : ''}</div>`);
       left.push(`<p class="cnry-detail__summary">${esc(c.summary)}</p>`);
       left.push(`<div class="cnry-detail__block"><h3>Why it's at this level</h3><p>${esc(c.state)}</p></div>`);
       left.push(`<div class="cnry-detail__block"><h3>What this means for you</h3><p>${esc(c.for_you)}</p></div>`);
@@ -407,8 +437,8 @@
         getJSON('history.json', {}), getJSON('changes.json', []),
       ]);
       D = { cat, status: { signals: {}, ...status }, metrics: metrics.metrics || {}, history: hist, changes };
-      renderSummary(); renderDomains(); renderAlerts(); renderChanges(); renderBoard(); syncColspans(); wire(); setStatus('all');
-      ['(max-width: 41.98rem)', '(max-width: 65.98rem)'].forEach((q) => matchMedia(q).addEventListener('change', syncColspans));
+      renderSummary(); renderDomains(); renderLegend(); renderAlerts(); renderChanges(); renderBoard(); wire(); setStatus('all');
+      [MQ2, MQ3].forEach((q) => q.addEventListener('change', () => layoutBoard()));
       const id = location.hash.slice(1);
       if (id && document.getElementById(id)?.matches('tr')) goTo(id, false);
     } catch (e) {
