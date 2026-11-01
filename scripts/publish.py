@@ -19,6 +19,7 @@ Outputs, all under site/ (smallest first, so agents can stop early):
 """
 from __future__ import annotations
 
+import hashlib
 import html
 import json
 import re
@@ -148,6 +149,30 @@ def load_icons() -> dict:
 
 
 ICONS: dict = {}
+VERSIONED = ("assets/carbon.css", "assets/app.css", "assets/icons.js", "app.js")
+ASSET_V: dict = {}
+
+
+def asset_versions() -> dict:
+    """Short content hashes, appended as ?v= so browsers refetch an asset as soon as it changes
+    (Cloudflare serves static files with a 4-hour browser cache)."""
+    out = {}
+    for rel in VERSIONED:
+        f = SITE / rel
+        if f.exists():
+            out[rel] = hashlib.sha1(f.read_bytes()).hexdigest()[:8]
+    return out
+
+
+def asset(rel: str) -> str:
+    return f"/{rel}?v={ASSET_V[rel]}" if rel in ASSET_V else f"/{rel}"
+
+
+def version_assets(doc: str) -> str:
+    """Rewrite asset references in a hand-maintained page (index.html, methodology.html)."""
+    for rel in VERSIONED:
+        doc = re.sub(r'((?:src|href)=")/?' + re.escape(rel) + r'(?:\?v=\w+)?"', lambda m: m.group(1) + asset(rel) + '"', doc)
+    return doc
 
 
 def svg(name: str, cls: str = "") -> str:
@@ -653,8 +678,8 @@ def page(m: Model, *, title: str, desc: str, canonical: str, body: str, head: st
 {head}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/carbon.css">
-<link rel="stylesheet" href="/assets/app.css">
+<link rel="stylesheet" href="{asset('assets/carbon.css')}">
+<link rel="stylesheet" href="{asset('assets/app.css')}">
 {THEME_SCRIPT}
 </head>
 <body>
@@ -682,7 +707,7 @@ def page(m: Model, *, title: str, desc: str, canonical: str, body: str, head: st
     <p class="cds--type-body-compact-01">Assessed by an AI model (Anthropic's Claude) against <a class="cds--link cds--link--inline" href="/methodology">published rubrics</a>. Not a forecast, and not financial, medical, legal or safety advice. Canary's text is <a class="cds--link cds--link--inline" href="{LICENCE['url']}">{LICENCE['name']}</a>. <a class="cds--link cds--link--inline" href="/methodology#agents">For AI assistants</a> · <a class="cds--link cds--link--inline" href="https://github.com/danleech/canary">Source</a></p>
   </div>
 </footer>
-<script src="/assets/icons.js"></script>
+<script src="{asset('assets/icons.js')}"></script>
 {TOGGLE_SCRIPT}
 </body>
 </html>
@@ -1309,7 +1334,7 @@ def render_index(m: Model, doc: str) -> str:
     doc = re.sub(r'id="kpi-bar"(?: style="[^"]*")?', f'id="kpi-bar" style="transform: scaleX({(w.get("score") or 0) / 100:.2f})"', doc)
     doc = re.sub(r'class="cds--tile cnry-kpi cnry-kpi--index"(?: data-status="[^"]*")?',
                  f'class="cds--tile cnry-kpi cnry-kpi--index" data-status="{e(w.get("status") or "")}"', doc)
-    return hydrate_icons(doc)
+    return version_assets(hydrate_icons(doc))
 
 
 def render_methodology(m: Model, doc: str, sizes: dict) -> str:
@@ -1343,7 +1368,7 @@ def render_methodology(m: Model, doc: str, sizes: dict) -> str:
     doc = fill(doc, "sentiment-method", sentiment_method_html(m.sentiment_cfg))
     n = len(m.cat["signals"])
     doc = re.sub(r"\b\d+ global risk signals", f"{n} global risk signals", doc)
-    return hydrate_icons(doc)
+    return version_assets(hydrate_icons(doc))
 
 
 # ───────────────────────── entry point ─────────────────────────
@@ -1351,8 +1376,9 @@ def render_methodology(m: Model, doc: str, sizes: dict) -> str:
 def build(site_url: str, cat: dict, status: dict, changes: list, history: dict, metrics: dict,
           stale_h: dict, world: list | None = None, sentiment: dict | None = None,
           sentiment_cfg: dict | None = None) -> list[str]:
-    global ICONS
+    global ICONS, ASSET_V
     ICONS = load_icons()
+    ASSET_V = asset_versions()
     m = Model(site_url, cat, status, changes, history, metrics, stale_h)
     m.world_series = world or []
     m.sentiment, m.sentiment_cfg = sentiment or {}, sentiment_cfg

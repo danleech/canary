@@ -329,6 +329,7 @@ td.cnry-sit__sigs { display: table-cell; }
 
 /* Sentiment track (measured context; deliberately no red/amber/green) */
 .cnry-situations + .cnry-mood { margin-block-start: 1px; }
+.cnry-mood .cnry-sit__body { padding-block-end: 1rem; }
 .cnry-mood__dots { display: inline-flex; gap: 3px; margin-inline-start: auto; }
 .cnry-mood__dot { inline-size: 0.5rem; block-size: 0.5rem; border-radius: 50%; border: 1px solid var(--cds-border-strong-01); }
 .cnry-mood__dot[data-band='much-gloomier'] { background: var(--cds-icon-primary); border-color: var(--cds-icon-primary); }
@@ -363,7 +364,7 @@ td.cnry-sit__sigs { display: table-cell; }
 .cnry-mood__dom:focus { outline: 2px solid var(--cds-focus); outline-offset: 1px; }
 .cnry-mood__side { display: grid; gap: 0.5rem 1.5rem; align-content: start; }
 @media (min-width: 66rem) { .cnry-mood__side { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-.cnry-mood__list { margin: 0 1rem 0.5rem; }
+.cnry-mood__list { inline-size: calc(100% - 2rem); margin: 0 1rem 0.5rem; }
 .cnry-mood__list .cds--structured-list-td { font-size: 0.875rem; line-height: 1.25rem; padding-block: 0.5rem; vertical-align: top; }
 .cnry-mood__list .cds--structured-list-td:first-child { color: var(--cds-text-primary); }
 .cnry-mood__list .cds--structured-list-th { font-size: 0.75rem; padding-block: 0.25rem; }
