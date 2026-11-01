@@ -73,49 +73,28 @@
         <p class="cnry-kpi__hint">Background noise</p>
       </button>
       <div class="cds--tile cnry-kpi">
-        <p class="cnry-kpi__label">Changed in 24 hours</p>
-        <p class="cnry-kpi__value" id="kpi-changed">–</p>
-        <p class="cnry-kpi__hint" id="kpi-changed-hint">Status changes</p>
-      </div>
-      <div class="cds--tile cnry-kpi">
         <p class="cnry-kpi__label">Data freshness</p>
         <p class="cnry-kpi__value cnry-kpi__value--sm" id="kpi-fresh">–</p>
         <p class="cnry-kpi__hint" id="kpi-fresh-hint"></p>
       </div>
     </section>
 
-    <section class="cds--tile cnry-overview" aria-labelledby="overview-title">
-      <div class="cnry-section-head">
-        <h2 id="overview-title" class="cds--type-productive-heading-02">Domains</h2>
-        <p class="cds--type-helper-text-01">Each icon is one signal. The domain score is the share of attention needed, 0–100. Select a domain to jump to its table.</p>
-      </div>
-      <ol class="cnry-domains" id="domains"></ol>
-    </section>
+    <div class="cnry-overview-row">
+      <section class="cds--tile cnry-overview" aria-labelledby="overview-title">
+        <div class="cnry-section-head">
+          <h2 id="overview-title" class="cds--type-productive-heading-02">Domains</h2>
+          <p class="cds--type-helper-text-01">Each icon is one signal. The score is the share of attention needed, 0–100. Select a domain to jump to its table.</p>
+        </div>
+        <ol class="cnry-domains" id="domains"></ol>
+      </section>
 
-    <section class="cnry-split">
-      <div class="cds--data-table-container cnry-panel" id="alerts-panel">
+      <section class="cds--data-table-container cnry-panel cnry-changes" id="changes-panel" aria-labelledby="changes-title">
         <div class="cds--data-table-header">
-          <h2 class="cds--data-table-header__title">Active alerts</h2>
-          <p class="cds--data-table-header__description" id="alerts-desc">Signals rated Alert, most recently changed first</p>
+          <h2 class="cds--data-table-header__title" id="changes-title">Recent changes</h2>
+          <p class="cds--data-table-header__description" id="changes-desc">Status changes in the last 7 days</p>
         </div>
         <div class="cds--data-table-content">
-          <table class="cds--data-table cds--data-table--sm cnry-table" aria-labelledby="alerts-panel">
-            <thead><tr>
-              <th scope="col"><div class="cds--table-header-label">Signal</div></th>
-              <th scope="col" class="cnry-col-sum"><div class="cds--table-header-label">Summary</div></th>
-              <th scope="col" class="cnry-col-trend"><div class="cds--table-header-label">Trend</div></th>
-            </tr></thead>
-            <tbody id="alerts-body"></tbody>
-          </table>
-        </div>
-      </div>
-      <div class="cds--data-table-container cnry-panel" id="changes-panel">
-        <div class="cds--data-table-header">
-          <h2 class="cds--data-table-header__title">Recent changes</h2>
-          <p class="cds--data-table-header__description">Status changes in the last 7 days</p>
-        </div>
-        <div class="cds--data-table-content">
-          <table class="cds--data-table cds--data-table--sm cnry-table" aria-labelledby="changes-panel">
+          <table class="cds--data-table cds--data-table--sm cnry-table" aria-labelledby="changes-title">
             <thead><tr>
               <th scope="col"><div class="cds--table-header-label">Signal</div></th>
               <th scope="col"><div class="cds--table-header-label">Change</div></th>
@@ -124,8 +103,9 @@
             <tbody id="changes-body"></tbody>
           </table>
         </div>
-      </div>
-    </section>
+        <p class="cnry-changes__more cds--type-helper-text-01" id="changes-more"></p>
+      </section>
+    </div>
 
     <section aria-labelledby="signals-title" class="cnry-signals">
       <div class="cnry-section-head cnry-section-head--bar">

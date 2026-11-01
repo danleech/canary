@@ -132,10 +132,6 @@
     $('#kpi-amber').textContent = counts.amber;
     $('#kpi-green').textContent = counts.green;
 
-    const recent = (D.changes || []).filter((c) => hoursSince(c.t) < 24);
-    $('#kpi-changed').textContent = recent.length;
-    $('#kpi-changed-hint').textContent = recent.length ? `Latest: ${recent[0].name}, ${LABEL[recent[0].from]} to ${LABEL[recent[0].to]}` : 'No status changes';
-
     $('#kpi-fresh').textContent = stale ? `${stale} stale` : 'All current';
     $('#kpi-fresh-hint').textContent = oldest ? `Oldest check ${ago(oldest, true)}` : '';
   }
@@ -164,28 +160,24 @@
       <span class="cnry-legend__group">Select a row to see why, what it means for you, the rating criteria and sources.</span>`;
   }
 
-  function renderAlerts() {
-    const alerts = D.cat.signals.filter((s) => effective(s) === 'red')
-      .sort((a, b) => (D.status.signals[b.id].changed_at || '').localeCompare(D.status.signals[a.id].changed_at || ''));
-    $('#alerts-desc').textContent = alerts.length ? `${alerts.length} signals rated Alert, most recently changed first` : 'No signals are rated Alert';
-    $('#alerts-body').innerHTML = alerts.length ? alerts.map((s) => {
-      const c = D.status.signals[s.id];
-      const dom = D.cat.domains.find((d) => d.id === s.domain);
-      return `<tr><td><span class="cnry-sig">${statusIcon('red', 'Alert')}<span class="cnry-sig__name">${sigLink(s)}<span class="cnry-sig__domain">${esc(dom?.short || dom?.name || '')}</span></span></span></td>
-        <td class="cnry-td-sum"><span class="cnry-sum" title="${esc(c.summary)}">${esc(c.summary)}</span></td>
-        <td>${trendCell(c.trend)}</td></tr>`;
-    }).join('') : `<tr class="cnry-empty-row"><td colspan="3">No signals are rated Alert.</td></tr>`;
-  }
-
   function renderChanges() {
-    const rows = (D.changes || []).filter((c) => hoursSince(c.t) < 24 * 7).slice(0, 12);
+    const MAX = 8;
+    const all = (D.changes || []).filter((c) => hoursSince(c.t) < 24 * 7);
+    const rows = all.slice(0, MAX);
+    $('#changes-desc').textContent = all.length
+      ? `${all.length} status change${all.length === 1 ? '' : 's'} in the last 7 days, newest first`
+      : 'Status changes in the last 7 days';
     $('#changes-body').innerHTML = rows.length ? rows.map((c) => {
       const s = D.cat.signals.find((x) => x.id === c.id);
       return `<tr><td><span class="cnry-sig">${statusIcon(c.to, LABEL[c.to])}<span class="cnry-sig__name">${s ? sigLink(s) : esc(c.name)}</span></span></td>
-        <td><span class="cnry-change">${LABEL[c.from]} ${icon('arrow--right')} ${LABEL[c.to]}</span></td>
+        <td><span class="cnry-change">${LABEL[c.from]} ${icon('arrow--right', '', 'to')} ${LABEL[c.to]}</span></td>
         <td class="cnry-num cnry-when" title="${esc(fmtUK.format(new Date(c.t)))}">${ago(c.t, true)}</td></tr>`;
     }).join('') : `<tr class="cnry-empty-row"><td colspan="3">No status changes in the last 7 days.</td></tr>`;
+    $('#changes-more').innerHTML = all.length > MAX
+      ? `${all.length - MAX} older change${all.length - MAX === 1 ? '' : 's'} not shown. <a class="cds--link cds--link--sm" href="feed.xml">Full history in the status change feed</a>`
+      : `<a class="cds--link cds--link--sm" href="feed.xml">Subscribe to status changes</a>`;
   }
+
 
   // ───────── Domain tables with Carbon expandable rows ─────────
   function renderBoard() {
@@ -437,7 +429,7 @@
         getJSON('history.json', {}), getJSON('changes.json', []),
       ]);
       D = { cat, status: { signals: {}, ...status }, metrics: metrics.metrics || {}, history: hist, changes };
-      renderSummary(); renderDomains(); renderLegend(); renderAlerts(); renderChanges(); renderBoard(); wire(); setStatus('all');
+      renderSummary(); renderDomains(); renderLegend(); renderChanges(); renderBoard(); wire(); setStatus('all');
       [MQ2, MQ3].forEach((q) => q.addEventListener('change', () => layoutBoard()));
       const id = location.hash.slice(1);
       if (id && document.getElementById(id)?.matches('tr')) goTo(id, false);
