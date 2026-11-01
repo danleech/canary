@@ -55,10 +55,15 @@
     </section>
 
     <section class="cnry-kpis" aria-label="Summary">
-      <div class="cds--tile cnry-kpi cnry-kpi--index">
+      <div class="cds--tile cnry-kpi cnry-kpi--index" data-status="amber">
         <p class="cnry-kpi__label">World State index</p>
-        <p class="cnry-kpi__value"><span id="kpi-score"><!--pre:kpi-score-->44<!--/pre:kpi-score--></span><span class="cnry-kpi__unit">/100</span></p>
-        <p class="cnry-kpi__status" id="kpi-band"><!--pre:kpi-band--><span class="cnry-icon cnry-st--amber"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentColor" aria-hidden="true" focusable="false"><path fill="none" d="M16,26a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,16,26Zm-1.125-5h2.25V12h-2.25Z" data-icon-path="inner-path"/><path d="M16.002,6.1714h-.004L4.6487,27.9966,4.6506,28H27.3494l.0019-.0034ZM14.875,12h2.25v9h-2.25ZM16,26a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,16,26Z"/><path d="M29,30H3a1,1,0,0,1-.8872-1.4614l13-25a1,1,0,0,1,1.7744,0l13,25A1,1,0,0,1,29,30ZM4.6507,28H27.3493l.002-.0033L16.002,6.1714h-.004L4.6487,27.9967Z"/></svg></span><span>Strained</span><!--/pre:kpi-band--></p>
+        <div class="cnry-kpi__main">
+          <div class="cnry-kpi__score">
+            <p class="cnry-kpi__value"><span id="kpi-score"><!--pre:kpi-score-->44<!--/pre:kpi-score--></span><span class="cnry-kpi__unit">/100</span></p>
+            <p class="cnry-kpi__status" id="kpi-band"><!--pre:kpi-band--><span class="cnry-icon cnry-st--amber"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentColor" aria-hidden="true" focusable="false"><path fill="none" d="M16,26a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,16,26Zm-1.125-5h2.25V12h-2.25Z" data-icon-path="inner-path"/><path d="M16.002,6.1714h-.004L4.6487,27.9966,4.6506,28H27.3494l.0019-.0034ZM14.875,12h2.25v9h-2.25ZM16,26a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,16,26Z"/><path d="M29,30H3a1,1,0,0,1-.8872-1.4614l13-25a1,1,0,0,1,1.7744,0l13,25A1,1,0,0,1,29,30ZM4.6507,28H27.3493l.002-.0033L16.002,6.1714h-.004L4.6487,27.9967Z"/></svg></span><span>Strained</span><!--/pre:kpi-band--></p>
+          </div>
+          <figure class="cnry-kpi__trend" id="kpi-trend"><!--pre:kpi-trend--><svg viewBox="0 0 240 56" role="img" aria-label="World State index at each check since 31 Oct: 42 at the first check, 44 now; low 42, high 44"><path d="M4.0 32.8L6.7 32.8L6.9 32.8L64.5 32.8L122.2 28.0L122.3 28.0L177.6 28.0L236.0 23.2" fill="none" stroke="var(--cds-icon-secondary)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="236.0" cy="23.2" r="3.5" fill="var(--cds-support-warning)" stroke="var(--cnry-warning-edge)"/></svg><figcaption>+2 since 31 Oct</figcaption><!--/pre:kpi-trend--></figure>
+        </div>
         <div class="cds--progress-bar cds--progress-bar--small cnry-kpi__bar" aria-hidden="true">
           <div class="cds--progress-bar__track"><div class="cds--progress-bar__bar" id="kpi-bar" style="transform: scaleX(0.44)"></div></div>
         </div>

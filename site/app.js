@@ -105,6 +105,34 @@
       ${s.m ? `<figcaption>Source: ${esc(s.m.source)}</figcaption>` : '<figcaption>Recorded at each Canary check</figcaption>'}</figure>`;
   }
 
+  // World State index over the last 30 days. Mirrors world_trend_html() in scripts/publish.py.
+  const fmtDay = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/London', day: 'numeric', month: 'short' });
+  function worldTrend(series, st) {
+    let pts = (series || []).map(([t, v]) => [Date.parse(t), v]).filter(([t, v]) => !isNaN(t) && typeof v === 'number');
+    if (pts.length) { const start = pts[pts.length - 1][0] - 30 * 864e5; pts = pts.filter(([t]) => t >= start); }
+    if (pts.length < 2) return '';
+    const w = 240, h = 56, p = 4;
+    const t0 = pts[0][0], tspan = (pts[pts.length - 1][0] - t0) || 1;
+    const vals = pts.map(([, v]) => v);
+    let lo = Math.min(...vals), hi = Math.max(...vals);
+    if (hi - lo < 10) {
+      const mid = (lo + hi) / 2; lo = mid - 5; hi = mid + 5;
+      if (lo < 0) { lo = 0; hi = 10; } else if (hi > 100) { lo = 90; hi = 100; }
+    }
+    const xy = pts.map(([t, v]) => [p + ((t - t0) / tspan) * (w - 2 * p), p + (1 - (v - lo) / (hi - lo)) * (h - 2 * p)]);
+    const d = xy.map(([x, y], i) => `${i ? 'L' : 'M'}${x.toFixed(1)} ${y.toFixed(1)}`).join('');
+    const [lx, ly] = xy[xy.length - 1];
+    const first = vals[0], last = vals[vals.length - 1], diff = last - first;
+    const since = fmtDay.format(new Date(t0));
+    const delta = diff === 0 ? 'No change' : `${diff > 0 ? '+' : '−'}${Math.abs(diff)}`;
+    const label = `World State index at each check since ${since}: ${first} at the first check, ${last} now; low ${Math.min(...vals)}, high ${Math.max(...vals)}`;
+    const support = { green: 'success', amber: 'warning', red: 'error' }[st] || 'info';
+    return `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(label)}">`
+      + `<path d="${d}" fill="none" stroke="var(--cds-icon-secondary)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>`
+      + `<circle cx="${lx.toFixed(1)}" cy="${ly.toFixed(1)}" r="3.5" fill="var(--cds-support-${support})"${st === 'amber' ? ' stroke="var(--cnry-warning-edge)"' : ''}/></svg>`
+      + `<figcaption>${delta} since ${since}</figcaption>`;
+  }
+
   // ───────── Page header + KPIs ─────────
   function renderSummary() {
     const g = D.status.generated_at;
@@ -118,6 +146,7 @@
     idx.dataset.status = w.status || '';
     $('#kpi-band').innerHTML = w.band ? `${statusIcon(w.status)}<span>${esc(w.band)}</span>` : '';
     $('#kpi-bar').style.transform = `scaleX(${(w.score || 0) / 100})`;
+    $('#kpi-trend').innerHTML = worldTrend(D.world, w.status);
 
     const counts = { red: 0, amber: 0, green: 0 };
     let stale = 0, pending = 0, oldest = null;
@@ -423,11 +452,11 @@
     hydrateIcons();
     syncThemeButton();
     try {
-      const [cat, status, metrics, hist, changes] = await Promise.all([
+      const [cat, status, metrics, hist, changes, world] = await Promise.all([
         getJSON('catalogue.json'), getJSON('status.json', { signals: {} }), getJSON('metrics.json', { metrics: {} }),
-        getJSON('history.json', {}), getJSON('changes.json', []),
+        getJSON('history.json', {}), getJSON('changes.json', []), getJSON('world.json', []),
       ]);
-      D = { cat, status: { signals: {}, ...status }, metrics: metrics.metrics || {}, history: hist, changes };
+      D = { cat, status: { signals: {}, ...status }, metrics: metrics.metrics || {}, history: hist, changes, world };
       renderSummary(); renderDomains(); renderLegend(); renderChanges(); renderBoard(); wire(); setStatus('all');
       [MQ2, MQ3].forEach((q) => q.addEventListener('change', () => layoutBoard()));
       const id = location.hash.slice(1);

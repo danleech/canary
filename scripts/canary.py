@@ -11,6 +11,7 @@ Data files (all under site/data/):
   history.json   per-signal status/value timeline
   changes.json   log of status changes (feeds the Atom feed and 'changed in 24h')
   runs.json      log of assessment runs
+  world.json     World State index at each assessment, as [time, score] pairs (oldest first)
   metrics.json   hard numbers from scripts/fetch_metrics.py
   catalogue.json generated from signals/catalogue.yaml for the site
 
@@ -41,6 +42,7 @@ LABEL = {"green": "Normal", "amber": "Watch", "red": "Alert"}
 TRENDS = {"up", "flat", "down"}
 FAST_STALE_H, DAILY_STALE_H, DAILY_DUE_H = 14, 36, 20
 HISTORY_CAP, CHANGES_CAP, RUNS_CAP = 240, 400, 200
+WORLD_CAP = 720  # about six months at four runs a day
 ADVICE_DOMAINS = {"markets", "economy", "energy", "uk"}
 BANNED = re.compile(
     r"\b(buy|sell(?![- ]?off)|switch (?:to|into|out of|your)|move (?:your )?(?:money|assets|savings|pension)"
@@ -469,15 +471,48 @@ def world_index(cat: dict, sigs: dict) -> dict:
     return {"score": score, "band": band, "status": colour, "counts": counts, "by_domain": by_dom}
 
 
+def world_series(cat: dict, status: dict, history: dict, series: list) -> list:
+    """The World State index over time: one [time, score] point per assessment, oldest first.
+
+    An empty series is rebuilt once from history.json (each signal's latest status at every
+    past run time). After that it is append-only: a new assessment adds a point, and a rebuild
+    with no new assessment (for example a catalogue edit) refreshes the latest point.
+    """
+    series = [p for p in series if isinstance(p, list) and len(p) == 2]
+    if not series:
+        ids = {s["id"] for s in cat["signals"]}
+        letter = {n[0]: n for n in LEVEL}
+        pts = {sid: sorted(h) for sid, h in history.items() if sid in ids}
+        for t in sorted({p[0] for h in pts.values() for p in h}):
+            sigs = {}
+            for sid, h in pts.items():
+                past = [p for p in h if p[0] <= t]
+                if past and past[-1][1] in letter:
+                    sigs[sid] = {"status": letter[past[-1][1]]}
+            score = world_index(cat, sigs)["score"]
+            if score is not None:
+                series.append([t, score])
+    t, score = status.get("generated_at"), (status.get("world") or {}).get("score")
+    if t and score is not None:
+        if series and series[-1][0] == t:
+            series[-1] = [t, score]
+        elif not series or series[-1][0] < t:
+            series.append([t, score])
+    return series[-WORLD_CAP:]
+
+
 def cmd_build(_args) -> int:
     cat = catalogue()
     save("catalogue.json", cat)
     status = load("status.json", {"signals": {}})
     status["world"] = world_index(cat, status.get("signals", {}))
     save("status.json", status)
-    written = publish.build(SITE_URL, cat, status, load("changes.json", []), load("history.json", {}),
+    history = load("history.json", {})
+    world = world_series(cat, status, history, load("world.json", []))
+    save("world.json", world)
+    written = publish.build(SITE_URL, cat, status, load("changes.json", []), history,
                             load("metrics.json", {}).get("metrics", {}),
-                            {"fast": FAST_STALE_H, "daily": DAILY_STALE_H})
+                            {"fast": FAST_STALE_H, "daily": DAILY_STALE_H}, world=world)
     print(f"built catalogue.json, world index and public outputs ({len(written)} files changed)")
     return 0
 

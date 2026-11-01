@@ -93,6 +93,11 @@ def uk_date(ts: str | None) -> str:
     return f"{dt.astimezone(UK).day} {dt.astimezone(UK):%b %Y}" if dt else "—"
 
 
+def uk_day(ts: str | None) -> str:
+    dt = parse(ts)
+    return f"{dt.astimezone(UK).day} {dt.astimezone(UK):%b}" if dt else "—"
+
+
 def next_run(as_of: str | None) -> tuple[str, str]:
     """(UTC ISO, 'HH:MM UK') of the first scheduled run after as_of."""
     dt = parse(as_of) or datetime.now(timezone.utc)
@@ -921,6 +926,48 @@ def jsonld(m: Model) -> str:
     return f'<script type="application/ld+json">{json.dumps(d, ensure_ascii=False)}</script>'
 
 
+SUPPORT = {"green": "success", "amber": "warning", "red": "error"}
+TREND_DAYS = 30
+
+
+def world_trend_html(series: list, st: str | None) -> str:
+    """Sparkline of the World State index over the last 30 days. Mirrors worldTrend() in app.js."""
+    pts = [(parse(t), v) for t, v in series if parse(t) and isinstance(v, (int, float))]
+    if pts:
+        start = pts[-1][0] - timedelta(days=TREND_DAYS)
+        pts = [p for p in pts if p[0] >= start]
+    if len(pts) < 2:
+        return ""
+    w, h, pad = 240, 56, 4
+    t0, t1 = pts[0][0].timestamp(), pts[-1][0].timestamp()
+    tspan = (t1 - t0) or 1
+    vals = [v for _, v in pts]
+    lo, hi = min(vals), max(vals)
+    if hi - lo < 10:
+        mid = (lo + hi) / 2
+        lo, hi = mid - 5, mid + 5
+        if lo < 0:
+            lo, hi = 0, 10
+        elif hi > 100:
+            lo, hi = 90, 100
+    xy = [(pad + (t.timestamp() - t0) / tspan * (w - 2 * pad), pad + (1 - (v - lo) / (hi - lo)) * (h - 2 * pad))
+          for t, v in pts]
+    d = "".join(f"{'L' if i else 'M'}{x:.1f} {y:.1f}" for i, (x, y) in enumerate(xy))
+    lx, ly = xy[-1]
+    first, last = vals[0], vals[-1]
+    since = uk_day(iso(pts[0][0]))
+    diff = last - first
+    delta = "No change" if diff == 0 else ("+" if diff > 0 else "\u2212") + str(abs(diff))
+    label = (f"World State index at each check since {since}: {first} at the first check, {last} now; "
+             f"low {min(vals)}, high {max(vals)}")
+    edge = ' stroke="var(--cnry-warning-edge)"' if st == "amber" else ""
+    return (f'<svg viewBox="0 0 {w} {h}" role="img" aria-label="{e(label)}">'
+            f'<path d="{d}" fill="none" stroke="var(--cds-icon-secondary)" stroke-width="1.5" '
+            f'stroke-linejoin="round" stroke-linecap="round"/>'
+            f'<circle cx="{lx:.1f}" cy="{ly:.1f}" r="3.5" fill="var(--cds-support-{SUPPORT.get(st, "info")})"{edge}/></svg>'
+            f'<figcaption>{delta} since {since}</figcaption>')
+
+
 def render_index(m: Model, doc: str) -> str:
     c = m.counts()
     w = m.world
@@ -935,6 +982,7 @@ def render_index(m: Model, doc: str) -> str:
     doc = fill(doc, "headline", e(m.status.get("headline") or ""))
     doc = fill(doc, "kpi-score", str(w.get("score", "–")))
     doc = fill(doc, "kpi-band", f'{status_icon(w["status"])}<span>{e(w["band"])}</span>' if w.get("band") else "")
+    doc = fill(doc, "kpi-trend", world_trend_html(m.world_series, w.get("status")))
     doc = fill(doc, "kpi-red", str(c["alert"]))
     doc = fill(doc, "kpi-amber", str(c["watch"]))
     doc = fill(doc, "kpi-green", str(c["normal"]))
@@ -950,6 +998,8 @@ def render_index(m: Model, doc: str) -> str:
     doc = fill(doc, "board", board_html(m))
     doc = re.sub(r"\b\d+ global risk signals", f"{n} global risk signals", doc)
     doc = re.sub(r'id="kpi-bar"(?: style="[^"]*")?', f'id="kpi-bar" style="transform: scaleX({(w.get("score") or 0) / 100:.2f})"', doc)
+    doc = re.sub(r'class="cds--tile cnry-kpi cnry-kpi--index"(?: data-status="[^"]*")?',
+                 f'class="cds--tile cnry-kpi cnry-kpi--index" data-status="{e(w.get("status") or "")}"', doc)
     return hydrate_icons(doc)
 
 
@@ -988,10 +1038,11 @@ def render_methodology(m: Model, doc: str, sizes: dict) -> str:
 # ───────────────────────── entry point ─────────────────────────
 
 def build(site_url: str, cat: dict, status: dict, changes: list, history: dict, metrics: dict,
-          stale_h: dict) -> list[str]:
+          stale_h: dict, world: list | None = None) -> list[str]:
     global ICONS
     ICONS = load_icons()
     m = Model(site_url, cat, status, changes, history, metrics, stale_h)
+    m.world_series = world or []
     written: list[str] = []
 
     texts = {"now.md": now_md(m), "status.md": status_md(m), "changes.md": changes_md(m)}
