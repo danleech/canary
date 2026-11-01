@@ -802,7 +802,7 @@ def board_html(m: Model) -> str:
                      f'<span class="cds--visually-hidden">{TREND_LABEL[t]}</span></span>') if t else ""
             rows.append(
                 f'<tr class="cds--parent-row" data-parent-row data-id="{s["id"]}" data-st="{st}" id="{s["id"]}">'
-                f'<td class="cds--table-expand"></td>'
+                f'<td class="cds--table-expand w-expand"></td>'
                 f'<td class="w-status">{status_icon(st)}<span class="cds--visually-hidden">{LABEL[st]}</span></td>'
                 f'<td class="w-signal"><span class="cnry-sig__name"><a class="cnry-sig__link" href="/s/{s["id"]}">{e(s["name"])}</a>'
                 f'</span>{changed}<span class="cnry-sig__reading">{reading}</span></td>'
@@ -810,7 +810,6 @@ def board_html(m: Model) -> str:
         tables.append((len(sigs) + 3, f"""<div class="cds--data-table-container cnry-domain-table" id="domain-{d['id']}" data-domain="{d['id']}" data-weight="{len(sigs) + 3}">
 <div class="cds--data-table-header"><h3 class="cds--data-table-header__title">{e(d['name'])}</h3><p class="cds--data-table-header__description">{tally}</p></div>
 <div class="cds--data-table-content"><table class="cds--data-table cds--data-table--sm cnry-dt" aria-label="{e(d['name'])} signals">
-<thead><tr><th class="cds--table-expand w-expand" scope="col"><span class="cds--visually-hidden">Details</span></th><th scope="col" class="w-status"><span class="cds--visually-hidden">Status</span></th><th scope="col" class="w-signal"><span class="cds--visually-hidden">Signal and reading</span></th><th scope="col" class="w-trend"><span class="cds--visually-hidden">Trend</span></th></tr></thead>
 <tbody>{''.join(rows)}</tbody></table></div></div>"""))
     groups = balance([w for w, _ in tables], 3)
     return "".join('<div class="cnry-col">' + "".join(tables[i][1] for i in grp) + "</div>" for grp in groups)
@@ -847,36 +846,55 @@ def changes_rows(m: Model) -> str:
 
 
 def situations_html(m: Model) -> str:
+    """Collapsible (closed by default) panel: one row per situation, linked signals sorted by severity."""
     if not m.situations and not m.emerging:
         return ""
-    def chips(ids):
-        return " ".join(f'<a class="cnry-chip" href="/s/{i}">{status_icon(m.st(i))}<span>{e(m.by_id[i]["name"])}</span></a>'
-                        for i in ids if i in m.by_id)
-    rows = "".join(
-        f'<tr><td class="w-status">{status_icon(s["status"])}<span class="cds--visually-hidden">{LABEL.get(s["status"], "")}</span></td>'
-        f'<td><span class="cnry-sit__name">{e(s["name"])}</span> {trend_cell(s.get("trend"))}'
-        f'<p class="cnry-sit__summary">{e(s["summary"])}</p><p class="cnry-chips">{chips(s.get("signals", []))}</p></td></tr>'
-        for s in m.situations)
+
+    def sig_links(ids):
+        known = sorted((i for i in ids if i in m.by_id), key=lambda i: ORDER[m.st(i)])
+        return "".join(f'<a class="cnry-sit__sig" href="/s/{i}">{status_icon(m.st(i))}<span>{e(m.by_id[i]["name"])}</span>'
+                       f'<span class="cds--visually-hidden"> ({LABEL[m.st(i)]})</span></a>' for i in known)
+
+    def name_cell(x, trend=True):
+        st = x["status"] if x["status"] in ICON_FOR else "pending"
+        tr = f'<span class="cnry-sit__trend">{trend_cell(x.get("trend"))}</span>' if trend else ""
+        return (f'<td class="cnry-sit__name-cell"><span class="cnry-sit__name">{status_icon(st)}'
+                f'<span class="cds--visually-hidden">{LABEL[st]}: </span><span>{e(x["name"])}</span></span>{tr}</td>')
+
+    rows = "".join(f'<tr>{name_cell(s)}<td class="cnry-sit__what">{e(s["summary"])}</td>'
+                   f'<td class="cnry-sit__sigs">{sig_links(s.get("signals", []))}</td></tr>' for s in m.situations)
+    table = ""
+    if m.situations:
+        table = ('<table class="cds--data-table cds--data-table--sm cnry-sit-table" aria-label="Situations">'
+                 '<thead><tr><th scope="col" class="cnry-sit__h-name"><div class="cds--table-header-label">Situation</div></th>'
+                 '<th scope="col"><div class="cds--table-header-label">What\'s happening</div></th>'
+                 '<th scope="col" class="cnry-sit__h-sigs"><div class="cds--table-header-label">Signals</div></th></tr></thead>'
+                 f'<tbody>{rows}</tbody></table>')
     emerging = ""
     if m.emerging:
         er = "".join(
-            f'<tr><td class="w-status">{status_icon(x["status"])}<span class="cds--visually-hidden">{LABEL.get(x["status"], "")}</span></td>'
-            f'<td><span class="cnry-sit__name">{e(x["name"])}</span><p class="cnry-sit__summary">{e(x["summary"])}</p>'
-            + "".join(f'<a class="cds--link cds--link--sm" href="{e(src.get("url"))}" rel="noopener nofollow">{e(src.get("title"))}</a> '
+            f'<tr>{name_cell(x, trend=False)}<td class="cnry-sit__what">{e(x["summary"])}</td><td class="cnry-sit__sigs">'
+            + "".join(f'<a class="cds--link cds--link--sm" href="{e(src.get("url"))}" rel="noopener nofollow">{e(src.get("title"))}</a>'
                       for src in x.get("sources", [])[:2]) + "</td></tr>"
             for x in m.emerging)
-        emerging = (f'<h3 class="cnry-sit__subhead">Outside the catalogue <span class="cds--type-helper-text-01">'
-                    f'Provisional: situations no signal covers yet, reviewed weekly</span></h3>'
-                    f'<table class="cds--data-table cds--data-table--sm cnry-table cnry-sit-table" aria-label="Emerging risks">'
+        emerging = ('<h3 class="cnry-sit__subhead">Outside the catalogue</h3>'
+                    '<p class="cnry-sit__intro">Provisional: risks no signal covers yet. Reviewed weekly; persistent ones become signals.</p>'
+                    '<table class="cds--data-table cds--data-table--sm cnry-sit-table" aria-label="Emerging risks">'
+                    '<thead><tr><th scope="col" class="cnry-sit__h-name"><div class="cds--table-header-label">Risk</div></th>'
+                    '<th scope="col"><div class="cds--table-header-label">What\'s happening</div></th>'
+                    '<th scope="col" class="cnry-sit__h-sigs"><div class="cds--table-header-label">Sources</div></th></tr></thead>'
                     f'<tbody>{er}</tbody></table>')
-    n_alert_sigs = sum(1 for s in m.situations for i in s.get("signals", []) if m.st(i) == "red")
-    desc = (f"{len(m.situations)} cross-domain situations account for {n_alert_sigs} of the board's Alerts"
-            if m.situations else "")
-    return f"""<section class="cds--data-table-container cnry-panel cnry-situations" aria-labelledby="sit-title">
-<div class="cds--data-table-header"><h2 class="cds--data-table-header__title" id="sit-title">Situations</h2>
-<p class="cds--data-table-header__description">{e(desc)}. One event often drives several signals.</p></div>
-<div class="cds--data-table-content"><table class="cds--data-table cds--data-table--sm cnry-table cnry-sit-table" aria-labelledby="sit-title"><tbody>{rows}</tbody></table></div>
-{emerging}</section>"""
+    alerts_total = sum(1 for r in m.records if r["status"] == "alert")
+    covered = {i for s in m.situations for i in s.get("signals", []) if m.st(i) == "red"}
+    count = f"{len(m.situations)} events behind {len(covered)} of {alerts_total} Alerts" if m.situations else ""
+    if m.emerging:
+        count += (" · " if count else "") + f"{len(m.emerging)} outside the catalogue"
+    icons = "".join(status_icon(s["status"]) for s in m.situations)
+    return f"""<details class="cnry-situations" id="situations">
+<summary class="cnry-sit__bar"><span class="cnry-sit__chevron">{svg('chevron--right')}</span><span class="cnry-sit__title">Situations</span><span class="cnry-sit__count">{e(count)}</span><span class="cnry-sit__icons" aria-hidden="true">{icons}</span></summary>
+<div class="cnry-sit__body"><p class="cnry-sit__intro">One event often moves several signals. Situations group them so you can see how many separate things are happening; they don't change any signal's status.</p>
+{table}{emerging}</div>
+</details>"""
 
 
 def legend_html() -> str:

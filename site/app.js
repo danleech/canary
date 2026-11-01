@@ -77,7 +77,7 @@
       if (m && Array.isArray(m.series) && m.series.length > 3) return { series: m.series, m };
     }
     const h = (D.history[sig.id] || []).map((p) => p[2]).filter((v) => typeof v === 'number');
-    return h.length > 3 ? { series: h } : null;
+    return h.length > 3 && new Set(h).size > 1 ? { series: h } : null; // a flat line adds nothing
   }
 
   function sparkSVG(series, st) {
@@ -193,7 +193,7 @@
         const st = effective(s);
         const changed = fresh.has(s.id) ? ' <span class="cds--tag cds--tag--blue cds--tag--sm cnry-changed"><span class="cds--tag__label">Changed</span></span>' : '';
         return `<tr class="cds--parent-row" data-parent-row data-id="${s.id}" data-st="${st}" id="${s.id}">
-            <td class="cds--table-expand"><button type="button" class="cds--table-expand__button" aria-expanded="false" aria-controls="x-${s.id}" aria-label="Show details for ${esc(s.name)}">${icon('chevron--right', 'cds--table-expand__svg')}</button></td>
+            <td class="cds--table-expand w-expand"><button type="button" class="cds--table-expand__button" aria-expanded="false" aria-controls="x-${s.id}" aria-label="Show details for ${esc(s.name)}">${icon('chevron--right', 'cds--table-expand__svg')}</button></td>
             <td class="w-status">${statusOnly(st)}</td>
             <td class="w-signal"><span class="cnry-sig__name">${esc(s.name)}</span>${changed}<span class="cnry-sig__reading">${c?.value ? esc(c.value) : '<span class="cnry-none">No reading yet</span>'}</span></td>
             <td class="w-trend">${c ? trendIcon(c.trend) : ''}</td>
@@ -211,12 +211,6 @@
         </div>
         <div class="cds--data-table-content">
           <table class="cds--data-table cds--data-table--sm cnry-dt" aria-label="${esc(d.name)} signals">
-            <thead><tr>
-              <th class="cds--table-expand w-expand" scope="col"><span class="cds--visually-hidden">Details</span></th>
-              <th scope="col" class="w-status"><span class="cds--visually-hidden">Status</span></th>
-              <th scope="col" class="w-signal"><span class="cds--visually-hidden">Signal and reading</span></th>
-              <th scope="col" class="w-trend"><span class="cds--visually-hidden">Trend</span></th>
-            </tr></thead>
             <tbody>${rows}</tbody>
           </table>
         </div>`;
@@ -295,7 +289,8 @@
   // Keep child-row colspan equal to the visible column count (columns hide at small breakpoints)
   function syncColspans() {
     $$('.cnry-dt').forEach((t) => {
-      const n = $$('thead th', t).filter((th) => getComputedStyle(th).display !== 'none').length;
+      const first = t.querySelector('tr[data-parent-row]');
+      const n = first ? [...first.children].filter((td) => getComputedStyle(td).display !== 'none').length : COLS;
       $$('tr[data-child-row] > td', t).forEach((td) => { td.colSpan = n; });
     });
   }
