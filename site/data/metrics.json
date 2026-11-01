@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-01T05:41:14Z",
+ "fetched_at": "2026-11-01T11:47:32Z",
  "ok": 23,
  "failed": [],
  "metrics": {
@@ -106,7 +106,7 @@
    ],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/%5EVIX",
-   "fetched_at": "2026-11-01T05:41:14Z"
+   "fetched_at": "2026-11-01T11:47:32Z"
   },
   "spx": {
    "value": 7580.07,
@@ -211,7 +211,7 @@
    ],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/%5EGSPC",
-   "fetched_at": "2026-11-01T05:41:14Z"
+   "fetched_at": "2026-11-01T11:47:32Z"
   },
   "ftse": {
    "value": 10729.78,
@@ -316,7 +316,7 @@
    ],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/%5EFTSE",
-   "fetched_at": "2026-11-01T05:41:14Z"
+   "fetched_at": "2026-11-01T11:47:32Z"
   },
   "move": {
    "value": 100.1976,
@@ -421,7 +421,7 @@
    ],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/%5EMOVE",
-   "fetched_at": "2026-11-01T05:41:14Z"
+   "fetched_at": "2026-11-01T11:47:32Z"
   },
   "us10y": {
    "value": 4.929,
@@ -526,7 +526,7 @@
    ],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/%5ETNX",
-   "fetched_at": "2026-11-01T05:41:14Z"
+   "fetched_at": "2026-11-01T11:47:32Z"
   },
   "dxy": {
    "value": 101.964,
@@ -631,7 +631,7 @@
    ],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/DX-Y.NYB",
-   "fetched_at": "2026-11-01T05:41:14Z"
+   "fetched_at": "2026-11-01T11:47:32Z"
   },
   "gold": {
    "value": 3898.9,
@@ -736,19 +736,18 @@
    ],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/GC%3DF",
-   "fetched_at": "2026-11-01T05:41:14Z"
+   "fetched_at": "2026-11-01T11:47:32Z"
   },
   "btc": {
-   "value": 77643.63,
-   "as_of": "2026-11-01T05:41:13Z",
+   "value": 77806.99,
+   "as_of": "2026-11-01T11:47:26Z",
    "high_52w": 86602.9141,
-   "drawdown_pct": -10.35,
-   "chg_1m_pct": -7.21,
-   "chg_3m_pct": -0.03,
-   "chg_1m_abs": -6035.8387,
+   "drawdown_pct": -10.16,
+   "chg_1m_pct": -4.84,
+   "chg_3m_pct": -0.94,
+   "chg_1m_abs": -3955.5725,
    "worst_day_5d_pct": -4.3,
    "series": [
-    64055.9531,
     64597.5,
     64262.1133,
     64880.1914,
@@ -836,12 +835,13 @@
     81267.5859,
     77775.1094,
     77198.2109,
-    77643.6328,
-    77643.63
+    77434.75,
+    77806.9922,
+    77806.99
    ],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/BTC-USD",
-   "fetched_at": "2026-11-01T05:41:14Z"
+   "fetched_at": "2026-11-01T11:47:32Z"
   },
   "brent": {
    "value": 113.43,
@@ -946,7 +946,7 @@
    ],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/BZ%3DF",
-   "fetched_at": "2026-11-01T05:41:14Z"
+   "fetched_at": "2026-11-01T11:47:32Z"
   },
   "ttf": {
    "value": 103.944,
@@ -1051,7 +1051,7 @@
    ],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/TTF%3DF",
-   "fetched_at": "2026-11-01T05:41:14Z"
+   "fetched_at": "2026-11-01T11:47:32Z"
   },
   "stlfsi": {
    "value": -0.5837,
@@ -1113,7 +1113,7 @@
    ],
    "source": "FRED STLFSI4 (St Louis Fed Financial Stress Index)",
    "url": "https://fred.stlouisfed.org/series/STLFSI4",
-   "fetched_at": "2026-11-01T05:41:14Z"
+   "fetched_at": "2026-11-01T11:47:32Z"
   },
   "sahm": {
    "value": 0.0,
@@ -1159,7 +1159,7 @@
    ],
    "source": "FRED SAHMREALTIME (Sahm rule real-time)",
    "url": "https://fred.stlouisfed.org/series/SAHMREALTIME",
-   "fetched_at": "2026-11-01T05:41:14Z"
+   "fetched_at": "2026-11-01T11:47:32Z"
   },
   "t10y2y": {
    "value": 0.38,
@@ -1259,7 +1259,7 @@
    ],
    "source": "FRED T10Y2Y (10y–2y spread)",
    "url": "https://fred.stlouisfed.org/series/T10Y2Y",
-   "fetched_at": "2026-11-01T05:41:14Z"
+   "fetched_at": "2026-11-01T11:47:32Z"
   },
   "us_cpi": {
    "value": 4.02,
@@ -1306,12 +1306,12 @@
    "rising_3m": false,
    "source": "FRED CPIAUCSL (BLS CPI-U, y/y %)",
    "url": "https://fred.stlouisfed.org/series/CPIAUCSL",
-   "fetched_at": "2026-11-01T05:41:14Z"
+   "fetched_at": "2026-11-01T11:47:32Z"
   },
   "quakes": {
    "value": 6.4,
-   "as_of": "2026-11-01T05:41:14Z",
-   "count_m45": 139,
+   "as_of": "2026-11-01T11:47:32Z",
+   "count_m45": 135,
    "count_m6": 4,
    "count_m7": 0,
    "max_pager": "green",
@@ -1350,42 +1350,42 @@
      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttlm"
     },
     {
-     "mag": 5.9,
-     "place": "218 km ENE of Nagqu, China",
-     "time": "2026-10-25T11:25:57Z",
+     "mag": 5.8,
+     "place": "110 km ENE of Barcelona, Philippines",
+     "time": "2026-10-29T03:19:05Z",
      "alert": "green",
      "tsunami": false,
-     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4ty"
+     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttw3"
     }
    ],
    "source": "USGS (M4.5+ past 7 days)",
    "url": "https://earthquake.usgs.gov/earthquakes/map/",
-   "fetched_at": "2026-11-01T05:41:14Z"
+   "fetched_at": "2026-11-01T11:47:32Z"
   },
   "gdacs": {
-   "value": "green",
-   "as_of": "2026-11-01T05:41:14Z",
+   "value": "red",
+   "as_of": "2026-11-01T11:47:32Z",
    "by_type": {
     "cyclone": {
-     "red": 0,
+     "red": 1,
      "orange": 0,
-     "green": 2,
+     "green": 1,
      "events": [
-      {
-       "name": "Tropical Cyclone FOUR-26",
-       "alert": "green",
-       "country": "India",
-       "from": "2026-11-01T00:00:00",
-       "to": "2026-11-01T00:00:00",
-       "url": "https://www.gdacs.org/report.aspx?eventid=1001346&episodeid=1&eventtype=TC"
-      },
       {
        "name": "Tropical Cyclone IN-FA-26",
        "alert": "green",
        "country": "Japan, Marshall Islands",
        "from": "2026-10-25T06:00:00",
-       "to": "2026-11-01T00:00:00",
-       "url": "https://www.gdacs.org/report.aspx?eventid=1001343&episodeid=35&eventtype=TC"
+       "to": "2026-11-01T06:00:00",
+       "url": "https://www.gdacs.org/report.aspx?eventid=1001343&episodeid=36&eventtype=TC"
+      },
+      {
+       "name": "Tropical Cyclone FOUR-26",
+       "alert": "red",
+       "country": "India",
+       "from": "2026-11-01T00:00:00",
+       "to": "2026-11-01T06:00:00",
+       "url": "https://www.gdacs.org/report.aspx?eventid=1001346&episodeid=2&eventtype=TC"
       }
      ]
     },
@@ -1398,13 +1398,13 @@
     "wildfire": {
      "red": 0,
      "orange": 0,
-     "green": 81,
+     "green": 75,
      "events": []
     },
     "earthquake": {
      "red": 0,
      "orange": 0,
-     "green": 15,
+     "green": 21,
      "events": []
     },
     "volcano": {
@@ -1422,21 +1422,21 @@
    },
    "source": "GDACS (UN/EC Global Disaster Alert and Coordination System)",
    "url": "https://www.gdacs.org/",
-   "fetched_at": "2026-11-01T05:41:14Z"
+   "fetched_at": "2026-11-01T11:47:32Z"
   },
   "swpc": {
    "value": "G0 S0 R0",
-   "as_of": "2026-11-01T05:39:00Z",
+   "as_of": "2026-11-01T11:45:00Z",
    "G": 0,
    "S": 0,
    "R": 0,
    "G_24h": 2,
    "S_24h": 0,
    "R_24h": 0,
-   "G_forecast_max": 1,
+   "G_forecast_max": 0,
    "source": "NOAA Space Weather Prediction Center",
    "url": "https://www.swpc.noaa.gov/",
-   "fetched_at": "2026-11-01T05:41:14Z"
+   "fetched_at": "2026-11-01T11:47:32Z"
   },
   "co2": {
    "value": 427.16,
@@ -1550,7 +1550,7 @@
    ],
    "source": "NOAA GML Mauna Loa (weekly)",
    "url": "https://gml.noaa.gov/ccgg/trends/",
-   "fetched_at": "2026-11-01T05:41:14Z"
+   "fetched_at": "2026-11-01T11:47:32Z"
   },
   "oni": {
    "value": 2.16,
@@ -1596,19 +1596,18 @@
    ],
    "source": "NOAA CPC Oceanic Niño Index",
    "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/ONI_v5.php",
-   "fetched_at": "2026-11-01T05:41:14Z"
+   "fetched_at": "2026-11-01T11:47:32Z"
   },
   "sea_ice": {
-   "value": -1.745,
-   "as_of": "2026-10-30",
+   "value": -1.727,
+   "as_of": "2026-10-31",
    "arctic": {
-    "extent": 7.755,
-    "as_of": "2026-10-30",
-    "anomaly": -1.745,
+    "extent": 7.84,
+    "as_of": "2026-10-31",
+    "anomaly": -1.727,
     "record_low_for_date": false,
     "rank_low": 6,
     "series": [
-     6.479,
      6.465,
      6.369,
      6.255,
@@ -1697,17 +1696,17 @@
      7.601,
      7.673,
      7.743,
-     7.755
+     7.755,
+     7.84
     ]
    },
    "antarctic": {
-    "extent": 15.855,
-    "as_of": "2026-10-30",
-    "anomaly": -1.645,
+    "extent": 15.866,
+    "as_of": "2026-10-31",
+    "anomaly": -1.621,
     "record_low_for_date": false,
     "rank_low": 2,
     "series": [
-     16.212,
      16.282,
      16.369,
      16.247,
@@ -1796,12 +1795,13 @@
      16.016,
      15.955,
      15.884,
-     15.855
+     15.855,
+     15.866
     ]
    },
    "source": "NSIDC Sea Ice Index v4 (anomaly vs 1981–2010, million km²)",
    "url": "https://nsidc.org/arcticseaicenews/sea-ice-tools/",
-   "fetched_at": "2026-11-01T05:41:14Z"
+   "fetched_at": "2026-11-01T11:47:32Z"
   },
   "global_temp": {
    "value": 1.74,
@@ -1903,61 +1903,20 @@
    ],
    "source": "Climate Reanalyzer (ERA5) — °C above pre-industrial ≈ 1991–2020 anomaly + 0.88",
    "url": "https://climatereanalyzer.org/clim/t2_daily/",
-   "fetched_at": "2026-11-01T05:41:14Z"
+   "fetched_at": "2026-11-01T11:47:32Z"
   },
   "metoffice": {
-   "value": "yellow",
-   "as_of": "2026-11-01T05:41:14Z",
+   "value": "none",
+   "as_of": "2026-11-01T11:47:32Z",
    "counts": {
-    "yellow": 8,
+    "yellow": 0,
     "amber": 0,
     "red": 0
    },
-   "items": [
-    {
-     "title": "Yellow warning of fog affecting South West England",
-     "level": "yellow",
-     "link": "https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings#?date=2026-11-01&id=9fc7470f-5654-4899-a475-9952f452789d&referrer=rss"
-    },
-    {
-     "title": "Yellow warning of fog affecting East of England",
-     "level": "yellow",
-     "link": "https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings#?date=2026-11-01&id=9fc7470f-5654-4899-a475-9952f452789d&referrer=rss"
-    },
-    {
-     "title": "Yellow warning of fog affecting East Midlands",
-     "level": "yellow",
-     "link": "https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings#?date=2026-11-01&id=9fc7470f-5654-4899-a475-9952f452789d&referrer=rss"
-    },
-    {
-     "title": "Yellow warning of fog affecting North West England",
-     "level": "yellow",
-     "link": "https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings#?date=2026-11-01&id=9fc7470f-5654-4899-a475-9952f452789d&referrer=rss"
-    },
-    {
-     "title": "Yellow warning of fog affecting London & South East England",
-     "level": "yellow",
-     "link": "https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings#?date=2026-11-01&id=9fc7470f-5654-4899-a475-9952f452789d&referrer=rss"
-    },
-    {
-     "title": "Yellow warning of fog affecting Wales",
-     "level": "yellow",
-     "link": "https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings#?date=2026-11-01&id=9fc7470f-5654-4899-a475-9952f452789d&referrer=rss"
-    },
-    {
-     "title": "Yellow warning of fog affecting West Midlands",
-     "level": "yellow",
-     "link": "https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings#?date=2026-11-01&id=9fc7470f-5654-4899-a475-9952f452789d&referrer=rss"
-    },
-    {
-     "title": "Yellow warning of fog affecting Yorkshire & Humber",
-     "level": "yellow",
-     "link": "https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings#?date=2026-11-01&id=9fc7470f-5654-4899-a475-9952f452789d&referrer=rss"
-    }
-   ],
+   "items": [],
    "source": "Met Office National Severe Weather Warnings",
    "url": "https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings",
-   "fetched_at": "2026-11-01T05:41:14Z"
+   "fetched_at": "2026-11-01T11:47:32Z"
   },
   "hy_oas": {
    "value": 3.26,
@@ -2062,7 +2021,7 @@
    ],
    "source": "FRED BAMLH0A0HYM2 (US HY OAS %)",
    "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-   "fetched_at": "2026-11-01T05:41:14Z"
+   "fetched_at": "2026-11-01T11:47:32Z"
   }
  }
 }
