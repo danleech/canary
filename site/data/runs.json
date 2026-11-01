@@ -1,5 +1,16 @@
 [
  {
+  "t": "2026-11-01T11:52:42Z",
+  "applied": 72,
+  "changed": [
+   "other-cyclones",
+   "co2",
+   "uk-weather"
+  ],
+  "warnings": [],
+  "note": "Weekend run: market metrics unchanged since 30 Oct closes. other-cyclones jumps green→red on a GDACS red alert (hard trigger). Some quiet signals carry forward sources from earlier runs where no newer report was found; GDACS report page could not be opened directly, data from the GDACS feed."
+ },
+ {
   "t": "2026-11-01T05:43:22Z",
   "applied": 35,
   "changed": [],
