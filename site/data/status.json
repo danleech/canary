@@ -3,189 +3,203 @@
   "equity-stress": {
    "status": "green",
    "trend": "flat",
-   "summary": "US stocks near highs and volatility contained despite the energy shock",
-   "state": "US markets were closed over the weekend; the S&P 500 last closed on 30 Oct about 3% below its 52-week high, with the VIX at 19.4, just under the 20 Watch line. The coming week brings the 3 Nov US midterms and the 5 Nov Bank of England decision.",
-   "for_you": "Conditions in US equities are calm by historical standards. Volatility near 20 means sharper daily swings are plausible if energy or rate news worsens.",
+   "summary": "VIX just under 20 and S&P 500 3% off its high ahead of a busy week",
+   "state": "US markets have been shut since the 30 Oct close, when the S&P 500 stood about 3% below its 52-week high and the VIX at 19.4, just under the 20 Watch line. The week ahead brings the 3 Nov US midterms, the 5 Nov Bank of England decision and US payrolls on 6 Nov.",
+   "for_you": "Share prices are moving within normal ranges. Pension and investment values may swing more around the elections and central bank decisions this week.",
    "sources": [
     {
-     "title": "Yahoo Finance — S&P 500 (^GSPC)",
+     "title": "Yahoo Finance — VIX",
+     "url": "https://finance.yahoo.com/quote/%5EVIX",
+     "date": "2026-10-30"
+    },
+    {
+     "title": "Yahoo Finance — S&P 500",
      "url": "https://finance.yahoo.com/quote/%5EGSPC",
      "date": "2026-10-30"
     },
     {
-     "title": "Yahoo Finance — VIX (^VIX)",
-     "url": "https://finance.yahoo.com/quote/%5EVIX",
-     "date": "2026-10-30"
+     "title": "MarketAlleys — Week ahead, 2 Nov 2026",
+     "url": "https://marketalleys.com/post/marketalleys-week-ahead-2026-11-02",
+     "date": "2026-11-01"
     }
    ],
    "value": "VIX 19.4, S&P -3.0%",
    "value_num": 19.42,
-   "checked_at": "2026-11-01T11:52:42Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "rubric_hit": "VIX 19.4 < 20 Watch line; S&P drawdown 3% < 10%"
   },
   "ftse": {
    "status": "green",
    "trend": "flat",
-   "summary": "FTSE 100 within 2% of its high, supported by energy and mining shares",
-   "state": "The FTSE 100 last closed on 30 Oct at 10,730, about 1.7% below its 52-week high. Its heavy weighting to oil, gas and mining companies has cushioned it from the energy shock. London markets reopen on 2 Nov, ahead of the Bank of England decision on 5 Nov.",
-   "for_you": "The index's resilience reflects its global, commodity-heavy make-up rather than the domestic UK economy, which faces higher energy bills and rising rates.",
+   "summary": "FTSE 100 near its high, cushioned by energy and mining shares",
+   "state": "The FTSE 100 last closed on 30 Oct at 10,730, about 1.7% below its 52-week high; London reopens on 2 Nov. Its heavy weighting to oil, gas and mining firms has cushioned it from the energy shock, and the Bank of England decides on rates on 5 Nov.",
+   "for_you": "UK shares are near record levels. Pension funds with UK equity exposure have not seen a market fall of note.",
    "sources": [
     {
-     "title": "Yahoo Finance — FTSE 100 (^FTSE)",
+     "title": "Yahoo Finance — FTSE 100",
      "url": "https://finance.yahoo.com/quote/%5EFTSE",
      "date": "2026-10-30"
     }
    ],
    "value": "10,730, -1.7% from high",
    "value_num": 10729.78,
-   "checked_at": "2026-11-01T11:52:42Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "rubric_hit": "FTSE drawdown 1.7% < 10% Watch line"
   },
   "bond-volatility": {
    "status": "amber",
    "trend": "flat",
-   "summary": "Treasury volatility at the Watch line as yields hover near 5%",
-   "state": "The MOVE index of Treasury volatility stood at 100 on 30 Oct, right on the Watch threshold, with the US 10-year yield at 4.93% after touching about 5.2% in mid-October. The Fed held on 28 Oct after a September hike, and markets price a December hike. No trading since 30 Oct.",
-   "for_you": "Long-term borrowing costs, including US mortgage rates, are elevated and moving more than usual. This feeds through to global bond markets, including UK gilts.",
+   "summary": "Treasury volatility on the Watch line with the 10-year near 4.9%",
+   "state": "The MOVE index of Treasury volatility was 100.2 at the 30 Oct close, on the Watch threshold, with the US 10-year yield at 4.93%, up about 35bp over a month. US payrolls on 6 Nov and the 3 Nov midterms are the next tests; no trading since 30 Oct.",
+   "for_you": "Borrowing costs for mortgages and loans tied to US and global bond yields remain high and changeable.",
    "sources": [
     {
-     "title": "Yahoo Finance — ICE BofA MOVE Index",
+     "title": "Yahoo Finance — ICE BofA MOVE index",
      "url": "https://finance.yahoo.com/quote/%5EMOVE",
      "date": "2026-10-30"
     },
     {
-     "title": "FRED — 10-Year Treasury yield (DGS10)",
-     "url": "https://fred.stlouisfed.org/series/DGS10",
-     "date": "2026-10-29"
-    },
-    {
-     "title": "investingLive — FOMC decision 28 Oct: rates left unchanged",
-     "url": "https://investinglive.com/central-banks/fomc-decision-oct-28/",
-     "date": "2026-10-28"
+     "title": "Yahoo Finance — US 10-year yield",
+     "url": "https://finance.yahoo.com/quote/%5ETNX",
+     "date": "2026-10-30"
     }
    ],
    "value": "MOVE 100, 10y 4.93%",
-   "value_num": 100.198,
-   "checked_at": "2026-11-01T11:52:42Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "value_num": 100.2,
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "rubric_hit": "MOVE 100.2 ≥ 100 Watch line"
   },
   "credit-spreads": {
    "status": "green",
    "trend": "flat",
-   "summary": "High-yield spreads tight at 3.3% — no sign of a credit crunch",
-   "state": "The US high-yield option-adjusted spread was 3.26% at the latest reading (29 Oct), well inside the 4% Watch line and little changed over the month. Lenders are not yet demanding a meaningful premium for corporate default risk despite higher rates and energy costs.",
-   "for_you": "Companies can still borrow on easy terms. A sharp widening would be an early sign of stress spreading from energy into the wider economy.",
+   "summary": "High-yield spreads tight at 3.26%, no sign of corporate credit stress",
+   "state": "The US high-yield option-adjusted spread was 3.26% on 29 Oct, well inside the 4% Watch line and little changed over the month. Lenders are not demanding a meaningful extra premium for default risk despite higher rates and energy costs.",
+   "for_you": "Companies can still borrow on normal terms; no broad corporate credit squeeze is under way.",
    "sources": [
     {
-     "title": "FRED — ICE BofA US High Yield OAS (BAMLH0A0HYM2)",
+     "title": "FRED — ICE BofA US High Yield OAS",
      "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
      "date": "2026-10-29"
     }
    ],
    "value": "HY OAS 3.26%",
    "value_num": 3.26,
-   "checked_at": "2026-11-01T11:52:42Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "rubric_hit": "HY OAS 3.26% < 4% Watch line"
   },
   "dollar": {
    "status": "green",
    "trend": "flat",
-   "summary": "Dollar index steady around 102",
-   "state": "The DXY dollar index was 102.0 at the 30 Oct close, up about 2% over three months, within the normal range. Fed hikes have supported the dollar without the violent moves that squeeze dollar borrowers abroad.",
-   "for_you": "Currency conditions are orderly. A stronger dollar would raise the sterling cost of oil, which is priced in dollars.",
+   "summary": "Dollar index steady near 102, up 2% over three months",
+   "state": "The DXY dollar index closed at 102.0 on 30 Oct, up about 2.1% over three months and within the normal range. Fed tightening has supported the dollar without the sharp moves that squeeze dollar borrowers abroad.",
+   "for_you": "Exchange rates are moving normally; holiday money and import prices are not being hit by an abrupt dollar surge.",
    "sources": [
     {
-     "title": "Yahoo Finance — US Dollar Index (DX-Y.NYB)",
+     "title": "Yahoo Finance — US Dollar Index",
      "url": "https://finance.yahoo.com/quote/DX-Y.NYB",
      "date": "2026-10-30"
     }
    ],
    "value": "DXY 102.0, 3m +2.1%",
-   "value_num": 101.964,
-   "checked_at": "2026-11-01T11:52:42Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "value_num": 101.96,
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "rubric_hit": "DXY 3m move +2.1% < 5% Watch line"
   },
   "banking-stress": {
    "status": "green",
    "trend": "flat",
-   "summary": "Financial stress index below zero; 2026 bank failures have all been small",
-   "state": "The St Louis Fed Financial Stress Index was −0.58 in the latest weekly reading (week to 23 Oct), below its long-run average. Six small US banks have failed in 2026, the largest (Nano Banc, 25 Sep) with about $736m in assets; no new failure was reported as of 1 Nov.",
-   "for_you": "There is no sign of systemic banking stress. Commercial property refinancing at higher rates remains the pressure point for smaller lenders.",
+   "summary": "Financial stress indices below average; no new bank failure",
+   "state": "The St Louis Fed Financial Stress Index was −0.58 in the week to 23 Oct, below its long-run average, and the ECB's systemic stress indicator was 0.013 on 29 Oct, a low reading. No new US or European bank failure had been reported as of 1 Nov.",
+   "for_you": "Bank deposits are protected by deposit guarantee schemes (FSCS in the UK); no sign of stress in the banking system now.",
    "sources": [
     {
-     "title": "FRED — St. Louis Fed Financial Stress Index (STLFSI4)",
+     "title": "FRED — St Louis Fed Financial Stress Index",
      "url": "https://fred.stlouisfed.org/series/STLFSI4",
      "date": "2026-10-23"
     },
     {
-     "title": "Disruption Banking — Six US banks failed in 2026, the most in a decade",
-     "url": "https://www.disruptionbanking.com/2026/10/01/six-us-banks-failed-in-2026-the-most-in-a-decade-what-that-says-about-the-economy/",
-     "date": "2026-10-01"
+     "title": "ECB Data Portal — CISS",
+     "url": "https://data.ecb.europa.eu/data/datasets/CISS",
+     "date": "2026-10-29"
     }
    ],
-   "value": "STLFSI -0.58",
-   "value_num": -0.5837,
-   "checked_at": "2026-11-01T11:52:42Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "value": "STLFSI -0.58, CISS 0.01",
+   "value_num": -0.58,
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "rubric_hit": "STLFSI -0.58 < 0 and CISS 0.01: below Watch lines"
   },
   "gold": {
    "status": "green",
-   "trend": "down",
-   "summary": "Gold off its highs at about $3,900 as real yields rise",
-   "state": "Gold futures last traded at $3,899 (30 Oct close), about 6% lower over three months. The fall despite the Gulf war is consistent with rising US yields and Fed hikes, and gold is not signalling financial panic.",
-   "for_you": "Gold's fall suggests markets see the energy shock as an inflation and rates problem rather than a financial-system crisis.",
+   "trend": "flat",
+   "summary": "Gold near $3,900 and lower over three months: no panic bid",
+   "state": "Gold futures closed at $3,899 on 30 Oct, about 6% lower over three months. The fall during the Gulf war is consistent with rising US yields and Fed tightening, and gold is not signalling a flight to safety.",
+   "for_you": "Gold prices are not signalling financial panic.",
    "sources": [
     {
-     "title": "Yahoo Finance — Gold futures (GC=F)",
+     "title": "Yahoo Finance — Gold futures",
      "url": "https://finance.yahoo.com/quote/GC%3DF",
      "date": "2026-10-30"
     }
    ],
    "value": "$3,899, 3m -6.1%",
    "value_num": 3898.9,
-   "checked_at": "2026-11-01T11:52:42Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "rubric_hit": "Gold 3m change -6.1%, below the +15% Watch line"
   },
   "crypto": {
    "status": "green",
    "trend": "flat",
-   "summary": "Bitcoin 10% below its high; no stablecoin or exchange stress reported",
-   "state": "Bitcoin traded around $77,800 at 11:40 UTC on 1 Nov, about 10% below its 52-week high and well inside the 25% Watch line. No major stablecoin de-peg or exchange failure has been reported as of 1 Nov.",
-   "for_you": "Crypto markets are not currently a source of wider financial stress.",
+   "summary": "Bitcoin near $78,000, 10% below its high; no stablecoin stress",
+   "state": "Bitcoin traded around $78,000 at 17:40 UTC on 1 Nov, about 10% below its 52-week high and well inside the 25% Watch line. No major stablecoin de-peg or exchange failure had been reported as of 1 Nov.",
+   "for_you": "Crypto prices are within their usual volatile range; no market-wide failure is under way.",
    "sources": [
     {
-     "title": "Yahoo Finance — Bitcoin USD (BTC-USD)",
+     "title": "Yahoo Finance — Bitcoin USD",
      "url": "https://finance.yahoo.com/quote/BTC-USD",
      "date": "2026-11-01"
     }
    ],
-   "value": "BTC $77,785, -10% from high",
-   "value_num": 77268.65,
-   "checked_at": "2026-11-01T11:52:42Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "value": "BTC $77,983, -10% from high",
+   "value_num": 77982.66,
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "rubric_hit": "BTC drawdown 10% < 25% Watch line"
   },
   "us-recession": {
    "status": "green",
    "trend": "flat",
-   "summary": "US economy grew 3.4% in Q3; recession indicators quiet",
-   "state": "The advance estimate on 29 Oct showed US GDP grew at a 3.4% annualised rate in Q3. The real-time Sahm rule indicator is 0.00, far from the 0.5 recession trigger, and the 10y–2y curve is positive at +0.38. October payrolls are the next test.",
-   "for_you": "Recession risk in the US looks low for now. The main risk to growth is the combination of high energy prices and rising interest rates.",
+   "summary": "No recession signal: Sahm rule at zero and yield curve positive",
+   "state": "The real-time Sahm rule indicator is 0.00, far from the 0.5 recession trigger, and the 10y–2y Treasury curve was +0.38 on 30 Oct. Weekly jobless claims of 194,000 (week to 24 Oct) remain near their lows; October payrolls are due on 6 Nov.",
+   "for_you": "The US economy is not showing recession signals, which supports jobs and demand for UK exporters.",
    "sources": [
     {
-     "title": "Axios — U.S. economy races ahead with 3.4% growth in third quarter",
-     "url": "https://www.axios.com/2026/10/29/dp-q3-economy-energy",
-     "date": "2026-10-29"
+     "title": "FRED — Real-time Sahm rule",
+     "url": "https://fred.stlouisfed.org/series/SAHMREALTIME",
+     "date": "2026-10-02"
     },
     {
-     "title": "FRED — Real-time Sahm Rule indicator",
-     "url": "https://fred.stlouisfed.org/series/SAHMREALTIME",
-     "date": "2026-09-01"
+     "title": "FRED — 10y–2y spread",
+     "url": "https://fred.stlouisfed.org/series/T10Y2Y",
+     "date": "2026-10-30"
+    },
+    {
+     "title": "FRED — Initial claims",
+     "url": "https://fred.stlouisfed.org/series/ICSA",
+     "date": "2026-10-24"
     }
    ],
    "value": "Sahm 0.00, 10y–2y +0.38",
    "value_num": 0.0,
-   "checked_at": "2026-11-01T11:52:42Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "rubric_hit": "Sahm 0.00 < 0.3 Watch line"
   },
   "us-inflation": {
    "status": "amber",
@@ -332,7 +346,7 @@
    "status": "red",
    "trend": "up",
    "summary": "Brent above $110 as Hormuz stays largely closed",
-   "state": "Brent last settled at $113 on 30 Oct, above the $110 Alert line and up 11% over the month. Iran said four tankers caught fire after striking mines near Hormuz on 31 Oct, and Iran halted tanker movements the same day. In Doha talks Tehran has offered to reopen the strait within two days, on conditions the US has not accepted.",
+   "state": "Brent last settled at $113.4 on 30 Oct, above the $110 Alert line and up 11% over the month. At least four tankers were hit near Hormuz on 30–31 Oct, and a US Treasury report says no new oil has loaded at Iranian terminals since 25 Aug. Iran has offered a partial reopening within two days if its terms are met; on 1 Nov Trump said he was in no hurry for a deal.",
    "for_you": "Expect continued high petrol, diesel and heating-oil prices, with knock-on effects on transport costs and inflation.",
    "sources": [
     {
@@ -341,65 +355,73 @@
      "date": "2026-10-30"
     },
     {
-     "title": "Al Jazeera — Iran FM says US outreach a 'positive step' as delegation in Qatar",
-     "url": "https://www.aljazeera.com/news/2026/10/31/iran-fm-says-us-outreach-a-positive-step-as-delegation-in-qatar-for-talks",
-     "date": "2026-10-31"
+     "title": "Al Jazeera — Iran and US explore diplomacy amid rising threats of war",
+     "url": "https://www.aljazeera.com/news/2026/11/1/iran-and-us-explore-diplomacy-amid-rising-threats-of-war",
+     "date": "2026-11-01"
     },
     {
-     "title": "Khaleej Times — Iran war live updates, 31 October",
-     "url": "https://www.khaleejtimes.com/world/mena/us-israel-iran-saudi-arabia-yemen-war-live-updates-october-31-2026",
-     "date": "2026-10-31"
+     "title": "Al Jazeera — Iran war live: US response awaited on new proposal to reopen Hormuz",
+     "url": "https://www.aljazeera.com/news/liveblog/2026/11/1/iran-war-live-araghchi-says-talks-under-way-on-2-day-plan-to-reopen-hormuz",
+     "date": "2026-11-01"
     }
    ],
    "value": "$113.4, 1m +11%",
    "value_num": 113.43,
-   "checked_at": "2026-11-01T11:52:42Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "rubric_hit": "Brent $113 > $110 Alert line"
   },
   "eu-gas": {
    "status": "red",
-   "trend": "flat",
-   "summary": "TTF above €100/MWh; EU storage lowest for the time of year on record",
-   "state": "Dutch TTF gas last traded near €104/MWh (30 Oct), up from about €28 in January, after Qatari LNG deliveries to Europe stopped in May. EU storage was 74.6% full on 24 Oct against 82.9% a year earlier, the lowest for the date since 2011 (IEEFA). Hormuz talks in Doha had produced no reopening as of 31 Oct.",
-   "for_you": "UK and European energy bills are set to rise sharply this winter. A cold winter would add further pressure on supply.",
+   "trend": "up",
+   "summary": "European gas above €100/MWh with Gulf LNG routes still blocked",
+   "state": "Dutch TTF gas last traded near €104/MWh on 30 Oct, above the Alert line, with Hormuz, the export route for Qatari LNG, still largely shut on 1 Nov. In Britain, National Gas said on 23 Oct that supply should meet demand this winter, with margins positive even in a severe winter.",
+   "for_you": "Wholesale gas is feeding into energy bills; the Ofgem price cap sets what most UK households pay. Ofgem and gov.uk list help for those struggling with bills.",
    "sources": [
     {
-     "title": "Euronews — European natural gas prices soar",
-     "url": "https://www.euronews.com/2026/10/27/european-natural-gas-prices-soar-what-it-means-for-your-winter-bills",
-     "date": "2026-10-27"
-    },
-    {
-     "title": "Yahoo Finance — Dutch TTF gas futures (TTF=F)",
+     "title": "Yahoo Finance — Dutch TTF gas futures",
      "url": "https://finance.yahoo.com/quote/TTF%3DF",
      "date": "2026-10-30"
+    },
+    {
+     "title": "National Gas — 2026 Gas Winter Outlook",
+     "url": "https://www.nationalgas.com/media/news/national-gas-publishes-2026-gas-winter-outlook",
+     "date": "2026-10-23"
+    },
+    {
+     "title": "Al Jazeera — Iran and US explore diplomacy amid rising threats of war",
+     "url": "https://www.aljazeera.com/news/2026/11/1/iran-and-us-explore-diplomacy-amid-rising-threats-of-war",
+     "date": "2026-11-01"
     }
    ],
    "value": "€104/MWh",
-   "value_num": 103.944,
-   "checked_at": "2026-11-01T11:52:42Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "value_num": 103.94,
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "rubric_hit": "TTF €104 > €100 Alert line"
   },
   "chokepoints": {
    "status": "red",
    "trend": "up",
-   "summary": "Tanker attacks near Hormuz on 29–30 Oct; Red Sea route still contested",
-   "state": "Iran's navy said a tanker caught fire after striking mines near Hormuz on 31 Oct, and Iran reported four such fires that day; Oman rescued 25 crew from a burning vessel on 30 Oct. Ship attacks near the strait hit a record in October. Iran's terms for reopening, discussed in Doha on 31 Oct, include sanctions relief and recognition of its routes.",
-   "for_you": "Disrupted shipping lanes raise fuel and goods prices and lengthen delivery times. FCDO advice applies for travel to the Gulf region.",
+   "summary": "Hormuz largely closed with ships hit; drone attacks on Black Sea cargo",
+   "state": "Ships that do not coordinate with Iran's strait authority continue to be attacked: at least four tankers were hit on 30–31 Oct, and UKMTO said an LPG carrier was struck by three projectiles 40 nautical miles south of Lavan Island on 31 Oct (Al Jazeera). Iran's terms for normal transit include an end to the US blockade. Drones hit at least seven cargo ships off Romania and Bulgaria in October.",
+   "for_you": "Shipping delays and higher freight and insurance costs feed through to fuel and goods prices. Mariners should follow UKMTO and flag-state guidance.",
    "sources": [
     {
-     "title": "Al Jazeera — Iran FM says US outreach a 'positive step' as delegation in Qatar",
-     "url": "https://www.aljazeera.com/news/2026/10/31/iran-fm-says-us-outreach-a-positive-step-as-delegation-in-qatar-for-talks",
-     "date": "2026-10-31"
+     "title": "Al Jazeera — Iran and US explore diplomacy amid rising threats of war",
+     "url": "https://www.aljazeera.com/news/2026/11/1/iran-and-us-explore-diplomacy-amid-rising-threats-of-war",
+     "date": "2026-11-01"
     },
     {
-     "title": "Khaleej Times — Iran war live updates, 31 October",
-     "url": "https://www.khaleejtimes.com/world/mena/us-israel-iran-saudi-arabia-yemen-war-live-updates-october-31-2026",
-     "date": "2026-10-31"
+     "title": "PBS NewsHour (AP) — Drone strikes in the Black Sea raise fears of Russian escalation",
+     "url": "https://www.pbs.org/newshour/world/drone-strikes-in-the-black-sea-raise-fears-of-russian-escalation-to-test-natos-response",
+     "date": "2026-10-16"
     }
    ],
-   "checked_at": "2026-11-01T11:52:42Z",
+   "checked_at": "2026-11-01T17:51:27Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Hormuz: single-digit transits/day"
+   "value": "Hormuz largely shut; ship attacks",
+   "rubric_hit": "Hormuz substantially closed with attacks on shipping = Alert"
   },
   "freight": {
    "status": "red",
@@ -466,101 +488,101 @@
   "us-china": {
    "status": "green",
    "trend": "flat",
-   "summary": "Routine PLA activity; leaders' dialogue continues ahead of APEC",
-   "state": "Beijing has held no large-scale exercise around Taiwan since December 2025; the Liaoning carrier group drilled in the Philippine Sea on 14–15 Oct before heading to the South China Sea (USNI). Taiwan says it is watching for larger drills as the season peaks. No new exercise had been reported as of 1 Nov.",
-   "for_you": "No acute Taiwan Strait crisis is under way. Watch for a sudden 'snap' exercise, which Beijing used in December 2025.",
+   "summary": "Routine PLA activity; rare-earth deadline on 10 Nov the next test",
+   "state": "Taiwan monitored Chinese live-fire drills from 12 Oct (HKFP), and the Liaoning carrier group drilled in the Philippine Sea on 14–15 Oct (USNI), but no large-scale exercise around Taiwan has been reported since December 2025. China's pause on some rare-earth export controls expires on 10 Nov.",
+   "for_you": "No immediate disruption to trade or travel in the region.",
    "sources": [
     {
-     "title": "USNI News — Chinese carrier strike group heads to South China Sea",
-     "url": "https://news.usni.org/2026/10/14/chinese-carrier-strike-group-drills-in-the-philippine-sea",
-     "date": "2026-10-14"
+     "title": "Hong Kong Free Press — Taiwan 'preparing for the worst' as China begins live-fire drills",
+     "url": "https://hongkongfp.com/2026/10/12/taiwan-preparing-for-the-worst-as-china-begins-live-fire-drills/",
+     "date": "2026-10-12"
     },
     {
-     "title": "Focus Taiwan — Taiwan watching for large-scale PLA drills",
-     "url": "https://focustaiwan.tw/politics/202610150010",
-     "date": "2026-10-15"
+     "title": "USNI News — Chinese carrier strike group heads to South China Sea after Philippine Sea drills",
+     "url": "https://news.usni.org/2026/10/14/chinese-carrier-strike-group-drills-in-the-philippine-sea",
+     "date": "2026-10-14"
     }
    ],
-   "checked_at": "2026-11-01T11:52:42Z",
+   "checked_at": "2026-11-01T17:51:27Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "No major PLA exercise since Dec 2025"
+   "value": "No major PLA exercise since Dec 2025",
+   "rubric_hit": "Routine PLA activity; no large-scale exercise"
   },
   "russia-nato": {
    "status": "amber",
    "trend": "up",
-   "summary": "Drone ship sinkings off Bulgaria and airspace violations on NATO's flank",
-   "state": "Ukraine says Russian drones sank four cargo ships just outside Bulgarian waters in October, and Romania blamed Russia for a ship sunk by drone (23 Oct). Russian jets have entered Polish, Lithuanian and Estonian airspace, and EU intelligence agencies warn of sabotage plots against defence firms (Al Jazeera, 29 Oct). No Article 4 request as of 1 Nov.",
-   "for_you": "Direct conflict is not under way, but incidents are rising. Follow official advice if travelling near NATO's eastern borders.",
+   "summary": "Drone attacks on ships off Romania and Bulgaria; Romania blames Russia",
+   "state": "Drones hit at least seven cargo ships off Romania and Bulgaria in October, leaving two dead and at least 25 missing by 16 Oct (AP). Romania blamed Russia after a drone sank a ship on 23 Oct; Bulgaria says suspicion falls on Russia but cannot be proven. No member had requested Article 4 consultations as of 1 Nov.",
+   "for_you": "No direct threat to the UK. Those travelling to the Baltic or Black Sea region can check FCDO travel advice.",
    "sources": [
     {
-     "title": "Al Jazeera — Russia's alleged sabotage campaign in Europe raises fears of escalation",
-     "url": "https://www.aljazeera.com/news/2026/10/29/russias-alleged-sabotage-campaign-in-europe-raises-fears-of-escalation",
-     "date": "2026-10-29"
+     "title": "PBS NewsHour (AP) — Drone strikes in the Black Sea raise fears of Russian escalation",
+     "url": "https://www.pbs.org/newshour/world/drone-strikes-in-the-black-sea-raise-fears-of-russian-escalation-to-test-natos-response",
+     "date": "2026-10-16"
     },
     {
-     "title": "CEPA — Russian strikes rise across NATO's eastern flank",
-     "url": "https://cepa.org/article/russian-strikes-rise-across-natos-eastern-flank/"
+     "title": "Al Jazeera — Romania blames Russia after drone sinks ship in the Black Sea",
+     "url": "https://www.aljazeera.com/news/2026/10/23/romania-blames-russia-after-drone-sinks-ship-in-the-black-sea",
+     "date": "2026-10-23"
     }
    ],
-   "checked_at": "2026-11-01T11:52:42Z",
+   "checked_at": "2026-11-01T17:51:27Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Rising incidents on eastern flank"
+   "value": "Black Sea ship attacks; incursions",
+   "rubric_hit": "Attacks off NATO coasts attributed to Russia by Romania = Watch"
   },
   "iran-nuclear": {
    "status": "amber",
    "trend": "up",
-   "summary": "No IAEA access amid war; talks focus on inspections as strike plans reported",
-   "state": "The IAEA reported Iran to the UN Security Council on 1 Oct and has no access to Iranian sites. On 31 Oct Iran's security chief said Tehran was debating whether to keep its ban on nuclear weapons, and state TV said nuclear talks could only follow US acceptance of Iran's demands. Rubio said Trump had not decided whether to resume strikes.",
-   "for_you": "Renewed strikes would likely push oil and gas prices higher again.",
+   "summary": "No inspections in Iran; US threatens further strikes on nuclear sites",
+   "state": "The IAEA has had no access to Iranian sites and reported Iran to the UN Security Council on 1 Oct. Washington insists on nuclear progress before concessions, and Trump said on 31 Oct that 'one or two sites' remain to be dealt with. Iran's security chief said on 31 Oct that no nuclear talks would happen until the US accepts Iran's demands.",
+   "for_you": "No direct public safety risk outside the region. Travel advice for Iran and the Gulf is on the FCDO website.",
    "sources": [
     {
-     "title": "Al Jazeera — Iran FM says US outreach a 'positive step' as delegation in Qatar",
-     "url": "https://www.aljazeera.com/news/2026/10/31/iran-fm-says-us-outreach-a-positive-step-as-delegation-in-qatar-for-talks",
-     "date": "2026-10-31"
+     "title": "Al Jazeera — Iran and US explore diplomacy amid rising threats of war",
+     "url": "https://www.aljazeera.com/news/2026/11/1/iran-and-us-explore-diplomacy-amid-rising-threats-of-war",
+     "date": "2026-11-01"
     },
     {
-     "title": "Khaleej Times — Iran war live updates, 31 October",
-     "url": "https://www.khaleejtimes.com/world/mena/us-israel-iran-saudi-arabia-yemen-war-live-updates-october-31-2026",
+     "title": "Times of Israel — Liveblog, 31 October 2026",
+     "url": "https://www.timesofisrael.com/liveblog-october-31-2026/",
      "date": "2026-10-31"
     }
    ],
-   "checked_at": "2026-11-01T11:52:42Z",
+   "checked_at": "2026-11-01T17:51:27Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "No IAEA access"
+   "value": "No IAEA access",
+   "rubric_hit": "No IAEA access; credible threats of further strikes"
   },
   "korea": {
    "status": "amber",
    "trend": "flat",
-   "summary": "North Korea fires about 10 ballistic missiles amid DMZ landmine row",
-   "state": "North Korea fired about ten short-range ballistic missiles from near Wonsan on 29 Oct, its 17th launch of 2026. A joint South Korea–UN probe found North Korea planted the mines that injured three South Korean soldiers in the DMZ on 21 Sep; Pyongyang denies it. No further launch was reported to 1 Nov.",
-   "for_you": "Tension is elevated but there has been no direct clash between forces.",
+   "summary": "North Korea tested a cluster-warhead ballistic missile on 31 Oct",
+   "state": "North Korea fired a tactical ballistic missile towards the Yellow Sea from near Chongju on 31 Oct, testing a cluster warhead, two days after a salvo of about ten short-range missiles on 29 Oct (Yonhap via ANI). Pyongyang says it will field several warhead types by year-end. The US says Trump is open to talks; none are scheduled.",
+   "for_you": "No direct risk to the UK. Travellers to South Korea can follow FCDO travel advice.",
    "sources": [
     {
-     "title": "Al Jazeera — North Korea fires missiles as row over landmine blast intensifies",
-     "url": "https://www.aljazeera.com/news/2026/10/29/north-korea-fires-missiles-as-row-over-landmine-blast-intensifies",
-     "date": "2026-10-29"
-    },
-    {
-     "title": "The Japan Times — North Korea fires off around a dozen ballistic missiles",
-     "url": "https://www.japantimes.co.jp/news/2026/10/29/asia-pacific/north-korea-ballistic-missile/",
-     "date": "2026-10-29"
+     "title": "ANI — North Korea tests cluster bomb warhead for tactical ballistic missiles",
+     "url": "https://aninews.in/news/world/asia/north-korea-tests-cluster-bomb-warhead-for-tactical-ballistic-missiles-vows-to-field-various-types-by-year-end20261101093758/",
+     "date": "2026-11-01"
     }
    ],
-   "checked_at": "2026-11-01T11:52:42Z",
+   "checked_at": "2026-11-01T17:51:27Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "17 launches in 2026"
+   "value": "Missile test on 31 Oct",
+   "rubric_hit": "Repeated ballistic missile launches = Watch"
   },
   "trade-war": {
    "status": "amber",
-   "trend": "up",
-   "summary": "US tariffs reset under Section 301; new Russia-linked tariff powers signed",
-   "state": "After the Supreme Court struck down IEEPA tariffs on 20 Feb, the US moved to 10–12.5% Section 301 tariffs on 60 economies from 24 Jul; the average effective rate was 7.1% in August (Yale Budget Lab). China's pause on some rare-earth export controls expires on 10 Nov with no renewal announced, a possible new flashpoint.",
-   "for_you": "Tariffs are lower than in 2025 but policy remains unpredictable, and new threats could quickly change trade costs.",
+   "trend": "flat",
+   "summary": "Section 301 tariffs in place; China's rare-earth pause expires 10 Nov",
+   "state": "China's one-year suspension of its October 2025 rare-earth export controls expires on 10 Nov, and Beijing had not said whether it will renew it; its April 2025 licensing rules remain in force. Chinese negotiators have linked magnet approvals to US chip export limits. US Section 301 tariffs keep the average effective rate near 7%.",
+   "for_you": "Tariffs and export controls can raise prices for electronics, cars and other goods with Chinese parts.",
    "sources": [
     {
-     "title": "Penn Wharton Budget Model — Effective tariff rates, updated 14 Oct",
-     "url": "https://budgetmodel.wharton.upenn.edu/p/2026-10-14-effective-tariff-rates-and-revenues-updated-october-14-2026/",
-     "date": "2026-10-14"
+     "title": "Startup Fortune — China's rare earth export truce expires November 10 with no renewal in sight",
+     "url": "https://startupfortune.com/chinas-rare-earth-export-truce-expires-november-10-with-no-renewal-in-sight/",
+     "date": "2026-10-06"
     },
     {
      "title": "Technology.org — China's rare-earth export pause: what ends on 10 November",
@@ -568,9 +590,10 @@
      "date": "2026-10-19"
     }
    ],
-   "checked_at": "2026-11-01T11:52:42Z",
+   "checked_at": "2026-11-01T17:51:27Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "US effective tariff ~7%"
+   "value": "US effective tariff ~7%",
+   "rubric_hit": "Major export controls pending renewal; tariffs elevated"
   },
   "sanctions": {
    "status": "amber",
@@ -619,51 +642,49 @@
   "russia-ukraine": {
    "status": "red",
    "trend": "up",
-   "summary": "Russia launched 433 drones overnight on 1 Nov; Kyiv under emergency power cuts",
-   "state": "Ukraine's air force said Russia launched 433 drones overnight into 1 Nov, 371 of which were downed, with hits at 16 locations; Kyiv introduced emergency power cuts after attacks on energy infrastructure. A drone strike on Dnipro's main station on 29 Oct killed at least 13 civilians (UN). Front lines changed little.",
-   "for_you": "Follow FCDO advice against all travel to Ukraine. Strikes on energy infrastructure may affect European power and gas markets this winter.",
+   "summary": "433 Russian drones overnight into 1 Nov; hundreds of thousands without power",
+   "state": "Ukraine's air force said Russia launched 433 drones overnight into 1 Nov, 371 of which were downed, and strikes on energy facilities in four regions left hundreds of thousands of households without power (Reuters). Ukraine said it struck a missile-related plant in Rostov region; Russia said it intercepted 235 Ukrainian drones. Front lines changed little.",
+   "for_you": "Travel to Ukraine is against FCDO advice. Energy and grain markets remain sensitive to the war.",
    "sources": [
     {
-     "title": "Ukrainska Pravda — Russia attacks Ukraine with 433 drones overnight",
-     "url": "https://www.pravda.com.ua/eng/news/2026/11/01/8060690/",
+     "title": "Ukrinform — Air defence neutralises 371 of 433 Russian drones",
+     "url": "https://www.ukrinform.net/rubric-ato/4180165-air-defense-neutralizes-371-of-433-russian-drones-launched-against-ukraine-overnight.html",
      "date": "2026-11-01"
     },
     {
-     "title": "Korabelov — Kyiv faces emergency power outages",
-     "url": "https://korabelov.info/en/2026/11/632231/mykolaiv-region-without-shelling-over-the-past-day-kyiv-faces-emergency-power-outages/",
+     "title": "Pakistan Today (Reuters) — Russian strikes cut power to hundreds of thousands in Ukraine",
+     "url": "https://www.pakistantoday.com.pk/2026/11/01/russian-strikes-cut-power-to-hundreds-of-thousands-in-ukraine",
      "date": "2026-11-01"
-    },
-    {
-     "title": "UN News — Dnipro station strike",
-     "url": "https://news.un.org/en/story/2026/10/1168702",
-     "date": "2026-10-29"
     }
    ],
-   "checked_at": "2026-11-01T11:52:42Z",
+   "checked_at": "2026-11-01T17:51:27Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Full-scale war; winter strike campaign"
+   "value": "433 drones overnight (1 Nov)",
+   "value_num": 433,
+   "rubric_hit": "Full-scale war with mass strikes on infrastructure = Alert"
   },
   "middle-east": {
    "status": "red",
-   "trend": "flat",
-   "summary": "US–Iran war in tense stalemate; Qatari mediators back in Tehran",
-   "state": "The war that began with US–Israeli strikes on Iran on 28 Feb continues at lower intensity, with a US blockade and mine and fire incidents near Hormuz (30–31 Oct). Saudi-led forces intercepted drones over Riyadh and the Eastern Region on 31 Oct. Iranian negotiators were in Doha on 31 Oct; Al Jazeera's correspondent reported no notable flexibility in Iran's position.",
-   "for_you": "Follow FCDO travel advice for Israel, Lebanon, Iran and the Gulf states, where conditions can change quickly.",
+   "trend": "up",
+   "summary": "US–Iran war in stalemate; Qatar talks continue as threats of new strikes grow",
+   "state": "The war that began with US–Israeli strikes on Iran on 28 Feb continues with a US naval blockade and Iranian attacks on shipping. Qatar-mediated talks ran on 30–31 Oct; Trump said on 31 Oct talks were 'fine' but suggested an attack could follow the 3 Nov midterms. Iran demands an end to fighting on all fronts including Lebanon. WFP cut Gaza food aid for 500,000 people on 19 Oct.",
+   "for_you": "FCDO advises against travel to much of the region; follow its travel advice and airline updates.",
    "sources": [
     {
-     "title": "Al Jazeera — Iran FM says US outreach a 'positive step' as delegation in Qatar",
-     "url": "https://www.aljazeera.com/news/2026/10/31/iran-fm-says-us-outreach-a-positive-step-as-delegation-in-qatar-for-talks",
-     "date": "2026-10-31"
+     "title": "Al Jazeera — Iran and US explore diplomacy amid rising threats of war",
+     "url": "https://www.aljazeera.com/news/2026/11/1/iran-and-us-explore-diplomacy-amid-rising-threats-of-war",
+     "date": "2026-11-01"
     },
     {
-     "title": "Khaleej Times — Iran war live updates, 31 October",
-     "url": "https://www.khaleejtimes.com/world/mena/us-israel-iran-saudi-arabia-yemen-war-live-updates-october-31-2026",
-     "date": "2026-10-31"
+     "title": "Al Jazeera — WFP cuts aid to 500,000 Palestinians in Gaza",
+     "url": "https://www.aljazeera.com/news/2026/10/19/wfp-cuts-aid-to-500000-palestinians-in-gaza-amid-funding-shortages",
+     "date": "2026-10-19"
     }
    ],
-   "checked_at": "2026-11-01T11:52:42Z",
+   "checked_at": "2026-11-01T17:51:27Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "US–Iran war since 28 Feb"
+   "value": "US–Iran war since 28 Feb",
+   "rubric_hit": "Active interstate war with attacks on shipping = Alert"
   },
   "sudan": {
    "status": "red",
@@ -756,90 +777,84 @@
   "india-pakistan": {
    "status": "amber",
    "trend": "flat",
-   "summary": "Border shootings and Line of Control firing keep tensions elevated",
-   "state": "Indian border guards shot dead two people on the Punjab border on 2 Oct, and both countries summoned diplomats (Al Jazeera, 3 Oct). No cross-border military strikes have occurred since the 2025 clashes, and no new LoC incident was reported to 1 Nov.",
-   "for_you": "Follow FCDO advice for areas near the India–Pakistan border and Line of Control.",
+   "summary": "Tense border but no cross-border military strikes since 2025",
+   "state": "Indian border guards shot dead two people on the Punjab border on 2 Oct, and both countries summoned diplomats (Al Jazeera, 3 Oct). No cross-border military strikes have occurred since the 2025 clashes, and no new Line of Control incident had been reported as of 1 Nov.",
+   "for_you": "Check FCDO travel advice before travelling near the India–Pakistan border.",
    "sources": [
     {
-     "title": "Al Jazeera — Pakistan, India summon diplomats after border killings",
+     "title": "Al Jazeera — Pakistan, India summon diplomats after two people killed in border incident",
      "url": "https://www.aljazeera.com/news/2026/10/3/pakistan-summons-indian-diplomat-over-border-killing-of-two-pakistanis",
      "date": "2026-10-03"
-    },
-    {
-     "title": "Washington Post — Indian border guards kill 2",
-     "url": "https://www.washingtonpost.com/world/2026/10/02/pakistan-india-shooting-border-punjab/4c452e58-be86-11f1-81fc-9b76f8343b6c_story.html",
-     "date": "2026-10-02"
     }
    ],
-   "checked_at": "2026-11-01T11:52:42Z",
+   "checked_at": "2026-11-01T17:51:27Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "LoC tension, no strikes"
+   "value": "LoC tension, no strikes",
+   "rubric_hit": "Persistent tension without strikes = Watch"
   },
   "nuclear-risk": {
    "status": "amber",
-   "trend": "up",
-   "summary": "No arms-control treaty since New START lapsed; testing threats unresolved",
-   "state": "New START expired in February 2026 with no replacement, leaving no US–Russia limits for the first time in decades. Trump has threatened to resume nuclear testing, and on 31 Oct Iran's security chief said Tehran was debating whether to keep its ban on nuclear weapons. No test or alert-level change has been reported.",
-   "for_you": "Nuclear use remains very unlikely, but the guard-rails that made it predictable are weaker than at any time since the 1960s.",
+   "trend": "flat",
+   "summary": "No US–Russia arms limits since February; no test or alert change",
+   "state": "New START expired in February 2026 with no replacement; Russia says it will keep to the old limits if the US does (CBS). On 31 Oct Trump raised further strikes on Iranian nuclear sites, and Iran's leadership called for 'maximum deterrence'. No nuclear test or change in alert levels had been reported as of 1 Nov.",
+   "for_you": "No change in official UK guidance. Risk remains elevated but not acute.",
    "sources": [
     {
-     "title": "Arms Control Association — Trump, Xi, Putin failing to tackle nuclear threat",
-     "url": "https://www.armscontrol.org/act/2026-10/focus/trump-xi-putin-failing-tackle-nuclear-threat",
-     "date": "2026-10-01"
+     "title": "CBS News — Russia says it will stick to limits in expired New START treaty if US does",
+     "url": "https://www.cbsnews.com/news/russia-nuclear-weapons-treaty-us-new-start-latest-putin-trump/",
+     "date": "2026-11-01"
     },
     {
-     "title": "Khaleej Times — Iran war live updates, 31 October",
-     "url": "https://www.khaleejtimes.com/world/mena/us-israel-iran-saudi-arabia-yemen-war-live-updates-october-31-2026",
-     "date": "2026-10-31"
+     "title": "Al Jazeera — Iran and US explore diplomacy amid rising threats of war",
+     "url": "https://www.aljazeera.com/news/2026/11/1/iran-and-us-explore-diplomacy-amid-rising-threats-of-war",
+     "date": "2026-11-01"
     }
    ],
-   "checked_at": "2026-11-01T11:52:42Z",
+   "checked_at": "2026-11-01T17:51:27Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "No US–Russia treaty limits"
+   "value": "No US–Russia treaty limits",
+   "rubric_hit": "Arms control lapsed; no test or alert change = Watch"
   },
   "atlantic-cyclones": {
    "status": "green",
    "trend": "flat",
-   "summary": "No Atlantic storms; none expected in the next 7 days",
-   "state": "The National Hurricane Center's outlook on 31 Oct showed no active systems and no formation expected in the next seven days; nothing new was reported to 1 Nov. The season officially ends on 30 November.",
-   "for_you": "No hurricane threat to the Caribbean or US at present.",
+   "summary": "No Atlantic storms; none expected in the next seven days",
+   "state": "The National Hurricane Center's outlook at 18:00 UTC on 1 Nov showed no active systems and said tropical cyclone formation is not expected in the next seven days. The season officially ends on 30 November.",
+   "for_you": "No current Atlantic hurricane threat to travellers or the Caribbean.",
    "sources": [
     {
-     "title": "NHC — Atlantic Tropical Weather Outlook",
-     "url": "https://www.nhc.noaa.gov/text/refresh/MIATWOAT+shtml/index.shtml",
-     "date": "2026-10-31"
+     "title": "National Hurricane Center — Graphical Tropical Weather Outlook",
+     "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc&fdays=2",
+     "date": "2026-11-01"
     }
    ],
-   "checked_at": "2026-11-01T11:52:42Z",
+   "checked_at": "2026-11-01T17:51:27Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "No active systems"
+   "value": "No active systems",
+   "rubric_hit": "No active systems or NHC formation risk"
   },
   "other-cyclones": {
    "status": "red",
    "trend": "up",
-   "summary": "GDACS red alert as Cyclone Murasu heads for Andhra Pradesh landfall on 3 Nov",
-   "state": "GDACS raised a red alert on 1 Nov for the Bay of Bengal system FOUR-26, now named Cyclone Murasu. IMD expects it to become a severe cyclonic storm and cross the south Andhra Pradesh coast between Nellore and Narsapur by the morning of 3 Nov, with winds of 100–110 km/h gusting to 120 km/h. Typhoon In-Fa near Japan remains at green alert.",
-   "for_you": "If you are in or travelling to coastal Andhra Pradesh or Odisha, follow IMD and local authority warnings and FCDO travel advice. Expect flight and rail disruption around landfall.",
+   "summary": "GDACS red alert for Cyclone Murasu heading for India's east coast",
+   "state": "GDACS kept a red alert for Cyclone Murasu in the Bay of Bengal on 1 Nov. At 12:00 UTC it was about 383km east of Chennai with sustained winds of 93km/h, moving west-northwest at 26km/h towards the coast of Andhra Pradesh and Tamil Nadu (RainViewer). Typhoon In-Fa near Japan remains at a lower alert level.",
+   "for_you": "Anyone in coastal Andhra Pradesh or Tamil Nadu should follow India Meteorological Department and local authority warnings; travellers can check FCDO advice.",
    "sources": [
     {
-     "title": "ANI — IMD warns of severe cyclone threat to Andhra coast by 3 Nov",
-     "url": "https://aninews.in/news/national/general-news/bay-of-bengal-depression-intensifies-imd-warns-of-severe-cyclone-threat-to-ap-coast-by-nov-320261101105907/",
+     "title": "GDACS — Global Disaster Alert and Coordination System",
+     "url": "https://www.gdacs.org/",
      "date": "2026-11-01"
     },
     {
-     "title": "Business Today — Cyclone Murasu heading for Andhra",
-     "url": "https://www.businesstoday.in/india/story/after-arnab-now-cyclone-murasu-heading-for-andhra-when-will-it-make-landfall-564982-2026-11-01",
-     "date": "2026-11-01"
-    },
-    {
-     "title": "GDACS — Tropical Cyclone FOUR-26",
-     "url": "https://www.gdacs.org/report.aspx?eventid=1001346&episodeid=2&eventtype=TC",
+     "title": "RainViewer — Cyclone Murasu tracker",
+     "url": "https://www.rainviewer.com/storm-tracker/cyclones/murasu-2026.html",
      "date": "2026-11-01"
     }
    ],
-   "checked_at": "2026-11-01T11:52:42Z",
+   "checked_at": "2026-11-01T17:51:27Z",
    "changed_at": "2026-11-01T11:52:42Z",
-   "value": "GDACS red: Cyclone Murasu (India)"
+   "value": "GDACS red: Cyclone Murasu (India)",
+   "rubric_hit": "GDACS red cyclone alert"
   },
   "heat": {
    "status": "green",
@@ -866,69 +881,57 @@
   "wildfires": {
    "status": "green",
    "trend": "flat",
-   "summary": "No major fires now; Southern California evacuations in mid-October",
-   "state": "GDACS shows no orange or red wildfire alerts as of 1 Nov, with 75 green-level fires listed. No fires are currently threatening large populated areas; the most recent major incident was a Southern California fire on 16–17 Oct.",
-   "for_you": "Wildfire risk is currently low in the Northern Hemisphere; follow local authority alerts.",
+   "summary": "No major wildfires threatening populated areas",
+   "state": "GDACS listed no orange or red wildfire alerts as of 17:40 UTC on 1 Nov. No fires are currently threatening large populated areas.",
+   "for_you": "No major wildfire disruption to travel at present.",
    "sources": [
     {
-     "title": "GDACS — current events",
+     "title": "GDACS — Global Disaster Alert and Coordination System",
      "url": "https://www.gdacs.org/",
-     "date": "2026-10-31"
-    },
-    {
-     "title": "Al Jazeera — Southern California wildfire engulfs homes",
-     "url": "https://www.aljazeera.com/news/2026/10/17/southern-california-wildfire-engulfs-homes-prompts-evacuation-orders",
-     "date": "2026-10-17"
+     "date": "2026-11-01"
     }
    ],
-   "checked_at": "2026-11-01T11:52:42Z",
+   "checked_at": "2026-11-01T17:51:27Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "GDACS: no orange/red"
+   "value": "GDACS: no orange/red",
+   "rubric_hit": "No GDACS orange/red wildfire alerts"
   },
   "floods": {
    "status": "green",
-   "trend": "up",
-   "summary": "Regional floods in Argentina and Haiti; no GDACS orange or red alerts",
-   "state": "GDACS lists no orange or red flood alerts as of 1 Nov. Heavy rain in Odisha's Ganjam district triggered a landslide that left 12 people missing (ANI, 1 Nov), and Cyclone Murasu threatens further flooding in Andhra Pradesh around 3 Nov. El Niño-linked floods in Argentina have displaced about 2,600 people.",
-   "for_you": "The strong El Niño raises flood risk in South America and East Africa over the coming months.",
+   "trend": "flat",
+   "summary": "No major flood alerts; Cyclone Murasu may bring flooding to India",
+   "state": "GDACS listed no orange or red flood alerts as of 17:40 UTC on 1 Nov. Cyclone Murasu, under a GDACS red alert, is expected to bring heavy rain to India's south-east coast over the coming days.",
+   "for_you": "No major flood disruption to travel at present; check local warnings in south-east India.",
    "sources": [
     {
-     "title": "ANI — Bay of Bengal depression intensifies; Ganjam landslide",
-     "url": "https://aninews.in/news/national/general-news/bay-of-bengal-depression-intensifies-imd-warns-of-severe-cyclone-threat-to-ap-coast-by-nov-320261101105907/",
-     "date": "2026-11-01"
-    },
-    {
-     "title": "GDACS",
+     "title": "GDACS — Global Disaster Alert and Coordination System",
      "url": "https://www.gdacs.org/",
      "date": "2026-11-01"
     }
    ],
-   "checked_at": "2026-11-01T11:52:42Z",
+   "checked_at": "2026-11-01T17:51:27Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "GDACS: no orange/red"
+   "value": "GDACS: no orange/red",
+   "rubric_hit": "No GDACS orange/red flood alerts"
   },
   "earthquakes": {
    "status": "green",
    "trend": "flat",
-   "summary": "Largest quake this week M6.4; no high-impact alerts",
-   "state": "USGS recorded 135 earthquakes of M4.5+ in the 7 days to 1 Nov, four of them M6+; the largest was an M6.4 south-east of Easter Island (29 Oct), and an M6.0 struck off Shima, Japan on 31 Oct. All PAGER alerts were green, with no M7+ and no tsunami flags.",
-   "for_you": "No current high-impact earthquake. Earthquakes cannot be forecast; follow local guidance in seismic zones.",
+   "summary": "Five M6+ quakes in 7 days, largest M6.4; no M7+ or tsunami",
+   "state": "USGS recorded five earthquakes of M6 or above in the seven days to 1 Nov; the largest was an M6.4 south-east of Easter Island on 29 Oct. There was no M7+ event and no tsunami warning.",
+   "for_you": "No damaging earthquake affecting populated areas this week.",
    "sources": [
     {
-     "title": "USGS — Earthquake map (M4.5+, past 7 days)",
+     "title": "USGS — Latest earthquakes",
      "url": "https://earthquake.usgs.gov/earthquakes/map/",
      "date": "2026-11-01"
-    },
-    {
-     "title": "USGS — M6.4, southeast of Easter Island",
-     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttxz",
-     "date": "2026-10-29"
     }
    ],
-   "value": "Max M6.4, 4× M6+ (7d)",
-   "value_num": 6.5,
-   "checked_at": "2026-11-01T11:52:42Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "value": "Max M6.4, 5× M6+ (7d)",
+   "value_num": 6.4,
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "rubric_hit": "Max M6.4 < M7 Watch line"
   },
   "volcanic": {
    "status": "green",
@@ -976,10 +979,10 @@
   },
   "space-weather": {
    "status": "green",
-   "trend": "down",
-   "summary": "Geomagnetic storm eased to quiet levels; no radiation or radio storms",
-   "state": "NOAA's scales reached G2 (moderate) geomagnetic storm levels in the 24 hours to 1 Nov but were at G0 S0 R0 at 11:40 UTC on 1 Nov. No storm above G0 is forecast over the next three days.",
-   "for_you": "No significant space-weather effects are expected. Minor G1 storms can bring aurora to northern Scotland.",
+   "trend": "flat",
+   "summary": "Quiet now after a moderate G2 geomagnetic storm",
+   "state": "NOAA's scales touched G2 (moderate) geomagnetic storm levels in the 24 hours to 1 Nov but were at G0 S0 R0 at 17:40 UTC on 1 Nov. Moderate storms pose no significant risk to power grids or satellites.",
+   "for_you": "No disruption expected; aurora may be visible further south during storms.",
    "sources": [
     {
      "title": "NOAA Space Weather Prediction Center",
@@ -989,8 +992,9 @@
    ],
    "value": "G2 S0 R0",
    "value_num": 0,
-   "checked_at": "2026-11-01T11:52:42Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-10-31T11:26:06Z",
+   "rubric_hit": "G2 < G4 Watch line"
   },
   "global-temp": {
    "status": "red",
@@ -1094,69 +1098,63 @@
   "who-emergencies": {
    "status": "amber",
    "trend": "flat",
-   "summary": "Ebola PHEIC in effect since May",
-   "state": "WHO declared the Bundibugyo Ebola outbreak in Central Africa a Public Health Emergency of International Concern on 17 May 2026, and it remains in effect. No new PHEIC has been declared in the past 30 days as of 1 Nov.",
-   "for_you": "Check NaTHNaC/TravelHealthPro advice before travelling to affected parts of Central and East Africa.",
+   "summary": "One WHO global emergency in force: Ebola in Central Africa",
+   "state": "WHO's Bundibugyo Ebola emergency of international concern (PHEIC), declared in May, remains in force; WHO's 23 Oct update said its risk assessment is being revised. No new PHEIC has been declared in the past 30 days as of 1 Nov.",
+   "for_you": "Follow NHS and UKHSA advice; travellers to affected areas should check FCDO and NaTHNaC guidance.",
    "sources": [
     {
-     "title": "UN News — WHO declares Ebola outbreak a PHEIC",
-     "url": "https://news.un.org/en/story/2026/05/1167531",
-     "date": "2026-05-17"
-    },
-    {
-     "title": "ECDC — Ebola (Bundibugyo) multi-country updates",
-     "url": "https://www.ecdc.europa.eu/en/public-health-events/2026-EIP-00026",
-     "date": "2026-10-30"
+     "title": "WHO — Disease Outbreak News: Ebola (Bundibugyo), DRC, Kenya and Nigeria",
+     "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON622",
+     "date": "2026-10-23"
     }
    ],
-   "checked_at": "2026-11-01T11:52:42Z",
+   "checked_at": "2026-11-01T17:51:27Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "1 PHEIC (Ebola)"
+   "value": "1 PHEIC (Ebola)",
+   "value_num": 1,
+   "rubric_hit": "One PHEIC in force = Watch"
   },
   "ebola": {
    "status": "red",
    "trend": "up",
-   "summary": "Over 10,000 Ebola cases in DR Congo; imported cases in Kenya and Nigeria",
-   "state": "ECDC's 30 Oct update reported 10,274 confirmed Bundibugyo Ebola cases in DR Congo and 4,992 deaths (data to 28 Oct) across eight provinces, with Ituri the worst affected. Kenya confirmed an imported case on 6 Oct and Nigeria one on 20 Oct, within the past 30 days. ECDC rates the EU/EEA risk as very low.",
-   "for_you": "Risk to the UK public is very low. Travellers to affected areas should follow NaTHNaC and FCDO advice.",
+   "summary": "Ebola passes 10,350 cases in DR Congo with imported cases in Kenya and Nigeria",
+   "state": "Official figures reported on 1 Nov put the DR Congo outbreak at 10,351 cases and 5,026 deaths (Morning Star). WHO's 23 Oct update counted nine confirmed cases in Kenya and one imported case in Nigeria, announced on 20 Oct, and rates the risk very high in DR Congo, high for neighbours and low globally.",
+   "for_you": "Risk in the UK is very low. Travellers to affected areas should follow FCDO, NaTHNaC and UKHSA guidance.",
    "sources": [
     {
-     "title": "ECDC — Ebola disease outbreak caused by Bundibugyo virus",
-     "url": "https://www.ecdc.europa.eu/en/public-health-events/2026-EIP-00026",
-     "date": "2026-10-30"
+     "title": "WHO — Disease Outbreak News: Ebola (Bundibugyo)",
+     "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON622",
+     "date": "2026-10-23"
     },
     {
-     "title": "WHO — Disease Outbreak News: Ebola, DRC, Kenya and Nigeria",
-     "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON622",
-     "date": "2026-10-24"
+     "title": "Morning Star — World in brief, 1 November 2026",
+     "url": "https://morningstaronline.co.uk/article/world-brief-november-1-2026",
+     "date": "2026-11-01"
     }
    ],
-   "checked_at": "2026-11-01T11:52:42Z",
+   "checked_at": "2026-11-01T17:51:27Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "10,274 cases (28 Oct)",
-   "value_num": 10274
+   "value": "10,351 cases (1 Nov)",
+   "value_num": 10351,
+   "rubric_hit": "Spread to new countries within 30 days (Nigeria, 20 Oct) = Alert"
   },
   "h5n1": {
    "status": "green",
    "trend": "flat",
-   "summary": "One human H5N1 case reported in the past month; no human spread",
-   "state": "WHO's human–animal interface summary (7 Oct) recorded one human H5N1 infection between 7 Sep and 7 Oct, with no evidence of human-to-human transmission; Cambodia confirmed its sixth case of 2026 on 28 Sep. No new cluster was reported as of 1 Nov.",
-   "for_you": "Risk to the public remains low. Avoid contact with sick or dead birds.",
+   "summary": "Sporadic H5N1 human cases from animals; no human-to-human spread",
+   "state": "Washington State reported a human H5N1 case on 15 Oct in a Yakima County resident exposed to infected dairy cattle; the person was not hospitalised, and the state found no human-to-human transmission (26 Oct alert). No new cluster had been reported as of 1 Nov.",
+   "for_you": "Risk to the public is low. Avoid contact with sick or dead birds and report them to Defra.",
    "sources": [
     {
-     "title": "WHO — Influenza at the human-animal interface, 7 Oct 2026",
-     "url": "https://www.who.int/publications/m/item/influenza-at-the-human-animal-interface-summary-and-assessment--7-october-2026",
-     "date": "2026-10-07"
-    },
-    {
-     "title": "CIDRAP — WHO reports H5N1 death among zoonotic flu cases",
-     "url": "https://www.cidrap.umn.edu/avian-influenza-bird-flu/who-reports-h5n1-death-among-variant-zoonotic-flu-cases-seen-year",
-     "date": null
+     "title": "Washington State DOH — Health alert: human avian influenza case",
+     "url": "https://doh.wa.gov/sites/default/files/2026-10/HealthAlert-AvianFlu-Oct2026.pdf",
+     "date": "2026-10-26"
     }
    ],
-   "checked_at": "2026-11-01T11:52:42Z",
+   "checked_at": "2026-11-01T17:51:27Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "No human-to-human spread"
+   "value": "No human-to-human spread",
+   "rubric_hit": "Sporadic animal-to-human cases only"
   },
   "mpox": {
    "status": "amber",
@@ -1232,58 +1230,56 @@
   "novel-outbreaks": {
    "status": "green",
    "trend": "flat",
-   "summary": "No unexplained clusters spreading; one isolated lab-linked death in Russia",
-   "state": "WHO reported (10 Oct) a single death from pneumonia of undetermined cause at a Russian anti-plague institute in Irkutsk; plague was ruled out and contacts stayed well. No unexplained clusters are under international investigation as of 1 Nov.",
-   "for_you": "No novel disease threat to the public at present.",
+   "summary": "No unexplained disease clusters under international investigation",
+   "state": "WHO reported in October a single death from pneumonia of undetermined cause at an anti-plague institute in Irkutsk, Russia; plague was ruled out and contacts stayed well. No unexplained clusters are under international investigation as of 1 Nov.",
+   "for_you": "No action needed beyond routine health advice.",
    "sources": [
     {
-     "title": "WHO — Pneumonia of undetermined etiology, Russian Federation (DON620)",
+     "title": "WHO — Disease Outbreak News: Pneumonia of undetermined etiology, Russian Federation",
      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON620",
-     "date": "2026-10-10"
+     "date": "2026-11-01"
     }
    ],
-   "checked_at": "2026-11-01T11:52:42Z",
+   "checked_at": "2026-11-01T17:51:27Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "No unexplained clusters"
+   "value": "No unexplained clusters",
+   "rubric_hit": "No unexplained clusters"
   },
   "cyber": {
    "status": "amber",
    "trend": "flat",
-   "summary": "Ransomware claims up 26% in October; US hospital systems disrupted",
-   "state": "Ransomware leak-site claims rose 25.8% to 1,127 in October (HackerFeeds, 31 Oct), peaking on 26 Oct. University Hospitals (Cleveland) websites and portals were still down on 29 Oct after an incident, and a group claimed an attack on University of New Mexico hospitals (26 Oct); the university says core systems were not breached.",
-   "for_you": "Be alert to phishing that exploits high-profile incidents. The NCSC publishes guidance for individuals and businesses.",
+   "summary": "Extortion attack forced ambulance diversions at New Mexico hospitals",
+   "state": "A cyberattack on 26 Oct forced University of New Mexico hospitals to divert ambulances and cancel clinic appointments; critical systems were back online by 28 Oct, and the group BYOD claimed it (Help Net Security). UNM says core systems were not penetrated. No national-scale attack on critical infrastructure was reported as of 1 Nov.",
+   "for_you": "Be alert to phishing linked to data-breach news; NCSC guidance covers how to protect accounts.",
    "sources": [
     {
-     "title": "Tech Insider — Ransomware attacks October 2026: 1,127 claims",
-     "url": "https://tech-insider.org/ransomware-attacks-october-2026-1127-claims-n0n-gentlemen-qilin-2026/",
-     "date": "2026-10-31"
-    },
-    {
-     "title": "Ideastream — Most University Hospitals websites still down",
-     "url": "https://ideastream.org/health/2026-10-29/most-university-hospitals-websites-still-down-a-week-after-cybersecurity-incident",
-     "date": "2026-10-29"
+     "title": "Help Net Security — Cyberattack disrupts University of New Mexico hospitals",
+     "url": "https://www.helpnetsecurity.com/2026/10/27/university-of-new-mexico-hospitals-cyberattack/",
+     "date": "2026-10-27"
     }
    ],
-   "checked_at": "2026-11-01T11:52:42Z",
+   "checked_at": "2026-11-01T17:51:27Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "US hospital systems disrupted"
+   "value": "US hospital systems disrupted",
+   "rubric_hit": "Attack disrupting a critical health service = Watch"
   },
   "outages": {
    "status": "green",
    "trend": "flat",
-   "summary": "No major multi-hour cloud outages in the past 48 hours",
-   "state": "No major multi-hour cloud, CDN or payments outage was reported between 30 Oct and 1 Nov. The most recent notable incident was a 39-minute Cloudflare issue on 27 Oct affecting one security feature.",
-   "for_you": "Core internet services are operating normally.",
+   "summary": "No major multi-hour cloud, CDN or payments outage",
+   "state": "Cloudflare's status history for 29–31 Oct shows only localised errors and scheduled maintenance, and no major multi-hour cloud, CDN or payments outage was reported between 29 Oct and 1 Nov.",
+   "for_you": "No widespread disruption to online services.",
    "sources": [
     {
-     "title": "HostTracker — Cloudflare incident, 27 October 2026",
-     "url": "https://www.host-tracker.com/en/is-cloudflare-down/incidents/2026-10-27-1631",
-     "date": "2026-10-27"
+     "title": "Cloudflare Status — Incident history",
+     "url": "https://www.cloudflarestatus.com/history",
+     "date": "2026-11-01"
     }
    ],
-   "checked_at": "2026-11-01T11:52:42Z",
+   "checked_at": "2026-11-01T17:51:27Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "No major outages"
+   "value": "No major outages",
+   "rubric_hit": "No major outage this week"
   },
   "cables-gnss": {
    "status": "amber",
@@ -1431,21 +1427,27 @@
   },
   "gilts": {
    "status": "amber",
-   "trend": "down",
-   "summary": "Gilt yields ease after the Budget but stay near 19-year highs",
-   "state": "The 10-year gilt yield was 5.29% at the 30 Oct close and the 30-year 5.72%, near multi-decade highs. Yields fell to their lowest since 22 Sep after Chancellor John Healey's first Budget met the fiscal rules. Markets reopen on 2 Nov ahead of the 5 Nov Bank of England decision.",
-   "for_you": "Fixed-rate mortgage pricing tracks gilt yields, so new fixed deals remain expensive by recent standards.",
+   "trend": "flat",
+   "summary": "Gilt yields near multi-decade highs ahead of a likely 5 Nov rate rise",
+   "state": "The 10-year gilt yield was 5.29% at the 30 Oct close, near multi-decade highs; markets reopen on 2 Nov. A rise in Bank Rate from 3.75% to 4% is widely expected on 5 Nov after CPI inflation rose to 3.5% in September (HomeOwners Alliance, 28 Oct).",
+   "for_you": "Fixed-rate mortgage and loan pricing follows gilt and swap rates, so new deals stay expensive.",
    "sources": [
     {
-     "title": "Trading Economics — UK 10-year gilt yield",
-     "url": "https://tradingeconomics.com/united-kingdom/government-bond-yield",
-     "date": "2026-10-30"
+     "title": "HomeOwners Alliance — Will the Bank of England raise interest rates on 5 November?",
+     "url": "https://hoa.org.uk/news/interest-rate-predictions-2/",
+     "date": "2026-10-28"
+    },
+    {
+     "title": "Cambridge Currencies — Bank of England base rate: next decision 5 November",
+     "url": "https://cambridgecurrencies.com/next-bank-of-england-interest-rate-decision/",
+     "date": "2026-11-01"
     }
    ],
-   "checked_at": "2026-11-01T11:52:42Z",
+   "checked_at": "2026-11-01T17:51:27Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "10y 5.29% (30 Oct)",
-   "value_num": 5.29
+   "value_num": 5.29,
+   "rubric_hit": "10y gilt above 5% = Watch"
   },
   "uk-energy-cap": {
    "status": "red",
@@ -1472,10 +1474,10 @@
   },
   "uk-weather": {
    "status": "green",
-   "trend": "down",
+   "trend": "flat",
    "summary": "No Met Office weather warnings in force",
-   "state": "The Met Office had no weather warnings in force as of 11:40 UTC on 1 Nov, after yellow fog warnings earlier on 1 Nov expired. No amber or red warnings are in force.",
-   "for_you": "No significant weather warnings at present. Check the Met Office forecast before travelling.",
+   "state": "The Met Office had no weather warnings in force at 17:40 UTC on 1 Nov. No amber or red warnings are in force.",
+   "for_you": "Check the Met Office forecast before travel.",
    "sources": [
     {
      "title": "Met Office — UK weather warnings",
@@ -1484,9 +1486,10 @@
     }
    ],
    "value": "No warnings in force (1 Nov)",
-   "checked_at": "2026-11-01T11:52:42Z",
+   "checked_at": "2026-11-01T17:51:27Z",
    "changed_at": "2026-11-01T11:52:42Z",
-   "value_num": 8
+   "value_num": 8,
+   "rubric_hit": "No amber/red Met Office warnings"
   },
   "nhs-pressure": {
    "status": "green",
@@ -1547,31 +1550,411 @@
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Doctors' strikes 14–19 Nov"
+  },
+  "funding-stress": {
+   "status": "green",
+   "trend": "flat",
+   "value": "SOFR–IORB +4bp, repo $0.0bn",
+   "value_num": 4,
+   "summary": "US overnight funding calm: SOFR within 5bp of IORB, no Fed repo use",
+   "state": "The secured overnight financing rate (SOFR) peaked 5bp above the Fed's interest on reserves over the five days to 29 Oct, inside the 10bp Watch line, and Fed standing repo operations were near zero to 30 Oct. Money markets show no sign of a dollar shortage.",
+   "for_you": "Short-term dollar funding markets that banks rely on are working normally.",
+   "rubric_hit": "SOFR–IORB 5d max 5bp < 10bp; repo ops < $15bn",
+   "sources": [
+    {
+     "title": "FRED — SOFR",
+     "url": "https://fred.stlouisfed.org/series/SOFR",
+     "date": "2026-10-29"
+    },
+    {
+     "title": "FRED — Fed repo operations (RPONTSYD)",
+     "url": "https://fred.stlouisfed.org/series/RPONTSYD",
+     "date": "2026-10-30"
+    }
+   ],
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-11-01T17:51:27Z"
+  },
+  "private-credit": {
+   "status": "amber",
+   "trend": "down",
+   "value": "Q3 exits 11.5% of NAV vs 5% caps",
+   "value_num": 11.5,
+   "summary": "Big private credit funds still capping withdrawals, though Q3 requests eased",
+   "state": "In Q3, 19 non-traded BDCs received redemption requests worth $13.8bn, 11.5% of NAV, and met about 40%, leaving $8.2bn unmet (Stanger, 2 Oct). Blackstone's BCRED held repurchases to its 5% cap against requests of about $4.3bn, roughly 10% of shares. Requests eased from 12.7% in Q2, and Stanger said demand may have peaked.",
+   "for_you": "Investors in semi-liquid private credit funds may not be able to withdraw all their money when they ask. Effects so far are confined to fund investors.",
+   "rubric_hit": "Large funds limiting redemptions (BCRED at 5% cap) = Watch",
+   "sources": [
+    {
+     "title": "AltsWire — Nontraded BDC redemption requests decrease in Q3 as backlog falls to $8.2B",
+     "url": "https://altswire.com/nontraded-bdc-redemption-requests-decrease-in-q3-as-backlog-falls-to-8-2b/",
+     "date": "2026-10-02"
+    },
+    {
+     "title": "AltsWire — BCRED caps Q3 repurchases at 5% as requests hit $4.3B",
+     "url": "https://altswire.com/bcred-caps-q3-repurchases-at-5-as-requests-hit-4-3b-about-10-of-shares/",
+     "date": "2026-10-02"
+    }
+   ],
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-11-01T17:51:27Z"
+  },
+  "yen-carry": {
+   "status": "green",
+   "trend": "flat",
+   "value": "¥157.5/$, 1w +0.4%",
+   "value_num": 157.52,
+   "summary": "Yen steady near ¥157.5 per dollar; no sign of a carry-trade unwind",
+   "state": "The dollar closed at ¥157.5 on 30 Oct, up 0.4% on the week and 0.3% on the month, far inside the 3% weekly and 6% monthly Watch lines. No Japanese currency intervention has been reported as of 1 Nov.",
+   "for_you": "No sudden yen move is forcing investors to unwind leveraged positions, a pattern that has shaken global markets before.",
+   "rubric_hit": "USD/JPY 1w +0.4% < 3%; 1m +0.3% < 6%",
+   "sources": [
+    {
+     "title": "Yahoo Finance — USD/JPY",
+     "url": "https://finance.yahoo.com/quote/JPY%3DX",
+     "date": "2026-10-30"
+    }
+   ],
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-11-01T17:51:27Z"
+  },
+  "jobless-claims": {
+   "status": "green",
+   "trend": "flat",
+   "value": "197k 4wk avg, +0% vs low",
+   "value_num": 197000,
+   "summary": "US jobless claims at their 52-week low",
+   "state": "Initial US jobless claims were 194,000 in the week to 24 Oct, taking the four-week average to about 197,000, level with its 52-week low and far from the 15% Watch line. Layoffs show no sign of rising despite higher energy costs.",
+   "for_you": "The US jobs market remains tight, with no wave of layoffs under way.",
+   "rubric_hit": "4wk avg 0% above 52w low < 15% Watch line",
+   "sources": [
+    {
+     "title": "FRED — Initial claims (ICSA)",
+     "url": "https://fred.stlouisfed.org/series/ICSA",
+     "date": "2026-10-24"
+    }
+   ],
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-11-01T17:51:27Z"
+  },
+  "em-stress": {
+   "status": "green",
+   "trend": "up",
+   "value": "Egypt pound record low (26 Oct)",
+   "summary": "Pressure on oil importers such as Egypt, but no emerging-market crisis",
+   "state": "The Egyptian pound passed 56 per dollar at the central bank on 26 Oct, a record low, and Egypt unexpectedly raised rates by one point to 20% on 29 Oct, citing energy prices (Rio Times). Indonesia has repeatedly intervened for the rupiah this year. No major emerging economy has defaulted, imposed capital controls or lost more than 10% in a month as of 1 Nov.",
+   "for_you": "Oil-importing emerging economies are under strain from the energy shock. People with ties to Egypt may see further moves in the exchange rate.",
+   "rubric_hit": "No major EM currency down >10% in a month or emergency IMF request",
+   "sources": [
+    {
+     "title": "Rio Times — Egypt raises interest rates to 20%",
+     "url": "https://www.riotimesonline.com/egypt-raises-interest-rates-20-percent-october-2026/",
+     "date": "2026-10-30"
+    },
+    {
+     "title": "TradingView (Reuters) — Indonesia central bank stepping up FX interventions after rupiah hits record low",
+     "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_P8N41H034:0-indonesia-central-bank-stepping-up-fx-market-interventions-after-rupiah-hits-fresh-record-low/",
+     "date": "2026-11-01"
+    }
+   ],
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-11-01T17:51:27Z"
+  },
+  "fertiliser": {
+   "status": "red",
+   "trend": "up",
+   "value": "Gulf urea stuck: ~0.9Mt at sea",
+   "value_num": 447.5,
+   "summary": "Hormuz closure has stranded Gulf urea exports; prices up but below April peak",
+   "state": "No non-Iranian granular urea has cleared Hormuz since mid-October, and Argus counts at least 21 vessels with 919,000 tonnes of urea held in the Gulf, against normal exports of about 1Mt a month (28 Oct). Middle East urea was $447.50/t on 27 Oct, well below the April peak of about $780.",
+   "for_you": "Higher fertiliser costs tend to feed into food prices over the following seasons, hitting import-dependent farmers and poorer countries first.",
+   "rubric_hit": "Key export route (Hormuz) closed to Gulf urea = Alert",
+   "sources": [
+    {
+     "title": "Discovery Alert (Argus/Kpler data) — Urea shipments stall at Hormuz as Gulf backlog nears 1Mt",
+     "url": "https://discoveryalert.com/news/urea-shipments-hormuz-backlog-october-2026/",
+     "date": "2026-10-28"
+    },
+    {
+     "title": "World Bank Data Blog — Fertilizer prices surge as Strait of Hormuz disruptions tighten",
+     "url": "https://blogs.worldbank.org/en/opendata/fertilizer-prices-surge-as-strait-of-hormuz-disruptions-tighten-",
+     "date": "2026-11-01"
+    }
+   ],
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-11-01T17:51:27Z"
+  },
+  "nuclear-plants": {
+   "status": "amber",
+   "trend": "flat",
+   "value": "ZNPP on single off-site line",
+   "summary": "Zaporizhzhia relies on one power line as strikes on Ukraine's grid continue",
+   "state": "Zaporizhzhia lost its last off-site line on 20 Aug, its 26th such loss, and ran on diesel for about 18 days until an IAEA-brokered local ceasefire allowed repairs (ANS). It still depends on a single 330kV line while Russian strikes on Ukraine's grid continue (1 Nov). Trump has raised further bombing of Iranian nuclear sites (Al Jazeera, 1 Nov).",
+   "for_you": "No radiological release has been reported. Official guidance in an emergency would come from the IAEA and national authorities.",
+   "rubric_hit": "IAEA-reported loss of all off-site power (Aug–Sep); plant still on one line",
+   "sources": [
+    {
+     "title": "ANS Nuclear Newswire — Zaporizhzhia restores off-site power following IAEA-brokered local ceasefire",
+     "url": "https://www.ans.org/news/2026-09-09/article-8377/zaporizhzhia-restores-offsite-power-following-iaeabrokered-local-ceasefire/",
+     "date": "2026-09-09"
+    },
+    {
+     "title": "Pakistan Today (Reuters) — Russian strikes cut power to hundreds of thousands in Ukraine",
+     "url": "https://www.pakistantoday.com.pk/2026/11/01/russian-strikes-cut-power-to-hundreds-of-thousands-in-ukraine",
+     "date": "2026-11-01"
+    },
+    {
+     "title": "Al Jazeera — Iran and US explore diplomacy amid rising threats of war",
+     "url": "https://www.aljazeera.com/news/2026/11/1/iran-and-us-explore-diplomacy-amid-rising-threats-of-war",
+     "date": "2026-11-01"
+    }
+   ],
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-11-01T17:51:27Z"
+  },
+  "hybrid-threats": {
+   "status": "amber",
+   "trend": "up",
+   "value": "Jersey airport shut 30–31 Oct",
+   "summary": "Drones closed Jersey airport two nights running; Romania blames Russia for ship sinking",
+   "state": "Jersey Airport could not land flights on 30 and 31 Oct after drones were reported near the airfield; police are investigating and no operator has been identified (ITV). Romania blamed Russia after a drone sank a ship in the Black Sea on 23 Oct. No casualties from sabotage on land have been reported.",
+   "for_you": "Drone sightings can cause short-notice flight delays and diversions. Check with your airline before travelling.",
+   "rubric_hit": "Drone incursions closed an airport; attack attributed to a state",
+   "sources": [
+    {
+     "title": "ITV News — Jersey airspace closed for second night after reported drone sighting",
+     "url": "https://www.itv.com/news/channel/2026-10-31/flights-diverted-for-second-night-after-drone-sighting",
+     "date": "2026-10-31"
+    },
+    {
+     "title": "Al Jazeera — Romania blames Russia after drone sinks ship in the Black Sea",
+     "url": "https://www.aljazeera.com/news/2026/10/23/romania-blames-russia-after-drone-sinks-ship-in-the-black-sea",
+     "date": "2026-10-23"
+    }
+   ],
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-11-01T17:51:27Z"
+  },
+  "gulf-iran": {
+   "status": "red",
+   "trend": "up",
+   "value": "Hormuz largely shut; US blockade",
+   "summary": "Iran attacks ships at Hormuz under a US blockade; Doha talks without a deal",
+   "state": "At least four tankers were hit near Hormuz on 30–31 Oct, including an LPG carrier struck by three Iranian projectiles south of Lavan Island (UKMTO). Iran has cut its proposed wait for a partial reopening from seven days to two, but wants the US blockade lifted, sanctions waived and assets unfrozen first. Trump said on 31 Oct that 'one or two sites' remain to be hit.",
+   "for_you": "FCDO advises against travel to Iran; check its advice for Gulf states. Shipping should follow UKMTO guidance.",
+   "rubric_hit": "Attacks on Gulf shipping; Hormuz substantially closed = Alert",
+   "sources": [
+    {
+     "title": "Al Jazeera — Iran and US explore diplomacy amid rising threats of war",
+     "url": "https://www.aljazeera.com/news/2026/11/1/iran-and-us-explore-diplomacy-amid-rising-threats-of-war",
+     "date": "2026-11-01"
+    },
+    {
+     "title": "Al Jazeera — Iran war live: US response awaited on new proposal to reopen Hormuz",
+     "url": "https://www.aljazeera.com/news/liveblog/2026/11/1/iran-war-live-araghchi-says-talks-under-way-on-2-day-plan-to-reopen-hormuz",
+     "date": "2026-11-01"
+    },
+    {
+     "title": "Times of Israel — Liveblog, 31 October 2026",
+     "url": "https://www.timesofisrael.com/liveblog-october-31-2026/",
+     "date": "2026-10-31"
+    }
+   ],
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-11-01T17:51:27Z"
+  },
+  "other-conflicts": {
+   "status": "amber",
+   "trend": "flat",
+   "value": "Afghanistan–Pakistan border clashes",
+   "summary": "Afghanistan–Pakistan border fighting continues with heavy weapons",
+   "state": "Taliban and Pakistani forces clashed at least three times between 19 and 28 Oct, with heavy weapons on the Paktika border and fighting at the Torkham crossing; Pakistani authorities said a mortar killed one civilian on 27 Oct (Long War Journal, 29 Oct). The latest round began after a suicide attack killed 31 people on 18 Sep.",
+   "for_you": "FCDO advises against all travel to Afghanistan and to parts of Pakistan near the border.",
+   "rubric_hit": "Significant deterioration in a conflict not tracked elsewhere",
+   "sources": [
+    {
+     "title": "FDD's Long War Journal — Afghanistan-Pakistan border clashes continue",
+     "url": "https://longwarjournal.org/archives/2026/10/afghanistan-pakistan-border-clashes-continue-amid-reported-pakistani-outreach-to-anti-taliban-groups.php",
+     "date": "2026-10-29"
+    }
+   ],
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-11-01T17:51:27Z"
+  },
+  "cold-storms": {
+   "status": "green",
+   "trend": "flat",
+   "value": "Mountain snow warnings (US West)",
+   "summary": "Early-season snow in the US Rockies; no major cold wave",
+   "state": "Winter storm warnings covered mountain areas of Colorado and Nevada on 1 Nov, with up to 18 inches of snow forecast in south-west Colorado by 2 Nov. The Met Office had no UK warnings in force on 1 Nov, and no major cold wave or deadly winter storm is affecting large populations.",
+   "for_you": "No widespread cold-weather disruption. Travellers to US mountain areas should follow National Weather Service warnings.",
+   "rubric_hit": "No top-tier cold warnings across a major populated region",
+   "sources": [
+    {
+     "title": "Country Herald — Southwest Colorado winter storm warning: up to 18 inches by Monday 2 Nov",
+     "url": "https://countryherald.com/colorado/pueblo/southwest-colorado-winter-storm-warning-up-to-18-inches-by-monday-nov-2",
+     "date": "2026-11-01"
+    },
+    {
+     "title": "Met Office — UK weather warnings",
+     "url": "https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings",
+     "date": "2026-11-01"
+    }
+   ],
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-11-01T17:51:27Z"
+  },
+  "respiratory": {
+   "status": "amber",
+   "trend": "up",
+   "value": "Early H1N1 flu season (US, UK)",
+   "summary": "Early flu season driven by a drifted H1N1 strain in the US and UK",
+   "state": "CDC said US flu hospitalisations in the week to 17 Oct were the highest for that week since 2010–11, with H1N1 carrying a G155E mutation making up 239 of 241 subtyped flu A samples. In England, flu positivity rose to 6.5% by 4 Oct and UKHSA flagged an H1N1 virus drifted from the vaccine strain (9 Oct).",
+   "for_you": "Follow NHS and UKHSA advice; eligible groups can get the autumn flu vaccine.",
+   "rubric_hit": "Unusually early flu season in the northern hemisphere = Watch",
+   "sources": [
+    {
+     "title": "CDC FluView — Week 41, ending 17 October 2026",
+     "url": "https://www.cdc.gov/fluview/surveillance/2026-week-41.html",
+     "date": "2026-10-23"
+    },
+    {
+     "title": "Nature World News — Early H1N1 wave pushes mid-October flu hospitalisation rate to highest since 2010–11",
+     "url": "https://www.natureworldnews.com/articles/73676/20261029/early-h1n1-wave-pushes-mid-october-flu-hospitalization-rate-its-highest-since-2010-11.htm",
+     "date": "2026-10-29"
+    },
+    {
+     "title": "Pathology in Practice — UKHSA warns of early influenza season",
+     "url": "https://www.pathologyinpractice.com/story/52794/ukhsa-warns-of-early-influenza-season",
+     "date": "2026-10-09"
+    }
+   ],
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-11-01T17:51:27Z"
+  },
+  "medicine-shortages": {
+   "status": "amber",
+   "trend": "up",
+   "value": "Chemo shortages (US); 87 new in 2026",
+   "value_num": 87,
+   "summary": "Chemotherapy drug shortages persist after a Pfizer plant flood",
+   "state": "ASHP added cytarabine (7 Oct) and irinotecan (12 Oct) injections to its US shortage list, linking part of the rise to flooding at a Pfizer plant in India, a disruption Pfizer expects to last into 2028 (Becker's, 26 Oct). In a September survey every cancer centre reported a shortage and 7% said they could not continue some treatment.",
+   "for_you": "Patients should follow advice from their clinician or pharmacist; the NHS manages UK shortages through Serious Shortage Protocols.",
+   "rubric_hit": "Essential medicine shortage affecting major health systems",
+   "sources": [
+    {
+     "title": "Becker's Hospital Review — The 2026 chemo shortage: a timeline",
+     "url": "https://www.beckershospitalreview.com/pharmacy/the-2026-chemo-shortage-a-timeline/",
+     "date": "2026-10-26"
+    }
+   ],
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-11-01T17:51:27Z"
+  },
+  "exploited-vulns": {
+   "status": "green",
+   "trend": "flat",
+   "value": "10 KEV adds (7d), 33 (30d)",
+   "value_num": 10,
+   "summary": "CISA added 10 exploited vulnerabilities in a week, just under the Watch line",
+   "state": "CISA added 10 vulnerabilities to its Known Exploited Vulnerabilities catalogue in the seven days to 30 Oct and 33 in 30 days, just under the 11-a-week Watch line. No emergency directive for mass exploitation was in force as of 1 Nov.",
+   "for_you": "Keep devices and software updated; NCSC publishes guidance on patching.",
+   "rubric_hit": "10 KEV additions in 7d < 11 Watch line",
+   "sources": [
+    {
+     "title": "CISA — Known Exploited Vulnerabilities catalogue",
+     "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+     "date": "2026-10-30"
+    }
+   ],
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-11-01T17:51:27Z"
+  },
+  "aid-funding": {
+   "status": "amber",
+   "trend": "up",
+   "value": "WFP Gaza aid cut for 500k (19 Oct)",
+   "value_num": 500000,
+   "summary": "Funding gaps force WFP ration cuts in Gaza and the West Bank",
+   "state": "WFP said on 19 Oct it would cut monthly food aid in Gaza from 1.6 million to 1.1 million people and halve family rations, after receiving less than half its usual Palestine funding in 2026; it needs $450m for six months. West Bank aid was halved in September (Al Jazeera).",
+   "for_you": "Funding shortfalls reduce aid in crisis zones. OCHA and ReliefWeb publish appeal details.",
+   "rubric_hit": "Major ration cuts announced = Watch",
+   "sources": [
+    {
+     "title": "Al Jazeera — WFP cuts aid to 500,000 Palestinians in Gaza amid funding shortages",
+     "url": "https://www.aljazeera.com/news/2026/10/19/wfp-cuts-aid-to-500000-palestinians-in-gaza-amid-funding-shortages",
+     "date": "2026-10-19"
+    }
+   ],
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-11-01T17:51:27Z"
+  },
+  "uk-supply-margins": {
+   "status": "green",
+   "trend": "flat",
+   "value": "No notices; margins adequate",
+   "summary": "GB gas and power margins adequate for winter; no notices issued",
+   "state": "National Gas said on 23 Oct that GB has enough supply capability (592 mcm/d) to meet 1-in-20 peak demand of 493 mcm/d this winter. NESO's early view forecast a 5.5GW de-rated electricity margin, with some tight days likely in January. No margin notices had been issued as of 1 Nov.",
+   "for_you": "No sign of supply interruptions to UK homes; the main pressure is on prices, not availability.",
+   "rubric_hit": "Adequate margins; no notices issued",
+   "sources": [
+    {
+     "title": "National Gas — 2026 Gas Winter Outlook",
+     "url": "https://www.nationalgas.com/media/news/national-gas-publishes-2026-gas-winter-outlook",
+     "date": "2026-10-23"
+    },
+    {
+     "title": "Drax — NESO forecasts lower supply margins this winter",
+     "url": "https://energy.drax.com/intelligence/neso-winter-outlook-report-2026-2027/",
+     "date": "2026-07-03"
+    }
+   ],
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-11-01T17:51:27Z"
+  },
+  "uk-floods": {
+   "status": "green",
+   "trend": "flat",
+   "value": "No flood warnings",
+   "value_num": 0,
+   "summary": "No Environment Agency flood warnings in force",
+   "state": "The Environment Agency had no severe flood warnings and no flood warnings in force in England at 17:40 UTC on 1 Nov.",
+   "for_you": "Check the gov.uk flood warning service if heavy rain is forecast.",
+   "rubric_hit": "0 severe, 0 flood warnings < 10 Watch line",
+   "sources": [
+    {
+     "title": "GOV.UK — Check for flooding",
+     "url": "https://check-for-flooding.service.gov.uk/",
+     "date": "2026-11-01"
+    }
+   ],
+   "checked_at": "2026-11-01T17:51:27Z",
+   "changed_at": "2026-11-01T17:51:27Z"
   }
  },
- "headline": "Cyclone Murasu is forecast to hit Andhra Pradesh as a severe storm on 3 Nov. Doha talks on the Iran war show little movement as tankers burn near Hormuz, and Russia launched 433 drones at Ukraine on 1 Nov.",
- "generated_at": "2026-11-01T11:52:42Z",
+ "headline": "Iran attacks ships at Hormuz as Doha talks stall and Trump hints at strikes after the 3 Nov midterms. Russia launched 433 drones at Ukraine on 1 Nov, and Cyclone Murasu, on a GDACS red alert, nears India's east coast.",
+ "generated_at": "2026-11-01T17:51:27Z",
  "world": {
-  "score": 44,
+  "score": 42,
   "band": "Strained",
   "status": "amber",
   "counts": {
-   "green": 27,
-   "amber": 29,
-   "red": 16
+   "green": 35,
+   "amber": 36,
+   "red": 18
   },
   "by_domain": {
-   "markets": 6,
-   "economy": 29,
-   "energy": 92,
-   "geopolitics": 36,
+   "markets": 9,
+   "economy": 22,
+   "energy": 88,
+   "geopolitics": 38,
    "conflict": 75,
-   "hazards": 17,
+   "hazards": 15,
    "climate": 60,
-   "health": 43,
-   "tech": 40,
-   "humanitarian": 33,
-   "uk": 50
+   "health": 44,
+   "tech": 33,
+   "humanitarian": 38,
+   "uk": 39
   }
  },
  "situations": [
@@ -1580,7 +1963,7 @@
    "name": "US–Iran war and Gulf energy shock",
    "status": "red",
    "trend": "up",
-   "summary": "War in stalemate with Hormuz largely closed: Brent above $110, TTF above €100, tanker attacks on 29–30 Oct.",
+   "summary": "Hormuz largely closed: tankers hit on 30–31 Oct, Brent above $110, TTF above €100 and Gulf urea stranded; Doha talks without a deal.",
    "signals": [
     "gulf-iran",
     "middle-east",
@@ -1588,6 +1971,7 @@
     "sanctions",
     "oil",
     "eu-gas",
+    "fertiliser",
     "chokepoints",
     "freight",
     "uk-energy-cap",
@@ -1599,11 +1983,12 @@
    "name": "Russia–Ukraine war and NATO's flank",
    "status": "red",
    "trend": "up",
-   "summary": "433 Russian drones launched on 1 Nov with Kyiv under emergency power cuts; drone-ship sinkings off Bulgaria.",
+   "summary": "433 Russian drones launched on 1 Nov, leaving hundreds of thousands without power; drones shut Jersey airport on 30–31 Oct.",
    "signals": [
     "russia-ukraine",
     "russia-nato",
-    "hybrid-threats"
+    "hybrid-threats",
+    "nuclear-plants"
    ]
   },
   {
@@ -1625,7 +2010,7 @@
    "name": "Ebola outbreak, DR Congo",
    "status": "red",
    "trend": "up",
-   "summary": "Over 10,000 cases with imported cases in Kenya and Nigeria; a WHO emergency (PHEIC) since May.",
+   "summary": "10,351 cases and 5,026 deaths reported on 1 Nov, with cases in Kenya and Nigeria; a WHO emergency (PHEIC) since May.",
    "signals": [
     "ebola",
     "who-emergencies"
@@ -1647,7 +2032,7 @@
    "name": "Cyclone Murasu",
    "status": "red",
    "trend": "up",
-   "summary": "GDACS red alert; landfall in Andhra Pradesh, India, forecast for 3 Nov.",
+   "summary": "GDACS red alert; 383km east of Chennai on 1 Nov, heading for India's east coast.",
    "signals": [
     "other-cyclones"
    ]
@@ -1668,13 +2053,15 @@
    "name": "Energy shock feeding inflation",
    "status": "amber",
    "trend": "up",
-   "summary": "US CPI at 4.0% on the oil shock; central banks squeezed; a Bank of England rise expected on 5 Nov.",
+   "summary": "US CPI at 4.0% on the oil shock; a Bank of England rise to 4% widely expected on 5 Nov; Egypt hiked on 29 Oct.",
    "signals": [
     "us-inflation",
     "central-banks",
     "uk-rates",
-    "bond-volatility"
+    "bond-volatility",
+    "em-stress"
    ]
   }
- ]
+ ],
+ "emerging": []
 }

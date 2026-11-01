@@ -1,15 +1,15 @@
-# Trade war & tariffs — WATCH (worsening)
-id trade-war · Geopolitics · horizon acute · checked 2026-11-01T11:52Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T01:52Z
+# Trade war & tariffs — WATCH (stable)
+id trade-war · Geopolitics · horizon acute · checked 2026-11-01T17:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T07:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/trade-war
 
 Value: US effective tariff ~7%
-Rated on: New major tariffs announced or threatened between large economies.
+Rated on: Major export controls pending renewal; tariffs elevated
 
-US tariffs reset under Section 301; new Russia-linked tariff powers signed
+Section 301 tariffs in place; China's rare-earth pause expires 10 Nov
 
-Why it's at this level: After the Supreme Court struck down IEEPA tariffs on 20 Feb, the US moved to 10–12.5% Section 301 tariffs on 60 economies from 24 Jul; the average effective rate was 7.1% in August (Yale Budget Lab). China's pause on some rare-earth export controls expires on 10 Nov with no renewal announced, a possible new flashpoint.
+Why it's at this level: China's one-year suspension of its October 2025 rare-earth export controls expires on 10 Nov, and Beijing had not said whether it will renew it; its April 2025 licensing rules remain in force. Chinese negotiators have linked magnet approvals to US chip export limits. US Section 301 tariffs keep the average effective rate near 7%.
 
-What this means for you: Tariffs are lower than in 2025 but policy remains unpredictable, and new threats could quickly change trade costs.
+What this means for you: Tariffs and export controls can raise prices for electronics, cars and other goods with Chinese parts.
 
 Why it matters: Tariffs raise prices, reroute supply chains and slow growth; escalation cycles hurt export-heavy economies like the UK's partners.
 What moves it: US tariff policy, retaliation, court rulings, trade deals, WTO disputes.
@@ -17,5 +17,5 @@ What moves it: US tariff policy, retaliation, court rulings, trade deals, WTO di
 Rubric — Alert: Broad new tariffs in force with retaliation under way, or US average effective tariff rising sharply. | Watch: New major tariffs announced or threatened between large economies. | Normal: Tariff regime stable; no new major measures in the past two weeks.
 
 Sources:
-- Penn Wharton Budget Model — Effective tariff rates, updated 14 Oct (2026-10-14) https://budgetmodel.wharton.upenn.edu/p/2026-10-14-effective-tariff-rates-and-revenues-updated-october-14-2026/
+- Startup Fortune — China's rare earth export truce expires November 10 with no renewal in sight (2026-10-06) https://startupfortune.com/chinas-rare-earth-export-truce-expires-november-10-with-no-renewal-in-sight/
 - Technology.org — China's rare-earth export pause: what ends on 10 November (2026-10-19) https://www.technology.org/2026/10/19/china-rare-earth-export-pause-november-10/

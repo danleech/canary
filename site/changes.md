@@ -1,5 +1,5 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-01T11:52Z · next run ~17:40 UK · stale after 2026-11-02T01:52Z (36h for daily-tier signals)
+as_of 2026-11-01T17:51Z · next run ~23:40 UK · stale after 2026-11-02T07:51Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 
 - 2026-11-01T11:52Z UK weather warnings [uk-weather]: WATCH→NORMAL — No Met Office weather warnings in force

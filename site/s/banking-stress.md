@@ -1,15 +1,15 @@
 # Banking system stress — NORMAL (stable)
-id banking-stress · Markets · horizon acute · checked 2026-11-01T11:52Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T01:52Z
+id banking-stress · Markets · horizon acute · checked 2026-11-01T17:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T07:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/banking-stress
 
-Value: STLFSI -0.58
-Rated on: St Louis Fed Financial Stress Index < 0, ECB CISS < 0.25, and no notable bank failures or rescues.
+Value: STLFSI -0.58, CISS 0.01
+Rated on: STLFSI -0.58 < 0 and CISS 0.01: below Watch lines
 
-Financial stress index below zero; 2026 bank failures have all been small
+Financial stress indices below average; no new bank failure
 
-Why it's at this level: The St Louis Fed Financial Stress Index was −0.58 in the latest weekly reading (week to 23 Oct), below its long-run average. Six small US banks have failed in 2026, the largest (Nano Banc, 25 Sep) with about $736m in assets; no new failure was reported as of 1 Nov.
+Why it's at this level: The St Louis Fed Financial Stress Index was −0.58 in the week to 23 Oct, below its long-run average, and the ECB's systemic stress indicator was 0.013 on 29 Oct, a low reading. No new US or European bank failure had been reported as of 1 Nov.
 
-What this means for you: There is no sign of systemic banking stress. Commercial property refinancing at higher rates remains the pressure point for smaller lenders.
+What this means for you: Bank deposits are protected by deposit guarantee schemes (FSCS in the UK); no sign of stress in the banking system now.
 
 Why it matters: Bank failures turn market losses into credit crunches; 2008 and 2023 both began as 'contained' bank problems.
 What moves it: Rate shocks to bond portfolios, commercial property losses, deposit flight, private-credit links.
@@ -17,5 +17,5 @@ What moves it: Rate shocks to bond portfolios, commercial property losses, depos
 Rubric — Alert: STLFSI > 1.5, or ECB CISS > 0.45, or a systemically important bank fails or needs rescue, or emergency central-bank facilities launched. | Watch: STLFSI 0–1.5, or ECB CISS 0.25–0.45, or a mid-sized bank failure/rescue, or a large bank under visible funding pressure. | Normal: St Louis Fed Financial Stress Index < 0, ECB CISS < 0.25, and no notable bank failures or rescues.
 
 Sources:
-- FRED — St. Louis Fed Financial Stress Index (STLFSI4) (2026-10-23) https://fred.stlouisfed.org/series/STLFSI4
-- Disruption Banking — Six US banks failed in 2026, the most in a decade (2026-10-01) https://www.disruptionbanking.com/2026/10/01/six-us-banks-failed-in-2026-the-most-in-a-decade-what-that-says-about-the-economy/
+- FRED — St Louis Fed Financial Stress Index (2026-10-23) https://fred.stlouisfed.org/series/STLFSI4
+- ECB Data Portal — CISS (2026-10-29) https://data.ecb.europa.eu/data/datasets/CISS

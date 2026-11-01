@@ -1,5 +1,12 @@
 [
  {
+  "t": "2026-11-01T17:51:27Z",
+  "applied": 52,
+  "changed": [],
+  "warnings": [],
+  "note": "17 signals rated for the first time this run. Gilts value carried from the 30 Oct close (no trading since). IAEA and Crisis Group pages could not be fetched; nuclear-plants uses the latest confirmed ZNPP reporting (ANS, Sep)."
+ },
+ {
   "t": "2026-11-01T12:37:15Z",
   "applied": 0,
   "changed": [],
