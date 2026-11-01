@@ -1,5 +1,5 @@
 # WHO emergencies — WATCH (stable)
-id who-emergencies · Global Health · horizon acute · checked 2026-11-01T17:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T07:51Z
+id who-emergencies · Global Health · horizon acute · checked 2026-11-01T23:50Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T13:50Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/who-emergencies
 
 Value: 1 PHEIC (Ebola)
@@ -18,4 +18,5 @@ What moves it: Outbreak spread, IHR Emergency Committee decisions.
 Rubric — Alert: A new PHEIC declared in the past 30 days, or a pandemic emergency declared. | Watch: A PHEIC in effect, or an IHR Emergency Committee convened. | Normal: No PHEIC in effect other than long-running polio.
 
 Sources:
-- WHO — Disease Outbreak News: Ebola (Bundibugyo), DRC, Kenya and Nigeria (2026-10-23) https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON622
+- WHO — Disease Outbreak News: Ebola (Bundibugyo), DR Congo, Kenya and Nigeria (2026-10-23) https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON622
+- Morning Star — World in brief: 1 November 2026 (2026-11-01) https://morningstaronline.co.uk/article/world-brief-november-1-2026

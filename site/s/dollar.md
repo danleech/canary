@@ -1,13 +1,13 @@
 # US dollar — NORMAL (stable)
-id dollar · Markets · horizon acute · checked 2026-11-01T17:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T07:51Z
+id dollar · Markets · horizon acute · checked 2026-11-01T23:50Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T13:50Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/dollar
 
-Value: DXY 102.0, 3m +2.1%
-Rated on: DXY 3m move +2.1% < 5% Watch line
+Value: DXY 101.9, 3m +2.3%
+Rated on: DXY 3m move +2.3% < 5% Watch line
 
-Dollar index steady near 102, up 2% over three months
+Dollar index steady near 102, up 2.3% over three months
 
-Why it's at this level: The DXY dollar index closed at 102.0 on 30 Oct, up about 2.1% over three months and within the normal range. Fed tightening has supported the dollar without the sharp moves that squeeze dollar borrowers abroad.
+Why it's at this level: The DXY dollar index was 101.9 on 1 Nov, up about 2.3% over three months and within the normal range. Fed tightening has supported the dollar without the sharp moves that squeeze dollar borrowers abroad.
 
 What this means for you: Exchange rates are moving normally; holiday money and import prices are not being hit by an abrupt dollar surge.
 

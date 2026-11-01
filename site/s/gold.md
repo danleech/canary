@@ -1,13 +1,13 @@
 # Gold (fear gauge) — NORMAL (stable)
-id gold · Markets · horizon acute · checked 2026-11-01T17:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T07:51Z
+id gold · Markets · horizon acute · checked 2026-11-01T23:50Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T13:50Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/gold
 
-Value: $3,899, 3m -6.1%
-Rated on: Gold 3m change -6.1%, below the +15% Watch line
+Value: $3,906, 3m -5.9%
+Rated on: Gold 3m change -5.9%, below the +15% Watch line
 
 Gold near $3,900 and lower over three months: no panic bid
 
-Why it's at this level: Gold futures closed at $3,899 on 30 Oct, about 6% lower over three months. The fall during the Gulf war is consistent with rising US yields and Fed tightening, and gold is not signalling a flight to safety.
+Why it's at this level: Gold futures were around $3,906 on 1 Nov, about 6% lower over three months. The fall during the Gulf war is consistent with rising US yields and Fed tightening, and gold is not signalling a flight to safety.
 
 What this means for you: Gold prices are not signalling financial panic.
 

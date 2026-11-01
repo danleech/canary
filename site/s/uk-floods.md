@@ -1,5 +1,5 @@
 # UK flood warnings — NORMAL (stable)
-id uk-floods · UK Watch · horizon acute · checked 2026-11-01T17:51Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-02T07:51Z
+id uk-floods · UK Watch · horizon acute · checked 2026-11-01T23:50Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-02T13:50Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/uk-floods
 
 Value: No flood warnings
@@ -7,7 +7,7 @@ Rated on: 0 severe, 0 flood warnings < 10 Watch line
 
 No Environment Agency flood warnings in force
 
-Why it's at this level: The Environment Agency had no severe flood warnings and no flood warnings in force in England at 17:40 UTC on 1 Nov.
+Why it's at this level: The Environment Agency had no severe flood warnings and no flood warnings in force in England at 23:40 UTC on 1 Nov.
 
 What this means for you: Check the gov.uk flood warning service if heavy rain is forecast.
 

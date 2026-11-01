@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-01T23:50:31Z",
+  "id": "crypto",
+  "name": "Crypto stress",
+  "from": "green",
+  "to": "amber",
+  "reason": "Record $6.3bn hack at Binance; withdrawals reopening, Bitcoin 10% off its high"
+ },
+ {
   "t": "2026-11-01T11:52:42Z",
   "id": "uk-weather",
   "name": "UK weather warnings",

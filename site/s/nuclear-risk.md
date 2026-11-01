@@ -1,5 +1,5 @@
 # Nuclear risk — WATCH (stable)
-id nuclear-risk · Armed Conflict · horizon acute · checked 2026-11-01T17:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T07:51Z
+id nuclear-risk · Armed Conflict · horizon acute · checked 2026-11-01T23:50Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T13:50Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/nuclear-risk
 
 Value: No US–Russia treaty limits
@@ -17,5 +17,5 @@ What moves it: Threats in active wars, testing, doctrine changes, arms-control c
 Rubric — Alert: A nuclear test, changes in deployment/alert levels, or threatened use in an active conflict. | Watch: Explicit threats, unusual exercises, doctrine changes, or arms-control lapses without replacement. | Normal: No explicit nuclear threats or tests; arms-control dialogue active.
 
 Sources:
+- Reuters via WMBD — Iranian negotiators in Doha to continue talks to end the US-Iran war (2026-11-01) https://wmbdradio.com/2026/11/01/iranian-negotiators-in-doha-to-continue-talks-to-end-the-us-iran-war-official-says/
 - CBS News — Russia says it will stick to limits in expired New START treaty if US does (2026-11-01) https://www.cbsnews.com/news/russia-nuclear-weapons-treaty-us-new-start-latest-putin-trump/
-- Al Jazeera — Iran and US explore diplomacy amid rising threats of war (2026-11-01) https://www.aljazeera.com/news/2026/11/1/iran-and-us-explore-diplomacy-amid-rising-threats-of-war

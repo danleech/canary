@@ -1,5 +1,5 @@
 # Russia–NATO — WATCH (worsening)
-id russia-nato · Geopolitics · horizon acute · checked 2026-11-01T17:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T07:51Z
+id russia-nato · Geopolitics · horizon acute · checked 2026-11-01T23:50Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T13:50Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/russia-nato
 
 Value: Black Sea ship attacks; incursions
@@ -18,5 +18,5 @@ What moves it: Airspace and drone incursions, sabotage, Baltic incidents, nuclea
 Rubric — Alert: Article 4 consultations, a direct military clash, or an attack on NATO territory. | Watch: Airspace/drone violations, sabotage attributed to Russia, or explicit threats against members. | Normal: No notable incidents on NATO territory in the past two weeks.
 
 Sources:
-- PBS NewsHour (AP) — Drone strikes in the Black Sea raise fears of Russian escalation (2026-10-16) https://www.pbs.org/newshour/world/drone-strikes-in-the-black-sea-raise-fears-of-russian-escalation-to-test-natos-response
 - Al Jazeera — Romania blames Russia after drone sinks ship in the Black Sea (2026-10-23) https://www.aljazeera.com/news/2026/10/23/romania-blames-russia-after-drone-sinks-ship-in-the-black-sea
+- gCaptain — Romania blames Russia for drone that sinks cargo ship (2026-10-23) https://gcaptain.com/romania-blames-russia-for-drone-that-sinks-cargo-ship-1-killed-3-missing/

@@ -1,16 +1,16 @@
 # Pacific & Indian cyclones — ALERT (worsening)
-id other-cyclones · Weather & Hazards · horizon acute · checked 2026-11-01T17:51Z · at this level since 2026-11-01T11:52Z · stale after 2026-11-02T07:51Z
+id other-cyclones · Weather & Hazards · horizon acute · checked 2026-11-01T23:50Z · at this level since 2026-11-01T11:52Z · stale after 2026-11-02T13:50Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/other-cyclones
 
 Value: GDACS red: Cyclone Murasu (India)
 Rated on: GDACS red cyclone alert
 Situation: Cyclone Murasu [cyclone-murasu]
 
-GDACS red alert for Cyclone Murasu heading for India's east coast
+Cyclone Murasu, on a GDACS red alert, due to hit south Andhra Pradesh late on 2 Nov
 
-Why it's at this level: GDACS kept a red alert for Cyclone Murasu in the Bay of Bengal on 1 Nov. At 12:00 UTC it was about 383km east of Chennai with sustained winds of 93km/h, moving west-northwest at 26km/h towards the coast of Andhra Pradesh and Tamil Nadu (RainViewer). Typhoon In-Fa near Japan remains at a lower alert level.
+Why it's at this level: GDACS kept a red alert for Cyclone Murasu in the Bay of Bengal on 1 Nov. India's Meteorological Department expects it to cross the south Andhra Pradesh coast between Nellore and Narsapur between 23:30 on 2 Nov and 04:00 on 3 Nov local time, with winds of 100–110km/h gusting to 120km/h. Odisha ordered evacuations of low-lying areas on 1 Nov.
 
-What this means for you: Anyone in coastal Andhra Pradesh or Tamil Nadu should follow India Meteorological Department and local authority warnings; travellers can check FCDO advice.
+What this means for you: People in or travelling to coastal Andhra Pradesh, north Tamil Nadu and southern Odisha should follow India Meteorological Department warnings and local authority instructions. Check FCDO travel advice for India before travelling.
 
 Why it matters: Typhoons and cyclones are the deadliest weather events, threatening densely populated coasts in Asia and the Indian Ocean.
 What moves it: Ocean heat, ENSO phase, season (W Pacific peaks Jul–Oct; N Indian Apr–Jun & Oct–Dec).
@@ -19,4 +19,4 @@ Rubric — Alert: GDACS red cyclone alert, or a super-typhoon/severe cyclone lan
 
 Sources:
 - GDACS — Global Disaster Alert and Coordination System (2026-11-01) https://www.gdacs.org/
-- RainViewer — Cyclone Murasu tracker (2026-11-01) https://www.rainviewer.com/storm-tracker/cyclones/murasu-2026.html
+- Millennium Post — Cyclone Murasu may bring winds up to 120 km/h during landfall (2026-11-02) https://www.millenniumpost.in/big-stories/cyclone-murasu-may-bring-winds-up-to-120-kmh-during-landfall-681848
