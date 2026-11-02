@@ -1,14 +1,14 @@
 # Nuclear risk — WATCH (stable)
-id nuclear-risk · Armed Conflict · horizon acute · checked 2026-11-02T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T19:51Z
+id nuclear-risk · Armed Conflict · horizon acute · checked 2026-11-02T11:58Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T01:58Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/nuclear-risk
 
 Value: No US–Russia treaty limits
-Rated on: Arms control lapsed; no test or alert change = Watch
+Rated on: Arms control lapsed without replacement = Watch
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-No US–Russia arms limits since February; no test or alert change
+No US–Russia arms-control limits since New START lapsed; no test or alert change
 
-Why it's at this level: New START expired in February 2026 with no replacement; Russia says it will keep to the old limits if the US does. Trump said on 31 Oct that 'one or two' targets remain in Iran. No nuclear test or change in alert levels had been reported as of 2 Nov.
+Why it's at this level: New START expired in February 2026 with no replacement; Russia says it will keep to the old limits if the US does. Ukraine's air force said false radiation alerts appeared on its Air Alarm app on 2 Nov because of hostile interference, and confirmed there was no radiation threat. No nuclear test or change in alert levels had been reported as of 2 Nov.
 
 What this means for you: No change in official UK guidance. Risk remains elevated but not acute.
 
@@ -19,4 +19,4 @@ Rubric — Alert: A nuclear test, changes in deployment/alert levels, or threate
 
 Sources:
 - CBS News — Russia says it will stick to limits in expired New START treaty (2026-11-01) https://www.cbsnews.com/news/russia-nuclear-weapons-treaty-us-new-start-latest-putin-trump/
-- Gulf News — Trump says US still has to take care of one or two targets in Iran (2026-11-01) https://gulfnews.com/world/mena/middle-east-conflict-trump-says-us-still-has-to-take-care-of-one-or-two-targets-in-iran-1.500731311
+- RTÉ — Cyberattacks hit Russia, Ukraine emergency warning apps (2026-11-02) https://www.rte.ie/news/ukraine/2026/1102/1597579-ukraine-russia/

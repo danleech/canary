@@ -1,14 +1,14 @@
 # Internet & cloud outages — NORMAL (stable)
-id outages · Technology & Cyber · horizon acute · checked 2026-11-02T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T19:51Z
+id outages · Technology & Cyber · horizon acute · checked 2026-11-02T11:58Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T01:58Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/outages
 
 Value: No major outages
-Rated on: No major outage this week
+Rated on: No major multi-hour outage in the past 48h
 Basis: judged — The AI assessor's reading of 1 source from 1 outlet against the rubric. Check the sources before relying on it.
 
-No major multi-hour cloud, CDN or payments outage
+No major cloud, CDN or payments outage reported
 
-Why it's at this level: No major multi-hour cloud, CDN or payments outage was reported between 29 Oct and 2 Nov; Cloudflare's status history for the period shows only localised errors and scheduled maintenance.
+Why it's at this level: No major multi-hour cloud, CDN or payments outage was reported between 31 Oct and 2 Nov; Cloudflare's status history for the period shows only localised errors and scheduled maintenance.
 
 What this means for you: No widespread disruption to online services.
 

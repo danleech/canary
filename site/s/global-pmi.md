@@ -1,12 +1,12 @@
 # Global activity (PMI) — NORMAL (improving)
-id global-pmi · Economy · horizon acute · checked 2026-11-01T11:52Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T23:52Z
+id global-pmi · Economy · horizon acute · checked 2026-11-02T11:58Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T23:58Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/global-pmi
 
 Value: Sep composite: joint-highest since 2021
-Rated on: J.P.Morgan Global Composite PMI > 51.
-Basis: published — Follows S&P Global / J.P.Morgan Global PMI, read from the cited source by the AI assessor and checked against the rubric.
+Rated on: Global composite PMI above 51 (September)
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-Global PMI strong in September, but October flashes and China's PMI softened
+Global PMI at a 2021 high in September; October momentum softer in Europe and China
 
 Why it's at this level: The J.P.Morgan Global Composite PMI rose in September to its joint-highest level since 2021 (published 6 Oct). October readings so far point to softer momentum: euro-area flashes slowed (23 Oct) and China's official manufacturing PMI fell to 49.3 (31 Oct). The October global figures are due 2–4 Nov.
 

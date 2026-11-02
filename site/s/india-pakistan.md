@@ -1,12 +1,12 @@
 # India–Pakistan — WATCH (stable)
-id india-pakistan · Armed Conflict · horizon acute · checked 2026-11-02T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T19:51Z
+id india-pakistan · Armed Conflict · horizon acute · checked 2026-11-02T11:58Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T01:58Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/india-pakistan
 
 Value: LoC tension, no strikes
 Rated on: Persistent tension without strikes = Watch
 Basis: judged — The AI assessor's reading of 1 source from 1 outlet against the rubric. Check the sources before relying on it.
 
-Tense border but no cross-border military strikes since 2025
+Tension on the border after October killings; no cross-border strikes
 
 Why it's at this level: Indian border guards shot dead two people on the Punjab border on 2 Oct, and both countries summoned diplomats. No cross-border military strikes have occurred since the 2025 clashes, and no new Line of Control incident had been reported as of 2 Nov.
 

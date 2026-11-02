@@ -1,16 +1,16 @@
 # Famine — WATCH (worsening)
-id famine · Humanitarian · horizon acute · checked 2026-11-01T11:52Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T23:52Z
+id famine · Humanitarian · horizon acute · checked 2026-11-02T11:58Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T23:58Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/famine
 
 Value: Risk-of-famine alerts: Somalia, Sudan
-Rated on: IPC Phase 5 projected or 'risk of famine' alerts.
+Rated on: Risk-of-famine alerts (FEWS NET) = Watch
 Basis: published — Follows IPC classifications and FEWS NET, read from the cited source by the AI assessor and checked against the rubric.
 Situation: Super El Niño [super-el-nino]
 Situation: Sudan war [sudan-war]
 
-Famine confirmed in Gaza and Sudan in 2025; El Niño raises new risks in East Africa
+Risk-of-famine alerts for Somalia and Sudan; no current IPC Phase 5 confirmed
 
-Why it's at this level: The 2026 Global Report on Food Crises (24 Apr) confirmed famine conditions in Gaza and Sudan during 2025. FEWS NET (6 Oct) flags a risk of famine in southern Somalia if El Niño floods are extreme, and drought threatens Sudan and South Sudan. No current IPC Phase 5 classification was confirmed as of 1 Nov.
+Why it's at this level: The 2026 Global Report on Food Crises (24 Apr) confirmed famine conditions in Gaza and Sudan during 2025. FEWS NET (6 Oct) flags a risk of famine in southern Somalia if El Niño floods are extreme, and drought threatens Sudan and South Sudan. No current IPC Phase 5 classification was confirmed as of 2 Nov.
 
 What this means for you: Humanitarian agencies report record funding gaps; reputable appeals include WFP and UNICEF.
 

@@ -1,14 +1,14 @@
 # Measles & vaccine-preventable — WATCH (worsening)
-id measles · Global Health · horizon acute · checked 2026-11-01T11:52Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T23:52Z
+id measles · Global Health · horizon acute · checked 2026-11-02T11:58Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T23:58Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/measles
 
 Value: US 4,852 cases (29 Oct)
-Rated on: Large outbreaks in high-income countries, or loss of elimination status.
+Rated on: Large outbreak in a high-income country = Watch
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-US measles cases at 4,852 in 2026, the most since elimination
+US measles cases at 4,852 (29 Oct), more than double 2025; elimination status at risk
 
-Why it's at this level: The CDC reported 4,852 confirmed US measles cases as of 29 Oct, more than double 2025's total, with three deaths. Analysts say the US is highly likely to lose its measles elimination status this autumn (CIDRAP).
+Why it's at this level: The CDC reported 4,852 confirmed US measles cases as of 29 Oct, more than double 2025's total, with three deaths. Analysts say the US is highly likely to lose its measles elimination status this autumn (CIDRAP). The next CDC update is due this week; no change as of 2 Nov.
 
 What this means for you: Check that you and your children are up to date with MMR vaccination, especially before travel.
 

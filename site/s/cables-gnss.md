@@ -1,14 +1,14 @@
 # Undersea cables & GPS — WATCH (stable)
-id cables-gnss · Technology & Cyber · horizon acute · checked 2026-11-01T11:52Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T23:52Z
+id cables-gnss · Technology & Cyber · horizon acute · checked 2026-11-02T11:58Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T23:58Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/cables-gnss
 
 Value: Asia cable faults; Gulf/Baltic GNSS jamming
-Rated on: Cable damage incident, or widespread GNSS interference affecting aviation.
+Rated on: Cable damage incidents and widespread GNSS interference = Watch
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-Asian subsea cable cuts and widespread GPS jamming
+Asia cable faults under repair; GNSS jamming widespread in the Gulf and Baltic
 
-Why it's at this level: A subsea link between the Philippines and Singapore, plus a link to Hong Kong, failed on 2 Oct with repairs expected to take weeks, and two cables off Perth were damaged after suspicious vessel activity. GNSS jamming remains widespread in the Gulf and Baltic. No new cable cut was reported to 1 Nov.
+Why it's at this level: A subsea link between the Philippines and Singapore, plus a link to Hong Kong, failed on 2 Oct with repairs expected to take weeks, and two cables off Perth were damaged after suspicious vessel activity. GNSS jamming remains widespread in the Gulf and Baltic. No new cable cut had been reported as of 2 Nov.
 
 What this means for you: Most users see little effect thanks to rerouting, but jamming is a growing hazard for aviation and shipping.
 

@@ -1,14 +1,14 @@
-# Euro-area economy — NORMAL (worsening)
-id euro-growth · Economy · horizon acute · checked 2026-11-01T11:52Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T23:52Z
+# Euro-area economy — NORMAL (stable)
+id euro-growth · Economy · horizon acute · checked 2026-11-02T11:58Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T23:58Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/euro-growth
 
 Value: Q3 GDP +0.4% q/q
-Rated on: Positive GDP growth and composite PMI > 50.
-Basis: published — Follows Eurostat GDP and HCOB PMI, read from the cited source by the AI assessor and checked against the rubric.
+Rated on: Positive GDP (+0.4% q/q) and composite PMI above 50
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-Euro area grew 0.4% in Q3, but France contracted and October PMIs slowed
+Euro-area GDP +0.4% in Q3, though France contracted; PMIs softening
 
-Why it's at this level: Eurostat's flash estimate on 30 Oct showed euro-area GDP up 0.4% in Q3, though French output contracted. October flash PMIs (23 Oct) showed expansion weakening, and the ECB warned on 29 Oct that energy prices pose downside risks to growth. Neither stagnation nor a sub-50 PMI is yet confirmed.
+Why it's at this level: Eurostat's flash estimate on 30 Oct showed euro-area GDP up 0.4% in Q3, though French output contracted. October flash PMIs (23 Oct) showed expansion weakening, and the ECB warned on 29 Oct that energy prices pose downside risks to growth. Final October PMIs are due from 2 Nov; neither stagnation nor a sub-50 composite is yet confirmed.
 
 What this means for you: Europe is still growing, but the energy shock is beginning to bite. A slowdown there would weigh on UK exports.
 

@@ -1,14 +1,14 @@
 # Trade war & tariffs — WATCH (stable)
-id trade-war · Geopolitics · horizon acute · checked 2026-11-02T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T19:51Z
+id trade-war · Geopolitics · horizon acute · checked 2026-11-02T11:58Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T01:58Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/trade-war
 
 Value: US effective tariff ~7%
-Rated on: Major export controls pending renewal; tariffs elevated
+Rated on: Major export controls pending renewal; tariffs elevated = Watch
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-Section 301 tariffs in place; China's rare-earth pause expires 10 Nov
+China's rare-earth export pause expires 10 Nov with no renewal; US tariffs ~7%
 
-Why it's at this level: China's one-year suspension of its October 2025 rare-earth export controls expires on 10 Nov, and no renewal had been announced as of 2 Nov; its April 2025 licensing rules remain in force. Lapsed controls would reinstate tighter licensing, including rules on products with small rare-earth content. US Section 301 tariffs keep the average effective rate near 7%.
+Why it's at this level: China's one-year suspension of its October 2025 rare-earth export controls expires on 10 Nov, and no renewal had been announced as of 2 Nov; its April 2025 licensing rules remain in force. Lapsed controls would reinstate tighter licensing. US Section 301 tariffs keep the average effective rate near 7%.
 
 What this means for you: Tariffs and export controls can raise prices for electronics, cars and other goods with Chinese parts.
 

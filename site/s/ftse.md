@@ -1,14 +1,14 @@
 # FTSE 100 — NORMAL (stable)
-id ftse · Markets · horizon acute · checked 2026-11-02T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T19:51Z
+id ftse · Markets · horizon acute · checked 2026-11-02T11:58Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T01:58Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/ftse
 
-Value: 10,730, -1.7% from high
-Rated on: FTSE drawdown 1.7% < 10% Watch line
-Basis: measured — Set by a fixed rule applied to open data (FTSE drawdown % = 1.66). Anyone can reproduce it from the public metrics file.
+Value: 10,730, -1.6% from high
+Rated on: FTSE drawdown 1.6% < 5% Watch line; no daily fall > 2.5%
+Basis: measured — Set by a fixed rule applied to open data (FTSE drawdown % = 1.65). Anyone can reproduce it from the public metrics file.
 
-FTSE 100 near its high, cushioned by energy and mining shares
+FTSE 100 about 1.6% below its high; energy and mining weighting cushions it
 
-Why it's at this level: The FTSE 100 last closed on 30 Oct at 10,730, about 1.7% below its 52-week high; London reopens on 2 Nov. Its heavy weighting to oil, gas and mining firms has cushioned it from the energy shock. The Bank of England decides on rates on 5 Nov.
+Why it's at this level: The FTSE 100 was near 10,730 on 2 Nov, about 1.6% below its 52-week high and up 2.2% over the month. Its heavy weighting to oil, gas and mining firms has cushioned it from the energy shock and the 30 Oct sell-off in US technology shares. The Bank of England decides on rates on 5 Nov.
 
 What this means for you: UK shares are near record levels. Pension funds with UK equity exposure have not seen a market fall of note.
 

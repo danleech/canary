@@ -1,5 +1,47 @@
 [
  {
+  "t": "2026-11-02T11:58:59Z",
+  "applied": 78,
+  "changed": [
+   "other-cyclones"
+  ],
+  "warnings": [],
+  "note": "Web fetches failed for many pages this run; several quiet signals keep sources verified in the previous run (05:52Z). Sahel and Myanmar sources replaced to drop avoid-list domains. Cyclone status follows the GDACS red alert.",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 25,
+   "published": 10,
+   "judged": 43
+  },
+  "sources": {
+   "citations": 150,
+   "news_citations": 104,
+   "outlets": 76,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     10
+    ],
+    [
+     "aninews.in",
+     8
+    ],
+    [
+     "clickondetroit.com",
+     6
+    ],
+    [
+     "tradingeconomics.com",
+     5
+    ],
+    [
+     "rte.ie",
+     4
+    ]
+   ]
+  }
+ },
+ {
   "t": "2026-11-02T05:51:55Z",
   "applied": 41,
   "changed": [

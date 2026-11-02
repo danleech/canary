@@ -1,14 +1,14 @@
 # Extreme heat — NORMAL (stable)
-id heat · Weather & Hazards · horizon acute · checked 2026-11-01T11:52Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T23:52Z
+id heat · Weather & Hazards · horizon acute · checked 2026-11-02T11:58Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T23:58Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/heat
 
 Value: No major heatwave warnings (1 Nov)
-Rated on: No major heatwaves affecting large populations.
+Rated on: No major heatwaves affecting large populations
 Basis: judged — The AI assessor's reading of 2 sources from 1 outlet against the rubric. Check the sources before relying on it.
 
-October heat records set earlier in the month; no major heatwave now
+No major heatwave warnings over large populations (2 Nov)
 
-Why it's at this level: October brought record heat to southern China (39.5°C on 3 Oct) and the central US (13 Oct), but no major heatwave warnings covering large populations were found as of 1 Nov. The strong El Niño raises the risk of Southern Hemisphere heat this summer.
+Why it's at this level: October brought record heat to southern China (39.5°C on 3 Oct) and the central US (13 Oct), but no major heatwave warnings covering large populations were found as of 2 Nov. The strong El Niño raises the risk of Southern Hemisphere heat this summer.
 
 What this means for you: No major heat risk currently. Australia and southern Africa face elevated heat risk into their summer.
 

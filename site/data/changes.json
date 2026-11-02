@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-02T11:58:59Z",
+  "id": "other-cyclones",
+  "name": "Pacific & Indian cyclones",
+  "from": "amber",
+  "to": "red",
+  "reason": "Cyclone Murasu, a GDACS red alert, due to cross the Andhra Pradesh coast on 2–3 Nov"
+ },
+ {
   "t": "2026-11-02T05:51:55Z",
   "id": "other-cyclones",
   "name": "Pacific & Indian cyclones",
