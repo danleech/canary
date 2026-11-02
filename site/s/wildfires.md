@@ -1,5 +1,5 @@
 # Wildfires — NORMAL (stable)
-id wildfires · Weather & Hazards · horizon acute · checked 2026-11-02T11:58Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T01:58Z
+id wildfires · Weather & Hazards · horizon acute · checked 2026-11-02T18:00Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T08:00Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/wildfires
 
 Value: GDACS: no orange/red
@@ -8,7 +8,7 @@ Basis: measured — Set by a fixed rule applied to open data (GDACS wildfire: 0 
 
 No GDACS orange or red wildfire alerts
 
-Why it's at this level: GDACS listed no orange or red wildfire alerts at 11:40 UTC on 2 Nov, among 68 green-level fires. No fires are currently threatening large populated areas.
+Why it's at this level: GDACS listed no orange or red wildfire alerts at 17:47 UTC on 2 Nov, among 68 green-level fires. No fires are currently threatening large populated areas.
 
 What this means for you: No major wildfire disruption to travel at present.
 

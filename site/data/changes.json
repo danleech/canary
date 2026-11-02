@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-02T18:00:42Z",
+  "id": "gold",
+  "name": "Gold (fear gauge)",
+  "from": "amber",
+  "to": "green",
+  "reason": "Gold near $3,970, down 7.8% over three months, just inside the Watch line"
+ },
+ {
   "t": "2026-11-02T11:58:59Z",
   "id": "other-cyclones",
   "name": "Pacific & Indian cyclones",

@@ -4,7 +4,7 @@
    "status": "green",
    "trend": "flat",
    "summary": "VIX just under 20 after the S&P 500's worst day since June on 30 Oct; drawdown 3%",
-   "state": "The S&P 500 fell 1.8% on 30 Oct, its worst day since June, led by technology and AI-related shares, leaving it about 3% below its 52-week high (AP). The VIX was 19.0 on 2 Nov, just under the 20 Watch line, and US futures edged higher. The 3 Nov midterms, the 5 Nov Bank of England decision and 6 Nov payrolls fall this week.",
+   "state": "The S&P 500 fell 1.8% on 30 Oct, its worst day since June, led by technology and AI-related shares, and was about 2.9% below its 52-week high on 2 Nov. The VIX was 19.5 on 2 Nov, just under the 20 Watch line. The 3 Nov midterms, the 5 Nov Bank of England decision and 6 Nov payrolls fall this week.",
    "for_you": "Share prices are moving within normal ranges. Pension and investment values may swing more around this week's elections and central bank decisions.",
    "sources": [
     {
@@ -18,19 +18,19 @@
      "date": "2026-11-02"
     }
    ],
-   "value": "VIX 19.0, S&P -3.0%",
+   "value": "VIX 19.5, S&P -2.9%",
    "value_num": 18.96,
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "VIX 19.0 < 20 Watch line; S&P drawdown 3.0% < 5%",
+   "rubric_hit": "VIX 19.5 < 20 Watch line; S&P drawdown 2.9% < 5%",
    "basis": "measured",
-   "basis_detail": "VIX=18.96; S&P drawdown %=3.05"
+   "basis_detail": "VIX=19.50; S&P drawdown %=2.86"
   },
   "ftse": {
    "status": "green",
    "trend": "flat",
-   "summary": "FTSE 100 about 1.6% below its high; energy and mining weighting cushions it",
-   "state": "The FTSE 100 was near 10,730 on 2 Nov, about 1.6% below its 52-week high and up 2.2% over the month. Its heavy weighting to oil, gas and mining firms has cushioned it from the energy shock and the 30 Oct sell-off in US technology shares. The Bank of England decides on rates on 5 Nov.",
+   "summary": "FTSE 100 about 1.4% below its high; energy and mining weighting cushions it",
+   "state": "The FTSE 100 closed near 10,761 on 2 Nov, about 1.4% below its 52-week high and up 2.5% over the month. Its heavy weighting to oil, gas and mining firms has cushioned it from the energy shock and the 30 Oct sell-off in US technology shares. The Bank of England decides on rates on 5 Nov.",
    "for_you": "UK shares are near record levels. Pension funds with UK equity exposure have not seen a market fall of note.",
    "sources": [
     {
@@ -39,19 +39,19 @@
      "date": "2026-11-02"
     }
    ],
-   "value": "10,730, -1.6% from high",
+   "value": "10,761, -1.4% from high",
    "value_num": 10730,
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "FTSE drawdown 1.6% < 5% Watch line; no daily fall > 2.5%",
+   "rubric_hit": "FTSE drawdown 1.4% < 5% Watch line; no daily fall > 2.5%",
    "basis": "measured",
-   "basis_detail": "FTSE drawdown %=1.65"
+   "basis_detail": "FTSE drawdown %=1.37"
   },
   "bond-volatility": {
    "status": "amber",
    "trend": "flat",
-   "summary": "Treasury volatility (MOVE) at the 100 Watch line; 10-year yield 4.93%",
-   "state": "The MOVE index of Treasury volatility was 100.2 at the 30 Oct close, on the Watch threshold, with the US 10-year yield at 4.93%, about 35bp lower over the month. The 3 Nov midterms and 6 Nov payrolls are the next tests for bond markets.",
+   "summary": "Treasury volatility (MOVE) just above the 100 Watch line; 10-year yield 4.88%",
+   "state": "The MOVE index of Treasury volatility was about 100.8 on 2 Nov, just above the Watch threshold, with the US 10-year yield at 4.88%, about 43bp lower over the month. The 3 Nov midterms and 6 Nov payrolls are the next tests for bond markets.",
    "for_you": "Borrowing costs for mortgages and loans tied to US and global bond yields remain high and changeable.",
    "sources": [
     {
@@ -65,19 +65,19 @@
      "date": "2026-11-02"
     }
    ],
-   "value": "MOVE 100, 10y 4.93%",
+   "value": "MOVE 101, 10y 4.88%",
    "value_num": 100.2,
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "MOVE 100.2 ≥ 100 Watch line",
+   "rubric_hit": "MOVE 100.8 ≥ 100 Watch line",
    "basis": "measured",
-   "basis_detail": "MOVE=100.20; US10y 1m move bp=34.80"
+   "basis_detail": "MOVE=100.84; US10y 1m move bp=42.90"
   },
   "credit-spreads": {
    "status": "green",
-   "trend": "flat",
-   "summary": "US high-yield spreads 3.26%, well inside the 4% Watch line",
-   "state": "The US high-yield option-adjusted spread was 3.26% on 29 Oct, well inside the 4% Watch line and 14bp wider over the month. Lenders are not demanding a meaningful extra premium for default risk despite higher rates and energy costs.",
+   "trend": "up",
+   "summary": "US high-yield spreads 3.44%, inside the 4% Watch line but at a 52-week high",
+   "state": "The US high-yield option-adjusted spread was 3.44% on 30 Oct, inside the 4% Watch line but at its widest in a year and 20bp wider over the month. Lenders are demanding a little more for default risk as rates and energy costs stay high, but there is no broad credit squeeze.",
    "for_you": "Companies can still borrow on normal terms; no broad corporate credit squeeze is under way.",
    "sources": [
     {
@@ -86,19 +86,19 @@
      "date": "2026-11-02"
     }
    ],
-   "value": "HY OAS 3.26%",
+   "value": "HY OAS 3.44%",
    "value_num": 3.26,
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "HY OAS 3.26% < 4% Watch line",
+   "rubric_hit": "HY OAS 3.44% < 4% Watch line",
    "basis": "measured",
-   "basis_detail": "HY OAS %=3.26"
+   "basis_detail": "HY OAS %=3.44"
   },
   "dollar": {
    "status": "green",
    "trend": "flat",
-   "summary": "Dollar index 101.6, up 1.9% over three months; inside normal range",
-   "state": "The DXY dollar index was 101.6 on 2 Nov, up 1.9% over three months and 0.7% lower on the week. Moves remain well inside the 5% three-month Watch line and the 90–108 range.",
+   "summary": "Dollar index 101.7, up 2.0% over three months; inside normal range",
+   "state": "The DXY dollar index was 101.7 on 2 Nov, up 2.0% over three months and 0.6% lower on the week. Moves remain well inside the 5% three-month Watch line and the 90–108 range.",
    "for_you": "Exchange rates are moving normally; holiday money and import prices are not being hit by an abrupt dollar surge.",
    "sources": [
     {
@@ -107,19 +107,19 @@
      "date": "2026-11-02"
     }
    ],
-   "value": "DXY 101.6, 3m +1.9%",
+   "value": "DXY 101.7, 3m +2.0%",
    "value_num": 101.6,
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "DXY 3m move +1.9% < 5% Watch line",
+   "rubric_hit": "DXY 3m move +2.0% < 5% Watch line",
    "basis": "measured",
-   "basis_detail": "DXY 3m move %=1.95"
+   "basis_detail": "DXY 3m move %=1.99"
   },
   "banking-stress": {
    "status": "green",
    "trend": "flat",
    "summary": "Financial stress indices below average; no bank failures reported",
-   "state": "The St Louis Fed Financial Stress Index was −0.58 in the week to 23 Oct, below its long-run average, and the ECB's systemic stress indicator was 0.013 on 29 Oct, a low reading. No new US or European bank failure or rescue had been reported as of 2 Nov.",
+   "state": "The St Louis Fed Financial Stress Index was −0.58 in the week to 23 Oct, below its long-run average, and the ECB's systemic stress indicator was 0.011 on 30 Oct, a low reading. No new US or European bank failure or rescue had been reported as of 2 Nov.",
    "for_you": "Bank deposits are protected by deposit guarantee schemes (FSCS in the UK); no sign of stress in the banking system now.",
    "sources": [
     {
@@ -135,17 +135,17 @@
    ],
    "value": "STLFSI -0.58, CISS 0.01",
    "value_num": -0.58,
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "STLFSI -0.58 < 0 and CISS 0.01 < 0.25",
    "basis": "measured",
    "basis_detail": "STLFSI=-0.58; ECB CISS=0.01"
   },
   "gold": {
-   "status": "amber",
+   "status": "green",
    "trend": "down",
-   "summary": "Gold near $3,916, down 9.1% over three months as yields and rate hikes weigh",
-   "state": "Gold futures were near $3,916 on 2 Nov, 9.1% lower over three months and 3.9% down on the week, past the 8% three-month fall that marks Watch. Prices edged up early on 2 Nov as oil fell, but the slide during the Gulf war is consistent with higher yields and Fed tightening rather than a flight to safety.",
+   "summary": "Gold near $3,970, down 7.8% over three months, just inside the Watch line",
+   "state": "Gold futures were near $3,970 on 2 Nov, 7.8% lower over three months and 2.6% down on the week, a fall now just inside the 8% three-month Watch line. Prices rose on 2 Nov as oil fell; the slide during the Gulf war reflects higher yields and Fed tightening rather than a flight to safety.",
    "for_you": "Gold prices are falling faster than usual; holders of gold or gold funds are seeing larger value swings.",
    "sources": [
     {
@@ -154,47 +154,47 @@
      "date": "2026-11-02"
     },
     {
-     "title": "CNBC — Gold rises on softer oil; markets parse Fed signals",
+     "title": "CNBC — Gold rises on softer oil markets",
      "url": "https://www.cnbc.com/amp/2026/11/02/gold-rises-on-softer-oil-markets-parse-fed-signals.html",
      "date": "2026-11-02"
     }
    ],
-   "value": "$3,916, 3m -9.1%",
-   "value_num": 3916,
-   "checked_at": "2026-11-02T11:58:59Z",
-   "changed_at": "2026-11-02T05:51:55Z",
-   "rubric_hit": "Gold 3m change −9.1%, beyond the −8% Watch line",
+   "value": "$3,970, 3m -7.8%",
+   "value_num": 3969.5,
+   "checked_at": "2026-11-02T18:00:42Z",
+   "changed_at": "2026-11-02T18:00:42Z",
+   "rubric_hit": "Gold 3m change −7.8%, inside the −8% Watch line",
    "basis": "measured",
-   "basis_detail": "Gold 3m gain %=-9.05; 3m fall -9.1%"
+   "basis_detail": "Gold 3m gain %=-7.80"
   },
   "crypto": {
    "status": "amber",
    "trend": "down",
-   "summary": "Binance still in phased withdrawals after $6.3bn theft; Bitcoin 10% below its high",
-   "state": "Binance, the largest exchange, began resuming withdrawals on 31 Oct after about $6.3bn was drained in late October, saying about 90% of stolen user assets are covered; the FBI attributed the theft to North Korea on 1 Nov. Bitcoin was near $77,800 on 2 Nov, about 10% below its high, so the status rests on the exchange's stress rather than prices. Its promised proof of reserves is the next marker.",
+   "summary": "Binance restoring withdrawals in phases after $6.3bn theft; Bitcoin 11% below its high",
+   "state": "Binance began phased restoration of withdrawals on 1 Nov after about $6.3bn was stolen in late October, which the FBI attributed to North Korea; on 2 Nov it said it had replaced about 95% of stolen assets and showed full reserves for ten major assets (Help Net Security). Bitcoin was near $76,800 on 2 Nov, 11% below its high, so the Watch status rests on the exchange's continuing stress.",
    "for_you": "Binance customers may still face delays on some withdrawals. Any shortfall in reserves would matter most for those holding funds on the exchange.",
    "sources": [
     {
-     "title": "CNBC — Binance hack: asset coverage and withdrawals",
+     "title": "Help Net Security — FBI pins $6.3 billion Binance heist on North Korea",
+     "url": "https://www.helpnetsecurity.com/2026/11/02/fbi-north-korea-binance-hack/",
+     "date": "2026-11-02"
+    },
+    {
+     "title": "CNBC — Binance resumes withdrawals following $6.3 billion hack",
      "url": "https://www.cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html",
      "date": "2026-10-31"
     },
     {
-     "title": "NBC News — FBI says North Korea was behind $6 billion Binance crypto hack",
-     "url": "https://www.nbcnews.com/business/business-news/fbi-says-north-korea-was-6-billion-binance-crypto-hack-rcna606758",
-     "date": "2026-11-01"
-    },
-    {
-     "title": "Yahoo Finance — Bitcoin",
+     "title": "Yahoo Finance — Bitcoin USD",
      "url": "https://finance.yahoo.com/quote/BTC-USD",
      "date": "2026-11-02"
     }
    ],
-   "value": "BTC $77,786, -10% from high",
-   "value_num": 77786,
-   "checked_at": "2026-11-02T11:58:59Z",
+   "value": "BTC $76,801, -11% from high",
+   "value_num": 76801,
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-11-01T23:50:31Z",
-   "rubric_hit": "Top-10 exchange under stress (Binance phased withdrawals) = Watch; BTC drawdown 10% < 25%",
+   "rubric_hit": "Top-10 exchange under stress (Binance phased withdrawals) = Watch; BTC drawdown 11% < 25%",
    "basis": "judged",
    "basis_detail": "raised above the data floor on reported events"
   },
@@ -218,7 +218,7 @@
    ],
    "value": "Sahm 0.00, 10y–2y +0.38",
    "value_num": 0.0,
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "Sahm 0.00 < 0.30 Watch line",
    "basis": "measured",
@@ -385,9 +385,9 @@
   },
   "oil": {
    "status": "red",
-   "trend": "flat",
-   "summary": "Brent near $108.5 after a 3% fall on 2 Nov; Hormuz still largely shut",
-   "state": "Brent fell about 3% early on 2 Nov to near $108.5 as Iranian negotiators in Qatar discussed a plan that could reopen the Strait of Hormuz within two days (AP); it is up 8% on the month and stays at Alert under the board's hysteresis rule. Iran said on 2 Nov that the strait stays shut until the US lifts its naval blockade.",
+   "trend": "down",
+   "summary": "Brent near $105 after a near-4% fall on 2 Nov on Doha talks; Hormuz still largely shut",
+   "state": "Brent fell nearly 4% on 2 Nov to about $104.8 as Iran said a condensed plan to reopen Hormuz in exchange for ending the US blockade could be implemented within two days (Reuters); it is still 4% up on the month. Iranian sources said a new US attack looked more likely than a deal. The status stays at Alert under the board's hysteresis rule while Hormuz remains largely shut.",
    "for_you": "Expect continued high petrol, diesel and heating-oil prices, with knock-on effects on transport costs and inflation.",
    "sources": [
     {
@@ -396,29 +396,24 @@
      "date": "2026-11-02"
     },
     {
-     "title": "AP — Global shares mixed and US futures advance, while oil prices fall",
-     "url": "https://www.clickondetroit.com/business/2026/11/02/asian-shares-mostly-advance-but-tech-stocks-remain-volatile-while-oil-sinks-33/",
-     "date": "2026-11-02"
-    },
-    {
-     "title": "ANI — Iran demands end to US naval blockade before any agreement on Strait of Hormuz",
-     "url": "https://www.aninews.in/news/world/middle-east/ball-is-in-americas-court-iran-demands-end-to-us-naval-blockade-before-any-agreement-on-strait-of-hormuz20261102162637/",
+     "title": "Reuters via Investing.com — Iranians have left Doha talks, draft proposal for US deal being circulated",
+     "url": "https://www.investing.com/news/commodities-news/iranians-have-left-doha-talks-draft-proposal-for-us-deal-being-circulated-official-says-4990460",
      "date": "2026-11-02"
     }
    ],
-   "value": "$108.5, 1m +8%",
-   "value_num": 108.46,
-   "checked_at": "2026-11-02T11:58:59Z",
+   "value": "$104.8, 1m +4%",
+   "value_num": 104.78,
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "Brent $108.5 just under $110 Alert line, held by hysteresis; Hormuz largely shut",
+   "rubric_hit": "Brent $104.8 below $110 Alert line, held by hysteresis; Hormuz largely shut",
    "basis": "measured",
-   "basis_detail": "Brent $=108.46; Brent 1m %=8.11"
+   "basis_detail": "Brent $=104.78; Brent 1m %=4.45"
   },
   "eu-gas": {
    "status": "red",
    "trend": "flat",
-   "summary": "European gas (TTF) near €100/MWh, up 36% in a month, as Qatari LNG stays blocked",
-   "state": "Dutch TTF gas was near €100/MWh on 2 Nov, far above the €70 Alert line and up 36% over the month. Hormuz, the export route for Qatari LNG, remained largely shut on 2 Nov; Iran said it would not reopen the strait until the US ends its naval blockade, while talks in Doha continue.",
+   "summary": "European gas (TTF) near €95/MWh, up 29% in a month, as Qatari LNG stays blocked",
+   "state": "Dutch TTF gas was near €95/MWh on 2 Nov, far above the €70 Alert line and up 29% over the month, easing slightly on hopes for the Doha talks. A Qatari LNG carrier was struck by unidentified objects in the Gulf on 30 Oct (Nakilat), and Hormuz, the export route for Qatari LNG, remained largely shut on 2 Nov.",
    "for_you": "Wholesale gas is feeding into energy bills; the Ofgem price cap sets what most UK households pay. Ofgem and gov.uk list help for those struggling with bills.",
    "sources": [
     {
@@ -427,43 +422,48 @@
      "date": "2026-11-02"
     },
     {
-     "title": "ANI — Iran demands end to US naval blockade before any agreement on Strait of Hormuz",
-     "url": "https://www.aninews.in/news/world/middle-east/ball-is-in-americas-court-iran-demands-end-to-us-naval-blockade-before-any-agreement-on-strait-of-hormuz20261102162637/",
+     "title": "Anadolu — Qatari LNG carrier struck by unidentified objects in Gulf waters",
+     "url": "https://www.aa.com.tr/en/energy/lng-lpg/qatari-lng-carrier-struck-by-unidentified-objects-in-gulf-waters-company/60646",
+     "date": "2026-11-01"
+    },
+    {
+     "title": "Reuters via Investing.com — Iranians have left Doha talks, draft proposal for US deal being circulated",
+     "url": "https://www.investing.com/news/commodities-news/iranians-have-left-doha-talks-draft-proposal-for-us-deal-being-circulated-official-says-4990460",
      "date": "2026-11-02"
     }
    ],
-   "value": "€100/MWh",
-   "value_num": 100.1,
-   "checked_at": "2026-11-02T11:58:59Z",
+   "value": "€95/MWh",
+   "value_num": 95.03,
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "TTF €100 > €70 Alert line; Qatari LNG route impeded",
+   "rubric_hit": "TTF €95 > €70 Alert line; Qatari LNG route impeded",
    "basis": "measured",
-   "basis_detail": "TTF €/MWh=100.08"
+   "basis_detail": "TTF €/MWh=95.03"
   },
   "chokepoints": {
    "status": "red",
    "trend": "flat",
-   "summary": "Hormuz largely shut after mine strikes on tankers on 1 Nov; Iran ties reopening to blockade",
-   "state": "Iran's IRGC said on 1 Nov that two tankers on an unauthorised route struck mines in the Strait of Hormuz, after attacks on tankers on 30–31 Oct (gCaptain). On 2 Nov Iran's foreign ministry said the strait would not reopen until the US lifts its naval blockade; a Qatari-mediated plan could reopen it within two days if accepted. Drones hit at least seven cargo ships off Romania and Bulgaria in October.",
+   "summary": "Hormuz largely shut after mine strikes on 1 Nov; Iran offers two-day reopening if the blockade ends",
+   "state": "Iran's IRGC said on 1 Nov that two tankers struck mines in the Strait of Hormuz, and a Qatari LNG carrier was hit by unidentified objects in the Gulf on 30 Oct (Nakilat). On 2 Nov Iran said a condensed plan to reopen the strait within two days, in return for the US ending its blockade of Iranian ports, remains the basis for talks; no deal had been reached (Reuters). Drones hit at least seven cargo ships off Romania and Bulgaria in October.",
    "for_you": "Shipping delays and higher freight and insurance costs feed through to fuel and goods prices. Mariners should follow UKMTO and flag-state guidance.",
    "sources": [
     {
-     "title": "gCaptain — Iran's Guards say two tankers hit mines in Strait of Hormuz",
+     "title": "gCaptain — Iran’s Guards say two tankers hit mines in Strait of Hormuz",
      "url": "https://gcaptain.com/irans-guards-say-two-tankers-hit-mines-in-strait-of-hormuz/",
      "date": "2026-11-01"
     },
     {
-     "title": "ANI — Iran demands end to US naval blockade before any agreement on Strait of Hormuz",
-     "url": "https://www.aninews.in/news/world/middle-east/ball-is-in-americas-court-iran-demands-end-to-us-naval-blockade-before-any-agreement-on-strait-of-hormuz20261102162637/",
-     "date": "2026-11-02"
+     "title": "Anadolu — Qatari LNG carrier struck by unidentified objects in Gulf waters",
+     "url": "https://www.aa.com.tr/en/energy/lng-lpg/qatari-lng-carrier-struck-by-unidentified-objects-in-gulf-waters-company/60646",
+     "date": "2026-11-01"
     },
     {
-     "title": "Al Jazeera — Iran war live: Tehran says Hormuz 'security restored' if US agrees to plan",
-     "url": "https://www.aljazeera.com/news/liveblog/2026/11/2/iran-war-live-tankers-hit-in-hormuz-trump-again-says-conflict-to-end-soon",
+     "title": "Reuters via Investing.com — Iranians have left Doha talks, draft proposal for US deal being circulated",
+     "url": "https://www.investing.com/news/commodities-news/iranians-have-left-doha-talks-draft-proposal-for-us-deal-being-circulated-official-says-4990460",
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Hormuz largely shut; mines and attacks",
    "rubric_hit": "Hormuz traffic materially impeded with attacks on shipping = Alert",
@@ -565,7 +565,7 @@
      "date": "2026-10-12"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No major PLA exercise since Dec 2025",
    "rubric_hit": "Routine PLA activity; no large-scale exercise",
@@ -595,7 +595,7 @@
      "date": "2026-10-31"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Black Sea ship attacks; incursions",
    "rubric_hit": "Attacks off NATO coasts attributed to Russia by Romania = Watch",
@@ -605,22 +605,22 @@
   "iran-nuclear": {
    "status": "amber",
    "trend": "up",
-   "summary": "No IAEA access in Iran; Trump says war ends 'one way or the other'",
-   "state": "The IAEA has had no access to Iranian sites and reported Iran to the UN Security Council on 1 Oct. Trump said on 1 Nov the war would end 'very soon, one way or the other', and the Wall Street Journal reported a letter from Vice President Vance to Iran's security council aimed at preventing further US strikes (ANI, 2 Nov). No new strike on nuclear sites was reported as of 2 Nov.",
+   "summary": "No IAEA access in Iran; Tehran rules out moving its enriched uranium abroad",
+   "state": "The IAEA has had no access to Iranian sites and reported Iran to the UN Security Council on 1 Oct. On 2 Nov Iran said it would return to nuclear talks only after its conditions are verified and would not transfer its highly enriched uranium stockpile abroad (Reuters). Trump has said there will be no new strike before the 3 Nov midterms; none on nuclear sites was reported as of 2 Nov.",
    "for_you": "No direct public safety risk outside the region. Travel advice for Iran and the Gulf is on the FCDO website.",
    "sources": [
     {
-     "title": "ANI — Iran demands end to US naval blockade before any agreement on Strait of Hormuz",
-     "url": "https://www.aninews.in/news/world/middle-east/ball-is-in-americas-court-iran-demands-end-to-us-naval-blockade-before-any-agreement-on-strait-of-hormuz20261102162637/",
+     "title": "Reuters via Investing.com — Iranians have left Doha talks, draft proposal for US deal being circulated",
+     "url": "https://www.investing.com/news/commodities-news/iranians-have-left-doha-talks-draft-proposal-for-us-deal-being-circulated-official-says-4990460",
      "date": "2026-11-02"
     },
     {
-     "title": "Al Jazeera — Iran war live: Tehran says Hormuz 'security restored' if US agrees to plan",
-     "url": "https://www.aljazeera.com/news/liveblog/2026/11/2/iran-war-live-tankers-hit-in-hormuz-trump-again-says-conflict-to-end-soon",
+     "title": "ANI — Ball is in America’s court: Iran demands end to US naval blockade",
+     "url": "https://www.aninews.in/news/world/middle-east/ball-is-in-americas-court-iran-demands-end-to-us-naval-blockade-before-any-agreement-on-strait-of-hormuz20261102162637/",
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No IAEA access",
    "rubric_hit": "No IAEA access; credible threats of further strikes = Watch",
@@ -645,7 +645,7 @@
      "date": "2026-11-01"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Missile test on 31 Oct",
    "rubric_hit": "Repeated ballistic missile launches = Watch",
@@ -670,7 +670,7 @@
      "date": "2026-10-14"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "US effective tariff ~7%",
    "rubric_hit": "Major export controls pending renewal; tariffs elevated = Watch",
@@ -730,58 +730,58 @@
   "russia-ukraine": {
    "status": "red",
    "trend": "flat",
-   "summary": "Mass Russian drone strikes on 1 Nov caused nationwide power cuts; Kherson truce ended",
-   "state": "Ukraine's air force said Russia launched 433 drones overnight into 1 Nov and 326 more during the day, and the energy ministry reported nationwide power outages, including in Kyiv. A local truce in Kherson region that ran from 27 Oct ended on 1 Nov, with Kyiv saying Russia refused an extension (RTÉ). Russia said a drone hit an industrial site east of Moscow on 1 Nov.",
+   "summary": "Russian drone strikes cut power in 10 Ukrainian regions on 2 Nov after mass attack on 1 Nov",
+   "state": "Russia launched 193 drones overnight into 2 Nov after 759 on 1 Nov; power outages hit 10 regions including Kyiv, where emergency cuts affected the metro, and two people were killed and 32 injured over the day (Kyiv Independent, citing Ukrainian officials). A local truce in Kherson region ended on 1 Nov. Both sides reported cyberattacks on emergency alert apps on 2 Nov.",
    "for_you": "Travel to Ukraine is against FCDO advice. Energy and grain markets remain sensitive to the war.",
    "sources": [
     {
-     "title": "Ukrainska Pravda — Russia attacks Ukraine with 433 drones overnight, 371 downed",
+     "title": "Kyiv Independent — Russian attacks kill 2, injure over 30 as 10 regions face power outages",
+     "url": "https://kyivindependent.com/russian-attacks-kill-2-injure-over-30-across-ukraine-over-past-day-as-10-regions-face-power-outages/",
+     "date": "2026-11-02"
+    },
+    {
+     "title": "Ukrainska Pravda — Russia launched hundreds of drones on 1 Nov",
      "url": "https://www.pravda.com.ua/eng/news/2026/11/01/8060690/",
      "date": "2026-11-01"
     },
     {
-     "title": "RTÉ — Cyberattacks hit Russia, Ukraine emergency warning apps",
-     "url": "https://www.rte.ie/news/ukraine/2026/1102/1597579-ukraine-russia/",
+     "title": "PBS NewsHour — Ukraine and Russia both report fake emergency alerts after cyberattacks",
+     "url": "https://www.pbs.org/newshour/world/ukraine-and-russia-both-report-fake-emergency-alerts-after-cyberattacks-target-apps-as-limited-ceasefire-ends",
      "date": "2026-11-02"
-    },
-    {
-     "title": "Ukrinform — Air defence neutralises 371 of 433 Russian drones",
-     "url": "https://www.ukrinform.net/rubric-ato/4180165-air-defense-neutralizes-371-of-433-russian-drones-launched-against-ukraine-overnight.html",
-     "date": "2026-11-01"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "759 drones on 1 Nov",
-   "value_num": 759,
-   "rubric_hit": "Mass strikes on energy infrastructure = Alert",
+   "value": "193 drones on 2 Nov; 10 regions blacked out",
+   "value_num": 193,
+   "rubric_hit": "Mass strikes on energy infrastructure causing multi-region blackouts = Alert",
    "basis": "judged",
    "basis_detail": ""
   },
   "middle-east": {
    "status": "red",
    "trend": "up",
-   "summary": "US–Iran war continues with a naval blockade; Iran says Hormuz shut until it is lifted",
-   "state": "The war that began with US–Israeli strikes on Iran on 28 Feb continues with a US naval blockade and Iranian attacks on shipping; Iran said two tankers hit mines in Hormuz on 1 Nov. On 2 Nov Iran said the 'ball is in America's court' on a Qatari-mediated plan, while Trump said the war would end 'very soon, one way or the other'. Israeli strikes in Gaza continue despite the ceasefire.",
+   "summary": "US–Iran war continues under a naval blockade; Doha talks paused with no breakthrough",
+   "state": "The war that began with US–Israeli strikes on Iran on 28 Feb continues with a US naval blockade and attacks on Gulf shipping; two tankers hit mines in Hormuz on 1 Nov. Qatari-mediated talks ended on 1 Nov without a breakthrough and a draft proposal is circulating; Trump has said there will be no new attack before the 3 Nov midterms (Reuters, 2 Nov). Israeli strikes in Gaza continue despite the ceasefire.",
    "for_you": "FCDO advises against travel to much of the region; follow its travel advice and airline updates.",
    "sources": [
     {
-     "title": "ANI — Iran demands end to US naval blockade before any agreement on Strait of Hormuz",
-     "url": "https://www.aninews.in/news/world/middle-east/ball-is-in-americas-court-iran-demands-end-to-us-naval-blockade-before-any-agreement-on-strait-of-hormuz20261102162637/",
-     "date": "2026-11-02"
-    },
-    {
-     "title": "Al Jazeera — Iran war live: Tehran says Hormuz 'security restored' if US agrees to plan",
-     "url": "https://www.aljazeera.com/news/liveblog/2026/11/2/iran-war-live-tankers-hit-in-hormuz-trump-again-says-conflict-to-end-soon",
+     "title": "Reuters via Investing.com — Iranians have left Doha talks, draft proposal for US deal being circulated",
+     "url": "https://www.investing.com/news/commodities-news/iranians-have-left-doha-talks-draft-proposal-for-us-deal-being-circulated-official-says-4990460",
      "date": "2026-11-02"
     },
     {
      "title": "Anadolu — Israel kills 6 Palestinians in Gaza strikes despite ceasefire",
      "url": "https://www.aa.com.tr/en/middle-east/israel-kills-6-palestinians-in-gaza-strikes-despite-ceasefire/4104705",
      "date": "2026-11-02"
+    },
+    {
+     "title": "Al Jazeera — Iran war live: tankers hit in Hormuz",
+     "url": "https://www.aljazeera.com/news/liveblog/2026/11/2/iran-war-live-tankers-hit-in-hormuz-trump-again-says-conflict-to-end-soon",
+     "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "US–Iran war since 28 Feb",
    "rubric_hit": "Active interstate war with attacks on shipping = Alert",
@@ -916,7 +916,7 @@
      "date": "2026-10-03"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "LoC tension, no strikes",
    "rubric_hit": "Persistent tension without strikes = Watch",
@@ -941,7 +941,7 @@
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No US–Russia treaty limits",
    "rubric_hit": "Arms control lapsed without replacement = Watch",
@@ -961,7 +961,7 @@
      "date": "2026-11-01"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No active systems",
    "rubric_hit": "No active systems or NHC formation risk",
@@ -971,24 +971,29 @@
   "other-cyclones": {
    "status": "red",
    "trend": "up",
-   "summary": "Cyclone Murasu, a GDACS red alert, due to cross the Andhra Pradesh coast on 2–3 Nov",
-   "state": "GDACS raised Cyclone Murasu back to a red alert on 2 Nov after briefly lowering it to green. India's Meteorological Department expects the severe cyclonic storm to cross the coast near Ongole, between Nellore and Narsapur, overnight on 2–3 Nov with winds of 100–110km/h. Odisha is speeding up evacuations with more than 300 rescue teams deployed, and Chennai airport cancelled 11 flights on 2 Nov.",
+   "summary": "Cyclone Murasu, a GDACS red alert, due to cross the Andhra Pradesh coast overnight 2–3 Nov",
+   "state": "GDACS kept Cyclone Murasu at a red alert on 2 Nov. India's Meteorological Department expects the severe cyclonic storm to cross the coast near Ongole between 23:30 on 2 Nov and 04:00 on 3 Nov local time, with winds of 100–110km/h gusting to 120km/h (DD News). Andhra Pradesh plans to evacuate about 30,000 people, and schools are closed in Andhra Pradesh, Tamil Nadu and Odisha (Al Jazeera).",
    "for_you": "Travellers to Andhra Pradesh, Odisha and Tamil Nadu should follow India Meteorological Department warnings and FCDO travel advice, and expect flight cancellations.",
    "sources": [
     {
-     "title": "GDACS — Tropical Cyclone MURASU-26 (red alert)",
-     "url": "https://www.gdacs.org/report.aspx?eventid=1001346&episodeid=6&eventtype=TC",
+     "title": "GDACS — Tropical Cyclone MURASU-26",
+     "url": "https://www.gdacs.org/report.aspx?eventid=1001346&episodeid=7&eventtype=TC",
      "date": "2026-11-02"
     },
     {
-     "title": "Inshorts — Cyclone Murasu: 11 Chennai flights cancelled, Odisha evacuates",
-     "url": "https://inshorts.com/en/news/cyclone-murasu--11-chennai-flights-axed--odisha-evacuates-1793617321632",
+     "title": "DD News — Cyclone Murasu likely to cross Andhra coast near Ongole tonight: IMD",
+     "url": "https://ddnews.gov.in/en/cyclone-murasu-likely-to-cross-andhra-coast-near-ongole-tonight-imd/",
+     "date": "2026-11-02"
+    },
+    {
+     "title": "Al Jazeera — Thousands evacuated as India braces for second cyclone in a week",
+     "url": "https://www.aljazeera.com/news/2026/11/2/thousands-evacuated-as-india-braces-for-second-cyclone-in-a-week",
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-11-02T11:58:59Z",
-   "value": "Murasu: GDACS red; landfall 2–3 Nov",
+   "value": "Murasu landfall due overnight 2–3 Nov",
    "rubric_hit": "GDACS red cyclone alert (Murasu) = Alert",
    "basis": "measured",
    "basis_detail": "GDACS cyclone: 1 red / 0 orange"
@@ -1022,7 +1027,7 @@
    "status": "green",
    "trend": "flat",
    "summary": "No GDACS orange or red wildfire alerts",
-   "state": "GDACS listed no orange or red wildfire alerts at 11:40 UTC on 2 Nov, among 68 green-level fires. No fires are currently threatening large populated areas.",
+   "state": "GDACS listed no orange or red wildfire alerts at 17:47 UTC on 2 Nov, among 68 green-level fires. No fires are currently threatening large populated areas.",
    "for_you": "No major wildfire disruption to travel at present.",
    "sources": [
     {
@@ -1031,7 +1036,7 @@
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
    "rubric_hit": "No GDACS orange/red wildfire alerts",
@@ -1042,7 +1047,7 @@
    "status": "green",
    "trend": "flat",
    "summary": "No GDACS flood alerts; Cyclone Murasu brings heavy rain to India's east coast",
-   "state": "GDACS listed no orange or red flood alerts at 11:40 UTC on 2 Nov. Cyclone Murasu is forecast to bring heavy rain and a storm surge to low-lying districts of Andhra Pradesh and Odisha on 2–3 Nov, where evacuations are under way.",
+   "state": "GDACS listed no orange or red flood alerts on 2 Nov. Cyclone Murasu is forecast to bring heavy rain to Andhra Pradesh, Tamil Nadu and Odisha until 4 Nov after crossing the coast near Ongole overnight 2–3 Nov; officials expect 6,000–8,000 power poles could be damaged (Al Jazeera).",
    "for_you": "No major flood disruption to travel at present; check local warnings in south-east India.",
    "sources": [
     {
@@ -1051,12 +1056,12 @@
      "date": "2026-11-02"
     },
     {
-     "title": "Inshorts — Cyclone Murasu: 11 Chennai flights cancelled, Odisha evacuates",
-     "url": "https://inshorts.com/en/news/cyclone-murasu--11-chennai-flights-axed--odisha-evacuates-1793617321632",
+     "title": "Al Jazeera — Thousands evacuated as India braces for second cyclone in a week",
+     "url": "https://www.aljazeera.com/news/2026/11/2/thousands-evacuated-as-india-braces-for-second-cyclone-in-a-week",
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
    "rubric_hit": "No GDACS orange/red flood alerts",
@@ -1078,7 +1083,7 @@
    ],
    "value": "Max M6.4, 5× M6+ (7d)",
    "value_num": 6.4,
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "Max M6.4 < M7 Watch line; PAGER green",
    "basis": "measured",
@@ -1138,7 +1143,7 @@
    "status": "green",
    "trend": "flat",
    "summary": "No geomagnetic storm, radiation storm or radio blackout",
-   "state": "NOAA's scales showed no geomagnetic storm, solar radiation storm or radio blackout in the 24 hours to 11:40 UTC on 2 Nov, and none is forecast.",
+   "state": "NOAA's scales showed no geomagnetic storm, solar radiation storm or radio blackout in the 24 hours to 17:47 UTC on 2 Nov, and none is forecast.",
    "for_you": "No disruption expected to power, satellites or radio.",
    "sources": [
     {
@@ -1149,7 +1154,7 @@
    ],
    "value": "G0 S0 R0",
    "value_num": 0,
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "G0 S0 R0, below the G3/S2/R3 Watch lines",
    "basis": "measured",
@@ -1282,7 +1287,7 @@
      "date": "2026-10-23"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "1 PHEIC (Ebola)",
    "value_num": 1,
@@ -1313,7 +1318,7 @@
      "date": "2026-10-28"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "10,300+ cases; 5,000+ deaths (DRC)",
    "value_num": 10300,
@@ -1334,7 +1339,7 @@
      "date": "2026-10-26"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No human-to-human spread",
    "rubric_hit": "Sporadic animal-to-human cases only",
@@ -1430,7 +1435,7 @@
      "date": "2026-11-01"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No unexplained clusters",
    "rubric_hit": "No unexplained clusters",
@@ -1441,26 +1446,26 @@
    "status": "amber",
    "trend": "flat",
    "summary": "Record Binance theft; alert apps hacked in Russia and Ukraine on 2 Nov",
-   "state": "The FBI said on 1 Nov that North Korea stole about $6.3bn from Binance in late October, the largest crypto theft on record. On 2 Nov Russia's emergency warning app and Ukraine's Air Alarm app were both hit, sending false alerts (RTÉ). The Pentagon is investigating refrigeration failures at US commissaries as a possible cyberattack, after hackers hit hundreds of French supermarkets in October (Fortune, 1 Nov).",
+   "state": "The FBI said on 1 Nov that North Korea stole about $6.3bn from Binance in late October, the largest crypto theft on record; Binance says it has replaced about 95% of the stolen assets (2 Nov). On 2 Nov Russia's emergency warning app and Ukraine's Air Alarm app were both hit, sending false alerts (PBS). The Pentagon is investigating refrigeration failures at US commissaries as a possible cyberattack (Fortune, 1 Nov).",
    "for_you": "Be alert to phishing linked to data-breach news; NCSC guidance covers how to protect accounts.",
    "sources": [
     {
-     "title": "NBC News — FBI says North Korea was behind $6 billion Binance crypto hack",
-     "url": "https://www.nbcnews.com/business/business-news/fbi-says-north-korea-was-6-billion-binance-crypto-hack-rcna606758",
-     "date": "2026-11-01"
-    },
-    {
-     "title": "RTÉ — Cyberattacks hit Russia, Ukraine emergency warning apps",
-     "url": "https://www.rte.ie/news/ukraine/2026/1102/1597579-ukraine-russia/",
+     "title": "Help Net Security — FBI pins $6.3 billion Binance heist on North Korea",
+     "url": "https://www.helpnetsecurity.com/2026/11/02/fbi-north-korea-binance-hack/",
      "date": "2026-11-02"
     },
     {
-     "title": "Fortune — Hackers pushed freezers at hundreds of French supermarkets to 122 degrees; Pentagon investigating",
+     "title": "PBS NewsHour — Ukraine and Russia both report fake emergency alerts after cyberattacks",
+     "url": "https://www.pbs.org/newshour/world/ukraine-and-russia-both-report-fake-emergency-alerts-after-cyberattacks-target-apps-as-limited-ceasefire-ends",
+     "date": "2026-11-02"
+    },
+    {
+     "title": "Fortune — Hackers pushed freezers at hundreds of French supermarkets",
      "url": "https://fortune.com/2026/11/01/hackers-pushed-freezers-at-hundreds-of-french-supermarkets-to-122-degrees-pentagon-investigating-us-military-bases/",
      "date": "2026-11-01"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Binance theft; govt services hit",
    "rubric_hit": "Attacks disrupting a major exchange and public services = Watch; none national-scale",
@@ -1480,7 +1485,7 @@
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No major outages",
    "rubric_hit": "No major multi-hour outage in the past 48h",
@@ -1681,7 +1686,7 @@
      "date": "2026-10-30"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "10y 5.29% (30 Oct)",
    "value_num": 5.29,
@@ -1719,7 +1724,7 @@
    "status": "green",
    "trend": "flat",
    "summary": "No Met Office weather warnings in force",
-   "state": "The Met Office had no weather warnings in force at 11:40 UTC on 2 Nov.",
+   "state": "The Met Office had no weather warnings in force at 17:47 UTC on 2 Nov.",
    "for_you": "Check the Met Office forecast before travel.",
    "sources": [
     {
@@ -1729,7 +1734,7 @@
     }
    ],
    "value": "No warnings",
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-11-01T11:52:42Z",
    "value_num": 0,
    "rubric_hit": "No amber/red Met Office warnings",
@@ -1809,10 +1814,10 @@
   "funding-stress": {
    "status": "green",
    "trend": "flat",
-   "value": "SOFR–IORB +4bp, repo $0.0bn",
+   "value": "SOFR–IORB +5bp, repo $0.0bn",
    "value_num": 4,
    "summary": "US money markets calm: SOFR within 5bp of IORB; Fed repo use near zero",
-   "state": "The secured overnight financing rate (SOFR) peaked 5bp above the Fed's interest on reserves over the five days to 29 Oct, inside the 10bp Watch line, and Fed standing repo operations were near zero to 30 Oct. Money markets show no sign of a dollar shortage as of 2 Nov.",
+   "state": "The secured overnight financing rate (SOFR) peaked 5bp above the Fed's interest on reserves over the five days to 30 Oct, inside the 10bp Watch line, and Fed standing repo operations were near zero to 30 Oct. Money markets show no sign of a dollar shortage as of 2 Nov.",
    "for_you": "Short-term dollar funding markets that banks rely on are working normally.",
    "rubric_hit": "SOFR–IORB 5d max 5bp < 10bp; repo ops < $15bn",
    "sources": [
@@ -1827,7 +1832,7 @@
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "SOFR–IORB 5d max bp=5.00; Fed repo ops 5d max $bn=0.01"
@@ -1853,7 +1858,7 @@
      "date": "2026-10-02"
     }
    ],
-   "checked_at": "2026-11-01T17:51:27Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": ""
@@ -1861,12 +1866,12 @@
   "yen-carry": {
    "status": "green",
    "trend": "flat",
-   "value": "¥157.9/$, 1w +0.7%",
+   "value": "¥157.8/$, 1w +0.6%",
    "value_num": 157.9,
    "summary": "Yen steady near ¥158 per dollar; no intervention",
-   "state": "The dollar was at ¥157.9 on 2 Nov, up 0.7% on the week and flat on the month, far inside the 3% weekly and 6% monthly Watch lines. No Japanese currency intervention had been reported as of 2 Nov.",
+   "state": "The dollar was at ¥157.8 on 2 Nov, up 0.6% on the week and flat on the month, far inside the 3% weekly and 6% monthly Watch lines. No Japanese currency intervention had been reported as of 2 Nov.",
    "for_you": "No sudden yen move is forcing investors to unwind leveraged positions, a pattern that has shaken global markets before.",
-   "rubric_hit": "USD/JPY 1w +0.7% < 3%; 1m 0.0% < 6%",
+   "rubric_hit": "USD/JPY 1w +0.6% < 3%; 1m −0.1% < 6%",
    "sources": [
     {
      "title": "Yahoo Finance — USD/JPY",
@@ -1879,10 +1884,10 @@
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
-   "basis_detail": "USD/JPY 1w move %=0.66; USD/JPY 1m move %=0.04"
+   "basis_detail": "USD/JPY 1w move %=0.62; USD/JPY 1m move %=0.07"
   },
   "jobless-claims": {
    "status": "green",
@@ -1900,7 +1905,7 @@
      "date": "2026-10-24"
     }
    ],
-   "checked_at": "2026-11-01T17:51:27Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "4wk avg % above 52w low=0.00"
@@ -1925,7 +1930,7 @@
      "date": "2026-11-01"
     }
    ],
-   "checked_at": "2026-11-01T17:51:27Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": ""
@@ -1951,7 +1956,7 @@
      "date": "2026-11-01"
     }
    ],
-   "checked_at": "2026-11-01T17:51:27Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "published",
    "basis_detail": "World Bank commodity prices (Pink Sheet)"
@@ -1981,7 +1986,7 @@
      "date": "2026-11-01"
     }
    ],
-   "checked_at": "2026-11-01T17:51:27Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": ""
@@ -1996,17 +2001,17 @@
    "rubric_hit": "Drone incursions closed an airport; sabotage attributed to a state = Watch",
    "sources": [
     {
-     "title": "ITV News — Jersey airspace closed for second night after reported drone sighting",
+     "title": "ITV News — Flights diverted for second night after drone sighting",
      "url": "https://www.itv.com/news/channel/2026-10-31/flights-diverted-for-second-night-after-drone-sighting",
      "date": "2026-10-31"
     },
     {
-     "title": "RTÉ — Cyberattacks hit Russia, Ukraine emergency warning apps",
-     "url": "https://www.rte.ie/news/ukraine/2026/1102/1597579-ukraine-russia/",
+     "title": "PBS NewsHour — Ukraine and Russia both report fake emergency alerts after cyberattacks",
+     "url": "https://www.pbs.org/newshour/world/ukraine-and-russia-both-report-fake-emergency-alerts-after-cyberattacks-target-apps-as-limited-ceasefire-ends",
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": ""
@@ -2015,28 +2020,28 @@
    "status": "red",
    "trend": "up",
    "value": "Hormuz largely shut; US blockade",
-   "summary": "Hormuz largely shut and US blockade in force; Iran says reopening depends on Washington",
-   "state": "Iran's IRGC said on 1 Nov that two tankers on an unauthorised route struck mines in the Strait of Hormuz, after attacks on tankers on 30–31 Oct. On 2 Nov foreign ministry spokesman Baghaei said Iran's demands, chiefly ending the US naval blockade, must be met before the strait reopens; Qatar has proposed a two-day implementation plan. Trump said on 1 Nov Iran must make a deal.",
+   "summary": "Hormuz largely shut and US blockade in force; Doha talks ended 1 Nov without a breakthrough",
+   "state": "Several days of Qatari-mediated talks ended on 1 Nov with revised proposals but no breakthrough; on 2 Nov Iran said its plan to reopen Hormuz within two days if the US lifts its blockade of Iranian ports remains the basis for talks (Reuters). Trump has said there will be no new attack before the 3 Nov midterms; Iran says it would respond to any attack. Two tankers struck mines in Hormuz on 1 Nov.",
    "for_you": "FCDO advises against travel to Iran; check its advice for Gulf states. Shipping should follow UKMTO guidance.",
    "rubric_hit": "Attacks on Gulf shipping; Hormuz substantially closed = Alert",
    "sources": [
     {
-     "title": "ANI — Iran demands end to US naval blockade before any agreement on Strait of Hormuz",
-     "url": "https://www.aninews.in/news/world/middle-east/ball-is-in-americas-court-iran-demands-end-to-us-naval-blockade-before-any-agreement-on-strait-of-hormuz20261102162637/",
+     "title": "Reuters via Investing.com — Iranians have left Doha talks, draft proposal for US deal being circulated",
+     "url": "https://www.investing.com/news/commodities-news/iranians-have-left-doha-talks-draft-proposal-for-us-deal-being-circulated-official-says-4990460",
      "date": "2026-11-02"
     },
     {
-     "title": "gCaptain — Iran's Guards say two tankers hit mines in Strait of Hormuz",
+     "title": "gCaptain — Iran’s Guards say two tankers hit mines in Strait of Hormuz",
      "url": "https://gcaptain.com/irans-guards-say-two-tankers-hit-mines-in-strait-of-hormuz/",
      "date": "2026-11-01"
     },
     {
-     "title": "Al Jazeera — Iran war live: Tehran says Hormuz 'security restored' if US agrees to plan",
-     "url": "https://www.aljazeera.com/news/liveblog/2026/11/2/iran-war-live-tankers-hit-in-hormuz-trump-again-says-conflict-to-end-soon",
+     "title": "ANI — Ball is in America’s court: Iran demands end to US naval blockade",
+     "url": "https://www.aninews.in/news/world/middle-east/ball-is-in-americas-court-iran-demands-end-to-us-naval-blockade-before-any-agreement-on-strait-of-hormuz20261102162637/",
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": ""
@@ -2056,7 +2061,7 @@
      "date": "2026-10-29"
     }
    ],
-   "checked_at": "2026-11-01T17:51:27Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": ""
@@ -2081,7 +2086,7 @@
      "date": "2026-11-01"
     }
    ],
-   "checked_at": "2026-11-01T17:51:27Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "published",
    "basis_detail": "National met services' warning levels"
@@ -2111,7 +2116,7 @@
      "date": "2026-10-09"
     }
    ],
-   "checked_at": "2026-11-01T17:51:27Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "published",
    "basis_detail": "WHO variant designations and surveillance"
@@ -2132,7 +2137,7 @@
      "date": "2026-10-26"
     }
    ],
-   "checked_at": "2026-11-01T17:51:27Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": ""
@@ -2153,7 +2158,7 @@
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "KEV additions 7d=8.00"
@@ -2174,7 +2179,7 @@
      "date": "2026-10-19"
     }
    ],
-   "checked_at": "2026-11-01T17:51:27Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": ""
@@ -2199,7 +2204,7 @@
      "date": "2026-07-03"
     }
    ],
-   "checked_at": "2026-11-01T17:51:27Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "published",
    "basis_detail": "NESO and National Gas system notices"
@@ -2210,7 +2215,7 @@
    "value": "No flood warnings",
    "value_num": 0,
    "summary": "No Environment Agency flood warnings in force",
-   "state": "The Environment Agency had no severe flood warnings, no flood warnings and no flood alerts in force in England at 11:40 UTC on 2 Nov.",
+   "state": "The Environment Agency had no severe flood warnings, no flood warnings and no flood alerts in force in England at 17:47 UTC on 2 Nov.",
    "for_you": "Check the gov.uk flood warning service if heavy rain is forecast.",
    "rubric_hit": "0 severe, 0 flood warnings < 10 Watch line",
    "sources": [
@@ -2220,25 +2225,25 @@
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-02T11:58:59Z",
+   "checked_at": "2026-11-02T18:00:42Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "EA: 0 severe, 0 warnings"
   }
  },
- "headline": "Iran says Hormuz stays shut until the US lifts its blockade, with Brent near $108. Cyclone Murasu, a GDACS red alert, nears India's east coast, and Ebola deaths in DR Congo pass 5,000.",
- "generated_at": "2026-11-02T11:58:59Z",
+ "headline": "Iran offers to reopen Hormuz within two days if the US lifts its blockade, but Doha talks ended without a deal; Brent eased to near $105. Cyclone Murasu, a GDACS red alert, is due ashore in Andhra Pradesh overnight.",
+ "generated_at": "2026-11-02T18:00:42Z",
  "world": {
   "score": 40,
   "band": "Strained",
   "status": "amber",
   "counts": {
-   "green": 33,
-   "amber": 38,
+   "green": 34,
+   "amber": 37,
    "red": 18
   },
   "by_domain": {
-   "markets": 18,
+   "markets": 14,
    "economy": 21,
    "energy": 75,
    "geopolitics": 33,
@@ -2258,7 +2263,7 @@
    "name": "US–Iran war and Gulf energy shock",
    "status": "red",
    "trend": "flat",
-   "summary": "Iran says Hormuz stays shut until the US lifts its blockade (2 Nov) after mine strikes on tankers on 1 Nov; Brent near $108, TTF near €100.",
+   "summary": "Doha talks ended 1 Nov without a deal; Iran offers to reopen Hormuz within two days if the US lifts its blockade (2 Nov). Brent near $105, TTF near €95.",
    "signals": [
     "gulf-iran",
     "middle-east",
@@ -2278,7 +2283,7 @@
    "name": "Russia–Ukraine war and NATO's flank",
    "status": "red",
    "trend": "up",
-   "summary": "Russia launched 759 drones on 1 Nov, causing nationwide power cuts; the Kherson truce ended; drones closed Jersey airspace on 30–31 Oct.",
+   "summary": "Russia launched 759 drones on 1 Nov and 193 on 2 Nov, cutting power in 10 regions; the Kherson truce ended; drones closed Jersey airspace 30–31 Oct.",
    "signals": [
     "russia-ukraine",
     "russia-nato",
@@ -2327,7 +2332,7 @@
    "name": "Cyclone Murasu",
    "status": "red",
    "trend": "up",
-   "summary": "GDACS red alert on 2 Nov; IMD expects landfall near Ongole, Andhra Pradesh overnight 2–3 Nov with 100–110km/h winds; Odisha evacuating.",
+   "summary": "GDACS red alert; IMD expects landfall near Ongole, Andhra Pradesh 23:30–04:00 local on 2–3 Nov, winds 100–110km/h; about 30,000 to be evacuated.",
    "signals": [
     "other-cyclones",
     "floods"
@@ -2362,8 +2367,8 @@
    "id": "binance-hack",
    "name": "Record Binance hack attributed to North Korea",
    "status": "amber",
-   "trend": "up",
-   "summary": "About $6.3bn drained from Binance in late October; FBI blamed North Korea on 1 Nov; withdrawals resuming in phases since 31 Oct.",
+   "trend": "flat",
+   "summary": "About $6.3bn drained from Binance in late October; FBI blamed North Korea; Binance says 95% replaced and withdrawals restored in phases (2 Nov).",
    "signals": [
     "crypto",
     "cyber",

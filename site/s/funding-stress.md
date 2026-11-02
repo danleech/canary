@@ -1,14 +1,14 @@
 # Dollar funding stress — NORMAL (stable)
-id funding-stress · Markets · horizon acute · checked 2026-11-02T11:58Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-03T01:58Z
+id funding-stress · Markets · horizon acute · checked 2026-11-02T18:00Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-03T08:00Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/funding-stress
 
-Value: SOFR–IORB +4bp, repo $0.0bn
+Value: SOFR–IORB +5bp, repo $0.0bn
 Rated on: SOFR–IORB 5d max 5bp < 10bp; repo ops < $15bn
 Basis: measured — Set by a fixed rule applied to open data (SOFR–IORB 5d max bp = 5.00 · Fed repo ops 5d max $bn = 0.01). Anyone can reproduce it from the public metrics file.
 
 US money markets calm: SOFR within 5bp of IORB; Fed repo use near zero
 
-Why it's at this level: The secured overnight financing rate (SOFR) peaked 5bp above the Fed's interest on reserves over the five days to 29 Oct, inside the 10bp Watch line, and Fed standing repo operations were near zero to 30 Oct. Money markets show no sign of a dollar shortage as of 2 Nov.
+Why it's at this level: The secured overnight financing rate (SOFR) peaked 5bp above the Fed's interest on reserves over the five days to 30 Oct, inside the 10bp Watch line, and Fed standing repo operations were near zero to 30 Oct. Money markets show no sign of a dollar shortage as of 2 Nov.
 
 What this means for you: Short-term dollar funding markets that banks rely on are working normally.
 

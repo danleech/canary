@@ -1,5 +1,5 @@
 # Shipping chokepoints — ALERT (stable)
-id chokepoints · Energy & Commodities · horizon acute · checked 2026-11-02T11:58Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T01:58Z
+id chokepoints · Energy & Commodities · horizon acute · checked 2026-11-02T18:00Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T08:00Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/chokepoints
 
 Value: Hormuz largely shut; mines and attacks
@@ -7,9 +7,9 @@ Rated on: Hormuz traffic materially impeded with attacks on shipping = Alert
 Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
-Hormuz largely shut after mine strikes on tankers on 1 Nov; Iran ties reopening to blockade
+Hormuz largely shut after mine strikes on 1 Nov; Iran offers two-day reopening if the blockade ends
 
-Why it's at this level: Iran's IRGC said on 1 Nov that two tankers on an unauthorised route struck mines in the Strait of Hormuz, after attacks on tankers on 30–31 Oct (gCaptain). On 2 Nov Iran's foreign ministry said the strait would not reopen until the US lifts its naval blockade; a Qatari-mediated plan could reopen it within two days if accepted. Drones hit at least seven cargo ships off Romania and Bulgaria in October.
+Why it's at this level: Iran's IRGC said on 1 Nov that two tankers struck mines in the Strait of Hormuz, and a Qatari LNG carrier was hit by unidentified objects in the Gulf on 30 Oct (Nakilat). On 2 Nov Iran said a condensed plan to reopen the strait within two days, in return for the US ending its blockade of Iranian ports, remains the basis for talks; no deal had been reached (Reuters). Drones hit at least seven cargo ships off Romania and Bulgaria in October.
 
 What this means for you: Shipping delays and higher freight and insurance costs feed through to fuel and goods prices. Mariners should follow UKMTO and flag-state guidance.
 
@@ -19,6 +19,6 @@ What moves it: Houthi/Iran attacks, war-risk insurance, drought (Panama), naval 
 Rubric — Alert: Hormuz traffic materially impeded, or any chokepoint closed, or two or more disrupted at once. | Watch: One chokepoint disrupted (attacks, large-scale diversions, draught restrictions). | Normal: All major chokepoints operating normally.
 
 Sources:
-- gCaptain — Iran's Guards say two tankers hit mines in Strait of Hormuz (2026-11-01) https://gcaptain.com/irans-guards-say-two-tankers-hit-mines-in-strait-of-hormuz/
-- ANI — Iran demands end to US naval blockade before any agreement on Strait of Hormuz (2026-11-02) https://www.aninews.in/news/world/middle-east/ball-is-in-americas-court-iran-demands-end-to-us-naval-blockade-before-any-agreement-on-strait-of-hormuz20261102162637/
-- Al Jazeera — Iran war live: Tehran says Hormuz 'security restored' if US agrees to plan (2026-11-02) https://www.aljazeera.com/news/liveblog/2026/11/2/iran-war-live-tankers-hit-in-hormuz-trump-again-says-conflict-to-end-soon
+- gCaptain — Iran’s Guards say two tankers hit mines in Strait of Hormuz (2026-11-01) https://gcaptain.com/irans-guards-say-two-tankers-hit-mines-in-strait-of-hormuz/
+- Anadolu — Qatari LNG carrier struck by unidentified objects in Gulf waters (2026-11-01) https://www.aa.com.tr/en/energy/lng-lpg/qatari-lng-carrier-struck-by-unidentified-objects-in-gulf-waters-company/60646
+- Reuters via Investing.com — Iranians have left Doha talks, draft proposal for US deal being circulated (2026-11-02) https://www.investing.com/news/commodities-news/iranians-have-left-doha-talks-draft-proposal-for-us-deal-being-circulated-official-says-4990460

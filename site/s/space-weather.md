@@ -1,5 +1,5 @@
 # Space weather — NORMAL (stable)
-id space-weather · Weather & Hazards · horizon acute · checked 2026-11-02T11:58Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T01:58Z
+id space-weather · Weather & Hazards · horizon acute · checked 2026-11-02T18:00Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T08:00Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/space-weather
 
 Value: G0 S0 R0
@@ -8,7 +8,7 @@ Basis: measured — Set by a fixed rule applied to open data (NOAA G0 S0 R0 (24h
 
 No geomagnetic storm, radiation storm or radio blackout
 
-Why it's at this level: NOAA's scales showed no geomagnetic storm, solar radiation storm or radio blackout in the 24 hours to 11:40 UTC on 2 Nov, and none is forecast.
+Why it's at this level: NOAA's scales showed no geomagnetic storm, solar radiation storm or radio blackout in the 24 hours to 17:47 UTC on 2 Nov, and none is forecast.
 
 What this means for you: No disruption expected to power, satellites or radio.
 

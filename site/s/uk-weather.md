@@ -1,5 +1,5 @@
 # UK weather warnings — NORMAL (stable)
-id uk-weather · UK Watch · horizon acute · checked 2026-11-02T11:58Z · at this level since 2026-11-01T11:52Z · stale after 2026-11-03T01:58Z
+id uk-weather · UK Watch · horizon acute · checked 2026-11-02T18:00Z · at this level since 2026-11-01T11:52Z · stale after 2026-11-03T08:00Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/uk-weather
 
 Value: No warnings
@@ -8,7 +8,7 @@ Basis: measured — Set by a fixed rule applied to open data (worst warning: non
 
 No Met Office weather warnings in force
 
-Why it's at this level: The Met Office had no weather warnings in force at 11:40 UTC on 2 Nov.
+Why it's at this level: The Met Office had no weather warnings in force at 17:47 UTC on 2 Nov.
 
 What this means for you: Check the Met Office forecast before travel.
 

@@ -1,5 +1,49 @@
 [
  {
+  "t": "2026-11-02T18:00:42Z",
+  "applied": 52,
+  "changed": [
+   "gold"
+  ],
+  "warnings": [
+   "sources: aljazeera.com supplies 8 of 60 news citations (13%); diversify next run (errors above 20%)"
+  ],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 7,
+   "judged": 24
+  },
+  "sources": {
+   "citations": 96,
+   "news_citations": 60,
+   "outlets": 49,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     8
+    ],
+    [
+     "investing.com",
+     6
+    ],
+    [
+     "aa.com.tr",
+     3
+    ],
+    [
+     "aninews.in",
+     3
+    ],
+    [
+     "pbs.org",
+     3
+    ]
+   ]
+  }
+ },
+ {
   "t": "2026-11-02T11:58:59Z",
   "applied": 78,
   "changed": [

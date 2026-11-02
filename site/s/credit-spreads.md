@@ -1,14 +1,14 @@
-# Credit spreads — NORMAL (stable)
-id credit-spreads · Markets · horizon acute · checked 2026-11-02T11:58Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T01:58Z
+# Credit spreads — NORMAL (worsening)
+id credit-spreads · Markets · horizon acute · checked 2026-11-02T18:00Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T08:00Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/credit-spreads
 
-Value: HY OAS 3.26%
-Rated on: HY OAS 3.26% < 4% Watch line
-Basis: measured — Set by a fixed rule applied to open data (HY OAS % = 3.26). Anyone can reproduce it from the public metrics file.
+Value: HY OAS 3.44%
+Rated on: HY OAS 3.44% < 4% Watch line
+Basis: measured — Set by a fixed rule applied to open data (HY OAS % = 3.44). Anyone can reproduce it from the public metrics file.
 
-US high-yield spreads 3.26%, well inside the 4% Watch line
+US high-yield spreads 3.44%, inside the 4% Watch line but at a 52-week high
 
-Why it's at this level: The US high-yield option-adjusted spread was 3.26% on 29 Oct, well inside the 4% Watch line and 14bp wider over the month. Lenders are not demanding a meaningful extra premium for default risk despite higher rates and energy costs.
+Why it's at this level: The US high-yield option-adjusted spread was 3.44% on 30 Oct, inside the 4% Watch line but at its widest in a year and 20bp wider over the month. Lenders are demanding a little more for default risk as rates and energy costs stay high, but there is no broad credit squeeze.
 
 What this means for you: Companies can still borrow on normal terms; no broad corporate credit squeeze is under way.
 

@@ -1,5 +1,5 @@
 # Europe hybrid attacks — WATCH (stable)
-id hybrid-threats · Geopolitics · horizon acute · checked 2026-11-02T11:58Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-03T01:58Z
+id hybrid-threats · Geopolitics · horizon acute · checked 2026-11-02T18:00Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-03T08:00Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/hybrid-threats
 
 Value: Jersey airport shut 30–31 Oct
@@ -19,5 +19,5 @@ What moves it: Russia–NATO tensions, drone and cyber capabilities, proxy recru
 Rubric — Alert: Repeated airport or infrastructure shutdowns across several countries, or sabotage causing casualties or a major outage. | Watch: Drone incursions close an airport or military base, or a sabotage incident is attributed to a state. | Normal: No significant attributed sabotage or airspace incursions in Europe this week.
 
 Sources:
-- ITV News — Jersey airspace closed for second night after reported drone sighting (2026-10-31) https://www.itv.com/news/channel/2026-10-31/flights-diverted-for-second-night-after-drone-sighting
-- RTÉ — Cyberattacks hit Russia, Ukraine emergency warning apps (2026-11-02) https://www.rte.ie/news/ukraine/2026/1102/1597579-ukraine-russia/
+- ITV News — Flights diverted for second night after drone sighting (2026-10-31) https://www.itv.com/news/channel/2026-10-31/flights-diverted-for-second-night-after-drone-sighting
+- PBS NewsHour — Ukraine and Russia both report fake emergency alerts after cyberattacks (2026-11-02) https://www.pbs.org/newshour/world/ukraine-and-russia-both-report-fake-emergency-alerts-after-cyberattacks-target-apps-as-limited-ceasefire-ends

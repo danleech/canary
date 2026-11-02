@@ -1,5 +1,5 @@
 # Other armed conflicts — WATCH (stable)
-id other-conflicts · Armed Conflict · horizon acute · checked 2026-11-01T17:51Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-03T05:51Z
+id other-conflicts · Armed Conflict · horizon acute · checked 2026-11-02T18:00Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-04T06:00Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/other-conflicts
 
 Value: Afghanistan–Pakistan border clashes
