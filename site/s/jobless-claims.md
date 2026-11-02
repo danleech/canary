@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: 197k 4wk avg, +0% vs low
 Rated on: 4wk avg 0% above 52w low < 15% Watch line
+Basis: measured — Set by a fixed rule applied to open data (4wk avg % above 52w low = 0.00). Anyone can reproduce it from the public metrics file.
 
 US jobless claims at their 52-week low
 

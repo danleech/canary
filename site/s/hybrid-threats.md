@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Jersey airport shut 30–31 Oct
 Rated on: Drone incursions closed an airport; attack attributed to a state
+Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 Situation: Russia–Ukraine war and NATO's flank [russia-ukraine-war]
 
 Drones closed Jersey airport two nights running; Romania blames Russia for ship sinking

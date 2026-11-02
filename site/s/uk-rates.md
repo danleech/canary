@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: CPI 3.5% (Sep); BoE meets 5 Nov
 Rated on: CPI 2.5–4.0%, or the BoE reversing course.
+Basis: judged — The AI assessor's reading of 1 source from 1 outlet against the rubric. Check the sources before relying on it.
 Situation: Energy shock feeding inflation [energy-inflation]
 
 UK CPI 3.5% and a Bank of England rate rise expected on 5 Nov

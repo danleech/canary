@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Q3 exits 11.5% of NAV vs 5% caps
 Rated on: Large funds limiting redemptions (BCRED at 5% cap) = Watch
+Basis: judged — The AI assessor's reading of 2 sources from 1 outlet against the rubric. Check the sources before relying on it.
 
 Big private credit funds still capping withdrawals, though Q3 requests eased
 

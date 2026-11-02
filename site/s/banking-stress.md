@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: STLFSI -0.58, CISS 0.01
 Rated on: STLFSI -0.58 < 0 and CISS 0.01: below Watch lines
+Basis: measured — Set by a fixed rule applied to open data (STLFSI = -0.58 · ECB CISS = 0.01). Anyone can reproduce it from the public metrics file.
 
 Financial stress indices below average; no new bank failure
 

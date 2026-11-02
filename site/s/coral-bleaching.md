@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: No global event since June
 Rated on: No global bleaching event in progress.
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
 Fourth global bleaching event ended in June; El Niño threatens a fifth
 

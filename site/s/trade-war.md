@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: US effective tariff ~7%
 Rated on: Major export controls pending renewal; tariffs elevated
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
 Section 301 tariffs in place; China's rare-earth pause expires 10 Nov
 

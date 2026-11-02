@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Q3 GDP +4.5%; Oct NBS PMI 49.3
 Rated on: Growth near official target, stable property sales, no financial contagion.
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
 China's factory PMI slipped to 49.3 in October after 4.5% Q3 growth
 

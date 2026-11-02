@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Sahm 0.00, 10y–2y +0.38
 Rated on: Sahm 0.00 < 0.3 Watch line
+Basis: measured — Set by a fixed rule applied to open data (Sahm = 0.00). Anyone can reproduce it from the public metrics file.
 
 No recession signal: Sahm rule at zero and yield curve positive
 

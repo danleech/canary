@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Mountain snow warnings (US West)
 Rated on: No top-tier cold warnings across a major populated region
+Basis: published — Follows National met services' warning levels, read from the cited source by the AI assessor and checked against the rubric.
 
 Early-season snow in the US Rockies; no major cold wave
 

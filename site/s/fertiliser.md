@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Gulf urea stuck: ~0.9Mt at sea
 Rated on: Key export route (Hormuz) closed to Gulf urea = Alert
+Basis: published — Follows World Bank commodity prices (Pink Sheet), read from the cited source by the AI assessor and checked against the rubric.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
 Hormuz closure has stranded Gulf urea exports; prices up but below April peak

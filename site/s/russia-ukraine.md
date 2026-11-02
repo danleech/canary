@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: 759 drones on 1 Nov
 Rated on: Full-scale war with mass strikes on infrastructure = Alert
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: Russia–Ukraine war and NATO's flank [russia-ukraine-war]
 
 Two waves totalling 759 drones on 1 Nov hit energy sites; Ukraine strikes Russian plants

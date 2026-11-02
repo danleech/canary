@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: GDACS: no orange/red
 Rated on: No GDACS orange/red wildfire alerts
+Basis: measured — Set by a fixed rule applied to open data (GDACS wildfire: 0 red / 0 orange). Anyone can reproduce it from the public metrics file.
 
 No major wildfires threatening populated areas
 

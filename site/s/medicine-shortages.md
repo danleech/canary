@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Chemo shortages (US); 87 new in 2026
 Rated on: Essential medicine shortage affecting major health systems
+Basis: judged — The AI assessor's reading of 1 source from 1 outlet against the rubric. Check the sources before relying on it.
 
 Chemotherapy drug shortages persist after a Pfizer plant flood
 

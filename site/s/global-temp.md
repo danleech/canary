@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: +1.74°C vs pre-industrial
 Rated on: > +1.6°C, or a record high for the calendar date.
+Basis: measured — Set by a fixed rule applied to open data (°C above pre-industrial = 1.77). Anyone can reproduce it from the public metrics file.
 Situation: Super El Niño [super-el-nino]
 
 Global surface temperature about 1.7°C above pre-industrial

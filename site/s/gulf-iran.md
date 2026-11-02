@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Hormuz largely shut; US blockade
 Rated on: Attacks on Gulf shipping; Hormuz substantially closed = Alert
+Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
 Iran says two tankers hit mines at Hormuz; talks on a two-day reopening plan go on

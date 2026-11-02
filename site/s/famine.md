@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Risk-of-famine alerts: Somalia, Sudan
 Rated on: IPC Phase 5 projected or 'risk of famine' alerts.
+Basis: published — Follows IPC classifications and FEWS NET, read from the cited source by the AI assessor and checked against the rubric.
 Situation: Super El Niño [super-el-nino]
 Situation: Sudan war [sudan-war]
 

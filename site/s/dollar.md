@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: DXY 101.8, 3m +2.1%
 Rated on: DXY 3m move +2.1% < 5% Watch line
+Basis: measured — Set by a fixed rule applied to open data (DXY 3m move % = 2.14). Anyone can reproduce it from the public metrics file.
 
 Dollar index steady near 102, up 2.1% over three months
 

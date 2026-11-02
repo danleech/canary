@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: WFP Gaza aid cut for 500k (19 Oct)
 Rated on: Major ration cuts announced = Watch
+Basis: judged — The AI assessor's reading of 1 source from 1 outlet against the rubric. Check the sources before relying on it.
 
 Funding gaps force WFP ration cuts in Gaza and the West Bank
 

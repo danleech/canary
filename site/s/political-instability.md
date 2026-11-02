@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: No G20 government collapse (1 Nov)
 Rated on: No G20 government collapse, contested election or coup in the past month.
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
 No G20 government has fallen this month; France's budget fight is the one to watch
 

@@ -24,7 +24,7 @@ const TOOLS = [
   {
     name: 'get_signal',
     title: 'One signal',
-    description: "One Canary signal: status, trend, value, why it's at this level, what it means, the rubric and sources (~500 tokens). Accepts an id such as 'oil', 'russia-ukraine' or 'uk-weather', or a signal name.",
+    description: "One Canary signal: status, trend, value, basis (measured, published figure or AI judgement), why it's at this level, what it means, the rubric and sources (~500 tokens). Accepts an id such as 'oil', 'russia-ukraine' or 'uk-weather', or a signal name.",
     inputSchema: { type: 'object', properties: { id: { type: 'string', description: 'Signal id or name' } }, required: ['id'], additionalProperties: false },
     annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   },

@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: MOVE 100, 10y 4.93%
 Rated on: MOVE 100.2 ≥ 100 Watch line
+Basis: measured — Set by a fixed rule applied to open data (MOVE = 100.20 · US10y 1m move bp = 34.80). Anyone can reproduce it from the public metrics file.
 Situation: Energy shock feeding inflation [energy-inflation]
 
 Treasury volatility on the Watch line with the 10-year near 4.9%

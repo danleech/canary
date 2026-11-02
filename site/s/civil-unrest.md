@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: France, Germany, Spain protests
 Rated on: Significant protests in several countries or deadly unrest in one.
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: France: debt stress and protests [france-fiscal-stress]
 
 Mass social protests in France for a third weekend, spreading to Germany

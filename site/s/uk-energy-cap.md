@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: £1,723 now; Jan forecast +27%
 Rated on: Cap > £2,200, or forecast rise ≥ 20%.
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
 Energy price cap forecast to rise about 25% in January

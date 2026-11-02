@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Cholera in DRC; record dengue seasons
 Rated on: Record-level seasons, or local transmission in countries where the disease was not established (including Europe).
+Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 
 Cholera spikes in DR Congo; record dengue in Florida and Bangladesh
 

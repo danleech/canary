@@ -22,13 +22,13 @@
    "id": "geopolitics",
    "name": "Geopolitics",
    "short": "Geopolitics",
-   "weight": 1.2
+   "weight": 1.0
   },
   {
    "id": "conflict",
    "name": "Armed Conflict",
    "short": "Conflict",
-   "weight": 1.2
+   "weight": 1.0
   },
   {
    "id": "hazards",
@@ -40,31 +40,31 @@
    "id": "climate",
    "name": "Climate",
    "short": "Climate",
-   "weight": 0.6
+   "weight": 1.0
   },
   {
    "id": "health",
    "name": "Global Health",
    "short": "Health",
-   "weight": 1.1
+   "weight": 1.0
   },
   {
    "id": "tech",
    "name": "Technology & Cyber",
    "short": "Tech",
-   "weight": 0.8
+   "weight": 1.0
   },
   {
    "id": "humanitarian",
    "name": "Humanitarian",
    "short": "Humanit.",
-   "weight": 0.8
+   "weight": 1.0
   },
   {
    "id": "uk",
    "name": "UK Watch",
    "short": "UK",
-   "weight": 0.8
+   "weight": 1.0
   }
  ],
  "signals": [
@@ -360,7 +360,14 @@
     "Eurostat",
     "HCOB PMI",
     "ECB"
-   ]
+   ],
+   "published": {
+    "by": "Eurostat GDP and HCOB PMI",
+    "domains": [
+     "europa.eu",
+     "spglobal.com"
+    ]
+   }
   },
   {
    "id": "china-economy",
@@ -432,7 +439,13 @@
    "hints": [
     "S&P Global PMI releases",
     "J.P.Morgan Global PMI"
-   ]
+   ],
+   "published": {
+    "by": "S&P Global / J.P.Morgan Global PMI",
+    "domains": [
+     "spglobal.com"
+    ]
+   }
   },
   {
    "id": "jobless-claims",
@@ -551,7 +564,14 @@
    "hints": [
     "Drewry WCI",
     "Freightos FBX"
-   ]
+   ],
+   "published": {
+    "by": "Drewry World Container Index / Freightos Baltic Index",
+    "domains": [
+     "drewry.co.uk",
+     "freightos.com"
+    ]
+   }
   },
   {
    "id": "food-prices",
@@ -568,7 +588,13 @@
    "hints": [
     "FAO Food Price Index",
     "AMIS Market Monitor"
-   ]
+   ],
+   "published": {
+    "by": "FAO Food Price Index",
+    "domains": [
+     "fao.org"
+    ]
+   }
   },
   {
    "id": "critical-minerals",
@@ -605,7 +631,13 @@
     "IFPRI",
     "Reuters",
     "Argus"
-   ]
+   ],
+   "published": {
+    "by": "World Bank commodity prices (Pink Sheet)",
+    "domains": [
+     "worldbank.org"
+    ]
+   }
   },
   {
    "id": "nuclear-plants",
@@ -623,7 +655,13 @@
     "IAEA",
     "Reuters",
     "national nuclear regulators"
-   ]
+   ],
+   "published": {
+    "by": "IAEA safety updates and INES ratings",
+    "domains": [
+     "iaea.org"
+    ]
+   }
   },
   {
    "id": "us-china",
@@ -677,7 +715,13 @@
     "IAEA",
     "Reuters",
     "Arms Control Association"
-   ]
+   ],
+   "published": {
+    "by": "IAEA verification reports",
+    "domains": [
+     "iaea.org"
+    ]
+   }
   },
   {
    "id": "korea",
@@ -713,7 +757,13 @@
     "Yale Budget Lab tariff tracker",
     "Reuters trade",
     "WTO"
-   ]
+   ],
+   "published": {
+    "by": "Yale Budget Lab effective tariff rate",
+    "domains": [
+     "yale.edu"
+    ]
+   }
   },
   {
    "id": "sanctions",
@@ -974,7 +1024,13 @@
    "hints": [
     "NOAA National Hurricane Center",
     "GDACS"
-   ]
+   ],
+   "published": {
+    "by": "NOAA National Hurricane Center",
+    "domains": [
+     "noaa.gov"
+    ]
+   }
   },
   {
    "id": "other-cyclones",
@@ -1014,7 +1070,17 @@
     "WMO",
     "national met services",
     "Reuters"
-   ]
+   ],
+   "published": {
+    "by": "National met services' warning levels",
+    "domains": [
+     "metoffice.gov.uk",
+     "meteoalarm.org",
+     "weather.gov",
+     "imd.gov.in",
+     "wmo.int"
+    ]
+   }
   },
   {
    "id": "wildfires",
@@ -1096,7 +1162,17 @@
     "Smithsonian GVP weekly report",
     "VAAC London",
     "GDACS"
-   ]
+   ],
+   "published": {
+    "by": "Volcano observatories' aviation colour codes, VAACs and Smithsonian GVP",
+    "domains": [
+     "si.edu",
+     "usgs.gov",
+     "metoffice.gov.uk",
+     "bom.gov.au",
+     "jma.go.jp"
+    ]
+   }
   },
   {
    "id": "drought",
@@ -1115,7 +1191,16 @@
     "Global Drought Observatory",
     "GEOGLAM Crop Monitor",
     "US Drought Monitor"
-   ]
+   ],
+   "published": {
+    "by": "Drought monitors and monsoon statistics",
+    "domains": [
+     "unl.edu",
+     "imd.gov.in",
+     "europa.eu",
+     "cropmonitor.org"
+    ]
+   }
   },
   {
    "id": "space-weather",
@@ -1154,7 +1239,16 @@
     "ECMWF",
     "NOAA Weather Prediction Center",
     "Meteoalarm"
-   ]
+   ],
+   "published": {
+    "by": "National met services' warning levels",
+    "domains": [
+     "metoffice.gov.uk",
+     "meteoalarm.org",
+     "weather.gov",
+     "noaa.gov"
+    ]
+   }
   },
   {
    "id": "global-temp",
@@ -1253,7 +1347,13 @@
    },
    "hints": [
     "NOAA Coral Reef Watch"
-   ]
+   ],
+   "published": {
+    "by": "NOAA Coral Reef Watch",
+    "domains": [
+     "noaa.gov"
+    ]
+   }
   },
   {
    "id": "who-emergencies",
@@ -1270,7 +1370,13 @@
    "hints": [
     "WHO Disease Outbreak News",
     "WHO IHR Emergency Committees"
-   ]
+   ],
+   "published": {
+    "by": "WHO (PHEIC and IHR Emergency Committee decisions)",
+    "domains": [
+     "who.int"
+    ]
+   }
   },
   {
    "id": "ebola",
@@ -1288,7 +1394,15 @@
     "WHO Disease Outbreak News",
     "ECDC",
     "Africa CDC"
-   ]
+   ],
+   "published": {
+    "by": "WHO, Africa CDC and ECDC case counts",
+    "domains": [
+     "who.int",
+     "africacdc.org",
+     "europa.eu"
+    ]
+   }
   },
   {
    "id": "h5n1",
@@ -1325,7 +1439,14 @@
     "WHO",
     "Africa CDC",
     "UKHSA"
-   ]
+   ],
+   "published": {
+    "by": "WHO and Africa CDC",
+    "domains": [
+     "who.int",
+     "africacdc.org"
+    ]
+   }
   },
   {
    "id": "measles",
@@ -1362,7 +1483,13 @@
     "WHO",
     "ECDC",
     "ReliefWeb"
-   ]
+   ],
+   "published": {
+    "by": "WHO emergency grading",
+    "domains": [
+     "who.int"
+    ]
+   }
   },
   {
    "id": "novel-outbreaks",
@@ -1401,7 +1528,15 @@
     "ECDC",
     "UKHSA",
     "CDC"
-   ]
+   ],
+   "published": {
+    "by": "WHO variant designations and surveillance",
+    "domains": [
+     "who.int",
+     "europa.eu",
+     "cdc.gov"
+    ]
+   }
   },
   {
    "id": "medicine-shortages",
@@ -1420,7 +1555,15 @@
     "EMA shortages catalogue",
     "NHSBSA Serious Shortage Protocols",
     "Reuters"
-   ]
+   ],
+   "published": {
+    "by": "FDA, EMA and NHSBSA shortage lists",
+    "domains": [
+     "fda.gov",
+     "europa.eu",
+     "nhsbsa.nhs.uk"
+    ]
+   }
   },
   {
    "id": "cyber",
@@ -1553,7 +1696,14 @@
     "IPC",
     "FEWS NET",
     "WFP"
-   ]
+   ],
+   "published": {
+    "by": "IPC classifications and FEWS NET",
+    "domains": [
+     "ipcinfo.org",
+     "fews.net"
+    ]
+   }
   },
   {
    "id": "displacement",
@@ -1571,7 +1721,15 @@
     "UNHCR",
     "IOM DTM",
     "IDMC"
-   ]
+   ],
+   "published": {
+    "by": "UNHCR, IOM DTM and IDMC figures",
+    "domains": [
+     "unhcr.org",
+     "iom.int",
+     "internal-displacement.org"
+    ]
+   }
   },
   {
    "id": "civil-unrest",
@@ -1608,7 +1766,13 @@
     "WFP",
     "UNHCR",
     "ReliefWeb"
-   ]
+   ],
+   "published": {
+    "by": "OCHA Financial Tracking Service",
+    "domains": [
+     "unocha.org"
+    ]
+   }
   },
   {
    "id": "uk-rates",
@@ -1625,7 +1789,14 @@
    "hints": [
     "ONS CPI",
     "Bank of England"
-   ]
+   ],
+   "published": {
+    "by": "ONS CPI and Bank of England decisions",
+    "domains": [
+     "ons.gov.uk",
+     "bankofengland.co.uk"
+    ]
+   }
   },
   {
    "id": "gilts",
@@ -1661,7 +1832,14 @@
    "hints": [
     "Ofgem",
     "Cornwall Insight"
-   ]
+   ],
+   "published": {
+    "by": "Ofgem price cap (forecasts: Cornwall Insight)",
+    "domains": [
+     "ofgem.gov.uk",
+     "cornwall-insight.com"
+    ]
+   }
   },
   {
    "id": "uk-weather",
@@ -1698,7 +1876,14 @@
    "hints": [
     "UKHSA surveillance reports",
     "NHS England winter sitreps"
-   ]
+   ],
+   "published": {
+    "by": "UKHSA surveillance and NHS England situation reports",
+    "domains": [
+     "gov.uk",
+     "england.nhs.uk"
+    ]
+   }
   },
   {
    "id": "uk-threat-level",
@@ -1714,7 +1899,13 @@
    },
    "hints": [
     "MI5 threat levels"
-   ]
+   ],
+   "published": {
+    "by": "MI5 / JTAC national threat level",
+    "domains": [
+     "mi5.gov.uk"
+    ]
+   }
   },
   {
    "id": "uk-disruption",
@@ -1751,7 +1942,14 @@
     "National Gas",
     "Ofgem",
     "Elexon"
-   ]
+   ],
+   "published": {
+    "by": "NESO and National Gas system notices",
+    "domains": [
+     "neso.energy",
+     "nationalgas.com"
+    ]
+   }
   },
   {
    "id": "uk-floods",

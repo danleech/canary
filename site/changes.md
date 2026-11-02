@@ -1,6 +1,7 @@
 # Canary — status changes, last 7 days
 as_of 2026-11-02T05:51Z · next run ~11:40 UK · stale after 2026-11-02T19:51Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
+Basis: 25 measured from open data, 15 follow a published figure, 49 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 - 2026-11-02T05:51Z Pacific & Indian cyclones [other-cyclones]: ALERT→WATCH — Severe Cyclone Murasu due to hit south Andhra Pradesh overnight 2–3 Nov; GDACS now green
 - 2026-11-02T05:51Z Gold (fear gauge) [gold]: NORMAL→WATCH — Gold down 9% in three months, crossing the 8% fall Watch line

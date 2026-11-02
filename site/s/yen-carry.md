@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: ¥157.8/$, 1w +0.6%
 Rated on: USD/JPY 1w +0.6% < 3%; 1m -0.1% < 6%
+Basis: measured — Set by a fixed rule applied to open data (USD/JPY 1w move % = 0.61 · USD/JPY 1m move % = 0.09). Anyone can reproduce it from the public metrics file.
 
 Yen steady near ¥157.8 per dollar; no sign of a carry-trade unwind
 

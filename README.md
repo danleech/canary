@@ -40,7 +40,7 @@ See [`CHARTER.md`](CHARTER.md) for the scope and design decisions, and [`site/me
 
 `/` and `/s/{id}` also return Markdown when the request sends `Accept: text/markdown`. The live sizes are listed in `llms.txt` and on the methodology page.
 
-Guard-rails for agents reading Canary: every output carries `as_of`, `valid_until` and per-signal `stale_after`; machine outputs use the public vocabulary (`alert`/`watch`/`normal`, `worsening`/`stable`/`improving`, `horizon: acute|seasonal|chronic`); `check` blocks instruction-like text, invisible Unicode and URLs in prose, so poisoned sources can't pass instructions through Canary into other models.
+Guard-rails for agents reading Canary: every output carries `as_of`, `valid_until` and per-signal `stale_after`; machine outputs use the public vocabulary (`alert`/`watch`/`normal`, `worsening`/`stable`/`improving`, `horizon: acute|seasonal|chronic`) and say how each status was set (`basis: measured|published|judged`); `check` blocks instruction-like text, invisible Unicode and URLs in prose, so poisoned sources can't pass instructions through Canary into other models.
 
 | Path | Purpose |
 |---|---|
@@ -48,7 +48,9 @@ Guard-rails for agents reading Canary: every output carries `as_of`, `valid_unti
 | `scripts/fetch_metrics.py` | Open-data fetchers: Yahoo Finance, FRED, ECB, USGS, GDACS, NOAA, NSIDC, ERA5, CISA, the Environment Agency, the Met Office and the EPU/GPR indices. No API keys needed (an optional `AGSI_API_KEY` adds EU gas storage). Restricted sources publish derived values only. |
 | `scripts/canary.py` | `plan` / `apply` / `build` / `check` |
 | `scripts/publish.py` | Generates the pre-rendered pages and every agent-facing output (run by `build`) |
-| `signals/trusted_sources.yaml` | Known-good source domains (others are flagged in the run log) |
+| `signals/trusted_sources.yaml` | Known-good source domains (others are flagged in the run log), never-cite platforms and official suffixes |
+| `signals/coverage.yaml` | The catalogue mapped against WEF's 33 global risks: what's covered, partly covered and missing |
+| `signals/catalogue.lock.json`, `signals/CHANGELOG.md` | Catalogue version, freeze date and change history, written by `canary.py lock` |
 | `functions/` | Cloudflare Pages Functions: the MCP server and Markdown content negotiation |
 | `mcp/server.json` | Listing file for the official MCP Registry |
 | `site/` | The website, built on the IBM Carbon Design System. `site/data/*.json` is the whole "database". |
@@ -107,13 +109,13 @@ Ask Claude in this project to "set up the Canary scheduled task", or create one 
 | I want to… | Do this |
 |---|---|
 | Run an update now | Ask Claude: "Run the Canary update". You can also trigger the scheduled task manually. |
-| Change a threshold | Edit the rubric in `signals/catalogue.yaml`. If it's numeric, also update `suggest()` in `scripts/canary.py`. Then run `python scripts/canary.py check`. |
-| Add a signal | Append it to `catalogue.yaml` with a full rubric. Run `check`. It will show as "Not yet assessed" until the next run. |
+| Change a threshold | The catalogue is frozen until 2 Dec 2026. After that, edit the rubric in `signals/catalogue.yaml` (if it's numeric, also update `suggest()` in `scripts/canary.py`), then run `python scripts/canary.py lock --reason "…"` and `check`. `check` fails on any unlocked change. |
+| Add a signal | Check it against the inclusion rules in `CLAUDE.md` and update `signals/coverage.yaml`. Append it to `catalogue.yaml` with a full rubric, then `lock` and `check`. It will show as "Not yet assessed" until the next run. |
 | Pause updates | Disable the scheduled task. The site keeps its last state and marks signals stale after 14h (or 36h for daily signals). |
 | See what happened | `site/data/runs.json` holds the run log. `site/data/changes.json` and `/feed.xml` hold status changes. |
 | Preview locally | `cd site && python3 -m http.server 8000`, then open http://localhost:8000 (use `.html` paths locally; Pages serves them without the extension). `npx wrangler pages dev site` also runs the Functions. |
 | Review flagged sources | The run log's "not in trusted_sources" warning lists domains to check. Add good ones to `signals/trusted_sources.yaml`. |
-| Promote an emerging risk | When an item in "Outside the catalogue" persists for a week or more, add it to `catalogue.yaml` as a signal and add its id to the relevant situation. |
+| Promote an emerging risk | `canary.py plan` lists emerging risks carried for 14+ days. Promote one only if it passes the inclusion rules in `CLAUDE.md`, then add it as above. |
 
 ## Design system
 

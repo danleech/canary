@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: No US–Russia treaty limits
 Rated on: Arms control lapsed; no test or alert change = Watch
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
 No US–Russia arms limits since February; no test or alert change
 

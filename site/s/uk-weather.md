@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: No warnings in force (2 Nov)
 Rated on: No amber/red Met Office warnings
+Basis: measured — Set by a fixed rule applied to open data (worst warning: none). Anyone can reproduce it from the public metrics file.
 
 No Met Office weather warnings in force
 

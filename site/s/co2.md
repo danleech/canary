@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: 427.2 ppm, +2.00/yr
 Rated on: 2.0–3.0 ppm.
+Basis: measured — Set by a fixed rule applied to open data (CO₂ y/y ppm = 2.12). Anyone can reproduce it from the public metrics file.
 Situation: Super El Niño [super-el-nino]
 
 CO₂ growth reaches 2 ppm a year as El Niño weakens carbon sinks

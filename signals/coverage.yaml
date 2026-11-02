@@ -1,0 +1,178 @@
+# Coverage map: how Canary's catalogue lines up against an external risk taxonomy.
+#
+# Why: Canary's first catalogue grew from the owner's opening brief (finance, geopolitics, war,
+# extreme weather, health) and from whatever was in the news that week. Mapping it against an
+# independent list makes the gaps explicit, so they are decisions rather than accidents.
+#
+# Framework: the 33 global risks of the World Economic Forum's Global Risks Report 2026
+# (Global Risks Perception Survey 2025–2026). Names follow the report; the list is alphabetical
+# because Canary does not reproduce WEF's category labels.
+#
+#   coverage  covered = at least one signal tracks the risk directly
+#             partial = signals track part of it (say which part in `note`)
+#             gap     = nothing tracks it (say whether that is deliberate in `note`)
+#   signals   catalogue ids that track it (checked by canary.py check)
+#   note      ≤ 200 chars, plain text
+#
+# Review this file whenever a signal is added or retired, and at least once a year when WEF
+# publishes a new report. A gap is closed only by a signal that passes the inclusion rules in
+# CLAUDE.md, never just by editing this file.
+
+framework:
+  name: World Economic Forum, Global Risks Report 2026
+  url: https://www.weforum.org/publications/global-risks-report-2026/
+  reviewed: 2026-11-02
+
+risks:
+  - risk: Adverse outcomes of AI technologies
+    coverage: partial
+    signals: [ai-governance]
+    note: "Tracks AI misuse incidents and governance shocks; not labour displacement, concentration of AI capability or loss of control."
+
+  - risk: Adverse outcomes of frontier technologies
+    coverage: gap
+    signals: []
+    note: "Biotech, quantum and neurotechnology misuse are not tracked. Few events would move a status checked four times a day; candidate for a slow-risk panel."
+
+  - risk: Asset bubble burst
+    coverage: partial
+    signals: [equity-stress, crypto, private-credit, credit-spreads]
+    note: "Detects a burst once prices fall or spreads widen. No valuation gauge, so a bubble building up reads Normal."
+
+  - risk: Biodiversity loss and ecosystem collapse
+    coverage: partial
+    signals: [coral-bleaching]
+    note: "Coral bleaching is the only ecosystem indicator. Deliberate for now: most biodiversity data is annual, too slow for a 4×-daily board."
+
+  - risk: Biological, chemical or nuclear weapons or hazards
+    coverage: partial
+    signals: [nuclear-risk, nuclear-plants, iran-nuclear, novel-outbreaks]
+    note: "Nuclear weapons, nuclear plant safety and novel outbreaks are tracked. Chemical and biological weapons use is not."
+
+  - risk: Censorship and surveillance
+    coverage: gap
+    signals: []
+    note: "Not tracked. Internet shutdowns could be added from open data (IODA, Cloudflare Radar) if they pass the inclusion rules."
+
+  - risk: Concentration of strategic resources and technologies
+    coverage: covered
+    signals: [critical-minerals, semiconductors]
+
+  - risk: Crime and illicit economic activity
+    coverage: gap
+    signals: []
+    note: "Not tracked. Organised-crime violence (for example in Haiti, Mexico and Ecuador) is also outside the armed-conflict signals."
+
+  - risk: Critical change to Earth systems
+    coverage: partial
+    signals: [global-temp, sea-ice, co2, enso]
+    note: "Tracks temperature, ice, CO₂ and ENSO. Tipping elements such as the Atlantic overturning circulation and ice-sheet loss are not tracked."
+
+  - risk: Cyber insecurity
+    coverage: covered
+    signals: [cyber, exploited-vulns, outages]
+
+  - risk: Debt
+    coverage: partial
+    signals: [sovereign-debt, gilts, em-stress]
+    note: "Tracks G7 and large emerging-market stress. Not debt distress in low-income countries (IMF/World Bank debt sustainability ratings)."
+
+  - risk: Decline in health and well-being
+    coverage: partial
+    signals: [nhs-pressure, medicine-shortages]
+    note: "Health-system pressure and shortages only. Chronic disease, mental health and life expectancy are slow trends Canary does not rate."
+
+  - risk: Disruptions to a systemically important supply chain
+    coverage: covered
+    signals: [chokepoints, freight, semiconductors, critical-minerals, fertiliser]
+
+  - risk: Disruptions to critical infrastructure
+    coverage: covered
+    signals: [outages, cables-gnss, uk-supply-margins, hybrid-threats, cyber]
+
+  - risk: Economic downturn
+    coverage: covered
+    signals: [us-recession, global-pmi, euro-growth, china-economy, jobless-claims]
+
+  - risk: Erosion of human rights and/or of civic freedoms
+    coverage: gap
+    signals: []
+    note: "Not tracked. Civil unrest covers state crackdowns only when they become deadly or nationwide."
+
+  - risk: Extreme weather events
+    coverage: covered
+    signals: [atlantic-cyclones, other-cyclones, heat, floods, wildfires, drought, cold-storms, uk-weather, uk-floods]
+
+  - risk: Geoeconomic confrontation
+    coverage: covered
+    signals: [trade-war, sanctions, critical-minerals, us-china]
+
+  - risk: Inequality
+    coverage: gap
+    signals: []
+    note: "Deliberate: inequality moves over years and has no event to rate four times a day. Candidate for a slow-risk panel."
+
+  - risk: Infectious diseases
+    coverage: covered
+    signals: [who-emergencies, ebola, h5n1, mpox, measles, cholera-dengue, novel-outbreaks, respiratory]
+
+  - risk: Inflation
+    coverage: covered
+    signals: [us-inflation, uk-rates, food-prices, oil]
+
+  - risk: Insufficient public infrastructure and social protections
+    coverage: partial
+    signals: [aid-funding, nhs-pressure]
+    note: "Humanitarian funding and NHS pressure only."
+
+  - risk: Intrastate violence
+    coverage: partial
+    signals: [sudan, myanmar, sahel, drc-east, other-conflicts, civil-unrest]
+    note: "Named civil wars are tracked. Gang and cartel violence, and most of Latin America, are not."
+
+  - risk: Involuntary migration or displacement
+    coverage: covered
+    signals: [displacement]
+
+  - risk: Lack of economic opportunity or unemployment
+    coverage: partial
+    signals: [jobless-claims]
+    note: "US jobless claims only. No UK, euro-area or youth unemployment measure."
+
+  - risk: Misinformation and disinformation
+    coverage: gap
+    signals: []
+    note: "Ranked second over two years by WEF. Only AI deepfake incidents appear, under AI incidents. No measure of information integrity exists that Canary could rate reliably."
+
+  - risk: Natural resource shortages
+    coverage: partial
+    signals: [food-prices, fertiliser, drought, critical-minerals]
+    note: "Food, fertiliser and minerals are tracked. Water stress is not."
+
+  - risk: Non-weather related natural disasters
+    coverage: covered
+    signals: [earthquakes, volcanic, space-weather]
+
+  - risk: Online harms
+    coverage: gap
+    signals: []
+    note: "Not tracked."
+
+  - risk: Pollution
+    coverage: gap
+    signals: []
+    note: "Not tracked. Acute air-quality emergencies could be added from open data if they pass the inclusion rules."
+
+  - risk: Societal polarization
+    coverage: partial
+    signals: [civil-unrest, political-instability]
+    note: "Tracks unrest and government collapse, which are outcomes of polarisation rather than measures of it."
+
+  - risk: State-based armed conflict
+    coverage: covered
+    signals: [russia-ukraine, middle-east, gulf-iran, india-pakistan, us-china, russia-nato, korea, nuclear-risk]
+
+  - risk: Talent and/or labour shortages
+    coverage: gap
+    signals: []
+    note: "Not tracked."

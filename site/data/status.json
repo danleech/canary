@@ -17,7 +17,9 @@
    "value_num": 19.4,
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "VIX 19.4 < 20 Watch line; S&P drawdown 3% < 10%"
+   "rubric_hit": "VIX 19.4 < 20 Watch line; S&P drawdown 3% < 10%",
+   "basis": "measured",
+   "basis_detail": "VIX=19.42; S&P drawdown %=3.05"
   },
   "ftse": {
    "status": "green",
@@ -36,7 +38,9 @@
    "value_num": 10730,
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "FTSE drawdown 1.7% < 10% Watch line"
+   "rubric_hit": "FTSE drawdown 1.7% < 10% Watch line",
+   "basis": "measured",
+   "basis_detail": "FTSE drawdown %=1.66"
   },
   "bond-volatility": {
    "status": "amber",
@@ -60,7 +64,9 @@
    "value_num": 100.2,
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "MOVE 100.2 ≥ 100 Watch line"
+   "rubric_hit": "MOVE 100.2 ≥ 100 Watch line",
+   "basis": "measured",
+   "basis_detail": "MOVE=100.20; US10y 1m move bp=34.80"
   },
   "credit-spreads": {
    "status": "green",
@@ -79,7 +85,9 @@
    "value_num": 3.26,
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "HY OAS 3.26% < 4% Watch line"
+   "rubric_hit": "HY OAS 3.26% < 4% Watch line",
+   "basis": "measured",
+   "basis_detail": "HY OAS %=3.26"
   },
   "dollar": {
    "status": "green",
@@ -98,7 +106,9 @@
    "value_num": 101.8,
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "DXY 3m move +2.1% < 5% Watch line"
+   "rubric_hit": "DXY 3m move +2.1% < 5% Watch line",
+   "basis": "measured",
+   "basis_detail": "DXY 3m move %=2.14"
   },
   "banking-stress": {
    "status": "green",
@@ -122,7 +132,9 @@
    "value_num": -0.58,
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "STLFSI -0.58 < 0 and CISS 0.01: below Watch lines"
+   "rubric_hit": "STLFSI -0.58 < 0 and CISS 0.01: below Watch lines",
+   "basis": "measured",
+   "basis_detail": "STLFSI=-0.58; ECB CISS=0.01"
   },
   "gold": {
    "status": "amber",
@@ -141,7 +153,9 @@
    "value_num": 3919,
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-11-02T05:51:55Z",
-   "rubric_hit": "Gold 3m change −9.0%, beyond the −8% Watch line"
+   "rubric_hit": "Gold 3m change −9.0%, beyond the −8% Watch line",
+   "basis": "measured",
+   "basis_detail": "Gold 3m gain %=-8.97; 3m fall -9.0%"
   },
   "crypto": {
    "status": "amber",
@@ -171,7 +185,9 @@
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-11-01T23:50:31Z",
    "rubric_hit": "Top-10 exchange under stress (Binance hack, phased withdrawals) = Watch; BTC drawdown 10% < 25%",
-   "override_reason": "Metric floor is green, but the rubric's Watch criterion 'top-10 exchange under stress' still applies while Binance restores withdrawals after the $6.3bn hack."
+   "override_reason": "Metric floor is green, but the rubric's Watch criterion 'top-10 exchange under stress' still applies while Binance restores withdrawals after the $6.3bn hack.",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "us-recession": {
    "status": "green",
@@ -195,7 +211,9 @@
    "value_num": 0.0,
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "Sahm 0.00 < 0.3 Watch line"
+   "rubric_hit": "Sahm 0.00 < 0.3 Watch line",
+   "basis": "measured",
+   "basis_detail": "Sahm=0.00"
   },
   "us-inflation": {
    "status": "amber",
@@ -218,7 +236,9 @@
    "value": "CPI 4.0% y/y",
    "value_num": 4.02,
    "checked_at": "2026-11-01T11:52:42Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "changed_at": "2026-10-31T11:26:06Z",
+   "basis": "measured",
+   "basis_detail": "CPI y/y %=4.02"
   },
   "euro-growth": {
    "status": "green",
@@ -241,7 +261,9 @@
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Q3 GDP +0.4% q/q",
-   "value_num": 0.4
+   "value_num": 0.4,
+   "basis": "published",
+   "basis_detail": "Eurostat GDP and HCOB PMI"
   },
   "china-economy": {
    "status": "green",
@@ -264,7 +286,9 @@
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Q3 GDP +4.5%; Oct NBS PMI 49.3",
-   "value_num": 4.5
+   "value_num": 4.5,
+   "basis": "judged",
+   "basis_detail": ""
   },
   "central-banks": {
    "status": "amber",
@@ -291,7 +315,9 @@
    ],
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "BoE decision 5 Nov; Fed 3.75–4%"
+   "value": "BoE decision 5 Nov; Fed 3.75–4%",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "sovereign-debt": {
    "status": "red",
@@ -314,7 +340,9 @@
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "OAT–Bund ~159bp (30 Oct)",
-   "value_num": 159
+   "value_num": 159,
+   "basis": "judged",
+   "basis_detail": ""
   },
   "global-pmi": {
    "status": "green",
@@ -336,7 +364,9 @@
    ],
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Sep composite: joint-highest since 2021"
+   "value": "Sep composite: joint-highest since 2021",
+   "basis": "published",
+   "basis_detail": "S&P Global / J.P.Morgan Global PMI"
   },
   "oil": {
    "status": "red",
@@ -360,7 +390,9 @@
    "value_num": 109.7,
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "Brent $109.7 near $110 Alert line; Hormuz largely shut"
+   "rubric_hit": "Brent $109.7 near $110 Alert line; Hormuz largely shut",
+   "basis": "measured",
+   "basis_detail": "Brent $=109.66; Brent 1m %=9.31"
   },
   "eu-gas": {
    "status": "red",
@@ -384,7 +416,9 @@
    "value_num": 103.2,
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "TTF €103 > €100 Alert line"
+   "rubric_hit": "TTF €103 > €100 Alert line",
+   "basis": "measured",
+   "basis_detail": "TTF €/MWh=103.19"
   },
   "chokepoints": {
    "status": "red",
@@ -412,7 +446,9 @@
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Hormuz largely shut; mines and attacks",
-   "rubric_hit": "Hormuz substantially closed with attacks on shipping = Alert"
+   "rubric_hit": "Hormuz substantially closed with attacks on shipping = Alert",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "freight": {
    "status": "red",
@@ -430,7 +466,9 @@
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "WCI $4,429/FEU (29 Oct)",
-   "value_num": 4429
+   "value_num": 4429,
+   "basis": "judged",
+   "basis_detail": ""
   },
   "food-prices": {
    "status": "red",
@@ -452,7 +490,9 @@
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "FAO index 136.0 (Sep)",
-   "value_num": 136.0
+   "value_num": 136.0,
+   "basis": "published",
+   "basis_detail": "FAO Food Price Index"
   },
   "critical-minerals": {
    "status": "amber",
@@ -474,7 +514,9 @@
    ],
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "China rare-earth pause ends 10 Nov"
+   "value": "China rare-earth pause ends 10 Nov",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "us-china": {
    "status": "green",
@@ -497,7 +539,9 @@
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No major PLA exercise since Dec 2025",
-   "rubric_hit": "Routine PLA activity; no large-scale exercise"
+   "rubric_hit": "Routine PLA activity; no large-scale exercise",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "russia-nato": {
    "status": "amber",
@@ -520,7 +564,9 @@
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Black Sea ship attacks; incursions",
-   "rubric_hit": "Attacks off NATO coasts attributed to Russia by Romania = Watch"
+   "rubric_hit": "Attacks off NATO coasts attributed to Russia by Romania = Watch",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "iran-nuclear": {
    "status": "amber",
@@ -543,7 +589,9 @@
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No IAEA access",
-   "rubric_hit": "No IAEA access; credible threats of further strikes"
+   "rubric_hit": "No IAEA access; credible threats of further strikes",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "korea": {
    "status": "amber",
@@ -566,7 +614,9 @@
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Missile test on 31 Oct",
-   "rubric_hit": "Repeated ballistic missile launches = Watch"
+   "rubric_hit": "Repeated ballistic missile launches = Watch",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "trade-war": {
    "status": "amber",
@@ -589,7 +639,9 @@
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "US effective tariff ~7%",
-   "rubric_hit": "Major export controls pending renewal; tariffs elevated"
+   "rubric_hit": "Major export controls pending renewal; tariffs elevated",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "sanctions": {
    "status": "amber",
@@ -611,7 +663,9 @@
    ],
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "US blockade of Iran; Graham Act in force"
+   "value": "US blockade of Iran; Graham Act in force",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "political-instability": {
    "status": "green",
@@ -633,7 +687,9 @@
    ],
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "No G20 government collapse (1 Nov)"
+   "value": "No G20 government collapse (1 Nov)",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "russia-ukraine": {
    "status": "red",
@@ -657,7 +713,9 @@
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "759 drones on 1 Nov",
    "value_num": 759,
-   "rubric_hit": "Full-scale war with mass strikes on infrastructure = Alert"
+   "rubric_hit": "Full-scale war with mass strikes on infrastructure = Alert",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "middle-east": {
    "status": "red",
@@ -680,7 +738,9 @@
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "US–Iran war since 28 Feb",
-   "rubric_hit": "Active interstate war with attacks on shipping = Alert"
+   "rubric_hit": "Active interstate war with attacks on shipping = Alert",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "sudan": {
    "status": "red",
@@ -702,7 +762,9 @@
    ],
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Drone war; ~14m displaced"
+   "value": "Drone war; ~14m displaced",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "drc-east": {
    "status": "amber",
@@ -724,7 +786,9 @@
    ],
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Kivu clashes; no city changed hands"
+   "value": "Kivu clashes; no city changed hands",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "sahel": {
    "status": "red",
@@ -746,7 +810,9 @@
    ],
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "JNIM fuel blockade of Bamako"
+   "value": "JNIM fuel blockade of Bamako",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "myanmar": {
    "status": "amber",
@@ -768,7 +834,9 @@
    ],
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Civil war; no major city changed hands"
+   "value": "Civil war; no major city changed hands",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "india-pakistan": {
    "status": "amber",
@@ -786,7 +854,9 @@
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "LoC tension, no strikes",
-   "rubric_hit": "Persistent tension without strikes = Watch"
+   "rubric_hit": "Persistent tension without strikes = Watch",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "nuclear-risk": {
    "status": "amber",
@@ -809,7 +879,9 @@
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No US–Russia treaty limits",
-   "rubric_hit": "Arms control lapsed; no test or alert change = Watch"
+   "rubric_hit": "Arms control lapsed; no test or alert change = Watch",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "atlantic-cyclones": {
    "status": "green",
@@ -827,7 +899,9 @@
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No active systems",
-   "rubric_hit": "No active systems or NHC formation risk"
+   "rubric_hit": "No active systems or NHC formation risk",
+   "basis": "published",
+   "basis_detail": "NOAA National Hurricane Center"
   },
   "other-cyclones": {
    "status": "amber",
@@ -855,7 +929,9 @@
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-11-02T05:51:55Z",
    "value": "Cyclone Murasu: landfall due 2–3 Nov",
-   "rubric_hit": "Cyclone threatening land within 72h = Watch; GDACS alert now green"
+   "rubric_hit": "Cyclone threatening land within 72h = Watch; GDACS alert now green",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "heat": {
    "status": "green",
@@ -877,7 +953,9 @@
    ],
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "No major heatwave warnings (1 Nov)"
+   "value": "No major heatwave warnings (1 Nov)",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "wildfires": {
    "status": "green",
@@ -895,7 +973,9 @@
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
-   "rubric_hit": "No GDACS orange/red wildfire alerts"
+   "rubric_hit": "No GDACS orange/red wildfire alerts",
+   "basis": "measured",
+   "basis_detail": "GDACS wildfire: 0 red / 0 orange"
   },
   "floods": {
    "status": "green",
@@ -918,7 +998,9 @@
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
-   "rubric_hit": "No GDACS orange/red flood alerts"
+   "rubric_hit": "No GDACS orange/red flood alerts",
+   "basis": "measured",
+   "basis_detail": "GDACS flood: 0 red / 0 orange"
   },
   "earthquakes": {
    "status": "green",
@@ -937,7 +1019,9 @@
    "value_num": 6.4,
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "Max M6.4 < M7 Watch line"
+   "rubric_hit": "Max M6.4 < M7 Watch line",
+   "basis": "measured",
+   "basis_detail": "max magnitude=6.40"
   },
   "volcanic": {
    "status": "green",
@@ -959,7 +1043,9 @@
    ],
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "No red aviation codes on major routes"
+   "value": "No red aviation codes on major routes",
+   "basis": "published",
+   "basis_detail": "Volcano observatories' aviation colour codes, VAACs and Smithsonian GVP"
   },
   "drought": {
    "status": "amber",
@@ -981,7 +1067,9 @@
    ],
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "E Africa, S Africa, Australia wheat hit"
+   "value": "E Africa, S Africa, Australia wheat hit",
+   "basis": "published",
+   "basis_detail": "Drought monitors and monsoon statistics"
   },
   "space-weather": {
    "status": "green",
@@ -1000,7 +1088,9 @@
    "value_num": 0,
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "G0 < G4 Watch line"
+   "rubric_hit": "G0 < G4 Watch line",
+   "basis": "measured",
+   "basis_detail": "NOAA G0 S0 R0 (24h max)"
   },
   "global-temp": {
    "status": "red",
@@ -1018,7 +1108,9 @@
    "value": "+1.74°C vs pre-industrial",
    "value_num": 1.82,
    "checked_at": "2026-11-01T11:52:42Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "changed_at": "2026-10-31T11:26:06Z",
+   "basis": "measured",
+   "basis_detail": "°C above pre-industrial=1.77"
   },
   "sea-ice": {
    "status": "amber",
@@ -1036,7 +1128,9 @@
    "value": "Arctic -1.73, Antarctic -1.62M km²",
    "value_num": -1.745,
    "checked_at": "2026-11-01T11:52:42Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "changed_at": "2026-10-31T11:26:06Z",
+   "basis": "measured",
+   "basis_detail": "worst anomaly -1.73M km²"
   },
   "co2": {
    "status": "amber",
@@ -1054,7 +1148,9 @@
    "value": "427.2 ppm, +2.00/yr",
    "value_num": 426.73,
    "checked_at": "2026-11-01T11:52:42Z",
-   "changed_at": "2026-11-01T11:52:42Z"
+   "changed_at": "2026-11-01T11:52:42Z",
+   "basis": "measured",
+   "basis_detail": "CO₂ y/y ppm=2.12"
   },
   "enso": {
    "status": "red",
@@ -1077,7 +1173,9 @@
    "value": "ONI +2.2 (El Niño)",
    "value_num": 2.16,
    "checked_at": "2026-11-01T11:52:42Z",
-   "changed_at": "2026-10-31T11:26:06Z"
+   "changed_at": "2026-10-31T11:26:06Z",
+   "basis": "measured",
+   "basis_detail": "|ONI|=2.16"
   },
   "coral-bleaching": {
    "status": "green",
@@ -1099,7 +1197,9 @@
    ],
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "No global event since June"
+   "value": "No global event since June",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "who-emergencies": {
    "status": "amber",
@@ -1123,7 +1223,9 @@
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "1 PHEIC (Ebola)",
    "value_num": 1,
-   "rubric_hit": "One PHEIC in force = Watch"
+   "rubric_hit": "One PHEIC in force = Watch",
+   "basis": "published",
+   "basis_detail": "WHO (PHEIC and IHR Emergency Committee decisions)"
   },
   "ebola": {
    "status": "red",
@@ -1152,7 +1254,9 @@
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "10,141+ cases (27 Oct)",
    "value_num": 10141,
-   "rubric_hit": "Spread to a new country within 30 days (Nigeria, 20 Oct) = Alert"
+   "rubric_hit": "Spread to a new country within 30 days (Nigeria, 20 Oct) = Alert",
+   "basis": "published",
+   "basis_detail": "WHO, Africa CDC and ECDC case counts"
   },
   "h5n1": {
    "status": "green",
@@ -1170,7 +1274,9 @@
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No human-to-human spread",
-   "rubric_hit": "Sporadic animal-to-human cases only"
+   "rubric_hit": "Sporadic animal-to-human cases only",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "mpox": {
    "status": "amber",
@@ -1191,7 +1297,9 @@
    ],
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Clade I local spread in US"
+   "value": "Clade I local spread in US",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "measles": {
    "status": "amber",
@@ -1214,7 +1322,9 @@
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "US 4,852 cases (29 Oct)",
-   "value_num": 4852
+   "value_num": 4852,
+   "basis": "judged",
+   "basis_detail": ""
   },
   "cholera-dengue": {
    "status": "amber",
@@ -1241,7 +1351,9 @@
    ],
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Cholera in DRC; record dengue seasons"
+   "value": "Cholera in DRC; record dengue seasons",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "novel-outbreaks": {
    "status": "green",
@@ -1259,7 +1371,9 @@
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No unexplained clusters",
-   "rubric_hit": "No unexplained clusters"
+   "rubric_hit": "No unexplained clusters",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "cyber": {
    "status": "amber",
@@ -1287,7 +1401,9 @@
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Binance theft; govt services hit",
-   "rubric_hit": "Attacks disrupting a major exchange and government services = Watch; theft, not destructive"
+   "rubric_hit": "Attacks disrupting a major exchange and government services = Watch; theft, not destructive",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "outages": {
    "status": "green",
@@ -1305,7 +1421,9 @@
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No major outages",
-   "rubric_hit": "No major outage this week"
+   "rubric_hit": "No major outage this week",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "cables-gnss": {
    "status": "amber",
@@ -1327,7 +1445,9 @@
    ],
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Asia cable faults; Gulf/Baltic GNSS jamming"
+   "value": "Asia cable faults; Gulf/Baltic GNSS jamming",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "semiconductors": {
    "status": "amber",
@@ -1349,7 +1469,9 @@
    ],
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Helium shortage; rare-earth deadline 10 Nov"
+   "value": "Helium shortage; rare-earth deadline 10 Nov",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "ai-governance": {
    "status": "amber",
@@ -1366,7 +1488,9 @@
    ],
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "EU AI Act enforcement under way"
+   "value": "EU AI Act enforcement under way",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "famine": {
    "status": "amber",
@@ -1388,7 +1512,9 @@
    ],
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Risk-of-famine alerts: Somalia, Sudan"
+   "value": "Risk-of-famine alerts: Somalia, Sudan",
+   "basis": "published",
+   "basis_detail": "IPC classifications and FEWS NET"
   },
   "displacement": {
    "status": "green",
@@ -1409,7 +1535,9 @@
    ],
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "No new 500k+ event (1 Nov)"
+   "value": "No new 500k+ event (1 Nov)",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "civil-unrest": {
    "status": "amber",
@@ -1431,7 +1559,9 @@
    ],
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "France, Germany, Spain protests"
+   "value": "France, Germany, Spain protests",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "uk-rates": {
    "status": "amber",
@@ -1449,7 +1579,9 @@
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "CPI 3.5% (Sep); BoE meets 5 Nov",
-   "value_num": 3.5
+   "value_num": 3.5,
+   "basis": "judged",
+   "basis_detail": ""
   },
   "gilts": {
    "status": "amber",
@@ -1468,7 +1600,9 @@
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "10y 5.29% (30 Oct)",
    "value_num": 5.29,
-   "rubric_hit": "Gilt yields near multi-decade highs = Watch; 10y 1m move −13bp"
+   "rubric_hit": "Gilt yields near multi-decade highs = Watch; 10y 1m move −13bp",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "uk-energy-cap": {
    "status": "red",
@@ -1491,7 +1625,9 @@
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "£1,723 now; Jan forecast +27%",
-   "value_num": 1723
+   "value_num": 1723,
+   "basis": "judged",
+   "basis_detail": ""
   },
   "uk-weather": {
    "status": "green",
@@ -1510,7 +1646,9 @@
    "checked_at": "2026-11-02T05:51:55Z",
    "changed_at": "2026-11-01T11:52:42Z",
    "value_num": 8,
-   "rubric_hit": "No amber/red Met Office warnings"
+   "rubric_hit": "No amber/red Met Office warnings",
+   "basis": "measured",
+   "basis_detail": "worst warning: none"
   },
   "nhs-pressure": {
    "status": "green",
@@ -1527,7 +1665,9 @@
    ],
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Flu low, RSV at baseline (wk 43)"
+   "value": "Flu low, RSV at baseline (wk 43)",
+   "basis": "published",
+   "basis_detail": "UKHSA surveillance and NHS England situation reports"
   },
   "uk-threat-level": {
    "status": "red",
@@ -1548,7 +1688,9 @@
    ],
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Threat level: Severe"
+   "value": "Threat level: Severe",
+   "basis": "published",
+   "basis_detail": "MI5 / JTAC national threat level"
   },
   "uk-disruption": {
    "status": "amber",
@@ -1570,7 +1712,9 @@
    ],
    "checked_at": "2026-11-01T11:52:42Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Doctors' strikes 14–19 Nov"
+   "value": "Doctors' strikes 14–19 Nov",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "funding-stress": {
    "status": "green",
@@ -1594,7 +1738,9 @@
     }
    ],
    "checked_at": "2026-11-02T05:51:55Z",
-   "changed_at": "2026-11-01T17:51:27Z"
+   "changed_at": "2026-11-01T17:51:27Z",
+   "basis": "measured",
+   "basis_detail": "SOFR–IORB 5d max bp=5.00; Fed repo ops 5d max $bn=0.01"
   },
   "private-credit": {
    "status": "amber",
@@ -1618,7 +1764,9 @@
     }
    ],
    "checked_at": "2026-11-01T17:51:27Z",
-   "changed_at": "2026-11-01T17:51:27Z"
+   "changed_at": "2026-11-01T17:51:27Z",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "yen-carry": {
    "status": "green",
@@ -1637,7 +1785,9 @@
     }
    ],
    "checked_at": "2026-11-02T05:51:55Z",
-   "changed_at": "2026-11-01T17:51:27Z"
+   "changed_at": "2026-11-01T17:51:27Z",
+   "basis": "measured",
+   "basis_detail": "USD/JPY 1w move %=0.61; USD/JPY 1m move %=0.09"
   },
   "jobless-claims": {
    "status": "green",
@@ -1656,7 +1806,9 @@
     }
    ],
    "checked_at": "2026-11-01T17:51:27Z",
-   "changed_at": "2026-11-01T17:51:27Z"
+   "changed_at": "2026-11-01T17:51:27Z",
+   "basis": "measured",
+   "basis_detail": "4wk avg % above 52w low=0.00"
   },
   "em-stress": {
    "status": "green",
@@ -1679,7 +1831,9 @@
     }
    ],
    "checked_at": "2026-11-01T17:51:27Z",
-   "changed_at": "2026-11-01T17:51:27Z"
+   "changed_at": "2026-11-01T17:51:27Z",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "fertiliser": {
    "status": "red",
@@ -1703,7 +1857,9 @@
     }
    ],
    "checked_at": "2026-11-01T17:51:27Z",
-   "changed_at": "2026-11-01T17:51:27Z"
+   "changed_at": "2026-11-01T17:51:27Z",
+   "basis": "published",
+   "basis_detail": "World Bank commodity prices (Pink Sheet)"
   },
   "nuclear-plants": {
    "status": "amber",
@@ -1731,7 +1887,9 @@
     }
    ],
    "checked_at": "2026-11-01T17:51:27Z",
-   "changed_at": "2026-11-01T17:51:27Z"
+   "changed_at": "2026-11-01T17:51:27Z",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "hybrid-threats": {
    "status": "amber",
@@ -1759,7 +1917,9 @@
     }
    ],
    "checked_at": "2026-11-02T05:51:55Z",
-   "changed_at": "2026-11-01T17:51:27Z"
+   "changed_at": "2026-11-01T17:51:27Z",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "gulf-iran": {
    "status": "red",
@@ -1787,7 +1947,9 @@
     }
    ],
    "checked_at": "2026-11-02T05:51:55Z",
-   "changed_at": "2026-11-01T17:51:27Z"
+   "changed_at": "2026-11-01T17:51:27Z",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "other-conflicts": {
    "status": "amber",
@@ -1805,7 +1967,9 @@
     }
    ],
    "checked_at": "2026-11-01T17:51:27Z",
-   "changed_at": "2026-11-01T17:51:27Z"
+   "changed_at": "2026-11-01T17:51:27Z",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "cold-storms": {
    "status": "green",
@@ -1828,7 +1992,9 @@
     }
    ],
    "checked_at": "2026-11-01T17:51:27Z",
-   "changed_at": "2026-11-01T17:51:27Z"
+   "changed_at": "2026-11-01T17:51:27Z",
+   "basis": "published",
+   "basis_detail": "National met services' warning levels"
   },
   "respiratory": {
    "status": "amber",
@@ -1856,7 +2022,9 @@
     }
    ],
    "checked_at": "2026-11-01T17:51:27Z",
-   "changed_at": "2026-11-01T17:51:27Z"
+   "changed_at": "2026-11-01T17:51:27Z",
+   "basis": "published",
+   "basis_detail": "WHO variant designations and surveillance"
   },
   "medicine-shortages": {
    "status": "amber",
@@ -1875,7 +2043,9 @@
     }
    ],
    "checked_at": "2026-11-01T17:51:27Z",
-   "changed_at": "2026-11-01T17:51:27Z"
+   "changed_at": "2026-11-01T17:51:27Z",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "exploited-vulns": {
    "status": "green",
@@ -1894,7 +2064,9 @@
     }
    ],
    "checked_at": "2026-11-02T05:51:55Z",
-   "changed_at": "2026-11-01T17:51:27Z"
+   "changed_at": "2026-11-01T17:51:27Z",
+   "basis": "measured",
+   "basis_detail": "KEV additions 7d=8.00"
   },
   "aid-funding": {
    "status": "amber",
@@ -1913,7 +2085,9 @@
     }
    ],
    "checked_at": "2026-11-01T17:51:27Z",
-   "changed_at": "2026-11-01T17:51:27Z"
+   "changed_at": "2026-11-01T17:51:27Z",
+   "basis": "judged",
+   "basis_detail": ""
   },
   "uk-supply-margins": {
    "status": "green",
@@ -1936,7 +2110,9 @@
     }
    ],
    "checked_at": "2026-11-01T17:51:27Z",
-   "changed_at": "2026-11-01T17:51:27Z"
+   "changed_at": "2026-11-01T17:51:27Z",
+   "basis": "published",
+   "basis_detail": "NESO and National Gas system notices"
   },
   "uk-floods": {
    "status": "green",
@@ -1955,13 +2131,15 @@
     }
    ],
    "checked_at": "2026-11-02T05:51:55Z",
-   "changed_at": "2026-11-01T17:51:27Z"
+   "changed_at": "2026-11-01T17:51:27Z",
+   "basis": "measured",
+   "basis_detail": "EA: 0 severe, 0 warnings"
   }
  },
  "headline": "Iran says two more tankers hit mines at Hormuz as talks on reopening it continue and Brent hovers near $110. Cyclone Murasu nears India's east coast, and Russia launched 759 drones at Ukraine on 1 Nov.",
  "generated_at": "2026-11-02T05:51:55Z",
  "world": {
-  "score": 42,
+  "score": 40,
   "band": "Strained",
   "status": "amber",
   "counts": {
@@ -1971,17 +2149,18 @@
   },
   "by_domain": {
    "markets": 18,
-   "economy": 22,
-   "energy": 88,
-   "geopolitics": 38,
-   "conflict": 75,
-   "hazards": 10,
-   "climate": 60,
+   "economy": 21,
+   "energy": 75,
+   "geopolitics": 33,
+   "conflict": 72,
+   "hazards": 11,
+   "climate": 50,
    "health": 44,
    "tech": 33,
    "humanitarian": 38,
    "uk": 39
-  }
+  },
+  "method": 2
  },
  "situations": [
   {

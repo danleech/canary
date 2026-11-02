@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: $3,919, 3m -9.0%
 Rated on: Gold 3m change −9.0%, beyond the −8% Watch line
+Basis: measured — Set by a fixed rule applied to open data (Gold 3m gain % = -8.97 · 3m fall -9.0%). Anyone can reproduce it from the public metrics file.
 
 Gold down 9% in three months, crossing the 8% fall Watch line
 

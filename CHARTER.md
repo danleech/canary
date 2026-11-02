@@ -55,7 +55,7 @@ Final rubrics are written during the build. **D** = refreshed once daily; everyt
 10. **Humanitarian** (3, all **D**): Famine (IPC Phase 5) · Forced displacement · Civil unrest
 11. **UK watch** (7): BoE rate & UK inflation · Gilt market stress · UK energy price cap **D** · Met Office warnings · NHS / respiratory pressure (UKHSA) · UK terrorism threat level · Major strikes / disruption
 
-**Headline "World State" index:** a weighted aggregate (Alert = 2, Watch = 1, domain-weighted, scaled 0–100) shown as one number plus colour at the top. The formula is published on the methodology page.
+**Headline "World State" index:** a weighted aggregate (Alert = 2, Watch = 1, domain-weighted, scaled 0–100) shown as one number plus colour at the top. The formula is published on the methodology page. *(Changed on 2 Nov 2026: equal domain weights, with signals in one situation counted once per domain. See §17.)*
 
 ## 5. Non-goals (v1)
 
@@ -128,7 +128,9 @@ GitHub repo (public) ──► Cloudflare Pages (auto-deploy on push) ──► 
 - Zero runs publish invalid JSON or a signal without a source.
 - At most ~3 status flips per signal per week, unless reality genuinely moved.
 - Page loads in under 1s (Lighthouse ≥ 95 performance and accessibility).
-- Dan reviews 10 random signals and agrees with ≥ 8 of the statuses.
+- ~~Dan reviews 10 random signals and agrees with ≥ 8 of the statuses.~~ Replaced on 2 Nov 2026 (§17): it calibrated the board to the same priors that shaped the catalogue.
+- **External agreement (replaces the line above).** At day 30, compare Canary with independent trackers on the same dates: Crisis Group CrisisWatch (conflict and geopolitics deteriorations), IPC/FEWS NET (famine), WHO Disease Outbreak News (health), GDACS red alerts (hazards). Target: every event those trackers flag at their top level appears on Canary at Watch or above, with no unexplained Alerts. Record disagreements and what they taught.
+- **Judgement share is visible.** Every status shows its basis, and the share of AI judgements is published on the board and in `runs.json`.
 
 ## 11. Name & domain
 
@@ -208,3 +210,29 @@ Dan asked for a sentiment track for global issues and how the intelligence could
 **Files:** `scripts/fetch_sentiment.py` (runs in the metrics workflow, `continue-on-error`), `signals/sentiment.yaml`, `site/data/sentiment.json`, pre-rendered Sentiment panel (collapsed, under Situations), a section in `now.md`, `api/v1/sentiment.json`, and a methodology section listing every theme counted.
 
 **Open decision for Dan:** whether to add a monthly public-concern reading from published polls (Claude-maintained, with sources), accepting the extra run cost and that the figures would be cited rather than redistributed.
+
+## 17. v1.3 — bias review and first fixes (2 Nov 2026)
+
+Dan asked what the project's blind spots were, and whether his early prompts had biased or narrowed it. The review found four sources of bias. The **brief** named five areas, which became the high weights, and finance dominated (28 of 89 signals in markets, economy and energy against 4 humanitarian). **Recency**: v1.1 additions followed that week's news and thresholds were set while looking at current values. The **format**: a 4×-daily traffic light suits fast risks and fits slow ones badly. The **assessor**: thin, concentrated, mostly English-language sourcing, and a success criterion that measured agreement with Dan. Dan asked to start addressing them.
+
+**Decisions (Dan, 2 Nov 2026):**
+
+- **World State index, method 2:** equal domain weights (all 1.0), and signals in the same situation count once within each domain. Situations therefore now affect the index, so CLAUDE.md rule 13 limits membership to signals whose current level the event mainly explains. On the statuses at the time the score moved from 42 to 40. The method 1 series is archived in `site/data/world_v1.json` and the trend line restarts.
+- **Ship straight to `main`.**
+
+**Changes made:**
+
+- **Basis on every status:** `measured` (metric floor decides, computed by `apply`), `published` (a named body's figure, declared by the assessor and checked against the catalogue's new `published` field on 28 signals), or `judged`. Judged statuses carry an AI badge on the board, the legend counts them, the detail panel and `/s/{id}` explain how each status was set, and every agent output carries `basis` (`provenance` is deprecated). At the first build: 25 measured, 15 published and 49 judged. Statuses assessed before this have a reconstructed basis until their next check.
+- **Sourcing rules** enforced by `apply`: a judged Alert needs two independent outlets, one trusted; an `avoid` list (encyclopedias, self-publishing, social media, forums) is rejected; no news outlet may exceed 20% of a run's news citations (warning above 10%; official bodies and data feeds exempt). Twelve established outlets added to the trusted list. `runs.json` now records basis counts and the top outlets per run.
+- **Catalogue governance:** `signals/catalogue.lock.json` (v1.3) fingerprints ids, domains, weights, tiers, horizons, metrics, rubrics and `published`. `check` fails on any unlocked change, and `canary.py lock` records approved changes in `signals/CHANGELOG.md`. The catalogue is **frozen until 2 Dec 2026**, with written inclusion, graduation (emerging for 14+ days) and review rules (Normal for 90 days); `plan` lists candidates for Dan's weekly review.
+- **Coverage map:** `signals/coverage.yaml` maps the catalogue against WEF's Global Risks Report 2026 (33 risks): 12 covered, 12 partial, 9 gaps (frontier technologies, censorship and surveillance, crime, human rights, inequality, misinformation, online harms, pollution, labour shortages). It is rendered on the methodology page, gaps first.
+- **Methodology:** new sections on how each status is set, known limitations and biases, coverage and gaps, and how the catalogue changes. Index and situations text corrected. `llms.txt` and `now.md` point agents to the limitations.
+
+**Not yet done (next steps, in order):**
+
+1. Backtest the metric rubrics against 2008, 2020 and 2022 with FRED and other open series, and record the results before the freeze ends.
+2. Run the day-30 external agreement check (§10) around 30 Nov.
+3. Design a slow-risk panel (monthly, no traffic light) for structural gaps such as inequality, biodiversity, low-income debt distress and antimicrobial resistance.
+4. Deliberate regional and non-English sourcing: add regional outlets to the trusted list and the catalogue `hints`.
+5. After the freeze: decide which coverage gaps deserve signals, using the inclusion rules.
+

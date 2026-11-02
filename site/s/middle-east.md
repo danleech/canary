@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: US–Iran war since 28 Feb
 Rated on: Active interstate war with attacks on shipping = Alert
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
 US–Iran war: more tankers hit at Hormuz as Trump says war will end 'one way or the other'

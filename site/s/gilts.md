@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: 10y 5.29% (30 Oct)
 Rated on: Gilt yields near multi-decade highs = Watch; 10y 1m move −13bp
+Basis: judged — The AI assessor's reading of 1 source from 1 outlet against the rubric. Check the sources before relying on it.
 
 Gilt yields near 19-year highs ahead of an expected 5 Nov rate rise
 

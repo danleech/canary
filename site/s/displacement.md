@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: No new 500k+ event (1 Nov)
 Rated on: No new mass displacement events this month.
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
 No new mass displacement event this month; global total above 120 million
 

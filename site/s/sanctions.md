@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: US blockade of Iran; Graham Act in force
 Rated on: Major new packages, secondary-sanction threats on large economies, or asset-seizure moves.
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
 US blockade of Iran and new secondary-sanction powers on Russia

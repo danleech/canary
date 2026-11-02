@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: BoE decision 5 Nov; Fed 3.75–4%
 Rated on: Stagflationary dilemma, open political pressure on a major central bank, or FX intervention by a G7 bank.
+Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 Situation: Energy shock feeding inflation [energy-inflation]
 
 Central banks caught between energy-driven inflation and slowing growth

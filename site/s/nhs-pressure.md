@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Flu low, RSV at baseline (wk 43)
 Rated on: Respiratory activity at baseline and no widespread critical incidents.
+Basis: published — Follows UKHSA surveillance and NHS England situation reports, read from the cited source by the AI assessor and checked against the rubric.
 
 Flu, COVID and RSV at low or baseline levels; flu usually rises in November
 

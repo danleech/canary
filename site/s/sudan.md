@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Drone war; ~14m displaced
 Rated on: Major sieges or massacres reported, or famine spreading to new areas.
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: Sudan war [sudan-war]
 
 Record drone attacks on civilians in October; army rejects talks

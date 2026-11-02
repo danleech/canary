@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: OAT–Bund ~159bp (30 Oct)
 Rated on: Failed G7 auction, emergency central-bank purchases, France–Bund > 150bp, or Italy–Bund > 250bp.
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: France: debt stress and protests [france-fiscal-stress]
 
 French borrowing costs spike: OAT–Bund spread near 160bp

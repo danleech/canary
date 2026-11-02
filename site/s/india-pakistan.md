@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: LoC tension, no strikes
 Rated on: Persistent tension without strikes = Watch
+Basis: judged — The AI assessor's reading of 1 source from 1 outlet against the rubric. Check the sources before relying on it.
 
 Tense border but no cross-border military strikes since 2025
 

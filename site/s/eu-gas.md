@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: €103/MWh
 Rated on: TTF €103 > €100 Alert line
+Basis: measured — Set by a fixed rule applied to open data (TTF €/MWh = 103.19). Anyone can reproduce it from the public metrics file.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
 European gas above €100/MWh with Gulf LNG routes still blocked

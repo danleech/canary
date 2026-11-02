@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: $109.7, 1m +9%
 Rated on: Brent $109.7 near $110 Alert line; Hormuz largely shut
+Basis: measured — Set by a fixed rule applied to open data (Brent $ = 109.66 · Brent 1m % = 9.31). Anyone can reproduce it from the public metrics file.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
 Brent near $110 as Iran reports more tankers hit at Hormuz

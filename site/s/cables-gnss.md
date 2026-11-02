@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Asia cable faults; Gulf/Baltic GNSS jamming
 Rated on: Cable damage incident, or widespread GNSS interference affecting aviation.
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
 Asian subsea cable cuts and widespread GPS jamming
 

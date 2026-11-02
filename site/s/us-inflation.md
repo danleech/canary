@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: CPI 4.0% y/y
 Rated on: CPI 3.0–4.5%, or rising for 3 consecutive months.
+Basis: measured — Set by a fixed rule applied to open data (CPI y/y % = 4.02). Anyone can reproduce it from the public metrics file.
 Situation: Energy shock feeding inflation [energy-inflation]
 
 US CPI at 4.0%, pushed up by the oil shock

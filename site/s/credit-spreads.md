@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: HY OAS 3.26%
 Rated on: HY OAS 3.26% < 4% Watch line
+Basis: measured — Set by a fixed rule applied to open data (HY OAS % = 3.26). Anyone can reproduce it from the public metrics file.
 
 High-yield spreads tight at 3.26%, no sign of corporate credit stress
 

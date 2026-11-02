@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: JNIM fuel blockade of Bamako
 Rated on: Blockade or fall of a capital or major city, or mass-casualty attacks spreading to coastal states.
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
 JNIM fuel blockade on Bamako persists; insurgency pressing toward Guinea
 

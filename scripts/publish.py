@@ -43,8 +43,11 @@ ICON_FOR = {"green": "checkmark--filled", "amber": "warning--alt--filled", "red"
             "stale": "circle-dash", "pending": "circle-dash"}
 ORDER = {"red": 0, "amber": 1, "green": 2, "pending": 3}
 HORIZON_LABEL = {"chronic": "Chronic", "seasonal": "Seasonal"}
+BASIS_LABEL = {"measured": "Measured", "published": "Published figure", "judged": "AI judgement"}
+COVERAGE_LABEL = {"covered": ("Covered", "teal"), "partial": ("Partial", "warm-gray"), "gap": ("Gap", "magenta")}
+REPO_URL = "https://github.com/danleech/canary"
 RUN_TIMES = ("05:40", "11:40", "17:40", "23:40")
-SCHEMA_VERSION = "1.1"
+SCHEMA_VERSION = "1.2"
 LICENCE = {
     "name": "CC BY 4.0",
     "url": "https://creativecommons.org/licenses/by/4.0/",
@@ -202,6 +205,39 @@ def tag(text: str, kind: str = "gray") -> str:
     return f'<span class="cds--tag cds--tag--{kind} cds--tag--sm"><span class="cds--tag__label">{e(text)}</span></span>'
 
 
+def ai_badge() -> str:
+    """Marks a status that is the AI assessor's judgement (mirrors aiBadge() in app.js)."""
+    return ('<span class="cnry-ai" title="Status set by AI judgement from news reports">AI'
+            '<span class="cds--visually-hidden"> judgement</span></span>')
+
+
+def basis_sentence(basis: str | None, detail: str | None, by: str | None, n_src: int, n_outlets: int) -> str:
+    """Plain-language account of how a status was set. Mirrors basisSentence() in app.js."""
+    if basis == "measured":
+        inputs = (detail or "").replace("=", " = ").replace("; ", " · ")
+        return ("Set by a fixed rule applied to open data" + (f" ({inputs})" if inputs else "")
+                + ". Anyone can reproduce it from the public metrics file.")
+    if basis == "published":
+        return (f"Follows {by or 'an official classification'}, read from the cited source by the AI assessor "
+                "and checked against the rubric.")
+    extra = {"raised above the data floor on reported events": " The data alone would rate it lower; it was raised on reported events.",
+             "set below the data floor by assessor override": " The assessor set it below what the data implies, with a written reason."}.get(detail or "", "")
+    return (f"The AI assessor's reading of {n_src} source{'' if n_src == 1 else 's'} from {n_outlets} "
+            f"outlet{'' if n_outlets == 1 else 's'} against the rubric.{extra} Check the sources before relying on it.")
+
+
+def outlets_of(sources: list) -> int:
+    hosts = set()
+    for x in sources:
+        try:
+            h = x.get("url", "").split("/")[2].split(":")[0].lower()
+        except IndexError:
+            continue
+        parts = re.sub(r"^www\.", "", h).split(".")
+        hosts.add(".".join(parts[-3:]) if len(parts) >= 3 and len(parts[-2]) <= 3 and len(parts[-1]) == 2 else ".".join(parts[-2:]))
+    return len(hosts)
+
+
 def hydrate_icons(doc: str) -> str:
     """Fill empty data-icon elements with their SVG so icons show without JavaScript (idempotent)."""
     return re.sub(r'(<(\w+)\b[^>]*\bdata-icon="([\w-]+)"[^>]*>)(</\2>)',
@@ -238,6 +274,8 @@ class Model:
             for sid in s.get("signals", []):
                 self.sit_for.setdefault(sid, []).append(s["id"])
         self.world = status.get("world") or {}
+        self.coverage: dict | None = None
+        self.lock: dict | None = None
         self.records = [self.record(s) for s in cat["signals"]]
         self.rec = {r["id"]: r for r in self.records}
         cutoff = t - timedelta(hours=24)
@@ -262,6 +300,9 @@ class Model:
             "summary": cur.get("summary"), "state": cur.get("state"), "for_you": cur.get("for_you"),
             "rubric_hit": cur.get("rubric_hit") or (s["rubric"].get(st) if st in PUBLIC else None),
             "situations": self.sit_for.get(s["id"], []),
+            "basis": cur.get("basis") if cur else None,
+            "basis_detail": (cur.get("basis_detail") or None) if cur else None,
+            "basis_by": (s.get("published") or {}).get("by") if cur.get("basis") == "published" else None,
             "provenance": "metric" if mkeys else "reporting",
             "checked_at": cur.get("checked_at"), "changed_at": cur.get("changed_at"),
             "stale_after": iso(checked + timedelta(hours=self.stale_h[s["tier"]])) if checked else None,
@@ -278,11 +319,24 @@ class Model:
             c[r["status"]] += 1
         return c
 
+    def basis_counts(self) -> dict:
+        c = {"measured": 0, "published": 0, "judged": 0}
+        for r in self.records:
+            if r["status"] != "pending" and r.get("basis") in c:
+                c[r["basis"]] += 1
+        return c
+
+    def basis_line(self) -> str:
+        b = self.basis_counts()
+        return (f"Basis: {b['measured']} measured from open data, {b['published']} follow a published figure, "
+                f"{b['judged']} are AI judgements from news reports (weigh these with more caution)")
+
     def header_lines(self) -> list[str]:
         return [
             f"as_of {short_iso(self.as_of)} · next run ~{self.next_run_uk} · stale after {short_iso(self.valid_until)}"
             f" (36h for daily-tier signals)",
             f"Assessed by an {ASSESSED_BY}; attention levels, not forecasts or advice. {LICENCE['name']} · {self.url}",
+            f"{self.basis_line()}. Known limitations: {self.url}/methodology#known-limits",
         ]
 
 
@@ -290,7 +344,8 @@ class Model:
 
 def sig_line(m: Model, r: dict, with_trend: bool = True) -> str:
     tr = f" {r['trend']}" if with_trend and r.get("trend") else ""
-    return f"- {r['name']} [{r['id']}]{tr}: {r.get('summary') or '—'}"
+    ai = ", AI-judged" if r.get("basis") == "judged" else ""
+    return f"- {r['name']} [{r['id']}]{tr}{ai}: {r.get('summary') or '—'}"
 
 
 def now_md(m: Model) -> str:
@@ -349,15 +404,16 @@ def now_md(m: Model) -> str:
 def status_md(m: Model) -> str:
     out = ["# Canary — all signals", *m.header_lines(), "",
            "status: ALERT acute/material risk now · WATCH elevated · NORMAL background · PENDING not yet assessed. "
-           "(c)=chronic, (s)=seasonal horizon. Detail: /s/{id}.md", "",
-           "| id | status | trend | value | summary |", "|---|---|---|---|---|"]
+           "(c)=chronic, (s)=seasonal horizon. basis: measured (open data, fixed rule) · published (an official "
+           "or named body's figure) · judged (AI reading of news). Detail: /s/{id}.md", "",
+           "| id | status | trend | basis | value | summary |", "|---|---|---|---|---|---|"]
     rows = sorted(m.records, key=lambda r: (ORDER[{v: k for k, v in PUBLIC.items()}.get(r["status"], "pending")],
                                            list(m.domains).index(r["domain"])))
     for r in rows:
         h = {"chronic": " (c)", "seasonal": " (s)"}.get(r["horizon"], "")
         cell = lambda x: (x or "").replace("|", "/")  # noqa: E731
-        out.append(f"| {r['id']} | {r['status'].upper()}{h} | {r.get('trend') or ''} | {cell(r.get('value'))} | "
-                   f"{cell(r.get('summary'))} |")
+        out.append(f"| {r['id']} | {r['status'].upper()}{h} | {r.get('trend') or ''} | {r.get('basis') or ''} | "
+                   f"{cell(r.get('value'))} | {cell(r.get('summary'))} |")
     return "\n".join(out) + "\n"
 
 
@@ -386,6 +442,9 @@ def signal_md(m: Model, r: dict) -> str:
             out.append(f"Value: {r['value']}")
         if r.get("rubric_hit"):
             out.append(f"Rated on: {r['rubric_hit']}")
+        if r.get("basis"):
+            out.append(f"Basis: {r['basis']} — " + basis_sentence(r["basis"], r.get("basis_detail"), r.get("basis_by"),
+                                                                 len(r["sources"]), outlets_of(r["sources"])))
         for sid in r["situations"]:
             sit = next((x for x in m.situations if x["id"] == sid), None)
             if sit:
@@ -422,7 +481,9 @@ def status_json(m: Model) -> dict:
     return {**envelope(m),
             "headline": m.status.get("headline"),
             "world": {"score": w.get("score"), "band": w.get("band"), "counts": m.counts(),
-                      "by_domain": w.get("by_domain", {})},
+                      "by_domain": w.get("by_domain", {}), "method": w.get("method"),
+                      "method_url": f"{m.url}/methodology#index"},
+            "basis_counts": m.basis_counts(),
             "situations": public_situations(m),
             "emerging": [{**x, "status": PUBLIC.get(x["status"], x["status"])} for x in m.emerging],
             "signals": m.records}
@@ -432,6 +493,7 @@ def meta_json(m: Model, sizes: dict) -> dict:
     w = m.world
     return {"as_of": m.as_of, "valid_until": m.valid_until, "next_run": m.next_run_iso,
             "world": {"score": w.get("score"), "band": w.get("band")}, "counts": m.counts(),
+            "basis_counts": m.basis_counts(), "catalogue_version": (m.lock or {}).get("version"),
             "changed_24h": sorted({c["id"] for c in m.changed_24h}),
             "endpoints": {k: {"url": f"{m.url}/{k}", "tokens": v} for k, v in sizes.items()},
             "licence": LICENCE["name"], "assessed_by": ASSESSED_BY}
@@ -477,8 +539,14 @@ def schema_json(m: Model) -> dict:
         "for_you": {"type": ["string", "null"], "maxLength": 320},
         "rubric_hit": {"type": ["string", "null"], "description": "The rubric criterion that set this status"},
         "situations": {"type": "array", "items": {"type": "string"}},
+        "basis": {"type": ["string", "null"], "enum": ["measured", "published", "judged", None],
+                  "description": "How this status was set. measured: a fixed rule applied to open data (reproducible); "
+                                 "published: follows a figure or classification by the body in basis_by; judged: the AI "
+                                 "assessor's reading of the sources against the rubric. Weigh judged statuses with more caution."},
+        "basis_detail": {"type": ["string", "null"], "description": "Rule inputs (measured) or a note on the judgement"},
+        "basis_by": {"type": ["string", "null"], "description": "The publishing body, when basis is published"},
         "provenance": {"type": "string", "enum": ["metric", "reporting"],
-                       "description": "metric: an open data feed sets a status floor; reporting: judged from sources"},
+                       "description": "Deprecated; use basis. metric: the signal has an open data feed; reporting: it does not"},
         "checked_at": {"type": ["string", "null"], "format": "date-time"},
         "changed_at": {"type": ["string", "null"], "format": "date-time"},
         "stale_after": {"type": ["string", "null"], "format": "date-time"},
@@ -576,11 +644,15 @@ def llms_txt(m: Model, sizes: dict) -> str:
         "- alert = acute or material risk now; watch = elevated or deteriorating; normal = background; "
         "pending = not yet assessed; stale = not verified within 14h (36h for daily-tier signals).",
         "- horizon chronic or seasonal = a structural situation (e.g. climate trends), not breaking news.",
+        "- basis = how a status was set: measured (fixed rule on open data), published (a named body's figure or "
+        "classification) or judged (the AI assessor's reading of news). Judged statuses deserve more caution; "
+        "check their sources before repeating them.",
         "- Situations group several signals driven by one event; count situations, not Alerts, for breadth.",
         "- Sentiment (now.md, api/v1/sentiment.json) is how the news and consumers feel, measured from open data and "
         "compared with its own history. It is context, not an attention level, and never changes a status.",
         f"- {DATA_NOTE}",
         f"- Methodology and rubrics: {m.url}/methodology",
+        f"- Known limitations and biases (read before relying on Canary): {m.url}/methodology#known-limits",
         "",
         "## Signal ids",
     ]
@@ -727,6 +799,16 @@ def rubric_list(s: dict, st: str | None, hit: str | None) -> str:
             f'aria-label="Rating criteria"><div class="cds--structured-list-tbody" role="rowgroup">{rows}</div></div></div>')
 
 
+def basis_block(r: dict) -> str:
+    if r.get("basis") not in BASIS_LABEL:
+        return ""
+    lead = (ai_badge() + " ") if r["basis"] == "judged" else ""
+    text = basis_sentence(r["basis"], r.get("basis_detail"), r.get("basis_by"), len(r["sources"]), outlets_of(r["sources"]))
+    return (f'<div class="cnry-detail__block cnry-basis"><h3>How this status was set</h3><p>{lead}'
+            f'<strong>{BASIS_LABEL[r["basis"]]}.</strong> {e(text)} <a class="cds--link cds--link--sm" '
+            f'href="/methodology#basis">About the three bases</a></p></div>')
+
+
 def signal_html(m: Model, r: dict) -> str:
     s = m.by_id[r["id"]]
     cur = m.sigs.get(r["id"]) or {}
@@ -739,6 +821,7 @@ def signal_html(m: Model, r: dict) -> str:
         left.append(f'<p class="cnry-detail__summary">{e(cur.get("summary"))}</p>')
         left.append(f'<div class="cnry-detail__block"><h3>Why it\'s at this level</h3><p>{e(cur.get("state"))}</p></div>')
         left.append(f'<div class="cnry-detail__block"><h3>What this means for you</h3><p>{e(cur.get("for_you"))}</p></div>')
+        left.append(basis_block(r))
     else:
         left.append(f'<div class="cnry-detail__lead">{status_indicator("pending")}</div>'
                     '<p class="cnry-detail__summary">This signal has not been assessed yet. The next scheduled run will rate it.</p>')
@@ -833,6 +916,8 @@ def board_html(m: Model) -> str:
             changed = (' <span class="cds--tag cds--tag--blue cds--tag--sm cnry-changed"><span class="cds--tag__label">'
                        'Changed</span></span>') if s["id"] in fresh else ""
             reading = e(cur["value"]) if cur.get("value") else '<span class="cnry-none">No reading yet</span>'
+            if cur and cur.get("basis") == "judged":
+                reading += ai_badge()
             t = cur.get("trend") if cur.get("trend") in TREND else None
             trend = (f'<span class="cnry-trend cnry-trend--{t}" title="Trend: {TREND_LABEL[t]}">{svg(TREND_ICON[t])}'
                      f'<span class="cds--visually-hidden">{TREND_LABEL[t]}</span></span>') if t else ""
@@ -1235,12 +1320,17 @@ def sentiment_method_html(cfg: dict | None) -> str:
             f'<tbody>{rows}</tbody></table>')
 
 
-def legend_html() -> str:
+def legend_html(m: Model) -> str:
     st = "".join(f'<span class="cnry-legend__item">{status_icon(k)}{LABEL[k]}</span>' for k in ("red", "amber", "green", "stale"))
     tr = "".join(f'<span class="cnry-legend__item cnry-trend cnry-trend--{k}">{svg(TREND_ICON[k])}<span>{TREND_LABEL[k]}</span></span>'
                  for k in ("up", "flat", "down"))
+    b = m.basis_counts()
     return (f'<span class="cnry-legend__group"><span class="cnry-legend__title">Status</span>{st}</span>'
             f'<span class="cnry-legend__group"><span class="cnry-legend__title">Trend</span>{tr}</span>'
+            f'<span class="cnry-legend__group"><span class="cnry-legend__title">Basis</span>'
+            f'<span class="cnry-legend__item">{ai_badge()}{b["judged"]} AI judgements from news reports</span>'
+            f'<span class="cnry-legend__item">{b["measured"] + b["published"]} unmarked: measured data or a published figure</span>'
+            f'<a class="cds--link cds--link--sm" href="/methodology#basis">How statuses are set</a></span>'
             '<span class="cnry-legend__group">Select a signal to see why, what it means for you, the rating criteria and sources.</span>')
 
 
@@ -1270,7 +1360,7 @@ def world_trend_html(series: list, st: str | None) -> str:
         start = pts[-1][0] - timedelta(days=TREND_DAYS)
         pts = [p for p in pts if p[0] >= start]
     if len(pts) < 2:
-        return ""
+        return "<figcaption>Trend line starts at the next check</figcaption>" if pts else ""
     w, h, pad = 240, 56, 4
     t0, t1 = pts[0][0].timestamp(), pts[-1][0].timestamp()
     tspan = (t1 - t0) or 1
@@ -1328,13 +1418,55 @@ def render_index(m: Model, doc: str) -> str:
     doc = fill(doc, "changes-desc", e(f"{nch} status change{'' if nch == 1 else 's'} in the last 7 days, newest first"
                                       if nch else "Status changes in the last 7 days"))
     doc = fill(doc, "changes-body", changes_rows(m))
-    doc = fill(doc, "legend", legend_html())
+    doc = fill(doc, "legend", legend_html(m))
     doc = fill(doc, "board", board_html(m))
     doc = re.sub(r"\b\d+ global risk signals", f"{n} global risk signals", doc)
     doc = re.sub(r'id="kpi-bar"(?: style="[^"]*")?', f'id="kpi-bar" style="transform: scaleX({(w.get("score") or 0) / 100:.2f})"', doc)
     doc = re.sub(r'class="cds--tile cnry-kpi cnry-kpi--index"(?: data-status="[^"]*")?',
                  f'class="cds--tile cnry-kpi cnry-kpi--index" data-status="{e(w.get("status") or "")}"', doc)
     return version_assets(hydrate_icons(doc))
+
+
+def coverage_html(m: Model) -> str:
+    cov = m.coverage or {}
+    risks = cov.get("risks") or []
+    if not risks:
+        return ""
+    n = {k: sum(1 for x in risks if x.get("coverage") == k) for k in COVERAGE_LABEL}
+    mapped = {i for x in risks for i in x.get("signals") or []}
+    fw = cov.get("framework") or {}
+    order = {"gap": 0, "partial": 1, "covered": 2}
+    rows = []
+    for x in sorted(risks, key=lambda x: (order.get(x.get("coverage"), 3), x.get("risk", ""))):
+        lab, kind = COVERAGE_LABEL.get(x.get("coverage"), ("?", "gray"))
+        sigs = ", ".join(f'<a class="cds--link cds--link--sm" href="/s/{e(i)}">{e(m.by_id[i]["name"])}</a>'
+                         for i in x.get("signals") or [] if i in m.by_id) or "—"
+        none = ' class="cnry-cov-none"' if sigs == "—" else ""
+        rows.append(f'<tr><td>{e(x.get("risk"))}</td><td>{tag(lab, kind)}</td><td{none}>{sigs}</td>'
+                    f'<td>{e(x.get("note") or "")}</td></tr>')
+    head = "".join(f'<th scope="col"{w}><div class="cds--table-header-label">{h}</div></th>'
+                   for h, w in (("Risk", ' style="inline-size:24%"'), ("Coverage", ' style="inline-size:9rem"'),
+                                ("Canary signals", ' style="inline-size:26%"'), ("Note", "")))
+    return (f'<p>Of the {len(risks)} risks in the <a class="cds--link" href="{e(fw.get("url", ""))}">{e(fw.get("name", ""))}</a>, '
+            f'Canary covers {n["covered"]}, covers {n["partial"]} in part and has no signal for {n["gap"]}. '
+            f'{len(mapped)} of its {len(m.cat["signals"])} signals map to at least one of them; the rest are UK-specific or '
+            f'market-plumbing signals that WEF does not list separately. Reviewed {e(uk_date(str(fw.get("reviewed", "")) + "T12:00:00Z"))}.</p>'
+            f'<div class="cds--data-table-content"><table class="cds--data-table cds--data-table--sm cnry-coverage" '
+            f'aria-label="Coverage of WEF global risks"><thead><tr>{head}</tr></thead><tbody>{"".join(rows)}</tbody></table></div>')
+
+
+def governance_html(m: Model) -> str:
+    lk = m.lock or {}
+    if not lk:
+        return ""
+    frozen = lk.get("frozen_until")
+    fz = ""
+    if frozen and m.as_of and frozen >= m.as_of[:10]:
+        fz = (f" It is <strong>frozen until {e(uk_date(frozen + 'T12:00:00Z'))}</strong>: no signals are added or removed "
+              "and no rubric changes during that time, so the first month's statuses can be compared like for like.")
+    return (f'<p>The catalogue is at <strong>version {e(lk.get("version"))}</strong> ({lk.get("signals_count")} signals), '
+            f'locked on {e(uk_date(lk.get("locked_at")))}.{fz} Every change is recorded in the '
+            f'<a class="cds--link" href="{REPO_URL}/blob/main/signals/CHANGELOG.md">catalogue changelog</a>.</p>')
 
 
 def render_methodology(m: Model, doc: str, sizes: dict) -> str:
@@ -1345,6 +1477,10 @@ def render_methodology(m: Model, doc: str, sizes: dict) -> str:
             if s["domain"] != d["id"]:
                 continue
             extra = f" · {HORIZON_LABEL[s['horizon']].lower()}" if s.get("horizon") in HORIZON_LABEL else ""
+            if s.get("metrics"):
+                extra += " · open data sets a floor"
+            if s.get("published"):
+                extra += f" · follows {s['published']['by']}"
             rows.append(f'<tr id="r-{s["id"]}"><td><strong><a class="cnry-sig__link" href="/s/{s["id"]}">{e(s["name"])}</a></strong><br>'
                         f'<span class="cds--type-helper-text-01">{"Checked daily" if s["tier"] == "daily" else "Checked every run"}{extra}</span></td>'
                         f'<td>{e(s["rubric"]["green"])}</td><td>{e(s["rubric"]["amber"])}</td><td>{e(s["rubric"]["red"])}</td></tr>')
@@ -1366,6 +1502,11 @@ def render_methodology(m: Model, doc: str, sizes: dict) -> str:
                         ("api/v1/sentiment.json", "Sentiment track: news tone, consumer confidence, uncertainty")))
     doc = fill(doc, "agent-sizes", size_rows)
     doc = fill(doc, "sentiment-method", sentiment_method_html(m.sentiment_cfg))
+    b = m.basis_counts()
+    doc = fill(doc, "basis-counts", e(f"At the latest run: {b['measured']} measured, {b['published']} published "
+                                      f"figures and {b['judged']} AI judgements, out of {sum(b.values())} assessed signals."))
+    doc = fill(doc, "coverage", coverage_html(m))
+    doc = fill(doc, "governance", governance_html(m))
     n = len(m.cat["signals"])
     doc = re.sub(r"\b\d+ global risk signals", f"{n} global risk signals", doc)
     return version_assets(hydrate_icons(doc))
@@ -1375,13 +1516,14 @@ def render_methodology(m: Model, doc: str, sizes: dict) -> str:
 
 def build(site_url: str, cat: dict, status: dict, changes: list, history: dict, metrics: dict,
           stale_h: dict, world: list | None = None, sentiment: dict | None = None,
-          sentiment_cfg: dict | None = None) -> list[str]:
+          sentiment_cfg: dict | None = None, coverage: dict | None = None, lock: dict | None = None) -> list[str]:
     global ICONS, ASSET_V
     ICONS = load_icons()
     ASSET_V = asset_versions()
     m = Model(site_url, cat, status, changes, history, metrics, stale_h)
     m.world_series = world or []
     m.sentiment, m.sentiment_cfg = sentiment or {}, sentiment_cfg
+    m.coverage, m.lock = coverage, lock
     m.sentiment_v = sentiment_view(m)
     written: list[str] = []
 

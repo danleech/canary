@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: SOFR–IORB +4bp, repo $0.0bn
 Rated on: SOFR–IORB 5d max 5bp < 10bp; repo ops < $15bn
+Basis: measured — Set by a fixed rule applied to open data (SOFR–IORB 5d max bp = 5.00 · Fed repo ops 5d max $bn = 0.01). Anyone can reproduce it from the public metrics file.
 
 US overnight funding calm: SOFR within 5bp of IORB, no Fed repo use
 

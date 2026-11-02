@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: WCI $4,429/FEU (29 Oct)
 Rated on: WCI > $4,000/FEU, or > +60% in a month.
+Basis: judged — The AI assessor's reading of 1 source from 1 outlet against the rubric. Check the sources before relying on it.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
 Container rates above $4,400/FEU despite a 3% weekly fall

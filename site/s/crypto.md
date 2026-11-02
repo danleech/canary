@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: BTC $78,245, -10% from high
 Rated on: Top-10 exchange under stress (Binance hack, phased withdrawals) = Watch; BTC drawdown 10% < 25%
+Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 Situation: Record Binance hack attributed to North Korea [binance-hack]
 
 Binance reopening after record $6.3bn hack; Bitcoin 10% off its high

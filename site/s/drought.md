@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: E Africa, S Africa, Australia wheat hit
 Rated on: Severe drought in a major crop region, a major river at record low, or a monsoon running more than 20% below normal.
+Basis: published — Follows Drought monitors and monsoon statistics, read from the cited source by the AI assessor and checked against the rubric.
 Situation: Super El Niño [super-el-nino]
 
 Super El Niño cuts Australian wheat and dries East Africa

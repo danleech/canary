@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Egypt pound record low (26 Oct)
 Rated on: No major EM currency down >10% in a month or emergency IMF request
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: Energy shock feeding inflation [energy-inflation]
 
 Pressure on oil importers such as Egypt, but no emerging-market crisis

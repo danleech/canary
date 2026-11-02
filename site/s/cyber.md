@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Binance theft; govt services hit
 Rated on: Attacks disrupting a major exchange and government services = Watch; theft, not destructive
+Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 Situation: Record Binance hack attributed to North Korea [binance-hack]
 
 Record $6.3bn Binance theft blamed on North Korea; Russian alert app hacked on 2 Nov

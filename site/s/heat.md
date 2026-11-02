@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: No major heatwave warnings (1 Nov)
 Rated on: No major heatwaves affecting large populations.
+Basis: judged — The AI assessor's reading of 2 sources from 1 outlet against the rubric. Check the sources before relying on it.
 
 October heat records set earlier in the month; no major heatwave now
 

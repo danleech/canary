@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Cyclone Murasu: landfall due 2–3 Nov
 Rated on: Cyclone threatening land within 72h = Watch; GDACS alert now green
+Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 Situation: Cyclone Murasu [cyclone-murasu]
 
 Severe Cyclone Murasu due to hit south Andhra Pradesh overnight 2–3 Nov; GDACS now green

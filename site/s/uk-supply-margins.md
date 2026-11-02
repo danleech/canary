@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: No notices; margins adequate
 Rated on: Adequate margins; no notices issued
+Basis: published — Follows NESO and National Gas system notices, read from the cited source by the AI assessor and checked against the rubric.
 
 GB gas and power margins adequate for winter; no notices issued
 

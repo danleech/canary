@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: No major PLA exercise since Dec 2025
 Rated on: Routine PLA activity; no large-scale exercise
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
 Routine PLA activity; rare-earth pause expiry on 10 Nov the next test
 

@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: FAO index 136.0 (Sep)
 Rated on: FFPI > 135, or multiple major exporters ban exports of a staple.
+Basis: published — Follows FAO Food Price Index, read from the cited source by the AI assessor and checked against the rubric.
 
 FAO food index at 136, up 5.8% on a year
 

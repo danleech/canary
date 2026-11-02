@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: US 4,852 cases (29 Oct)
 Rated on: Large outbreaks in high-income countries, or loss of elimination status.
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
 US measles cases at 4,852 in 2026, the most since elimination
 

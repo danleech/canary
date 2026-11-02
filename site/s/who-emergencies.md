@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: 1 PHEIC (Ebola)
 Rated on: One PHEIC in force = Watch
+Basis: published — Follows WHO (PHEIC and IHR Emergency Committee decisions), read from the cited source by the AI assessor and checked against the rubric.
 Situation: Ebola outbreak, DR Congo [ebola-drc]
 
 One WHO global emergency in force: Ebola in Central Africa

@@ -25,6 +25,8 @@ The plan lists every **due** signal:
 
 For each due signal the plan shows its previous status and value. Metric-backed signals also show a **metric floor**: the status the numeric rubric implies, with hysteresis already applied.
 
+The plan prints a **governance** line: the catalogue version and freeze, plus any emerging risks or quiet signals due for Dan's review. These are for Dan; never add, remove or re-rubric signals in a run.
+
 The plan also prints **context anchors** (the daily Geopolitical Risk and Economic Policy Uncertainty indices, ECB systemic stress, EU gas storage when configured). They inform judgement on qualitative signals; they never set a status on their own.
 
 Signals marked `prev=—` have **never been assessed**. Give them a full first assessment; the one-step rule doesn't apply to a first rating.
@@ -38,6 +40,11 @@ Work through the plan **domain by domain**. For each due signal:
    - Write context from the metrics plus at most one search for "why is X moving".
    - The metric's own source URL (from `site/data/metrics.json`) counts as a source.
 2. **Qualitative signals:** run **1–2 WebSearch queries**, targeted at the last 72 hours, e.g. `"Sudan RSF El Fasher" news October 2026`. Use the catalogue `hints` for which outlets to trust. Open a page with WebFetch only if the snippets don't settle the status.
+   - **Signals with a `published` body** (MI5, IPC, WHO, FAO, Ofgem, Drewry…): go to that body's figure first. If it sets the status, cite it from one of the catalogue's `published.domains` and add `"basis": "published"`.
+   - **Sourcing rules (`apply` enforces them):**
+     - A judged Alert needs two independent outlets, one on the trusted list. If you can't corroborate it, rate Watch and say the Alert is unconfirmed.
+     - Never cite Wikipedia, Substack, social media, forums or blogs (the avoid list). Find the original reporting or the official body.
+     - Spread citations: no news outlet may supply more than 20% of the run's news citations. When the same outlet keeps coming up, look for a wire (Reuters, AP, AFP), a national outlet or a regional or non-English source instead. For a conflict, a regional outlet often reports first.
 3. Decide the status strictly against the rubric. **Compare with the previous status:** change it only if the evidence clearly crosses a rubric line (hysteresis). If nothing material happened, keep the status, set `trend: "flat"` and refresh `state` with the latest dated fact.
 4. **Set the trend.** It describes the direction of risk:
    - `up` = worsening over roughly the past week
@@ -73,6 +80,16 @@ Create `work/updates.json` (the folder is git-ignored) like this:
       "for_you": "Expect higher fuel and transport costs to feed through over coming weeks. (descriptive for finance; official guidance links for safety topics)",
       "rubric_hit": "Brent $113 > $110 Alert line",
       "sources": [{"title": "Reuters — Oil prices …", "url": "https://…", "date": "2026-10-30"}]
+    },
+    {
+      "id": "uk-threat-level",
+      "basis": "published",
+      "status": "red", "trend": "flat", "value": "Threat level: Severe",
+      "summary": "UK national threat level Severe: an attack is highly likely",
+      "state": "MI5 has held the national threat level at Severe since <date>… (dated facts)",
+      "for_you": "Follow MI5 and police guidance on staying alert in crowded places.",
+      "rubric_hit": "MI5 level Severe = Alert",
+      "sources": [{"title": "MI5 — Threat levels", "url": "https://www.mi5.gov.uk/threat-levels", "date": "2026-11-02"}]
     }
   ]
 }
@@ -94,13 +111,14 @@ Create `work/updates.json` (the folder is git-ignored) like this:
 }
 ```
 
-- **Situations:** send the full list every run (3–10 items). A situation groups two or more signals driven by the same event, or one Alert that is a discrete named event (a cyclone, an outbreak). Keep ids stable from run to run. Its status is the highest status among its signals unless you explain otherwise in the summary. Copy the previous list from `site/data/status.json` and edit it.
+- **Situations:** send the full list every run (3–10 items). Situations change the World State index (signals in one situation count once per domain), so list a signal only when that event is the main reason for its current level. A situation groups two or more signals driven by the same event, or one Alert that is a discrete named event (a cyclone, an outbreak). Keep ids stable from run to run. Its status is the highest status among its signals unless you explain otherwise in the summary. Copy the previous list from `site/data/status.json` and edit it.
 - **Emerging:** only Watch or Alert (`amber`/`red`) situations that no signal covers, each with 1–3 sources. Send `"emerging": []` to clear the list.
 
 - Include **every due signal**. Omitted signals keep their old `checked_at` and will go ⚪ stale on the site.
 - `value` (≤ 48 chars) is shown in its own column on the board, so **give one for every signal**. Metric signals may omit it (the metric's display string is used). Qualitative signals need a short state descriptor, for example `Hormuz 2–8 transits/day`, `Threat level: Severe`, `10,274 cases (29 Oct)`, `No PHEIC since May`.
 - `value_num` is optional, but give it when the signal has a natural number. It drives sparklines for non-metric signals.
 - `override_reason` (string) is needed only to go below a metric floor or to jump green↔red. Use it sparingly and explain it.
+- `basis` (optional): `"published"` only when the signal has a catalogue `published` body, that body's figure set the status, and you cite it from one of its domains. Otherwise omit it. `apply` records `measured` itself when the metric floor decides the status, and `judged` for everything else. The board marks judged statuses with an AI badge.
 
 ## 3. Apply, validate, review
 
@@ -108,7 +126,7 @@ Create `work/updates.json` (the folder is git-ignored) like this:
 python scripts/canary.py apply work/updates.json
 ```
 
-`apply` first validates the whole file (lengths, sources, advice-like wording, instruction-like text, URLs in prose, situation and emerging structure). **If anything fails, it writes nothing**: fix `work/updates.json` and run `apply` again.
+`apply` first validates the whole file: lengths, sources, advice-like wording, instruction-like text, URLs in prose, situation and emerging structure, `basis`, avoid-list domains, two outlets per judged Alert and the 20% outlet cap. **If anything fails, it writes nothing**: fix `work/updates.json` and run `apply` again.
 
 It then:
 - merges the updates
@@ -136,6 +154,7 @@ Never edit `site/data/sentiment.json` or use the Sentiment panel as evidence for
 End with a short summary, under 8 lines:
 - signals assessed
 - status changes (`id: from→to`)
+- basis counts and the top news outlet's share (`apply` prints both)
 - any WARNs or failed sources
 - the World State score
 
@@ -147,6 +166,8 @@ If the run could not complete, say exactly which step failed. Do not push partia
 - [ ] No finance copy reads as advice. Finance `for_you` describes exposure, never actions.
 - [ ] Conflict and politics copy is neutral, with casualty figures attributed.
 - [ ] Each source URL is a real page you saw this run.
+- [ ] Every judged Alert has two independent outlets. Every `basis: "published"` cites that body's own site.
+- [ ] Citations are spread across outlets, with regional sources for regional events.
 - [ ] Each status matches its rubric. A chronic situation is not an Alert unless the rubric says so.
 - [ ] Every Alert sits in a situation or is genuinely standalone; situation summaries carry dated facts.
 - [ ] Open `site/now.md`: it should read as a correct one-minute briefing (about 1,000 tokens).

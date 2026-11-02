@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Afghanistan–Pakistan border clashes
 Rated on: Significant deterioration in a conflict not tracked elsewhere
+Basis: judged — The AI assessor's reading of 1 source from 1 outlet against the rubric. Check the sources before relying on it.
 
 Afghanistan–Pakistan border fighting continues with heavy weapons
 

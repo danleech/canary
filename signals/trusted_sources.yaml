@@ -8,6 +8,16 @@
 # Matching is by suffix: "gov.uk" covers www.gov.uk and assets.publishing.service.gov.uk.
 # Bare TLD-like entries ("gov", "int", "mil") cover every host under them.
 # To add a domain: confirm it is an established outlet, official body or primary data source.
+#
+# Rules that use this list (canary.py):
+#   - A judged Alert (basis "judged", status red) must cite at least two independent outlets
+#     (different registrable domains), and at least one of them must be on this list. Errors.
+#   - Any other untrusted domain only warns, so a human can review it before it becomes habit.
+#   - Domains under `avoid` are rejected outright in new assessments: they are not sources of
+#     record (tertiary encyclopedias, self-publishing platforms, social media, forums). Cite the
+#     original reporting or the official body instead. Existing citations only warn until refreshed.
+#   - `official` suffixes are exempt from the per-run outlet concentration check, because many
+#     signals legitimately cite the same agency (WHO, NOAA) or data feed.
 
 domains:
   # Governments, militaries, treaty bodies (suffixes)
@@ -205,3 +215,77 @@ domains:
   - radiodabanga.org
   - africanews.com
   - theafricareport.com
+  # Added 2 Nov 2026 after reviewing the domains cited in the first runs
+  - cbsnews.com
+  - pbs.org
+  - abcnews.go.com
+  - nbcnews.com
+  - hongkongfp.com
+  - kyodonews.net
+  - ukrinform.net
+  - helpnetsecurity.com
+  - cloudflarestatus.com
+  - ans.org
+  - world-nuclear-news.org
+  - beckershospitalreview.com
+
+# Not sources of record. Rejected in new assessments (see the rules above). Suffix match.
+avoid:
+  - wikipedia.org
+  - wikiwand.com
+  - substack.com
+  - medium.com
+  - blogspot.com
+  - wordpress.com
+  - reddit.com
+  - quora.com
+  - x.com
+  - twitter.com
+  - facebook.com
+  - instagram.com
+  - tiktok.com
+  - youtube.com
+  - t.me
+  - linkedin.com
+
+# Official and primary-data suffixes, exempt from the per-run concentration check. Suffix match.
+official:
+  - gov
+  - mil
+  - int
+  - gov.uk
+  - nhs.uk
+  - europa.eu
+  - un.org
+  - who.int
+  - unocha.org
+  - unhcr.org
+  - wfp.org
+  - fao.org
+  - iom.int
+  - ipcinfo.org
+  - fews.net
+  - reliefweb.int
+  - worldbank.org
+  - imf.org
+  - oecd.org
+  - bis.org
+  - stlouisfed.org
+  - federalreserve.gov
+  - bankofengland.co.uk
+  - ecb.europa.eu
+  - noaa.gov
+  - usgs.gov
+  - nasa.gov
+  - nsidc.org
+  - climatereanalyzer.org
+  - copernicus.eu
+  - gdacs.org
+  - metoffice.gov.uk
+  - finance.yahoo.com
+  - neso.energy
+  - nationalgas.com
+  - ofgem.gov.uk
+  - mi5.gov.uk
+  - iaea.org
+  - nato.int

@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: China rare-earth pause ends 10 Nov
 Rated on: New export controls announced or licensing slowed.
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
 China's rare-earth export pause expires 10 Nov; helium squeeze persists
 

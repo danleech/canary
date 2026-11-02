@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Black Sea ship attacks; incursions
 Rated on: Attacks off NATO coasts attributed to Russia by Romania = Watch
+Basis: judged — The AI assessor's reading of 2 sources from 1 outlet against the rubric. Check the sources before relying on it.
 Situation: Russia–Ukraine war and NATO's flank [russia-ukraine-war]
 
 Drone attacks on ships off Romania and Bulgaria; Romania blames Russia

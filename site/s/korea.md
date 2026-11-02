@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Missile test on 31 Oct
 Rated on: Repeated ballistic missile launches = Watch
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: Record Binance hack attributed to North Korea [binance-hack]
 
 North Korea tested a cluster-warhead ballistic missile on 31 Oct

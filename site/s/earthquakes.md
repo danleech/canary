@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Max M6.4, 5× M6+ (7d)
 Rated on: Max M6.4 < M7 Watch line
+Basis: measured — Set by a fixed rule applied to open data (max magnitude = 6.40). Anyone can reproduce it from the public metrics file.
 
 Five M6+ quakes in 7 days, largest M6.4; no M7+ or tsunami
 

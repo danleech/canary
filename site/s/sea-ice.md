@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Arctic -1.73, Antarctic -1.62M km²
 Rated on: Either pole below −1.0 million km².
+Basis: measured — Set by a fixed rule applied to open data (worst anomaly -1.73M km²). Anyone can reproduce it from the public metrics file.
 
 Both poles well below normal sea-ice extent, but not at record lows
 

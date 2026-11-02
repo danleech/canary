@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: G0 S0 R0
 Rated on: G0 < G4 Watch line
+Basis: measured — Set by a fixed rule applied to open data (NOAA G0 S0 R0 (24h max)). Anyone can reproduce it from the public metrics file.
 
 Geomagnetic activity quiet after a minor storm
 

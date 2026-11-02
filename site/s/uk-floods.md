@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: No flood warnings
 Rated on: 0 severe, 0 flood warnings < 10 Watch line
+Basis: measured — Set by a fixed rule applied to open data (EA: 0 severe, 0 warnings). Anyone can reproduce it from the public metrics file.
 
 No Environment Agency flood warnings in force
 

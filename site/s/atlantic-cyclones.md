@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: No active systems
 Rated on: No active systems or NHC formation risk
+Basis: published — Follows NOAA National Hurricane Center, read from the cited source by the AI assessor and checked against the rubric.
 
 No Atlantic storms; none expected in the next seven days
 

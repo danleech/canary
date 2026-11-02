@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: GDACS: no orange/red
 Rated on: No GDACS orange/red flood alerts
+Basis: measured — Set by a fixed rule applied to open data (GDACS flood: 0 red / 0 orange). Anyone can reproduce it from the public metrics file.
 Situation: Cyclone Murasu [cyclone-murasu]
 
 No major flood alerts; Cyclone Murasu to bring heavy rain to India's east coast

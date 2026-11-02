@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: VIX 19.4, S&P -3.0%
 Rated on: VIX 19.4 < 20 Watch line; S&P drawdown 3% < 10%
+Basis: measured — Set by a fixed rule applied to open data (VIX = 19.42 · S&P drawdown % = 3.05). Anyone can reproduce it from the public metrics file.
 
 VIX just under 20 and S&P 500 3% off its high before the 3 Nov midterms
 

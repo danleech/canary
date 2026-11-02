@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Q3 GDP +0.4% q/q
 Rated on: Positive GDP growth and composite PMI > 50.
+Basis: published — Follows Eurostat GDP and HCOB PMI, read from the cited source by the AI assessor and checked against the rubric.
 
 Euro area grew 0.4% in Q3, but France contracted and October PMIs slowed
 

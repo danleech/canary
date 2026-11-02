@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Sep composite: joint-highest since 2021
 Rated on: J.P.Morgan Global Composite PMI > 51.
+Basis: published — Follows S&P Global / J.P.Morgan Global PMI, read from the cited source by the AI assessor and checked against the rubric.
 
 Global PMI strong in September, but October flashes and China's PMI softened
 

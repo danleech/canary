@@ -14,6 +14,14 @@
 #   drivers   what moves it (static, ≤ 200 chars)
 #   rubric    green / amber / red criteria. Numeric thresholds are binding; prose criteria are guidance.
 #   hints     preferred sources to check first
+#   published optional {by, domains}: the body whose published figure or classification the rubric
+#             turns on (e.g. MI5's threat level, an IPC famine classification, the FAO index). An
+#             assessor may declare basis "published" only for these signals, and only when a source
+#             from one of `domains` is cited in that run. See "How each status is set" in methodology.
+#
+# The catalogue is version-locked: signals/catalogue.lock.json holds a fingerprint of ids, domains,
+# weights, tiers, horizons, metrics, rubrics and `published`, and `canary.py check` fails if they
+# change without `canary.py lock`. Read "Changing the catalogue" in CLAUDE.md before editing.
 #
 # Status meaning: green = Normal, amber = Watch, red = Alert (attention level, not a forecast).
 
@@ -21,14 +29,14 @@ domains:
   - { id: markets,      name: Markets, short: "Markets",                 weight: 1.0 }
   - { id: economy,      name: Economy, short: "Economy",                 weight: 1.0 }
   - { id: energy,       name: Energy & Commodities, short: "Energy",    weight: 1.0 }
-  - { id: geopolitics,  name: Geopolitics, short: "Geopolitics",             weight: 1.2 }
-  - { id: conflict,     name: Armed Conflict, short: "Conflict",          weight: 1.2 }
+  - { id: geopolitics,  name: Geopolitics, short: "Geopolitics",             weight: 1.0 }
+  - { id: conflict,     name: Armed Conflict, short: "Conflict",          weight: 1.0 }
   - { id: hazards,      name: Weather & Hazards, short: "Hazards",       weight: 1.0 }
-  - { id: climate,      name: Climate, short: "Climate",                 weight: 0.6 }
-  - { id: health,       name: Global Health, short: "Health",           weight: 1.1 }
-  - { id: tech,         name: Technology & Cyber, short: "Tech",      weight: 0.8 }
-  - { id: humanitarian, name: Humanitarian, short: "Humanit.",            weight: 0.8 }
-  - { id: uk,           name: UK Watch, short: "UK",                weight: 0.8 }
+  - { id: climate,      name: Climate, short: "Climate",                 weight: 1.0 }
+  - { id: health,       name: Global Health, short: "Health",           weight: 1.0 }
+  - { id: tech,         name: Technology & Cyber, short: "Tech",      weight: 1.0 }
+  - { id: humanitarian, name: Humanitarian, short: "Humanit.",            weight: 1.0 }
+  - { id: uk,           name: UK Watch, short: "UK",                weight: 1.0 }
 
 signals:
 
@@ -213,6 +221,7 @@ signals:
       amber: Stagnation (GDP ~0), or composite PMI 45–50.
       red: Technical recession, or PMI < 45, or bond-spread fragmentation forcing ECB action.
     hints: [Eurostat, HCOB PMI, ECB]
+    published: { by: "Eurostat GDP and HCOB PMI", domains: [europa.eu, spglobal.com] }
 
   - id: china-economy
     domain: economy
@@ -261,6 +270,7 @@ signals:
       amber: Global composite 49–51, or manufacturing < 49.
       red: Global composite < 49.
     hints: [S&P Global PMI releases, J.P.Morgan Global PMI]
+    published: { by: "S&P Global / J.P.Morgan Global PMI", domains: [spglobal.com] }
 
   - id: jobless-claims
     domain: economy
@@ -337,6 +347,7 @@ signals:
       amber: WCI $2,500–4,000/FEU, or +30–60% in a month.
       red: WCI > $4,000/FEU, or > +60% in a month.
     hints: [Drewry WCI, Freightos FBX]
+    published: { by: "Drewry World Container Index / Freightos Baltic Index", domains: [drewry.co.uk, freightos.com] }
 
   - id: food-prices
     domain: energy
@@ -349,6 +360,7 @@ signals:
       amber: FFPI 120–135, or y/y > +5%, or a major exporter restricts exports.
       red: FFPI > 135, or multiple major exporters ban exports of a staple.
     hints: [FAO Food Price Index, AMIS Market Monitor]
+    published: { by: "FAO Food Price Index", domains: [fao.org] }
 
   - id: critical-minerals
     domain: energy
@@ -373,6 +385,7 @@ signals:
       amber: Urea up more than 30% in three months, or a major exporter restricts exports.
       red: Urea up more than 60% in three months, several major exporters restricting at once, or a key export route closed.
     hints: [World Bank Pink Sheet, IFPRI, Reuters, Argus]
+    published: { by: "World Bank commodity prices (Pink Sheet)", domains: [worldbank.org] }
 
   - id: nuclear-plants
     domain: energy
@@ -385,6 +398,7 @@ signals:
       amber: A plant loses all off-site power, strikes land near a plant, or the IAEA reports a deteriorating safety situation.
       red: Damage to safety-critical systems, an INES level 2 or higher event, or a radiological release.
     hints: [IAEA, Reuters, national nuclear regulators]
+    published: { by: "IAEA safety updates and INES ratings", domains: [iaea.org] }
 
 # ───────────────────────────── GEOPOLITICS ─────────────────────────────
   - id: us-china
@@ -422,6 +436,7 @@ signals:
       amber: Enrichment at ≥ 60% or inspector access curtailed, or credible strike threats.
       red: Strikes on nuclear sites, NPT withdrawal, or evidence of weaponisation.
     hints: [IAEA, Reuters, Arms Control Association]
+    published: { by: "IAEA verification reports", domains: [iaea.org] }
 
   - id: korea
     domain: geopolitics
@@ -446,6 +461,7 @@ signals:
       amber: New major tariffs announced or threatened between large economies.
       red: Broad new tariffs in force with retaliation under way, or US average effective tariff rising sharply.
     hints: [Yale Budget Lab tariff tracker, Reuters trade, WTO]
+    published: { by: "Yale Budget Lab effective tariff rate", domains: [yale.edu] }
 
   - id: sanctions
     domain: geopolitics
@@ -617,6 +633,7 @@ signals:
       amber: Tropical storm or hurricane threatening land within 5 days.
       red: Category 3+ landfall expected within 72 hours or occurring.
     hints: [NOAA National Hurricane Center, GDACS]
+    published: { by: "NOAA National Hurricane Center", domains: [noaa.gov] }
 
   - id: other-cyclones
     domain: hazards
@@ -642,6 +659,7 @@ signals:
       amber: Heatwave warnings across a major region, or national temperature records.
       red: Deadly heatwave with top-tier official warnings across a large population.
     hints: [WMO, national met services, Reuters]
+    published: { by: "National met services' warning levels", domains: [metoffice.gov.uk, meteoalarm.org, weather.gov, imd.gov.in, wmo.int] }
 
   - id: wildfires
     domain: hazards
@@ -693,6 +711,7 @@ signals:
       amber: Aviation colour code orange/red at a volcano near major air routes, or a large eruption.
       red: Major airspace closures from ash, or a VEI 4+ eruption.
     hints: [Smithsonian GVP weekly report, VAAC London, GDACS]
+    published: { by: "Volcano observatories' aviation colour codes, VAACs and Smithsonian GVP", domains: [si.edu, usgs.gov, metoffice.gov.uk, bom.gov.au, jma.go.jp] }
 
   - id: drought
     domain: hazards
@@ -705,6 +724,7 @@ signals:
       amber: Severe drought in a major crop region, a major river at record low, or a monsoon running more than 20% below normal.
       red: Drought driving famine conditions, a major exporter's harvest failure, or monsoon failure across a major breadbasket.
     hints: [India Meteorological Department, Global Drought Observatory, GEOGLAM Crop Monitor, US Drought Monitor]
+    published: { by: "Drought monitors and monsoon statistics", domains: [unl.edu, imd.gov.in, europa.eu, cropmonitor.org] }
 
   - id: space-weather
     domain: hazards
@@ -730,6 +750,7 @@ signals:
       amber: Top-tier cold or winter-storm warnings across a major region, or a cold wave lifting gas demand sharply.
       red: Deadly cold or winter storms with widespread power or gas outages.
     hints: [Met Office, ECMWF, NOAA Weather Prediction Center, Meteoalarm]
+    published: { by: "National met services' warning levels", domains: [metoffice.gov.uk, meteoalarm.org, weather.gov, noaa.gov] }
 
 # ───────────────────────────── CLIMATE ─────────────────────────────
   - id: global-temp
@@ -800,6 +821,7 @@ signals:
       amber: Global bleaching event in progress, or regional mass bleaching.
       red: Bleaching extent at record levels with active new alerts in the past month.
     hints: [NOAA Coral Reef Watch]
+    published: { by: "NOAA Coral Reef Watch", domains: [noaa.gov] }
 
 # ───────────────────────────── GLOBAL HEALTH ─────────────────────────────
   - id: who-emergencies
@@ -813,6 +835,7 @@ signals:
       amber: A PHEIC in effect, or an IHR Emergency Committee convened.
       red: A new PHEIC declared in the past 30 days, or a pandemic emergency declared.
     hints: [WHO Disease Outbreak News, WHO IHR Emergency Committees]
+    published: { by: "WHO (PHEIC and IHR Emergency Committee decisions)", domains: [who.int] }
 
   - id: ebola
     domain: health
@@ -825,6 +848,7 @@ signals:
       amber: An active outbreak contained within one country, or fewer than 1,000 cases.
       red: More than 1,000 cases, or spread to a new country in the past 30 days.
     hints: [WHO Disease Outbreak News, ECDC, Africa CDC]
+    published: { by: "WHO, Africa CDC and ECDC case counts", domains: [who.int, africacdc.org, europa.eu] }
 
   - id: h5n1
     domain: health
@@ -849,6 +873,7 @@ signals:
       amber: Clade I spreading outside Africa or a regional surge.
       red: PHEIC in effect with accelerating growth.
     hints: [WHO, Africa CDC, UKHSA]
+    published: { by: "WHO and Africa CDC", domains: [who.int, africacdc.org] }
 
   - id: measles
     domain: health
@@ -873,6 +898,7 @@ signals:
       amber: Record-level seasons, or local transmission in countries where the disease was not established (including Europe).
       red: Large outbreaks with high mortality in conflict zones, or a WHO grade 3 emergency.
     hints: [WHO, ECDC, ReliefWeb]
+    published: { by: "WHO emergency grading", domains: [who.int] }
 
   - id: novel-outbreaks
     domain: health
@@ -897,6 +923,7 @@ signals:
       amber: WHO designates a new variant of interest, or a hemisphere's flu season is unusually early or severe.
       red: WHO designates a variant of concern, or flu or COVID-19 hospitalisations strain several countries' health systems.
     hints: [WHO, WHO FluNet, ECDC, UKHSA, CDC]
+    published: { by: "WHO variant designations and surveillance", domains: [who.int, europa.eu, cdc.gov] }
 
   - id: medicine-shortages
     domain: health
@@ -909,6 +936,7 @@ signals:
       amber: A shortage of an essential medicine or supply across several countries, or a UK Serious Shortage Protocol for a widely used medicine.
       red: Shortages forcing widespread rationing or cancelled treatment across major health systems.
     hints: [FDA drug shortages, EMA shortages catalogue, NHSBSA Serious Shortage Protocols, Reuters]
+    published: { by: "FDA, EMA and NHSBSA shortage lists", domains: [fda.gov, europa.eu, nhsbsa.nhs.uk] }
 
 # ───────────────────────────── TECHNOLOGY & CYBER ─────────────────────────────
   - id: cyber
@@ -996,6 +1024,7 @@ signals:
       amber: IPC Phase 5 projected or 'risk of famine' alerts.
       red: Famine (IPC Phase 5) confirmed in at least one area.
     hints: [IPC, FEWS NET, WFP]
+    published: { by: "IPC classifications and FEWS NET", domains: [ipcinfo.org, fews.net] }
 
   - id: displacement
     domain: humanitarian
@@ -1008,6 +1037,7 @@ signals:
       amber: A new event displacing > 500,000 people in a month.
       red: A new event displacing > 1 million in a month.
     hints: [UNHCR, IOM DTM, IDMC]
+    published: { by: "UNHCR, IOM DTM and IDMC figures", domains: [unhcr.org, iom.int, internal-displacement.org] }
 
   - id: civil-unrest
     domain: humanitarian
@@ -1032,6 +1062,7 @@ signals:
       amber: Funding more than 10 percentage points behind recent years at the same point, or major ration cuts announced.
       red: Pipeline breaks forcing large-scale suspension of food or health aid in famine-risk countries.
     hints: [OCHA Financial Tracking Service, WFP, UNHCR, ReliefWeb]
+    published: { by: "OCHA Financial Tracking Service", domains: [unocha.org] }
 
 # ───────────────────────────── UK WATCH ─────────────────────────────
   - id: uk-rates
@@ -1045,6 +1076,7 @@ signals:
       amber: CPI 2.5–4.0%, or the BoE reversing course.
       red: CPI > 4.0%, or an emergency BoE move.
     hints: [ONS CPI, Bank of England]
+    published: { by: "ONS CPI and Bank of England decisions", domains: [ons.gov.uk, bankofengland.co.uk] }
 
   - id: gilts
     domain: uk
@@ -1069,6 +1101,7 @@ signals:
       amber: Cap £1,700–2,200, or forecast rise ≥ 5%.
       red: Cap > £2,200, or forecast rise ≥ 20%.
     hints: [Ofgem, Cornwall Insight]
+    published: { by: "Ofgem price cap (forecasts: Cornwall Insight)", domains: [ofgem.gov.uk, cornwall-insight.com] }
 
   - id: uk-weather
     domain: uk
@@ -1094,6 +1127,7 @@ signals:
       amber: Respiratory activity above baseline and rising, or several trusts in critical incidents.
       red: High or very high flu activity nationally, or widespread critical incidents.
     hints: [UKHSA surveillance reports, NHS England winter sitreps]
+    published: { by: "UKHSA surveillance and NHS England situation reports", domains: [gov.uk, england.nhs.uk] }
 
   - id: uk-threat-level
     domain: uk
@@ -1106,6 +1140,7 @@ signals:
       amber: Substantial.
       red: Severe or Critical.
     hints: [MI5 threat levels]
+    published: { by: "MI5 / JTAC national threat level", domains: [mi5.gov.uk] }
 
   - id: uk-disruption
     domain: uk
@@ -1130,6 +1165,7 @@ signals:
       amber: NESO issues an Electricity Margin Notice or capacity market notice, or National Gas issues a Gas Margins Notice.
       red: A Gas Deficit Warning, a high risk of demand control notice, or demand control used.
     hints: [NESO, National Gas, Ofgem, Elexon]
+    published: { by: "NESO and National Gas system notices", domains: [neso.energy, nationalgas.com] }
 
   - id: uk-floods
     domain: uk

@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: ZNPP on single off-site line
 Rated on: IAEA-reported loss of all off-site power (Aug–Sep); plant still on one line
+Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 Situation: Russia–Ukraine war and NATO's flank [russia-ukraine-war]
 
 Zaporizhzhia relies on one power line as strikes on Ukraine's grid continue

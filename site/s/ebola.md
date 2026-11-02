@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: 10,141+ cases (27 Oct)
 Rated on: Spread to a new country within 30 days (Nigeria, 20 Oct) = Alert
+Basis: published — Follows WHO, Africa CDC and ECDC case counts, read from the cited source by the AI assessor and checked against the rubric.
 Situation: Ebola outbreak, DR Congo [ebola-drc]
 
 Ebola tops 10,000 cases in DR Congo with imported cases in Kenya and Nigeria

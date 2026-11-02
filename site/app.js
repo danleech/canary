@@ -36,6 +36,33 @@
   const statusIndicator = (st) => `<span class="cnry-status">${statusIcon(st)}<span class="cnry-status__label">${LABEL[st]}</span></span>`;
   const trendCell = (t) => { const x = TREND[t] || TREND.flat; return `<span class="cnry-trend cnry-trend--${t || 'flat'}">${icon(x.icon)}<span>${x.text}</span></span>`; };
   const trendIcon = (t) => { const x = TREND[t] || TREND.flat; return `<span class="cnry-trend cnry-trend--${t || 'flat'}" title="Trend: ${x.text}">${icon(x.icon, '', 'Trend: ' + x.text)}</span>`; };
+  // How a status was set. Mirrors ai_badge() / basis_sentence() in scripts/publish.py.
+  const BASIS_LABEL = { measured: 'Measured', published: 'Published figure', judged: 'AI judgement' };
+  const aiBadge = () => '<span class="cnry-ai" title="Status set by AI judgement from news reports">AI<span class="cds--visually-hidden"> judgement</span></span>';
+  function outletsOf(sources) {
+    const hosts = new Set();
+    (sources || []).forEach((x) => {
+      const h = String(x.url || '').split('/')[2];
+      if (!h) return;
+      const parts = h.split(':')[0].toLowerCase().replace(/^www\./, '').split('.');
+      const n = parts.length;
+      hosts.add(n >= 3 && parts[n - 2].length <= 3 && parts[n - 1].length === 2 ? parts.slice(-3).join('.') : parts.slice(-2).join('.'));
+    });
+    return hosts.size;
+  }
+  function basisSentence(c, by) {
+    if (c.basis === 'measured') {
+      const inputs = String(c.basis_detail || '').replace(/=/g, ' = ').replace(/; /g, ' · ');
+      return `Set by a fixed rule applied to open data${inputs ? ` (${inputs})` : ''}. Anyone can reproduce it from the public metrics file.`;
+    }
+    if (c.basis === 'published') return `Follows ${by || 'an official classification'}, read from the cited source by the AI assessor and checked against the rubric.`;
+    const n = (c.sources || []).length, k = outletsOf(c.sources);
+    const extra = {
+      'raised above the data floor on reported events': ' The data alone would rate it lower; it was raised on reported events.',
+      'set below the data floor by assessor override': ' The assessor set it below what the data implies, with a written reason.',
+    }[c.basis_detail || ''] || '';
+    return `The AI assessor's reading of ${n} source${n === 1 ? '' : 's'} from ${k} outlet${k === 1 ? '' : 's'} against the rubric.${extra} Check the sources before relying on it.`;
+  }
   const statusOnly = (st) => `<span class="cnry-icon cnry-st--${st}" title="Status: ${LABEL[st]}">${icon(ICON_FOR[st], '', 'Status: ' + LABEL[st])}</span>`;
 
   // Time
@@ -110,7 +137,7 @@
   function worldTrend(series, st) {
     let pts = (series || []).map(([t, v]) => [Date.parse(t), v]).filter(([t, v]) => !isNaN(t) && typeof v === 'number');
     if (pts.length) { const start = pts[pts.length - 1][0] - 30 * 864e5; pts = pts.filter(([t]) => t >= start); }
-    if (pts.length < 2) return '';
+    if (pts.length < 2) return pts.length ? '<figcaption>Trend line starts at the next check</figcaption>' : '';
     const w = 240, h = 56, p = 4;
     const t0 = pts[0][0], tspan = (pts[pts.length - 1][0] - t0) || 1;
     const vals = pts.map(([, v]) => v);
@@ -185,8 +212,11 @@
   function renderLegend() {
     const st = ['red', 'amber', 'green', 'stale'].map((k) => `<span class="cnry-legend__item">${statusIcon(k)}${LABEL[k]}</span>`).join('');
     const tr = ['up', 'flat', 'down'].map((k) => `<span class="cnry-legend__item cnry-trend cnry-trend--${k}">${icon(TREND[k].icon)}<span>${TREND[k].text}</span></span>`).join('');
+    const b = { measured: 0, published: 0, judged: 0 };
+    D.cat.signals.forEach((s) => { const c = D.status.signals[s.id]; if (c && b[c.basis] !== undefined) b[c.basis]++; });
     $('#legend').innerHTML = `<span class="cnry-legend__group"><span class="cnry-legend__title">Status</span>${st}</span>
       <span class="cnry-legend__group"><span class="cnry-legend__title">Trend</span>${tr}</span>
+      <span class="cnry-legend__group"><span class="cnry-legend__title">Basis</span><span class="cnry-legend__item">${aiBadge()}${b.judged} AI judgements from news reports</span><span class="cnry-legend__item">${b.measured + b.published} unmarked: measured data or a published figure</span><a class="cds--link cds--link--sm" href="/methodology#basis">How statuses are set</a></span>
       <span class="cnry-legend__group">Select a row to see why, what it means for you, the rating criteria and sources.</span>`;
   }
 
@@ -224,7 +254,7 @@
         return `<tr class="cds--parent-row" data-parent-row data-id="${s.id}" data-st="${st}" id="${s.id}">
             <td class="cds--table-expand w-expand"><button type="button" class="cds--table-expand__button" aria-expanded="false" aria-controls="x-${s.id}" aria-label="Show details for ${esc(s.name)}">${icon('chevron--right', 'cds--table-expand__svg')}</button></td>
             <td class="w-status">${statusOnly(st)}</td>
-            <td class="w-signal"><span class="cnry-sig__name">${esc(s.name)}</span>${changed}<span class="cnry-sig__reading">${c?.value ? esc(c.value) : '<span class="cnry-none">No reading yet</span>'}</span></td>
+            <td class="w-signal"><span class="cnry-sig__name">${esc(s.name)}</span>${changed}<span class="cnry-sig__reading">${c?.value ? esc(c.value) : '<span class="cnry-none">No reading yet</span>'}${c?.basis === 'judged' ? aiBadge() : ''}</span></td>
             <td class="w-trend">${c ? trendIcon(c.trend) : ''}</td>
           </tr>
           <tr class="cds--expandable-row" data-child-row id="x-${s.id}" data-id="${s.id}" hidden><td colspan="${COLS}"><div class="cds--child-row-inner-container"></div></td></tr>`;
@@ -285,6 +315,9 @@
       left.push(`<p class="cnry-detail__summary">${esc(c.summary)}</p>`);
       left.push(`<div class="cnry-detail__block"><h3>Why it's at this level</h3><p>${esc(c.state)}</p></div>`);
       left.push(`<div class="cnry-detail__block"><h3>What this means for you</h3><p>${esc(c.for_you)}</p></div>`);
+      if (BASIS_LABEL[c.basis]) {
+        left.push(`<div class="cnry-detail__block cnry-basis"><h3>How this status was set</h3><p>${c.basis === 'judged' ? `${aiBadge()} ` : ''}<strong>${BASIS_LABEL[c.basis]}.</strong> ${esc(basisSentence(c, s.published?.by))} <a class="cds--link cds--link--sm" href="/methodology#basis">About the three bases</a></p></div>`);
+      }
     } else {
       left.push('<p class="cnry-detail__summary">This signal has not been assessed yet.</p>');
     }

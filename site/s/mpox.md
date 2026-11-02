@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Clade I local spread in US
 Rated on: Clade I spreading outside Africa or a regional surge.
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
 Clade I mpox now spreading locally in the US
 

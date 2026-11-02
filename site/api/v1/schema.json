@@ -268,13 +268,40 @@
        "type": "string"
       }
      },
+     "basis": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "enum": [
+       "measured",
+       "published",
+       "judged",
+       null
+      ],
+      "description": "How this status was set. measured: a fixed rule applied to open data (reproducible); published: follows a figure or classification by the body in basis_by; judged: the AI assessor's reading of the sources against the rubric. Weigh judged statuses with more caution."
+     },
+     "basis_detail": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "Rule inputs (measured) or a note on the judgement"
+     },
+     "basis_by": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "The publishing body, when basis is published"
+     },
      "provenance": {
       "type": "string",
       "enum": [
        "metric",
        "reporting"
       ],
-      "description": "metric: an open data feed sets a status floor; reporting: judged from sources"
+      "description": "Deprecated; use basis. metric: the signal has an open data feed; reporting: it does not"
      },
      "checked_at": {
       "type": [

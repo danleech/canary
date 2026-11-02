@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Kivu clashes; no city changed hands
 Rated on: Active fighting or a fragile ceasefire.
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
 Fighting persists in the Kivus; US sanctions Rwanda's defence ministry
 

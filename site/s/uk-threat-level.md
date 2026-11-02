@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Threat level: Severe
 Rated on: Severe or Critical.
+Basis: published — Follows MI5 / JTAC national threat level, read from the cited source by the AI assessor and checked against the rubric.
 
 UK terrorism threat level raised to Severe: an attack is highly likely
 

@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: No red aviation codes on major routes
 Rated on: No aviation colour code red; no large eruptions.
+Basis: published — Follows Volcano observatories' aviation colour codes, VAACs and Smithsonian GVP, read from the cited source by the AI assessor and checked against the rubric.
 
 No eruptions disrupting major air routes
 

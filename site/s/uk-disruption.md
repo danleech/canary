@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Doctors' strikes 14–19 Nov
 Rated on: National strike in one sector or major infrastructure disruption.
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
 Resident doctors strike 14–19 Nov; consultants plan two days
 

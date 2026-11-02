@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Helium shortage; rare-earth deadline 10 Nov
 Rated on: New export controls, shortages reported in key segments, or a fab outage.
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
 Helium shortage from the Gulf war strains chipmakers

@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Civil war; no major city changed hands
 Rated on: Civil war at sustained intensity.
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
 Civil war grinds on; junta relies on air strikes after failed Rakhine offensive
 

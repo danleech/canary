@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: EU AI Act enforcement under way
 Rated on: A significant AI misuse incident, major deepfake disruption, or regulatory confrontation.
+Basis: judged — The AI assessor's reading of 1 source from 1 outlet against the rubric. Check the sources before relying on it.
 
 EU opens first AI Act enforcement after AI-agent breaches
 

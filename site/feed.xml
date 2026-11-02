@@ -9,15 +9,16 @@
   <rights>CC BY 4.0 — Canary (canary.danleech.com)</rights>
   <author><name>Canary</name></author>
   <entry>
-    <title>Daily brief — 2 Nov 2026 (World State 42/100, Strained)</title>
+    <title>Daily brief — 2 Nov 2026 (World State 40/100, Strained)</title>
     <id>tag:canary.danleech.com,2026-11-02:brief</id>
     <updated>2026-11-02T05:51:55Z</updated>
     <link href="https://canary.danleech.com/now.md" type="text/markdown"/>
     <content type="text"># Canary — world risk status
 as_of 2026-11-02T05:51Z · next run ~11:40 UK · stale after 2026-11-02T19:51Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
+Basis: 25 measured from open data, 15 follow a published figure, 49 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
-World State 42/100 (Strained) · 17 Alert · 39 Watch · 33 Normal
+World State 40/100 (Strained) · 17 Alert · 39 Watch · 33 Normal
 Headline: Iran says two more tankers hit mines at Hormuz as talks on reopening it continue and Brent hovers near $110. Cyclone Murasu nears India's east coast, and Russia launched 759 drones at Ukraine on 1 Nov.
 
 ## Situations (9 cross-domain events; Alerts below are grouped under them)
@@ -33,7 +34,7 @@ Headline: Iran says two more tankers hit mines at Hormuz as talks on reopening i
 
 ## Other Alerts
 - Global food prices [food-prices] worsening: FAO food index at 136, up 5.8% on a year
-- Sahel insurgency [sahel] stable: JNIM fuel blockade on Bamako persists; insurgency pressing toward Guinea
+- Sahel insurgency [sahel] stable, AI-judged: JNIM fuel blockade on Bamako persists; insurgency pressing toward Guinea
 - UK terrorism threat level [uk-threat-level] stable: UK terrorism threat level raised to Severe: an attack is highly likely
 
 ## Changed in last 24h

@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Hormuz largely shut; mines and attacks
 Rated on: Hormuz substantially closed with attacks on shipping = Alert
+Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
 Iran says two tankers hit mines at Hormuz on 1 Nov; Black Sea drone attacks persist

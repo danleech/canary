@@ -5,13 +5,16 @@
   python scripts/canary.py apply FILE      # merge an updates JSON into status, then build + check
   python scripts/canary.py build           # rebuild derived files (catalogue, world index, feed, agent outputs, pages)
   python scripts/canary.py check           # validate everything; non-zero exit on any error
+  python scripts/canary.py lock --reason "…" [--version X.Y] [--freeze-until YYYY-MM-DD] [--override-freeze]
+                                           # record an owner-approved catalogue change (see CLAUDE.md)
 
 Data files (all under site/data/):
   status.json    current state of every signal (written only via `apply`)
   history.json   per-signal status/value timeline
   changes.json   log of status changes (feeds the Atom feed and 'changed in 24h')
   runs.json      log of assessment runs
-  world.json     World State index at each assessment, as [time, score] pairs (oldest first)
+  world.json     World State index at each assessment, as [time, score] pairs (oldest first).
+                 world_v1.json is the archived series from the first index method (to 2 Nov 2026).
   metrics.json   hard numbers from scripts/fetch_metrics.py
   catalogue.json generated from signals/catalogue.yaml for the site
 
@@ -20,6 +23,7 @@ written by scripts/publish.py during `build`.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 import sys
@@ -68,6 +72,39 @@ INJECTION = re.compile(
 INVISIBLE = re.compile("[\u200b-\u200f\u202a-\u202e\u2060-\u2064\u2066-\u2069\ufeff\U000e0000-\U000e007f]")
 URL_IN_PROSE = re.compile(r"(?:https?://|www\.)\S+", re.I)
 TRUSTED = ROOT / "signals" / "trusted_sources.yaml"
+COVERAGE = ROOT / "signals" / "coverage.yaml"
+LOCK = ROOT / "signals" / "catalogue.lock.json"
+CHANGELOG = ROOT / "signals" / "CHANGELOG.md"
+
+# How a status was set (shown on every signal; see "How each status is set" in methodology):
+#   measured  — a fixed rule in this file applied to data fetched from open feeds (reproducible)
+#   published — follows a figure or classification by the body named in the catalogue's `published`
+#   judged    — the AI assessor's reading of sources against the rubric
+BASES = ("measured", "published", "judged")
+DECLARABLE_BASES = {"published", "judged"}  # "measured" is computed, never declared
+
+# Sourcing rules (see trusted_sources.yaml)
+ALERT_MIN_OUTLETS = 2          # a judged Alert needs this many independent outlets…
+OUTLET_WARN, OUTLET_MAX = 0.10, 0.20  # …and no news outlet may supply more than OUTLET_MAX of a run
+OUTLET_MIN_CITATIONS = 20      # the concentration check applies once a run has this many news citations
+SECOND_LEVEL = {               # public suffixes with two labels, for telling outlets apart
+    "co.uk", "org.uk", "ac.uk", "gov.uk", "nhs.uk", "ltd.uk", "plc.uk", "me.uk", "com.au", "net.au", "org.au",
+    "gov.au", "edu.au", "co.nz", "govt.nz", "co.jp", "go.jp", "or.jp", "ne.jp", "co.kr", "or.kr", "go.kr",
+    "com.cn", "gov.cn", "com.hk", "gov.hk", "com.sg", "gov.sg", "com.tw", "gov.tw", "co.in", "gov.in", "org.in",
+    "com.pk", "gov.pk", "co.za", "gov.za", "com.tr", "gov.tr", "com.br", "gov.br", "com.mx", "gob.mx",
+    "com.ar", "gob.ar", "co.il", "gov.il", "com.eg", "gov.eg", "com.ng", "gov.ng", "co.ke", "go.ke",
+    "com.ua", "gov.ua", "com.ru", "com.sa", "gov.sa", "co.th", "go.th", "com.my", "gov.my", "com.ph", "gov.ph",
+    "co.id", "go.id", "com.vn", "gov.vn", "com.qa", "gov.qa", "co.ae", "gov.ae",
+}
+
+# World State index method. Version 2 (from 2 Nov 2026): equal domain weights, and signals that
+# share a situation count once within each domain. world_v1.json keeps the version 1 series.
+INDEX_METHOD = 2
+
+# Catalogue governance
+LOCK_KEYS = ("id", "domain", "tier", "horizon", "metrics", "rubric", "published")
+EMERGING_PROMOTE_DAYS = 14   # an emerging risk carried this long is a promotion candidate
+RETIRE_REVIEW_DAYS = 90      # a signal Normal at every check for this long is a review candidate
 
 
 def now() -> datetime:
@@ -101,6 +138,111 @@ def save(name: str, obj) -> None:
 
 def catalogue() -> dict:
     return yaml.safe_load(CATALOGUE.read_text())
+
+
+# ───────────────────────── sources and basis ─────────────────────────
+
+def host_of(url: str) -> str:
+    try:
+        host = url.split("/")[2].split(":")[0].lower()
+    except IndexError:
+        return ""
+    return re.sub(r"^www\.", "", host)
+
+
+def outlet(url_or_host: str) -> str:
+    """Registrable domain, so that news.example.com and example.com count as one outlet."""
+    host = host_of(url_or_host) if "//" in url_or_host else url_or_host.lower()
+    parts = host.split(".")
+    if len(parts) >= 3 and ".".join(parts[-2:]) in SECOND_LEVEL:
+        return ".".join(parts[-3:])
+    return ".".join(parts[-2:])
+
+
+def under(host: str, suffixes) -> bool:
+    return any(host == d or host.endswith("." + d) for d in suffixes)
+
+
+_LISTS: dict | None = None
+
+
+def source_lists() -> dict:
+    """trusted / avoid / official domain suffixes from signals/trusted_sources.yaml."""
+    global _LISTS
+    if _LISTS is None:
+        raw = (yaml.safe_load(TRUSTED.read_text()) or {}) if TRUSTED.exists() else {}
+        _LISTS = {k: {d.lower().strip() for d in raw.get(k) or []} for k in ("domains", "avoid", "official")}
+    return _LISTS
+
+
+def published_source(sig: dict, sources: list) -> bool:
+    doms = (sig.get("published") or {}).get("domains") or []
+    return bool(doms) and any(under(host_of(x.get("url", "")), doms) for x in sources)
+
+
+def decide_basis(sig: dict, requested: int, final: int, sug: dict | None, declared: str | None,
+                 sources: list, override: str | None) -> tuple[str, str]:
+    """How the final status was set. Returns (basis, detail)."""
+    if sug and LEVEL[sug["status"]] == final and requested <= final:
+        return "measured", sug["basis"]
+    if declared == "published" and published_source(sig, sources):
+        return "published", sig["published"]["by"]
+    if sug and final < LEVEL[sug["status"]]:
+        return "judged", "set below the data floor by assessor override"
+    if sug and final > LEVEL[sug["status"]]:
+        return "judged", "raised above the data floor on reported events"
+    return "judged", ""
+
+
+def infer_basis(sig: dict, cur: dict, metrics: dict) -> tuple[str, str]:
+    """Best reconstruction for a status assessed before basis was recorded (used only by build)."""
+    lvl = LEVEL.get(cur.get("status"))
+    if lvl is None:
+        return "judged", ""
+    sug = suggest(sig["id"], metrics, lvl)
+    if sug and LEVEL[sug["status"]] == lvl:
+        return "measured", sug["basis"]
+    if published_source(sig, cur.get("sources") or []):
+        return "published", sig["published"]["by"]
+    return "judged", ""
+
+
+def news_concentration(sources: list) -> tuple[int, list[tuple[str, int]]]:
+    """Citations by news outlet in one run, leaving out official bodies and data feeds."""
+    official = source_lists()["official"]
+    counts: dict[str, int] = {}
+    for x in sources:
+        h = host_of(x.get("url", ""))
+        if h and not under(h, official):
+            counts[outlet(h)] = counts.get(outlet(h), 0) + 1
+    return sum(counts.values()), sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))
+
+
+# ───────────────────────── catalogue governance ─────────────────────────
+
+def _h(obj) -> str:
+    return hashlib.sha256(json.dumps(obj, sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:12]
+
+
+def fingerprint(cat: dict) -> dict:
+    """Hashes of everything that changes what Canary measures (not copy such as why/drivers/hints)."""
+    sigs = {s["id"]: _h({k: s.get(k) for k in LOCK_KEYS}) for s in cat["signals"]}
+    doms = _h([{k: d.get(k) for k in ("id", "weight")} for d in cat["domains"]])
+    return {"catalogue": _h({"domains": doms, "signals": sigs}), "domains": doms, "signals": sigs}
+
+
+def lock_diff(lock: dict, fp: dict) -> list[str]:
+    old = lock.get("signals") or {}
+    new = fp["signals"]
+    out = [f"added {i}" for i in new if i not in old] + [f"removed {i}" for i in old if i not in new]
+    out += [f"changed {i}" for i in new if i in old and old[i] != new[i]]
+    if lock.get("domains") != fp["domains"]:
+        out.append("domains or weights changed")
+    return out
+
+
+def load_lock() -> dict:
+    return json.loads(LOCK.read_text()) if LOCK.exists() else {}
 
 
 # ───────────────────────── metric-based suggestions ─────────────────────────
@@ -313,6 +455,32 @@ def due(sig: dict, cur: dict | None, t: datetime) -> bool:
     return last is None or (t - last) > timedelta(hours=DAILY_DUE_H)
 
 
+def governance_notes(cat: dict, status: dict, history: dict, t: datetime) -> str:
+    """Catalogue version and freeze, plus candidates for the owner's weekly review (never acted on in a run)."""
+    lock = load_lock()
+    frozen = lock.get("frozen_until")
+    lines = [f"catalogue v{lock.get('version', '?')}"
+             + (f", frozen until {frozen} — do not add, remove or re-rubric signals" if frozen and frozen >= iso(t)[:10] else "")]
+    promote = []
+    for x in status.get("emerging") or []:
+        first = parse((x.get("first_seen") or "") + "T00:00:00Z")
+        if first and t - first >= timedelta(days=EMERGING_PROMOTE_DAYS):
+            promote.append(f"{x['name']} (since {x['first_seen']})")
+    if promote:
+        lines.append(f"owner review — emerging risks carried {EMERGING_PROMOTE_DAYS}+ days: " + "; ".join(promote))
+    quiet = []
+    for s in cat["signals"]:
+        h = history.get(s["id"]) or []
+        first = parse(h[0][0]) if h else None
+        if first and t - first >= timedelta(days=RETIRE_REVIEW_DAYS):
+            recent = [p for p in h if (parse(p[0]) or t) >= t - timedelta(days=RETIRE_REVIEW_DAYS)]
+            if recent and all(p[1] == "g" for p in recent):
+                quiet.append(s["id"])
+    if quiet:
+        lines.append(f"owner review — Normal at every check for {RETIRE_REVIEW_DAYS} days: " + ", ".join(quiet))
+    return "governance: " + "\n  ".join(lines)
+
+
 def cmd_plan(_args) -> int:
     cat, status, metrics = catalogue(), load("status.json", {}), load("metrics.json", {}).get("metrics", {})
     sigs, t = status.get("signals", {}), now()
@@ -333,6 +501,7 @@ def cmd_plan(_args) -> int:
             anchors.append(f"  {label}: {m['value']}{rel} (as of {m.get('as_of')})")
     if anchors:
         print("context anchors (inform judgement; not floors):\n" + "\n".join(anchors))
+    print(governance_notes(cat, status, load("history.json", {}), t))
     print()
     dom = None
     for s in todo:
@@ -359,20 +528,24 @@ def cmd_apply(args) -> int:
     upd = json.loads(Path(args[0]).read_text())
     cat = catalogue()
     by_id = {s["id"]: s for s in cat["signals"]}
-    bad = validate_updates(upd, by_id)
+    status = load("status.json", {"signals": {}})
+    metrics = load("metrics.json", {}).get("metrics", {})
+    sigs = status.setdefault("signals", {})
+    bad, src_warns = validate_updates(upd, by_id, metrics, sigs)
     if bad:  # reject before touching any data file, so a fixed file can simply be re-applied
         for e in bad:
             print("ERROR:", e)
+        for w in src_warns:
+            print("WARN", w)
         print(f"apply aborted: {len(bad)} problem(s) in {args[0]}; nothing was written")
         return 1
-    status = load("status.json", {"signals": {}})
     history = load("history.json", {})
     changes = load("changes.json", [])
     runs = load("runs.json", [])
-    metrics = load("metrics.json", {}).get("metrics", {})
-    sigs = status.setdefault("signals", {})
     t = now()
-    warnings, applied, changed = [], 0, []
+    warnings, applied, changed = list(src_warns), 0, []
+    bases = {b: 0 for b in BASES}
+    cited: list = []
 
     for u in upd.get("signals", []):
         sid = u.get("id")
@@ -381,11 +554,12 @@ def cmd_apply(args) -> int:
             continue
         prev = sigs.get(sid) or {}
         prev_lvl = LEVEL.get(prev.get("status"))
-        new = {**prev, **{k: v for k, v in u.items() if k not in ("id", "override_reason")}}
+        new = {**prev, **{k: v for k, v in u.items() if k not in ("id", "override_reason", "basis")}}
         lvl = LEVEL.get(new.get("status"))
         if lvl is None:
             warnings.append(f"{sid}: invalid status '{new.get('status')}' — skipped")
             continue
+        requested = lvl
         sug = suggest(sid, metrics, prev_lvl)
         override = u.get("override_reason")
         # metric floor: an assessment may raise a metric-based status but not lower it without a reason
@@ -397,6 +571,10 @@ def cmd_apply(args) -> int:
             warnings.append(f"{sid}: clamped {NAME[prev_lvl]}→{NAME[lvl]} to amber (one-step rule; add override_reason)")
             lvl = 1
         new["status"] = NAME[lvl]
+        new["basis"], new["basis_detail"] = decide_basis(by_id[sid], requested, lvl, sug, u.get("basis"),
+                                                         new.get("sources") or [], override)
+        bases[new["basis"]] += 1
+        cited += u.get("sources") or []
         if sug and not u.get("value") and sug.get("value"):
             new["value"] = sug["value"]
         if sug and new.get("value_num") is None and sug.get("value_num") is not None:
@@ -432,9 +610,16 @@ def cmd_apply(args) -> int:
             for x in (run.get("emerging") or [])][:MAX_EMERGING]
     if applied:
         status["generated_at"] = iso(t)
-    status["world"] = world_index(cat, sigs)
+    status["world"] = world_index(cat, sigs, status.get("situations"))
+    for x in status.get("emerging") or []:
+        cited += x.get("sources") or []
+    n_news, by_outlet = news_concentration(cited)
     runs.insert(0, {"t": iso(t), "applied": applied, "changed": changed, "warnings": warnings,
-                    "note": run.get("note", "")})
+                    "note": run.get("note", ""), "catalogue": load_lock().get("version"),
+                    "basis": bases,
+                    "sources": {"citations": len(cited), "news_citations": n_news,
+                                "outlets": len({outlet(x.get('url', '')) for x in cited}),
+                                "top_news_outlets": [list(kv) for kv in by_outlet[:5]]}})
     save("status.json", status)
     save("history.json", history)
     save("changes.json", changes[:CHANGES_CAP])
@@ -442,22 +627,40 @@ def cmd_apply(args) -> int:
     for w in warnings:
         print("WARN", w)
     print(f"applied {applied} signal updates; {len(changed)} status changes: {', '.join(changed) or '—'}")
+    print("basis this run: " + ", ".join(f"{v} {k}" for k, v in bases.items())
+          + (f"; top news outlet {by_outlet[0][0]} {by_outlet[0][1]}/{n_news}" if by_outlet else ""))
     cmd_build([])
     return cmd_check([])
 
 
 # ───────────────────────── build ─────────────────────────
 
-def world_index(cat: dict, sigs: dict) -> dict:
+def world_index(cat: dict, sigs: dict, situations: list | None = None) -> dict:
+    """World State index, method 2.
+
+    Each signal scores 0/1/2 (Normal/Watch/Alert). Within a domain, signals that belong to the same
+    situation count once, at the highest level among them, so one event cannot fill a domain on its
+    own. A signal listed in several situations counts with the first. Domain means are then combined
+    with the catalogue weights (all 1.0 since 2 Nov 2026).
+    """
+    group: dict[str, str] = {}
+    for x in situations or []:
+        for sid in x.get("signals") or []:
+            group.setdefault(sid, x.get("id") or "?")
     num = den = 0.0
     counts = {"green": 0, "amber": 0, "red": 0}
     by_dom = {}
     for d in cat["domains"]:
-        pts = [LEVEL[sigs[s["id"]]["status"]] for s in cat["signals"]
-               if s["domain"] == d["id"] and sigs.get(s["id"], {}).get("status") in LEVEL]
-        if not pts:
+        units: dict[str, int] = {}
+        for s in cat["signals"]:
+            st = sigs.get(s["id"], {}).get("status")
+            if s["domain"] != d["id"] or st not in LEVEL:
+                continue
+            key = f"situation:{group[s['id']]}" if s["id"] in group else s["id"]
+            units[key] = max(units.get(key, 0), LEVEL[st])
+        if not units:
             continue
-        mean = sum(pts) / len(pts)
+        mean = sum(units.values()) / len(units)
         by_dom[d["id"]] = round(mean / 2 * 100)
         num += d["weight"] * mean
         den += d["weight"] * 2
@@ -468,30 +671,19 @@ def world_index(cat: dict, sigs: dict) -> dict:
     band = (None if score is None else "Calm" if score < 25 else "Unsettled" if score < 40
             else "Strained" if score < 60 else "Severe")
     colour = None if score is None else "green" if score < 25 else "amber" if score < 60 else "red"
-    return {"score": score, "band": band, "status": colour, "counts": counts, "by_domain": by_dom}
+    return {"score": score, "band": band, "status": colour, "counts": counts, "by_domain": by_dom,
+            "method": INDEX_METHOD}
 
 
 def world_series(cat: dict, status: dict, history: dict, series: list) -> list:
     """The World State index over time: one [time, score] point per assessment, oldest first.
 
-    An empty series is rebuilt once from history.json (each signal's latest status at every
-    past run time). After that it is append-only: a new assessment adds a point, and a rebuild
-    with no new assessment (for example a catalogue edit) refreshes the latest point.
+    Append-only: a new assessment adds a point, and a rebuild with no new assessment (for example
+    a catalogue edit) refreshes the latest point. Past points are never recomputed: situations are
+    not kept per run, so method 2 cannot be replayed. The method 1 series is archived in
+    world_v1.json.
     """
     series = [p for p in series if isinstance(p, list) and len(p) == 2]
-    if not series:
-        ids = {s["id"] for s in cat["signals"]}
-        letter = {n[0]: n for n in LEVEL}
-        pts = {sid: sorted(h) for sid, h in history.items() if sid in ids}
-        for t in sorted({p[0] for h in pts.values() for p in h}):
-            sigs = {}
-            for sid, h in pts.items():
-                past = [p for p in h if p[0] <= t]
-                if past and past[-1][1] in letter:
-                    sigs[sid] = {"status": letter[past[-1][1]]}
-            score = world_index(cat, sigs)["score"]
-            if score is not None:
-                series.append([t, score])
     t, score = status.get("generated_at"), (status.get("world") or {}).get("score")
     if t and score is not None:
         if series and series[-1][0] == t:
@@ -507,28 +699,56 @@ def sentiment_config() -> dict | None:
     return yaml.safe_load(p.read_text()) if p.exists() else None
 
 
+def coverage_config() -> dict | None:
+    return yaml.safe_load(COVERAGE.read_text()) if COVERAGE.exists() else None
+
+
 def cmd_build(_args) -> int:
     cat = catalogue()
     save("catalogue.json", cat)
     status = load("status.json", {"signals": {}})
-    status["world"] = world_index(cat, status.get("signals", {}))
+    metrics = load("metrics.json", {}).get("metrics", {})
+    by_id = {s["id"]: s for s in cat["signals"]}
+    for sid, cur in status.get("signals", {}).items():
+        # Statuses assessed before basis was recorded get a reconstructed one until their next check.
+        if sid in by_id and cur.get("basis") not in BASES:
+            cur["basis"], cur["basis_detail"] = infer_basis(by_id[sid], cur, metrics)
+    status["world"] = world_index(cat, status.get("signals", {}), status.get("situations"))
     save("status.json", status)
     history = load("history.json", {})
     world = world_series(cat, status, history, load("world.json", []))
     save("world.json", world)
-    written = publish.build(SITE_URL, cat, status, load("changes.json", []), history,
-                            load("metrics.json", {}).get("metrics", {}),
+    written = publish.build(SITE_URL, cat, status, load("changes.json", []), history, metrics,
                             {"fast": FAST_STALE_H, "daily": DAILY_STALE_H}, world=world,
-                            sentiment=load("sentiment.json", {}), sentiment_cfg=sentiment_config())
+                            sentiment=load("sentiment.json", {}), sentiment_cfg=sentiment_config(),
+                            coverage=coverage_config(), lock=load_lock())
     print(f"built catalogue.json, world index and public outputs ({len(written)} files changed)")
     return 0
 
 
 # ───────────────────────── check ─────────────────────────
 
-def validate_updates(upd: dict, by_id: dict) -> list[str]:
-    """Structural and safety checks on an updates file, run before anything is merged."""
+def alert_sourcing(where: str, sources: list, errs: list) -> None:
+    """A judged Alert needs independent corroboration from at least one established outlet."""
+    trusted = source_lists()["domains"]
+    outlets = {outlet(x.get("url", "")) for x in sources if host_of(x.get("url", ""))}
+    if len(outlets) < ALERT_MIN_OUTLETS or not any(under(host_of(x.get("url", "")), trusted) for x in sources):
+        errs.append(f"{where}: a judged Alert needs sources from at least {ALERT_MIN_OUTLETS} different outlets, "
+                    f"one on signals/trusted_sources.yaml (has {len(outlets)}: {', '.join(sorted(outlets)) or '—'}). "
+                    "Find corroboration, or rate Watch and say in state that the Alert is unconfirmed")
+
+
+def validate_updates(upd: dict, by_id: dict, metrics: dict | None = None,
+                     sigs: dict | None = None) -> tuple[list[str], list[str]]:
+    """Structural, safety and sourcing checks on an updates file, run before anything is merged.
+
+    Returns (errors, warnings). Any error aborts the apply.
+    """
     errs: list[str] = []
+    warns: list[str] = []
+    metrics, sigs = metrics or {}, sigs or {}
+    avoid = source_lists()["avoid"]
+    cited: list = []
     run = upd.get("run") or {}
     if run.get("headline"):
         check_text("run.headline", {"headline": run["headline"]}, errs, limit=260)
@@ -556,15 +776,48 @@ def validate_updates(upd: dict, by_id: dict) -> list[str]:
         check_text(f"emerging '{nm}'", {"summary": x.get("summary")}, errs, limit=160, required=True)
         if not x.get("sources"):
             errs.append(f"emerging '{nm}': no sources")
-        check_sources(f"emerging '{nm}'", x.get("sources") or [], set(), errs, {})
+        check_sources(f"emerging '{nm}'", x.get("sources") or [], set(), errs, {}, avoid=avoid)
+        if x.get("status") == "red":
+            alert_sourcing(f"emerging '{nm}'", x.get("sources") or [], errs)
+        cited += x.get("sources") or []
     if len(run.get("emerging") or []) > MAX_EMERGING:
         errs.append(f"run.emerging: max {MAX_EMERGING}")
     for u in upd.get("signals", []):
         sid = u.get("id", "?")
-        if sid in by_id:
-            check_text(sid, {f: u.get(f) for f in PROSE}, errs)
-            check_sources(sid, u.get("sources") or [], set(), errs, {})
-    return errs
+        if sid not in by_id:
+            continue
+        sig, srcs = by_id[sid], u.get("sources") or []
+        check_text(sid, {f: u.get(f) for f in PROSE}, errs)
+        check_sources(sid, srcs, set(), errs, {}, avoid=avoid)
+        cited += srcs
+        declared = u.get("basis")
+        if declared is not None and declared not in DECLARABLE_BASES:
+            errs.append(f"{sid}: basis must be 'published' or 'judged' (measured is worked out by apply; omit it)")
+        if declared == "published":
+            if not sig.get("published"):
+                errs.append(f"{sid}: basis 'published' is only for signals with a `published` body in the catalogue")
+            elif not published_source(sig, srcs):
+                errs.append(f"{sid}: basis 'published' needs a source from {', '.join(sig['published']['domains'])} "
+                            f"({sig['published']['by']})")
+        prev = sigs.get(sid) or {}
+        st = u.get("status") or prev.get("status")
+        if st == "red":
+            sug = suggest(sid, metrics, LEVEL.get(prev.get("status")))
+            measured = bool(sug and sug["status"] == "red")
+            published = declared == "published" and published_source(sig, srcs)
+            if not (measured or published):
+                alert_sourcing(sid, srcs, errs)
+    n_news, by_outlet = news_concentration(cited)
+    if n_news >= OUTLET_MIN_CITATIONS:
+        for dom, n in by_outlet:
+            share = n / n_news
+            if share > OUTLET_MAX:
+                errs.append(f"sources: {dom} supplies {n} of {n_news} news citations ({share:.0%}, max "
+                            f"{OUTLET_MAX:.0%}). Replace some with other outlets, ideally regional or non-English ones")
+            elif share > OUTLET_WARN:
+                warns.append(f"sources: {dom} supplies {n} of {n_news} news citations ({share:.0%}); "
+                             f"diversify next run (errors above {OUTLET_MAX:.0%})")
+    return errs, warns
 
 
 def check_text(where: str, fields: dict, errs: list, limit: int | None = None, required: bool = False) -> None:
@@ -588,22 +841,28 @@ def check_text(where: str, fields: dict, errs: list, limit: int | None = None, r
             errs.append(f"{where}: URL in {f} (put links in sources, not in prose)")
 
 
-def check_sources(where: str, srcs: list, trusted: set, errs: list, untrusted: dict) -> None:
+def check_sources(where: str, srcs: list, trusted: set, errs: list, untrusted: dict,
+                  avoid: set | None = None, avoided: list | None = None) -> None:
+    """Validate source entries. Avoid-list domains are errors when `avoid` is given (new assessments),
+    or collected into `avoided` for a warning (published state)."""
     for src in srcs:
         url = src.get("url", "")
         if not re.match(r"https?://", url) or not src.get("title"):
             errs.append(f"{where}: bad source {src}")
             continue
         check_text(where, {"source title": src.get("title")}, errs, limit=200)
-        host = re.sub(r"^www\.", "", url.split("/")[2].split(":")[0].lower())
-        if trusted and not any(host == d or host.endswith("." + d) for d in trusted):
+        host = host_of(url)
+        if avoid and under(host, avoid):
+            errs.append(f"{where}: {host} is not a source of record (avoid list in signals/trusted_sources.yaml); "
+                        "cite the original reporting or the official body")
+        if avoided is not None and under(host, source_lists()["avoid"]):
+            avoided.append(f"{host} ({where})")
+        if trusted and not under(host, trusted):
             untrusted.setdefault(host, set()).add(where)
 
 
 def trusted_domains() -> set:
-    if not TRUSTED.exists():
-        return set()
-    return {d.lower().strip() for d in (yaml.safe_load(TRUSTED.read_text()) or {}).get("domains", [])}
+    return source_lists()["domains"]
 
 
 def cmd_check(_args) -> int:
@@ -628,13 +887,50 @@ def cmd_check(_args) -> int:
             errs.append(f"catalogue {s['id']}: horizon must be acute|seasonal|chronic")
         if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", s.get("id") or ""):
             errs.append(f"catalogue {s.get('id')}: id must be kebab-case")
+        pub = s.get("published")
+        if pub is not None and (not isinstance(pub, dict) or not pub.get("by") or not pub.get("domains")):
+            errs.append(f"catalogue {s['id']}: published needs `by` and a non-empty `domains` list")
+    # Governance: what Canary measures changes only through `canary.py lock` (owner-approved).
+    lock = load_lock()
+    if not lock:
+        errs.append("signals/catalogue.lock.json missing: run `canary.py lock` (owner-approved changes only)")
+    else:
+        fp = fingerprint(cat)
+        if fp["catalogue"] != lock.get("catalogue"):
+            errs.append("catalogue changed without `canary.py lock` (" + "; ".join(lock_diff(lock, fp)[:12])
+                        + "). Signals, rubrics, tiers and weights change only with the owner's sign-off: see "
+                        "'Changing the catalogue' in CLAUDE.md")
+    cov = coverage_config()
+    if cov:
+        for x in cov.get("risks") or []:
+            r = x.get("risk") or "?"
+            if x.get("coverage") not in ("covered", "partial", "gap"):
+                errs.append(f"coverage '{r}': coverage must be covered|partial|gap")
+            bad = [i for i in x.get("signals") or [] if i not in {s['id'] for s in cat['signals']}]
+            if bad:
+                errs.append(f"coverage '{r}': unknown signal ids {bad}")
+            if x.get("coverage") != "covered" and not x.get("note"):
+                errs.append(f"coverage '{r}': partial and gap entries need a note")
+            if x.get("coverage") == "gap" and x.get("signals"):
+                errs.append(f"coverage '{r}': a gap lists no signals")
+            if len(x.get("note") or "") > 200:
+                errs.append(f"coverage '{r}': note over 200 chars")
     status = load("status.json", {"signals": {}})
     sigs = status.get("signals", {})
     by_id = {s["id"]: s for s in cat["signals"]}
+    avoided: list[str] = []
+    weak_alerts: list[str] = []
     for sid, s in sigs.items():
         if sid not in by_id:
             errs.append(f"status: '{sid}' not in catalogue")
             continue
+        if s.get("basis") not in BASES:
+            warns.append(f"{sid}: no basis recorded (build reconstructs one; apply records it)")
+        elif s.get("basis") == "judged" and s.get("status") == "red":
+            probe: list[str] = []
+            alert_sourcing(sid, s.get("sources") or [], probe)
+            if probe:
+                weak_alerts.append(sid)
         if s.get("status") not in LEVEL:
             errs.append(f"{sid}: bad status {s.get('status')}")
         if s.get("trend") not in TRENDS:
@@ -650,7 +946,7 @@ def cmd_check(_args) -> int:
         srcs = s.get("sources") or []
         if not srcs:
             errs.append(f"{sid}: no sources")
-        check_sources(sid, srcs, trusted, errs, untrusted)
+        check_sources(sid, srcs, trusted, errs, untrusted, avoided=avoided)
         check_text(sid, {f: s.get(f) for f in PROSE}, errs)
         if not parse(s.get("checked_at")):
             errs.append(f"{sid}: bad checked_at")
@@ -695,7 +991,13 @@ def cmd_check(_args) -> int:
         check_text(f"emerging '{nm}'", {"summary": x.get("summary")}, errs, limit=160, required=True)
         if not x.get("sources"):
             errs.append(f"emerging '{nm}': no sources")
-        check_sources(f"emerging '{nm}'", x.get("sources") or [], trusted, errs, untrusted)
+        check_sources(f"emerging '{nm}'", x.get("sources") or [], trusted, errs, untrusted, avoided=avoided)
+    if avoided:
+        warns.append(f"{len(avoided)} citation(s) on the avoid list, carried from earlier runs (rejected in new "
+                     "assessments; replace when next assessed): " + "; ".join(avoided))
+    if weak_alerts:
+        warns.append(f"{len(weak_alerts)} judged Alert(s) carried from earlier runs lack two independent outlets "
+                     f"(one trusted): {', '.join(weak_alerts)}. The next assessment must meet the rule")
     if untrusted:
         warns.append(f"{len(untrusted)} source domain(s) not in signals/trusted_sources.yaml (prefer established "
                      "outlets; add a domain only after checking it): "
@@ -715,8 +1017,57 @@ def cmd_check(_args) -> int:
     return 1 if errs else 0
 
 
+def cmd_lock(args) -> int:
+    """Record an owner-approved catalogue change: new fingerprint, version and changelog entry.
+
+    Only run this when Dan has approved the change. Never run it during a scheduled assessment.
+    """
+    opts, i = {}, 0
+    while i < len(args):
+        a = args[i]
+        if a == "--override-freeze":
+            opts["override"] = True
+            i += 1
+        elif a in ("--reason", "--version", "--freeze-until") and i + 1 < len(args):
+            opts[a[2:]] = args[i + 1]
+            i += 2
+        else:
+            print(f"unknown or incomplete option {a}", file=sys.stderr)
+            return 2
+    if not opts.get("reason"):
+        print('usage: canary.py lock --reason "what changed and who approved it" [--version X.Y] '
+              "[--freeze-until YYYY-MM-DD] [--override-freeze]", file=sys.stderr)
+        return 2
+    cat, lock, t = catalogue(), load_lock(), now()
+    fp = fingerprint(cat)
+    diff = lock_diff(lock, fp) if lock else ["first lock"]
+    frozen = lock.get("frozen_until")
+    if lock and diff and frozen and frozen >= iso(t)[:10] and not opts.get("override"):
+        print(f"catalogue is frozen until {frozen}; changes: {'; '.join(diff)}. "
+              "Pass --override-freeze only with the owner's explicit approval.", file=sys.stderr)
+        return 1
+    if "freeze-until" in opts and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", opts["freeze-until"]):
+        print("--freeze-until must be YYYY-MM-DD", file=sys.stderr)
+        return 2
+    ver = opts.get("version")
+    if not ver:
+        major, _, minor = str(lock.get("version") or "1.0").partition(".")
+        ver = f"{major}.{int(minor or 0) + 1}" if diff else str(lock.get("version"))
+    new = {"version": ver, "locked_at": iso(t), "frozen_until": opts.get("freeze-until", frozen),
+           "reason": opts["reason"], "signals_count": len(cat["signals"]), **fp}
+    LOCK.write_text(json.dumps(new, indent=1, ensure_ascii=False) + "\n")
+    head = "# Catalogue changelog\n\nEvery change to what Canary measures, newest first. Written by `canary.py lock`.\n"
+    body = CHANGELOG.read_text().split("\n", 3)[3] if CHANGELOG.exists() and CHANGELOG.read_text().count("\n") >= 3 else ""
+    entry = (f"\n## v{ver} — {iso(t)[:10]}\n\n{opts['reason']}\n\n"
+             + (f"- Frozen until {new['frozen_until']}\n" if new.get("frozen_until") else "")
+             + f"- {len(cat['signals'])} signals; changes: {', '.join(diff) or 'none'}\n")
+    CHANGELOG.write_text(head + entry + body)
+    print(f"locked catalogue v{ver} ({fp['catalogue']}); {', '.join(diff) or 'no changes'}")
+    return 0
+
+
 if __name__ == "__main__":
-    cmds = {"plan": cmd_plan, "apply": cmd_apply, "build": cmd_build, "check": cmd_check}
+    cmds = {"plan": cmd_plan, "apply": cmd_apply, "build": cmd_build, "check": cmd_check, "lock": cmd_lock}
     if len(sys.argv) < 2 or sys.argv[1] not in cmds:
         print(__doc__)
         sys.exit(2)

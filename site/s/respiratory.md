@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: Early H1N1 flu season (US, UK)
 Rated on: Unusually early flu season in the northern hemisphere = Watch
+Basis: published — Follows WHO variant designations and surveillance, read from the cited source by the AI assessor and checked against the rubric.
 
 Early flu season driven by a drifted H1N1 strain in the US and UK
 

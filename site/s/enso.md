@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: ONI +2.2 (El Niño)
 Rated on: |ONI| ≥ 1.5 (strong event).
+Basis: measured — Set by a fixed rule applied to open data (|ONI| = 2.16). Anyone can reproduce it from the public metrics file.
 Situation: Super El Niño [super-el-nino]
 
 Strong El Niño: ONI +2.2, a 'super' event

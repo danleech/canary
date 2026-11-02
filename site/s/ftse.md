@@ -4,6 +4,7 @@ Assessed by an AI model (Anthropic Claude) against published rubrics; not a fore
 
 Value: 10,730, -1.7% from high
 Rated on: FTSE drawdown 1.7% < 10% Watch line
+Basis: measured — Set by a fixed rule applied to open data (FTSE drawdown % = 1.66). Anyone can reproduce it from the public metrics file.
 
 FTSE 100 near its high, cushioned by energy and mining shares
 
