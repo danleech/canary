@@ -1,5 +1,21 @@
 [
  {
+  "t": "2026-11-02T23:43:37Z",
+  "id": "gold",
+  "name": "Gold (fear gauge)",
+  "from": "green",
+  "to": "amber",
+  "reason": "Gold near $3,950, down 8.2% over three months, past the Watch line"
+ },
+ {
+  "t": "2026-11-02T23:43:37Z",
+  "id": "equity-stress",
+  "name": "US equity stress",
+  "from": "green",
+  "to": "amber",
+  "reason": "VIX above 20 at a three-month high as tech sell-off extends; S&P 500 3.5% off its high"
+ },
+ {
   "t": "2026-11-02T18:00:42Z",
   "id": "gold",
   "name": "Gold (fear gauge)",

@@ -1,8 +1,10 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-02T18:00Z · next run ~23:40 UK · stale after 2026-11-03T08:00Z (36h for daily-tier signals)
+as_of 2026-11-02T23:43Z · next run ~05:40 UK · stale after 2026-11-03T13:43Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 26 measured from open data, 14 follow a published figure, 49 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
+- 2026-11-02T23:43Z Gold (fear gauge) [gold]: NORMAL→WATCH — Gold near $3,950, down 8.2% over three months, past the Watch line
+- 2026-11-02T23:43Z US equity stress [equity-stress]: NORMAL→WATCH — VIX above 20 at a three-month high as tech sell-off extends; S&P 500 3.5% off its high
 - 2026-11-02T18:00Z Gold (fear gauge) [gold]: WATCH→NORMAL — Gold near $3,970, down 7.8% over three months, just inside the Watch line
 - 2026-11-02T11:58Z Pacific & Indian cyclones [other-cyclones]: WATCH→ALERT — Cyclone Murasu, a GDACS red alert, due to cross the Andhra Pradesh coast on 2–3 Nov
 - 2026-11-02T05:51Z Pacific & Indian cyclones [other-cyclones]: ALERT→WATCH — Severe Cyclone Murasu due to hit south Andhra Pradesh overnight 2–3 Nov; GDACS now green

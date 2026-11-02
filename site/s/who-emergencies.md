@@ -1,5 +1,5 @@
 # WHO emergencies — WATCH (stable)
-id who-emergencies · Global Health · horizon acute · checked 2026-11-02T18:00Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T08:00Z
+id who-emergencies · Global Health · horizon acute · checked 2026-11-02T23:43Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T13:43Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/who-emergencies
 
 Value: 1 PHEIC (Ebola)

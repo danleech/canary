@@ -1,14 +1,14 @@
-# Gold (fear gauge) — NORMAL (improving)
-id gold · Markets · horizon acute · checked 2026-11-02T18:00Z · at this level since 2026-11-02T18:00Z · stale after 2026-11-03T08:00Z
+# Gold (fear gauge) — WATCH (improving)
+id gold · Markets · horizon acute · checked 2026-11-02T23:43Z · at this level since 2026-11-02T23:43Z · stale after 2026-11-03T13:43Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/gold
 
-Value: $3,970, 3m -7.8%
-Rated on: Gold 3m change −7.8%, inside the −8% Watch line
-Basis: measured — Set by a fixed rule applied to open data (Gold 3m gain % = -7.80). Anyone can reproduce it from the public metrics file.
+Value: $3,954, 3m -8.2%
+Rated on: Gold 3m change −8.2%, past the −8% Watch line
+Basis: measured — Set by a fixed rule applied to open data (Gold 3m gain % = -8.15 · 3m fall -8.2%). Anyone can reproduce it from the public metrics file.
 
-Gold near $3,970, down 7.8% over three months, just inside the Watch line
+Gold near $3,950, down 8.2% over three months, past the Watch line
 
-Why it's at this level: Gold futures were near $3,970 on 2 Nov, 7.8% lower over three months and 2.6% down on the week, a fall now just inside the 8% three-month Watch line. Prices rose on 2 Nov as oil fell; the slide during the Gulf war reflects higher yields and Fed tightening rather than a flight to safety.
+Why it's at this level: Gold futures were near $3,954 late on 2 Nov, 8.2% lower over three months, a fall now past the 8% three-month Watch line, despite a rise earlier on 2 Nov as oil fell (CNBC). The slide during the Gulf war reflects higher yields and expectations of Fed tightening rather than a flight to safety.
 
 What this means for you: Gold prices are falling faster than usual; holders of gold or gold funds are seeing larger value swings.
 

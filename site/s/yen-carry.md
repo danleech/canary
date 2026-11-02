@@ -1,14 +1,14 @@
 # Yen & carry trade — NORMAL (stable)
-id yen-carry · Markets · horizon acute · checked 2026-11-02T18:00Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-03T08:00Z
+id yen-carry · Markets · horizon acute · checked 2026-11-02T23:43Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-03T13:43Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/yen-carry
 
-Value: ¥157.8/$, 1w +0.6%
-Rated on: USD/JPY 1w +0.6% < 3%; 1m −0.1% < 6%
-Basis: measured — Set by a fixed rule applied to open data (USD/JPY 1w move % = 0.62 · USD/JPY 1m move % = 0.07). Anyone can reproduce it from the public metrics file.
+Value: ¥157.9/$, 1w +0.7%
+Rated on: USD/JPY 1w +0.7% < 3%; 1m 0.0% < 6%
+Basis: measured — Set by a fixed rule applied to open data (USD/JPY 1w move % = 0.70 · USD/JPY 1m move % = 0.00). Anyone can reproduce it from the public metrics file.
 
 Yen steady near ¥158 per dollar; no intervention
 
-Why it's at this level: The dollar was at ¥157.8 on 2 Nov, up 0.6% on the week and flat on the month, far inside the 3% weekly and 6% monthly Watch lines. No Japanese currency intervention had been reported as of 2 Nov.
+Why it's at this level: The dollar was at ¥157.9 on 2 Nov, up 0.7% on the week and flat on the month, far inside the 3% weekly and 6% monthly Watch lines. No Japanese currency intervention had been reported as of 2 Nov.
 
 What this means for you: No sudden yen move is forcing investors to unwind leveraged positions, a pattern that has shaken global markets before.
 

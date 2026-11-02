@@ -1,5 +1,5 @@
 # Iran nuclear programme — WATCH (worsening)
-id iran-nuclear · Geopolitics · horizon acute · checked 2026-11-02T18:00Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T08:00Z
+id iran-nuclear · Geopolitics · horizon acute · checked 2026-11-02T23:43Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T13:43Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/iran-nuclear
 
 Value: No IAEA access
@@ -9,7 +9,7 @@ Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
 No IAEA access in Iran; Tehran rules out moving its enriched uranium abroad
 
-Why it's at this level: The IAEA has had no access to Iranian sites and reported Iran to the UN Security Council on 1 Oct. On 2 Nov Iran said it would return to nuclear talks only after its conditions are verified and would not transfer its highly enriched uranium stockpile abroad (Reuters). Trump has said there will be no new strike before the 3 Nov midterms; none on nuclear sites was reported as of 2 Nov.
+Why it's at this level: The IAEA has had no access to Iranian sites and reported Iran to the UN Security Council on 1 Oct. Iran said on 2 Nov it would not transfer its highly enriched uranium abroad. Trump said on 31 Oct the US still had to deal with one or two targets, including a suspected nuclear site at Pickaxe Mountain, and has hinted at strikes after the 3 Nov midterms (CBS).
 
 What this means for you: No direct public safety risk outside the region. Travel advice for Iran and the Gulf is on the FCDO website.
 
@@ -20,4 +20,4 @@ Rubric — Alert: Strikes on nuclear sites, NPT withdrawal, or evidence of weapo
 
 Sources:
 - Reuters via Investing.com — Iranians have left Doha talks, draft proposal for US deal being circulated (2026-11-02) https://www.investing.com/news/commodities-news/iranians-have-left-doha-talks-draft-proposal-for-us-deal-being-circulated-official-says-4990460
-- ANI — Ball is in America’s court: Iran demands end to US naval blockade (2026-11-02) https://www.aninews.in/news/world/middle-east/ball-is-in-americas-court-iran-demands-end-to-us-naval-blockade-before-any-agreement-on-strait-of-hormuz20261102162637/
+- CBS News — Live updates: Iran war, US negotiations (2026-11-02) https://www.cbsnews.com/live-updates/iran-war-us-trump-negotiations-midterms/

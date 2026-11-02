@@ -1,5 +1,51 @@
 [
  {
+  "t": "2026-11-02T23:43:37Z",
+  "applied": 41,
+  "changed": [
+   "equity-stress",
+   "gold"
+  ],
+  "warnings": [
+   "sources: cbsnews.com supplies 5 of 45 news citations (11%); diversify next run (errors above 20%)",
+   "sources: euronews.com supplies 5 of 45 news citations (11%); diversify next run (errors above 20%)"
+  ],
+  "note": "Late 2 Nov run, about 6h after the previous one; most qualitative signals refreshed only where news moved. Murasu landfall not yet confirmed at time of check. Surprise check found nothing new outside the catalogue.",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 20,
+   "published": 3,
+   "judged": 18
+  },
+  "sources": {
+   "citations": 76,
+   "news_citations": 45,
+   "outlets": 37,
+   "top_news_outlets": [
+    [
+     "cbsnews.com",
+     5
+    ],
+    [
+     "euronews.com",
+     5
+    ],
+    [
+     "aljazeera.com",
+     4
+    ],
+    [
+     "aa.com.tr",
+     2
+    ],
+    [
+     "cnbc.com",
+     2
+    ]
+   ]
+  }
+ },
+ {
   "t": "2026-11-02T18:00:42Z",
   "applied": 52,
   "changed": [

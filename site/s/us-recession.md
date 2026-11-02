@@ -1,14 +1,14 @@
 # US recession risk — NORMAL (stable)
-id us-recession · Economy · horizon acute · checked 2026-11-02T18:00Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T08:00Z
+id us-recession · Economy · horizon acute · checked 2026-11-02T23:43Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T13:43Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/us-recession
 
-Value: Sahm 0.00, 10y–2y +0.38
+Value: Sahm 0.00, 10y–2y +0.32
 Rated on: Sahm 0.00 < 0.30 Watch line
 Basis: measured — Set by a fixed rule applied to open data (Sahm = 0.00). Anyone can reproduce it from the public metrics file.
 
 No recession signal: Sahm indicator 0.00, yield curve positive
 
-Why it's at this level: The real-time Sahm rule indicator is 0.00, far from the 0.5 recession trigger, and the 10y–2y Treasury curve was +0.38 on 30 Oct. Weekly jobless claims were 194,000 in the week to 24 Oct, near their lows; October payrolls are due on 6 Nov.
+Why it's at this level: The real-time Sahm rule indicator is 0.00, far from the 0.5 recession trigger, and the 10y–2y Treasury curve was +0.32 on 2 Nov. Weekly jobless claims were 194,000 in the week to 24 Oct, near their lows; October payrolls are due on 6 Nov.
 
 What this means for you: The US economy is not showing recession signals, which supports jobs and demand for UK exporters.
 
