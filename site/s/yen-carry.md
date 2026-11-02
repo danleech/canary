@@ -1,13 +1,13 @@
 # Yen & carry trade — NORMAL (stable)
-id yen-carry · Markets · horizon acute · checked 2026-11-01T23:50Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-02T13:50Z
+id yen-carry · Markets · horizon acute · checked 2026-11-02T05:51Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-02T19:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/yen-carry
 
-Value: ¥157.6/$, 1w +0.5%
-Rated on: USD/JPY 1w +0.5% < 3%; 1m +0.2% < 6%
+Value: ¥157.8/$, 1w +0.6%
+Rated on: USD/JPY 1w +0.6% < 3%; 1m -0.1% < 6%
 
-Yen steady near ¥157.6 per dollar; no sign of a carry-trade unwind
+Yen steady near ¥157.8 per dollar; no sign of a carry-trade unwind
 
-Why it's at this level: The dollar was at ¥157.6 on 1 Nov, up 0.5% on the week and 0.2% on the month, far inside the 3% weekly and 6% monthly Watch lines. No Japanese currency intervention has been reported as of 1 Nov.
+Why it's at this level: The dollar was at ¥157.8 early on 2 Nov, up 0.6% on the week and little changed on the month, far inside the 3% weekly and 6% monthly Watch lines. No Japanese currency intervention had been reported as of 2 Nov.
 
 What this means for you: No sudden yen move is forcing investors to unwind leveraged positions, a pattern that has shaken global markets before.
 
@@ -17,4 +17,4 @@ What moves it: Bank of Japan policy, the US–Japan rate gap, JGB yields, curren
 Rubric — Alert: A move of more than 5% in a week or 10% in a month, with stress spreading to other markets. | Watch: A 3–5% move in a week, a 6–10% move in a month, or Japanese currency intervention. | Normal: The yen moves less than 3% against the dollar in a week and less than 6% in a month.
 
 Sources:
-- Yahoo Finance — USD/JPY (2026-10-30) https://finance.yahoo.com/quote/JPY%3DX
+- Yahoo Finance — USD/JPY (2026-11-02) https://finance.yahoo.com/quote/JPY%3DX

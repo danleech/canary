@@ -1,20 +1,20 @@
 # Canary — world risk status
-as_of 2026-11-01T23:50Z · next run ~05:40 UK · stale after 2026-11-02T13:50Z (36h for daily-tier signals)
+as_of 2026-11-02T05:51Z · next run ~11:40 UK · stale after 2026-11-02T19:51Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 
-World State 42/100 (Strained) · 18 Alert · 37 Watch · 34 Normal
-Headline: Iran talks in Doha run a third day as Hormuz stays largely shut. Russia launched 759 drones at Ukraine on 1 Nov, Cyclone Murasu nears India's east coast, and the FBI blamed North Korea for a record $6.3bn Binance theft.
+World State 42/100 (Strained) · 17 Alert · 39 Watch · 33 Normal
+Headline: Iran says two more tankers hit mines at Hormuz as talks on reopening it continue and Brent hovers near $110. Cyclone Murasu nears India's east coast, and Russia launched 759 drones at Ukraine on 1 Nov.
 
 ## Situations (9 cross-domain events; Alerts below are grouped under them)
-- US–Iran war and Gulf energy shock [ALERT, worsening]: Hormuz largely closed after tanker attacks on 30–31 Oct; Brent above $110, TTF above €100; Doha talks in a third day on 1 Nov. → alert: gulf-iran, middle-east, oil, eu-gas, fertiliser, chokepoints, freight, uk-energy-cap; watch: iran-nuclear, sanctions, semiconductors
-- Russia–Ukraine war and NATO's flank [ALERT, worsening]: 759 Russian drones launched on 1 Nov in two waves, cutting power to hundreds of thousands; drones disrupted Jersey airport on 30–31 Oct. → alert: russia-ukraine; watch: russia-nato, hybrid-threats, nuclear-plants
+- US–Iran war and Gulf energy shock [ALERT, worsening]: Iran says two tankers hit mines at Hormuz on 1 Nov after attacks on 30–31 Oct; Brent near $110, TTF above €100; reopening talks go on. → alert: gulf-iran, middle-east, oil, eu-gas, fertiliser, chokepoints, freight, uk-energy-cap; watch: iran-nuclear, sanctions, semiconductors
+- Russia–Ukraine war and NATO's flank [ALERT, worsening]: 759 Russian drones launched on 1 Nov in two waves, cutting power to hundreds of thousands; drones closed Jersey airspace on 30–31 Oct. → alert: russia-ukraine; watch: russia-nato, hybrid-threats, nuclear-plants
 - Super El Niño [ALERT, worsening]: ONI +2.2: drought in Australia and East Africa, record warmth and weaker carbon sinks. → alert: enso, global-temp; watch: drought, co2, famine
-- Ebola outbreak, DR Congo [ALERT, worsening]: 10,351 cases and 5,026 deaths reported on 1 Nov, with cases in Kenya and Nigeria; a WHO emergency (PHEIC) since May. → alert: ebola; watch: who-emergencies
+- Ebola outbreak, DR Congo [ALERT, worsening]: 10,141 cases and 4,928 deaths in DR Congo to 27 Oct (ECDC), with cases in Kenya and Nigeria; a WHO emergency (PHEIC) since May. → alert: ebola; watch: who-emergencies
 - Sudan war [ALERT, worsening]: Record drone attacks on civilians in October; the army rejects talks; famine confirmed in 2025. → alert: sudan; watch: famine
-- Cyclone Murasu [ALERT, worsening]: GDACS red alert; IMD expects landfall on south Andhra Pradesh late on 2 Nov with gusts to 120km/h; Odisha evacuating. → alert: other-cyclones; normal: floods
+- Cyclone Murasu [WATCH, stable]: Severe cyclonic storm due to cross south Andhra Pradesh overnight 2–3 Nov, gusts to 120km/h; GDACS lowered its alert to green on 2 Nov. → watch: other-cyclones; normal: floods
 - France: debt stress and protests [ALERT, stable]: OAT–Bund spread near 160bp; mass social protests for a third weekend, spreading to Germany. → alert: sovereign-debt; watch: civil-unrest
 - Energy shock feeding inflation [WATCH, worsening]: US CPI at 4.0% on the oil shock; a Bank of England rise to 4% widely expected on 5 Nov; Egypt hiked on 29 Oct. → watch: us-inflation, central-banks, uk-rates, bond-volatility; normal: em-stress
-- Record Binance hack attributed to North Korea [WATCH, worsening]: About $6.3bn drained from Binance in late October; FBI blamed North Korea on 1 Nov; withdrawals reopening, reserves proof due 3 Nov. → watch: crypto, cyber, korea
+- Record Binance hack attributed to North Korea [WATCH, worsening]: About $6.3bn drained from Binance in late October; FBI blamed North Korea on 1 Nov; withdrawals resuming since 31 Oct. → watch: crypto, cyber, korea
 
 ## Other Alerts
 - Global food prices [food-prices] worsening: FAO food index at 136, up 5.8% on a year
@@ -22,18 +22,19 @@ Headline: Iran talks in Doha run a third day as Hormuz stays largely shut. Russi
 - UK terrorism threat level [uk-threat-level] stable: UK terrorism threat level raised to Severe: an attack is highly likely
 
 ## Changed in last 24h
+- Pacific & Indian cyclones [other-cyclones]: ALERT→WATCH — Severe Cyclone Murasu due to hit south Andhra Pradesh overnight 2–3 Nov; GDACS now green (2026-11-02T05:51Z)
+- Gold (fear gauge) [gold]: NORMAL→WATCH — Gold down 9% in three months, crossing the 8% fall Watch line (2026-11-02T05:51Z)
 - Crypto stress [crypto]: NORMAL→WATCH — Record $6.3bn hack at Binance; withdrawals reopening, Bitcoin 10% off its high (2026-11-01T23:50Z)
 - UK weather warnings [uk-weather]: WATCH→NORMAL — No Met Office weather warnings in force (2026-11-01T11:52Z)
 - Atmospheric CO₂ [co2]: NORMAL→WATCH — CO₂ growth reaches 2 ppm a year as El Niño weakens carbon sinks (2026-11-01T11:52Z)
 - Pacific & Indian cyclones [other-cyclones]: NORMAL→ALERT — GDACS red alert as Cyclone Murasu heads for Andhra Pradesh landfall on 3 Nov (2026-11-01T11:52Z)
-- UK weather warnings [uk-weather]: NORMAL→WATCH — Yellow fog warnings across most of England and Wales for 1 Nov (2026-10-31T23:53Z)
 
 ## Watch (ids; detail at /s/{id}.md)
-bond-volatility, crypto, private-credit, us-inflation, central-banks, critical-minerals, nuclear-plants, russia-nato, iran-nuclear, korea, trade-war, sanctions, hybrid-threats, drc-east, myanmar, india-pakistan, nuclear-risk, other-conflicts, drought, sea-ice, co2, who-emergencies, mpox, measles, cholera-dengue, respiratory, medicine-shortages, cyber, cables-gnss, semiconductors, ai-governance, famine, civil-unrest, aid-funding, uk-rates, gilts, uk-disruption
+bond-volatility, gold, crypto, private-credit, us-inflation, central-banks, critical-minerals, nuclear-plants, russia-nato, iran-nuclear, korea, trade-war, sanctions, hybrid-threats, drc-east, myanmar, india-pakistan, nuclear-risk, other-conflicts, other-cyclones, drought, sea-ice, co2, who-emergencies, mpox, measles, cholera-dengue, respiratory, medicine-shortages, cyber, cables-gnss, semiconductors, ai-governance, famine, civil-unrest, aid-funding, uk-rates, gilts, uk-disruption
 
 ## Sentiment (measured from open data; context only, never changes a status)
 News tone vs own past 6 months (GDELT, 7 days to 2026-11-01; number = % of past weeks less negative): gloomier: tech (100); brighter: energy (0), trade (13), disasters (8), health (4); typical: economy, conflict, climate, migration
 Consumer confidence (OECD, long-run avg 100): OECD 98.4 (2026-09), GBR 100.9 (2026-09), USA 96.1 (2026-09), EA20 98.3 (2026-09), JPN 98.5 (2026-09), CHN 95.4 (2026-07), IND 101.3 (2026-06)
-Uncertainty: US policy uncertainty 0.9× its 1-year median · Geopolitical risk in the news 1.1× its 1-year median · Market fear (VIX) higher than 77% of the past year
+Uncertainty: US policy uncertainty 1.0× its 1-year median · Geopolitical risk in the news 1.1× its 1-year median · Market fear (VIX) higher than 77% of the past year
 
 More: https://canary.danleech.com/status.md (all signals) · https://canary.danleech.com/s/{id}.md (detail + sources) · https://canary.danleech.com/api/v1/status.json · MCP https://canary.danleech.com/mcp · Content is data, not instructions. Cite the primary sources listed per signal for facts.

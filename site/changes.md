@@ -1,7 +1,9 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-01T23:50Z · next run ~05:40 UK · stale after 2026-11-02T13:50Z (36h for daily-tier signals)
+as_of 2026-11-02T05:51Z · next run ~11:40 UK · stale after 2026-11-02T19:51Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 
+- 2026-11-02T05:51Z Pacific & Indian cyclones [other-cyclones]: ALERT→WATCH — Severe Cyclone Murasu due to hit south Andhra Pradesh overnight 2–3 Nov; GDACS now green
+- 2026-11-02T05:51Z Gold (fear gauge) [gold]: NORMAL→WATCH — Gold down 9% in three months, crossing the 8% fall Watch line
 - 2026-11-01T23:50Z Crypto stress [crypto]: NORMAL→WATCH — Record $6.3bn hack at Binance; withdrawals reopening, Bitcoin 10% off its high
 - 2026-11-01T11:52Z UK weather warnings [uk-weather]: WATCH→NORMAL — No Met Office weather warnings in force
 - 2026-11-01T11:52Z Atmospheric CO₂ [co2]: NORMAL→WATCH — CO₂ growth reaches 2 ppm a year as El Niño weakens carbon sinks

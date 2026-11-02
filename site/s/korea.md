@@ -1,5 +1,5 @@
 # Korean peninsula — WATCH (stable)
-id korea · Geopolitics · horizon acute · checked 2026-11-01T23:50Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T13:50Z
+id korea · Geopolitics · horizon acute · checked 2026-11-02T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-02T19:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/korea
 
 Value: Missile test on 31 Oct
@@ -8,7 +8,7 @@ Situation: Record Binance hack attributed to North Korea [binance-hack]
 
 North Korea tested a cluster-warhead ballistic missile on 31 Oct
 
-Why it's at this level: North Korea fired a tactical ballistic missile towards the Yellow Sea from near Chongju on 31 Oct, testing a cluster warhead, two days after a salvo of about ten short-range missiles on 29 Oct (Yonhap via ANI). Pyongyang says it will field several warhead types by year-end. The US says Trump is open to talks; none are scheduled, and no further launch had been reported by late on 1 Nov.
+Why it's at this level: North Korea fired a tactical ballistic missile towards the Yellow Sea on 31 Oct, testing a cluster warhead, two days after a salvo of about ten short-range missiles on 29 Oct. The FBI said on 1 Nov that North Korea was behind the $6.3bn Binance theft. No further launch had been reported as of 2 Nov.
 
 What this means for you: No direct risk to the UK. Travellers to South Korea can follow FCDO travel advice.
 
@@ -19,4 +19,4 @@ Rubric — Alert: Nuclear test, ICBM overflight of Japan, or military clash. | W
 
 Sources:
 - ANI — North Korea tests cluster bomb warhead for tactical ballistic missiles (2026-11-01) https://aninews.in/news/world/asia/north-korea-tests-cluster-bomb-warhead-for-tactical-ballistic-missiles-vows-to-field-various-types-by-year-end20261101093758/
-- Tech-ish — FBI says North Korea stole more than $6 billion from Binance as withdrawals reopen (2026-11-01) https://tech-ish.com/2026/11/01/binance-hack-6-3-billion-withdrawals-proof/
+- NBC News — FBI says North Korea was behind the $6.3 billion Binance hack (2026-11-01) https://www.nbcnews.com/business/business-news/fbi-says-north-korea-was-6-billion-binance-crypto-hack-rcna606758

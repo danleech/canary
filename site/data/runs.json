@@ -1,5 +1,15 @@
 [
  {
+  "t": "2026-11-02T05:51:55Z",
+  "applied": 41,
+  "changed": [
+   "gold",
+   "other-cyclones"
+  ],
+  "warnings": [],
+  "note": "Murasu lowered red→amber after GDACS cut its alert to green. Gold raised to amber by metric floor. Crypto kept amber above a green floor on exchange stress. Some outlets (Morning Star, WSJ) unreachable this run."
+ },
+ {
   "t": "2026-11-01T23:50:31Z",
   "applied": 41,
   "changed": [

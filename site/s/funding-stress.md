@@ -1,5 +1,5 @@
 # Dollar funding stress — NORMAL (stable)
-id funding-stress · Markets · horizon acute · checked 2026-11-01T23:50Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-02T13:50Z
+id funding-stress · Markets · horizon acute · checked 2026-11-02T05:51Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-02T19:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/funding-stress
 
 Value: SOFR–IORB +4bp, repo $0.0bn
@@ -17,5 +17,5 @@ What moves it: Bank reserves, Treasury issuance and cash balances, quarter-end w
 Rubric — Alert: SOFR more than 25bp above IORB, or Fed repo operations above $50bn in a day, or emergency Fed liquidity facilities. | Watch: SOFR 10–25bp above IORB on any day in the past week (the top ~10% of weeks since 2024), or Fed repo operations of $15–50bn in a day. | Normal: SOFR less than 10bp above the Fed's interest on reserves (IORB) on every day of the past week, and Fed repo operations under $15bn.
 
 Sources:
-- FRED — SOFR (2026-10-29) https://fred.stlouisfed.org/series/SOFR
-- FRED — Fed repo operations (RPONTSYD) (2026-10-30) https://fred.stlouisfed.org/series/RPONTSYD
+- FRED — SOFR (2026-11-02) https://fred.stlouisfed.org/series/SOFR
+- FRED — Fed overnight repo operations (2026-11-02) https://fred.stlouisfed.org/series/RPONTSYD
