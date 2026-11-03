@@ -7,9 +7,17 @@ struct CanaryApp: App {
     @Environment(\.scenePhase) private var scenePhase
 
     @State private var store = BoardStore()
-    @State private var pins = PinStore()
+    @State private var pins: PinStore
     @State private var plus = PlusStore()
     @State private var router = Router.shared
+
+    init() {
+        #if DEBUG
+        DebugLaunch.applyEarly()
+        #endif
+        // Created after any debug pins are applied, so it reads them.
+        _pins = State(initialValue: PinStore())
+    }
 
     var body: some Scene {
         WindowGroup {
@@ -23,6 +31,9 @@ struct CanaryApp: App {
                     plus.start()
                     store.startClock()
                     await store.refresh()
+                    #if DEBUG
+                    DebugLaunch.applyNavigation(router)
+                    #endif
                 }
         }
         .onChange(of: scenePhase) { _, phase in

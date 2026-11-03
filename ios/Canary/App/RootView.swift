@@ -27,6 +27,9 @@ struct RootView: View {
                         SearchView()
                     }
                 }
+                #if DEBUG
+                .modifier(DebugSheetPresenter())
+                #endif
             }
         }
     }
