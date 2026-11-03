@@ -1,10 +1,10 @@
 # US equity stress — WATCH (worsening)
-id equity-stress · Markets · horizon acute · checked 2026-11-03T18:02Z · at this level since 2026-11-02T23:43Z · stale after 2026-11-04T08:02Z
+id equity-stress · Markets · horizon acute · checked 2026-11-03T23:43Z · text written 2026-11-03T18:02Z · at this level since 2026-11-02T23:43Z · stale after 2026-11-04T13:43Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/equity-stress
 
 Value: VIX 20.8, S&P -3.2%
-Rated on: VIX 20.8 > 20 Watch line
-Basis: measured — Set by a fixed rule applied to open data (VIX = 20.76 · S&P drawdown % = 3.16). Anyone can reproduce it from the public metrics file.
+Rated on: VIX 20.8 ≥ 20 Watch line
+Basis: measured — Set by a fixed rule applied to open data (VIX = 20.83 · S&P drawdown % = 3.20). Anyone can reproduce it from the public metrics file.
 
 VIX near 21 and Nasdaq 100 in correction as AI-spending doubts hit tech shares
 

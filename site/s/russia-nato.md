@@ -1,5 +1,5 @@
 # Russia–NATO — WATCH (stable)
-id russia-nato · Geopolitics · horizon acute · checked 2026-11-03T18:02Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-04T08:02Z
+id russia-nato · Geopolitics · horizon acute · checked 2026-11-03T23:43Z · text written 2026-11-03T18:02Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-04T13:43Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/russia-nato
 
 Value: Black Sea ship attacks; incursions

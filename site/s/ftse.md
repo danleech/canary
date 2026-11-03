@@ -1,9 +1,9 @@
 # FTSE 100 — NORMAL (stable)
-id ftse · Markets · horizon acute · checked 2026-11-03T18:02Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-04T08:02Z
+id ftse · Markets · horizon acute · checked 2026-11-03T23:43Z · text written 2026-11-03T18:02Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-04T13:43Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/ftse
 
 Value: 10,638, -2.5% from high
-Rated on: FTSE drawdown 2.5% < Watch line
+Rated on: FTSE drawdown 2.49% below the 5% Watch line
 Basis: measured — Set by a fixed rule applied to open data (FTSE drawdown % = 2.49). Anyone can reproduce it from the public metrics file.
 
 FTSE 100 about 2.5% below its high as energy and miners cushion it

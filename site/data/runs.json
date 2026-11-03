@@ -1,5 +1,53 @@
 [
  {
+  "t": "2026-11-03T23:43:18Z",
+  "applied": 41,
+  "changed": [],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 20,
+   "published": 1,
+   "judged": 20
+  },
+  "held": 39,
+  "sources": {
+   "citations": 5,
+   "news_citations": 5,
+   "outlets": 5,
+   "top_news_outlets": [
+    [
+     "anews.com.tr",
+     1
+    ],
+    [
+     "censor.net",
+     1
+    ],
+    [
+     "cnn.com",
+     1
+    ],
+    [
+     "pravda.com.ua",
+     1
+    ],
+    [
+     "yahoo.com",
+     1
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 18,
+   "predicted_active": 2,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
   "t": "2026-11-03T18:02:27Z",
   "applied": 89,
   "changed": [],

@@ -1,14 +1,14 @@
 # Canary — world risk status
-as_of 2026-11-03T18:02Z · next run ~23:40 UK · stale after 2026-11-04T08:02Z (36h for daily-tier signals)
+as_of 2026-11-03T23:43Z · next run ~05:40 UK · stale after 2026-11-04T13:43Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 26 measured from open data, 4 follow a published figure, 59 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 World State 41/100 (Strained) · 18 Alert · 39 Watch · 32 Normal
-Headline: The US struck Iranian sites near Hormuz on 2 Nov as talks continue and Hormuz stays largely shut. Russia's 3 Nov barrage followed a strike that killed 29 at an aid point. Ebola deaths pass 5,300.
+Headline: The US–Iran war keeps Hormuz largely shut after Iran called the US reply 'not convincing' on 3 Nov. A Russian strike on a Zaporizhzhia aid point killed 33, and the Ebola outbreak has passed 5,300 deaths.
 
 ## Situations (9 cross-domain events; Alerts below are grouped under them)
-- US–Iran war and Gulf energy shock [ALERT, stable]: US struck Iranian sites near Hormuz on 2 Nov; Iran sent a response on 3 Nov. Record 30 ship attacks in October; Brent near $104. → alert: gulf-iran, middle-east, oil, eu-gas, fertiliser, chokepoints, freight, uk-energy-cap; watch: iran-nuclear, sanctions, semiconductors
-- Russia–Ukraine war and NATO's flank [ALERT, worsening]: Toll from 2 Nov strike on a Zaporizhzhia aid point rose to 29; Russia fired 289 drones and 76 missiles overnight into 3 Nov. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
+- US–Iran war and Gulf energy shock [ALERT, stable]: US struck Qeshm Island on 2 Nov; Iran called the US reply 'not convincing' on 3 Nov. Record 30 ship attacks in October; Brent near $104. → alert: gulf-iran, middle-east, oil, eu-gas, fertiliser, chokepoints, freight, uk-energy-cap; watch: iran-nuclear, sanctions, semiconductors
+- Russia–Ukraine war and NATO's flank [ALERT, worsening]: Toll from 2 Nov strike on a Zaporizhzhia aid point rose to 33; Russia fired 289 drones and 76 missiles overnight into 3 Nov. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
 - Super El Niño [ALERT, worsening]: ONI +2.2: drought in Australia and East Africa, record warmth and weaker carbon sinks. → alert: enso, global-temp; watch: drought, co2, famine
 - Ebola outbreak, DR Congo [ALERT, worsening]: Africa CDC counts 5,376 Ebola deaths and 10,444 cases to 2 Nov across DR Congo, Uganda and Kenya; a WHO emergency (PHEIC) since May. → alert: ebola; watch: who-emergencies
 - Sudan war [ALERT, worsening]: Sudan says drones killed 484 civilians from February to 27 Oct, with 97 drones used in October; no talks under way. → alert: sudan; watch: famine
@@ -30,7 +30,7 @@ Headline: The US struck Iranian sites near Hormuz on 2 Nov as talks continue and
 equity-stress, bond-volatility, gold, crypto, private-credit, us-inflation, central-banks, critical-minerals, nuclear-plants, russia-nato, iran-nuclear, korea, trade-war, sanctions, hybrid-threats, drc-east, myanmar, india-pakistan, nuclear-risk, other-conflicts, drought, sea-ice, co2, who-emergencies, mpox, measles, cholera-dengue, respiratory, medicine-shortages, cyber, cables-gnss, semiconductors, ai-governance, famine, civil-unrest, aid-funding, uk-rates, gilts, uk-disruption
 
 ## Sentiment (measured from open data; context only, never changes a status)
-News tone vs own past 6 months (GDELT, 7 days to 2026-11-02; number = % of past weeks less negative): gloomier: economy (79), tech (100); brighter: energy (0), trade (13), disasters (14), health (3); typical: conflict, climate, migration
+News tone vs own past 6 months (GDELT, 7 days to 2026-11-03; number = % of past weeks less negative): gloomier: economy (87), tech (100); brighter: conflict (21), energy (2), trade (14), disasters (22), health (2); typical: climate, migration
 Consumer confidence (OECD, long-run avg 100): OECD 98.4 (2026-09), GBR 100.9 (2026-09), USA 96.1 (2026-09), EA20 98.3 (2026-09), JPN 98.5 (2026-09), CHN 95.4 (2026-07), IND 101.3 (2026-06)
 Uncertainty: US policy uncertainty 1.0× its 1-year median · Geopolitical risk in the news 0.8× its 1-year median · Market fear (VIX) higher than 85% of the past year
 

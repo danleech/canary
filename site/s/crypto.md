@@ -1,5 +1,5 @@
 # Crypto stress — WATCH (stable)
-id crypto · Markets · horizon acute · checked 2026-11-03T18:02Z · at this level since 2026-11-01T23:50Z · stale after 2026-11-04T08:02Z
+id crypto · Markets · horizon acute · checked 2026-11-03T23:43Z · text written 2026-11-03T18:02Z · at this level since 2026-11-01T23:50Z · stale after 2026-11-04T13:43Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/crypto
 
 Value: BTC $77,604, -10% from high
