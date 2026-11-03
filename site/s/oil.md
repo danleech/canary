@@ -1,17 +1,17 @@
 # Oil (Brent) — ALERT (improving)
-id oil · Energy & Commodities · horizon acute · checked 2026-11-03T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T19:51Z
+id oil · Energy & Commodities · horizon acute · checked 2026-11-03T18:02Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-04T08:02Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/oil
 
-Value: $105.2, 1m +5%
-Rated on: Brent $105 below $110 Alert line, held by hysteresis; Hormuz largely shut
-Basis: measured — Set by a fixed rule applied to open data (Brent $ = 105.17 · Brent 1m % = 4.56). Anyone can reproduce it from the public metrics file.
+Value: $103.5, 1m +3%
+Rated on: Brent metric floor = Alert; Hormuz largely shut
+Basis: measured — Set by a fixed rule applied to open data (Brent $ = 103.51 · Brent 1m % = 2.91). Anyone can reproduce it from the public metrics file.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
-Brent near $105 as Iran's Hormuz offer awaits a US reply; strait still largely shut
+Brent near $104 after a 7% fall on US–Iran deal hopes; Hormuz still largely shut
 
-Why it's at this level: Brent was near $105.2 early on 3 Nov, recovering slightly after falling almost 4% on 2 Nov when Iran said it could reopen Hormuz within two days if the US ends its blockade; it is 9% lower on the week but 5% up on the month. Iran said on 2 Nov the 'ball is in the US court' and no US reply had been reported (Al Jazeera). The status stays at Alert under hysteresis while Hormuz remains largely shut.
+Why it's at this level: Brent was near $103.5 on 3 Nov after falling about 7% on 2 Nov to $105 on hopes of a US–Iran deal (CBS), 3% up on the month. The US carried out limited strikes on Iranian targets near Hormuz on 2 Nov and Iran sent a response to US proposals on 3 Nov (AP). Alert holds on the metric floor while the strait remains largely shut.
 
-What this means for you: Expect continued high petrol, diesel and heating-oil prices, with knock-on effects on transport costs and inflation.
+What this means for you: Petrol, diesel and heating oil prices remain high; pump prices usually lag crude by a few weeks.
 
 Why it matters: Oil feeds inflation, transport and household budgets; price spikes have preceded most post-war recessions.
 What moves it: OPEC+ output, Middle East supply risk, sanctions, demand, inventories, shipping disruption.
@@ -20,4 +20,5 @@ Rubric — Alert: Brent > $110, or 1-month change > +30%, or a major physical su
 
 Sources:
 - Yahoo Finance — Brent crude (2026-11-03) https://finance.yahoo.com/quote/BZ%3DF
-- Al Jazeera — Iran war live: 'Ball in US court' (2026-11-02) https://www.aljazeera.com/news/liveblog/2026/11/2/iran-war-live-tankers-hit-in-hormuz-trump-again-says-conflict-to-end-soon
+- CBS News — Iran war live updates (2026-11-03) https://www.cbsnews.com/live-updates/iran-war-us-trump-negotiations-midterms/
+- AP — US strikes Iranian targets in the Strait of Hormuz (2026-11-03) https://www.clickondetroit.com/news/world/2026/11/03/us-strikes-iranian-targets-in-the-strait-of-hormuz-official-says-leaving-unclear-what-comes-next/

@@ -1,5 +1,45 @@
 [
  {
+  "t": "2026-11-03T18:02:27Z",
+  "applied": 89,
+  "changed": [],
+  "warnings": [],
+  "note": "Several pages could not be fetched (MI5, Uswitch, CrisisWatch); some quiet signals cite sources verified in earlier runs. uk-energy-cap held at Alert under hysteresis although Cornwall Insight's 14 Oct forecast (+16%) is below the 20% line.",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 26,
+   "published": 4,
+   "judged": 59
+  },
+  "sources": {
+   "citations": 171,
+   "news_citations": 118,
+   "outlets": 91,
+   "top_news_outlets": [
+    [
+     "home.saxo",
+     11
+    ],
+    [
+     "clickondetroit.com",
+     10
+    ],
+    [
+     "cbsnews.com",
+     8
+    ],
+    [
+     "aljazeera.com",
+     5
+    ],
+    [
+     "euronews.com",
+     4
+    ]
+   ]
+  }
+ },
+ {
   "t": "2026-11-03T05:51:01Z",
   "applied": 41,
   "changed": [],

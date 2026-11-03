@@ -1,17 +1,17 @@
 # Russia–Ukraine — ALERT (worsening)
-id russia-ukraine · Armed Conflict · horizon acute · checked 2026-11-03T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T19:51Z
+id russia-ukraine · Armed Conflict · horizon acute · checked 2026-11-03T18:02Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-04T08:02Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/russia-ukraine
 
-Value: 26 killed in Zaporizhzhia strike, 2 Nov
-Rated on: Mass-casualty strikes and mass drone attacks after truce ended = Alert
-Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
+Value: 29 killed at aid site; 76 missiles 3 Nov
+Rated on: Mass-casualty strikes and major escalation = Alert
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: Russia–Ukraine war and NATO's flank [russia-ukraine-war]
 
-Russian strikes hit Kharkiv, Kyiv and Dnipro on 3 Nov, a day after bombs killed 26 at a Zaporizhzhia aid point
+Toll from strike on Zaporizhzhia aid site rises to 29; mass barrage on 3 Nov
 
-Why it's at this level: Russian aerial bombs hit a shelter and aid point in Komyshuvakha, Zaporizhzhia region, on 2 Nov, killing at least 26 people, according to Ukrainian officials (AP). Overnight into 3 Nov a strike wounded 25 at a medical facility in Kharkiv, and Dnipro and Kryvyi Rih were hit; Moscow's mayor said nearly 500 drones heading for the capital were downed (AFP). US envoy Witkoff said talks would resume the following week.
+Why it's at this level: The toll from a Russian guided-bomb attack on an aid point in Komyshuvakha, Zaporizhzhia region, on 2 Nov rose to 29, with 48 missing, Ukrainian officials said (AP). Overnight into 3 Nov Russia launched 289 drones, 17 ballistic and 59 cruise missiles, targeting power plants; at least 62 were wounded in Kharkiv and one killed in Dnipro (NPR).
 
-What this means for you: Travel to Ukraine is against FCDO advice. Energy and grain markets remain sensitive to the war.
+What this means for you: FCDO advises against all travel to Ukraine; follow its advice for neighbouring countries.
 
 Why it matters: Europe's largest war since 1945 shapes European security, energy, food exports and defence budgets.
 What moves it: Front-line offensives, strike campaigns on energy, Western aid, negotiations, nuclear plant safety.
@@ -19,6 +19,5 @@ What moves it: Front-line offensives, strike campaigns on energy, Western aid, n
 Rubric — Alert: Significant escalation — major new offensive, mass-casualty strikes, a nuclear-plant safety incident, or new state involvement. | Watch: Active war at sustained intensity, or a ceasefire under strain. | Normal: Ceasefire or peace deal holding.
 
 Sources:
-- Free Malaysia Today/AFP — Russia downs hundreds of drones after Ukraine truce ends (2026-11-03) https://www.freemalaysiatoday.com/category/world/2026/11/03/russia-downs-hundreds-of-drones-after-ukraine-truce-ends
-- Star-Advertiser/AP — Russian bombing kills 26 in village in south-eastern Ukraine (2026-11-02) https://www.staradvertiser.com/2026/11/02/breaking-news/russian-bombing-kills-26-in-village-in-southeastern-ukraine/
-- Kyiv Independent — 10 regions face power outages (2026-11-02) https://kyivindependent.com/russian-attacks-kill-2-injure-over-30-across-ukraine-over-past-day-as-10-regions-face-power-outages/
+- AP — Death toll hits 29 after Russian strike on Ukrainian aid site (2026-11-03) https://www.clickondetroit.com/news/world/2026/11/03/death-toll-hits-29-after-russian-strike-on-ukrainian-aid-site-with-48-still-missing/
+- NPR — 29 killed, 48 missing after Russian strike on aid site (2026-11-03) https://www.npr.org/2026/11/03/g-s1-151439/russia-ukraine-war

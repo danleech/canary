@@ -1,16 +1,16 @@
 # US equity stress — WATCH (worsening)
-id equity-stress · Markets · horizon acute · checked 2026-11-03T05:51Z · at this level since 2026-11-02T23:43Z · stale after 2026-11-03T19:51Z
+id equity-stress · Markets · horizon acute · checked 2026-11-03T18:02Z · at this level since 2026-11-02T23:43Z · stale after 2026-11-04T08:02Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/equity-stress
 
-Value: VIX 21.1, S&P -3.5%
-Rated on: VIX 21.2 ≥ 20 Watch line; S&P drawdown 3.5% < 10%
-Basis: measured — Set by a fixed rule applied to open data (VIX = 21.15 · S&P drawdown % = 3.55). Anyone can reproduce it from the public metrics file.
+Value: VIX 20.8, S&P -3.2%
+Rated on: VIX 20.8 > 20 Watch line
+Basis: measured — Set by a fixed rule applied to open data (VIX = 20.76 · S&P drawdown % = 3.16). Anyone can reproduce it from the public metrics file.
 
-VIX above 20 at a three-month high after the 2 Nov tech sell-off; S&P 500 3.5% off its high
+VIX near 21 and Nasdaq 100 in correction as AI-spending doubts hit tech shares
 
-Why it's at this level: The VIX closed near 21.2 on 2 Nov, a three-month high and above the 20 Watch line, as the sell-off in technology shares extended; the S&P 500 is about 3.5% below its 52-week high. US markets had not opened for 3 Nov at the time of this check; the 3 Nov midterms, 5 Nov Bank of England decision and 6 Nov payrolls fall this week.
+Why it's at this level: The VIX was about 20.8 on 3 Nov, above the 20 Watch line, and the S&P 500 is about 3.2% below its high. On 2 Nov the Nasdaq 100 fell 1.4% into correction territory on doubts about returns on AI spending, while the S&P 500 lost 0.5% (Saxo). US midterms (3 Nov), the Bank of England (5 Nov) and payrolls (6 Nov) fall this week.
 
-What this means for you: Share prices are swinging more than usual. Pension and investment values may move more around this week's elections and central bank decisions.
+What this means for you: Pension and investment values linked to US technology shares are swinging more than usual; volatility tends to stay elevated around elections and central-bank decisions.
 
 Why it matters: The S&P 500 is the world's risk barometer; sharp falls and spiking volatility transmit to pensions, credit and confidence globally.
 What moves it: Earnings, interest-rate expectations, liquidity, geopolitical shocks, positioning and leverage.
@@ -19,4 +19,4 @@ Rubric — Alert: VIX > 30, or drawdown > 15%, or a market-wide circuit breaker 
 
 Sources:
 - Yahoo Finance — VIX (2026-11-03) https://finance.yahoo.com/quote/%5EVIX
-- Investing.com — US stocks mixed at close, 2 Nov (2026-11-02) https://www.investing.com/news/stock-market-news/us-stocks-mixed-at-close-of-trade-dow-jones-industrial-average-up-060-4992666
+- Saxo — Market Quick Take, 3 Nov 2026 (2026-11-03) https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---us-mid-term-elections-today-the-focus---3-november-2026-03112026

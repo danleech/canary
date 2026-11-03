@@ -1,16 +1,16 @@
 # Cold waves & winter storms — NORMAL (stable)
-id cold-storms · Weather & Hazards · horizon acute · checked 2026-11-02T18:00Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-04T06:00Z
+id cold-storms · Weather & Hazards · horizon acute · checked 2026-11-03T18:02Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-05T06:02Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/cold-storms
 
 Value: Mountain snow warnings (US West)
-Rated on: No top-tier cold warnings across a major populated region
-Basis: published — Follows National met services' warning levels, read from the cited source by the AI assessor and checked against the rubric.
+Rated on: No top-tier warnings across a major region
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-Early-season snow in the US Rockies; no major cold wave
+Winter storm warnings in US Rocky Mountains; no deadly cold wave
 
-Why it's at this level: Winter storm warnings covered mountain areas of Colorado and Nevada on 1 Nov, with up to 18 inches of snow forecast in south-west Colorado by 2 Nov. The Met Office had no UK warnings in force on 1 Nov, and no major cold wave or deadly winter storm is affecting large populations.
+Why it's at this level: The US National Weather Service issued winter storm warnings for mountain areas of Colorado, Wyoming, Utah and Montana on 1–2 Nov, with heavy snow at elevation. No deadly cold wave or storm causing widespread outages had been reported as of 3 Nov, and the Met Office had no warnings in force.
 
-What this means for you: No widespread cold-weather disruption. Travellers to US mountain areas should follow National Weather Service warnings.
+What this means for you: No action needed in the UK; check local forecasts if travelling in the US Rockies.
 
 Why it matters: Severe cold and winter storms kill, cut power and spike gas demand, as in Texas in 2021; they matter most when energy supplies are tight.
 What moves it: Polar vortex disruption, blocking highs, ENSO, Arctic outbreaks.
@@ -18,5 +18,5 @@ What moves it: Polar vortex disruption, blocking highs, ENSO, Arctic outbreaks.
 Rubric — Alert: Deadly cold or winter storms with widespread power or gas outages. | Watch: Top-tier cold or winter-storm warnings across a major region, or a cold wave lifting gas demand sharply. | Normal: No major cold wave or winter storm affecting large populations.
 
 Sources:
-- Country Herald — Southwest Colorado winter storm warning: up to 18 inches by Monday 2 Nov (2026-11-01) https://countryherald.com/colorado/pueblo/southwest-colorado-winter-storm-warning-up-to-18-inches-by-monday-nov-2
-- Met Office — UK weather warnings (2026-11-01) https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings
+- NWS — Winter storm warnings summary (2026-11-03) https://forecast.weather.gov/wwamap/wwatxtget.php?cwa=usa&wwa=Winter+Storm+Warning
+- Met Office — UK warnings (2026-11-03) https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings

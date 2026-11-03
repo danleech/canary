@@ -1,16 +1,16 @@
 # Polar sea ice — WATCH (stable)
-id sea-ice · Climate · horizon chronic · checked 2026-11-02T11:58Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T23:58Z
+id sea-ice · Climate · horizon chronic · checked 2026-11-03T18:02Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-05T06:02Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/sea-ice
 
-Value: Arctic -1.70, Antarctic -1.62M km²
-Rated on: Arctic anomaly −1.70M km² below −1.0M Watch line; no record low
-Basis: measured — Set by a fixed rule applied to open data (worst anomaly -1.70M km²). Anyone can reproduce it from the public metrics file.
+Value: Arctic -1.65, Antarctic -1.64M km²
+Rated on: Worst anomaly −1.65M km² in Watch band
+Basis: measured — Set by a fixed rule applied to open data (worst anomaly -1.65M km²). Anyone can reproduce it from the public metrics file.
 
-Arctic and Antarctic sea ice well below average but not at record lows
+Arctic and Antarctic sea ice about 1.65M km² below average
 
-Why it's at this level: On 1 Nov Arctic sea-ice extent was 8.02 million km², 1.70 million below the 1981–2010 average and the sixth-lowest for the date. Antarctic extent was about 1.62 million below average. Neither pole is at a record low for the date.
+Why it's at this level: On 2 Nov Arctic sea-ice extent was about 1.65 million km² below the 1981–2010 average, and Antarctic extent about 1.64 million below, within the Watch band. Neither pole is at a record low for the date.
 
-What this means for you: Low sea ice amplifies warming and can disturb weather patterns, including European winters.
+What this means for you: No direct action; low sea ice affects long-term climate and weather patterns.
 
 Why it matters: Sea ice reflects sunlight and regulates ocean circulation; record lows accelerate warming.
 What moves it: Air and ocean temperatures, winds, season.
@@ -18,4 +18,4 @@ What moves it: Air and ocean temperatures, winds, season.
 Rubric — Alert: Either pole at a record low for the calendar date. | Watch: Either pole below −1.0 million km². | Normal: Arctic and Antarctic extent anomalies both above −1.0 million km² vs 1981–2010.
 
 Sources:
-- NSIDC — Sea ice tools (2026-11-01) https://nsidc.org/arcticseaicenews/sea-ice-tools/
+- NSIDC — Sea Ice Index (2026-11-03) https://nsidc.org/arcticseaicenews/sea-ice-tools/
