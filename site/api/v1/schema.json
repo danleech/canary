@@ -317,6 +317,14 @@
       ],
       "format": "date-time"
      },
+     "assessed_at": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "format": "date-time",
+      "description": "When the text and sources were last written. A check that found nothing new may keep them (a hold) for up to 24h while refreshing value and checked_at"
+     },
      "stale_after": {
       "type": [
        "string",

@@ -84,6 +84,17 @@ def short_iso(ts: str | None) -> str:
     return (ts or "")[:16] + "Z" if ts else "—"
 
 
+def is_held(cur: dict) -> bool:
+    """True when the text was written more than 30 minutes before the latest check (a hold kept it)."""
+    a, c = parse(cur.get("assessed_at")), parse(cur.get("checked_at"))
+    return bool(a and c and (c - a).total_seconds() > 1800)
+
+
+def held_note(cur: dict) -> str:
+    """Mirrors heldNote() in app.js."""
+    return (f" Text written {uk(cur.get('assessed_at'))} UK; numbers refreshed since." if is_held(cur) else "")
+
+
 def uk(ts: str | None, with_date: bool = True) -> str:
     dt = parse(ts)
     if not dt:
@@ -305,6 +316,7 @@ class Model:
             "basis_by": (s.get("published") or {}).get("by") if cur.get("basis") == "published" else None,
             "provenance": "metric" if mkeys else "reporting",
             "checked_at": cur.get("checked_at"), "changed_at": cur.get("changed_at"),
+            "assessed_at": (cur.get("assessed_at") or cur.get("checked_at")) if cur else None,
             "stale_after": iso(checked + timedelta(hours=self.stale_h[s["tier"]])) if checked else None,
             "sources": cur.get("sources") or [],
             "url": f"{self.url}/s/{s['id']}",
@@ -433,6 +445,7 @@ def signal_md(m: Model, r: dict) -> str:
     tr = f" ({r['trend']})" if r.get("trend") else ""
     out = [f"# {r['name']} — {st}{tr}",
            f"id {r['id']} · {r['domain_name']} · horizon {r['horizon']} · checked {short_iso(r.get('checked_at'))} · "
+           + (f"text written {short_iso(r.get('assessed_at'))} · " if is_held(r) else "") +
            f"at this level since {short_iso(r.get('changed_at'))} · stale after {short_iso(r.get('stale_after'))}",
            f"Assessed by an {ASSESSED_BY}; not a forecast or advice · {LICENCE['name']} · {r['url']}", ""]
     if r["status"] == "pending":
@@ -549,6 +562,9 @@ def schema_json(m: Model) -> dict:
                        "description": "Deprecated; use basis. metric: the signal has an open data feed; reporting: it does not"},
         "checked_at": {"type": ["string", "null"], "format": "date-time"},
         "changed_at": {"type": ["string", "null"], "format": "date-time"},
+        "assessed_at": {"type": ["string", "null"], "format": "date-time",
+                        "description": "When the text and sources were last written. A check that found nothing new "
+                                       "may keep them (a hold) for up to 24h while refreshing value and checked_at"},
         "stale_after": {"type": ["string", "null"], "format": "date-time"},
         "sources": {"type": "array", "items": src},
         "url": {"type": "string", "format": "uri"},
@@ -836,8 +852,8 @@ def signal_html(m: Model, r: dict) -> str:
     if r["horizon"] in HORIZON_LABEL:
         meta.append(tag(HORIZON_LABEL[r["horizon"]], "warm-gray"))
     if cur:
-        meta.append(f'<span class="cnry-meta-text">Checked {uk(cur.get("checked_at"))} UK. At this level since '
-                    f'{uk(cur.get("changed_at"))}.</span>')
+        meta.append(f'<span class="cnry-meta-text">Checked {uk(cur.get("checked_at"))} UK.'
+                    f'{held_note(cur)} At this level since {uk(cur.get("changed_at"))}.</span>')
     left.append(f'<div class="cnry-detail__meta">{"".join(meta)}</div>')
     if cur.get("override_reason"):
         left.append(f'<p class="cnry-meta-text">Assessor note: {e(cur["override_reason"])}</p>')

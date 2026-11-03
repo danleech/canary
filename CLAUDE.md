@@ -14,7 +14,7 @@ To run a scheduled update (the most common job in this repo), use the **`canary-
 | `scripts/fetch_metrics.py` | Pulls hard numbers from open APIs → `site/data/metrics.json` |
 | `scripts/fetch_sentiment.py` | Measures the sentiment track (GDELT news tone by issue, OECD consumer confidence) → `site/data/sentiment.json`. Runs in the metrics workflow; `--backfill N` rebuilds history |
 | `signals/sentiment.yaml` | Sentiment issues (GDELT themes, linked domains) and consumer-confidence areas. Never rename an issue `id` |
-| `scripts/canary.py` | `plan` / `apply` / `build` / `check` pipeline |
+| `scripts/canary.py` | `prep` / `plan` / `apply` / `build` / `check` pipeline. `prep` starts every run: it holds measured signals whose data hasn't moved and writes `work/brief.md` with only what needs judgement |
 | `scripts/publish.py` | Called by `build`: pre-renders the HTML and writes every agent-facing output. Never hand-edit its outputs. |
 | `signals/trusted_sources.yaml` | Known-good source domains (`domains`), platforms that are never cited (`avoid`) and official/data suffixes exempt from the outlet cap (`official`). Rules in rule 17 below. |
 | `signals/coverage.yaml` | Map of the catalogue against WEF's 33 global risks (covered / partial / gap). Rendered on the methodology page |
@@ -39,6 +39,7 @@ To run a scheduled update (the most common job in this repo), use the **`canary-
 2. **No financial advice, ever.** In the markets, economy, energy and UK domains, never tell readers to buy, sell, switch, move money, rebalance or "consider" a trade. Describe conditions only ("markets are in a stress regime"). `canary.py check` enforces a banned-phrase list. Don't work around it with synonyms.
 3. **"What this means for you" can be prescriptive only by pointing to official guidance.** Examples: Met Office, FCDO travel advice, UKHSA, NHS, MI5, WHO, national emergency agencies. Otherwise keep it descriptive and practical: who is exposed, and what tends to follow.
 4. **Every claim needs a source from this run.** Use 1–3 sources per signal, with a real URL you actually opened or saw in search results. Never invent URLs, figures or quotes. If you can't verify something, say less.
+   - The one exception is a **hold** (`{"id": …, "hold": true}`): it keeps the last full assessment's text and sources, refreshing only `value`, `value_num` and `rubric_hit`. `apply` allows it only within 24h of when that text was written (`assessed_at`), when the data doesn't call for a status change, and when the carried sources still meet rule 17. Hold only when this run's checks found nothing new; never hold to avoid writing a status change. Approved by Dan on 3 Nov 2026.
 5. **Neutral, factual tone.** No adjectives that take sides in conflicts or politics. Name actors plainly. No graphic detail. No casualty speculation: only cite figures from credible bodies (UN, WHO, ministries, with attribution where contested).
 6. **Rubrics are binding.** Numeric thresholds in `catalogue.yaml` decide the status. Prose criteria guide judgement.
    - `canary.py` applies a metric floor: you may raise a metric-based status for qualitative evidence, but lowering it needs an `override_reason`.

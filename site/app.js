@@ -63,6 +63,12 @@
     }[c.basis_detail || ''] || '';
     return `The AI assessor's reading of ${n} source${n === 1 ? '' : 's'} from ${k} outlet${k === 1 ? '' : 's'} against the rubric.${extra} Check the sources before relying on it.`;
   }
+  // Mirrors held_note() in publish.py: a hold kept the text while the numbers were refreshed.
+  function heldNote(c) {
+    if (!c.assessed_at || !c.checked_at) return '';
+    const gap = new Date(c.checked_at).getTime() - new Date(c.assessed_at).getTime();
+    return gap > 18e5 ? ` Text written ${esc(fmtUK.format(new Date(c.assessed_at)))}; numbers refreshed since.` : '';
+  }
   const statusOnly = (st) => `<span class="cnry-icon cnry-st--${st}" title="Status: ${LABEL[st]}">${icon(ICON_FOR[st], '', 'Status: ' + LABEL[st])}</span>`;
 
   // Time
@@ -324,7 +330,7 @@
     left.push(`<div class="cnry-detail__block cnry-detail__muted"><h3>Why it matters</h3><p>${esc(s.why)}</p></div>`);
     left.push(`<div class="cnry-detail__block cnry-detail__muted"><h3>What moves it</h3><p>${esc(s.drivers)}</p></div>`);
     const horizon = { chronic: 'Chronic', seasonal: 'Seasonal' }[s.horizon];
-    left.push(`<div class="cnry-detail__meta">${tag(dom?.name || '', 'cool-gray')}${tag(s.tier === 'daily' ? 'Checked daily' : 'Checked every run')}${horizon ? tag(horizon, 'warm-gray') : ''}${c ? `<span class="cnry-meta-text">Checked ${esc(fmtUK.format(new Date(c.checked_at)))}. At this level since ${esc(fmtUK.format(new Date(c.changed_at)))}.</span>` : ''}</div>`);
+    left.push(`<div class="cnry-detail__meta">${tag(dom?.name || '', 'cool-gray')}${tag(s.tier === 'daily' ? 'Checked daily' : 'Checked every run')}${horizon ? tag(horizon, 'warm-gray') : ''}${c ? `<span class="cnry-meta-text">Checked ${esc(fmtUK.format(new Date(c.checked_at)))}.${heldNote(c)} At this level since ${esc(fmtUK.format(new Date(c.changed_at)))}.</span>` : ''}</div>`);
     left.push(`<p class="cnry-meta-text cnry-permalinks"><a class="cds--link cds--link--sm" href="/s/${s.id}">Permalink</a> · <a class="cds--link cds--link--sm" href="/s/${s.id}.md">Markdown</a> · <a class="cds--link cds--link--sm" href="/s/${s.id}.json">JSON</a></p>`);
     if (c?.override_reason) left.push(`<p class="cnry-meta-text">Assessor note: ${esc(c.override_reason)}</p>`);
 

@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """Canary pipeline: plan a run, apply assessed updates, validate, and build derived files.
 
+  python scripts/canary.py prep [--full] [--force]
+                                           # start of every run: pre-fill holds for measured signals whose data
+                                           # hasn't moved, write work/brief.md (what needs judgement) and
+                                           # work/updates.json; --full = no holds (automatic in the 05:40 run)
   python scripts/canary.py plan            # what is due this run + metric-based suggestions
   python scripts/canary.py apply FILE      # merge an updates JSON into status, then build + check
   python scripts/canary.py build           # rebuild derived files (catalogue, world index, feed, agent outputs, pages)
@@ -45,6 +49,13 @@ NAME = {0: "green", 1: "amber", 2: "red"}
 LABEL = {"green": "Normal", "amber": "Watch", "red": "Alert"}
 TRENDS = {"up", "flat", "down"}
 FAST_STALE_H, DAILY_STALE_H, DAILY_DUE_H = 14, 36, 20
+# Holds (approved by Dan, 3 Nov 2026): a run may keep a signal's last written assessment (text and sources)
+# and refresh only its numbers, for at most HOLD_MAX_H since that text was written (`assessed_at`).
+# `prep` proposes measured holds only while the text is under PREP_HOLD_MAX_H old, so the next run is
+# still inside the limit, and never in the full-sweep run (UK hour 5, the 05:40 run).
+HOLD_MAX_H, PREP_HOLD_MAX_H, FULL_SWEEP_UK_HOURS = 24, 18, {5, 6}
+HOLD_KEYS = {"id", "hold", "value", "value_num", "rubric_hit"}  # all a hold entry may carry
+WORK = ROOT / "work"
 HISTORY_CAP, CHANGES_CAP, RUNS_CAP = 240, 400, 200
 WORLD_CAP = 720  # about six months at four runs a day
 ADVICE_DOMAINS = {"markets", "economy", "energy", "uk"}
@@ -429,21 +440,71 @@ def suggest(sig_id: str, metrics: dict, prev_level: int | None) -> dict | None:
     else:
         return None
 
-    levels, basis = [], []
+    levels, basis, parts = [], [], []
     for label, v, a, r in rules:
-        lv = _level(v, a, r)
+        raw = lv = _level(v, a, r)
         if lv is None:
             continue
         if prev_level is not None and lv < prev_level:
             lv = min(prev_level, max(lv, _level(v, a, r, MARGIN)))
         levels.append(lv)
         basis.append(f"{label}={v:.2f}" if isinstance(v, (int, float)) else f"{label}={v}")
+        parts.append((lv, raw, label, v, a, r))
     for lv, why in triggers:
         levels.append(lv)
         basis.append(why)
     if not levels:
         return None
-    return {"status": NAME[max(levels)], "value": value, "value_num": num, "basis": "; ".join(basis)}
+    top = max(levels)
+    return {"status": NAME[top], "value": value, "value_num": num, "basis": "; ".join(basis),
+            "hit": _rubric_hit(top, parts, triggers)}
+
+
+_UNITS = ((" %", "{}%"), (" bp", "{}bp"), (" $bn", "${}bn"), (" $", "${}"), (" €/MWh", "€{}/MWh"), (" ppm", "{} ppm"))
+
+
+def _split_unit(label: str) -> tuple[str, str]:
+    for unit, tpl in _UNITS:
+        if label.endswith(unit):
+            return label[:-len(unit)], tpl
+    return label, "{}"
+
+
+def _num(v: float) -> str:
+    s = f"{v:.0f}" if abs(v) >= 100 else f"{v:.1f}" if abs(v) >= 10 else f"{v:.2f}"
+    return s.rstrip("0").rstrip(".") if "." in s else s
+
+
+def _fmt_rule(label: str, v, thr: float | None = None) -> tuple[str, str]:
+    """('Brent $', 113.4, 110) → ('Brent $113', '$110'); ('S&P drawdown %', 3.16, 5) → ('S&P drawdown 3.16%', '5%')."""
+    name, tpl = _split_unit(label)
+    shown = f"{name} {tpl.format(_num(v))}" if isinstance(v, (int, float)) else f"{name} {v}"
+    return shown, (tpl.format(_num(thr)) if thr is not None else "")
+
+
+def _rubric_hit(top: int, parts: list, triggers: list) -> str:
+    """One line naming the rule that set the metric floor, for `rubric_hit` on held statuses (≤ 200 chars)."""
+    word = {1: "Watch", 2: "Alert"}
+    bits = []
+    if top == 0:
+        for _, _, lb, v, a, _ in parts:
+            shown, t_ = _fmt_rule(lb, v, a)
+            bits.append(f"{shown} below the {t_} Watch line")
+        bits += [why for lv, why in triggers]
+    else:
+        for lv, raw, lb, v, a, r in parts:
+            if lv != top:
+                continue
+            thr = r if top == 2 else a
+            if raw is not None and raw < lv:  # held up by the hysteresis margin
+                shown, t_ = _fmt_rule(lb, v, thr * (1 - MARGIN))
+                bits.append(f"{shown} has not yet cleared the {t_} exit line, so {word[top]} holds")
+            else:
+                shown, t_ = _fmt_rule(lb, v, thr)
+                bits.append(f"{shown} {'>' if top == 2 else '≥'} {t_} {word[top]} line")
+        bits += [f"{why} ({word[top]})" for lv, why in triggers if lv == top]
+    out = "; ".join(bits) or "Data within normal range"
+    return out if len(out) <= LIMITS["rubric_hit"] else out[:LIMITS["rubric_hit"] - 1].rstrip("; ,") + "…"
 
 
 # ───────────────────────── plan ─────────────────────────
@@ -513,9 +574,201 @@ def cmd_plan(_args) -> int:
         line = f"- {s['id']} [{s['tier']}] prev={cur.get('status','—')} {cur.get('value','')!s}"
         if sug:
             line += f"\n    metric floor → {sug['status'].upper()}  value='{sug['value']}'  ({sug['basis']})"
+        else:  # saves opening catalogue.yaml for the rubric
+            line += "\n    " + rubric_line(s)
         print(line)
     if carry:
         print("\n## carried forward\n" + ", ".join(s["id"] for s in carry))
+    return 0
+
+
+def rubric_line(s: dict) -> str:
+    r = s["rubric"]
+    return f"rubric — Normal: {r['green']} | Watch: {r['amber']} | Alert: {r['red']}"
+
+
+def uk_time(t: datetime) -> datetime:
+    from zoneinfo import ZoneInfo
+    return t.astimezone(ZoneInfo("Europe/London"))
+
+
+def _hours(td: timedelta) -> str:
+    return f"{td.total_seconds() / 3600:.0f}h"
+
+
+# ───────────────────────── prep ─────────────────────────
+# Runs first in every scheduled run (after fetch_metrics). It decides what needs Claude's judgement,
+# pre-fills holds for measured signals whose data hasn't moved, and writes a short brief so the run
+# never has to open catalogue.yaml or status.json. Approved by Dan on 3 Nov 2026.
+
+TRIAGE_FILE = "triage.json"  # in work/: this run's shadow triage predictions, never shown to the assessor
+
+
+def triage_quiet(cur: dict, hist: list, t: datetime) -> bool:
+    """Shadow triage, method persistence-v0: would this judged/published signal have been skipped as quiet?
+    Quiet = status unchanged for 72h and at its last four checks. A baseline to measure the hold rule
+    against before any triage is switched on (news-activity scoring is the planned v1)."""
+    ch = parse(cur.get("changed_at"))
+    last = [p[1] for p in hist[-4:]]
+    return bool(ch and t - ch >= timedelta(hours=72) and len(last) == 4 and len(set(last)) == 1)
+
+
+def shadow_triage_outcome(t: datetime, changed: list, moved_trend: list) -> dict | None:
+    """Compare this run's shadow predictions (written by prep) with what the assessor actually changed."""
+    f = WORK / TRIAGE_FILE
+    if not f.exists():
+        return None
+    try:
+        tri = json.loads(f.read_text())
+    except json.JSONDecodeError:
+        return None
+    made = parse(tri.get("t"))
+    if not made or t - made > timedelta(hours=3):  # stale file from another run
+        return None
+    quiet = set(tri.get("quiet") or [])
+    return {"method": tri.get("method"), "predicted_quiet": len(quiet), "predicted_active": len(tri.get("active") or []),
+            "quiet_but_status_changed": sorted(quiet & set(changed)),
+            "quiet_but_trend_changed": sorted(quiet & set(moved_trend))}
+
+
+def cmd_prep(args) -> int:
+    cat, status = catalogue(), load("status.json", {})
+    mdoc = load("metrics.json", {})
+    metrics, sigs, t = mdoc.get("metrics", {}), status.get("signals", {}), now()
+    history = load("history.json", {})
+    ukt = uk_time(t)
+    full = "--full" in args or ukt.hour in FULL_SWEEP_UK_HOURS
+    avoid = source_lists()["avoid"]
+    mfetch = parse(mdoc.get("fetched_at"))
+    todo, carry = [], []
+    for s in cat["signals"]:
+        (todo if due(s, sigs.get(s["id"]), t) else carry).append(s)
+
+    holds, review, quiet, active = [], [], [], []
+    for s in todo:
+        cur = sigs.get(s["id"]) or {}
+        lvl = LEVEL.get(cur.get("status"))
+        sug = suggest(s["id"], metrics, lvl)
+        w = written_at(cur) if cur else None
+        why = None
+        if not cur:
+            why = "never assessed: give it a full first assessment"
+        elif sug:
+            flo = LEVEL[sug["status"]]
+            if flo > lvl:
+                why = f"metric floor rose to {LABEL[sug['status']].upper()} (from {LABEL[cur['status']]})"
+            elif flo < lvl and cur.get("basis") == "measured":
+                why = f"data now rates it {LABEL[sug['status']].upper()}, below its measured {LABEL[cur['status']]}"
+            elif flo < lvl:
+                why = (f"held above its {LABEL[sug['status']]} data floor on reported events: check those events "
+                       "still justify it")
+            elif full:
+                why = "full sweep: refresh the text"
+            elif not w or t - w > timedelta(hours=PREP_HOLD_MAX_H):
+                why = f"text is {_hours(t - w) if w else '?'} old: refresh it"
+            else:
+                issue = source_issue(cur, avoid)
+                if issue:
+                    why = f"it {issue}: reassess with new sources"
+        if sug and not why:
+            h = {"id": s["id"], "hold": True}
+            for k, src in (("value", "value"), ("value_num", "value_num"), ("rubric_hit", "hit")):
+                if sug.get(src) not in (None, ""):
+                    h[k] = sug[src]
+            holds.append(h)
+            continue
+        if not sug and cur:
+            (quiet if triage_quiet(cur, history.get(s["id"]) or [], t) else active).append(s["id"])
+        review.append((s, cur, sug, why, w))
+
+    # work/updates.json: holds + the previous situations to edit. Never overwrite the assessor's work.
+    WORK.mkdir(exist_ok=True)
+    upath = WORK / "updates.json"
+    wrote_updates = False
+    if "--force" in args or not upath.exists():
+        upath.write_text(json.dumps({"run": {"headline": "", "situations": status.get("situations") or []},
+                                     "signals": holds}, indent=1, ensure_ascii=False) + "\n")
+        wrote_updates = True
+    (WORK / TRIAGE_FILE).write_text(json.dumps({"t": iso(t), "method": "persistence-v0",
+                                                "quiet": quiet, "active": active}) + "\n")
+
+    def uk(ts: datetime | None) -> str:
+        return uk_time(ts).strftime("%-d %b %H:%M") if ts else "—"
+
+    L = [f"# Canary run brief — {iso(t)} ({ukt.strftime('%-d %b %H:%M')} UK)",
+         ("**Mode: FULL SWEEP.** The 05:40 run rewrites every due signal's text; prep proposes no holds."
+          if full else "Mode: normal run."),
+         f"Metrics fetched {uk(mfetch)} UK" + (" ⚠ older than 3h: run scripts/fetch_metrics.py, then prep --force"
+                                              if not mfetch or t - mfetch > timedelta(hours=3) else "") + ".",
+         f"Due {len(todo)} · held by prep {len(holds)} (measured, data unchanged) · **for you to assess "
+         f"{len(review)}** · carried forward {len(carry)} (daily, fresh).", ""]
+    anchors = []
+    for key, label in (("gpr", "Geopolitical Risk index (7d avg)"), ("epu", "US policy uncertainty (7d avg)"),
+                       ("ciss", "ECB systemic stress"), ("gas_storage", "EU gas storage % full")):
+        m = metrics.get(key) or {}
+        if m.get("value") is not None:
+            rel = f", {m['vs_1y_median']}× its 1-year median" if m.get("vs_1y_median") else ""
+            anchors.append(f"- {label}: {m['value']}{rel} (as of {m.get('as_of')})")
+    if anchors:
+        L += ["Context anchors (inform judgement; never set a status):"] + anchors + [""]
+    L += [governance_notes(cat, status, history, t), ""]
+    L += ["## Already in work/updates.json",
+          f"- **{len(holds)} holds** for measured signals whose data leaves their status unchanged (listed at the end). "
+          "`apply` refreshes their numbers and keeps the last text and sources. Replace a hold with a full update "
+          "only if you find an event that should raise the status.",
+          "- **run.situations**: the previous list. Edit it rather than rebuilding it.",
+          "- Still to write: **run.headline** (required, ≤ 260 chars) and **run.emerging** after the surprise check "
+          "(omit the key to keep the previous list; previous items below)."
+          + ("" if wrote_updates else "\n- ⚠ work/updates.json already existed, so prep left it alone "
+                                      "(run `prep --force` to rebuild it)."), ""]
+    L += ["## To assess",
+          f"Write a full update for each signal below, unless the signal says a hold is allowed and your search "
+          f"finds nothing new since its text was written: then send `{{\"id\": \"…\", \"hold\": true}}` "
+          f"(optionally with a fresh value/value_num). A hold keeps the last text and sources for at most "
+          f"{HOLD_MAX_H}h after they were written.", ""]
+    dom = None
+    for s, cur, sug, why, w in review:
+        if s["domain"] != dom:
+            dom = s["domain"]
+            L.append(f"### {dom}")
+        if cur:
+            head = (f"- **{s['id']}** · {s['name']} · {s['tier']} · now {LABEL[cur['status']].upper()} "
+                    f"({cur.get('trend', '?')}) · {cur.get('basis', 'judged')} · text written {uk(w)} UK")
+        else:
+            head = f"- **{s['id']}** · {s['name']} · {s['tier']} · not yet assessed"
+        L.append(head)
+        if why:
+            L.append(f"  - flagged: {why}")
+        if sug:
+            L.append(f"  - data floor: {LABEL[sug['status']].upper()} · {sug['value'] or '—'} · {sug['basis']}")
+        L.append("  - " + rubric_line(s))
+        if s.get("published"):
+            p = s["published"]
+            L.append(f"  - published body: {p['by']} ({', '.join(p['domains'])})")
+        if s.get("hints"):
+            L.append("  - hints: " + "; ".join(s["hints"]))
+        if cur:
+            L.append(f"  - value: {cur.get('value') or '—'} · summary: {cur.get('summary') or '—'}")
+            L.append(f"  - previous state: {cur.get('state') or '—'}")
+            if not sug:
+                issue = source_issue(cur, avoid)
+                fresh = bool(w and t - w <= timedelta(hours=HOLD_MAX_H - 2))  # 2h margin for the run itself
+                if fresh and not issue and not full:
+                    L.append(f"  - hold allowed: yes, if nothing new (text expires {uk(w + timedelta(hours=HOLD_MAX_H))} UK)")
+                else:
+                    L.append(f"  - hold allowed: no ({issue or ('full sweep' if full else 'text too old')})")
+    L.append("")
+    em = status.get("emerging") or []
+    L += ["## Previous emerging risks"] + ([f"- {x['name']} ({x['status']}, first seen {x.get('first_seen', '?')}): "
+                                             f"{x.get('summary', '')}" for x in em] or ["- none"]) + [""]
+    L += ["## Held by prep (measured, data unchanged)"] + [
+        f"- {h['id']}: {h.get('value', '—')} · {h.get('rubric_hit', '')}" for h in holds] + (["- none"] if not holds else [])
+    if carry:
+        L += ["", "## Carried forward (not due)", ", ".join(s["id"] for s in carry)]
+    (WORK / "brief.md").write_text("\n".join(L) + "\n")
+    print(f"prep: {len(todo)} due · {len(holds)} held · {len(review)} to assess · {len(carry)} carried"
+          f"{' · FULL SWEEP' if full else ''}\nbrief → work/brief.md ({publish.est_tokens(chr(10).join(L))} tokens est.)"
+          f"\nupdates → work/updates.json{'' if wrote_updates else ' (existing file kept; --force to rebuild)'}")
     return 0
 
 
@@ -543,9 +796,10 @@ def cmd_apply(args) -> int:
     changes = load("changes.json", [])
     runs = load("runs.json", [])
     t = now()
-    warnings, applied, changed = list(src_warns), 0, []
+    warnings, applied, changed, held = list(src_warns), 0, [], []
     bases = {b: 0 for b in BASES}
     cited: list = []
+    moved_trend: list[str] = []
 
     for u in upd.get("signals", []):
         sid = u.get("id")
@@ -554,6 +808,32 @@ def cmd_apply(args) -> int:
             continue
         prev = sigs.get(sid) or {}
         prev_lvl = LEVEL.get(prev.get("status"))
+        if u.get("hold"):  # keep the last full assessment's text and sources; refresh numbers only
+            new = dict(prev)
+            new.setdefault("assessed_at", prev.get("checked_at"))
+            for k in ("value", "value_num", "rubric_hit"):
+                if u.get(k) not in (None, ""):
+                    new[k] = u[k]
+            sug = suggest(sid, metrics, prev_lvl)
+            if sug and LEVEL[sug["status"]] == prev_lvl:  # the data floor decides the status
+                new["basis"], new["basis_detail"] = "measured", sug["basis"]
+                if not u.get("value") and sug.get("value"):
+                    new["value"] = sug["value"]
+                if u.get("value_num") is None and sug.get("value_num") is not None:
+                    new["value_num"] = sug["value_num"]
+                if not u.get("rubric_hit") and sug.get("hit"):
+                    new["rubric_hit"] = sug["hit"]
+            new["checked_at"] = iso(t)
+            bases[new.get("basis") if new.get("basis") in BASES else "judged"] += 1
+            sigs[sid] = new
+            h = history.setdefault(sid, [])
+            h.append([iso(t), new["status"][0], new.get("value_num")])
+            del h[:-HISTORY_CAP]
+            held.append(sid)
+            applied += 1
+            continue
+        if prev.get("trend") and u.get("trend") and u["trend"] != prev["trend"]:
+            moved_trend.append(sid)
         new = {**prev, **{k: v for k, v in u.items() if k not in ("id", "override_reason", "basis")}}
         lvl = LEVEL.get(new.get("status"))
         if lvl is None:
@@ -583,7 +863,7 @@ def cmd_apply(args) -> int:
             new["override_reason"] = override
         else:
             new.pop("override_reason", None)
-        new["checked_at"] = iso(t)
+        new["checked_at"] = new["assessed_at"] = iso(t)
         if prev_lvl != lvl:
             new["changed_at"] = iso(t)
             if prev_lvl is not None:
@@ -614,19 +894,24 @@ def cmd_apply(args) -> int:
     for x in status.get("emerging") or []:
         cited += x.get("sources") or []
     n_news, by_outlet = news_concentration(cited)
-    runs.insert(0, {"t": iso(t), "applied": applied, "changed": changed, "warnings": warnings,
-                    "note": run.get("note", ""), "catalogue": load_lock().get("version"),
-                    "basis": bases,
-                    "sources": {"citations": len(cited), "news_citations": n_news,
-                                "outlets": len({outlet(x.get('url', '')) for x in cited}),
-                                "top_news_outlets": [list(kv) for kv in by_outlet[:5]]}})
+    entry = {"t": iso(t), "applied": applied, "changed": changed, "warnings": warnings,
+             "note": run.get("note", ""), "catalogue": load_lock().get("version"),
+             "basis": bases, "held": len(held),
+             "sources": {"citations": len(cited), "news_citations": n_news,
+                         "outlets": len({outlet(x.get('url', '')) for x in cited}),
+                         "top_news_outlets": [list(kv) for kv in by_outlet[:5]]}}
+    tri = shadow_triage_outcome(t, changed, moved_trend)
+    if tri:
+        entry["triage"] = tri
+    runs.insert(0, entry)
     save("status.json", status)
     save("history.json", history)
     save("changes.json", changes[:CHANGES_CAP])
     save("runs.json", runs[:RUNS_CAP])
     for w in warnings:
         print("WARN", w)
-    print(f"applied {applied} signal updates; {len(changed)} status changes: {', '.join(changed) or '—'}")
+    print(f"applied {applied} signal updates ({len(held)} held); {len(changed)} status changes: "
+          f"{', '.join(changed) or '—'}")
     print("basis this run: " + ", ".join(f"{v} {k}" for k, v in bases.items())
           + (f"; top news outlet {by_outlet[0][0]} {by_outlet[0][1]}/{n_news}" if by_outlet else ""))
     cmd_build([])
@@ -786,6 +1071,9 @@ def validate_updates(upd: dict, by_id: dict, metrics: dict | None = None,
         sid = u.get("id", "?")
         if sid not in by_id:
             continue
+        if u.get("hold"):
+            hold_problems(sid, u, sigs.get(sid), metrics, errs, avoid)
+            continue
         sig, srcs = by_id[sid], u.get("sources") or []
         check_text(sid, {f: u.get(f) for f in PROSE}, errs)
         check_sources(sid, srcs, set(), errs, {}, avoid=avoid)
@@ -818,6 +1106,55 @@ def validate_updates(upd: dict, by_id: dict, metrics: dict | None = None,
                 warns.append(f"sources: {dom} supplies {n} of {n_news} news citations ({share:.0%}); "
                              f"diversify next run (errors above {OUTLET_MAX:.0%})")
     return errs, warns
+
+
+def written_at(cur: dict) -> datetime | None:
+    """When a status's text and sources were last written by a full assessment (before holds existed,
+    every check was a full assessment, so checked_at stands in)."""
+    return parse(cur.get("assessed_at") or cur.get("checked_at"))
+
+
+def source_issue(cur: dict, avoid: set | None = None) -> str | None:
+    """A reason the current sources can't be carried forward by a hold, or None."""
+    avoid = source_lists()["avoid"] if avoid is None else avoid
+    bad = sorted({host_of(x.get("url", "")) for x in cur.get("sources") or [] if under(host_of(x.get("url", "")), avoid)})
+    if bad:
+        return "cites avoid-list domain(s) " + ", ".join(bad)
+    if cur.get("status") == "red" and cur.get("basis") == "judged":
+        probe: list[str] = []
+        alert_sourcing("-", cur.get("sources") or [], probe)
+        if probe:
+            return "judged Alert without two independent outlets"
+    return None
+
+
+def hold_problems(sid: str, u: dict, prev: dict | None, metrics: dict, errs: list, avoid: set,
+                  t: datetime | None = None) -> None:
+    """A hold keeps the last full assessment's text and sources and refreshes only numbers. Allowed only
+    when that text is under HOLD_MAX_H old, the data doesn't call for a status change, and the carried
+    sources still meet the sourcing rules."""
+    t = t or now()
+    extra = sorted(set(u) - HOLD_KEYS)
+    if extra:
+        errs.append(f"{sid}: a hold may carry only value, value_num and rubric_hit (has {', '.join(extra)}); "
+                    "send a full update instead")
+    if not prev or prev.get("status") not in LEVEL:
+        errs.append(f"{sid}: cannot hold a signal that has never been assessed")
+        return
+    w = written_at(prev)
+    if not w or t - w > timedelta(hours=HOLD_MAX_H):
+        errs.append(f"{sid}: its text was last written {iso(w) if w else 'never'}, more than {HOLD_MAX_H}h ago; "
+                    "a hold is not allowed, so send a full assessment with sources from this run")
+    sug = suggest(sid, metrics, LEVEL[prev["status"]])
+    if sug and LEVEL[sug["status"]] > LEVEL[prev["status"]]:
+        errs.append(f"{sid}: the metric floor is now {sug['status']}, above {prev['status']}; send a full update")
+    elif sug and prev.get("basis") == "measured" and LEVEL[sug["status"]] < LEVEL[prev["status"]]:
+        errs.append(f"{sid}: the data now rates it {sug['status']}, below its measured {prev['status']}; "
+                    "send a full update for the status change")
+    why = source_issue(prev, avoid)
+    if why:
+        errs.append(f"{sid}: can't be held because it {why}; reassess it with new sources")
+    check_text(sid, {f: u.get(f) for f in ("value", "rubric_hit")}, errs)
 
 
 def check_text(where: str, fields: dict, errs: list, limit: int | None = None, required: bool = False) -> None:
@@ -1067,7 +1404,8 @@ def cmd_lock(args) -> int:
 
 
 if __name__ == "__main__":
-    cmds = {"plan": cmd_plan, "apply": cmd_apply, "build": cmd_build, "check": cmd_check, "lock": cmd_lock}
+    cmds = {"plan": cmd_plan, "prep": cmd_prep, "apply": cmd_apply, "build": cmd_build, "check": cmd_check,
+            "lock": cmd_lock}
     if len(sys.argv) < 2 or sys.argv[1] not in cmds:
         print(__doc__)
         sys.exit(2)
