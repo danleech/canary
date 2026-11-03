@@ -1,5 +1,5 @@
 # Dollar funding stress — NORMAL (stable)
-id funding-stress · Markets · horizon acute · checked 2026-11-02T23:43Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-03T13:43Z
+id funding-stress · Markets · horizon acute · checked 2026-11-03T05:51Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-03T19:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/funding-stress
 
 Value: SOFR–IORB +5bp, repo $0.0bn
@@ -8,7 +8,7 @@ Basis: measured — Set by a fixed rule applied to open data (SOFR–IORB 5d max
 
 US money markets calm: SOFR within 5bp of IORB; Fed repo use near zero
 
-Why it's at this level: The secured overnight financing rate (SOFR) peaked 5bp above the Fed's interest on reserves over the five days to 30 Oct, inside the 10bp Watch line, and Fed standing repo operations were near zero to 30 Oct. Money markets show no sign of a dollar shortage as of 2 Nov.
+Why it's at this level: The secured overnight financing rate (SOFR) peaked 5bp above the Fed's interest on reserves over the latest five days, inside the 10bp Watch line, and Fed standing repo operations were near zero. Money markets show no sign of a dollar shortage as of 3 Nov.
 
 What this means for you: Short-term dollar funding markets that banks rely on are working normally.
 
@@ -18,5 +18,5 @@ What moves it: Bank reserves, Treasury issuance and cash balances, quarter-end w
 Rubric — Alert: SOFR more than 25bp above IORB, or Fed repo operations above $50bn in a day, or emergency Fed liquidity facilities. | Watch: SOFR 10–25bp above IORB on any day in the past week (the top ~10% of weeks since 2024), or Fed repo operations of $15–50bn in a day. | Normal: SOFR less than 10bp above the Fed's interest on reserves (IORB) on every day of the past week, and Fed repo operations under $15bn.
 
 Sources:
-- FRED — SOFR (2026-11-02) https://fred.stlouisfed.org/series/SOFR
-- FRED — Fed repo operations (2026-11-02) https://fred.stlouisfed.org/series/RPONTSYD
+- FRED — SOFR (2026-11-03) https://fred.stlouisfed.org/series/SOFR
+- FRED — Fed repo operations (2026-11-03) https://fred.stlouisfed.org/series/RPONTSYD

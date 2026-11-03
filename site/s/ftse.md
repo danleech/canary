@@ -1,5 +1,5 @@
 # FTSE 100 — NORMAL (stable)
-id ftse · Markets · horizon acute · checked 2026-11-02T23:43Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T13:43Z
+id ftse · Markets · horizon acute · checked 2026-11-03T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T19:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/ftse
 
 Value: 10,761, -1.4% from high
@@ -8,7 +8,7 @@ Basis: measured — Set by a fixed rule applied to open data (FTSE drawdown % = 
 
 FTSE 100 about 1.4% below its high; energy and mining weighting cushions it
 
-Why it's at this level: The FTSE 100 closed near 10,761 on 2 Nov, about 1.4% below its 52-week high and up 2.5% over the month. Its heavy weighting to oil, gas and mining firms has cushioned it from the energy shock and the 30 Oct sell-off in US technology shares. The Bank of England decides on rates on 5 Nov.
+Why it's at this level: The FTSE 100 closed near 10,761 on 2 Nov, about 1.4% below its 52-week high and up 2.5% over the month. Its heavy weighting to oil, gas and mining firms has cushioned it from the energy shock and the US technology sell-off. The Bank of England decides on rates on 5 Nov.
 
 What this means for you: UK shares are near record levels. Pension funds with UK equity exposure have not seen a market fall of note.
 
@@ -18,4 +18,4 @@ What moves it: Commodity prices, sterling, global risk appetite, UK policy and b
 Rubric — Alert: Drawdown > 12%, or a single-day fall > 4%. | Watch: Drawdown 5–12%, or a single-day fall > 2.5% this week. | Normal: Drawdown from 52-week high < 5% and no single-day fall > 2.5% this week.
 
 Sources:
-- Yahoo Finance — FTSE 100 (2026-11-02) https://finance.yahoo.com/quote/%5EFTSE
+- Yahoo Finance — FTSE 100 (2026-11-03) https://finance.yahoo.com/quote/%5EFTSE

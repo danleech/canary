@@ -1,5 +1,5 @@
 # Credit spreads — NORMAL (worsening)
-id credit-spreads · Markets · horizon acute · checked 2026-11-02T23:43Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T13:43Z
+id credit-spreads · Markets · horizon acute · checked 2026-11-03T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T19:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/credit-spreads
 
 Value: HY OAS 3.44%
@@ -8,7 +8,7 @@ Basis: measured — Set by a fixed rule applied to open data (HY OAS % = 3.44). 
 
 US high-yield spreads 3.44%, inside the 4% Watch line but at a 52-week high
 
-Why it's at this level: The US high-yield option-adjusted spread was 3.44% on 30 Oct, inside the 4% Watch line but at its widest in a year and 20bp wider over the month. Lenders are demanding a little more for default risk as rates and energy costs stay high, but there is no broad credit squeeze.
+Why it's at this level: The US high-yield option-adjusted spread was 3.44% on 30 Oct, the latest reading, inside the 4% Watch line but at its widest in a year and 20bp wider over the month. Lenders are asking a little more for default risk as rates and energy costs stay high, but there is no broad credit squeeze as of 3 Nov.
 
 What this means for you: Companies can still borrow on normal terms; no broad corporate credit squeeze is under way.
 
@@ -18,4 +18,4 @@ What moves it: Default expectations, risk appetite, rates, private-credit stress
 Rubric — Alert: HY OAS > 6.0%, or widened > 200bp in a month. | Watch: HY OAS 4.0–6.0%, or widened > 100bp in a month. | Normal: US HY option-adjusted spread < 4.0%.
 
 Sources:
-- FRED — ICE BofA US High Yield OAS (2026-11-02) https://fred.stlouisfed.org/series/BAMLH0A0HYM2
+- FRED — ICE BofA US High Yield OAS (2026-11-03) https://fred.stlouisfed.org/series/BAMLH0A0HYM2

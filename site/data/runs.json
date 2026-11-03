@@ -1,5 +1,47 @@
 [
  {
+  "t": "2026-11-03T05:51:01Z",
+  "applied": 41,
+  "changed": [],
+  "warnings": [
+   "sources: aljazeera.com supplies 7 of 42 news citations (17%); diversify next run (errors above 20%)"
+  ],
+  "note": "US markets had not opened for 3 Nov; market values are 2 Nov closes. NHC text outlook fetch timed out; graphical outlook used.",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 20,
+   "published": 3,
+   "judged": 18
+  },
+  "sources": {
+   "citations": 73,
+   "news_citations": 42,
+   "outlets": 35,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     7
+    ],
+    [
+     "abc7ny.com",
+     4
+    ],
+    [
+     "cnbc.com",
+     3
+    ],
+    [
+     "aa.com.tr",
+     2
+    ],
+    [
+     "abc.net.au",
+     2
+    ]
+   ]
+  }
+ },
+ {
   "t": "2026-11-02T23:43:37Z",
   "applied": 41,
   "changed": [

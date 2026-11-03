@@ -1,5 +1,5 @@
 # US recession risk — NORMAL (stable)
-id us-recession · Economy · horizon acute · checked 2026-11-02T23:43Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T13:43Z
+id us-recession · Economy · horizon acute · checked 2026-11-03T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T19:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/us-recession
 
 Value: Sahm 0.00, 10y–2y +0.32
@@ -18,5 +18,5 @@ What moves it: Labour market, consumer spending, credit conditions, rates and fi
 Rubric — Alert: Sahm ≥ 0.50, or two consecutive negative GDP quarters, or NBER declares recession. | Watch: Sahm 0.30–0.49, or one negative GDP quarter, or payrolls negative in a release. | Normal: Sahm rule indicator < 0.30 and no negative GDP quarter in the latest two releases.
 
 Sources:
-- FRED — Real-time Sahm rule indicator (2026-11-02) https://fred.stlouisfed.org/series/SAHMREALTIME
-- FRED — 10y–2y Treasury spread (2026-11-02) https://fred.stlouisfed.org/series/T10Y2Y
+- FRED — Real-time Sahm rule (2026-11-03) https://fred.stlouisfed.org/series/SAHMREALTIME
+- FRED — 10y–2y spread (2026-11-03) https://fred.stlouisfed.org/series/T10Y2Y

@@ -1,5 +1,5 @@
 # Shipping chokepoints — ALERT (stable)
-id chokepoints · Energy & Commodities · horizon acute · checked 2026-11-02T23:43Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T13:43Z
+id chokepoints · Energy & Commodities · horizon acute · checked 2026-11-03T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-03T19:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/chokepoints
 
 Value: Hormuz largely shut; mines and attacks
@@ -7,9 +7,9 @@ Rated on: Hormuz traffic materially impeded with attacks on shipping = Alert
 Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
-Hormuz largely shut after mine and projectile strikes on 1 Nov; Iran offers two-day reopening on conditions
+Hormuz largely shut; a ship was hit by a projectile on 2 Nov as Iran's reopening offer awaits a US reply
 
-Why it's at this level: Iran's IRGC said two tankers struck mines in Hormuz on 1 Nov, and UKMTO reported a vessel hit by an unknown projectile in the strait the same day (CBS). On 2 Nov Iran said it could reopen the strait within two days if the US ends its blockade of Iranian ports and meets other conditions; no US reply had been reported (Euronews). Drones hit at least seven cargo ships off Romania and Bulgaria in October.
+Why it's at this level: A vessel transiting Hormuz was hit by an unknown projectile on 2 Nov, with all crew safe (UKMTO, via AP), a day after Iran's IRGC said two tankers struck mines. The US military says recognised routes are clear; Iran says ships must follow a route agreed with Oman. Mediators are working on a framework trading an end to attacks in the strait for lifting the US blockade (AP, 3 Nov).
 
 What this means for you: Shipping delays and higher freight and insurance costs feed through to fuel and goods prices. Mariners should follow UKMTO and flag-state guidance.
 
@@ -19,6 +19,6 @@ What moves it: Houthi/Iran attacks, war-risk insurance, drought (Panama), naval 
 Rubric — Alert: Hormuz traffic materially impeded, or any chokepoint closed, or two or more disrupted at once. | Watch: One chokepoint disrupted (attacks, large-scale diversions, draught restrictions). | Normal: All major chokepoints operating normally.
 
 Sources:
-- gCaptain — Iran’s Guards say two tankers hit mines in Strait of Hormuz (2026-11-01) https://gcaptain.com/irans-guards-say-two-tankers-hit-mines-in-strait-of-hormuz/
-- CBS News — Live updates: Iran war, US negotiations (2026-11-02) https://www.cbsnews.com/live-updates/iran-war-us-trump-negotiations-midterms/
-- Euronews — Iran says it can reopen Hormuz in two days if US meets conditions (2026-11-02) https://www.euronews.com/2026/11/02/iran-says-it-can-reopen-hormuz-in-two-days-if-us-meets-conditions
+- ABC7/AP — US-Iran war news (2026-11-03) https://abc7ny.com/post/us-iran-war-news-israels-benjamin-netanyahu-wants-donald-trump-administration-carry-new-strikes-officials-tell-ap/20009648/
+- gCaptain — Iran's Guards say two tankers hit mines in Hormuz (2026-11-01) https://gcaptain.com/irans-guards-say-two-tankers-hit-mines-in-strait-of-hormuz/
+- Euronews — Iran says it can reopen Hormuz in two days (2026-11-02) https://www.euronews.com/2026/11/02/iran-says-it-can-reopen-hormuz-in-two-days-if-us-meets-conditions
