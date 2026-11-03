@@ -79,9 +79,17 @@ public enum WorldBand: String, CaseIterable, Sendable {
     }
 
     /// Lower edge of each band on the 0–100 scale.
-    public static let thresholds: [(band: WorldBand, from: Int)] = [
-        (.calm, 0), (.unsettled, 25), (.strained, 40), (.severe, 60),
+    public static let thresholds: [BandThreshold] = [
+        BandThreshold(band: .calm, from: 0),
+        BandThreshold(band: .unsettled, from: 25),
+        BandThreshold(band: .strained, from: 40),
+        BandThreshold(band: .severe, from: 60),
     ]
+}
+
+public struct BandThreshold: Hashable, Sendable {
+    public let band: WorldBand
+    public let from: Int
 }
 
 /// One risk signal on the board.

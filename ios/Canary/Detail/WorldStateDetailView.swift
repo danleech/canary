@@ -36,7 +36,7 @@ private struct DomainScoresCard: View {
 
     var body: some View {
         let scores = board.domains.compactMap { domain in
-            board.status.world.byDomain?[domain.id].map { (domain: domain, score: $0) }
+            board.status.world.byDomain?[domain.id].map { DomainScore(domain: domain, score: $0) }
         }
         VStack(alignment: .leading, spacing: 12) {
             ModuleHeader("By Domain", systemImage: "square.grid.2x2")
@@ -71,6 +71,11 @@ private struct DomainScoresCard: View {
         }
         .card()
     }
+}
+
+private struct DomainScore {
+    let domain: Domain
+    let score: Int
 }
 
 /// The index over time (method 2 only; the series restarted on 2 Nov 2026).
@@ -141,7 +146,7 @@ private struct MethodCard: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             ModuleHeader("How the Index Works", systemImage: "function")
-            Text("Each signal on Alert scores 2 and each on Watch scores 1. Every domain counts equally, and signals driven by the same situation count once within a domain. The total is scaled from 0 to 100.")
+            Text("Each signal scores 0 for Normal, 1 for Watch and 2 for Alert. Within each domain, signals in the same situation count once, at the highest level among them, so one event can't fill a domain on its own. Domain scores are averaged with equal weight and scaled from 0 to 100.")
                 .font(.subheadline)
                 .fixedSize(horizontal: false, vertical: true)
             Text("Calm is below 25, Unsettled 25 to 39, Strained 40 to 59, and Severe 60 or more.")

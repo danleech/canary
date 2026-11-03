@@ -27,7 +27,6 @@ struct RootView: View {
                         SearchView()
                     }
                 }
-                .tabBarMinimizeBehavior(.onScrollDown)
             }
         }
     }

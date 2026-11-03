@@ -127,7 +127,8 @@ struct WorldStateCard: View {
     }
 
     @ViewBuilder private func countItems(_ counts: [Level: Int]) -> some View {
-        ForEach([Level.alert, .watch, .normal] + (counts[.stale, default: 0] > 0 ? [.stale] : []), id: \.self) { level in
+        let levels: [Level] = counts[.stale, default: 0] > 0 ? [.alert, .watch, .normal, .stale] : [.alert, .watch, .normal]
+        ForEach(levels, id: \.self) { level in
             HStack(spacing: 5) {
                 StatusGlyph(level, font: .subheadline)
                 Text("\(counts[level, default: 0]) \(level.label)")

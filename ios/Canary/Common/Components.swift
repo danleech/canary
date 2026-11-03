@@ -120,23 +120,24 @@ struct SafariView: UIViewControllerRepresentable {
     func updateUIViewController(_ controller: SFSafariViewController, context: Context) {}
 }
 
-extension URL: @retroactive Identifiable {
-    public var id: String { absoluteString }
+private struct WebPage: Identifiable {
+    let url: URL
+    var id: String { url.absoluteString }
 }
 
 /// Opens web links in in-app Safari for a view subtree.
 struct InAppSafari: ViewModifier {
-    @State private var url: URL?
+    @State private var page: WebPage?
 
     func body(content: Content) -> some View {
         content
             .environment(\.openURL, OpenURLAction { url in
                 guard url.scheme == "https" || url.scheme == "http" else { return .systemAction }
-                self.url = url
+                page = WebPage(url: url)
                 return .handled
             })
-            .sheet(item: $url) { url in
-                SafariView(url: url).ignoresSafeArea()
+            .sheet(item: $page) { page in
+                SafariView(url: page.url).ignoresSafeArea()
             }
     }
 }

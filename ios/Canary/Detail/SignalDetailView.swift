@@ -253,9 +253,9 @@ private struct BasisCard: View {
                 }
                 .font(.subheadline)
             }
-            if basis == .published, let body = signal.basisBy {
+            if basis == .published, let publisher = signal.basisBy {
                 LabeledContent("Published by") {
-                    Text(body).multilineTextAlignment(.trailing)
+                    Text(publisher).multilineTextAlignment(.trailing)
                 }
                 .font(.subheadline)
             } else if basis == .measured, let detail = signal.basisDetail {

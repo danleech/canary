@@ -88,11 +88,20 @@ public struct StatusGlyph: View {
     }
 
     public var body: some View {
-        Image(systemName: level.symbol)
-            .font(font)
-            .symbolRenderingMode(.palette)
-            .foregroundStyle(level == .watch ? Color.black.opacity(0.85) : .white, level.color)
-            .accessibilityHidden(true)
+        Group {
+            switch level {
+            case .stale, .pending:
+                // A single-layer symbol: one colour.
+                Image(systemName: level.symbol)
+                    .foregroundStyle(level.color)
+            default:
+                Image(systemName: level.symbol)
+                    .symbolRenderingMode(.palette)
+                    .foregroundStyle(level == .watch ? Color.black.opacity(0.85) : Color.white, level.color)
+            }
+        }
+        .font(font)
+        .accessibilityHidden(true)
     }
 }
 

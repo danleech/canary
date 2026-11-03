@@ -6,6 +6,7 @@ import SwiftUI
 struct BrowseView: View {
     @Environment(BoardStore.self) private var store
     @Environment(Router.self) private var router
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     @State private var showsSettings = false
 
     var body: some View {
@@ -31,6 +32,13 @@ struct BrowseView: View {
             .id(router.browseSelection)
         }
         .sheet(isPresented: $showsSettings) { SettingsView() }
+        .onChange(of: router.browseSelection) { router.browsePath = [] }
+        .onAppear {
+            // Side by side, show something in the detail column from the start.
+            if horizontalSizeClass == .regular, router.browseSelection == nil {
+                router.browseSelection = .allSignals
+            }
+        }
     }
 }
 

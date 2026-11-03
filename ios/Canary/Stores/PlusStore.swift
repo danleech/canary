@@ -21,7 +21,7 @@ final class PlusStore {
     func start() {
         guard updates == nil else { return }
         updates = Task { [weak self] in
-            for await result in Transaction.updates {
+            for await result in StoreKit.Transaction.updates {
                 if case .verified(let transaction) = result { await transaction.finish() }
                 await self?.refreshEntitlement()
             }
@@ -32,7 +32,7 @@ final class PlusStore {
     /// Re-derives the entitlement from verified transactions.
     func refreshEntitlement() async {
         var active = false
-        for await result in Transaction.currentEntitlements {
+        for await result in StoreKit.Transaction.currentEntitlements {
             guard case .verified(let transaction) = result else { continue }
             if Self.productIDs.contains(transaction.productID), transaction.revocationDate == nil {
                 active = true

@@ -1,5 +1,6 @@
 import Foundation
 import Observation
+import SwiftUI
 import WidgetKit
 
 /// The signals a person has pinned to Summary, like Health's Pinned or a Stocks watchlist.
