@@ -1,5 +1,5 @@
 # Pacific & Indian cyclones — ALERT (improving)
-id other-cyclones · Weather & Hazards · horizon acute · checked 2026-11-04T11:42Z · text written 2026-11-04T05:53Z · at this level since 2026-11-02T11:58Z · stale after 2026-11-05T01:42Z
+id other-cyclones · Weather & Hazards · horizon acute · checked 2026-11-04T17:53Z · text written 2026-11-04T05:53Z · at this level since 2026-11-02T11:58Z · stale after 2026-11-05T07:53Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/other-cyclones
 
 Value: Murasu: 2 dead, 12,230 moved (3 Nov)

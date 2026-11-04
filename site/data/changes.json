@@ -1,5 +1,29 @@
 [
  {
+  "t": "2026-11-04T17:53:13Z",
+  "id": "sahel",
+  "name": "Sahel insurgency",
+  "from": "red",
+  "to": "amber",
+  "reason": "JNIM insurgency persists in Mali, but Bamako's fuel supply has been restored under escort"
+ },
+ {
+  "t": "2026-11-04T17:53:13Z",
+  "id": "crypto",
+  "name": "Crypto stress",
+  "from": "amber",
+  "to": "green",
+  "reason": "Bitcoin 7% off its high; Binance withdrawals resuming after record theft"
+ },
+ {
+  "t": "2026-11-04T17:53:13Z",
+  "id": "equity-stress",
+  "name": "US equity stress",
+  "from": "amber",
+  "to": "green",
+  "reason": "VIX back below 20 and S&P 500 1.4% off its high after Democrats win Congress"
+ },
+ {
   "t": "2026-11-04T11:42:46Z",
   "id": "gold",
   "name": "Gold (fear gauge)",

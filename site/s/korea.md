@@ -1,17 +1,17 @@
-# Korean peninsula — WATCH (stable)
-id korea · Geopolitics · horizon acute · checked 2026-11-04T11:42Z · text written 2026-11-04T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-05T01:42Z
+# Korean peninsula — WATCH (worsening)
+id korea · Geopolitics · horizon acute · checked 2026-11-04T17:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-05T07:53Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/korea
 
-Value: Cruise missile test 1–2 Nov
-Rated on: Cruise and ballistic missile launches = Watch; no nuclear test or ICBM
-Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
-Situation: Record Binance hack attributed to North Korea [binance-hack]
+Value: Missile salvo 4 Nov; 4th launch in a month
+Rated on: Ballistic or cruise missile launches = Watch; no nuclear test or ICBM overflight
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
+Situation: Binance theft and North Korean escalation [binance-hack]
 
-North Korea tests cluster-warhead cruise missiles; denies Binance theft
+North Korea fires several missiles on 4 Nov after rejecting US Binance theft claims
 
-Why it's at this level: North Korea said it tested a strategic cruise missile with a new cluster-munition warhead in a weekend launch, KCNA reported on 2 Nov (Stars and Stripes), after an October run of ballistic, hypersonic and submarine-launched tests (Arms Control Association). Kim Yo Jong called the FBI's Binance theft finding 'absurd' on 3 Nov (ABC). No nuclear test or ICBM launch has been reported.
+Why it's at this level: North Korea fired several missiles from the Sondok area toward the Sea of Japan on 4 Nov, its fourth weapons launch in a month, South Korea's Joint Chiefs of Staff said (Korea Herald; SecurityWeek/AP). It came hours after Pyongyang denied US claims it stole about $6.3bn from Binance and said it saw no need to resume diplomacy. No nuclear test or ICBM overflight has been reported.
 
-What this means for you: No change for the public. Follow FCDO advice for travel to South Korea and Japan.
+What this means for you: No change to official travel advice was reported. Check FCDO guidance for South Korea and Japan if travelling.
 
 Why it matters: North Korea is a nuclear state with ICBMs; tension here involves the US, China, Japan and Russia simultaneously.
 What moves it: Missile tests, Russia–DPRK military cooperation, US–ROK exercises, border incidents.
@@ -19,6 +19,5 @@ What moves it: Missile tests, Russia–DPRK military cooperation, US–ROK exerc
 Rubric — Alert: Nuclear test, ICBM overflight of Japan, or military clash. | Watch: Ballistic or cruise missile launches, or troop deployments abroad. | Normal: No missile launches in two weeks; no border incidents.
 
 Sources:
-- Stars and Stripes — North Korea tests cluster-bomb warhead in weekend missile launch (2026-11-02) https://stripes.com/theaters/asia_pacific/2026-11-02/north-korea-cluster-bomb-warhead-23335418.html
-- Arms Control Association — North Korea and South Korea launch missiles amid tensions (2026-11-01) https://www.armscontrol.org/act/2026-11/news/north-korea-and-south-korea-launch-missiles-amid-tensions
-- ABC News (Australia) — North Korea denies Binance heist as customers withdraw billions (2026-11-03) https://www.abc.net.au/news/2026-11-03/north-korea-denies-binance-heist-customers-withdraw-billions/107340330
+- Korea Herald — North Korea fires unidentified projectile toward East Sea (2026-11-04) https://koreaherald.com/article/10925065
+- SecurityWeek — North Korea launches missiles as it protests US claims on Binance hack (2026-11-04) https://www.securityweek.com/north-korea-launches-missiles-toward-the-sea-as-pyongyang-protests-against-us-claims-on-binance-hack/

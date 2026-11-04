@@ -1,17 +1,17 @@
 # Central bank stress — WATCH (worsening)
-id central-banks · Economy · horizon acute · checked 2026-11-03T18:02Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-05T06:02Z
+id central-banks · Economy · horizon acute · checked 2026-11-04T17:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-06T05:53Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/central-banks
 
-Value: RBA 4.85% (3 Nov); BoE 5 Nov
-Rated on: Stagflationary dilemma across major banks = Watch
+Value: BoE decision 5 Nov; RBA 4.85%
+Rated on: Stagflationary dilemma across major central banks = Watch
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: Energy shock feeding inflation [energy-inflation]
 
-RBA hikes to an 18-year high; Bank of England expected to raise rates on 5 Nov
+Bank of England widely expected to raise rates on 5 Nov; RBA hiked on 3 Nov
 
-Why it's at this level: The Reserve Bank of Australia raised its cash rate to 4.85% on 3 Nov, its fifth rise this year, on a 6–3 vote (ABC). The Bank of England is expected to raise Bank Rate to 4% on 5 Nov, its first rise since 2023 (IG). The Fed held at 3.75–4% on 28 Oct. Policymakers face a stagflationary dilemma; no emergency move had been made.
+Why it's at this level: The Bank of England is widely expected to raise Bank Rate from 3.75% to 4% on 5 Nov, its first rise since 2023, as the energy shock lifts inflation (Yahoo Finance; HomeOwners Alliance). Australia's central bank raised its cash rate to 4.85% on 3 Nov. The Fed held at 3.75–4% on 28 Oct. Policymakers face a stagflationary dilemma; no emergency move had been made as of 4 Nov.
 
-What this means for you: Variable mortgage and loan rates are rising in several countries; savings rates tend to follow.
+What this means for you: Borrowers on variable or expiring fixed-rate loans are most exposed to rising rates; savers may see better returns. Lenders often reprice products after decisions.
 
 Why it matters: Central banks are the shock absorbers; when they are boxed in or their independence is challenged, markets lose their backstop.
 What moves it: Inflation vs growth trade-off, political pressure, currency moves, financial stability.
@@ -19,5 +19,5 @@ What moves it: Inflation vs growth trade-off, political pressure, currency moves
 Rubric — Alert: Emergency inter-meeting moves, attempt to remove a central-bank head, or coordinated intervention. | Watch: Stagflationary dilemma, open political pressure on a major central bank, or FX intervention by a G7 bank. | Normal: Fed, ECB and BoJ acting orderly and on schedule; independence unquestioned.
 
 Sources:
-- ABC News — RBA lifts rates to highest level in 18 years (2026-11-03) https://www.abc.net.au/news/2026-11-03/rba-lifts-interest-rates-november-2026-highest-rate-in-18-years/107340050
-- IG — BoE preview: Bank set to lift rates to 4% (2026-11-02) https://www.ig.com/uk/news-and-trade-ideas/bank-of-england-preview-first-rate-hike-in-three-years-looks-all-but-certain-261102
+- Yahoo Finance — Bank of England expected to raise interest rates for first time since 2023 (2026-11-04) https://uk.finance.yahoo.com/news/bank-england-expected-raise-interest-090012960.html
+- HomeOwners Alliance — Will the Bank of England raise rates on 5 November? (2026-11-04) https://hoa.org.uk/news/interest-rate-predictions-2/

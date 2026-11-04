@@ -1,17 +1,17 @@
 # Gulf / US–Iran war — ALERT (stable)
-id gulf-iran · Armed Conflict · horizon acute · checked 2026-11-04T11:42Z · text written 2026-11-04T05:53Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-05T01:42Z
+id gulf-iran · Armed Conflict · horizon acute · checked 2026-11-04T17:53Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-05T07:53Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/gulf-iran
 
 Value: Hormuz largely shut; US blockade
-Rated on: Active state strikes and Hormuz substantially closed = Alert
-Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
+Rated on: Active strikes between states; Hormuz substantially closed = Alert
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
-Iran says it is far from a deal after US strikes near Hormuz on 2 Nov
+Trump confirms strikes on Iranian air defences; Iran calls US reply on Hormuz plan unconvincing
 
-Why it's at this level: US forces struck Qeshm Island on 2 Nov in what officials called defensive strikes after the IRGC fired on a US aircraft (Gulf News, CBS). On 3–4 Nov Iranian officials said the sides remain far from a deal and that Hormuz will reopen only if the US lifts its blockade and sanctions (SBS). A tanker was hit by two projectiles off Oman on 3 Nov.
+Why it's at this level: Trump confirmed US strikes on an Iranian anti-aircraft site, reported on Qeshm Island, calling it a 'minor attack' (Al Jazeera, 4 Nov). Iran's security council secretary called the US reply to its Hormuz plan 'not convincing'; Qatar says both sides remain committed to talks. The IRGC claimed on 4 Nov that four tankers hit mines and that it shot down US drones (bne IntelliNews).
 
-What this means for you: Follow FCDO travel advice for Iran and the Gulf states.
+What this means for you: Follow FCDO travel advice for Iran and the Gulf states. Disruption to flights and shipping in the region can change at short notice.
 
 Why it matters: Direct hostilities between Iran and the US or Israel threaten Gulf energy infrastructure, the Strait of Hormuz and the wider region.
 What moves it: Strikes and retaliation, attacks on shipping and Gulf states, mediation and ceasefire talks, US force posture.
@@ -19,6 +19,5 @@ What moves it: Strikes and retaliation, attacks on shipping and Gulf states, med
 Rubric — Alert: Active strikes between states, attacks on Gulf energy infrastructure or shipping, or the Strait of Hormuz substantially closed. | Watch: A ceasefire or stalemate with sporadic strikes, or credible threats of renewed strikes. | Normal: No direct state-on-state hostilities; diplomacy active.
 
 Sources:
-- SBS News — Iran says 'long way to go' until end of war (2026-11-04) https://news.sbs.co.kr/english/article.do?news_id=N1008829871
-- Gulf News — US carries out defensive strikes on Iran's Qeshm Island (2026-11-03) https://gulfnews.com/world/mena/middle-east-conflict-us-carries-out-defensive-strikes-on-irans-qeshm-island-near-strait-of-hormuz-as-tensions-escalate-1.500733555
-- CBS News — Iran war live updates (2026-11-03) https://www.cbsnews.com/live-updates/iran-war-us-trump-negotiations-midterms/
+- Al Jazeera — Iran says US reply to Hormuz plan unconvincing; Trump confirms strikes (2026-11-04) https://www.aljazeera.com/news/2026/11/4/iran-says-us-reply-to-hormuz-plan-unconvincing-trump-confirms-strikes
+- bne IntelliNews — IRGC says four more tankers hit mines, US drone downed (2026-11-04) https://www.intellinews.com/iran-s-irgc-says-four-more-tankers-hit-mines-in-hormuz-56th-us-drone-downed-481702/

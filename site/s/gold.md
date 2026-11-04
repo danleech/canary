@@ -1,10 +1,10 @@
 # Gold (fear gauge) — NORMAL (stable)
-id gold · Markets · horizon acute · checked 2026-11-04T11:42Z · at this level since 2026-11-04T11:42Z · stale after 2026-11-05T01:42Z
+id gold · Markets · horizon acute · checked 2026-11-04T17:53Z · text written 2026-11-04T11:42Z · at this level since 2026-11-04T11:42Z · stale after 2026-11-05T07:53Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/gold
 
-Value: $4,052, 3m -7.9%
-Rated on: Gold 3m change -7.9%, inside the -8% to +10% Normal band
-Basis: measured — Set by a fixed rule applied to open data (Gold 3m gain % = -7.89). Anyone can reproduce it from the public metrics file.
+Value: $4,076, 3m -7.4%
+Rated on: Gold 3m gain -7.36% below the 10% Watch line
+Basis: measured — Set by a fixed rule applied to open data (Gold 3m gain % = -7.36). Anyone can reproduce it from the public metrics file.
 
 Gold near $4,050, down 7.9% over three months, just inside the Normal band
 

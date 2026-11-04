@@ -1,5 +1,64 @@
 [
  {
+  "t": "2026-11-04T17:53:13Z",
+  "applied": 89,
+  "changed": [
+   "equity-stress",
+   "crypto",
+   "sahel"
+  ],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 26,
+   "published": 12,
+   "judged": 51
+  },
+  "held": 35,
+  "sources": {
+   "citations": 106,
+   "news_citations": 75,
+   "outlets": 74,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     7
+    ],
+    [
+     "spglobal.com",
+     3
+    ],
+    [
+     "allafrica.com",
+     2
+    ],
+    [
+     "bma.org.uk",
+     2
+    ],
+    [
+     "fxstreet.com",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 50,
+   "predicted_active": 12,
+   "quiet_but_status_changed": [
+    "sahel"
+   ],
+   "quiet_but_trend_changed": [
+    "cables-gnss",
+    "global-pmi",
+    "korea",
+    "political-instability"
+   ]
+  }
+ },
+ {
   "t": "2026-11-04T11:42:46Z",
   "applied": 41,
   "changed": [

@@ -1,11 +1,11 @@
 # Major cyber incidents — WATCH (worsening)
-id cyber · Technology & Cyber · horizon acute · checked 2026-11-04T11:42Z · text written 2026-11-04T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-05T01:42Z
+id cyber · Technology & Cyber · horizon acute · checked 2026-11-04T17:53Z · text written 2026-11-04T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-05T07:53Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/cyber
 
 Value: Binance theft; EU freezer attacks
 Rated on: Attacks disrupting large companies across countries = Watch
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
-Situation: Record Binance hack attributed to North Korea [binance-hack]
+Situation: Binance theft and North Korean escalation [binance-hack]
 
 Refrigeration attacks hit EU supermarkets; Binance theft largest on record
 
