@@ -48,8 +48,9 @@ struct PinEditorView: View {
                     if query.isEmpty, pins.ids.count > 1 {
                         ToolbarItem(placement: .topBarLeading) { EditButton() }
                     }
+                    // Changes apply as they're made; the system ✓ button closes the editor.
                     ToolbarItem(placement: .confirmationAction) {
-                        Button("Done") { dismiss() }
+                        Button(role: .confirm) { dismiss() }
                     }
                 }
                 .sheet(isPresented: $showsPaywall) { CanaryPlusView(reason: .pins) }
@@ -81,8 +82,10 @@ struct PinEditorView: View {
                     .font(.title3)
                     .foregroundStyle(pinned ? AnyShapeStyle(.tint) : AnyShapeStyle(.tertiary))
                     .accessibilityHidden(true)
+                // Color.primary, not .primary: inside a list button `.primary` resolves to the tint.
                 Text(signal.name)
-                    .foregroundStyle(.primary)
+                    .foregroundStyle(Color.primary)
+                    .multilineTextAlignment(.leading)
                 Spacer()
                 StatusGlyph(signal.level(at: store.now))
             }

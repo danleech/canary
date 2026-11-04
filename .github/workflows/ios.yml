@@ -42,6 +42,9 @@ jobs:
             grep -h -o -m1 "user-module-version [0-9.]*" "$sdk"/System/Library/Frameworks/SwiftUI.framework/Modules/SwiftUI.swiftmodule/*.swiftinterface | head -1 || true
           done
 
+      - name: SDK API probe
+        run: bash ios/ci/api_probe.sh
+
       - name: Build (Debug, simulator)
         run: |
           set -o pipefail

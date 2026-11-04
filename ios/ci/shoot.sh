@@ -56,26 +56,37 @@ launch() {
 }
 
 # shot <name> <seconds to wait> [launch arguments…]
+# Waits, then polls until the app has drawn: a blank launch screen compresses to a
+# small PNG for its pixel count, a drawn screen doesn't. Then waits a moment more for animations.
 shot() {
-  local name="$1" wait="$2"
+  local name="$1" wait="$2" file tries=0 size=0 px=0
   shift 2
+  file="$OUT/$SLUG-$name.png"
   launch "$@"
   sleep "$wait"
-  if xcrun simctl io "$UDID" screenshot $DISPLAY_ARG "$OUT/$SLUG-$name.png" >/dev/null 2>&1; then
-    log "$name"
-  else
-    log "FAILED $name"
-  fi
+  while :; do
+    xcrun simctl io "$UDID" screenshot $DISPLAY_ARG "$file" >/dev/null 2>&1
+    size=$(stat -f%z "$file" 2>/dev/null || echo 0)
+    # Bytes per thousand pixels: blank launch screens measured ~23, drawn screens 38+.
+    px=$(sips -g pixelWidth -g pixelHeight "$file" 2>/dev/null | awk '/pixel/ {p = p ? p * $2 : $2} END {print p + 0}')
+    [ "${px:-0}" -gt 0 ] && [ $((size * 1000 / px)) -gt 30 ] && break
+    [ "$tries" -ge 20 ] && break
+    tries=$((tries + 1))
+    sleep 1
+  done
+  sleep 1.5
+  xcrun simctl io "$UDID" screenshot $DISPLAY_ARG "$file" >/dev/null 2>&1
+  log "$name ($size bytes after $tries retries)"
 }
 
 screens() {
   local p="$1"
-  shot "${p}summary" 6
-  shot "${p}browse" 5 -CanaryTab browse
-  shot "${p}domain" 5 -CanaryRoute canary://domain/energy
-  shot "${p}signal" 5 -CanaryRoute canary://signal/oil
-  shot "${p}world" 5 -CanaryRoute canary://world
-  shot "${p}plus" 5 -CanarySheet plus
+  shot "${p}summary" 5
+  shot "${p}browse" 4 -CanaryTab browse
+  shot "${p}domain" 4 -CanaryRoute canary://domain/energy
+  shot "${p}signal" 4 -CanaryRoute canary://signal/oil
+  shot "${p}world" 4 -CanaryRoute canary://world
+  shot "${p}plus" 4 -CanarySheet plus
 }
 
 if [ "$DEVICE" = "iPhone Duo" ]; then
@@ -96,38 +107,38 @@ if [ "$DEVICE" = "iPhone Duo" ]; then
     sleep 2
     screens "$pose-"
     if [ "$pose" = "flat" ]; then
-      shot "flat-changes" 5 -CanaryTab changes
-      shot "flat-search" 5 -CanaryTab search
-      [ -n "$SIT" ] && shot "flat-situation" 5 -CanaryRoute "canary://situation/$SIT"
-      shot "flat-settings" 5 -CanarySheet settings
+      shot "flat-changes" 4 -CanaryTab changes
+      shot "flat-search" 4 -CanaryTab search
+      [ -n "$SIT" ] && shot "flat-situation" 4 -CanaryRoute "canary://situation/$SIT"
+      shot "flat-settings" 4 -CanarySheet settings
       xcrun simctl ui "$UDID" appearance dark
-      shot "flat-summary-dark" 5
-      shot "flat-signal-dark" 5 -CanaryRoute canary://signal/oil
+      shot "flat-summary-dark" 4
+      shot "flat-signal-dark" 4 -CanaryRoute canary://signal/oil
       xcrun simctl ui "$UDID" appearance light
     fi
   done
 else
-  shot summary 15
-  shot browse 5 -CanaryTab browse
-  shot domain 5 -CanaryRoute canary://domain/energy
-  shot changes 5 -CanaryTab changes
-  shot search 5 -CanaryTab search
-  shot signal 5 -CanaryRoute canary://signal/oil
-  shot signal-uk 5 -CanaryRoute canary://signal/uk-rates
-  shot world 5 -CanaryRoute canary://world
-  [ -n "$SIT" ] && shot situation 5 -CanaryRoute "canary://situation/$SIT"
-  shot plus 5 -CanarySheet plus
-  shot settings 5 -CanarySheet settings
-  shot pins 5 -CanarySheet pins
+  shot summary 10
+  shot browse 4 -CanaryTab browse
+  shot domain 4 -CanaryRoute canary://domain/energy
+  shot changes 4 -CanaryTab changes
+  shot search 4 -CanaryTab search
+  shot signal 4 -CanaryRoute canary://signal/oil
+  shot signal-uk 4 -CanaryRoute canary://signal/uk-rates
+  shot world 4 -CanaryRoute canary://world
+  [ -n "$SIT" ] && shot situation 4 -CanaryRoute "canary://situation/$SIT"
+  shot plus 4 -CanarySheet plus
+  shot settings 4 -CanarySheet settings
+  shot pins 4 -CanarySheet pins
   xcrun simctl ui "$UDID" appearance dark
-  shot summary-dark 5
-  shot browse-dark 5 -CanaryTab browse
-  shot signal-dark 5 -CanaryRoute canary://signal/oil
-  shot world-dark 5 -CanaryRoute canary://world
+  shot summary-dark 4
+  shot browse-dark 4 -CanaryTab browse
+  shot signal-dark 4 -CanaryRoute canary://signal/oil
+  shot world-dark 4 -CanaryRoute canary://world
   xcrun simctl ui "$UDID" appearance light
   xcrun simctl ui "$UDID" content_size accessibility-extra-large
-  shot summary-ax 5
-  shot signal-ax 5 -CanaryRoute canary://signal/oil
+  shot summary-ax 4
+  shot signal-ax 4 -CanaryRoute canary://signal/oil
   xcrun simctl ui "$UDID" content_size large
 fi
 

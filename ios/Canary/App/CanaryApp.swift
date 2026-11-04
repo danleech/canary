@@ -28,12 +28,13 @@ struct CanaryApp: App {
                 .environment(router)
                 .onOpenURL { router.open($0) }
                 .task {
+                    #if DEBUG
+                    // Before the refresh, so screens open at once from the saved board.
+                    DebugLaunch.applyNavigation(router)
+                    #endif
                     plus.start()
                     store.startClock()
                     await store.refresh()
-                    #if DEBUG
-                    DebugLaunch.applyNavigation(router)
-                    #endif
                 }
         }
         .onChange(of: scenePhase) { _, phase in

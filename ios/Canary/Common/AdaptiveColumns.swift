@@ -1,30 +1,32 @@
 import SwiftUI
 
-/// One column at compact width. Two columns at regular width — iPhone Duo's
-/// inner display, or a Pro Max in landscape — so the single-column layout
-/// reflows instead of stretching (HIG, *Designing for iPhone Duo*: Reflow).
+/// Two columns when there's room for both at a comfortable width — iPhone Duo's
+/// inner display, beside its sidebar or not, or any iPhone in landscape — and
+/// one column otherwise, so the single-column layout reflows instead of
+/// stretching (HIG, *Designing for iPhone Duo*: Reflow). The choice is made
+/// from the width actually available, in one layout pass, never from the
+/// device model.
 ///
-/// On iPhone Duo the gutter between the columns is placed on the hinge, so no
-/// card is creased when the device is folded like a book. The fold is not in
-/// the middle of the safe area (the vertical bar takes one side), so the split
-/// comes from the display's reserved regions rather than from halving the width.
+/// On iPhone Duo the gutter between the columns is placed on the hinge when it
+/// falls between two usable columns, so no card is creased when the device is
+/// folded like a book. The fold is not in the middle of the safe area (the
+/// vertical bar takes one side), so its position comes from the display's
+/// reserved regions rather than from halving the width.
 struct AdaptiveColumns<Leading: View, Trailing: View>: View {
     var spacing: CGFloat = 16
     @ViewBuilder var leading: Leading
     @ViewBuilder var trailing: Trailing
 
-    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     @Environment(\.dynamicTypeSize) private var typeSize
+    @State private var fold: ColumnSplit?
 
     var body: some View {
-        if horizontalSizeClass == .regular, !typeSize.isAccessibilitySize {
-            TwoColumns(spacing: spacing) { leading } trailing: { trailing }
-        } else {
-            VStack(alignment: .leading, spacing: spacing) {
-                leading
-                trailing
-            }
+        ColumnsLayout(spacing: spacing, allowsColumns: !typeSize.isAccessibilitySize, fold: fold) {
+            VStack(alignment: .leading, spacing: spacing) { leading }
+            VStack(alignment: .leading, spacing: spacing) { trailing }
         }
+        .frame(maxWidth: .infinity, alignment: .topLeading)
+        .modifier(FoldReader(fold: $fold))
     }
 }
 
@@ -34,72 +36,78 @@ struct ColumnSplit: Equatable {
     var gutter: CGFloat
 }
 
-private struct TwoColumns<Leading: View, Trailing: View>: View {
-    let spacing: CGFloat
-    @ViewBuilder var leading: Leading
-    @ViewBuilder var trailing: Trailing
+/// Places its first subview beside its second when both columns can be at least
+/// `minColumnWidth` wide, and stacks them otherwise.
+struct ColumnsLayout: Layout {
+    var spacing: CGFloat
+    var allowsColumns: Bool
+    var fold: ColumnSplit?
+    var minColumnWidth: CGFloat = 300
 
-    @State private var split: ColumnSplit?
-
-    var body: some View {
-        Group {
-            if let split {
-                HStack(alignment: .top, spacing: 0) {
-                    column { leading }
-                        .frame(width: split.leading)
-                    Color.clear
-                        .frame(width: split.gutter, height: 1)
-                        .accessibilityHidden(true)
-                    column { trailing }
-                        .frame(maxWidth: .infinity)
-                }
-            } else {
-                HStack(alignment: .top, spacing: spacing) {
-                    column { leading }
-                    column { trailing }
-                }
-            }
+    private func split(for width: CGFloat) -> ColumnSplit? {
+        guard allowsColumns, width >= minColumnWidth * 2 + spacing else { return nil }
+        if let fold, fold.leading >= minColumnWidth, width - fold.leading - fold.gutter >= minColumnWidth {
+            return fold
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .modifier(FoldReader(spacing: spacing, split: $split))
+        return ColumnSplit(leading: (width - spacing) / 2, gutter: spacing)
     }
 
-    private func column<C: View>(@ViewBuilder _ content: () -> C) -> some View {
-        VStack(alignment: .leading, spacing: spacing) { content() }
-            .frame(maxWidth: .infinity, alignment: .topLeading)
+    func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
+        let width = proposal.width
+            ?? subviews.map { $0.sizeThatFits(.unspecified).width }.max()
+            ?? 0
+        if subviews.count == 2, let split = split(for: width) {
+            let leading = subviews[0].sizeThatFits(ProposedViewSize(width: split.leading, height: nil))
+            let trailing = subviews[1].sizeThatFits(ProposedViewSize(width: width - split.leading - split.gutter, height: nil))
+            return CGSize(width: width, height: max(leading.height, trailing.height))
+        }
+        let heights = subviews.map { $0.sizeThatFits(ProposedViewSize(width: width, height: nil)).height }
+        let gaps = heights.filter { $0 > 0 }.count
+        return CGSize(width: width, height: heights.reduce(0, +) + spacing * CGFloat(max(gaps - 1, 0)))
+    }
+
+    func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
+        if subviews.count == 2, let split = split(for: bounds.width) {
+            subviews[0].place(at: bounds.origin, anchor: .topLeading,
+                              proposal: ProposedViewSize(width: split.leading, height: nil))
+            subviews[1].place(at: CGPoint(x: bounds.minX + split.leading + split.gutter, y: bounds.minY),
+                              anchor: .topLeading,
+                              proposal: ProposedViewSize(width: bounds.width - split.leading - split.gutter, height: nil))
+            return
+        }
+        var y = bounds.minY
+        for subview in subviews {
+            let size = subview.sizeThatFits(ProposedViewSize(width: bounds.width, height: nil))
+            subview.place(at: CGPoint(x: bounds.minX, y: y), anchor: .topLeading,
+                          proposal: ProposedViewSize(width: bounds.width, height: nil))
+            if size.height > 0 { y += size.height + spacing }
+        }
     }
 }
 
-/// Reads the container's width and, on iOS 27.1 or later, the vertical fold.
+/// On iOS 27.1 or later, reads where the hinge falls across this view.
 private struct FoldReader: ViewModifier {
-    let spacing: CGFloat
-    @Binding var split: ColumnSplit?
+    @Binding var fold: ColumnSplit?
 
     func body(content: Content) -> some View {
         if #available(iOS 27.1, *) {
-            content.onGeometryChange(for: ColumnSplit.self) { proxy in
-                Self.foldSplit(proxy, spacing: spacing) ?? Self.evenSplit(proxy.size.width, spacing: spacing)
-            } action: { split = $0 }
+            content.onGeometryChange(for: ColumnSplit?.self) { proxy in
+                Self.foldSplit(proxy)
+            } action: { fold = $0 }
         } else {
-            content.onGeometryChange(for: ColumnSplit.self) { proxy in
-                Self.evenSplit(proxy.size.width, spacing: spacing)
-            } action: { split = $0 }
+            content
         }
-    }
-
-    static func evenSplit(_ width: CGFloat, spacing: CGFloat) -> ColumnSplit {
-        ColumnSplit(leading: max((width - spacing) / 2, 0), gutter: spacing)
     }
 
     /// Uses the hinge's region, active or not, as the gutter. Its frame already
     /// includes the margins either side of the crease.
     @available(iOS 27.1, *)
-    static func foldSplit(_ proxy: GeometryProxy, spacing: CGFloat) -> ColumnSplit? {
+    static func foldSplit(_ proxy: GeometryProxy) -> ColumnSplit? {
         let regions = proxy.reservedRegions(kind: .division, options: .includeInactive)
-        guard let fold = regions.first(where: { $0.frame.height > $0.frame.width })?.frame else { return nil }
+        // A vertical fold: taller than it is wide.
+        guard let frame = regions.first(where: { $0.frame.height > $0.frame.width })?.frame else { return nil }
         let width = proxy.size.width
-        // Only use the fold when both sides keep a sensible column.
-        guard fold.minX > width * 0.3, fold.maxX < width * 0.7 else { return nil }
-        return ColumnSplit(leading: fold.minX, gutter: max(fold.width, spacing))
+        guard frame.minX > 0, frame.maxX < width else { return nil }
+        return ColumnSplit(leading: frame.minX, gutter: max(frame.width, 16))
     }
 }

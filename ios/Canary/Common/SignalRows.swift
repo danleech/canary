@@ -96,13 +96,14 @@ struct PinnedRow: View {
 
     private var title: some View {
         VStack(alignment: .leading, spacing: 2) {
+            // Wrap rather than truncate: names and domains stay whole on narrow iPhones.
             Text(signal.name)
                 .font(.headline)
-                .lineLimit(2)
+                .fixedSize(horizontal: false, vertical: true)
             Text(signal.domainName ?? signal.domain.capitalized)
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
-                .lineLimit(1)
+                .fixedSize(horizontal: false, vertical: true)
         }
     }
 

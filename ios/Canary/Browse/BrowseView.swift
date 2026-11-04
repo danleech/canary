@@ -11,8 +11,11 @@ struct BrowseView: View {
 
     var body: some View {
         @Bindable var router = router
+        // Selecting from Browse's own list starts that item's stack afresh; folding
+        // or unfolding iPhone Duo (Router.adapt) carries the open stack across.
+        let selection = Binding(get: { router.browseSelection }, set: { router.selectBrowse($0) })
         NavigationSplitView {
-            BrowseSidebar(selection: $router.browseSelection)
+            BrowseSidebar(selection: selection)
                 .navigationTitle("Browse")
                 .toolbar { SettingsToolbarItem(isPresented: $showsSettings) }
         } detail: {
@@ -32,7 +35,6 @@ struct BrowseView: View {
             .id(router.browseSelection)
         }
         .sheet(isPresented: $showsSettings) { SettingsView() }
-        .onChange(of: router.browseSelection) { router.browsePath = [] }
         .onAppear {
             // Side by side, show something in the detail column from the start.
             if horizontalSizeClass == .regular, router.browseSelection == nil {

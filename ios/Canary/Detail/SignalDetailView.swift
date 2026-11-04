@@ -12,6 +12,9 @@ struct SignalDetailView: View {
     @Environment(PinStore.self) private var pins
     @Environment(PlusStore.self) private var plus
     @State private var showsPaywall = false
+    /// The name moves into the navigation bar once the large header scrolls away,
+    /// as in the App Store and Music.
+    @State private var showsBarTitle = false
 
     var body: some View {
         if let board = store.board, let signal = board.signal(signalID) {
@@ -38,9 +41,22 @@ struct SignalDetailView: View {
                 .padding(.bottom, 24)
             }
             .background(Color(.systemGroupedBackground))
+            .onScrollGeometryChange(for: Bool.self) { geometry in
+                geometry.contentOffset.y + geometry.contentInsets.top > 100
+            } action: { _, isPast in
+                withAnimation(.easeInOut(duration: 0.2)) { showsBarTitle = isPast }
+            }
             .navigationTitle(signal.name)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text(signal.name)
+                        .font(.headline)
+                        .lineLimit(1)
+                        .opacity(showsBarTitle ? 1 : 0)
+                        .accessibilityHidden(!showsBarTitle)
+                }
+                .sharedBackgroundVisibility(.hidden)
                 ToolbarItem(placement: .topBarTrailing) { pinButton(signal) }
                 if let url = signal.url {
                     ToolbarItem(placement: .topBarTrailing) {
@@ -87,9 +103,14 @@ struct SignalDetailView: View {
 private struct SignalHeader: View {
     let signal: Signal
     @Environment(BoardStore.self) private var store
+    @Environment(\.dynamicTypeSize) private var typeSize
 
     var body: some View {
         let level = signal.level(at: store.now)
+        // Level and trend side by side, stacked at accessibility text sizes.
+        let levelLayout = typeSize.isAccessibilitySize
+            ? AnyLayout(VStackLayout(alignment: .leading, spacing: 4))
+            : AnyLayout(HStackLayout(alignment: .firstTextBaseline, spacing: 12))
         VStack(alignment: .leading, spacing: 8) {
             Label(signal.domainName ?? signal.domain.capitalized, systemImage: DomainStyle.symbol(for: signal.domain))
                 .font(.subheadline.weight(.semibold))
@@ -97,7 +118,7 @@ private struct SignalHeader: View {
             Text(signal.name)
                 .font(.largeTitle.bold())
                 .fixedSize(horizontal: false, vertical: true)
-            HStack(alignment: .firstTextBaseline, spacing: 12) {
+            levelLayout {
                 StatusLabel(level, font: .title2.weight(.bold))
                 if let trend = signal.trend, trend != .unknown {
                     Label(trend.label, systemImage: trend.symbol)

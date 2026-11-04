@@ -25,7 +25,11 @@ struct SettingsView: View {
                         showsPinEditor = true
                     } label: {
                         LabeledContent("Pinned Signals") {
-                            Text(plus.isPlus ? "\(pins.ids.count)" : "\(pins.ids.count) of \(PlusFeature.freePinLimit)")
+                            // "2 of 3" on the free plan; just the count with Canary+ or over the limit
+                            // (pins are kept if a subscription lapses).
+                            let count = pins.ids.count
+                            Text(plus.isPlus || count > PlusFeature.freePinLimit
+                                 ? "\(count)" : "\(count) of \(PlusFeature.freePinLimit)")
                         }
                     }
                     .foregroundStyle(.primary)
@@ -35,8 +39,9 @@ struct SettingsView: View {
             .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .confirmationAction) {
-                    Button("Done") { dismiss() }
+                // iOS 26 sheets close with the system's glass ✕ button.
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button(role: .close) { dismiss() }
                 }
             }
             .sheet(isPresented: $showsPaywall) { CanaryPlusView(reason: .general) }
