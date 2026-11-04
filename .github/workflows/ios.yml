@@ -111,7 +111,8 @@ jobs:
             build 2>&1 | tee build.log | xcbeautify --renderer github-actions
       - name: Diagnostics
         if: always()
-        run: grep -E "(error|warning): " build.log | sed -E 's#^.*/ios/##' | sort -u | head -100 || true
+        run: |
+          grep -E "(error|warning): " build.log | sed -E 's#^.*/ios/##' | sort -u | head -100 || true
 
   screenshots:
     needs: build
