@@ -14,6 +14,9 @@ import SwiftUI
 /// reserved regions rather than from halving the width.
 struct AdaptiveColumns<Leading: View, Trailing: View>: View {
     var spacing: CGFloat = 16
+    /// Narrowest a column may be. Summary asks for more, so its pinned rows
+    /// (name, sparkline, level and value) never get squeezed.
+    var minColumnWidth: CGFloat = 300
     @ViewBuilder var leading: Leading
     @ViewBuilder var trailing: Trailing
 
@@ -21,7 +24,8 @@ struct AdaptiveColumns<Leading: View, Trailing: View>: View {
     @State private var fold: ColumnSplit?
 
     var body: some View {
-        ColumnsLayout(spacing: spacing, allowsColumns: !typeSize.isAccessibilitySize, fold: fold) {
+        ColumnsLayout(spacing: spacing, allowsColumns: !typeSize.isAccessibilitySize, fold: fold,
+                      minColumnWidth: minColumnWidth) {
             VStack(alignment: .leading, spacing: spacing) { leading }
             VStack(alignment: .leading, spacing: spacing) { trailing }
         }

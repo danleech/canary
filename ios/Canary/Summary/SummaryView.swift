@@ -16,7 +16,7 @@ struct SummaryView: View {
                         if let message = store.errorMessage {
                             OfflineBanner(message: message)
                         }
-                        AdaptiveColumns {
+                        AdaptiveColumns(minColumnWidth: 330) {
                             NavigationLink(value: Route.world) {
                                 WorldStateCard(board: board)
                             }
