@@ -6,7 +6,11 @@ struct WorldStateWidget: Widget {
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: WidgetKinds.world, provider: WorldProvider()) { entry in
             WorldStateWidgetView(entry: entry)
-                .containerBackground(.background, for: .widget)
+                .containerBackground(for: .widget) {
+                    // The app's pastel mesh in the band's colours.
+                    BandMeshBackground(band: entry.board?.status.world.bandKind ?? .unknown,
+                                       base: Color(.systemBackground))
+                }
                 .widgetURL(DeepLink.world.url)
         }
         .configurationDisplayName("World State")
@@ -68,7 +72,7 @@ struct WorldStateWidgetView: View {
             WidgetCaption(text: "World State", systemImage: "globe")
             Spacer(minLength: 0)
             Text(score(board))
-                .font(.system(size: 46, weight: .semibold, design: .rounded))
+                .font(.system(size: 46, weight: .bold, design: .rounded))
                 .monospacedDigit()
                 .minimumScaleFactor(0.7)
                 .widgetAccentable()
@@ -88,6 +92,11 @@ struct WorldStateWidgetView: View {
         let alerts = board.signals(withLevel: .alert, at: entry.date)
         return HStack(alignment: .top, spacing: 16) {
             small(board)
+                .overlay(alignment: .topTrailing) {
+                    ScoreRing(score: board.status.world.score, band: board.status.world.bandKind, lineWidth: 7)
+                        .frame(width: 44, height: 44)
+                        .widgetAccentable()
+                }
             VStack(alignment: .leading, spacing: 6) {
                 WidgetCaption(text: "On Alert", systemImage: Level.alert.symbol)
                 ForEach(alerts.prefix(4)) { signal in

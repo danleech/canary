@@ -144,11 +144,12 @@ struct WorldHeroTile: View {
                     .font(.subheadline)
                     .fixedSize(horizontal: false, vertical: true)
             }
-            GlassEffectContainer(spacing: 8) {
-                ViewThatFits(in: .horizontal) {
-                    HStack(spacing: 8) { chips(levels, counts) }
-                    VStack(alignment: .leading, spacing: 8) { chips(levels, counts) }
-                }
+            // One row of chips; a column only at accessibility text sizes.
+            let chipLayout = typeSize.isAccessibilitySize
+                ? AnyLayout(VStackLayout(alignment: .leading, spacing: 8))
+                : AnyLayout(HStackLayout(spacing: 6))
+            GlassEffectContainer(spacing: 6) {
+                chipLayout { chips(levels, counts) }
             }
             BoardFreshnessText()
         }

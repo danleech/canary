@@ -120,38 +120,22 @@ struct GlassCountChip: View {
     let count: Int
 
     var body: some View {
-        HStack(spacing: 5) {
-            StatusGlyph(level, font: .subheadline)
+        HStack(spacing: 4) {
+            StatusGlyph(level, font: .footnote)
             Text("\(count)")
                 .font(.subheadline.weight(.bold))
                 .fontDesign(.rounded)
                 .monospacedDigit()
             Text(level.label)
-                .font(.subheadline.weight(.medium))
+                .font(.footnote.weight(.medium))
         }
-        .padding(.horizontal, 12)
-        .padding(.vertical, 7)
+        .lineLimit(1)
+        .fixedSize()
+        .padding(.horizontal, 10)
+        .padding(.vertical, 6)
         .glassEffect(.regular, in: .capsule)
         .accessibilityElement(children: .ignore)
         .accessibilityLabel("\(count) \(level.label)")
-    }
-}
-
-/// Weather-style pastel mesh gradient in the World State band's colours.
-struct BandMeshBackground: View {
-    let band: WorldBand
-
-    var body: some View {
-        MeshGradient(
-            width: 3, height: 3,
-            points: [
-                [0, 0], [0.5, 0], [1, 0],
-                [0, 0.5], [0.62, 0.42], [1, 0.5],
-                [0, 1], [0.45, 1], [1, 1],
-            ],
-            colors: band.meshColors
-        )
-        .background(Color(.secondarySystemGroupedBackground))
     }
 }
 

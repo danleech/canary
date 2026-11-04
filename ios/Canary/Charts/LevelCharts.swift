@@ -4,32 +4,6 @@ import SwiftUI
 // Charts of attention levels. Levels use their own colours and nothing else
 // does; every chart also names the level in text or by shape.
 
-/// An Activity-style ring for the World State score out of 100.
-struct ScoreRing: View {
-    let score: Int?
-    let band: WorldBand
-    var lineWidth: CGFloat = 14
-
-    var body: some View {
-        let fraction = CGFloat(min(max(score ?? 0, 0), 100)) / 100
-        ZStack {
-            Circle()
-                .stroke(Color.primary.opacity(0.08), lineWidth: lineWidth)
-            Circle()
-                .trim(from: 0, to: max(fraction, 0.001))
-                .stroke(
-                    AngularGradient(colors: band.ringColors, center: .center,
-                                    startAngle: .degrees(0), endAngle: .degrees(360 * Double(fraction))),
-                    style: StrokeStyle(lineWidth: lineWidth, lineCap: .round)
-                )
-                .rotationEffect(.degrees(-90))
-                .shadow(color: band.color.opacity(0.25), radius: 4, y: 2)
-        }
-        .padding(lineWidth / 2)
-        .accessibilityHidden(true)
-    }
-}
-
 private struct LevelSlice: Identifiable {
     let level: Level
     let count: Int
@@ -108,11 +82,12 @@ struct LevelMixColumns: View {
 
     var body: some View {
         Chart(data) { item in
-            BarMark(x: .value("Day", item.day, unit: .day), y: .value("Signals", item.count), width: .ratio(0.62))
+            BarMark(x: .value("Day", item.day, unit: .day), y: .value("Signals", item.count), width: .ratio(0.5))
                 .foregroundStyle(by: .value("Level", item.level.label))
-                .cornerRadius(3)
+                .cornerRadius(4)
         }
-        .chartForegroundStyleScale(["Alert": Level.alert.color, "Watch": Level.watch.color, "Normal": Level.normal.color])
+        .chartForegroundStyleScale(["Alert": Level.alert.color.gradient, "Watch": Level.watch.color.gradient,
+                                    "Normal": Level.normal.color.gradient])
         .chartLegend(.hidden)
         .chartXAxis {
             AxisMarks(values: .stride(by: .day)) { _ in
