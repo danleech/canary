@@ -23,13 +23,13 @@
      "date": "2026-11-03"
     }
    ],
-   "value": "VIX 17.1, S&P -1.4%",
-   "value_num": 17.08,
-   "checked_at": "2026-11-04T17:53:13Z",
+   "value": "VIX 16.6, S&P -1.7%",
+   "value_num": 16.61,
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-11-04T17:53:13Z",
-   "rubric_hit": "VIX 17.1 < 20 and S&P drawdown 1.4% < 5% = Normal",
+   "rubric_hit": "VIX 16.6 below the 20 Watch line; S&P drawdown 1.67% below the 5% Watch line",
    "basis": "measured",
-   "basis_detail": "VIX=17.08; S&P drawdown %=1.45",
+   "basis_detail": "VIX=16.61; S&P drawdown %=1.67",
    "assessed_at": "2026-11-04T17:53:13Z"
   },
   "ftse": {
@@ -47,7 +47,7 @@
    ],
    "value": "10,829, -0.8% from high",
    "value_num": 10829.21,
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "FTSE drawdown 0.75% below the 5% Watch line",
    "basis": "measured",
@@ -72,13 +72,13 @@
      "date": "2026-11-03"
     }
    ],
-   "value": "MOVE 95, 10y 4.90%",
-   "value_num": 95.0266,
-   "checked_at": "2026-11-04T17:53:13Z",
+   "value": "MOVE 94, 10y 4.89%",
+   "value_num": 93.8846,
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "MOVE 95 has not yet cleared the 90 exit line, so Watch holds; US10y 1m move 37.7bp has not yet cleared the 36bp exit line, so Watch holds",
+   "rubric_hit": "MOVE 93.9 has not yet cleared the 90 exit line, so Watch holds; US10y 1m move 38.3bp has not yet cleared the 36bp exit line, so Watch holds",
    "basis": "measured",
-   "basis_detail": "MOVE=95.03; US10y 1m move bp=37.70",
+   "basis_detail": "MOVE=93.88; US10y 1m move bp=38.30",
    "assessed_at": "2026-11-04T05:53:41Z"
   },
   "credit-spreads": {
@@ -96,7 +96,7 @@
    ],
    "value": "HY OAS 3.40%",
    "value_num": 3.4,
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "HY OAS 3.4% below the 4% Watch line",
    "basis": "measured",
@@ -116,13 +116,13 @@
      "date": "2026-11-04"
     }
    ],
-   "value": "DXY 101.4, 3m +1.9%",
-   "value_num": 101.448,
-   "checked_at": "2026-11-04T17:53:13Z",
+   "value": "DXY 101.5, 3m +1.9%",
+   "value_num": 101.492,
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "DXY 3m move 1.86% below the 5% Watch line",
+   "rubric_hit": "DXY 3m move 1.9% below the 5% Watch line",
    "basis": "measured",
-   "basis_detail": "DXY 3m move %=1.86",
+   "basis_detail": "DXY 3m move %=1.90",
    "assessed_at": "2026-11-04T05:53:41Z"
   },
   "banking-stress": {
@@ -143,13 +143,13 @@
      "date": "2026-11-02"
     }
    ],
-   "value": "STLFSI -0.58, CISS 0.01",
-   "value_num": -0.5837,
-   "checked_at": "2026-11-04T17:53:13Z",
+   "value": "STLFSI -0.52, CISS 0.01",
+   "value_num": -0.5224,
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "STLFSI -0.58 below the 0 Watch line; ECB CISS 0.01 below the 0.25 Watch line",
+   "rubric_hit": "STLFSI -0.52 below the 0 Watch line; ECB CISS 0.01 below the 0.25 Watch line",
    "basis": "measured",
-   "basis_detail": "STLFSI=-0.58; ECB CISS=0.01",
+   "basis_detail": "STLFSI=-0.52; ECB CISS=0.01",
    "assessed_at": "2026-11-04T05:53:41Z"
   },
   "gold": {
@@ -165,13 +165,13 @@
      "date": "2026-11-04"
     }
    ],
-   "value": "$4,076, 3m -7.4%",
-   "value_num": 4076.1,
-   "checked_at": "2026-11-04T17:53:13Z",
+   "value": "$4,071, 3m -7.5%",
+   "value_num": 4070.6,
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-11-04T11:42:46Z",
-   "rubric_hit": "Gold 3m gain -7.36% below the 10% Watch line",
+   "rubric_hit": "Gold 3m gain -7.48% below the 10% Watch line",
    "basis": "measured",
-   "basis_detail": "Gold 3m gain %=-7.36",
+   "basis_detail": "Gold 3m gain %=-7.48",
    "assessed_at": "2026-11-04T11:42:46Z"
   },
   "crypto": {
@@ -197,13 +197,13 @@
      "date": "2026-11-04"
     }
    ],
-   "value": "BTC $80,202, -7% from high",
-   "value_num": 80202,
-   "checked_at": "2026-11-04T17:53:13Z",
+   "value": "BTC $80,597, -7% from high",
+   "value_num": 80597.08,
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-11-04T17:53:13Z",
-   "rubric_hit": "BTC drawdown 7% < 25%; no top-10 exchange failing = Normal",
+   "rubric_hit": "BTC drawdown 6.93% below the 25% Watch line",
    "basis": "measured",
-   "basis_detail": "BTC drawdown %=7.39",
+   "basis_detail": "BTC drawdown %=6.93",
    "assessed_at": "2026-11-04T17:53:13Z"
   },
   "us-recession": {
@@ -224,9 +224,9 @@
      "date": "2026-11-04"
     }
    ],
-   "value": "Sahm 0.00, 10y–2y +0.34",
+   "value": "Sahm 0.00, 10y–2y +0.32",
    "value_num": 0.0,
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "Sahm 0 below the 0.3 Watch line",
    "basis": "measured",
@@ -398,34 +398,34 @@
   "oil": {
    "status": "red",
    "trend": "down",
-   "summary": "Brent near $94 on deal hopes, but Hormuz remains largely shut to shipping",
-   "state": "Brent fell to about $94 on 4 Nov, down about 18% in a week, as Democrats won Congress and talks on a US–Iran deal continued (Yahoo Finance; ProtoThema). The price alone is in the Watch band, but Alert holds on the physical outage: Hormuz is still largely closed, and Iran says it will reopen the strait within two days only if the US meets its demands, including ending the naval blockade (Al Jazeera, 4 Nov).",
-   "for_you": "Fuel and heating costs follow crude with a lag, so recent falls may take weeks to reach pump prices. Prices could move sharply either way on news from the Gulf.",
+   "summary": "Brent near $95, below $100 on deal hopes, but Hormuz remains largely shut to shipping",
+   "state": "Brent was about $94.6 late on 4 Nov, down about 18% in a week; it fell below $100 on 4 Nov for the first time since early October as US–Iran talks continued (Yahoo Finance; Gulf News). The price alone is in the Watch band, but Alert holds on the physical outage: Hormuz is still largely closed, and the IRGC said on 4 Nov that four tankers hit mines near the strait (Reuters via US News).",
+   "for_you": "Fuel and transport costs stay exposed to Gulf supply news; price swings of several percent a day have been common since late October.",
    "sources": [
     {
-     "title": "Yahoo Finance — Brent crude futures",
+     "title": "Yahoo Finance — Brent crude futures (BZ=F)",
      "url": "https://finance.yahoo.com/quote/BZ%3DF",
      "date": "2026-11-04"
     },
     {
-     "title": "ProtoThema — Brent nears three-week low",
-     "url": "https://en.protothema.gr/2026/11/04/oil-brent-nears-three-week-low-as-markets-assess-potential-developments-in-us-iran-relations/",
+     "title": "Gulf News — Trump signals 'heavy hit' as tankers catch fire near Hormuz",
+     "url": "https://gulfnews.com/world/mena/middle-east-conflict-trump-warns-of-heavy-hit-as-iran-says-americans-voted-no-to-war-1.500735100",
      "date": "2026-11-04"
     },
     {
-     "title": "Al Jazeera — Iran says US reply to Hormuz plan unconvincing",
-     "url": "https://www.aljazeera.com/news/2026/11/4/iran-says-us-reply-to-hormuz-plan-unconvincing-trump-confirms-strikes",
-     "date": "2026-11-04"
+     "title": "US News/Reuters — Iran's IRGC says four tankers ablaze after hitting mines near Hormuz",
+     "url": "https://www.usnews.com/news/world/articles/2026-11-03/irans-irgc-says-four-tankers-ablaze-after-hitting-mines-near-strait-of-hormuz",
+     "date": "2026-11-03"
     }
    ],
-   "value": "$94.0, 1m -6%",
-   "value_num": 93.95,
-   "checked_at": "2026-11-04T17:53:13Z",
+   "value": "$94.6, 1m -6%",
+   "value_num": 94.62,
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "Major physical supply outage (Hormuz largely shut, >2 mb/d) = Alert; Brent $94 alone = Watch",
+   "rubric_hit": "Major physical supply outage > 2 mb/d (Hormuz largely shut) = Alert; Brent $94.6 alone is Watch",
    "basis": "judged",
    "basis_detail": "raised above the data floor on reported events",
-   "assessed_at": "2026-11-04T17:53:13Z"
+   "assessed_at": "2026-11-04T23:43:43Z"
   },
   "eu-gas": {
    "status": "red",
@@ -446,12 +446,12 @@
     }
    ],
    "value": "€85/MWh",
-   "value_num": 85.065,
-   "checked_at": "2026-11-04T17:53:13Z",
+   "value_num": 85.03,
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "TTF €85.1/MWh > €70/MWh Alert line",
+   "rubric_hit": "TTF €85/MWh > €70/MWh Alert line",
    "basis": "measured",
-   "basis_detail": "TTF €/MWh=85.06",
+   "basis_detail": "TTF €/MWh=85.03",
    "assessed_at": "2026-11-04T05:53:41Z"
   },
   "chokepoints": {
@@ -477,7 +477,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Hormuz largely shut; mine claims 4 Nov",
    "rubric_hit": "Hormuz traffic materially impeded = Alert",
@@ -579,7 +579,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "49 PLA aircraft near Taiwan (3 Nov)",
    "rubric_hit": "Routine PLA activity, no declared large-scale exercise = Normal",
@@ -606,7 +606,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Black Sea ship attacks; air alerts",
    "rubric_hit": "Airspace alerts and attacks near NATO coasts = Watch; no Article 4",
@@ -637,7 +637,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No IAEA access; strike threats",
    "rubric_hit": "Inspector access curtailed and credible strike threats = Watch",
@@ -663,7 +663,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Missile salvo 4 Nov; 4th launch in a month",
    "rubric_hit": "Ballistic or cruise missile launches = Watch; no nuclear test or ICBM overflight",
@@ -684,7 +684,7 @@
      "date": "2026-10-14"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Rare-earth pause ends 10 Nov",
    "rubric_hit": "Major export controls threatened between large economies = Watch",
@@ -747,34 +747,29 @@
   "russia-ukraine": {
    "status": "red",
    "trend": "up",
-   "summary": "Toll from Russian strike on Zaporizhzhia aid point reaches 33; mass drone and missile strikes",
-   "state": "The toll from the 2 Nov Russian guided-bomb strike on people collecting aid in Komyshuvakha, Zaporizhzhia region, rose to 33 on 3 Nov, with dozens missing (Ukrainska Pravda). Overnight into 3 Nov Russia launched 289 drones and 17 ballistic missiles at energy sites and a Kharkiv medical facility, Zelensky said (Euronews). US-mediated working-level talks are planned for 10–11 Nov in Abu Dhabi.",
-   "for_you": "Follow FCDO advice against all travel to Ukraine. Energy-market effects are indirect.",
+   "summary": "Russian strikes damage power sites in nine Ukrainian regions; both sides trade hundreds of drones",
+   "state": "Zelensky said Russian overnight attacks into 4 Nov damaged power facilities and substations in nine regions, including Odesa, Kharkiv and Dnipro; Ukraine's air force said it shot down 272 drones (ABC News). Russia said it downed 709 Ukrainian drones, and Belgorod officials reported three deaths from Ukrainian strikes on 4 Nov (Al Jazeera). This follows the 2 Nov strike on an aid point in Zaporizhzhia region; US-mediated talks are planned in Abu Dhabi in mid-November.",
+   "for_you": "Follow FCDO travel advice: it advises against all travel to Ukraine. Energy-sector strikes tend to bring rolling power cuts across Ukraine.",
    "sources": [
     {
-     "title": "Ukrainska Pravda — Komyshuvakha strike: death toll rises to 33",
-     "url": "https://www.pravda.com.ua/eng/news/2026/11/03/8061054/",
-     "date": "2026-11-03"
+     "title": "ABC News — Ukraine and Russia trade hundreds of drones overnight",
+     "url": "https://abcnews.com/International/ukraine-russia-trade-hundreds-drones-overnight-moscow-continues/story?id=137838953",
+     "date": "2026-11-04"
     },
     {
-     "title": "Euronews — Russia pounds Ukraine with 289 drones and 17 ballistic missiles",
-     "url": "https://www.euronews.com/2026/11/03/russia-pounds-ukraine-with-289-drones-and-17-ballistic-missiles-in-overnight-strikes-zelen",
-     "date": "2026-11-03"
-    },
-    {
-     "title": "Ukrinform — Death toll from Komyshuvakha airstrike rises to 31",
-     "url": "https://www.ukrinform.net/amp/rubric-ato/4180863-death-toll-from-komyshuvakha-airstrike-rises-to-31-nearly-50-people-missing.html",
-     "date": "2026-11-03"
+     "title": "Al Jazeera — Ukrainian strikes kill three in Russia's Belgorod region",
+     "url": "https://www.aljazeera.com/news/2026/11/4/ukrainian-strikes-kill-three-in-russias-belgorod-region",
+     "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "33 killed at aid site; 289 drones 3 Nov",
+   "value": "Power hit in 9 regions; 709 drones (4 Nov)",
    "value_num": 33,
-   "rubric_hit": "Mass-casualty strike (33 killed, 2 Nov) = Alert",
+   "rubric_hit": "Mass-casualty strikes and large-scale strikes on energy infrastructure = significant escalation (Alert)",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-04T05:53:41Z"
+   "assessed_at": "2026-11-04T23:43:43Z"
   },
   "middle-east": {
    "status": "red",
@@ -799,7 +794,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "US–Iran war since 28 Feb",
    "rubric_hit": "Multi-front hostilities (Iran, Lebanon, Yemen) = Alert",
@@ -930,7 +925,7 @@
      "date": "2026-10-18"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Airspace bans; no strikes",
    "rubric_hit": "Treaty and airspace suspensions persist = Watch; no strikes",
@@ -951,7 +946,7 @@
      "date": "2026-11-01"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No US–Russia treaty limits",
    "rubric_hit": "Arms-control lapse without replacement = Watch",
@@ -977,7 +972,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No active storms; one 40% area",
    "rubric_hit": "No storm threatening land within 5 days = Normal",
@@ -987,31 +982,27 @@
    "assessed_at": "2026-11-04T05:53:41Z"
   },
   "other-cyclones": {
-   "status": "red",
+   "status": "green",
    "trend": "down",
-   "summary": "Cyclone Murasu weakens inland after Andhra Pradesh landfall; GDACS red alert still listed",
-   "state": "Severe cyclonic storm Murasu crossed the Andhra Pradesh coast near Ongole early on 3 Nov with winds of 100–110km/h and was forecast to weaken overnight. State officials reported two deaths in Bapatla district, 312 houses damaged, 52,459 hectares of crops hit and 12,230 people moved to relief centres (The News Minute, 4 Nov). GDACS still listed a red alert on 4 Nov.",
-   "for_you": "Follow India Meteorological Department and FCDO advice if travelling in Andhra Pradesh or Telangana.",
+   "summary": "Cyclone Murasu has dissipated inland; no GDACS orange or red cyclone alerts in force",
+   "state": "GDACS listed no orange or red tropical cyclone alerts on 4 Nov; its only active cyclone entry, In-Fa near Japan and the Marshall Islands, is green. Severe cyclonic storm Murasu crossed the Andhra Pradesh coast on 3 Nov and weakened inland, with two deaths reported in Bapatla district (The News Minute, 4 Nov).",
+   "for_you": "No cyclone currently threatens a populated coast in the Pacific or Indian Ocean. Check national weather agencies such as IMD or JMA before travel in season.",
    "sources": [
     {
-     "title": "GDACS — Tropical Cyclone MURASU-26",
-     "url": "https://www.gdacs.org/report.aspx?eventid=1001346&episodeid=10&eventtype=TC",
-     "date": "2026-11-04"
-    },
-    {
-     "title": "The News Minute — Cyclone Murasu leaves 2 dead, damages 312 houses in Andhra Pradesh",
-     "url": "https://www.thenewsminute.com/andhra-pradesh/cyclone-murasu-leaves-2-dead-damages-312-houses-in-andhra-pradesh",
+     "title": "GDACS — Tropical Cyclone In-Fa (green alert)",
+     "url": "https://www.gdacs.org/report.aspx?eventid=1001343&episodeid=50&eventtype=TC",
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
-   "changed_at": "2026-11-02T11:58:59Z",
-   "value": "Murasu: 2 dead, 12,230 moved (3 Nov)",
-   "rubric_hit": "GDACS cyclone: 1 red / 0 orange (Alert)",
+   "checked_at": "2026-11-04T23:43:43Z",
+   "changed_at": "2026-11-04T23:43:43Z",
+   "value": "No orange/red GDACS cyclone alerts",
+   "rubric_hit": "GDACS cyclone: 0 red / 0 orange = Normal",
    "basis": "measured",
-   "basis_detail": "GDACS cyclone: 1 red / 0 orange",
-   "assessed_at": "2026-11-04T05:53:41Z",
-   "value_num": 2
+   "basis_detail": "GDACS cyclone: 0 red / 0 orange",
+   "assessed_at": "2026-11-04T23:43:43Z",
+   "value_num": 2,
+   "override_reason": "Murasu has dissipated after landfall and GDACS shows no orange or red cyclone alert, so the measured status falls straight to Normal."
   },
   "heat": {
    "status": "green",
@@ -1047,7 +1038,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
    "rubric_hit": "GDACS wildfire: 0 red / 0 orange",
@@ -1073,7 +1064,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
    "rubric_hit": "GDACS flood: 0 red / 0 orange",
@@ -1096,7 +1087,7 @@
    ],
    "value": "Max M6.4, 4× M6+ (7d)",
    "value_num": 6.4,
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "max magnitude 6.4 below the 7 Watch line",
    "basis": "measured",
@@ -1170,7 +1161,7 @@
    ],
    "value": "G0 S0 R0",
    "value_num": 0,
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "NOAA G0 S0 R0 (24h max)",
    "basis": "measured",
@@ -1309,7 +1300,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "1 PHEIC (Ebola)",
    "value_num": 1,
@@ -1341,7 +1332,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "5,376 deaths; >10,000 cases (2 Nov)",
    "value_num": 5376,
@@ -1363,7 +1354,7 @@
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "US H5N1 death (1 Nov); no human spread",
    "rubric_hit": "Sporadic animal-to-human cases only = Normal",
@@ -1463,7 +1454,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No unexplained clusters",
    "rubric_hit": "No unexplained clusters under investigation = Normal",
@@ -1489,7 +1480,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Binance theft; EU freezer attacks",
    "rubric_hit": "Attacks disrupting large companies across countries = Watch",
@@ -1510,7 +1501,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No major outages",
    "rubric_hit": "No major outage > 2h in past 48h = Normal",
@@ -1709,7 +1700,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "10y ~5.2% (3 Nov)",
    "value_num": 5.2,
@@ -1759,7 +1750,7 @@
     }
    ],
    "value": "No warnings",
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-11-01T11:52:42Z",
    "value_num": 0,
    "rubric_hit": "worst warning: none",
@@ -1866,7 +1857,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "SOFR–IORB 5d max bp=7.00; Fed repo ops 5d max $bn=0.01",
@@ -1902,12 +1893,12 @@
   "yen-carry": {
    "status": "green",
    "trend": "flat",
-   "value": "¥158.2/$, 1w +0.2%",
-   "value_num": 158.21,
+   "value": "¥158.4/$, 1w +0.4%",
+   "value_num": 158.399,
    "summary": "Yen near ¥158 per dollar; little changed on the week and month",
    "state": "The dollar was near ¥157.9 early on 4 Nov, up 0.1% on the week and down 0.2% on the month, far inside the 3% weekly and 6% monthly Watch lines. No Japanese currency intervention had been reported as of 4 Nov.",
    "for_you": "Yen moves are calm; a sudden yen surge would be the warning sign for wider market selling.",
-   "rubric_hit": "USD/JPY 1w move 0.24% below the 3% Watch line; USD/JPY 1m move 0.05% below the 6% Watch line",
+   "rubric_hit": "USD/JPY 1w move 0.36% below the 3% Watch line; USD/JPY 1m move 0.07% below the 6% Watch line",
    "sources": [
     {
      "title": "Yahoo Finance — JPY=X",
@@ -1915,10 +1906,10 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
-   "basis_detail": "USD/JPY 1w move %=0.24; USD/JPY 1m move %=0.05",
+   "basis_detail": "USD/JPY 1w move %=0.36; USD/JPY 1m move %=0.07",
    "assessed_at": "2026-11-04T05:53:41Z"
   },
   "jobless-claims": {
@@ -2047,7 +2038,7 @@
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
@@ -2057,27 +2048,27 @@
    "status": "red",
    "trend": "flat",
    "value": "Hormuz largely shut; US blockade",
-   "summary": "Trump confirms strikes on Iranian air defences; Iran calls US reply on Hormuz plan unconvincing",
-   "state": "Trump confirmed US strikes on an Iranian anti-aircraft site, reported on Qeshm Island, calling it a 'minor attack' (Al Jazeera, 4 Nov). Iran's security council secretary called the US reply to its Hormuz plan 'not convincing'; Qatar says both sides remain committed to talks. The IRGC claimed on 4 Nov that four tankers hit mines and that it shot down US drones (bne IntelliNews).",
-   "for_you": "Follow FCDO travel advice for Iran and the Gulf states. Disruption to flights and shipping in the region can change at short notice.",
-   "rubric_hit": "Active strikes between states; Hormuz substantially closed = Alert",
+   "summary": "Trump says a 'heavy hit' on Iran may be needed; IRGC claims tankers hit mines near Hormuz",
+   "state": "Trump told Fox News on 4 Nov that the US may need to 'do something large', possibly a 'heavy hit', after confirming strikes on an Iranian air-defence site (Gulf News; Al Jazeera). Iran's security council called the US reply to its Hormuz plan 'not convincing', while Qatar says both sides remain committed to talks. The IRGC said on 4 Nov that four tankers hit mines and that it shot down a drone over the strait.",
+   "for_you": "Follow FCDO travel advice for Iran and the Gulf states; airspace and shipping routes in the region can close at short notice.",
+   "rubric_hit": "Active strikes between states and Hormuz substantially closed = Alert",
    "sources": [
     {
-     "title": "Al Jazeera — Iran says US reply to Hormuz plan unconvincing; Trump confirms strikes",
-     "url": "https://www.aljazeera.com/news/2026/11/4/iran-says-us-reply-to-hormuz-plan-unconvincing-trump-confirms-strikes",
+     "title": "Gulf News — Trump signals 'heavy hit' as tankers catch fire near Hormuz",
+     "url": "https://gulfnews.com/world/mena/middle-east-conflict-trump-warns-of-heavy-hit-as-iran-says-americans-voted-no-to-war-1.500735100",
      "date": "2026-11-04"
     },
     {
-     "title": "bne IntelliNews — IRGC says four more tankers hit mines, US drone downed",
-     "url": "https://www.intellinews.com/iran-s-irgc-says-four-more-tankers-hit-mines-in-hormuz-56th-us-drone-downed-481702/",
+     "title": "Al Jazeera — Iran says US reply to Hormuz plan 'unconvincing'; Trump confirms strikes",
+     "url": "https://www.aljazeera.com/news/2026/11/4/iran-says-us-reply-to-hormuz-plan-unconvincing-trump-confirms-strikes",
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-04T17:53:13Z"
+   "assessed_at": "2026-11-04T23:43:43Z"
   },
   "other-conflicts": {
    "status": "amber",
@@ -2177,12 +2168,12 @@
   "exploited-vulns": {
    "status": "green",
    "trend": "flat",
-   "value": "5 KEV adds (7d), 33 (30d)",
-   "value_num": 5,
+   "value": "6 KEV adds (7d), 34 (30d)",
+   "value_num": 6,
    "summary": "Five new CISA known-exploited vulnerabilities in a week",
    "state": "CISA added five vulnerabilities to its Known Exploited Vulnerabilities catalogue in the seven days to 3 Nov and 33 in 30 days, under the 11-a-week Watch line. Recent additions include WordPress Core (3 Nov) and two Ivanti Connect Secure flaws (30 Oct).",
    "for_you": "Install software updates promptly, especially for WordPress sites and VPN gateways.",
-   "rubric_hit": "KEV additions 7d 5 below the 11 Watch line",
+   "rubric_hit": "KEV additions 7d 6 below the 11 Watch line",
    "sources": [
     {
      "title": "CISA — Known Exploited Vulnerabilities catalogue",
@@ -2190,10 +2181,10 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
-   "basis_detail": "KEV additions 7d=5.00",
+   "basis_detail": "KEV additions 7d=6.00",
    "assessed_at": "2026-11-04T05:53:41Z"
   },
   "aid-funding": {
@@ -2265,23 +2256,23 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-04T17:53:13Z",
+   "checked_at": "2026-11-04T23:43:43Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "EA: 0 severe, 0 warnings",
    "assessed_at": "2026-11-04T05:53:41Z"
   }
  },
- "headline": "Brent fell to about $94 on US–Iran deal hopes, but Hormuz stays largely shut amid new strikes and IRGC mine claims. North Korea fired missiles on 4 Nov; Democrats won both houses of Congress.",
- "generated_at": "2026-11-04T17:53:13Z",
+ "headline": "The US–Iran war keeps Hormuz largely shut as Trump floats a 'heavy hit' on Iran, though Brent has slipped to about $95 on deal hopes. Russia struck power sites in nine Ukrainian regions on 4 Nov. Cyclone Murasu has dissipated.",
+ "generated_at": "2026-11-04T23:43:43Z",
  "world": {
-  "score": 39,
+  "score": 38,
   "band": "Unsettled",
   "status": "amber",
   "counts": {
-   "green": 35,
+   "green": 36,
    "amber": 37,
-   "red": 17
+   "red": 16
   },
   "by_domain": {
    "markets": 9,
@@ -2289,7 +2280,7 @@
    "energy": 75,
    "geopolitics": 36,
    "conflict": 67,
-   "hazards": 15,
+   "hazards": 5,
    "climate": 50,
    "health": 44,
    "tech": 33,
@@ -2304,7 +2295,7 @@
    "name": "US–Iran war and Gulf energy shock",
    "status": "red",
    "trend": "flat",
-   "summary": "Trump confirmed strikes on Iranian air defences; Iran called the US reply on Hormuz unconvincing on 4 Nov. Brent fell to about $94 on deal hopes.",
+   "summary": "Trump said on 4 Nov a 'heavy hit' on Iran may be needed; IRGC claims tankers hit mines near Hormuz. Brent fell to about $95 on deal hopes.",
    "signals": [
     "gulf-iran",
     "middle-east",
@@ -2324,7 +2315,7 @@
    "name": "Russia–Ukraine war and NATO's flank",
    "status": "red",
    "trend": "up",
-   "summary": "Toll from 2 Nov strike on a Zaporizhzhia aid point reached 33; Russian strikes on 3 Nov cut power widely. Talks set for 10–11 Nov.",
+   "summary": "Russian strikes damaged power sites in nine Ukrainian regions overnight into 4 Nov; Russia said it downed 709 drones. Talks set for mid-November.",
    "signals": [
     "russia-ukraine",
     "russia-nato",
@@ -2365,16 +2356,6 @@
    "signals": [
     "sudan",
     "famine"
-   ]
-  },
-  {
-   "id": "cyclone-murasu",
-   "name": "Cyclone Murasu",
-   "status": "red",
-   "trend": "down",
-   "summary": "Murasu crossed the Andhra Pradesh coast near Ongole on 3 Nov and weakened inland; two dead and 12,230 people moved to relief centres.",
-   "signals": [
-    "other-cyclones"
    ]
   },
   {

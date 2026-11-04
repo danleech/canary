@@ -1,5 +1,5 @@
 # Major floods — NORMAL (stable)
-id floods · Weather & Hazards · horizon acute · checked 2026-11-04T17:53Z · text written 2026-11-04T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-05T07:53Z
+id floods · Weather & Hazards · horizon acute · checked 2026-11-04T23:43Z · text written 2026-11-04T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-05T13:43Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/floods
 
 Value: GDACS: no orange/red

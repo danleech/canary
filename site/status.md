@@ -1,5 +1,5 @@
 # Canary — all signals
-as_of 2026-11-04T17:53Z · next run ~23:40 UK · stale after 2026-11-05T07:53Z (36h for daily-tier signals)
+as_of 2026-11-04T23:43Z · next run ~05:40 UK · stale after 2026-11-05T13:43Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 26 measured from open data, 12 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -8,23 +8,22 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | id | status | trend | basis | value | summary |
 |---|---|---|---|---|---|
 | sovereign-debt | ALERT | stable | judged | OAT–Bund 160bp (2 Nov) | France–Bund spread near 160bp, above the 150bp Alert line; general strike on 5 Nov |
-| oil | ALERT | improving | judged | $94.0, 1m -6% | Brent near $94 on deal hopes, but Hormuz remains largely shut to shipping |
+| oil | ALERT | improving | judged | $94.6, 1m -6% | Brent near $95, below $100 on deal hopes, but Hormuz remains largely shut to shipping |
 | eu-gas | ALERT | improving | measured | €85/MWh | European gas near €92/MWh, far above the €70 Alert line |
 | chokepoints | ALERT | stable | judged | Hormuz largely shut; mine claims 4 Nov | Hormuz largely shut; Iran's IRGC claims four tankers hit mines on 4 Nov |
 | freight | ALERT | improving | published | WCI $4,429/FEU (29 Oct) | Drewry container index $4,429, above the $4,000 Alert line |
 | food-prices | ALERT | stable | judged | FAO index 136.0 (Sep) | FAO food price index 136.0 in September, above the 135 Alert line; October due 6 Nov |
 | fertiliser | ALERT | stable | judged | Hormuz closed to Gulf urea exports | Gulf urea exports still stuck behind Hormuz in the conflict's ninth month |
-| russia-ukraine | ALERT | worsening | judged | 33 killed at aid site; 289 drones 3 Nov | Toll from Russian strike on Zaporizhzhia aid point reaches 33; mass drone and missile strikes |
+| russia-ukraine | ALERT | worsening | judged | Power hit in 9 regions; 709 drones (4 Nov) | Russian strikes damage power sites in nine Ukrainian regions; both sides trade hundreds of drones |
 | middle-east | ALERT | stable | judged | US–Iran war since 28 Feb | US strikes near Hormuz on 2 Nov; Israeli strikes in Lebanon; Houthi–Saudi attacks |
 | sudan | ALERT | worsening | judged | Drones hit grid; 10 killed at fuel station | Drone strikes cripple Sudan's power grid; fuel station strike kills 10 in South Kordofan |
-| gulf-iran | ALERT | stable | judged | Hormuz largely shut; US blockade | Trump confirms strikes on Iranian air defences; Iran calls US reply on Hormuz plan unconvincing |
-| other-cyclones | ALERT | improving | measured | Murasu: 2 dead, 12,230 moved (3 Nov) | Cyclone Murasu weakens inland after Andhra Pradesh landfall; GDACS red alert still listed |
+| gulf-iran | ALERT | stable | judged | Hormuz largely shut; US blockade | Trump says a 'heavy hit' on Iran may be needed; IRGC claims tankers hit mines near Hormuz |
 | global-temp | ALERT (c) | worsening | measured | +1.89°C vs pre-industrial | Global temperature about 1.89°C above pre-industrial |
 | enso | ALERT (s) | worsening | measured | ONI +2.5 (El Niño) | Super El Niño: ONI +2.5°C for Aug–Oct |
 | ebola | ALERT | worsening | judged | 5,376 deaths; >10,000 cases (2 Nov) | Ebola outbreak passes 5,300 deaths, mostly in DR Congo; spread to Kenya and Nigeria |
 | uk-energy-cap | ALERT | stable | published | £1,723 now; Jan forecasts +16–27% | Energy cap £1,723; January forecasts range from +16% to +27% |
 | uk-threat-level | ALERT | stable | published | Threat level: Severe | UK national threat level Severe: an attack is highly likely |
-| bond-volatility | WATCH | stable | measured | MOVE 95, 10y 4.90% | Treasury volatility at the 100 Watch line; 10-year yield near 4.95% |
+| bond-volatility | WATCH | stable | measured | MOVE 94, 10y 4.89% | Treasury volatility at the 100 Watch line; 10-year yield near 4.95% |
 | private-credit | WATCH | stable | judged | Q3 BDC requests ~11.5% of NAV vs 5% caps | Non-traded BDC redemption requests still far above 5% caps; gates remain in force |
 | us-inflation | WATCH | stable | measured | CPI 4.0% y/y (Sep) | US CPI 4.0% y/y in September; October data due mid-November |
 | central-banks | WATCH | worsening | judged | BoE decision 5 Nov; RBA 4.85% | Bank of England widely expected to raise rates on 5 Nov; RBA hiked on 3 Nov |
@@ -61,16 +60,16 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | uk-rates | WATCH | worsening | judged | CPI 3.5% (Sep); BoE 5 Nov | UK inflation 3.5%; Bank of England expected to raise Bank Rate to 4% on 5 Nov |
 | gilts | WATCH | stable | judged | 10y ~5.2% (3 Nov) | 10-year gilt yield near 5.2% ahead of an expected rate rise on 5 Nov |
 | uk-disruption | WATCH | worsening | judged | Doctors' strikes 14–19 and 25–26 Nov | Resident doctors strike 14–19 Nov; consultants 25–26 Nov |
-| equity-stress | NORMAL | improving | measured | VIX 17.1, S&P -1.4% | VIX back below 20 and S&P 500 1.4% off its high after Democrats win Congress |
+| equity-stress | NORMAL | improving | measured | VIX 16.6, S&P -1.7% | VIX back below 20 and S&P 500 1.4% off its high after Democrats win Congress |
 | ftse | NORMAL | stable | measured | 10,829, -0.8% from high | FTSE 100 about 2.5% below its high; no large daily falls this week |
 | credit-spreads | NORMAL | stable | measured | HY OAS 3.40% | US high-yield spreads 3.43%, inside the 4% Watch line |
-| dollar | NORMAL | stable | measured | DXY 101.4, 3m +1.9% | Dollar index near 101.5, up 1.9% over three months |
-| banking-stress | NORMAL | stable | measured | STLFSI -0.58, CISS 0.01 | Financial stress gauges low; no bank failures reported |
-| gold | NORMAL | stable | measured | $4,076, 3m -7.4% | Gold near $4,050, down 7.9% over three months, just inside the Normal band |
-| crypto | NORMAL | improving | measured | BTC $80,202, -7% from high | Bitcoin 7% off its high; Binance withdrawals resuming after record theft |
+| dollar | NORMAL | stable | measured | DXY 101.5, 3m +1.9% | Dollar index near 101.5, up 1.9% over three months |
+| banking-stress | NORMAL | stable | measured | STLFSI -0.52, CISS 0.01 | Financial stress gauges low; no bank failures reported |
+| gold | NORMAL | stable | measured | $4,071, 3m -7.5% | Gold near $4,050, down 7.9% over three months, just inside the Normal band |
+| crypto | NORMAL | improving | measured | BTC $80,597, -7% from high | Bitcoin 7% off its high; Binance withdrawals resuming after record theft |
 | funding-stress | NORMAL | stable | measured | SOFR–IORB +7bp, repo $0.0bn | SOFR within 5bp of reserve rate; Fed repo use near zero |
-| yen-carry | NORMAL | stable | measured | ¥158.2/$, 1w +0.2% | Yen near ¥158 per dollar; little changed on the week and month |
-| us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.34 | Sahm indicator 0.00; yield curve +0.34; payrolls due 6 Nov |
+| yen-carry | NORMAL | stable | measured | ¥158.4/$, 1w +0.4% | Yen near ¥158 per dollar; little changed on the week and month |
+| us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.32 | Sahm indicator 0.00; yield curve +0.34; payrolls due 6 Nov |
 | euro-growth | NORMAL | improving | published | Q3 GDP +0.4%; Oct PMI 51.9 | Euro-area flash PMI eased to 51.9 in October; Q3 GDP grew 0.4% |
 | china-economy | NORMAL | improving | judged | Q3 GDP +4.5%; Oct NBS PMI 49.3 | Regulators pause IPOs to steady falling stocks; factory PMI in contraction |
 | global-pmi | NORMAL | stable | published | Global mfg PMI 52.6 (Oct) | Global manufacturing PMI 52.6 in October; composite at its highest since 2021 in September |
@@ -79,6 +78,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | us-china | NORMAL | worsening | judged | 49 PLA aircraft near Taiwan (3 Nov) | 49 PLA aircraft around Taiwan in a day; no large-scale drill announced |
 | political-instability | NORMAL | worsening | judged | No G20 collapse; Indonesia troop deployment | Indonesia deploys 21,000 troops in Jakarta after generals' arrest; Democrats win US Congress |
 | atlantic-cyclones | NORMAL | stable | published | No active storms; one 40% area | No active Atlantic storms; low south of Bermuda has a 40% chance of forming |
+| other-cyclones | NORMAL | improving | measured | No orange/red GDACS cyclone alerts | Cyclone Murasu has dissipated inland; no GDACS orange or red cyclone alerts in force |
 | heat | NORMAL | stable | judged | No major heatwave warnings (4 Nov) | No top-tier heatwave warnings over large populations; Philippines heat index at danger level |
 | wildfires | NORMAL | stable | measured | GDACS: no orange/red | No GDACS orange or red wildfire alerts |
 | floods | NORMAL | stable | measured | GDACS: no orange/red | No GDACS orange or red flood alerts; local flooding after Cyclone Murasu |
@@ -90,7 +90,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | h5n1 | NORMAL | worsening | judged | US H5N1 death (1 Nov); no human spread | Washington State reports first US H5N1 death of 2026; no person-to-person spread |
 | novel-outbreaks | NORMAL | stable | judged | No unexplained clusters | No unexplained disease clusters under international investigation |
 | outages | NORMAL | stable | judged | No major outages | No major multi-hour cloud, CDN or payments outage |
-| exploited-vulns | NORMAL | stable | measured | 5 KEV adds (7d), 33 (30d) | Five new CISA known-exploited vulnerabilities in a week |
+| exploited-vulns | NORMAL | stable | measured | 6 KEV adds (7d), 34 (30d) | Five new CISA known-exploited vulnerabilities in a week |
 | displacement | NORMAL | stable | judged | No new 500k+ event (4 Nov) | No new event displacing 500,000; Moyale fighting sends 50,000 into Kenya |
 | uk-weather | NORMAL | stable | measured | No warnings | No Met Office weather warnings in force |
 | nhs-pressure | NORMAL | worsening | published | Flu low but rising (wk 43) | Flu low but GP positivity rising; COVID falling; RSV at baseline |

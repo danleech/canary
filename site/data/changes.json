@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-04T23:43:43Z",
+  "id": "other-cyclones",
+  "name": "Pacific & Indian cyclones",
+  "from": "red",
+  "to": "green",
+  "reason": "Cyclone Murasu has dissipated inland; no GDACS orange or red cyclone alerts in force"
+ },
+ {
   "t": "2026-11-04T17:53:13Z",
   "id": "sahel",
   "name": "Sahel insurgency",

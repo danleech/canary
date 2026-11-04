@@ -1,5 +1,51 @@
 [
  {
+  "t": "2026-11-04T23:43:43Z",
+  "applied": 41,
+  "changed": [
+   "other-cyclones"
+  ],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 20,
+   "published": 2,
+   "judged": 19
+  },
+  "held": 37,
+  "sources": {
+   "citations": 8,
+   "news_citations": 6,
+   "outlets": 6,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     2
+    ],
+    [
+     "gulfnews.com",
+     2
+    ],
+    [
+     "abcnews.com",
+     1
+    ],
+    [
+     "usnews.com",
+     1
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 20,
+   "predicted_active": 0,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
   "t": "2026-11-04T17:53:13Z",
   "applied": 89,
   "changed": [

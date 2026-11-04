@@ -1,10 +1,10 @@
 # US equity stress — NORMAL (improving)
-id equity-stress · Markets · horizon acute · checked 2026-11-04T17:53Z · at this level since 2026-11-04T17:53Z · stale after 2026-11-05T07:53Z
+id equity-stress · Markets · horizon acute · checked 2026-11-04T23:43Z · text written 2026-11-04T17:53Z · at this level since 2026-11-04T17:53Z · stale after 2026-11-05T13:43Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/equity-stress
 
-Value: VIX 17.1, S&P -1.4%
-Rated on: VIX 17.1 < 20 and S&P drawdown 1.4% < 5% = Normal
-Basis: measured — Set by a fixed rule applied to open data (VIX = 17.08 · S&P drawdown % = 1.45). Anyone can reproduce it from the public metrics file.
+Value: VIX 16.6, S&P -1.7%
+Rated on: VIX 16.6 below the 20 Watch line; S&P drawdown 1.67% below the 5% Watch line
+Basis: measured — Set by a fixed rule applied to open data (VIX = 16.61 · S&P drawdown % = 1.67). Anyone can reproduce it from the public metrics file.
 
 VIX back below 20 and S&P 500 1.4% off its high after Democrats win Congress
 
