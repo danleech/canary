@@ -15,7 +15,7 @@ permissions:
 
 concurrency:
   group: ios-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 env:
   XCODE: /Applications/Xcode_27.1.app
@@ -86,6 +86,32 @@ jobs:
           name: app
           path: build/Build/Products/Debug-iphonesimulator/Canary.app
           retention-days: 3
+
+  # Older Xcodes must still build (without the iPhone Duo sidebar and fold gutters).
+  compat:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { runner: xcode-27, xcode: /Applications/Xcode_27.app }
+          - { runner: macos-26, xcode: /Applications/Xcode_26.6.app }
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build with ${{ matrix.xcode }}
+        run: |
+          set -o pipefail
+          sudo xcode-select -s "${{ matrix.xcode }}"
+          xcodebuild -version
+          xcodebuild -project ios/Canary.xcodeproj -scheme Canary \
+            -configuration Debug -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath build CODE_SIGNING_ALLOWED=NO \
+            build 2>&1 | tee build.log | xcbeautify --renderer github-actions
+      - name: Diagnostics
+        if: always()
+        run: grep -E "(error|warning): " build.log | sed -E 's#^.*/ios/##' | sort -u | head -100 || true
 
   screenshots:
     needs: build

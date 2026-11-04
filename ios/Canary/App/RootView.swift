@@ -20,39 +20,49 @@ struct RootView: View {
     }
 
     var body: some View {
-        @Bindable var router = router
+        // Maps the selection for the current layout in the same pass that builds
+        // the tabs, so it never points at a tab that isn't there while folding.
+        let selection = Binding<AppTab>(
+            get: { router.displayedTab(usesSidebar: usesSidebar) },
+            set: { router.tab = $0 }
+        )
         Group {
             if let board = store.board {
-                TabView(selection: $router.tab) {
+                // The tab set itself depends on the layout: iPhone shows every tab
+                // it's given in its tab bar (overflowing into More), whatever their
+                // sidebar or tab bar visibility says.
+                TabView(selection: selection) {
                     Tab("Summary", systemImage: "gauge.with.dots.needle.50percent", value: AppTab.summary) {
                         SummaryView()
                     }
-                    Tab("Browse", systemImage: "square.grid.2x2.fill", value: AppTab.browse) {
-                        BrowseView()
+                    if !usesSidebar {
+                        Tab("Browse", systemImage: "square.grid.2x2.fill", value: AppTab.browse) {
+                            BrowseView()
+                        }
                     }
-                    .defaultVisibility(.hidden, for: .sidebar)
                     Tab("Changes", systemImage: "clock.arrow.circlepath", value: AppTab.changes) {
                         ChangesView()
                     }
                     Tab(value: AppTab.search, role: .search) {
                         SearchView()
                     }
-                    TabSection("Browse") {
-                        Tab("All Signals", systemImage: "list.bullet", value: AppTab.browseSection(.allSignals)) {
-                            BrowseSectionView(selection: .allSignals)
-                        }
-                        Tab("Situations", systemImage: "point.3.connected.trianglepath.dotted",
-                            value: AppTab.browseSection(.situations)) {
-                            BrowseSectionView(selection: .situations)
-                        }
-                        ForEach(board.domains) { domain in
-                            Tab(domain.name, systemImage: DomainStyle.symbol(for: domain.id),
-                                value: AppTab.browseSection(.domain(domain.id))) {
-                                BrowseSectionView(selection: .domain(domain.id))
+                    if usesSidebar {
+                        TabSection("Browse") {
+                            Tab("All Signals", systemImage: "list.bullet", value: AppTab.browseSection(.allSignals)) {
+                                BrowseSectionView(selection: .allSignals)
+                            }
+                            Tab("Situations", systemImage: "point.3.connected.trianglepath.dotted",
+                                value: AppTab.browseSection(.situations)) {
+                                BrowseSectionView(selection: .situations)
+                            }
+                            ForEach(board.domains) { domain in
+                                Tab(domain.name, systemImage: DomainStyle.symbol(for: domain.id),
+                                    value: AppTab.browseSection(.domain(domain.id))) {
+                                    BrowseSectionView(selection: .domain(domain.id))
+                                }
                             }
                         }
                     }
-                    .defaultVisibility(.hidden, for: .tabBar)
                 }
                 .tabViewStyle(.sidebarAdaptable)
                 .modifier(TabBarPlacement(usesSidebar: usesSidebar))
@@ -78,11 +88,16 @@ private struct TabBarPlacement: ViewModifier {
     let usesSidebar: Bool
 
     func body(content: Content) -> some View {
+        // SwiftUI 8 is the iOS 27 SDK (Xcode 27). Older Xcodes build without the sidebar.
+        #if canImport(SwiftUI, _version: 8.0)
         if #available(iOS 27.0, *) {
             content.defaultTabBarPlacement(usesSidebar ? .sidebar : .automatic)
         } else {
             content
         }
+        #else
+        content
+        #endif
     }
 }
 

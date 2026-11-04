@@ -72,6 +72,16 @@ final class Router {
         browsePath = []
     }
 
+    /// The tab to show for the current layout. Browse is one tab in the tab bar,
+    /// and its items are separate entries in the sidebar.
+    func displayedTab(usesSidebar: Bool) -> AppTab {
+        switch tab {
+        case .browse where usesSidebar: .browseSection(browseSelection ?? .allSignals)
+        case .browseSection where !usesSidebar: .browse
+        default: tab
+        }
+    }
+
     /// Keeps the selection valid when the app moves between the tab bar and the
     /// sidebar, for example when iPhone Duo is folded or unfolded. Browse is a
     /// tab in the tab bar; in the sidebar its items are listed directly. The

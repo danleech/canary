@@ -12,9 +12,6 @@ struct SignalDetailView: View {
     @Environment(PinStore.self) private var pins
     @Environment(PlusStore.self) private var plus
     @State private var showsPaywall = false
-    /// The name moves into the navigation bar once the large header scrolls away,
-    /// as in the App Store and Music.
-    @State private var showsBarTitle = false
 
     var body: some View {
         if let board = store.board, let signal = board.signal(signalID) {
@@ -41,22 +38,8 @@ struct SignalDetailView: View {
                 .padding(.bottom, 24)
             }
             .background(Color(.systemGroupedBackground))
-            .onScrollGeometryChange(for: Bool.self) { geometry in
-                geometry.contentOffset.y + geometry.contentInsets.top > 100
-            } action: { _, isPast in
-                withAnimation(.easeInOut(duration: 0.2)) { showsBarTitle = isPast }
-            }
-            .navigationTitle(signal.name)
-            .navigationBarTitleDisplayMode(.inline)
+            .scrollRevealedTitle(signal.name)
             .toolbar {
-                ToolbarItem(placement: .principal) {
-                    Text(signal.name)
-                        .font(.headline)
-                        .lineLimit(1)
-                        .opacity(showsBarTitle ? 1 : 0)
-                        .accessibilityHidden(!showsBarTitle)
-                }
-                .sharedBackgroundVisibility(.hidden)
                 ToolbarItem(placement: .topBarTrailing) { pinButton(signal) }
                 if let url = signal.url {
                     ToolbarItem(placement: .topBarTrailing) {

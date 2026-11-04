@@ -90,6 +90,9 @@ private struct FoldReader: ViewModifier {
     @Binding var fold: ColumnSplit?
 
     func body(content: Content) -> some View {
+        // SwiftUI 8.0.85 is the iOS 27.1 SDK (Xcode 27.1), the first with reserved
+        // regions. Older Xcodes build without fold-aware gutters.
+        #if canImport(SwiftUI, _version: 8.0.85)
         if #available(iOS 27.1, *) {
             content.onGeometryChange(for: ColumnSplit?.self) { proxy in
                 Self.foldSplit(proxy)
@@ -97,8 +100,12 @@ private struct FoldReader: ViewModifier {
         } else {
             content
         }
+        #else
+        content
+        #endif
     }
 
+    #if canImport(SwiftUI, _version: 8.0.85)
     /// Uses the hinge's region, active or not, as the gutter. Its frame already
     /// includes the margins either side of the crease.
     @available(iOS 27.1, *)
@@ -110,4 +117,5 @@ private struct FoldReader: ViewModifier {
         guard frame.minX > 0, frame.maxX < width else { return nil }
         return ColumnSplit(leading: frame.minX, gutter: max(frame.width, 16))
     }
+    #endif
 }

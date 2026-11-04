@@ -30,3 +30,5 @@ probe "func toolbarTitleDisplayMode" 4
 probe "func sectionIndexLabel" 4
 probe "func sharedBackgroundVisibility" 6
 probe "func onScrollGeometryChange" 6
+probe "struct TabContentBuilder" 3
+probe "static func build(If|Either|Optional)" 12

@@ -88,6 +88,44 @@ extension View {
     }
 }
 
+// MARK: - Title
+
+/// The App Store and Music pattern: a page's own large header carries its name,
+/// and the name fades into the navigation bar only once that header has
+/// scrolled away, so it's never shown twice.
+struct ScrollRevealedTitle: ViewModifier {
+    let title: String
+    var threshold: CGFloat = 100
+    @State private var isShown = false
+
+    func body(content: Content) -> some View {
+        content
+            .onScrollGeometryChange(for: Bool.self) { geometry in
+                geometry.contentOffset.y + geometry.contentInsets.top > threshold
+            } action: { _, isPast in
+                withAnimation(.easeInOut(duration: 0.2)) { isShown = isPast }
+            }
+            .navigationTitle(title)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text(title)
+                        .font(.headline)
+                        .lineLimit(1)
+                        .opacity(isShown ? 1 : 0)
+                        .accessibilityHidden(!isShown)
+                }
+                .sharedBackgroundVisibility(.hidden)
+            }
+    }
+}
+
+extension View {
+    func scrollRevealedTitle(_ title: String, threshold: CGFloat = 100) -> some View {
+        modifier(ScrollRevealedTitle(title: title, threshold: threshold))
+    }
+}
+
 // MARK: - Settings button
 
 /// Opens Settings from any tab's toolbar.

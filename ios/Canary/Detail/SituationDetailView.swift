@@ -42,8 +42,7 @@ struct SituationDetailView: View {
                 }
             }
             .listStyle(.insetGrouped)
-            .navigationTitle(situation.name)
-            .navigationBarTitleDisplayMode(.inline)
+            .scrollRevealedTitle(situation.name, threshold: 80)
         } else {
             ContentUnavailableView("Situation Has Ended", systemImage: "checkmark.circle",
                                    description: Text("This situation is no longer on the board."))
