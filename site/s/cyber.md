@@ -1,17 +1,17 @@
 # Major cyber incidents — WATCH (worsening)
-id cyber · Technology & Cyber · horizon acute · checked 2026-11-03T23:43Z · text written 2026-11-03T18:02Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-04T13:43Z
+id cyber · Technology & Cyber · horizon acute · checked 2026-11-04T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-04T19:53Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/cyber
 
 Value: Binance theft; EU freezer attacks
-Rated on: Attacks disrupting large firms and services = Watch
+Rated on: Attacks disrupting large companies across countries = Watch
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: Record Binance hack attributed to North Korea [binance-hack]
 
-Supermarket freezer attacks hit 11 EU countries; Binance theft largest on record
+Refrigeration attacks hit EU supermarkets; Binance theft largest on record
 
-Why it's at this level: Cyberattacks on 2–3 Nov caused refrigeration failures in supermarkets in 11 EU countries, forcing food to be discarded (AFP via The Citizen). Check Point's 2 Nov report lists the $6.3bn Binance theft, a breach of 4.9 million records at Florida's education department and actively exploited flaws in Drupal Commerce and Cisco firewalls.
+Why it's at this level: Cyberattacks on 2 Nov caused refrigeration failures at more than 100 shops across several EU countries, forcing stock to be discarded; Belgium opened a criminal investigation (Al Jazeera). Binance said on 3 Nov that North Korea-linked hackers spent months inside its systems, gaining access via a fake job interview, before the $6.3bn theft (Fortune).
 
-What this means for you: Apply software updates promptly and follow NCSC guidance; be alert to phishing about these breaches.
+What this means for you: Follow NCSC advice on phishing and fake recruiter approaches; change passwords if a service you use reports a breach.
 
 Why it matters: Ransomware and state hacking now shut down hospitals, retailers, carmakers and airports for weeks.
 What moves it: Ransomware gangs, state actors, zero-days, supply-chain compromises.
@@ -19,5 +19,5 @@ What moves it: Ransomware gangs, state actors, zero-days, supply-chain compromis
 Rubric — Alert: National-scale attack on critical infrastructure (power, health, finance), or a destructive state-attributed attack. | Watch: Ransomware or attack disrupting a large company or critical service, or a mass-exploited zero-day. | Normal: No major incidents disrupting critical services this week.
 
 Sources:
-- Check Point Research — 2 Nov threat intelligence report (2026-11-02) https://research.checkpoint.com/2026/2nd-november-threat-intelligence-report/
-- The Citizen (AFP) — Italy holds talks after European freezer cyberattacks (2026-11-03) https://www.citizen.co.za/news/news-world/italy-holds-security-talks-after-european-freezer-cyberattacks/
+- Al Jazeera — Who's attacking Europe's supermarket freezers? (2026-11-03) https://www.aljazeera.com/news/2026/11/3/very-cold-war-whos-attacking-europes-supermarket-freezers
+- Fortune — North Korea used LinkedIn, fake job interviews to trick Binance engineer (2026-11-03) https://fortune.com/2026/11/03/binance-hack-details-linkedin/

@@ -1,7 +1,7 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-03T23:43Z · next run ~05:40 UK · stale after 2026-11-04T13:43Z (36h for daily-tier signals)
+as_of 2026-11-04T05:53Z · next run ~11:40 UK · stale after 2026-11-04T19:53Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
-Basis: 26 measured from open data, 4 follow a published figure, 59 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
+Basis: 26 measured from open data, 5 follow a published figure, 58 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 - 2026-11-02T23:43Z Gold (fear gauge) [gold]: NORMAL→WATCH — Gold near $3,950, down 8.2% over three months, past the Watch line
 - 2026-11-02T23:43Z US equity stress [equity-stress]: NORMAL→WATCH — VIX above 20 at a three-month high as tech sell-off extends; S&P 500 3.5% off its high
