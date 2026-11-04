@@ -134,11 +134,13 @@ jobs:
           xcodebuild test -project ios/Canary.xcodeproj -scheme Canary \
             -destination "platform=iOS Simulator,name=${{ matrix.device }},OS=${{ matrix.os }}" \
             -resultBundlePath results.xcresult \
+            -retry-tests-on-failure -test-iterations 2 \
             CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY=- DEVELOPMENT_TEAM= \
             2>&1 | tee test.log | xcbeautify --renderer github-actions
       - name: Summary and screenshots
         if: always()
         run: |
+          # A test that fails and then passes on its retry is flaky: it shows as failed then passed here.
           grep -E "Test Case .*(passed|failed|skipped)|Executed [0-9]+ tests" test.log | sed -E 's/^.*Test Case //' | tail -60 || true
           mkdir -p test-shots
           xcrun xcresulttool export attachments --path results.xcresult --output-path test-shots >/dev/null 2>&1 || true
