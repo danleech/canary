@@ -11,7 +11,7 @@ struct CardBackground: ViewModifier {
         content
             .padding(padding)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .background(Color(.secondarySystemGroupedBackground), in: .rect(cornerRadius: 22, style: .continuous))
+            .background(Color(.secondarySystemGroupedBackground), in: .rect(cornerRadius: 24, style: .continuous))
     }
 }
 
@@ -19,23 +19,30 @@ extension View {
     func card(padding: CGFloat = 16) -> some View { modifier(CardBackground(padding: padding)) }
 }
 
-/// Weather-style module caption: small symbol and uppercase title in grey.
+/// A tile's heading, as Health heads its cards: a symbol in the tile's colour
+/// and a short title.
 struct ModuleHeader: View {
     let title: LocalizedStringKey
     let systemImage: String
+    var hue: Hue? = nil
+    @Environment(\.pageHue) private var pageHue
 
-    init(_ title: LocalizedStringKey, systemImage: String) {
+    init(_ title: LocalizedStringKey, systemImage: String, hue: Hue? = nil) {
         self.title = title
         self.systemImage = systemImage
+        self.hue = hue
     }
 
     var body: some View {
-        Label(title, systemImage: systemImage)
-            .font(.caption.weight(.semibold))
-            .textCase(.uppercase)
-            .foregroundStyle(.secondary)
-            .labelStyle(.titleAndIcon)
-            .accessibilityAddTraits(.isHeader)
+        Label {
+            Text(title)
+        } icon: {
+            Image(systemName: systemImage)
+                .foregroundStyle((hue ?? pageHue)?.fill ?? Color.accentColor)
+        }
+        .font(.subheadline.weight(.semibold))
+        .foregroundStyle((hue ?? pageHue)?.text ?? Color.primary)
+        .accessibilityAddTraits(.isHeader)
     }
 }
 
@@ -63,6 +70,22 @@ struct SectionTitle<Trailing: View>: View {
     }
 }
 
+extension EnvironmentValues {
+    /// The colour of the page's domain, for its tiles' headings.
+    @Entry var pageHue: Hue? = nil
+}
+
+extension View {
+    /// In debug builds, honours `-CanaryScroll` for screenshots of long pages.
+    @ViewBuilder func debugScrollable() -> some View {
+        #if DEBUG
+        modifier(DebugScroll())
+        #else
+        self
+        #endif
+    }
+}
+
 // MARK: - Navigation
 
 /// The destination for every `Route`, shared by all tabs.
@@ -76,6 +99,7 @@ struct RouteDestination: View {
         case .domain(let id): DomainView(domainID: id)
         case .world: WorldStateDetailView()
         case .situations: SituationListView()
+        case .allSignals: AllSignalsView()
         case .level(let level): LevelListView(level: level)
         }
     }

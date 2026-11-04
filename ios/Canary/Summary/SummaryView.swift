@@ -1,7 +1,8 @@
 import SwiftUI
 
-/// The first tab: World State, pinned signals, what's on Alert, what changed,
-/// and the situations driving it. Modelled on Health's Summary.
+/// The first tab, modelled on Health's Summary: the World State, pinned signals
+/// as tiles, Highlights with charts, what's on Alert, recent changes and the
+/// situations driving them.
 struct SummaryView: View {
     @Environment(BoardStore.self) private var store
     @Environment(Router.self) private var router
@@ -12,19 +13,28 @@ struct SummaryView: View {
         NavigationStack(path: $router.summaryPath) {
             ScrollView {
                 if let board = store.board {
-                    VStack(alignment: .leading, spacing: 20) {
+                    VStack(alignment: .leading, spacing: 24) {
                         if let message = store.errorMessage {
                             OfflineBanner(message: message)
                         }
-                        AdaptiveColumns(minColumnWidth: 330) {
-                            NavigationLink(value: Route.world) {
-                                WorldStateCard(board: board)
+                        NavigationLink(value: Route.world) {
+                            WorldHeroTile(board: board)
+                        }
+                        .buttonStyle(.plain)
+                        PinnedSection(board: board)
+                        VStack(alignment: .leading, spacing: 12) {
+                            SectionTitle("Highlights")
+                            AdaptiveColumns(minColumnWidth: 330) {
+                                AttentionHighlight(board: board)
+                                DomainsHighlight(board: board)
+                            } trailing: {
+                                MovesHighlight(board: board)
+                                ChangedSection(board: board)
                             }
-                            .buttonStyle(.plain)
-                            PinnedSection(board: board)
+                        }
+                        AdaptiveColumns(minColumnWidth: 330) {
                             AlertNowSection(board: board)
                         } trailing: {
-                            ChangedSection(board: board)
                             SituationsSection(board: board)
                         }
                         AboutFooter(board: board)
@@ -33,7 +43,10 @@ struct SummaryView: View {
                     .padding(.bottom, 24)
                 }
             }
-            .background(Color(.systemGroupedBackground))
+            .debugScrollable()
+            .background {
+                WashedBackground(tint: (store.board?.status.world.bandKind ?? .unknown).color)
+            }
             .navigationTitle("Summary")
             .toolbar { SettingsToolbarItem(isPresented: $showsSettings) }
             .refreshable { await store.refresh() }
@@ -64,77 +77,96 @@ private struct OfflineBanner: View {
             Button("Retry") { Task { await store.refresh() } }
                 .font(.subheadline.weight(.semibold))
         }
-        .card(padding: 12)
+        .tile(padding: 12)
     }
 }
 
 // MARK: - World State
 
-/// Weather-style hero: the index, its band, a gradient gauge and the counts.
-struct WorldStateCard: View {
+/// Weather-style hero: the index on a pastel mesh gradient in the band's
+/// colours, an Activity-style ring, and the level counts on Liquid Glass.
+struct WorldHeroTile: View {
     let board: Board
     var showsHeadline = true
     var isLink = true
 
     @Environment(BoardStore.self) private var store
-    @ScaledMetric(relativeTo: .largeTitle) private var scoreSize: CGFloat = 64
+    @Environment(\.dynamicTypeSize) private var typeSize
+    @ScaledMetric(relativeTo: .largeTitle) private var scoreSize: CGFloat = 68
+    @ScaledMetric(relativeTo: .largeTitle) private var ringSize: CGFloat = 112
 
     var body: some View {
         let world = board.status.world
         let band = world.bandKind
         let counts = board.counts(at: store.now)
-        VStack(alignment: .leading, spacing: 12) {
+        let levels: [Level] = counts[.stale, default: 0] > 0 ? [.alert, .watch, .normal, .stale] : [.alert, .watch, .normal]
+        let scoreLayout = typeSize.isAccessibilitySize
+            ? AnyLayout(VStackLayout(alignment: .leading, spacing: 12))
+            : AnyLayout(HStackLayout(alignment: .center, spacing: 16))
+        VStack(alignment: .leading, spacing: 14) {
             HStack {
-                ModuleHeader("World State", systemImage: "globe")
+                Label("World State", systemImage: "globe.europe.africa.fill")
+                    .font(.subheadline.weight(.semibold))
+                    .accessibilityAddTraits(.isHeader)
                 Spacer()
                 if isLink {
                     Image(systemName: "chevron.right")
                         .font(.footnote.weight(.semibold))
-                        .foregroundStyle(.tertiary)
+                        .foregroundStyle(.secondary)
                         .accessibilityHidden(true)
                 }
             }
-            HStack(alignment: .firstTextBaseline, spacing: 10) {
-                Text(world.score.map(String.init) ?? "–")
-                    .font(.system(size: scoreSize, weight: .semibold, design: .rounded))
-                    .monospacedDigit()
-                    .contentTransition(.numericText())
+            scoreLayout {
                 VStack(alignment: .leading, spacing: 0) {
+                    Text(world.score.map(String.init) ?? "–")
+                        .font(.system(size: scoreSize, weight: .bold, design: .rounded))
+                        .monospacedDigit()
+                        .contentTransition(.numericText())
                     Text(band.rawValue)
-                        .font(.title2.weight(.semibold))
+                        .font(.title2.weight(.bold))
+                        .fontDesign(.rounded)
                     Text("out of 100")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                 }
+                if !typeSize.isAccessibilitySize { Spacer(minLength: 8) }
+                ScoreRing(score: world.score, band: band, lineWidth: 16)
+                    .frame(width: ringSize, height: ringSize)
+                    .overlay {
+                        Image(systemName: "globe.europe.africa.fill")
+                            .font(.system(size: ringSize * 0.3))
+                            .foregroundStyle(band.color.gradient)
+                            .accessibilityHidden(true)
+                    }
             }
-            WorldGaugeBar(score: world.score)
             if showsHeadline, let headline = board.status.headline {
                 Text(headline)
                     .font(.subheadline)
-                    .foregroundStyle(.primary)
                     .fixedSize(horizontal: false, vertical: true)
             }
-            ViewThatFits(in: .horizontal) {
-                HStack(spacing: 16) { countItems(counts) }
-                VStack(alignment: .leading, spacing: 6) { countItems(counts) }
+            GlassEffectContainer(spacing: 8) {
+                ViewThatFits(in: .horizontal) {
+                    HStack(spacing: 8) { chips(levels, counts) }
+                    VStack(alignment: .leading, spacing: 8) { chips(levels, counts) }
+                }
             }
             BoardFreshnessText()
         }
-        .card()
+        .padding(20)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background {
+            BandMeshBackground(band: band)
+                .clipShape(.rect(cornerRadius: 30, style: .continuous))
+        }
+        .contentShape(.rect(cornerRadius: 30, style: .continuous))
         .accessibilityElement(children: .combine)
         .accessibilityLabel(accessibilityText(counts: counts))
         .accessibilityHint(isLink ? "Shows how the index is made up" : "")
     }
 
-    @ViewBuilder private func countItems(_ counts: [Level: Int]) -> some View {
-        let levels: [Level] = counts[.stale, default: 0] > 0 ? [.alert, .watch, .normal, .stale] : [.alert, .watch, .normal]
+    @ViewBuilder private func chips(_ levels: [Level], _ counts: [Level: Int]) -> some View {
         ForEach(levels, id: \.self) { level in
-            HStack(spacing: 5) {
-                StatusGlyph(level, font: .subheadline)
-                Text("\(counts[level, default: 0]) \(level.label)")
-                    .font(.subheadline.weight(.medium))
-                    .monospacedDigit()
-            }
+            GlassCountChip(level: level, count: counts[level, default: 0])
         }
     }
 
@@ -155,35 +187,160 @@ private struct PinnedSection: View {
 
     var body: some View {
         let pinned = pins.ids.compactMap { board.signal($0) }
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 12) {
             SectionTitle("Pinned") {
                 Button(pinned.isEmpty ? "Add" : "Edit") { showsEditor = true }
             }
             if pinned.isEmpty {
                 VStack(alignment: .leading, spacing: 10) {
-                    Label("Pin the signals you follow", systemImage: "pin")
+                    IconBadge(systemImage: "pin.fill", color: .blue)
+                    Text("Pin the signals you follow")
                         .font(.headline)
-                    Text("They appear here with their latest level and a chart of recent checks, like a watchlist.")
+                    Text("They appear here as tiles, with their latest level and a chart of recent checks.")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                     Button("Choose Signals") { showsEditor = true }
-                        .buttonStyle(.bordered)
+                        .buttonStyle(.glass)
                 }
-                .card()
+                .tile(tint: .blue)
             } else {
-                VStack(spacing: 0) {
-                    ForEach(Array(pinned.enumerated()), id: \.element.id) { index, signal in
-                        NavigationLink(value: Route.signal(signal.id)) {
-                            PinnedRow(signal: signal)
-                        }
-                        .buttonStyle(.plain)
-                        if index < pinned.count - 1 { Divider() }
-                    }
-                }
-                .card(padding: 14)
+                SignalTileGrid(signals: pinned)
             }
         }
         .sheet(isPresented: $showsEditor) { PinEditorView() }
+    }
+}
+
+// MARK: - Highlights
+
+/// How many signals were at each level at the end of each day.
+private struct AttentionHighlight: View {
+    let board: Board
+    @Environment(BoardStore.self) private var store
+
+    var body: some View {
+        let data = board.dailyLevelMix(days: 7, now: store.now)
+        let byDay = Dictionary(grouping: data, by: \.day).sorted { $0.key < $1.key }
+        let alertsNow = board.counts(at: store.now)[.alert, default: 0]
+        VStack(alignment: .leading, spacing: 12) {
+            TileHeader(title: "Attention by Day", systemImage: "chart.bar.fill", hue: Level.alert.hue)
+            Text(sentence(byDay: byDay, alertsNow: alertsNow))
+                .font(.headline)
+                .fixedSize(horizontal: false, vertical: true)
+            if byDay.count >= 2 {
+                LevelMixColumns(data: data)
+                    .frame(height: 150)
+            }
+            LevelLegend(counts: board.counts(at: store.now))
+        }
+        .tile(tint: Level.alert.color)
+    }
+
+    private func sentence(byDay: [(key: Date, value: [DayLevelCount])], alertsNow: Int) -> String {
+        guard let first = byDay.first, byDay.count >= 2 else {
+            return "\(alertsNow) signals are on Alert."
+        }
+        let then = first.value.first { $0.level == .alert }?.count ?? 0
+        let day = first.key.formatted(.dateTime.weekday(.wide))
+        if alertsNow > then { return "\(alertsNow) signals are on Alert, up from \(then) on \(day)." }
+        if alertsNow < then { return "\(alertsNow) signals are on Alert, down from \(then) on \(day)." }
+        return "\(alertsNow) signals are on Alert, the same as on \(day)."
+    }
+}
+
+/// Level changes per day: up to more attention, or eased.
+private struct MovesHighlight: View {
+    let board: Board
+    @Environment(BoardStore.self) private var store
+    @Environment(Router.self) private var router
+
+    var body: some View {
+        let data = board.dailyMoves(days: 7, now: store.now)
+        let up = data.map(\.up).reduce(0, +)
+        let down = data.map(\.down).reduce(0, +)
+        Button {
+            router.tab = .changes
+        } label: {
+            VStack(alignment: .leading, spacing: 12) {
+                TileHeader(title: "Level Changes", systemImage: "arrow.up.arrow.down",
+                           hue: Hue(fill: MovesColumns.upColor, text: Color.primary), showsChevron: true)
+                Text(sentence(up: up, down: down, since: data.first?.day))
+                    .font(.headline)
+                    .foregroundStyle(.primary)
+                    .multilineTextAlignment(.leading)
+                    .fixedSize(horizontal: false, vertical: true)
+                if !data.isEmpty {
+                    MovesColumns(data: data)
+                        .frame(height: 130)
+                }
+                MovesLegend(up: up, down: down)
+            }
+            .tile(tint: MovesColumns.upColor)
+        }
+        .buttonStyle(.plain)
+        .accessibilityHint("Shows every change")
+    }
+
+    private func sentence(up: Int, down: Int, since: Date?) -> String {
+        let day = since?.formatted(.dateTime.weekday(.wide)) ?? "the first check"
+        if up + down == 0 { return "No signal has changed level since \(day)." }
+        return "\(up) moved up and \(down) eased since \(day)."
+    }
+}
+
+/// The domains under most strain, in their colours.
+private struct DomainsHighlight: View {
+    let board: Board
+
+    var body: some View {
+        let items = Array(board.domainScores.prefix(5))
+        VStack(alignment: .leading, spacing: 12) {
+            TileHeader(title: "Most Strained Domains", systemImage: "square.grid.2x2.fill",
+                       hue: DomainStyle.hue(for: items.first?.domain.id ?? ""))
+            if let top = items.first {
+                Text("\(top.domain.name) is under most strain, at \(top.score) out of 100.")
+                    .font(.headline)
+                    .fixedSize(horizontal: false, vertical: true)
+                DomainBars(items: items)
+            } else {
+                Text("Domain scores aren't available for this run.")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+            }
+        }
+        .tile(tint: DomainStyle.color(for: items.first?.domain.id ?? ""))
+    }
+}
+
+/// Status changes in the last 24 hours.
+private struct ChangedSection: View {
+    let board: Board
+    @Environment(BoardStore.self) private var store
+
+    var body: some View {
+        let changes = board.recentChanges(hours: 24, at: store.now)
+        VStack(alignment: .leading, spacing: 10) {
+            TileHeader(title: "Changed in the Last 24 Hours", systemImage: "clock.arrow.circlepath",
+                       hue: Hue(fill: .blue, text: .primary))
+            if changes.isEmpty {
+                Text("No signal has changed level in the last 24 hours.")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+            } else {
+                VStack(spacing: 0) {
+                    ForEach(Array(changes.prefix(5).enumerated()), id: \.element.key) { index, change in
+                        NavigationLink(value: Route.signal(change.id)) {
+                            ChangeRow(change: change)
+                                .padding(.vertical, 8)
+                                .contentShape(.rect)
+                        }
+                        .buttonStyle(.plain)
+                        if index < min(changes.count, 5) - 1 { Divider() }
+                    }
+                }
+            }
+        }
+        .tile(tint: .blue)
     }
 }
 
@@ -196,24 +353,25 @@ private struct AlertNowSection: View {
     var body: some View {
         let alerts = board.signals(withLevel: .alert, at: store.now)
         if !alerts.isEmpty {
-            VStack(alignment: .leading, spacing: 10) {
+            VStack(alignment: .leading, spacing: 12) {
                 SectionTitle("On Alert") {
                     NavigationLink("Show All", value: Route.level(.alert))
                 }
                 VStack(spacing: 0) {
-                    ForEach(Array(alerts.prefix(5).enumerated()), id: \.element.id) { index, signal in
+                    ForEach(Array(alerts.prefix(6).enumerated()), id: \.element.id) { index, signal in
                         NavigationLink(value: Route.signal(signal.id)) {
                             SignalRow(signal: signal, showsDomain: true, showsSummary: false)
                                 .padding(.vertical, 8)
+                                .contentShape(.rect)
                         }
                         .buttonStyle(.plain)
-                        if index < min(alerts.count, 5) - 1 { Divider() }
+                        if index < min(alerts.count, 6) - 1 { Divider() }
                     }
-                    if alerts.count > 5 {
+                    if alerts.count > 6 {
                         Divider()
                         NavigationLink(value: Route.level(.alert)) {
                             HStack {
-                                Text("\(alerts.count - 5) more on Alert")
+                                Text("\(alerts.count - 6) more on Alert")
                                 Spacer()
                                 Image(systemName: "chevron.right")
                                     .foregroundStyle(.tertiary)
@@ -226,42 +384,7 @@ private struct AlertNowSection: View {
                         .buttonStyle(.plain)
                     }
                 }
-                .card(padding: 14)
-            }
-        }
-    }
-}
-
-// MARK: - Changed
-
-private struct ChangedSection: View {
-    let board: Board
-    @Environment(BoardStore.self) private var store
-    @Environment(Router.self) private var router
-
-    var body: some View {
-        let changes = board.recentChanges(hours: 24, at: store.now)
-        VStack(alignment: .leading, spacing: 10) {
-            SectionTitle("Changed in the Last 24 Hours") {
-                Button("All") { router.tab = .changes }
-            }
-            if changes.isEmpty {
-                Label("No signal has changed level in the last 24 hours.", systemImage: "checkmark.circle")
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
-                    .card()
-            } else {
-                VStack(spacing: 0) {
-                    ForEach(Array(changes.prefix(6).enumerated()), id: \.element.key) { index, change in
-                        NavigationLink(value: Route.signal(change.id)) {
-                            ChangeRow(change: change)
-                                .padding(.vertical, 8)
-                        }
-                        .buttonStyle(.plain)
-                        if index < min(changes.count, 6) - 1 { Divider() }
-                    }
-                }
-                .card(padding: 14)
+                .tile(tint: Level.alert.color, padding: 14)
             }
         }
     }
@@ -274,11 +397,11 @@ private struct SituationsSection: View {
 
     var body: some View {
         if !board.situations.isEmpty {
-            VStack(alignment: .leading, spacing: 10) {
+            VStack(alignment: .leading, spacing: 12) {
                 SectionTitle("Situations") {
                     NavigationLink("Show All", value: Route.situations)
                 }
-                ForEach(board.situations.prefix(4)) { situation in
+                ForEach(board.situations.sorted { $0.status.rank < $1.status.rank }.prefix(4)) { situation in
                     NavigationLink(value: Route.situation(situation.id)) {
                         SituationCard(situation: situation)
                     }
@@ -289,11 +412,15 @@ private struct SituationsSection: View {
     }
 }
 
-/// A situation summary card: level, name, trend, summary and signal count.
+/// A situation as a tile: its level, name, summary, and its signals' levels as
+/// one bar.
 struct SituationCard: View {
     let situation: Situation
+    @Environment(BoardStore.self) private var store
 
     var body: some View {
+        let members = store.board.map { $0.signals(inSituation: situation, at: store.now) } ?? []
+        let counts = store.board?.counts(in: members, at: store.now) ?? [:]
         VStack(alignment: .leading, spacing: 8) {
             HStack(alignment: .firstTextBaseline) {
                 StatusLabel(situation.status, font: .subheadline.weight(.semibold))
@@ -317,11 +444,15 @@ struct SituationCard: View {
                     .foregroundStyle(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
             }
+            if !members.isEmpty {
+                LevelBar(counts: counts, height: 7)
+                    .padding(.top, 2)
+            }
             Text("^[\(situation.signals.count) signal](inflect: true)")
                 .font(.footnote)
                 .foregroundStyle(.secondary)
         }
-        .card()
+        .tile(tint: situation.status.color)
         .accessibilityElement(children: .combine)
     }
 }

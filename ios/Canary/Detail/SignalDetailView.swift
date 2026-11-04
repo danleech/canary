@@ -15,11 +15,13 @@ struct SignalDetailView: View {
 
     var body: some View {
         if let board = store.board, let signal = board.signal(signalID) {
+            let hue = DomainStyle.hue(for: signal.domain)
             ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
                     SignalHeader(signal: signal)
                     AdaptiveColumns {
                         SignalChartCard(signal: signal, history: board.history(for: signal.id))
+                        LevelTimelineCard(spans: board.levelSpans(for: signal.id, now: store.now))
                         TextCard(title: "Why It's at This Level", systemImage: "text.alignleft", text: signal.state)
                         TextCard(title: "What This Means for You", systemImage: "person", text: signal.forYou)
                         BasisCard(signal: signal)
@@ -37,7 +39,9 @@ struct SignalDetailView: View {
                 .padding(.horizontal)
                 .padding(.bottom, 24)
             }
-            .background(Color(.systemGroupedBackground))
+            .debugScrollable()
+            .environment(\.pageHue, hue)
+            .background { WashedBackground(tint: hue.fill) }
             .scrollRevealedTitle(signal.name)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) { pinButton(signal) }
@@ -95,9 +99,13 @@ private struct SignalHeader: View {
             ? AnyLayout(VStackLayout(alignment: .leading, spacing: 4))
             : AnyLayout(HStackLayout(alignment: .firstTextBaseline, spacing: 12))
         VStack(alignment: .leading, spacing: 8) {
-            Label(signal.domainName ?? signal.domain.capitalized, systemImage: DomainStyle.symbol(for: signal.domain))
-                .font(.subheadline.weight(.semibold))
-                .foregroundStyle(.secondary)
+            HStack(spacing: 8) {
+                IconBadge(systemImage: DomainStyle.symbol(for: signal.domain),
+                          color: DomainStyle.color(for: signal.domain), size: 26)
+                Text(signal.domainName ?? signal.domain.capitalized)
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(DomainStyle.hue(for: signal.domain).text)
+            }
             Text(signal.name)
                 .font(.largeTitle.bold())
                 .fixedSize(horizontal: false, vertical: true)
@@ -139,52 +147,91 @@ private struct SignalHeader: View {
 
 // MARK: - Chart
 
-/// Swift Charts line of the key value, one point per check coloured by level.
-/// Signals without a numeric series show the level at each check instead.
+/// The key value at each check, as Health charts a measurement: a smoothed
+/// line over a gradient in the domain's colour, dots in each check's level
+/// colour, and a range to choose. Signals without a number show only their
+/// level timeline (below).
 private struct SignalChartCard: View {
     let signal: Signal
     let history: [HistoryPoint]
 
-    var body: some View {
-        let series = history.filter { $0.value != nil }
-        VStack(alignment: .leading, spacing: 12) {
-            ModuleHeader(series.count >= 2 ? "Key Value at Each Check" : "Level at Each Check",
-                         systemImage: "chart.xyaxis.line")
-            if series.count >= 2 {
-                Chart {
-                    ForEach(Array(series.enumerated()), id: \.offset) { _, point in
-                        LineMark(x: .value("Checked", point.date), y: .value("Value", point.value ?? 0))
-                            .interpolationMethod(.monotone)
-                            .foregroundStyle(Color.secondary.opacity(0.6))
-                        PointMark(x: .value("Checked", point.date), y: .value("Value", point.value ?? 0))
-                            .foregroundStyle(point.level.color)
-                            .symbol { StatusGlyph(point.level, font: .system(size: 9)) }
-                    }
-                }
-                .chartYScale(domain: .automatic(includesZero: false))
-                .chartXAxis {
-                    AxisMarks(values: .automatic(desiredCount: 4)) { _ in
-                        AxisGridLine()
-                        AxisValueLabel(format: .dateTime.day().month(.abbreviated))
-                    }
-                }
-                .frame(height: 180)
-                .accessibilityChartDescriptor(SeriesDescriptor(name: signal.name, points: series))
-            } else if !history.isEmpty {
-                StatusStrip(points: history, maxCount: 60)
-                    .frame(height: 24)
-            } else {
-                Text("No checks recorded yet.")
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
+    enum Range: String, CaseIterable, Identifiable {
+        case day = "D", week = "W", all = "All"
+        var id: String { rawValue }
+        var seconds: TimeInterval? {
+            switch self {
+            case .day: 86_400
+            case .week: 7 * 86_400
+            case .all: nil
             }
-            if let first = history.first {
-                Text("^[\(history.count) check](inflect: true) since \(first.date.formatted(date: .abbreviated, time: .omitted))")
+        }
+    }
+
+    @Environment(BoardStore.self) private var store
+    @State private var range: Range = .all
+
+    var body: some View {
+        let hue = DomainStyle.hue(for: signal.domain)
+        let series = history.filter { $0.value != nil }
+        let shown = range.seconds.map { window in
+            series.filter { $0.date >= store.now.addingTimeInterval(-window) }
+        } ?? series
+        if series.count >= 2 {
+            VStack(alignment: .leading, spacing: 12) {
+                ModuleHeader("Key Value at Each Check", systemImage: "chart.xyaxis.line")
+                Picker("Range", selection: $range) {
+                    ForEach(Range.allCases) { Text($0.rawValue).tag($0) }
+                }
+                .pickerStyle(.segmented)
+                if let latest = series.last?.value {
+                    VStack(alignment: .leading, spacing: 0) {
+                        Text("LATEST")
+                            .font(.caption2.weight(.semibold))
+                            .foregroundStyle(.secondary)
+                        Text(signal.value ?? latest.formatted(.number.precision(.fractionLength(0...2))))
+                            .font(.title2.weight(.bold))
+                            .fontDesign(.rounded)
+                            .monospacedDigit()
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+                if shown.count >= 2 {
+                    ValueChart(history: shown, tint: hue.fill)
+                        .frame(height: 210)
+                        .accessibilityChartDescriptor(SeriesDescriptor(name: signal.name, points: shown))
+                } else {
+                    Text("Only one check in this range. Choose a longer one.")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                        .frame(maxWidth: .infinity, minHeight: 80)
+                }
+                Text("^[\(series.count) check](inflect: true) since \(series[0].date.formatted(date: .abbreviated, time: .omitted)). Touch the chart to see a check.")
                     .font(.footnote)
                     .foregroundStyle(.secondary)
             }
+            .tile(tint: hue.fill)
         }
-        .card()
+    }
+}
+
+/// The level over time, as Health shows sleep stages: one row per level.
+private struct LevelTimelineCard: View {
+    let spans: [LevelSpan]
+
+    var body: some View {
+        if !spans.isEmpty {
+            VStack(alignment: .leading, spacing: 12) {
+                ModuleHeader("Level Over Time", systemImage: "chart.bar.xaxis")
+                if let current = spans.last {
+                    Text("\(current.level.label) since \(current.start.formatted(.dateTime.day().month(.wide).hour().minute()))")
+                        .font(.headline)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                LevelTimeline(spans: spans)
+                    .frame(height: 120)
+            }
+            .tile(tint: spans.last?.level.color)
+        }
     }
 }
 
@@ -232,7 +279,7 @@ struct TextCard: View {
                     .fixedSize(horizontal: false, vertical: true)
                     .textSelection(.enabled)
             }
-            .card()
+            .tile()
         }
     }
 }
@@ -245,8 +292,12 @@ private struct BasisCard: View {
         let basis = signal.basis ?? .unknown
         VStack(alignment: .leading, spacing: 10) {
             ModuleHeader("How This Level Was Set", systemImage: "checkmark.seal")
-            Label(basis.label, systemImage: basis.symbol)
-                .font(.headline)
+            HStack(spacing: 10) {
+                IconBadge(systemImage: basis.symbol, color: basis.hue.fill, size: 30)
+                Text(basis.label)
+                    .font(.headline)
+                    .foregroundStyle(basis.hue.text)
+            }
             Text(basis.explanation)
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
@@ -269,7 +320,7 @@ private struct BasisCard: View {
                 .font(.subheadline)
             }
         }
-        .card()
+        .tile()
     }
 }
 
@@ -282,6 +333,7 @@ private struct ThresholdsCard: View {
         if let rubric {
             VStack(alignment: .leading, spacing: 12) {
                 ModuleHeader("Thresholds", systemImage: "slider.horizontal.3")
+                LevelScale(current: current)
                 ForEach([Level.alert, .watch, .normal], id: \.self) { level in
                     if let text = rubric.text(for: level) {
                         HStack(alignment: .firstTextBaseline, spacing: 10) {
@@ -312,8 +364,34 @@ private struct ThresholdsCard: View {
                     .font(.footnote)
                     .foregroundStyle(.secondary)
             }
-            .card()
+            .tile()
         }
+    }
+}
+
+/// Normal, Watch and Alert as one scale with the current level marked, as
+/// Health shows a measurement against its ranges.
+private struct LevelScale: View {
+    let current: Level
+
+    var body: some View {
+        HStack(spacing: 4) {
+            ForEach([Level.normal, .watch, .alert], id: \.self) { level in
+                VStack(spacing: 5) {
+                    Capsule()
+                        .fill(level.color.gradient)
+                        .opacity(level == current ? 1 : 0.28)
+                        .frame(height: level == current ? 10 : 8)
+                    Text(level.label)
+                        .font(.caption.weight(level == current ? .bold : .regular))
+                        .foregroundStyle(level == current ? level.textColor : Color.secondary)
+                }
+                .frame(maxWidth: .infinity)
+            }
+        }
+        .padding(.vertical, 2)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("Current level: \(current.label)")
     }
 }
 
@@ -342,7 +420,7 @@ private struct SituationLinks: View {
                     .accessibilityLabel("\(situation.name), \(situation.status.label)")
                 }
             }
-            .card()
+            .tile()
         }
     }
 }
@@ -374,7 +452,7 @@ private struct SourcesCard: View {
                     }
                 }
             }
-            .card()
+            .tile()
         }
     }
 }

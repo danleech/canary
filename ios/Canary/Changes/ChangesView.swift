@@ -27,7 +27,25 @@ struct ChangesView: View {
                 if let board = store.board {
                     let changes = filtered(board.changes)
                     let days = Dictionary(grouping: changes) { Calendar.current.startOfDay(for: $0.t) }
+                    let moves = board.dailyMoves(days: 14, now: store.now)
                     List {
+                        if filter == .all, moves.count >= 2 {
+                            Section {
+                                VStack(alignment: .leading, spacing: 12) {
+                                    let up = moves.map(\.up).reduce(0, +)
+                                    let down = moves.map(\.down).reduce(0, +)
+                                    Text("\(up) moved up and \(down) eased since \(moves[0].day.formatted(.dateTime.weekday(.wide).day().month(.abbreviated))).")
+                                        .font(.headline)
+                                        .fixedSize(horizontal: false, vertical: true)
+                                    MovesColumns(data: moves)
+                                        .frame(height: 150)
+                                    MovesLegend(up: up, down: down)
+                                }
+                                .padding(.vertical, 6)
+                            } header: {
+                                Text("By Day")
+                            }
+                        }
                         ForEach(days.keys.sorted(by: >), id: \.self) { day in
                             Section(CanaryFormat.day(day, now: store.now)) {
                                 ForEach(days[day] ?? [], id: \.key) { change in

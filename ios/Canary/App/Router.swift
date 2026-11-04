@@ -18,15 +18,33 @@ enum Route: Hashable {
     case domain(String)
     case world
     case situations
+    case allSignals
     case level(Level)
 }
 
-/// What Browse's own list has selected (tab bar layout), or which Browse item
-/// the sidebar shows (sidebar layout).
+/// A Browse item: pushed from Browse's tiles in the tab bar layout, or listed
+/// directly in the sidebar layout.
 enum BrowseSelection: Hashable {
     case allSignals
     case situations
     case domain(String)
+
+    var route: Route {
+        switch self {
+        case .allSignals: .allSignals
+        case .situations: .situations
+        case .domain(let id): .domain(id)
+        }
+    }
+
+    init?(route: Route) {
+        switch route {
+        case .allSignals: self = .allSignals
+        case .situations: self = .situations
+        case .domain(let id): self = .domain(id)
+        default: return nil
+        }
+    }
 }
 
 /// Navigation state for every tab, so deep links from widgets, notifications
@@ -39,7 +57,6 @@ final class Router {
 
     var tab: AppTab = .summary
     var summaryPath: [Route] = []
-    var browseSelection: BrowseSelection?
     var browsePath: [Route] = []
     var changesPath: [Route] = []
     var searchPath: [Route] = []
@@ -58,25 +75,22 @@ final class Router {
         case .signal(let id): summaryPath = [.signal(id)]
         case .situation(let id): summaryPath = [.situation(id)]
         case .domain(let id):
-            browseSelection = .domain(id)
-            browsePath = []
+            browsePath = [.domain(id)]
             sectionPaths[.domain(id)] = []
             tab = .browse
         }
     }
 
-    /// Selects a Browse item from Browse's own list, starting its stack afresh.
-    func selectBrowse(_ selection: BrowseSelection?) {
-        guard selection != browseSelection else { return }
-        browseSelection = selection
-        browsePath = []
+    /// The Browse item at the bottom of Browse's stack, if any.
+    private var browseRoot: BrowseSelection? {
+        browsePath.first.flatMap(BrowseSelection.init(route:))
     }
 
     /// The tab to show for the current layout. Browse is one tab in the tab bar,
     /// and its items are separate entries in the sidebar.
     func displayedTab(usesSidebar: Bool) -> AppTab {
         switch tab {
-        case .browse where usesSidebar: .browseSection(browseSelection ?? .allSignals)
+        case .browse where usesSidebar: .browseSection(browseRoot ?? .allSignals)
         case .browseSection where !usesSidebar: .browse
         default: tab
         }
@@ -89,12 +103,15 @@ final class Router {
     func adapt(usesSidebar: Bool) {
         switch tab {
         case .browse where usesSidebar:
-            let selection = browseSelection ?? .allSignals
-            sectionPaths[selection] = browsePath
-            tab = .browseSection(selection)
+            if let root = browseRoot {
+                sectionPaths[root] = Array(browsePath.dropFirst())
+                tab = .browseSection(root)
+            } else {
+                sectionPaths[.allSignals] = browsePath
+                tab = .browseSection(.allSignals)
+            }
         case .browseSection(let selection) where !usesSidebar:
-            browseSelection = selection
-            browsePath = sectionPaths[selection] ?? []
+            browsePath = [selection.route] + (sectionPaths[selection] ?? [])
             tab = .browse
         default:
             break

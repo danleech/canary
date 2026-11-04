@@ -23,8 +23,8 @@ struct SignalRow: View {
                 }
                 if showsDomain {
                     Text(signal.domainName ?? signal.domain.capitalized)
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
+                        .font(.caption.weight(.medium))
+                        .foregroundStyle(DomainStyle.hue(for: signal.domain).text)
                 }
                 if let value = signal.value {
                     Text(value)
@@ -57,64 +57,86 @@ struct SignalRow: View {
     }
 }
 
-/// Stocks-style row for pinned signals: name and domain, sparkline, level pill and value.
-struct PinnedRow: View {
+/// A widget-sized tile for one signal, as Health shows a pinned data type: the
+/// domain in its colour, the name, a small chart of recent checks, the level
+/// and the key value. Text wraps rather than truncating.
+struct SignalTile: View {
     let signal: Signal
+    var showsDomain = true
 
     @Environment(BoardStore.self) private var store
-    @Environment(\.dynamicTypeSize) private var typeSize
+    @ScaledMetric(relativeTo: .body) private var chartHeight: CGFloat = 40
+    @ScaledMetric(relativeTo: .body) private var minHeight: CGFloat = 196
 
     var body: some View {
         let level = signal.level(at: store.now)
+        let hue = DomainStyle.hue(for: signal.domain)
         let history = store.board?.history(for: signal.id) ?? []
-        Group {
-            if typeSize.isAccessibilitySize {
-                VStack(alignment: .leading, spacing: 6) {
-                    title
-                    StatusPill(level)
-                    valueText
+        VStack(alignment: .leading, spacing: 8) {
+            if showsDomain {
+                Label {
+                    Text(DomainStyle.shortName(for: signal.domain, fallback: signal.domainName ?? signal.domain))
+                } icon: {
+                    Image(systemName: DomainStyle.symbol(for: signal.domain))
+                        .foregroundStyle(hue.fill)
                 }
-            } else {
-                HStack(spacing: 12) {
-                    title
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    Sparkline(points: history, level: level)
-                        .frame(width: 64, height: 30)
-                    VStack(alignment: .trailing, spacing: 4) {
-                        StatusPill(level)
-                        valueText
-                    }
-                    .frame(minWidth: 84, alignment: .trailing)
-                }
+                .font(.caption.weight(.semibold))
+                .foregroundStyle(hue.text)
             }
-        }
-        .padding(.vertical, 6)
-        .contentShape(.rect)
-        .accessibilityElement(children: .ignore)
-        .accessibilityLabel(signal.accessibilitySummary(at: store.now))
-    }
-
-    private var title: some View {
-        VStack(alignment: .leading, spacing: 2) {
-            // Wrap rather than truncate: names and domains stay whole on narrow iPhones.
             Text(signal.name)
                 .font(.headline)
+                .foregroundStyle(.primary)
                 .fixedSize(horizontal: false, vertical: true)
-            Text(signal.domainName ?? signal.domain.capitalized)
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
-                .fixedSize(horizontal: false, vertical: true)
+            Spacer(minLength: 0)
+            TileChart(history: history, level: level, tint: hue.fill)
+                .frame(height: chartHeight)
+            HStack(alignment: .firstTextBaseline, spacing: 5) {
+                StatusGlyph(level, font: .callout)
+                Text(level.label)
+                    .font(.title3.weight(.bold))
+                    .fontDesign(.rounded)
+                    .foregroundStyle(level.textColor)
+                Spacer(minLength: 0)
+                if let trend = signal.trend, trend != .unknown {
+                    Image(systemName: trend.symbol)
+                        .font(.caption.weight(.bold))
+                        .foregroundStyle(.secondary)
+                }
+            }
+            if let value = signal.value {
+                Text(value)
+                    .font(.caption)
+                    .monospacedDigit()
+                    .foregroundStyle(.secondary)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
         }
+        .frame(maxWidth: .infinity, minHeight: minHeight, maxHeight: .infinity, alignment: .topLeading)
+        .tile(tint: hue.fill, padding: 14)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(signal.accessibilitySummary(at: store.now))
+        .accessibilityHint(signal.summary ?? "")
+        .accessibilityAddTraits(.isButton)
     }
+}
 
-    @ViewBuilder private var valueText: some View {
-        if let value = signal.value {
-            Text(value)
-                .font(.caption)
-                .monospacedDigit()
-                .foregroundStyle(.secondary)
-                .lineLimit(2)
-                .multilineTextAlignment(.trailing)
+/// Signal tiles in a grid that fits two to a row on iPhone and more on wider
+/// displays, each linking to the signal.
+struct SignalTileGrid: View {
+    let signals: [Signal]
+    var showsDomain = true
+
+    @Environment(\.dynamicTypeSize) private var typeSize
+
+    var body: some View {
+        let minimum: CGFloat = typeSize.isAccessibilitySize ? 320 : 158
+        LazyVGrid(columns: [GridItem(.adaptive(minimum: minimum), spacing: 12, alignment: .top)], spacing: 12) {
+            ForEach(signals) { signal in
+                NavigationLink(value: Route.signal(signal.id)) {
+                    SignalTile(signal: signal, showsDomain: showsDomain)
+                }
+                .buttonStyle(.plain)
+            }
         }
     }
 }

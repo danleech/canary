@@ -8,6 +8,7 @@ import SwiftUI
 ///     -CanaryRoute canary://signal/oil        open a screen (any DeepLink URL)
 ///     -CanaryTab browse                       summary, browse, changes or search
 ///     -CanarySheet plus                       plus, settings or pins
+///     -CanaryScroll 800                       scroll long pages down 800 points
 ///
 /// Compiled out of release builds.
 enum DebugLaunch {
@@ -38,6 +39,27 @@ enum DebugLaunch {
 
     static var sheet: DebugSheet? {
         defaults.string(forKey: "CanarySheet").flatMap(DebugSheet.init(rawValue:))
+    }
+
+    /// `-CanaryScroll 800` scrolls long pages down by that many points.
+    static var scrollOffset: CGFloat? {
+        let value = defaults.double(forKey: "CanaryScroll")
+        return value > 0 ? CGFloat(value) : nil
+    }
+}
+
+/// Scrolls a page to `-CanaryScroll` once it has drawn.
+struct DebugScroll: ViewModifier {
+    @State private var position = ScrollPosition(edge: .top)
+
+    func body(content: Content) -> some View {
+        content
+            .scrollPosition($position)
+            .task {
+                guard let offset = DebugLaunch.scrollOffset else { return }
+                try? await Task.sleep(for: .milliseconds(800))
+                position.scrollTo(y: offset)
+            }
     }
 }
 

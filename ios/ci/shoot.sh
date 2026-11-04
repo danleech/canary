@@ -111,6 +111,8 @@ if [ "$DEVICE" = "iPhone Duo" ]; then
       shot "flat-search" 4 -CanaryTab search
       [ -n "$SIT" ] && shot "flat-situation" 4 -CanaryRoute "canary://situation/$SIT"
       shot "flat-settings" 4 -CanarySheet settings
+      shot "flat-summary-2" 4 -CanaryScroll 640
+      shot "flat-world-2" 4 -CanaryRoute canary://world -CanaryScroll 600
       xcrun simctl ui "$UDID" appearance dark
       shot "flat-summary-dark" 4
       shot "flat-signal-dark" 4 -CanaryRoute canary://signal/oil
@@ -130,6 +132,14 @@ else
   shot plus 4 -CanarySheet plus
   shot settings 4 -CanarySheet settings
   shot pins 4 -CanarySheet pins
+  shot summary-2 4 -CanaryScroll 720
+  shot summary-3 4 -CanaryScroll 1450
+  shot summary-4 4 -CanaryScroll 2200
+  shot world-2 4 -CanaryRoute canary://world -CanaryScroll 640
+  shot world-3 4 -CanaryRoute canary://world -CanaryScroll 1350
+  shot world-4 4 -CanaryRoute canary://world -CanaryScroll 2050
+  shot signal-2 4 -CanaryRoute canary://signal/oil -CanaryScroll 620
+  shot signal-3 4 -CanaryRoute canary://signal/oil -CanaryScroll 1300
   xcrun simctl ui "$UDID" appearance dark
   shot summary-dark 4
   shot browse-dark 4 -CanaryTab browse

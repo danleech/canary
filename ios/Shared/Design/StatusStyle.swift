@@ -55,7 +55,7 @@ extension WorldBand {
     }
 }
 
-/// SF Symbols for domains, shown in the accent colour so they never read as a status.
+/// SF Symbols, colours (see Palette.swift) and short names for domains.
 public enum DomainStyle {
     public static func symbol(for id: String) -> String {
         switch id {
@@ -71,6 +71,24 @@ public enum DomainStyle {
         case "humanitarian": "person.3.fill"
         case "uk": "binoculars.fill"
         default: "circle.grid.2x2.fill"
+        }
+    }
+
+    /// A short name for chart labels and tiles.
+    public static func shortName(for id: String, fallback: String) -> String {
+        switch id {
+        case "markets": "Markets"
+        case "economy": "Economy"
+        case "energy": "Energy"
+        case "geopolitics": "Geopolitics"
+        case "conflict": "Conflict"
+        case "hazards": "Hazards"
+        case "climate": "Climate"
+        case "health": "Health"
+        case "tech": "Tech & Cyber"
+        case "humanitarian": "Humanitarian"
+        case "uk": "UK"
+        default: fallback
         }
     }
 }
@@ -145,7 +163,7 @@ public struct StatusLabel: View {
             StatusGlyph(level, font: font)
         }
         .font(font)
-        .foregroundStyle(level.color)
+        .foregroundStyle(level.textColor)
     }
 }
 
