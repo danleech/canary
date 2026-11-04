@@ -1,9 +1,9 @@
 # Pacific & Indian cyclones — ALERT (improving)
-id other-cyclones · Weather & Hazards · horizon acute · checked 2026-11-04T05:53Z · at this level since 2026-11-02T11:58Z · stale after 2026-11-04T19:53Z
+id other-cyclones · Weather & Hazards · horizon acute · checked 2026-11-04T11:42Z · text written 2026-11-04T05:53Z · at this level since 2026-11-02T11:58Z · stale after 2026-11-05T01:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/other-cyclones
 
 Value: Murasu: 2 dead, 12,230 moved (3 Nov)
-Rated on: GDACS red cyclone alert (Murasu) = Alert
+Rated on: GDACS cyclone: 1 red / 0 orange (Alert)
 Basis: measured — Set by a fixed rule applied to open data (GDACS cyclone: 1 red / 0 orange). Anyone can reproduce it from the public metrics file.
 Situation: Cyclone Murasu [cyclone-murasu]
 

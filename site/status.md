@@ -1,5 +1,5 @@
 # Canary — all signals
-as_of 2026-11-04T05:53Z · next run ~11:40 UK · stale after 2026-11-04T19:53Z (36h for daily-tier signals)
+as_of 2026-11-04T11:42Z · next run ~17:40 UK · stale after 2026-11-05T01:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 26 measured from open data, 5 follow a published figure, 58 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -8,8 +8,8 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | id | status | trend | basis | value | summary |
 |---|---|---|---|---|---|
 | sovereign-debt | ALERT | stable | judged | OAT–Bund 160bp (2 Nov) | France–Bund spread 160bp, above the 150bp Alert line; general strike set for 5 Nov |
-| oil | ALERT | improving | measured | $103.9, 1m +4% | Brent near $104 after deal-hope fall; Hormuz still largely shut |
-| eu-gas | ALERT | improving | measured | €92/MWh | European gas near €92/MWh, far above the €70 Alert line |
+| oil | ALERT | improving | measured | $102.5, 1m +2% | Brent near $104 after deal-hope fall; Hormuz still largely shut |
+| eu-gas | ALERT | improving | measured | €88/MWh | European gas near €92/MWh, far above the €70 Alert line |
 | chokepoints | ALERT | stable | judged | Hormuz largely shut; record Oct attacks | Hormuz largely shut; tanker hit off Oman and dhow struck on 3 Nov |
 | freight | ALERT | improving | published | WCI $4,429/FEU (29 Oct) | Drewry container index $4,429, above the $4,000 Alert line |
 | food-prices | ALERT | stable | published | FAO index 136.0 (Sep) | FAO food price index 136.0 in September, above the 135 Alert line |
@@ -25,10 +25,9 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | ebola | ALERT | worsening | judged | 5,376 deaths; >10,000 cases (2 Nov) | Ebola outbreak passes 5,300 deaths, mostly in DR Congo; spread to Kenya and Nigeria |
 | uk-energy-cap | ALERT | stable | judged | £1,723 now; Jan forecasts +16–27% | Energy cap £1,723; January forecasts range from +16% to +27% |
 | uk-threat-level | ALERT | stable | published | Threat level: Severe | UK national threat level Severe: an attack is highly likely |
-| equity-stress | WATCH | stable | measured | VIX 20.8, S&P -3.2% | VIX near 21 above Watch line; S&P 500 3.2% off high as chip stocks rebound |
+| equity-stress | WATCH | stable | measured | VIX 18.2, S&P -3.2% | VIX near 21 above Watch line; S&P 500 3.2% off high as chip stocks rebound |
 | bond-volatility | WATCH | stable | measured | MOVE 100, 10y 4.95% | Treasury volatility at the 100 Watch line; 10-year yield near 4.95% |
-| gold | WATCH | stable | measured | $3,976, 3m -9.6% | Gold near $3,975, down 9.6% over three months |
-| crypto | WATCH | stable | judged | BTC $77,602, -10% from high | Bitcoin 10% off its high; Binance under strain after record $6.3bn theft |
+| crypto | WATCH | improving | judged | BTC $78,542, -9% from high | Bitcoin 9% off its high; Binance says outflows have normalised after the record theft |
 | private-credit | WATCH | stable | judged | Q3 exits ~10–11.5% of NAV vs 5% caps | Non-traded BDC redemption requests far above 5% caps; backlog $8.2bn |
 | us-inflation | WATCH | stable | measured | CPI 4.0% y/y | US CPI 4.0% y/y in September; October data due mid-November |
 | central-banks | WATCH | worsening | judged | RBA 4.85% (3 Nov); BoE 5 Nov | RBA hikes to an 18-year high; Bank of England expected to raise rates on 5 Nov |
@@ -64,12 +63,13 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | uk-rates | WATCH | worsening | judged | CPI 3.5% (Sep); BoE 5 Nov | UK inflation 3.5%; Bank of England expected to raise Bank Rate to 4% on 5 Nov |
 | gilts | WATCH | stable | judged | 10y ~5.2% (3 Nov) | 10-year gilt yield near 5.2% ahead of an expected rate rise on 5 Nov |
 | uk-disruption | WATCH | worsening | judged | Doctors' strikes 14–19 and 25–26 Nov | Resident doctors strike 14–19 Nov; consultants 25–26 Nov |
-| ftse | NORMAL | stable | measured | 10,638, -2.5% from high | FTSE 100 about 2.5% below its high; no large daily falls this week |
+| ftse | NORMAL | stable | measured | 10,762, -1.4% from high | FTSE 100 about 2.5% below its high; no large daily falls this week |
 | credit-spreads | NORMAL | stable | measured | HY OAS 3.43% | US high-yield spreads 3.43%, inside the 4% Watch line |
-| dollar | NORMAL | stable | measured | DXY 101.5, 3m +1.9% | Dollar index near 101.5, up 1.9% over three months |
+| dollar | NORMAL | stable | measured | DXY 101.4, 3m +1.8% | Dollar index near 101.5, up 1.9% over three months |
 | banking-stress | NORMAL | stable | measured | STLFSI -0.58, CISS 0.01 | Financial stress gauges low; no bank failures reported |
+| gold | NORMAL | stable | measured | $4,052, 3m -7.9% | Gold near $4,050, down 7.9% over three months, just inside the Normal band |
 | funding-stress | NORMAL | stable | measured | SOFR–IORB +5bp, repo $0.0bn | SOFR within 5bp of reserve rate; Fed repo use near zero |
-| yen-carry | NORMAL | stable | measured | ¥157.9/$, 1w +0.1% | Yen near ¥158 per dollar; little changed on the week and month |
+| yen-carry | NORMAL | stable | measured | ¥158.5/$, 1w +0.4% | Yen near ¥158 per dollar; little changed on the week and month |
 | us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.34 | Sahm indicator 0.00; yield curve +0.34; payrolls due 6 Nov |
 | euro-growth | NORMAL | improving | judged | Q3 GDP +0.4% q/q | Euro-area GDP up 0.4% in Q3; ECB flags energy risks to growth |
 | china-economy | NORMAL | improving | judged | Q3 GDP +4.5%; Oct NBS PMI 49.3 | Factory PMI back in contraction; regulators reportedly pause IPOs amid stock sell-off |
