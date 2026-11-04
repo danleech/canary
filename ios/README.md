@@ -73,6 +73,40 @@ uses Xcode's synchronized folders, so new files are picked up automatically.
 - **Honesty**: the AI-assessment disclosure, basis (measured, published or AI
   judgement) and the not-advice disclaimer appear in the app as on the website.
 
+## Visual design
+
+Modelled on Health: tiles on the grouped background, each washed with its
+category's colour, coloured headers, rounded continuous corners, and a chart
+wherever the data suits one.
+
+- **Palette** (`Shared/Design/Palette.swift`): Apple's system colours. Red,
+  orange and green mean attention levels and nothing else, so the 11 domains take
+  blue, indigo, teal, purple, brown, cyan, mint and three soft custom tones. Text
+  in a colour uses Apple's increased-contrast variant, so it meets WCAG AA in
+  light and dark mode.
+- **Gradients and glass**: a pastel mesh gradient behind the World State in its
+  band's colours (also on the World State widget), soft washes at the top of each
+  page and on tiles, and Liquid Glass for the level chips and chart callouts.
+  Glass stays on small controls, as the HIG asks, not on whole content cards.
+- **Charts fitted to the data** (`Canary/Charts`):
+
+  | Data | Chart |
+  | --- | --- |
+  | World State score | Activity-style ring |
+  | World State over time | Smoothed line over a gradient, band edges marked |
+  | Levels today | Donut |
+  | Levels by day | Stacked columns |
+  | Moves up and easings by day | Diverging columns |
+  | Domain scores | Horizontal bars in domain colours |
+  | How levels were set | Donut (measured, published, AI judgement) |
+  | How long each signal has held its level | Scatter by domain, shaped by level |
+  | A signal's key value | Smoothed line with a range picker and touch-to-inspect |
+  | A signal's level over time | Sleep-stage style timeline |
+  | Pinned and domain signals | Mini line or level columns in each tile |
+
+- Chart figures come from `Shared/Model/BoardStats.swift`, which derives them
+  from the published check history only.
+
 ## Every iPhone, including iPhone Duo
 
 Layouts follow size classes and the width actually available, never device models.
