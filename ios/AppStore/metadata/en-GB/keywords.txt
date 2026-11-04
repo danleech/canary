@@ -1,1 +1,1 @@
-risk,dashboard,geopolitics,climate,markets,energy,conflict,earthquake,hazard,outbreak,cyber,news,uk
+dashboard,geopolitics,climate,markets,energy,conflict,earthquake,hazard,outbreak,cyber,news,crisis

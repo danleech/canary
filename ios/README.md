@@ -45,10 +45,12 @@ See `Canary/App/DebugLaunch.swift`. They are compiled out of release builds.
 | Canary+ | `Canary/Plus`, `Canary/Stores/PlusStore.swift` | StoreKit 2, Apple's `SubscriptionStoreView` |
 | Alerts | `Canary/Alerts` | Background app refresh + local notifications |
 | Siri & Shortcuts | `Canary/Intents`, `Shared/Intents` | World State, check a signal, list alerts, open a signal |
-| Widgets | `CanaryWidgets` | World State (free), Signal and Pinned (Canary+); Home Screen, Lock Screen, StandBy |
+| Widgets | `CanaryWidgets`, `Shared/Widgets` | World State (free), Signal and Pinned (Canary+); Home Screen, Lock Screen, StandBy. The views live in `Shared/Widgets` so the app can draw them too |
 | Data layer | `Shared/Model`, `Shared/Networking` | Codable models of `api/v1/*.json` and `data/history.json`, offline cache in the App Group |
 | App icon | `Tools/make_icon.py` | Draws the light, dark and tinted icons from vector shapes |
-| CI | `ci/`, `../.github/workflows/ios.yml` | Builds and screenshots every push to the `ios-app` branch |
+| Tests | `CanaryTests`, `CanaryUITests` | Unit tests of the router and chart statistics; UI tests of touches, pickers, scrolling, sheets and purchases |
+| App Store | `AppStore/` | Metadata, review notes, privacy and age-rating answers, screenshot generator |
+| CI | `ci/`, `../.github/workflows/ios.yml` | Builds, tests and screenshots every push to the `ios-app` branch |
 
 `Shared/` is compiled into both the app and the widget extension. The project
 uses Xcode's synchronized folders, so new files are picked up automatically.
@@ -137,13 +139,25 @@ runners:
 - installs the app on iPhone 17e, 17, Air and 18 Pro Max (iOS 27.0) and
   screenshots every screen in light, dark and accessibility text sizes;
 - on iPhone Duo (iOS 27.1) moves the hinge through closed, closed landscape,
-  open, open portrait, book and tabletop poses and screenshots each one. Posing
+  open, open portrait, book and tabletop poses and screenshots each one, then
+  folds and unfolds with the app running to check it keeps your place. Posing
   uses the third-party `hinge` CLI and `duo_pose.py` (both MIT), because Apple's
-  `simctl` has no fold command.
+  `simctl` has no fold command;
+- runs the unit tests (`CanaryTests`: router fold and unfold mapping, deep
+  links, chart statistics, withheld figures) and the UI tests (`CanaryUITests`:
+  tabs, search, chart touch and range picker, scroll titles, pinning, withheld
+  figures, Settings, the purchase screen with a StoreKit test session, and the
+  widget gallery) on iPhone 17 and on iPhone Duo's outer display;
+- composes the captioned App Store screenshots (`AppStore/make_screenshots.py`)
+  and uploads them as the `app-store-screenshots` artifact.
 
-Not covered by CI: purchases (the local StoreKit file only loads when run from
-Xcode, so the paywall shows *Subscription Unavailable* there), widgets, Siri,
-background alerts, VoiceOver, and anything on a physical device.
+The debug launch arguments in `Canary/App/DebugLaunch.swift` open any screen
+directly; `-CanarySheet widgets` and `-CanarySheet showcase` draw every widget
+with the widget extension's own views, so the widgets can be screenshotted.
+
+Not covered by CI: widgets on a real Home Screen, Siri, background alerts
+arriving, VoiceOver, and anything on a physical device. Purchases are checked
+only as far as the purchase screen loading its products.
 
 ## Before the App Store
 
@@ -152,28 +166,33 @@ background alerts, VoiceOver, and anything on a physical device.
 - **Canary+ products**: two auto-renewable subscriptions in one group,
   `com.danleech.canary.plus.yearly` and `com.danleech.canary.plus.monthly`. The
   prices in `Canary.storekit` (£14.99 a year, £1.99 a month) are placeholders.
-- **Privacy policy** at `https://canary.danleech.com/privacy`. That page does not
-  exist yet (404). The app collects nothing, but a subscription app needs a
-  policy link. `PrivacyInfo.xcprivacy` declares no tracking and no collected data.
+- **Privacy policy** is live at `https://canary.danleech.com/privacy` and linked
+  from the site's footer, Settings and the purchase screen. It doesn't yet name
+  the data controller or give a contact address; UK GDPR expects both, so add
+  them. `PrivacyInfo.xcprivacy` declares no tracking and no collected data.
 - **Market data licences — decide before charging**: about ten measured signals
   show values built from Yahoo Finance (whose terms rule out commercial use) or
   from ICE BofA and Cboe series on FRED that carry redistribution limits:
   `equity-stress`, `ftse`, `bond-volatility`, `credit-spreads`, `dollar`, `gold`,
   `yen-carry`, `oil`, `eu-gas` and others that fall back to them
   (`scripts/fetch_metrics.py`, `RESTRICTED_*`). The free website gets by on
-  derived values; a paid app is a different footing. Options: license the data,
-  move those signals to open official series (EIA, ECB, BoE, FRED public-domain
-  series), or show only the level in the app for restricted signals.
+  derived values; a paid app is a different footing. The app now shows only the
+  level for these signals: no figure, chart values or rubric number, and a
+  "Figures Not Shown" note linking to the website (`Shared/Model/RestrictedData.swift`
+  reads the licence notes in `data/metrics.json`, with a built-in list as a floor).
+  The assessment text (`summary`, `state`) can still quote a price as news, for
+  example "Brent near $104". Whether that's acceptable is a judgement for you or
+  a lawyer; the alternatives are licensing the data or moving those signals to
+  open official series (EIA, ECB, BoE, FRED public-domain series).
 - **Charter**: a mobile app and a paid tier are listed as v1 non-goals, so the
   charter needs updating alongside this.
 - **Name check**: other apps and companies already use "Canary". Check the App
   Store and trademarks before committing to the name.
-- **App Review notes**: explain that statuses are AI-assessed against published
-  rubrics, and point to the methodology page. Guideline 4.2 (minimum
-  functionality) is the main risk for an app that mirrors a website; the widgets,
-  alerts, Siri and offline use are the native value.
-- **Screenshots**: App Store Connect takes iPhone Duo screenshots at 1398 × 2034
-  (outer) and 2007 × 2853 (inner); CI produces both sizes.
+- **App Store pack**: metadata, review notes, App Privacy and age-rating answers,
+  subscription details and captioned screenshots are in `AppStore/` (see its
+  README). Guideline 4.2 (minimum functionality) is the main review risk for an
+  app that mirrors a website; the review notes set out the widgets, alerts, Siri,
+  offline use and iPhone Duo layouts as the native value.
 - **Alerts arrive late by design**: iOS decides when background refresh runs.
   Timely alerts would need a push server (APNs) — a later decision.
 

@@ -48,6 +48,31 @@ final class CanaryUITests: XCTestCase {
         return summary.exists && summary.frame.minX > app.frame.width * 0.75
     }
 
+    /// The value chart's plot. Swift Charts reports the identifier on both the
+    /// chart and its accessibility container, so take the last (the plot).
+    @MainActor
+    private func valueChart(_ app: XCUIApplication) -> XCUIElement {
+        let charts = app.descendants(matching: .any).matching(identifier: "valueChart")
+        return charts.element(boundBy: max(charts.count - 1, 0))
+    }
+
+    /// Scrolls with short, slow drags (no momentum) until the element sits
+    /// clear of the bars. `swipeUp` overshoots on short screens such as
+    /// iPhone Duo's outer display.
+    @MainActor
+    private func bringIntoView(_ element: XCUIElement, in app: XCUIApplication) {
+        let window = app.windows.firstMatch.frame
+        for _ in 0..<10 {
+            let frame = element.frame
+            if frame.minY >= window.minY + 90, frame.maxY <= window.maxY - 110 { return }
+            // Start the drag off the element, so a chart doesn't take it as a selection.
+            let dy = [0.6, 0.3, 0.85].first { !frame.contains(CGPoint(x: frame.midX, y: window.minY + window.height * $0)) } ?? 0.6
+            let start = app.coordinate(withNormalizedOffset: CGVector(dx: 0.4, dy: dy))
+            let step: CGFloat = frame.maxY > window.maxY - 110 ? -160 : 160
+            start.press(forDuration: 0.05, thenDragTo: start.withOffset(CGVector(dx: 0, dy: step)))
+        }
+    }
+
     /// The first launch fetches the board, so allow for the network.
     @MainActor
     private func waitForSummary(_ app: XCUIApplication) {
@@ -88,9 +113,10 @@ final class CanaryUITests: XCTestCase {
     @MainActor
     func testChartTouchSelectsACheck() {
         let app = launch(["-CanaryRoute", "canary://signal/earthquakes"])
-        let chart = app.descendants(matching: .any)["valueChart"].firstMatch
-        XCTAssertTrue(chart.waitForExistence(timeout: 60), "value chart should appear")
-        if !chart.isHittable { app.swipeUp() }
+        XCTAssertTrue(app.descendants(matching: .any)["valueChart"].firstMatch.waitForExistence(timeout: 60),
+                      "value chart should appear")
+        let chart = valueChart(app)
+        bringIntoView(chart, in: app)
         XCTAssertTrue(app.staticTexts["LATEST"].exists)
         let start = chart.coordinate(withNormalizedOffset: CGVector(dx: 0.35, dy: 0.5))
         let end = chart.coordinate(withNormalizedOffset: CGVector(dx: 0.45, dy: 0.5))
@@ -106,7 +132,7 @@ final class CanaryUITests: XCTestCase {
         let app = launch(["-CanaryRoute", "canary://signal/earthquakes"])
         let day = app.buttons["D"]
         XCTAssertTrue(day.waitForExistence(timeout: 60))
-        if !day.isHittable { app.swipeUp() }
+        bringIntoView(day, in: app)
         day.tap()
         XCTAssertTrue(day.isSelected)
         snapshot("range-day")
