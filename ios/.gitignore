@@ -5,3 +5,4 @@ xcuserdata/
 *.xcuserstate
 *.xcscmblueprint
 .swiftpm/
+ci/duo_pose.py

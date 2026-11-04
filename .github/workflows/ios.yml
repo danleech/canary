@@ -1,0 +1,121 @@
+name: ios
+
+# Builds the iOS app with Xcode 27.1 and takes simulator screenshots on every
+# current iPhone size, including iPhone Duo folded and unfolded.
+# Runs only for the iOS app branch; main and the website are untouched.
+
+on:
+  push:
+    branches: [ios-app]
+    paths: ["ios/**", ".github/workflows/ios.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ios-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  XCODE: /Applications/Xcode_27.1.app
+  # Third-party helpers for posing the iPhone Duo simulator (MIT). Pinned.
+  DUO_SKILL_SHA: 98cdb7c19d9cbb07ded0bd7966e109a4ef0d8f4a
+
+jobs:
+  build:
+    runs-on: xcode-27
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Toolchain
+        run: |
+          sudo xcode-select -s "$XCODE"
+          xcodebuild -version
+          xcrun swift --version
+          for x in /Applications/Xcode_27.app /Applications/Xcode_27.1.app /Applications/Xcode_27.2_Release_Candidate.app; do
+            [ -d "$x" ] || continue
+            echo "== $x"
+            DEVELOPER_DIR="$x/Contents/Developer" xcrun swift --version 2>&1 | head -1
+            sdk=$(DEVELOPER_DIR="$x/Contents/Developer" xcrun --sdk iphonesimulator --show-sdk-path)
+            grep -h -o -m1 "user-module-version [0-9.]*" "$sdk"/System/Library/Frameworks/SwiftUI.framework/Modules/SwiftUI.swiftmodule/*.swiftinterface | head -1 || true
+          done
+
+      - name: Build (Debug, simulator)
+        run: |
+          set -o pipefail
+          xcodebuild -project ios/Canary.xcodeproj -scheme Canary \
+            -configuration Debug -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath build \
+            CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY=- DEVELOPMENT_TEAM= \
+            build 2>&1 | tee build-debug.log | xcbeautify --renderer github-actions
+
+      - name: Build (Release, device, unsigned)
+        run: |
+          set -o pipefail
+          xcodebuild -project ios/Canary.xcodeproj -scheme Canary \
+            -configuration Release -sdk iphoneos \
+            -destination 'generic/platform=iOS' \
+            -derivedDataPath build-release \
+            CODE_SIGNING_ALLOWED=NO \
+            build 2>&1 | tee build-release.log | xcbeautify --renderer github-actions
+
+      - name: Diagnostics
+        if: always()
+        run: |
+          for f in build-debug.log build-release.log; do
+            [ -f "$f" ] || continue
+            echo "=== $f"
+            grep -E "(error|warning): " "$f" | sed -E 's#^.*/ios/##' | sort -u | head -300 || true
+          done
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: build-logs
+          path: build-*.log
+          retention-days: 7
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: app
+          path: build/Build/Products/Debug-iphonesimulator/Canary.app
+          retention-days: 3
+
+  screenshots:
+    needs: build
+    runs-on: xcode-27
+    timeout-minutes: 50
+    strategy:
+      fail-fast: false
+      matrix:
+        device: ["iPhone 17e", "iPhone 17", "iPhone Air", "iPhone 18 Pro Max", "iPhone Duo"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: app
+          path: app/Canary.app
+
+      - name: Duo tooling
+        if: matrix.device == 'iPhone Duo'
+        run: |
+          brew install artemnovichkov/tap/hinge
+          hinge --version || true
+          curl -fsSL -o ios/ci/duo_pose.py \
+            "https://raw.githubusercontent.com/alexey1312/iPhone-Duo-Agent-Skill/${DUO_SKILL_SHA}/skills/iphone-duo-displays/scripts/duo_pose.py"
+
+      - name: Screenshots
+        run: |
+          sudo xcode-select -s "$XCODE"
+          bash ios/ci/shoot.sh "${{ matrix.device }}" app/Canary.app shots
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: shots-${{ strategy.job-index }}
+          path: shots
+          retention-days: 7
