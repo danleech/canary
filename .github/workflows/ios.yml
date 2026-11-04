@@ -187,3 +187,37 @@ jobs:
           name: shots-${{ strategy.job-index }}
           path: shots
           retention-days: 7
+
+  # Captioned App Store screenshots at the sizes App Store Connect takes,
+  # made from the screenshots above (ios/AppStore/make_screenshots.py).
+  appstore:
+    needs: screenshots
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      # Inter (SIL Open Font Licence), pinned by version and checksum.
+      INTER_URL: https://github.com/rsms/inter/releases/download/v4.1/Inter-4.1.zip
+      INTER_SHA256: 9883fdd4a49d4fb66bd8177ba6625ef9a64aa45899767dde3d36aa425756b11e
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: shots-*
+          path: shots
+          merge-multiple: true
+      - name: Compose
+        run: |
+          curl -fsSL -o inter.zip "$INTER_URL"
+          echo "$INTER_SHA256  inter.zip" | sha256sum -c -
+          mkdir -p fonts && unzip -q -j inter.zip "extras/ttf/InterDisplay-Bold.ttf" "extras/ttf/Inter-Medium.ttf" -d fonts
+          python3 -m pip install --quiet pillow
+          python3 ios/AppStore/make_screenshots.py shots app-store --fonts fonts
+      - uses: actions/upload-artifact@v4
+        with:
+          name: app-store-screenshots
+          path: app-store
+          retention-days: 30

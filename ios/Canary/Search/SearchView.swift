@@ -5,7 +5,7 @@ import SwiftUI
 struct SearchView: View {
     @Environment(BoardStore.self) private var store
     @Environment(Router.self) private var router
-    @State private var query = ""
+    private var query: String { router.searchQuery }
 
     var body: some View {
         @Bindable var router = router
@@ -20,7 +20,6 @@ struct SearchView: View {
                 }
             }
             .navigationTitle("Search")
-            .searchable(text: $query, prompt: "Signals, domains, situations")
             .routeDestinations()
         }
     }

@@ -1,0 +1,1 @@
+Nearly 90 global risk signals, each at an attention level of Normal, Watch or Alert, with the reasons and sources behind it. Checked four times a day.

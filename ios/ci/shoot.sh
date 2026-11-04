@@ -152,6 +152,7 @@ else
   shot settings 4 -CanarySheet settings
   shot pins 4 -CanarySheet pins
   shot widgets 5 -CanarySheet widgets
+  shot showcase 6 -CanarySheet showcase
   shot widgets-2 4 -CanarySheet widgets -CanaryScroll 650
   shot widgets-3 4 -CanarySheet widgets -CanaryScroll 1300
   shot summary-2 4 -CanaryScroll 720

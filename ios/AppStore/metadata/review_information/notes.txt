@@ -1,0 +1,23 @@
+Canary is a native iPhone client for a public status board (https://canary.danleech.com). It shows an attention level (Normal, Watch or Alert) for nearly 90 global risk signals. There is no account and no sign-in; every screen is available straight away.
+
+HOW LEVELS ARE SET
+The board is updated four times a day against published rubrics (https://canary.danleech.com/methodology). Each level records how it was set: measured (a numeric threshold), published (the figure of an official body), or an AI judgement of cited sources. AI judgements are labelled "AI judgement" in the app. Every signal lists its sources. Canary describes conditions only: it gives no financial, medical, legal or travel advice, and where official guidance exists it links to the body that publishes it.
+
+WHAT THE APP ADDS TO THE WEBSITE
+- Widgets: World State (free) on the Home Screen and Lock Screen; Signal and Pinned widgets with Canary+.
+- Alerts when a followed signal changes level, delivered after background app refresh.
+- App Intents for Siri and Shortcuts ("What's on alert in Canary?", "Check the world state in Canary").
+- Pins, search and a cached board that opens offline.
+- Layouts for every current iPhone, including iPhone Duo: a tab bar on the outer display, a sidebar on the inner display, and the same place kept when the device is folded or unfolded.
+
+CANARY+ (AUTO-RENEWABLE SUBSCRIPTION)
+Two products in one subscription group: com.danleech.canary.plus.monthly and com.danleech.canary.plus.yearly. To reach the purchase screen: on Summary, tap the gear button (Settings) > Get Canary+, or open any signal and pin it when three are already pinned. The purchase screen shows the price and period of each option and links to the Privacy Policy and the standard Apple Terms of Use. Restore Purchases is in Settings. The board itself stays free.
+
+TESTING ALERTS
+iOS decides when background refresh runs, so an alert can arrive some hours after a level changes on the board. Alerts need Canary+ and notification permission, which the app asks for when you first turn alerts on in Settings.
+
+MARKET DATA
+For signals built on licensed market data (for example oil, gold and equity volatility), the app shows the attention level but not the underlying figure or chart, and says so on the signal's page.
+
+DATA
+The app collects no personal data and contains no analytics, advertising or tracking. Pins and settings stay on the device.

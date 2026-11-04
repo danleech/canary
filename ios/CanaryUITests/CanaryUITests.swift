@@ -31,6 +31,23 @@ final class CanaryUITests: XCTestCase {
         app.descendants(matching: .any).matching(NSPredicate(format: "label BEGINSWITH %@", prefix)).firstMatch
     }
 
+    /// A tab's button. iPhone Duo's outer display draws the tab bar as a strip down
+    /// the trailing edge, which XCTest doesn't report as a tab bar.
+    @MainActor
+    private func tab(_ app: XCUIApplication, _ name: String) -> XCUIElement {
+        let inBar = app.tabBars.buttons[name]
+        return inBar.waitForExistence(timeout: 2) ? inBar : app.buttons[name].firstMatch
+    }
+
+    /// True on iPhone Duo's outer display, where the bar's buttons sit in the
+    /// trailing strip and there is no title area at the top.
+    @MainActor
+    private func usesSideStrip(_ app: XCUIApplication) -> Bool {
+        guard !app.tabBars.firstMatch.exists else { return false }
+        let summary = app.buttons["Summary"].firstMatch
+        return summary.exists && summary.frame.minX > app.frame.width * 0.75
+    }
+
     /// The first launch fetches the board, so allow for the network.
     @MainActor
     private func waitForSummary(_ app: XCUIApplication) {
@@ -44,7 +61,7 @@ final class CanaryUITests: XCTestCase {
         let app = launch()
         waitForSummary(app)
         snapshot("summary")
-        app.tabBars.buttons["Browse"].tap()
+        tab(app, "Browse").tap()
         let tile = element(app, labelStartingWith: "Energy & Commodities")
         XCTAssertTrue(tile.waitForExistence(timeout: 10))
         snapshot("browse")
@@ -57,7 +74,7 @@ final class CanaryUITests: XCTestCase {
     func testSearchFindsSignal() {
         let app = launch()
         waitForSummary(app)
-        app.tabBars.buttons["Search"].tap()
+        tab(app, "Search").tap()
         let field = app.searchFields.firstMatch
         XCTAssertTrue(field.waitForExistence(timeout: 10))
         field.tap()
@@ -71,7 +88,7 @@ final class CanaryUITests: XCTestCase {
     @MainActor
     func testChartTouchSelectsACheck() {
         let app = launch(["-CanaryRoute", "canary://signal/earthquakes"])
-        let chart = app.descendants(matching: .any)["valueChart"]
+        let chart = app.descendants(matching: .any)["valueChart"].firstMatch
         XCTAssertTrue(chart.waitForExistence(timeout: 60), "value chart should appear")
         if !chart.isHittable { app.swipeUp() }
         XCTAssertTrue(app.staticTexts["LATEST"].exists)
@@ -98,9 +115,12 @@ final class CanaryUITests: XCTestCase {
     }
 
     @MainActor
-    func testTitleAppearsAfterScrolling() {
+    func testTitleAppearsAfterScrolling() throws {
         let app = launch(["-CanaryRoute", "canary://signal/earthquakes"])
-        XCTAssertTrue(app.descendants(matching: .any)["valueChart"].waitForExistence(timeout: 60))
+        XCTAssertTrue(app.descendants(matching: .any)["valueChart"].firstMatch.waitForExistence(timeout: 60))
+        if usesSideStrip(app) {
+            throw XCTSkip("iPhone Duo's outer display has no title area in the navigation bar")
+        }
         app.swipeUp()
         app.swipeUp()
         XCTAssertTrue(app.navigationBars.staticTexts["Earthquakes & tsunami"].waitForExistence(timeout: 5),
@@ -115,7 +135,9 @@ final class CanaryUITests: XCTestCase {
         XCTAssertTrue(pin.waitForExistence(timeout: 60))
         pin.tap()
         XCTAssertTrue(app.buttons["Unpin"].waitForExistence(timeout: 5))
-        app.navigationBars.buttons.element(boundBy: 0).tap()
+        // The back button is in the navigation bar, or in the trailing strip on iPhone Duo's outer display.
+        let back = app.buttons["BackButton"].firstMatch
+        (back.exists ? back : app.navigationBars.buttons.element(boundBy: 0)).tap()
         XCTAssertTrue(element(app, labelStartingWith: "Global temperature").waitForExistence(timeout: 10))
         snapshot("pinned")
     }

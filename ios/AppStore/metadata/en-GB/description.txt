@@ -1,0 +1,34 @@
+Canary watches nearly 90 global risk signals, from oil prices and shipping lanes to earthquakes, heatwaves, disease outbreaks and cyber attacks, and gives each one an attention level: Normal, Watch or Alert.
+
+It is a calm way to see where the world needs your attention, without reading every headline.
+
+AT A GLANCE
+• The World State index sums up the whole board in one number, and shows how it has moved.
+• Eleven areas, each with its own tile and chart: markets, economy, energy, geopolitics, conflict, natural hazards, climate, health, technology, humanitarian and the UK.
+• See which signals changed level, and when.
+
+EVERY LEVEL EXPLAINED
+Each signal says why it sits at its level now, which rubric line set it, and the sources it rests on. Where an official body publishes the figure, Canary follows it. Where a number decides the level, the threshold is public. Where the level is a judgement, it is labelled as an AI judgement, so you always know how it was set.
+
+ON YOUR IPHONE
+• A World State widget for the Home Screen and Lock Screen
+• Siri and Shortcuts: "What's on alert in Canary?"
+• Opens instantly with the last board it saw, even offline
+• Dynamic Type, VoiceOver and Dark Mode
+• On iPhone Duo, a sidebar layout on the inner display and a compact board on the outer display, and Canary keeps your place as you fold and unfold
+
+CANARY+
+The board is free for everyone. Canary+ adds:
+• Alerts when the signals you follow change level
+• Pin as many signals as you like (three without Canary+)
+• Signal and Pinned widgets for the Home Screen and Lock Screen
+
+Canary+ is an auto-renewable subscription, billed monthly or yearly. Payment is charged to your Apple Account when you confirm the purchase. The subscription renews automatically unless you cancel it at least 24 hours before the end of the current period. You can manage or cancel it in your Apple Account settings.
+
+WHAT CANARY IS NOT
+Canary shows attention levels, not forecasts. It does not give financial, medical, legal or travel advice. Where official guidance exists, it points you to the body that gives it, such as the Met Office, the FCDO or the WHO.
+
+The board is checked four times a day. The methodology, rubrics and sources are public at canary.danleech.com/methodology, and the data is published under CC BY 4.0.
+
+Terms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privacy Policy: https://canary.danleech.com/privacy

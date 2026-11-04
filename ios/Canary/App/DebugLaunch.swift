@@ -65,23 +65,26 @@ struct DebugScroll: ViewModifier {
 }
 
 enum DebugSheet: String, Identifiable {
-    case plus, settings, pins, widgets
+    case plus, settings, pins, widgets, showcase
     var id: String { rawValue }
 }
 
-/// Presents the sheet named by `-CanarySheet`.
+/// Presents the sheet named by `-CanarySheet` (the widget showcase full screen).
 struct DebugSheetPresenter: ViewModifier {
-    @State private var sheet = DebugLaunch.sheet
+    @State private var sheet = DebugLaunch.sheet == .showcase ? nil : DebugLaunch.sheet
+    @State private var showsShowcase = DebugLaunch.sheet == .showcase
 
     func body(content: Content) -> some View {
-        content.sheet(item: $sheet) { sheet in
-            switch sheet {
-            case .plus: CanaryPlusView()
-            case .settings: SettingsView()
-            case .pins: PinEditorView()
-            case .widgets: WidgetGalleryView()
+        content
+            .sheet(item: $sheet) { sheet in
+                switch sheet {
+                case .plus: CanaryPlusView()
+                case .settings: SettingsView()
+                case .pins: PinEditorView()
+                case .widgets, .showcase: WidgetGalleryView()
+                }
             }
-        }
+            .fullScreenCover(isPresented: $showsShowcase) { WidgetShowcaseView() }
     }
 }
 #endif

@@ -26,6 +26,7 @@ struct RootView: View {
             get: { router.displayedTab(usesSidebar: usesSidebar) },
             set: { router.tab = $0 }
         )
+        @Bindable var router = router
         Group {
             if let board = store.board {
                 // The tab set itself depends on the layout: iPhone shows every tab
@@ -65,6 +66,9 @@ struct RootView: View {
                     }
                 }
                 .tabViewStyle(.sidebarAdaptable)
+                // On the tab view, so the Search tab implements it: in the tab bar
+                // on iPhone, at the top of the sidebar on iPhone Duo's inner display.
+                .searchable(text: $router.searchQuery, prompt: "Signals, domains, situations")
                 .modifier(TabBarPlacement(usesSidebar: usesSidebar))
                 .onChange(of: usesSidebar, initial: true) { _, value in
                     router.adapt(usesSidebar: value)

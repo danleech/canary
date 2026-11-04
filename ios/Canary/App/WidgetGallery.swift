@@ -22,15 +22,13 @@ struct WidgetGalleryView: View {
                     let withheld = board.signals.first(where: \.withholdsFigures)
                     VStack(alignment: .leading, spacing: 22) {
                         section("World State")
-                        HStack(alignment: .top, spacing: 16) {
-                            frame("Small", small, world: board) {
-                                WorldStateWidgetView(entry: WorldEntry(date: .now, board: board), family: .systemSmall)
-                            }
-                            lockScreen(board)
+                        frame("Small", small, world: board) {
+                            WorldStateWidgetView(entry: WorldEntry(date: .now, board: board), family: .systemSmall)
                         }
                         frame("Medium", medium, world: board) {
                             WorldStateWidgetView(entry: WorldEntry(date: .now, board: board), family: .systemMedium)
                         }
+                        lockScreen(board)
                         section("Signal (Canary+)")
                         HStack(alignment: .top, spacing: 16) {
                             frame(open.name, small) {
@@ -56,6 +54,7 @@ struct WidgetGalleryView: View {
                                              family: .systemLarge)
                         }
                     }
+                    .frame(maxWidth: .infinity, alignment: .leading)
                     .padding()
                 }
             }
@@ -118,6 +117,107 @@ struct WidgetGalleryView: View {
         .environment(\.colorScheme, .dark)
         .background(LinearGradient(colors: [.indigo, .black], startPoint: .top, endPoint: .bottom),
                     in: .rect(cornerRadius: 22, style: .continuous))
+    }
+}
+
+/// Debug only: the widgets arranged as they sit on a Lock Screen and a Home
+/// Screen, over a plain wallpaper, for the App Store screenshot
+/// (`-CanarySheet showcase`). Uses the widget extension's own views.
+struct WidgetShowcaseView: View {
+    @Environment(BoardStore.self) private var store
+
+    var body: some View {
+        GeometryReader { proxy in
+            let gap: CGFloat = 20
+            let insets = proxy.safeAreaInsets
+            // Three rows of widgets under about 230 points of Lock Screen.
+            let fullHeight = proxy.size.height + insets.top + insets.bottom
+            let tall = (fullHeight - insets.top - 230 - max(insets.bottom, 16) - 8 - gap * 2 - 24) / 3
+            let side = min(170, (proxy.size.width - 48 - gap) / 2, tall)
+            let wide = CGSize(width: side * 2 + gap, height: side)
+            let square = CGSize(width: side, height: side)
+            ZStack {
+                wallpaper
+                if let board = store.board {
+                    let world = WorldEntry(date: .now, board: board)
+                    let open = board.signals.first { $0.id == "earthquakes" } ?? board.signals[0]
+                    VStack(spacing: 0) {
+                        VStack(spacing: 6) {
+                            WorldStateWidgetView(entry: world, family: .accessoryInline)
+                                .font(.headline)
+                            Text("9:41")
+                                .font(.system(size: 92, weight: .semibold, design: .rounded))
+                                .monospacedDigit()
+                            HStack(spacing: 12) {
+                                WorldStateWidgetView(entry: world, family: .accessoryCircular)
+                                    .frame(width: 72, height: 72)
+                                WorldStateWidgetView(entry: world, family: .accessoryRectangular)
+                                    .frame(width: 170, height: 72)
+                            }
+                        }
+                        .foregroundStyle(.white)
+                        .environment(\.colorScheme, .dark)
+                        .padding(.top, proxy.safeAreaInsets.top + 8)
+
+                        Spacer(minLength: 24)
+
+                        VStack(spacing: gap) {
+                            HStack(spacing: gap) {
+                                widget(square, world: board) {
+                                    WorldStateWidgetView(entry: world, family: .systemSmall)
+                                }
+                                widget(square) {
+                                    SignalWidgetView(entry: SignalEntry(date: .now, signal: open,
+                                                                        history: board.history(for: open.id), isPlus: true),
+                                                     family: .systemSmall)
+                                }
+                            }
+                            widget(wide) {
+                                PinnedWidgetView(entry: PinnedEntry(date: .now, board: board,
+                                                                    pinnedIDs: SharedSettings.pinnedIDs, isPlus: true),
+                                                 family: .systemMedium)
+                            }
+                            widget(wide, world: board) {
+                                WorldStateWidgetView(entry: world, family: .systemMedium)
+                            }
+                        }
+                        .padding(.bottom, max(proxy.safeAreaInsets.bottom, 16) + 8)
+                    }
+                    .frame(maxWidth: .infinity)
+                }
+            }
+            .ignoresSafeArea()
+        }
+        .statusBarHidden()
+    }
+
+    private var wallpaper: some View {
+        MeshGradient(width: 3, height: 3, points: [
+            [0, 0], [0.5, 0], [1, 0],
+            [0, 0.45], [0.55, 0.5], [1, 0.4],
+            [0, 1], [0.5, 1], [1, 1],
+        ], colors: [
+            .indigo, .blue, .purple,
+            .teal, .indigo.mix(with: .cyan, by: 0.4), .blue.mix(with: .mint, by: 0.3),
+            .mint, .teal, .cyan,
+        ])
+        .ignoresSafeArea()
+    }
+
+    private func widget<Content: View>(_ size: CGSize, world: Board? = nil,
+                                       @ViewBuilder content: () -> Content) -> some View {
+        content()
+            .padding(16)
+            .frame(width: size.width, height: size.height)
+            .background {
+                if let world {
+                    BandMeshBackground(band: world.status.world.bandKind, base: Color(.systemBackground))
+                } else {
+                    Color(.systemBackground)
+                }
+            }
+            .clipShape(.rect(cornerRadius: 24, style: .continuous))
+            .shadow(color: .black.opacity(0.18), radius: 10, y: 4)
     }
 }
 #endif
