@@ -20,6 +20,9 @@ struct SearchView: View {
                 }
             }
             .navigationTitle("Search")
+            // Always showing, under the title, so the field is there the moment the tab opens.
+            .searchable(text: $router.searchQuery, placement: .navigationBarDrawer(displayMode: .always),
+                        prompt: "Signals, domains, situations")
             .routeDestinations()
         }
     }

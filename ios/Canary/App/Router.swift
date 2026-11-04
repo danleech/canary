@@ -60,8 +60,7 @@ final class Router {
     var browsePath: [Route] = []
     var changesPath: [Route] = []
     var searchPath: [Route] = []
-    /// The search field's text. The field belongs to the tab view, which hands it
-    /// to the Search tab (on iPhone the tab bar turns into the field).
+    /// The Search tab's query, kept when the tab set is rebuilt on fold or unfold.
     var searchQuery = ""
     /// Navigation stacks of the sidebar's Browse items.
     var sectionPaths: [BrowseSelection: [Route]] = [:]
