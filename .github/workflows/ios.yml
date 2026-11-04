@@ -114,6 +114,44 @@ jobs:
         run: |
           grep -E "(error|warning): " build.log | sed -E 's#^.*/ios/##' | sort -u | head -100 || true
 
+  # Unit tests and UI tests (touches, pickers, scrolling, sheets, purchases).
+  tests:
+    needs: build
+    runs-on: xcode-27
+    timeout-minutes: 50
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { device: "iPhone 17", os: "27.0" }
+          - { device: "iPhone Duo", os: "27.1" }
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test on ${{ matrix.device }}
+        run: |
+          set -o pipefail
+          sudo xcode-select -s "$XCODE"
+          xcodebuild test -project ios/Canary.xcodeproj -scheme Canary \
+            -destination "platform=iOS Simulator,name=${{ matrix.device }},OS=${{ matrix.os }}" \
+            -resultBundlePath results.xcresult \
+            CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY=- DEVELOPMENT_TEAM= \
+            2>&1 | tee test.log | xcbeautify --renderer github-actions
+      - name: Summary and screenshots
+        if: always()
+        run: |
+          grep -E "Test Case .*(passed|failed|skipped)|Executed [0-9]+ tests" test.log | sed -E 's/^.*Test Case //' | tail -60 || true
+          mkdir -p test-shots
+          xcrun xcresulttool export attachments --path results.xcresult --output-path test-shots >/dev/null 2>&1 || true
+          ls test-shots | head -60
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tests-${{ strategy.job-index }}
+          path: |
+            test-shots
+            test.log
+          retention-days: 7
+
   screenshots:
     needs: build
     runs-on: xcode-27

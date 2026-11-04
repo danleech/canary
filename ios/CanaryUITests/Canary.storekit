@@ -1,0 +1,98 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_GB",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "5C7A1D2E",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_GB",
+    "_storefront" : "GBR",
+    "_storeKitErrors" : [
+
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "8D1E0A11",
+      "localizations" : [
+
+      ],
+      "name" : "Canary+",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "14.99",
+          "familyShareable" : true,
+          "groupNumber" : 1,
+          "internalID" : "9A2B3C01",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Alerts, unlimited pins and signal widgets.",
+              "displayName" : "Canary+ Yearly",
+              "locale" : "en_GB"
+            }
+          ],
+          "productID" : "com.danleech.canary.plus.yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Canary+ Yearly",
+          "subscriptionGroupID" : "8D1E0A11",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "1.99",
+          "familyShareable" : true,
+          "groupNumber" : 1,
+          "internalID" : "9A2B3C02",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Alerts, unlimited pins and signal widgets.",
+              "displayName" : "Canary+ Monthly",
+              "locale" : "en_GB"
+            }
+          ],
+          "productID" : "com.danleech.canary.plus.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Canary+ Monthly",
+          "subscriptionGroupID" : "8D1E0A11",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

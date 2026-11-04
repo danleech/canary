@@ -30,13 +30,15 @@ private func paddedDomain(_ values: [Double]) -> ClosedRange<Double> {
 struct ValueChart: View {
     let history: [HistoryPoint]
     let tint: Color
-
-    @State private var selectedDate: Date?
+    /// Updated while a finger is on the chart.
+    @Binding var selection: Date?
+    /// The check to mark, which stays after the finger lifts, as in Health.
+    var highlighted: Date?
 
     var body: some View {
         let points = valuePoints(history)
         let domain = paddedDomain(points.map(\.value))
-        let selected = selectedDate.flatMap { date in
+        let selected = (selection ?? highlighted).flatMap { date in
             points.min { abs($0.date.timeIntervalSince(date)) < abs($1.date.timeIntervalSince(date)) }
         }
         Chart {
@@ -68,7 +70,7 @@ struct ValueChart: View {
             }
         }
         .chartYScale(domain: domain)
-        .chartXSelection(value: $selectedDate)
+        .chartXSelection(value: $selection)
         .chartXAxis {
             AxisMarks(values: .automatic(desiredCount: 4)) { _ in
                 AxisGridLine()

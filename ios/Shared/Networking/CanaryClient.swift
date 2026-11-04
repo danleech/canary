@@ -15,6 +15,7 @@ public struct CanaryClient: Sendable {
         case changes = "api/v1/changes.json"
         case history = "data/history.json"
         case world = "data/world.json"
+        case metrics = "data/metrics.json"
 
         var isRequired: Bool { self == .status }
         var cacheName: String { rawValue.replacingOccurrences(of: "/", with: "_") }
@@ -52,12 +53,14 @@ public struct CanaryClient: Sendable {
         async let changes = optionalData(for: .changes)
         async let history = optionalData(for: .history)
         async let world = optionalData(for: .world)
+        async let metrics = optionalData(for: .metrics)
 
         let statusData = try await status
         let catalogueData = await catalogue
         let changesData = await changes
         let historyData = await history
         let worldData = await world
+        let metricsData = await metrics
 
         let files: [Resource: Data] = [
             .status: statusData,
@@ -65,6 +68,7 @@ public struct CanaryClient: Sendable {
             .changes: changesData ?? cache?.read(.changes) ?? Data(),
             .history: historyData ?? cache?.read(.history) ?? Data(),
             .world: worldData ?? cache?.read(.world) ?? Data(),
+            .metrics: metricsData ?? cache?.read(.metrics) ?? Data(),
         ]
         let board = try Self.makeBoard(files, fetchedAt: .now)
         // Only save once everything decodes, so a bad deploy can't overwrite a good copy.
@@ -88,12 +92,19 @@ public struct CanaryClient: Sendable {
     public static func makeBoard(_ files: [Resource: Data], fetchedAt: Date) throws -> Board {
         let api = CanaryDates.decoder(snakeCase: true)
         let plain = CanaryDates.decoder(snakeCase: false)
-        let status = try api.decode(StatusDocument.self, from: files[.status] ?? Data())
+        var status = try api.decode(StatusDocument.self, from: files[.status] ?? Data())
         let catalogue = files[.catalogue].flatMap { try? api.decode(CatalogueDocument.self, from: $0) }
+        let metrics = files[.metrics].flatMap { try? plain.decode(MetricsDocument.self, from: $0) }
+        // Withhold figures the app can't republish, once, before anything shows them.
+        let restricted = RestrictedData.restrictedSignals(catalogue: catalogue, metrics: metrics)
+        status.signals = status.signals.map { restricted.contains($0.id) ? RestrictedData.withholding($0) : $0 }
         let changes = files[.changes].flatMap { try? api.decode(ChangesDocument.self, from: $0) }?.changes ?? []
         // History keys are signal ids; decode without key conversion.
-        let history = files[.history].flatMap { try? plain.decode([String: [FailableHistoryPoint]].self, from: $0) }?
+        var history = files[.history].flatMap { try? plain.decode([String: [FailableHistoryPoint]].self, from: $0) }?
             .mapValues { $0.compactMap(\.point) } ?? [:]
+        for id in restricted where history[id] != nil {
+            history[id] = history[id]?.map { HistoryPoint(date: $0.date, level: $0.level, value: nil) }
+        }
         let world = files[.world].flatMap { try? plain.decode([FailableWorldPoint].self, from: $0) }?
             .compactMap(\.point) ?? []
         return Board(status: status, catalogue: catalogue, changes: changes, history: history,

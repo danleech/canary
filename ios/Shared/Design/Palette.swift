@@ -117,9 +117,9 @@ extension WorldBand {
         case .unknown: (.gray, .gray, .gray)
         }
         return [
-            a.opacity(0.42), b.opacity(0.30), c.opacity(0.22),
-            b.opacity(0.26), a.opacity(0.30), b.opacity(0.18),
-            c.opacity(0.20), b.opacity(0.16), a.opacity(0.10),
+            a.opacity(0.24), b.opacity(0.17), c.opacity(0.12),
+            b.opacity(0.15), a.opacity(0.17), b.opacity(0.10),
+            c.opacity(0.11), b.opacity(0.09), a.opacity(0.05),
         ]
     }
 

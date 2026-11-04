@@ -21,6 +21,9 @@ struct SignalDetailView: View {
                     SignalHeader(signal: signal)
                     AdaptiveColumns {
                         SignalChartCard(signal: signal, history: board.history(for: signal.id))
+                        if signal.withholdsFigures {
+                            WithheldFiguresCard(url: signal.url)
+                        }
                         LevelTimelineCard(spans: board.levelSpans(for: signal.id, now: store.now))
                         TextCard(title: "Why It's at This Level", systemImage: "text.alignleft", text: signal.state)
                         TextCard(title: "What This Means for You", systemImage: "person", text: signal.forYou)
@@ -169,6 +172,8 @@ private struct SignalChartCard: View {
 
     @Environment(BoardStore.self) private var store
     @State private var range: Range = .all
+    @State private var touch: Date?
+    @State private var pinned: Date?
 
     var body: some View {
         let hue = DomainStyle.hue(for: signal.domain)
@@ -176,6 +181,9 @@ private struct SignalChartCard: View {
         let shown = range.seconds.map { window in
             series.filter { $0.date >= store.now.addingTimeInterval(-window) }
         } ?? series
+        let selected = (touch ?? pinned).flatMap { date in
+            shown.min { abs($0.date.timeIntervalSince(date)) < abs($1.date.timeIntervalSince(date)) }
+        }
         if series.count >= 2 {
             VStack(alignment: .leading, spacing: 12) {
                 ModuleHeader("Key Value at Each Check", systemImage: "chart.xyaxis.line")
@@ -183,7 +191,36 @@ private struct SignalChartCard: View {
                     ForEach(Range.allCases) { Text($0.rawValue).tag($0) }
                 }
                 .pickerStyle(.segmented)
-                if let latest = series.last?.value {
+                .onChange(of: range) {
+                    touch = nil
+                    pinned = nil
+                }
+                if let selected, let value = selected.value {
+                    // Health keeps the touched check in the header until it's cleared.
+                    HStack(alignment: .top) {
+                        VStack(alignment: .leading, spacing: 0) {
+                            Text("SELECTED")
+                                .font(.caption2.weight(.semibold))
+                                .foregroundStyle(.secondary)
+                            Text(value.formatted(.number.precision(.fractionLength(0...2))))
+                                .font(.title2.weight(.bold))
+                                .fontDesign(.rounded)
+                                .monospacedDigit()
+                            Text("\(selected.level.label) · \(selected.date.formatted(.dateTime.day().month(.abbreviated).hour().minute()))")
+                                .font(.footnote)
+                                .foregroundStyle(selected.level.textColor)
+                        }
+                        Spacer()
+                        Button("Clear Selection", systemImage: "xmark.circle.fill") {
+                            touch = nil
+                            pinned = nil
+                        }
+                        .labelStyle(.iconOnly)
+                        .font(.title3)
+                        .foregroundStyle(.secondary)
+                    }
+                    .accessibilityElement(children: .contain)
+                } else if let latest = series.last?.value {
                     VStack(alignment: .leading, spacing: 0) {
                         Text("LATEST")
                             .font(.caption2.weight(.semibold))
@@ -196,9 +233,13 @@ private struct SignalChartCard: View {
                     }
                 }
                 if shown.count >= 2 {
-                    ValueChart(history: shown, tint: hue.fill)
+                    ValueChart(history: shown, tint: hue.fill, selection: $touch, highlighted: pinned)
                         .frame(height: 210)
                         .accessibilityChartDescriptor(SeriesDescriptor(name: signal.name, points: shown))
+                        .accessibilityIdentifier("valueChart")
+                        .onChange(of: touch) { _, date in
+                            if let date { pinned = date }
+                        }
                 } else {
                     Text("Only one check in this range. Choose a longer one.")
                         .font(.subheadline)
@@ -211,6 +252,26 @@ private struct SignalChartCard: View {
             }
             .tile(tint: hue.fill)
         }
+    }
+}
+
+/// Explains why a market signal shows no figures in the app.
+private struct WithheldFiguresCard: View {
+    let url: URL?
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            ModuleHeader("Figures Not Shown", systemImage: "lock.doc")
+            Text("This level is set from market data whose licence doesn't allow Canary to republish the figures in the app. The level, its history and the assessment are shown; the numbers are on the free website.")
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+                .fixedSize(horizontal: false, vertical: true)
+            if let url {
+                Link("See the Figures on the Web", destination: url)
+                    .font(.subheadline.weight(.semibold))
+            }
+        }
+        .tile()
     }
 }
 

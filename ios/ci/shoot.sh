@@ -14,7 +14,7 @@ DEVICE="$1"
 APP="$2"
 OUT="$3"
 BUNDLE=com.danleech.canary
-PINS="oil,equity-stress,uk-rates,ebola,global-temp"
+PINS="global-temp,earthquakes,oil,sea-ice"
 SLUG=$(echo "$DEVICE" | tr 'A-Z ' 'a-z-')
 HERE="$(cd "$(dirname "$0")" && pwd)"
 mkdir -p "$OUT"
@@ -84,7 +84,7 @@ screens() {
   shot "${p}summary" 5
   shot "${p}browse" 4 -CanaryTab browse
   shot "${p}domain" 4 -CanaryRoute canary://domain/energy
-  shot "${p}signal" 4 -CanaryRoute canary://signal/oil
+  shot "${p}signal" 4 -CanaryRoute canary://signal/earthquakes
   shot "${p}world" 4 -CanaryRoute canary://world
   shot "${p}plus" 4 -CanarySheet plus
 }
@@ -95,6 +95,24 @@ if [ "$DEVICE" = "iPhone Duo" ]; then
   # First launch on whichever display is active, to fill the cache.
   launch
   sleep 15
+  # Fold while running: open a domain on the closed display, unfold, fold again,
+  # without relaunching. Open should show the sidebar with that domain selected;
+  # closed again should show Browse with the domain pushed.
+  snap() {
+    xcrun simctl io "$UDID" screenshot $DISPLAY_ARG "$OUT/$SLUG-$1.png" >/dev/null 2>&1 && log "$1" || log "FAILED $1"
+  }
+  if $POSE set closed >> "$OUT/$SLUG-status.txt" 2>&1; then
+    DISPLAY_ARG="--display=1"
+    launch -CanaryRoute canary://domain/energy
+    sleep 8
+    snap fold-1-closed
+    if $POSE set flat >> "$OUT/$SLUG-status.txt" 2>&1; then
+      DISPLAY_ARG="--display=3"; sleep 4; snap fold-2-open
+      if $POSE set closed >> "$OUT/$SLUG-status.txt" 2>&1; then
+        DISPLAY_ARG="--display=1"; sleep 4; snap fold-3-closed-again
+      fi
+    fi
+  fi
   for pose in closed flat flat-portrait book closed-landscape tabletop; do
     if ! $POSE set "$pose" >> "$OUT/$SLUG-status.txt" 2>&1; then
       log "pose $pose not reached"
@@ -115,7 +133,7 @@ if [ "$DEVICE" = "iPhone Duo" ]; then
       shot "flat-world-2" 4 -CanaryRoute canary://world -CanaryScroll 600
       xcrun simctl ui "$UDID" appearance dark
       shot "flat-summary-dark" 4
-      shot "flat-signal-dark" 4 -CanaryRoute canary://signal/oil
+      shot "flat-signal-dark" 4 -CanaryRoute canary://signal/earthquakes
       xcrun simctl ui "$UDID" appearance light
     fi
   done
@@ -125,30 +143,34 @@ else
   shot domain 4 -CanaryRoute canary://domain/energy
   shot changes 4 -CanaryTab changes
   shot search 4 -CanaryTab search
-  shot signal 4 -CanaryRoute canary://signal/oil
+  shot signal 4 -CanaryRoute canary://signal/earthquakes
   shot signal-uk 4 -CanaryRoute canary://signal/uk-rates
+  shot signal-withheld 4 -CanaryRoute canary://signal/oil
   shot world 4 -CanaryRoute canary://world
   [ -n "$SIT" ] && shot situation 4 -CanaryRoute "canary://situation/$SIT"
   shot plus 4 -CanarySheet plus
   shot settings 4 -CanarySheet settings
   shot pins 4 -CanarySheet pins
+  shot widgets 5 -CanarySheet widgets
+  shot widgets-2 4 -CanarySheet widgets -CanaryScroll 650
+  shot widgets-3 4 -CanarySheet widgets -CanaryScroll 1300
   shot summary-2 4 -CanaryScroll 720
   shot summary-3 4 -CanaryScroll 1450
   shot summary-4 4 -CanaryScroll 2200
   shot world-2 4 -CanaryRoute canary://world -CanaryScroll 640
   shot world-3 4 -CanaryRoute canary://world -CanaryScroll 1350
   shot world-4 4 -CanaryRoute canary://world -CanaryScroll 2050
-  shot signal-2 4 -CanaryRoute canary://signal/oil -CanaryScroll 620
-  shot signal-3 4 -CanaryRoute canary://signal/oil -CanaryScroll 1300
+  shot signal-2 4 -CanaryRoute canary://signal/earthquakes -CanaryScroll 620
+  shot signal-3 4 -CanaryRoute canary://signal/earthquakes -CanaryScroll 1300
   xcrun simctl ui "$UDID" appearance dark
   shot summary-dark 4
   shot browse-dark 4 -CanaryTab browse
-  shot signal-dark 4 -CanaryRoute canary://signal/oil
+  shot signal-dark 4 -CanaryRoute canary://signal/earthquakes
   shot world-dark 4 -CanaryRoute canary://world
   xcrun simctl ui "$UDID" appearance light
   xcrun simctl ui "$UDID" content_size accessibility-extra-large
   shot summary-ax 4
-  shot signal-ax 4 -CanaryRoute canary://signal/oil
+  shot signal-ax 4 -CanaryRoute canary://signal/earthquakes
   xcrun simctl ui "$UDID" content_size large
 fi
 

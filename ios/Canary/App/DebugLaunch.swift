@@ -7,7 +7,8 @@ import SwiftUI
 ///     -CanaryPins oil,equity-stress,ftse     pin these signals at launch
 ///     -CanaryRoute canary://signal/oil        open a screen (any DeepLink URL)
 ///     -CanaryTab browse                       summary, browse, changes or search
-///     -CanarySheet plus                       plus, settings or pins
+///     -CanarySheet plus                       plus, settings, pins or widgets
+///     -CanaryPins none                        start with nothing pinned
 ///     -CanaryScroll 800                       scroll long pages down 800 points
 ///
 /// Compiled out of release builds.
@@ -17,7 +18,7 @@ enum DebugLaunch {
     /// Runs before the stores are created.
     static func applyEarly() {
         if let pins = defaults.string(forKey: "CanaryPins") {
-            SharedSettings.pinnedIDs = pins.split(separator: ",").map { $0.trimmingCharacters(in: .whitespaces) }
+            SharedSettings.pinnedIDs = pins == "none" ? [] : pins.split(separator: ",").map { $0.trimmingCharacters(in: .whitespaces) }
         }
     }
 
@@ -64,7 +65,7 @@ struct DebugScroll: ViewModifier {
 }
 
 enum DebugSheet: String, Identifiable {
-    case plus, settings, pins
+    case plus, settings, pins, widgets
     var id: String { rawValue }
 }
 
@@ -78,6 +79,7 @@ struct DebugSheetPresenter: ViewModifier {
             case .plus: CanaryPlusView()
             case .settings: SettingsView()
             case .pins: PinEditorView()
+            case .widgets: WidgetGalleryView()
             }
         }
     }

@@ -21,7 +21,7 @@ struct TileBackground: ViewModifier {
                     .overlay {
                         if let tint {
                             shape.fill(LinearGradient(
-                                colors: [tint.opacity(0.17), tint.opacity(0.05), .clear],
+                                colors: [tint.opacity(0.09), tint.opacity(0.025), .clear],
                                 startPoint: .topLeading, endPoint: .bottomTrailing
                             ))
                         }
@@ -147,9 +147,9 @@ struct WashedBackground: View {
     var body: some View {
         Color(.systemGroupedBackground)
             .overlay(alignment: .top) {
-                LinearGradient(colors: [tint.opacity(0.22), tint.opacity(0.06), .clear],
+                LinearGradient(colors: [tint.opacity(0.10), tint.opacity(0.03), .clear],
                                startPoint: .top, endPoint: .bottom)
-                    .frame(height: 420)
+                    .frame(height: 320)
             }
             .ignoresSafeArea()
     }

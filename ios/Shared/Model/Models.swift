@@ -117,6 +117,12 @@ public struct Signal: Codable, Hashable, Identifiable, Sendable {
     public var staleAfter: Date?
     public var sources: [Source]?
     public var url: URL?
+    /// Set by the app, never by the API: true when this signal's figures come
+    /// from market data Canary can't republish in a paid app, so its value,
+    /// series and rule inputs are withheld (see `RestrictedData`).
+    public var figuresWithheld: Bool?
+
+    public var withholdsFigures: Bool { figuresWithheld == true }
 
     /// The level to show now: `stale` once `stale_after` has passed.
     public func level(at now: Date = .now) -> Level {
@@ -182,6 +188,8 @@ public struct CatalogueEntry: Codable, Hashable, Identifiable, Sendable {
     public var domain: String
     public var tier: String?
     public var horizon: Horizon?
+    /// Keys into `data/metrics.json` for the numbers behind this signal.
+    public var metrics: [String]?
     public var why: String?
     public var drivers: String?
     public var rubric: Rubric?
@@ -293,4 +301,32 @@ public enum CanaryDates {
         }
         return decoder
     }
+}
+
+// MARK: - metrics.json (site data file)
+
+/// `data/metrics.json`: only what the app needs, which is where each metric
+/// comes from and whether its licence allows republishing.
+public struct MetricsDocument: Decodable, Sendable {
+    public var metrics: [String: MetricInfo]
+
+    public init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        // Skip entries that don't decode rather than fail the file.
+        let raw = try c.decode([String: FailableMetric].self, forKey: .metrics)
+        metrics = raw.compactMapValues(\.info)
+    }
+
+    enum CodingKeys: String, CodingKey { case metrics }
+
+    private struct FailableMetric: Decodable {
+        let info: MetricInfo?
+        init(from decoder: Decoder) throws { info = try? MetricInfo(from: decoder) }
+    }
+}
+
+public struct MetricInfo: Decodable, Sendable {
+    public var source: String?
+    public var licence: String?
+    public var note: String?
 }
