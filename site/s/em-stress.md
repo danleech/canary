@@ -1,17 +1,17 @@
 # Emerging-market stress — NORMAL (stable)
-id em-stress · Economy · horizon acute · checked 2026-11-04T17:53Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-06T05:53Z
+id em-stress · Economy · horizon acute · checked 2026-11-05T17:48Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-07T05:48Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/em-stress
 
-Value: Lira, Egyptian pound at record lows
-Rated on: No major EM currency down >10% in a month; no default or capital controls = Normal
+Value: Lira past 50/$; EGP at record low
+Rated on: No major EM >10% monthly fall, default or controls = Normal
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: Energy shock feeding inflation [energy-inflation]
 
-Turkish lira and Egyptian pound at record lows; no major EM default or capital controls
+Turkish lira breaches 50 per dollar; no major EM default or capital controls
 
-Why it's at this level: The Turkish lira hit a new record low on 4 Nov, near 50 per dollar, in a gradual slide (Izvestia; Benzinga). Egypt's pound passed 56 per dollar in late October, a record low, as foreign funds sold local debt (Reuters via MarketScreener). Neither has lost more than 10% in a month, and no major emerging economy had defaulted or imposed capital controls as of 4 Nov.
+Why it's at this level: The Turkish lira broke through 50 per dollar to a record low on 4 Nov, extending a gradual slide (Shafaq News; Trading Economics). Egypt's pound has also hit record lows. Neither has lost more than 10% in a month, and no major emerging economy had defaulted, imposed capital controls or sought emergency IMF help as of 5 Nov.
 
-What this means for you: Travellers and importers dealing in these currencies face shifting exchange rates. No acute emerging-market crisis is under way.
+What this means for you: Weaker currencies raise import costs in Turkey and Egypt; travellers and exporters see changing exchange rates.
 
 Why it matters: Energy-importing and heavily indebted emerging economies crack first in oil shocks and strong-dollar periods, with knock-on defaults and unrest.
 What moves it: Oil and food import bills, dollar strength, FX reserves, debt maturities, IMF programmes.
@@ -19,5 +19,5 @@ What moves it: Oil and food import bills, dollar strength, FX reserves, debt mat
 Rubric — Alert: A sovereign default or capital controls in a major emerging economy, or several in crisis at once. | Watch: A major emerging economy's currency falls more than 10% in a month, its reserves fall fast, or it seeks emergency IMF support. | Normal: No major emerging economy in acute currency or debt distress.
 
 Sources:
-- Izvestia — Turkish lira reaches new historical low (2026-11-04) https://en.iz.ru/en/2196130/2026-11-04/turkish-lira-has-reached-new-historical-low-against-dollar
-- MarketScreener (Reuters) — Egypt's currency hits record low of 56 pounds (2026-10-26) https://www.marketscreener.com/news/egypt-s-currency-hits-record-low-of-56-pounds-to-us-dollar-lseg-data-shows-ce785cdcd88df325
+- Shafaq News — Turkish lira breaches 50 per dollar to record low (2026-11-04) https://shafaq.com/en/Economy/Turkish-lira-breaches-50-per-dollar-to-record-low
+- Trading Economics — Turkish lira (2026-11-05) https://tradingeconomics.com/turkey/currency

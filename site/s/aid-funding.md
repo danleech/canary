@@ -1,16 +1,16 @@
 # Humanitarian funding gap — WATCH (stable)
-id aid-funding · Humanitarian · horizon acute · checked 2026-11-04T17:53Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-06T05:53Z
+id aid-funding · Humanitarian · horizon acute · checked 2026-11-05T17:48Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-07T05:48Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/aid-funding
 
-Value: WHO Sudan appeal 23% funded
-Rated on: Major ration cuts announced = Watch; no famine-country pipeline break
-Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
+Value: WFP Gaza cut to 1.1m people
+Rated on: Major ration cuts announced = Watch
+Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 
-Humanitarian appeals badly underfunded; WFP cut Gaza food aid for 500,000
+WFP cuts Gaza food aid for 500,000; Burundi refugees face cuts without funding
 
-Why it's at this level: WHO's Sudan health appeal was only 23% funded as of mid-October (WHO, 12 Oct), and WFP cut monthly food aid in Gaza from 1.6 million to 1.1 million people from late October after receiving less than half its usual funding. UNHCR's winter appeal warns resources are dwindling. No new pipeline break was reported as of 4 Nov.
+Why it's at this level: WFP cut monthly food aid in Gaza from 1.6 million to 1.1 million people from late October after receiving less than half its usual funding (WFP; UN News). About 125,000 refugees in Burundi face food assistance cuts without urgent funding (DevelopmentAid). No new pipeline break in a famine-risk country was reported as of 5 Nov.
 
-What this means for you: Aid agencies' appeals are the main route for public support.
+What this means for you: No action needed; UN agency appeals list how to support humanitarian operations.
 
 Why it matters: When appeals go unfunded, food aid and health services are cut first; funding gaps lead famine and displacement by months.
 What moves it: Donor budgets and aid cuts, new crises competing for funds, access constraints.
@@ -18,5 +18,6 @@ What moves it: Donor budgets and aid cuts, new crises competing for funds, acces
 Rubric — Alert: Pipeline breaks forcing large-scale suspension of food or health aid in famine-risk countries. | Watch: Funding more than 10 percentage points behind recent years at the same point, or major ration cuts announced. | Normal: UN global appeal funding in line with recent years; no major ration cuts.
 
 Sources:
-- WHO — IPC Sudan alert and appeal funding (2026-10-12) https://www.who.int/news/item/12-10-2026-ipc-sudan-food-insecurity-and-malnutrition-alert
-- UNHCR — Winter appeal as resources dwindle (2026-11-04) https://unhcr.org/news/press-releases/unhcr-winter-appeal-9m-people-urgently-need-winter-aid-resources-dwindle-and
+- WFP — Funding cuts force WFP to drastically reduce assistance in Gaza (2026-11-05) https://www.wfp.org/news/funding-cuts-force-wfp-drastically-reduce-lifesaving-assistance-gaza
+- UN News — Funding cuts leave half a million without food assistance (2026-11-05) https://news.un.org/en/story/2026/10/1168622
+- DevelopmentAid — 125,000 refugees in Burundi face food cuts (2026-11-05) https://developmentaid.org/news-stream/post/212590/125000-refugees-in-burundi-face-food-assistance-cuts-without-urgent-funding

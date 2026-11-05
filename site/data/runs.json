@@ -1,5 +1,59 @@
 [
  {
+  "t": "2026-11-05T17:48:17Z",
+  "applied": 89,
+  "changed": [
+   "equity-stress"
+  ],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 26,
+   "published": 10,
+   "judged": 53
+  },
+  "held": 31,
+  "sources": {
+   "citations": 118,
+   "news_citations": 87,
+   "outlets": 79,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     8
+    ],
+    [
+     "usnews.com",
+     5
+    ],
+    [
+     "cnn.com",
+     4
+    ],
+    [
+     "tradingeconomics.com",
+     3
+    ],
+    [
+     "bma.org.uk",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 61,
+   "predicted_active": 1,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": [
+    "china-economy",
+    "cholera-dengue",
+    "euro-growth"
+   ]
+  }
+ },
+ {
   "t": "2026-11-05T11:44:43Z",
   "applied": 41,
   "changed": [],

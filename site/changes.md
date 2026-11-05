@@ -1,8 +1,9 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-05T11:44Z · next run ~17:40 UK · stale after 2026-11-06T01:44Z (36h for daily-tier signals)
+as_of 2026-11-05T17:48Z · next run ~23:40 UK · stale after 2026-11-06T07:48Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
-Basis: 26 measured from open data, 13 follow a published figure, 50 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
+Basis: 26 measured from open data, 10 follow a published figure, 53 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
+- 2026-11-05T17:48Z US equity stress [equity-stress]: NORMAL→WATCH — S&P 500 falls over 3% on 5 Nov as chip stocks slide; drawdown passes the 5% Watch line
 - 2026-11-04T23:43Z Pacific & Indian cyclones [other-cyclones]: ALERT→NORMAL — Cyclone Murasu has dissipated inland; no GDACS orange or red cyclone alerts in force
 - 2026-11-04T17:53Z Sahel insurgency [sahel]: ALERT→WATCH — JNIM insurgency persists in Mali, but Bamako's fuel supply has been restored under escort
 - 2026-11-04T17:53Z Crypto stress [crypto]: WATCH→NORMAL — Bitcoin 7% off its high; Binance withdrawals resuming after record theft

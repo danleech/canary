@@ -1,10 +1,10 @@
 # Bond market volatility — WATCH (improving)
-id bond-volatility · Markets · horizon acute · checked 2026-11-05T11:44Z · text written 2026-11-05T05:47Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-06T01:44Z
+id bond-volatility · Markets · horizon acute · checked 2026-11-05T17:48Z · text written 2026-11-05T05:47Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-06T07:48Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/bond-volatility
 
-Value: MOVE 94, 10y 4.89%
-Rated on: MOVE 93.9 has not yet cleared the 90 exit line, so Watch holds; US10y 1m move 38.3bp has not yet cleared the 36bp exit line, so Watch holds
-Basis: measured — Set by a fixed rule applied to open data (MOVE = 93.89 · US10y 1m move bp = 38.30). Anyone can reproduce it from the public metrics file.
+Value: MOVE 96, 10y 4.84%
+Rated on: MOVE 95.6 has not yet cleared the 90 exit line, so Watch holds; US10y 1m move 39.2bp has not yet cleared the 36bp exit line, so Watch holds
+Basis: measured — Set by a fixed rule applied to open data (MOVE = 95.63 · US10y 1m move bp = 39.20). Anyone can reproduce it from the public metrics file.
 Situation: Energy shock feeding inflation [energy-inflation]
 
 Treasury volatility eases to MOVE 94; 10-year yield 4.89%, about 38bp lower on the month
