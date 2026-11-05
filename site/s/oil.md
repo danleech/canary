@@ -1,10 +1,10 @@
 # Oil (Brent) — ALERT (stable)
-id oil · Energy & Commodities · horizon acute · checked 2026-11-05T17:48Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-06T07:48Z
+id oil · Energy & Commodities · horizon acute · checked 2026-11-05T23:42Z · text written 2026-11-05T17:48Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-06T13:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/oil
 
-Value: $97.1, 1m -7%
-Rated on: Major physical outage (Hormuz largely shut) = Alert; Brent $97 alone = Watch
-Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. The data alone would rate it lower; it was raised on reported events. Check the sources before relying on it.
+Value: $99.4, 1m -5%
+Rated on: Brent $99.4 has not yet cleared the $99 exit line, so Alert holds
+Basis: measured — Set by a fixed rule applied to open data (Brent $ = 99.44 · Brent 1m % = -4.64). Anyone can reproduce it from the public metrics file.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
 Brent rebounds to about $97 from a two-month low; Alert holds while Hormuz stays largely shut

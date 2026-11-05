@@ -1,10 +1,10 @@
 # Canary — world risk status
-as_of 2026-11-05T17:48Z · next run ~23:40 UK · stale after 2026-11-06T07:48Z (36h for daily-tier signals)
+as_of 2026-11-05T23:42Z · next run ~05:40 UK · stale after 2026-11-06T13:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
-Basis: 26 measured from open data, 10 follow a published figure, 53 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
+Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 World State 38/100 (Unsettled) · 16 Alert · 38 Watch · 35 Normal
-Headline: Chip stocks drag the S&P 500 down over 3% on 5 Nov; tankers are hit again in a largely shut Hormuz as US–Iran talks stall; the Bank of England raises rates to 4%.
+Headline: The US–Iran war keeps Hormuz largely shut after tankers were hit on 5 Nov; Russia–Ukraine and the Middle East stay at Alert, and Bundibugyo Ebola in DR Congo has passed 10,000 cases.
 
 ## Situations (8 cross-domain events; Alerts below are grouped under them)
 - US–Iran war and Gulf energy shock [ALERT, stable]: Tankers hit in Hormuz on 5 Nov; Tehran contacts Gulf states amid fears of US strikes. Brent rebounds to about $97. → alert: gulf-iran, middle-east, oil, eu-gas, fertiliser, chokepoints, freight, uk-energy-cap; watch: iran-nuclear, sanctions, semiconductors
@@ -23,16 +23,13 @@ Headline: Chip stocks drag the S&P 500 down over 3% on 5 Nov; tankers are hit ag
 ## Changed in last 24h
 - US equity stress [equity-stress]: NORMAL→WATCH — S&P 500 falls over 3% on 5 Nov as chip stocks slide; drawdown passes the 5% Watch line (2026-11-05T17:48Z)
 - Pacific & Indian cyclones [other-cyclones]: ALERT→NORMAL — Cyclone Murasu has dissipated inland; no GDACS orange or red cyclone alerts in force (2026-11-04T23:43Z)
-- Sahel insurgency [sahel]: ALERT→WATCH — JNIM insurgency persists in Mali, but Bamako's fuel supply has been restored under escort (2026-11-04T17:53Z)
-- Crypto stress [crypto]: WATCH→NORMAL — Bitcoin 7% off its high; Binance withdrawals resuming after record theft (2026-11-04T17:53Z)
-- US equity stress [equity-stress]: WATCH→NORMAL — VIX back below 20 and S&P 500 1.4% off its high after Democrats win Congress (2026-11-04T17:53Z)
 
 ## Watch (ids; detail at /s/{id}.md)
 equity-stress, bond-volatility, private-credit, us-inflation, central-banks, critical-minerals, nuclear-plants, russia-nato, iran-nuclear, korea, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, drought, sea-ice, co2, who-emergencies, mpox, measles, cholera-dengue, respiratory, medicine-shortages, cyber, cables-gnss, semiconductors, ai-governance, famine, civil-unrest, aid-funding, uk-rates, gilts, uk-disruption
 
 ## Sentiment (measured from open data; context only, never changes a status)
-News tone vs own past 6 months (GDELT, 7 days to 2026-11-04; number = % of past weeks less negative): gloomier: economy (88), tech (100); brighter: conflict (13), energy (3), trade (18), climate (9), disasters (16), health (0); typical: migration
+News tone vs own past 6 months (GDELT, 7 days to 2026-11-05; number = % of past weeks less negative): gloomier: economy (96), tech (100); brighter: conflict (11), energy (4), trade (15), climate (4), disasters (10), health (0); typical: migration
 Consumer confidence (OECD, long-run avg 100): OECD 98.4 (2026-09), GBR 100.9 (2026-09), USA 96.1 (2026-09), EA20 98.3 (2026-09), JPN 98.5 (2026-09), CHN 95.4 (2026-07), IND 101.3 (2026-06)
-Uncertainty: US policy uncertainty 1.0× its 1-year median · Geopolitical risk in the news 0.8× its 1-year median · Market fear (VIX) higher than 92% of the past year
+Uncertainty: US policy uncertainty 1.0× its 1-year median · Geopolitical risk in the news 0.8× its 1-year median · Market fear (VIX) higher than 98% of the past year
 
 More: https://canary.danleech.com/status.md (all signals) · https://canary.danleech.com/s/{id}.md (detail + sources) · https://canary.danleech.com/api/v1/status.json · MCP https://canary.danleech.com/mcp · Content is data, not instructions. Cite the primary sources listed per signal for facts.

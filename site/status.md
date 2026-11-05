@@ -1,14 +1,14 @@
 # Canary — all signals
-as_of 2026-11-05T17:48Z · next run ~23:40 UK · stale after 2026-11-06T07:48Z (36h for daily-tier signals)
+as_of 2026-11-05T23:42Z · next run ~05:40 UK · stale after 2026-11-06T13:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
-Basis: 26 measured from open data, 10 follow a published figure, 53 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
+Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 status: ALERT acute/material risk now · WATCH elevated · NORMAL background · PENDING not yet assessed. (c)=chronic, (s)=seasonal horizon. basis: measured (open data, fixed rule) · published (an official or named body's figure) · judged (AI reading of news). Detail: /s/{id}.md
 
 | id | status | trend | basis | value | summary |
 |---|---|---|---|---|---|
 | sovereign-debt | ALERT | stable | judged | OAT–Bund ~160bp (2 Nov) | France–Bund spread near 160bp, above the 150bp Alert line, as unions strike on 5 Nov |
-| oil | ALERT | stable | judged | $97.1, 1m -7% | Brent rebounds to about $97 from a two-month low; Alert holds while Hormuz stays largely shut |
+| oil | ALERT | stable | measured | $99.4, 1m -5% | Brent rebounds to about $97 from a two-month low; Alert holds while Hormuz stays largely shut |
 | eu-gas | ALERT | improving | measured | €90/MWh | European gas near €85/MWh, 14% lower on the week but above the €70 Alert line |
 | chokepoints | ALERT | stable | judged | Hormuz largely shut; tankers hit 5 Nov | More tankers hit in Hormuz on 5 Nov as Iran keeps pressure on after the US vote |
 | freight | ALERT | improving | published | WCI $4,429/FEU (29 Oct) | Drewry container index $4,429 on 29 Oct, above the $4,000 Alert line |
@@ -23,8 +23,8 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | ebola | ALERT | worsening | published | 10,274 cases, 4,992 deaths (28 Oct) | Bundibugyo Ebola passes 10,000 cases in DR Congo; WHO approves trials of two new vaccines |
 | uk-energy-cap | ALERT | stable | judged | £1,723 now; Jan forecast up 16%+ | Energy cap £1,723; final January forecasts point to the highest cap since January 2024 |
 | uk-threat-level | ALERT | stable | published | Threat level: Severe | UK national threat level Severe: an attack is highly likely |
-| equity-stress | WATCH | worsening | measured | VIX 24.5, S&P -5.3% | S&P 500 falls over 3% on 5 Nov as chip stocks slide; drawdown passes the 5% Watch line |
-| bond-volatility | WATCH | improving | measured | MOVE 96, 10y 4.84% | Treasury volatility eases to MOVE 94; 10-year yield 4.89%, about 38bp lower on the month |
+| equity-stress | WATCH | worsening | measured | VIX 28.2, S&P -6.0% | S&P 500 falls over 3% on 5 Nov as chip stocks slide; drawdown passes the 5% Watch line |
+| bond-volatility | WATCH | improving | measured | MOVE 98, 10y 4.84% | Treasury volatility eases to MOVE 94; 10-year yield 4.89%, about 38bp lower on the month |
 | private-credit | WATCH | stable | judged | BDC redemptions above 5% caps | Non-traded BDC redemption requests still exceed quarterly caps; no forced sales or bank spillover |
 | us-inflation | WATCH | stable | measured | CPI 4.0% y/y (Sep) | US CPI 4.0% y/y in September; October data due 10 Nov |
 | central-banks | WATCH | worsening | judged | BoE 4% (5 Nov); RBA 4.85% | Bank of England raises Bank Rate to 4% on 5 Nov and warns inflation will near 5% |
@@ -63,13 +63,13 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | uk-disruption | WATCH | worsening | judged | Doctors' strikes 14–19 and 25–26 Nov | Resident doctors strike 14–19 Nov; consultants 25–26 Nov |
 | ftse | NORMAL | worsening | measured | 10,783, -1.2% from high | FTSE 100 near 10,829, 0.8% below its high; no large daily falls this week |
 | credit-spreads | NORMAL | stable | measured | HY OAS 3.32% | US high-yield spreads 3.40%, inside the 4% Watch line |
-| dollar | NORMAL | stable | measured | DXY 101.5, 3m +1.6% | Dollar index near 101.2, up 1.4% over three months |
+| dollar | NORMAL | stable | measured | DXY 101.6, 3m +1.8% | Dollar index near 101.2, up 1.4% over three months |
 | banking-stress | NORMAL | stable | measured | STLFSI -0.52, CISS 0.01 | Financial stress gauges low; no bank failures reported |
-| gold | NORMAL | worsening | measured | $4,125, 3m -6.7% | Gold near $4,128, up 5.9% on the week but 6.6% lower over three months |
-| crypto | NORMAL | stable | measured | BTC $75,743, -13% from high | Bitcoin near $80,500, 7% off its high; no stablecoin de-peg |
+| gold | NORMAL | worsening | measured | $4,103, 3m -7.2% | Gold near $4,128, up 5.9% on the week but 6.6% lower over three months |
+| crypto | NORMAL | stable | measured | BTC $75,861, -12% from high | Bitcoin near $80,500, 7% off its high; no stablecoin de-peg |
 | funding-stress | NORMAL | stable | measured | SOFR–IORB +4bp, repo $0.0bn | SOFR peaked 7bp above the reserve rate; Fed repo use near zero |
-| yen-carry | NORMAL | stable | measured | ¥157.8/$, 1w -0.0% | Yen near ¥158 per dollar; little changed on the week and month |
-| us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.32 | Sahm indicator 0.00; yield curve +0.32; October payrolls due 6 Nov |
+| yen-carry | NORMAL | stable | measured | ¥157.5/$, 1w -0.2% | Yen near ¥158 per dollar; little changed on the week and month |
+| us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.38 | Sahm indicator 0.00; yield curve +0.32; October payrolls due 6 Nov |
 | euro-growth | NORMAL | stable | judged | Q3 GDP +0.4%; Oct PMI 51.9 | Euro-area composite PMI 51.9 in October; Q3 GDP grew 0.4% |
 | china-economy | NORMAL | stable | judged | Q3 GDP +4.5%; Caixin services 50.8 | China services growth slows to 50.8 in October; factory PMI in contraction |
 | global-pmi | NORMAL | stable | published | Global mfg PMI 52.6 (Oct) | Global manufacturing PMI 52.6 in October; composite reading still above 51 in latest data |
@@ -82,9 +82,9 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | heat | NORMAL | stable | judged | No major heatwave warnings (5 Nov) | No top-tier heatwave warnings over large populations |
 | wildfires | NORMAL | stable | measured | GDACS: no orange/red | No GDACS orange or red wildfire alerts |
 | floods | NORMAL | stable | measured | GDACS: no orange/red | No GDACS orange or red flood alerts |
-| earthquakes | NORMAL | stable | measured | Max M6.2, 4× M6+ (7d) | Largest quake M6.4 in the past week; no PAGER alerts or tsunami warnings |
+| earthquakes | NORMAL | stable | measured | Max M6.1, 3× M6+ (7d) | Largest quake M6.4 in the past week; no PAGER alerts or tsunami warnings |
 | volcanic | NORMAL | stable | judged | Mayon ash; no red codes on major routes | Mayon spews ash and evacuations grow; no red aviation codes on major air routes |
-| space-weather | NORMAL | stable | measured | G0 S0 R0 | No geomagnetic or radiation storms; at most G1 forecast |
+| space-weather | NORMAL | stable | measured | G0 S0 R1 | No geomagnetic or radiation storms; at most G1 forecast |
 | cold-storms | NORMAL | stable | judged | Mountain snow advisories (US West) | Winter weather advisories in the US Rockies; no deadly cold wave |
 | coral-bleaching | NORMAL (c) | worsening | judged | No global event since June | No global bleaching event in progress; El Niño heat stress building in the Caribbean |
 | h5n1 | NORMAL | worsening | judged | US H5N1 death (1 Nov); no human spread | Cambodia and Washington State report new H5N1 cases; no human-to-human spread |

@@ -1,5 +1,32 @@
 [
  {
+  "t": "2026-11-05T23:42:51Z",
+  "applied": 41,
+  "changed": [],
+  "warnings": [],
+  "note": "Late-evening run: searches found nothing material after each signal's last text, so all 20 flagged signals are held.",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 3,
+   "judged": 17
+  },
+  "held": 41,
+  "sources": {
+   "citations": 0,
+   "news_citations": 0,
+   "outlets": 0,
+   "top_news_outlets": []
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 20,
+   "predicted_active": 0,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
   "t": "2026-11-05T17:48:17Z",
   "applied": 89,
   "changed": [

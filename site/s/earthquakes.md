@@ -1,10 +1,10 @@
 # Earthquakes & tsunami — NORMAL (stable)
-id earthquakes · Weather & Hazards · horizon acute · checked 2026-11-05T17:48Z · text written 2026-11-05T05:47Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-06T07:48Z
+id earthquakes · Weather & Hazards · horizon acute · checked 2026-11-05T23:42Z · text written 2026-11-05T05:47Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-06T13:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/earthquakes
 
-Value: Max M6.2, 4× M6+ (7d)
-Rated on: max magnitude 6.2 below the 7 Watch line
-Basis: measured — Set by a fixed rule applied to open data (max magnitude = 6.20). Anyone can reproduce it from the public metrics file.
+Value: Max M6.1, 3× M6+ (7d)
+Rated on: max magnitude 6.1 below the 7 Watch line
+Basis: measured — Set by a fixed rule applied to open data (max magnitude = 6.10). Anyone can reproduce it from the public metrics file.
 
 Largest quake M6.4 in the past week; no PAGER alerts or tsunami warnings
 
