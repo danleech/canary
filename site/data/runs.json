@@ -1,5 +1,57 @@
 [
  {
+  "t": "2026-11-05T05:47:01Z",
+  "applied": 41,
+  "changed": [],
+  "warnings": [
+   "sources: aljazeera.com supplies 7 of 36 news citations (19%); diversify next run (errors above 20%)"
+  ],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 20,
+   "published": 3,
+   "judged": 18
+  },
+  "held": 0,
+  "sources": {
+   "citations": 69,
+   "news_citations": 36,
+   "outlets": 33,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     7
+    ],
+    [
+     "armscontrol.org",
+     3
+    ],
+    [
+     "krmg.com",
+     3
+    ],
+    [
+     "thedefensepost.com",
+     2
+    ],
+    [
+     "thestreet.com",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 20,
+   "predicted_active": 0,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": [
+    "iran-nuclear"
+   ]
+  }
+ },
+ {
   "t": "2026-11-04T23:43:43Z",
   "applied": 41,
   "changed": [

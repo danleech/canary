@@ -1,20 +1,20 @@
 # Canary — world risk status
-as_of 2026-11-04T23:43Z · next run ~05:40 UK · stale after 2026-11-05T13:43Z (36h for daily-tier signals)
+as_of 2026-11-05T05:47Z · next run ~11:40 UK · stale after 2026-11-05T19:47Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
-Basis: 26 measured from open data, 12 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
+Basis: 26 measured from open data, 13 follow a published figure, 50 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 World State 38/100 (Unsettled) · 16 Alert · 37 Watch · 36 Normal
-Headline: The US–Iran war keeps Hormuz largely shut as Trump floats a 'heavy hit' on Iran, though Brent has slipped to about $95 on deal hopes. Russia struck power sites in nine Ukrainian regions on 4 Nov. Cyclone Murasu has dissipated.
+Headline: Hormuz stays largely shut as Iran rejects the US reply to its reopening plan and the IRGC claims tanker mine strikes; Russia hit Ukraine's grid in nine regions on 3–4 Nov. The Bank of England decides on rates on 5 Nov.
 
 ## Situations (8 cross-domain events; Alerts below are grouped under them)
-- US–Iran war and Gulf energy shock [ALERT, stable]: Trump said on 4 Nov a 'heavy hit' on Iran may be needed; IRGC claims tankers hit mines near Hormuz. Brent fell to about $95 on deal hopes. → alert: gulf-iran, middle-east, oil, eu-gas, fertiliser, chokepoints, freight, uk-energy-cap; watch: iran-nuclear, sanctions, semiconductors
-- Russia–Ukraine war and NATO's flank [ALERT, worsening]: Russian strikes damaged power sites in nine Ukrainian regions overnight into 4 Nov; Russia said it downed 709 drones. Talks set for mid-November. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
+- US–Iran war and Gulf energy shock [ALERT, stable]: Iran called the US reply to its Hormuz plan unconvincing on 3 Nov; IRGC claimed four tankers hit mines on 4 Nov. Brent near $94 on 5 Nov. → alert: gulf-iran, middle-east, oil, eu-gas, fertiliser, chokepoints, freight, uk-energy-cap; watch: iran-nuclear, sanctions, semiconductors
+- Russia–Ukraine war and NATO's flank [ALERT, worsening]: Russia fired about 300 drones and 76 missiles at Ukraine's grid on 3–4 Nov, hitting nine regions; talks set for 10–11 Nov in Abu Dhabi. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
 - Super El Niño [ALERT, worsening]: ONI rose to +2.5 for Aug–Oct: drought risk in East and southern Africa, record-range warmth and faster CO₂ growth. → alert: enso, global-temp; watch: drought, co2, famine
-- Ebola outbreak, DR Congo [ALERT, worsening]: Africa CDC counted 5,376 Ebola deaths among more than 10,000 cases to 2 Nov, mostly in DR Congo; a WHO emergency (PHEIC) since May. → alert: ebola; watch: who-emergencies
+- Ebola outbreak, DR Congo [ALERT, worsening]: ECDC counted 10,274 confirmed Ebola cases and 4,992 deaths in DR Congo to 28 Oct; imported cases in Kenya and Nigeria; a WHO PHEIC since May. → alert: ebola; watch: who-emergencies
 - Sudan war [ALERT, worsening]: Drone strikes have cut parts of Sudan off the power grid; a strike on a South Kordofan fuel station killed 10 on 4 Nov. → alert: sudan; watch: famine
 - France: debt stress and protests [ALERT, stable]: OAT–Bund spread near 160bp on 2 Nov; budget vote delayed and unions hold a general strike on 5 Nov. → alert: sovereign-debt; watch: civil-unrest
 - Energy shock feeding inflation [WATCH, worsening]: US CPI 4.0%; Australia hiked to 4.85% on 3 Nov and a Bank of England rise to 4% is expected on 5 Nov. → watch: us-inflation, central-banks, uk-rates, bond-volatility; normal: em-stress
-- Binance theft and North Korean escalation [WATCH, worsening]: FBI blames North Korea for a $6.3bn Binance theft; Pyongyang denied it and fired missiles on 4 Nov. Binance withdrawals are resuming. → watch: cyber, korea
+- Binance theft and North Korean escalation [WATCH, worsening]: FBI blames North Korea for a $6.3bn Binance theft; Pyongyang denied it and fired several missiles on 4 Nov. Binance withdrawals have resumed. → watch: cyber, korea
 
 ## Other Alerts
 - Global food prices [food-prices] stable, AI-judged: FAO food price index 136.0 in September, above the 135 Alert line; October due 6 Nov

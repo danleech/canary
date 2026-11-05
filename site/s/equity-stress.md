@@ -1,16 +1,16 @@
-# US equity stress — NORMAL (improving)
-id equity-stress · Markets · horizon acute · checked 2026-11-04T23:43Z · text written 2026-11-04T17:53Z · at this level since 2026-11-04T17:53Z · stale after 2026-11-05T13:43Z
+# US equity stress — NORMAL (stable)
+id equity-stress · Markets · horizon acute · checked 2026-11-05T05:47Z · at this level since 2026-11-04T17:53Z · stale after 2026-11-05T19:47Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/equity-stress
 
 Value: VIX 16.6, S&P -1.7%
-Rated on: VIX 16.6 below the 20 Watch line; S&P drawdown 1.67% below the 5% Watch line
+Rated on: VIX 16.6 < 20 and S&P drawdown 1.7% < 5% = Normal
 Basis: measured — Set by a fixed rule applied to open data (VIX = 16.61 · S&P drawdown % = 1.67). Anyone can reproduce it from the public metrics file.
 
-VIX back below 20 and S&P 500 1.4% off its high after Democrats win Congress
+S&P 500 up 1.6% on 4 Nov after the midterms; VIX near 16.6, well under the 20 Watch line
 
-Why it's at this level: The VIX was near 17.1 on 4 Nov, back below the 20 Watch line, and the S&P 500 was about 1.4% below its 52-week high (Yahoo Finance). Democrats won control of both the House and Senate in the 3 Nov midterms, removing an event risk markets had hedged (Time). The Bank of England (5 Nov) and US payrolls (6 Nov) are the next scheduled tests.
+Why it's at this level: The S&P 500 rose 1.58% to 7,688.62 on 4 Nov and the Dow gained 3%, after Democrats won both houses of Congress in the 3 Nov midterms (TheStreet). The index is 1.7% below its 52-week high and the VIX closed near 16.6, inside both Normal lines (Yahoo Finance). October payrolls on 6 Nov are the next scheduled test.
 
-What this means for you: Equity markets are calm by this measure. Pension and investment values that track US shares are near recent highs; conditions can change quickly around central bank decisions and data releases.
+What this means for you: Conditions are calm. People with pensions or savings in US shares are exposed to swings around data releases, but nothing points to a stress regime as of 5 Nov.
 
 Why it matters: The S&P 500 is the world's risk barometer; sharp falls and spiking volatility transmit to pensions, credit and confidence globally.
 What moves it: Earnings, interest-rate expectations, liquidity, geopolitical shocks, positioning and leverage.
@@ -18,6 +18,6 @@ What moves it: Earnings, interest-rate expectations, liquidity, geopolitical sho
 Rubric — Alert: VIX > 30, or drawdown > 15%, or a market-wide circuit breaker trips. | Watch: VIX 20–30, or drawdown 5–15%. | Normal: VIX < 20 and S&P 500 drawdown from 52-week high < 5%.
 
 Sources:
-- Yahoo Finance — VIX (2026-11-04) https://finance.yahoo.com/quote/%5EVIX
-- Yahoo Finance — S&P 500 (2026-11-04) https://finance.yahoo.com/quote/%5EGSPC
-- Time — Democrats win control of House and Senate (2026-11-03) https://time.com/article/2026/11/03/midterm-elections-2026-key-races-live-results-polls-latest-news-updates/
+- Yahoo Finance — CBOE Volatility Index (^VIX) (2026-11-04) https://finance.yahoo.com/quote/%5EVIX
+- Yahoo Finance — S&P 500 (^GSPC) (2026-11-04) https://finance.yahoo.com/quote/%5EGSPC
+- TheStreet — Stock market today, 4 Nov 2026 (2026-11-04) https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026

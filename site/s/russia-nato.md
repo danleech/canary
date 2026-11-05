@@ -1,17 +1,17 @@
 # Russia–NATO — WATCH (stable)
-id russia-nato · Geopolitics · horizon acute · checked 2026-11-04T23:43Z · text written 2026-11-04T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-05T13:43Z
+id russia-nato · Geopolitics · horizon acute · checked 2026-11-05T05:47Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-05T19:47Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/russia-nato
 
-Value: Black Sea ship attacks; air alerts
-Rated on: Airspace alerts and attacks near NATO coasts = Watch; no Article 4
+Value: Kaliningrad threats; Black Sea attacks
+Rated on: Explicit threats against members; no Article 4 or clash = Watch
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: Russia–Ukraine war and NATO's flank [russia-ukraine-war]
 
-Black Sea ship attacks and Polish air-defence alerts; no Article 4 request
+Russian nuclear warnings over Kaliningrad stand; no Article 4 request as of 5 Nov
 
-Why it's at this level: Poland activated air defences near its border during Russia's mass strike on Ukraine overnight into 3 Nov (Euronews). Drone attacks on merchant ships, including off Romania and Bulgaria, have made the Black Sea the world's deadliest waterway for shipping (CNN, 3 Nov). No NATO member had requested Article 4 consultations as of 4 Nov.
+Why it's at this level: Russia warned NATO in late September, including in a formal diplomatic note, that it would use 'all means', including nuclear weapons, against any action on Kaliningrad; NATO's Mark Rutte called the threats unhelpful (Arms Control Association, Nov issue). Russia's mass strike on Ukraine on 3–4 Nov hit Kovel in Volyn, near the Polish border (The Defense Post). No NATO member had requested Article 4 consultations as of 5 Nov.
 
-What this means for you: No change for the public. Follow FCDO advice for travel to eastern Europe and the Black Sea region.
+What this means for you: Travellers to eastern NATO states should follow FCDO travel advice. Airspace closures near the Ukrainian border can disrupt flights at short notice.
 
 Why it matters: Direct Russia–NATO confrontation is the most likely path to a European war involving the UK.
 What moves it: Airspace and drone incursions, sabotage, Baltic incidents, nuclear signalling, Ukraine war spillover.
@@ -19,5 +19,5 @@ What moves it: Airspace and drone incursions, sabotage, Baltic incidents, nuclea
 Rubric — Alert: Article 4 consultations, a direct military clash, or an attack on NATO territory. | Watch: Airspace/drone violations, sabotage attributed to Russia, or explicit threats against members. | Normal: No notable incidents on NATO territory in the past two weeks.
 
 Sources:
-- Euronews — Russia pounds Ukraine with 289 drones and 17 ballistic missiles (2026-11-03) https://www.euronews.com/2026/11/03/russia-pounds-ukraine-with-289-drones-and-17-ballistic-missiles-in-overnight-strikes-zelen
-- CNN — Russian drone attacks turn the Black Sea into the world's deadliest waterway (2026-11-03) https://www.cnn.com/2026/11/03/europe/ukraine-black-sea-drone-attacks-intl
+- Arms Control Association — Russia issues nuclear threats over Kaliningrad (2026-11-01) https://www.armscontrol.org/act/2026-11/news/russia-issues-nuclear-threats-over-kaliningrad
+- The Defense Post — Russia fires 310 drones at Ukraine day after mass strike on energy grid (2026-11-04) https://thedefensepost.com/2026/11/04/russia-310-drones-ukraine/

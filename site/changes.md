@@ -1,7 +1,7 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-04T23:43Z · next run ~05:40 UK · stale after 2026-11-05T13:43Z (36h for daily-tier signals)
+as_of 2026-11-05T05:47Z · next run ~11:40 UK · stale after 2026-11-05T19:47Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
-Basis: 26 measured from open data, 12 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
+Basis: 26 measured from open data, 13 follow a published figure, 50 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 - 2026-11-04T23:43Z Pacific & Indian cyclones [other-cyclones]: ALERT→NORMAL — Cyclone Murasu has dissipated inland; no GDACS orange or red cyclone alerts in force
 - 2026-11-04T17:53Z Sahel insurgency [sahel]: ALERT→WATCH — JNIM insurgency persists in Mali, but Bamako's fuel supply has been restored under escort
