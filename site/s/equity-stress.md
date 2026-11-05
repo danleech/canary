@@ -1,10 +1,10 @@
 # US equity stress — NORMAL (stable)
-id equity-stress · Markets · horizon acute · checked 2026-11-05T05:47Z · at this level since 2026-11-04T17:53Z · stale after 2026-11-05T19:47Z
+id equity-stress · Markets · horizon acute · checked 2026-11-05T11:44Z · text written 2026-11-05T05:47Z · at this level since 2026-11-04T17:53Z · stale after 2026-11-06T01:44Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/equity-stress
 
-Value: VIX 16.6, S&P -1.7%
-Rated on: VIX 16.6 < 20 and S&P drawdown 1.7% < 5% = Normal
-Basis: measured — Set by a fixed rule applied to open data (VIX = 16.61 · S&P drawdown % = 1.67). Anyone can reproduce it from the public metrics file.
+Value: VIX 16.8, S&P -1.7%
+Rated on: VIX 16.8 below the 20 Watch line; S&P drawdown 1.67% below the 5% Watch line
+Basis: measured — Set by a fixed rule applied to open data (VIX = 16.84 · S&P drawdown % = 1.67). Anyone can reproduce it from the public metrics file.
 
 S&P 500 up 1.6% on 4 Nov after the midterms; VIX near 16.6, well under the 20 Watch line
 

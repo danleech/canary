@@ -1,5 +1,5 @@
 # Russia–Ukraine — ALERT (worsening)
-id russia-ukraine · Armed Conflict · horizon acute · checked 2026-11-05T05:47Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-05T19:47Z
+id russia-ukraine · Armed Conflict · horizon acute · checked 2026-11-05T11:44Z · text written 2026-11-05T05:47Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-06T01:44Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/russia-ukraine
 
 Value: 76 missiles, ~300 drones at grid (3–4 Nov)

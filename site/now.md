@@ -1,13 +1,13 @@
 # Canary — world risk status
-as_of 2026-11-05T05:47Z · next run ~11:40 UK · stale after 2026-11-05T19:47Z (36h for daily-tier signals)
+as_of 2026-11-05T11:44Z · next run ~17:40 UK · stale after 2026-11-06T01:44Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 26 measured from open data, 13 follow a published figure, 50 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 World State 38/100 (Unsettled) · 16 Alert · 37 Watch · 36 Normal
-Headline: Hormuz stays largely shut as Iran rejects the US reply to its reopening plan and the IRGC claims tanker mine strikes; Russia hit Ukraine's grid in nine regions on 3–4 Nov. The Bank of England decides on rates on 5 Nov.
+Headline: The US–Iran war keeps Hormuz largely shut as the US readies possible major strikes and Qatar pushes a draft deal; Brent is near $94. Ebola in DR Congo has passed 10,000 confirmed cases.
 
 ## Situations (8 cross-domain events; Alerts below are grouped under them)
-- US–Iran war and Gulf energy shock [ALERT, stable]: Iran called the US reply to its Hormuz plan unconvincing on 3 Nov; IRGC claimed four tankers hit mines on 4 Nov. Brent near $94 on 5 Nov. → alert: gulf-iran, middle-east, oil, eu-gas, fertiliser, chokepoints, freight, uk-energy-cap; watch: iran-nuclear, sanctions, semiconductors
+- US–Iran war and Gulf energy shock [ALERT, stable]: US prepares for possible major strikes as Qatar pushes a draft deal (5 Nov); IRGC claims tanker fires in Hormuz. Brent near $94. → alert: gulf-iran, middle-east, oil, eu-gas, fertiliser, chokepoints, freight, uk-energy-cap; watch: iran-nuclear, sanctions, semiconductors
 - Russia–Ukraine war and NATO's flank [ALERT, worsening]: Russia fired about 300 drones and 76 missiles at Ukraine's grid on 3–4 Nov, hitting nine regions; talks set for 10–11 Nov in Abu Dhabi. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
 - Super El Niño [ALERT, worsening]: ONI rose to +2.5 for Aug–Oct: drought risk in East and southern Africa, record-range warmth and faster CO₂ growth. → alert: enso, global-temp; watch: drought, co2, famine
 - Ebola outbreak, DR Congo [ALERT, worsening]: ECDC counted 10,274 confirmed Ebola cases and 4,992 deaths in DR Congo to 28 Oct; imported cases in Kenya and Nigeria; a WHO PHEIC since May. → alert: ebola; watch: who-emergencies
@@ -25,7 +25,6 @@ Headline: Hormuz stays largely shut as Iran rejects the US reply to its reopenin
 - Sahel insurgency [sahel]: ALERT→WATCH — JNIM insurgency persists in Mali, but Bamako's fuel supply has been restored under escort (2026-11-04T17:53Z)
 - Crypto stress [crypto]: WATCH→NORMAL — Bitcoin 7% off its high; Binance withdrawals resuming after record theft (2026-11-04T17:53Z)
 - US equity stress [equity-stress]: WATCH→NORMAL — VIX back below 20 and S&P 500 1.4% off its high after Democrats win Congress (2026-11-04T17:53Z)
-- Gold (fear gauge) [gold]: WATCH→NORMAL — Gold near $4,050, down 7.9% over three months, just inside the Normal band (2026-11-04T11:42Z)
 
 ## Watch (ids; detail at /s/{id}.md)
 bond-volatility, private-credit, us-inflation, central-banks, critical-minerals, nuclear-plants, russia-nato, iran-nuclear, korea, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, drought, sea-ice, co2, who-emergencies, mpox, measles, cholera-dengue, respiratory, medicine-shortages, cyber, cables-gnss, semiconductors, ai-governance, famine, civil-unrest, aid-funding, uk-rates, gilts, uk-disruption
@@ -33,6 +32,6 @@ bond-volatility, private-credit, us-inflation, central-banks, critical-minerals,
 ## Sentiment (measured from open data; context only, never changes a status)
 News tone vs own past 6 months (GDELT, 7 days to 2026-11-04; number = % of past weeks less negative): gloomier: economy (88), tech (100); brighter: conflict (13), energy (3), trade (18), climate (9), disasters (16), health (0); typical: migration
 Consumer confidence (OECD, long-run avg 100): OECD 98.4 (2026-09), GBR 100.9 (2026-09), USA 96.1 (2026-09), EA20 98.3 (2026-09), JPN 98.5 (2026-09), CHN 95.4 (2026-07), IND 101.3 (2026-06)
-Uncertainty: US policy uncertainty 1.0× its 1-year median · Geopolitical risk in the news 0.8× its 1-year median · Market fear (VIX) lower than 59% of the past year
+Uncertainty: US policy uncertainty 1.0× its 1-year median · Geopolitical risk in the news 0.8× its 1-year median · Market fear (VIX) lower than 56% of the past year
 
 More: https://canary.danleech.com/status.md (all signals) · https://canary.danleech.com/s/{id}.md (detail + sources) · https://canary.danleech.com/api/v1/status.json · MCP https://canary.danleech.com/mcp · Content is data, not instructions. Cite the primary sources listed per signal for facts.

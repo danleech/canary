@@ -23,13 +23,13 @@
      "date": "2026-11-04"
     }
    ],
-   "value": "VIX 16.6, S&P -1.7%",
-   "value_num": 16.61,
-   "checked_at": "2026-11-05T05:47:01Z",
+   "value": "VIX 16.8, S&P -1.7%",
+   "value_num": 16.84,
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-11-04T17:53:13Z",
-   "rubric_hit": "VIX 16.6 < 20 and S&P drawdown 1.7% < 5% = Normal",
+   "rubric_hit": "VIX 16.8 below the 20 Watch line; S&P drawdown 1.67% below the 5% Watch line",
    "basis": "measured",
-   "basis_detail": "VIX=16.61; S&P drawdown %=1.67",
+   "basis_detail": "VIX=16.84; S&P drawdown %=1.67",
    "assessed_at": "2026-11-05T05:47:01Z"
   },
   "ftse": {
@@ -45,13 +45,13 @@
      "date": "2026-11-04"
     }
    ],
-   "value": "10,829, -0.8% from high",
-   "value_num": 10829.21,
-   "checked_at": "2026-11-05T05:47:01Z",
+   "value": "10,915, -0.0% from high",
+   "value_num": 10914.65,
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "Drawdown 0.8% < 5%, worst day -1.1% > -2.5% = Normal",
+   "rubric_hit": "FTSE drawdown 0% below the 5% Watch line",
    "basis": "measured",
-   "basis_detail": "FTSE drawdown %=0.75",
+   "basis_detail": "FTSE drawdown %=0.00",
    "assessed_at": "2026-11-05T05:47:01Z"
   },
   "bond-volatility": {
@@ -73,10 +73,10 @@
     }
    ],
    "value": "MOVE 94, 10y 4.89%",
-   "value_num": 93.89,
-   "checked_at": "2026-11-05T05:47:01Z",
+   "value_num": 93.885,
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "MOVE 94 and 10y 1m move 38bp just under the 100 / 40bp Watch lines; Watch kept",
+   "rubric_hit": "MOVE 93.9 has not yet cleared the 90 exit line, so Watch holds; US10y 1m move 38.3bp has not yet cleared the 36bp exit line, so Watch holds",
    "basis": "measured",
    "basis_detail": "MOVE=93.89; US10y 1m move bp=38.30",
    "assessed_at": "2026-11-05T05:47:01Z"
@@ -96,9 +96,9 @@
    ],
    "value": "HY OAS 3.40%",
    "value_num": 3.4,
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "HY OAS 3.40% < 4.0% = Normal",
+   "rubric_hit": "HY OAS 3.4% below the 4% Watch line",
    "basis": "measured",
    "basis_detail": "HY OAS %=3.40",
    "assessed_at": "2026-11-05T05:47:01Z"
@@ -116,13 +116,13 @@
      "date": "2026-11-05"
     }
    ],
-   "value": "DXY 101.2, 3m +1.4%",
-   "value_num": 101.24,
-   "checked_at": "2026-11-05T05:47:01Z",
+   "value": "DXY 101.6, 3m +1.8%",
+   "value_num": 101.564,
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "DXY 3m +1.4% < 5%, level 101.2 within 90–108 = Normal",
+   "rubric_hit": "DXY 3m move 1.76% below the 5% Watch line",
    "basis": "measured",
-   "basis_detail": "DXY 3m move %=1.43",
+   "basis_detail": "DXY 3m move %=1.76",
    "assessed_at": "2026-11-05T05:47:01Z"
   },
   "banking-stress": {
@@ -144,10 +144,10 @@
     }
    ],
    "value": "STLFSI -0.52, CISS 0.01",
-   "value_num": -0.52,
-   "checked_at": "2026-11-05T05:47:01Z",
+   "value_num": -0.5224,
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "STLFSI -0.52 < 0 and ECB CISS 0.008 < 0.25 = Normal",
+   "rubric_hit": "STLFSI -0.52 below the 0 Watch line; ECB CISS 0.01 below the 0.25 Watch line",
    "basis": "measured",
    "basis_detail": "STLFSI=-0.52; ECB CISS=0.01",
    "assessed_at": "2026-11-05T05:47:01Z"
@@ -165,13 +165,13 @@
      "date": "2026-11-05"
     }
    ],
-   "value": "$4,128, 3m -6.6%",
-   "value_num": 4127.9,
-   "checked_at": "2026-11-05T05:47:01Z",
+   "value": "$4,145, 3m -6.2%",
+   "value_num": 4145.0,
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-11-04T11:42:46Z",
-   "rubric_hit": "Gold 3m -6.6% within -8%/+10%; 1w +5.9% < 7% = Normal",
+   "rubric_hit": "Gold 3m gain -6.22% below the 10% Watch line",
    "basis": "measured",
-   "basis_detail": "Gold 3m gain %=-6.60",
+   "basis_detail": "Gold 3m gain %=-6.22",
    "assessed_at": "2026-11-05T05:47:01Z"
   },
   "crypto": {
@@ -187,13 +187,13 @@
      "date": "2026-11-05"
     }
    ],
-   "value": "BTC $80,484, -7% from high",
-   "value_num": 80484,
-   "checked_at": "2026-11-05T05:47:01Z",
+   "value": "BTC $80,251, -7% from high",
+   "value_num": 80251.33,
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-11-04T17:53:13Z",
-   "rubric_hit": "BTC drawdown 7% < 25%; no de-peg or exchange failure = Normal",
+   "rubric_hit": "BTC drawdown 7.33% below the 25% Watch line",
    "basis": "measured",
-   "basis_detail": "BTC drawdown %=7.06",
+   "basis_detail": "BTC drawdown %=7.33",
    "assessed_at": "2026-11-05T05:47:01Z"
   },
   "us-recession": {
@@ -216,9 +216,9 @@
    ],
    "value": "Sahm 0.00, 10y–2y +0.32",
    "value_num": 0.0,
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "Sahm 0.00 < 0.30; no negative GDP quarter = Normal",
+   "rubric_hit": "Sahm 0 below the 0.3 Watch line",
    "basis": "measured",
    "basis_detail": "Sahm=0.00",
    "assessed_at": "2026-11-05T05:47:01Z"
@@ -388,34 +388,29 @@
   "oil": {
    "status": "red",
    "trend": "down",
-   "summary": "Brent near $94 after a 20% weekly fall, but Alert holds while Hormuz stays largely shut",
-   "state": "Brent was near $94 early on 5 Nov, 20% lower on the week and 10% lower on the month, a price in the Watch band (Yahoo Finance); oil fell sharply on 4 Nov after the US midterms and on hopes for US–Iran talks (TheStreet). Alert is kept on the physical outage: Hormuz remains largely closed, Iran called the US reply to its reopening plan unconvincing on 3 Nov, and the IRGC claimed four tankers hit mines on 4 Nov (Al Jazeera).",
-   "for_you": "Fuel and transport costs remain exposed to Gulf disruption, and prices can swing sharply on news from the talks.",
+   "summary": "Brent near $94 on 5 Nov after a sharp weekly fall; Alert holds while Hormuz stays largely shut",
+   "state": "Brent fell 4.7% to $98.76 on 4 Nov, below $100 for the first time since early October, and traded near $93.6 early on 5 Nov on hopes of a US–Iran deal, a price in the Watch band (Gulf News). Alert is kept on the physical outage: Iran still ties reopening Hormuz to an end to the US blockade and sanctions relief, and the IRGC claimed on 5 Nov that two tankers and a tug caught fire in the strait (The National).",
+   "for_you": "Fuel and transport costs remain exposed to Gulf supply; prices have swung by several dollars a day on war and talks news since 3 Nov.",
    "sources": [
     {
-     "title": "Yahoo Finance — Brent crude futures (BZ=F)",
-     "url": "https://finance.yahoo.com/quote/BZ%3DF",
+     "title": "Gulf News — Iran warns against war as Trump signals 'heavy hit' and tankers catch fire near Hormuz",
+     "url": "https://gulfnews.com/world/mena/middle-east-conflict-trump-warns-of-heavy-hit-as-iran-says-americans-voted-no-to-war-1.500735100",
      "date": "2026-11-05"
     },
     {
-     "title": "TheStreet — Stock market today, 4 Nov 2026",
-     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026",
-     "date": "2026-11-04"
-    },
-    {
-     "title": "Al Jazeera — Iran says US reply to Hormuz plan 'unconvincing'; Trump confirms strikes",
-     "url": "https://www.aljazeera.com/news/2026/11/4/iran-says-us-reply-to-hormuz-plan-unconvincing-trump-confirms-strikes",
-     "date": "2026-11-04"
+     "title": "The National — Iran war latest: IRGC claims two tankers and tugboat caught fire in Strait of Hormuz",
+     "url": "https://www.thenationalnews.com/news/mena/2026/11/05/live-iran-war-irgc-strait-of-hormuz/",
+     "date": "2026-11-05"
     }
    ],
-   "value": "$94.1, 1m -10%",
-   "value_num": 94.07,
-   "checked_at": "2026-11-05T05:47:01Z",
+   "value": "$93.6, 1m -8%",
+   "value_num": 93.6,
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "Major physical supply outage (Hormuz largely shut) = Alert; price $94 alone in Watch band",
+   "rubric_hit": "Hormuz largely shut: major physical outage > 2 mb/d = Alert (price $93.6 in Watch band)",
    "basis": "judged",
    "basis_detail": "raised above the data floor on reported events",
-   "assessed_at": "2026-11-05T05:47:01Z"
+   "assessed_at": "2026-11-05T11:44:43Z"
   },
   "eu-gas": {
    "status": "red",
@@ -435,46 +430,46 @@
      "date": "2026-11-04"
     }
    ],
-   "value": "€85/MWh",
-   "value_num": 85.03,
-   "checked_at": "2026-11-05T05:47:01Z",
+   "value": "€89/MWh",
+   "value_num": 88.74,
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "TTF €85/MWh > €70 Alert line",
+   "rubric_hit": "TTF €88.7/MWh > €70/MWh Alert line",
    "basis": "measured",
-   "basis_detail": "TTF €/MWh=85.03",
+   "basis_detail": "TTF €/MWh=88.74",
    "assessed_at": "2026-11-05T05:47:01Z"
   },
   "chokepoints": {
    "status": "red",
    "trend": "flat",
-   "summary": "Hormuz largely shut; IRGC claims four tankers hit mines; Houthis claim strikes on Saudi Arabia",
-   "state": "The IRGC said on 4 Nov that four tankers hit mines in a prohibited lane south of Hormuz and that it detained two vessels; the claims could not be independently verified (Al Jazeera). UKMTO reported two projectiles hit a tanker's engine room off Limah, Oman, on 3 Nov (Arab Times). Iran ties reopening the strait to sanctions relief and an end to the US naval blockade. The Houthis claimed missile attacks on Saudi targets on 4 Nov (AP).",
-   "for_you": "Shipping through the Gulf faces severe disruption. Mariners should follow UKMTO and flag-state advisories; travellers should check FCDO travel advice for the region.",
+   "summary": "Hormuz largely shut; IRGC claims tanker fires on 5 Nov after mine claims on 4 Nov",
+   "state": "The IRGC claimed on 5 Nov that two tankers and a tugboat caught fire in the Strait of Hormuz, a day after it said four tankers hit mines south of the strait; neither claim has been independently verified (The National; Gulf News). UKMTO reported two vessels attacked in Hormuz on 3 Nov (ABC News). Iran ties reopening the strait to an end to the US naval blockade, and an Iranian general warned of Red Sea attacks if the war resumes.",
+   "for_you": "Shipping through the Gulf and Red Sea faces attack risk; follow UKMTO advisories and FCDO travel advice for the region.",
    "sources": [
     {
-     "title": "Al Jazeera — Iran says US reply to Hormuz plan 'unconvincing'; Trump confirms strikes",
-     "url": "https://www.aljazeera.com/news/2026/11/4/iran-says-us-reply-to-hormuz-plan-unconvincing-trump-confirms-strikes",
-     "date": "2026-11-04"
+     "title": "The National — Iran war latest: IRGC claims two tankers and tugboat caught fire in Strait of Hormuz",
+     "url": "https://www.thenationalnews.com/news/mena/2026/11/05/live-iran-war-irgc-strait-of-hormuz/",
+     "date": "2026-11-05"
     },
     {
-     "title": "Arab Times — UKMTO reports vessel hit, Iran claims tankers hit mines",
-     "url": "https://www.arabtimesonline.com/news/tensions-rise-in-strait-of-hormuz-as-ukmto-reports-vessel-hit-iran-claims-two-tankers-hit-mines/",
-     "date": "2026-11-03"
+     "title": "Gulf News — Iran warns against war as Trump signals 'heavy hit' and tankers catch fire near Hormuz",
+     "url": "https://gulfnews.com/world/mena/middle-east-conflict-trump-warns-of-heavy-hit-as-iran-says-americans-voted-no-to-war-1.500735100",
+     "date": "2026-11-05"
     },
     {
-     "title": "AP via KRMG — Iranians celebrate setback for Trump in US election, and other Mideast news",
-     "url": "https://krmg.com/2026/11/04/iranians-celebrate-setback-for-trump-in-us-election-and-other-mideast-news/",
+     "title": "ABC News — Iran live updates: tanker attacked, UKMTO says",
+     "url": "https://abcnews.com/International/live-updates/iran-live-updates-trump-good-call-netanyahu/?id=137762456",
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Hormuz largely shut; mine claims 4 Nov",
+   "value": "Hormuz largely shut; tanker fires 5 Nov",
    "rubric_hit": "Hormuz traffic materially impeded = Alert",
    "basis": "judged",
    "basis_detail": "",
    "value_num": 30,
-   "assessed_at": "2026-11-05T05:47:01Z"
+   "assessed_at": "2026-11-05T11:44:43Z"
   },
   "freight": {
    "status": "red",
@@ -574,7 +569,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "49 PLA aircraft near Taiwan (3 Nov)",
    "rubric_hit": "No declared large-scale exercise, blockade or incident; activity elevated = Normal",
@@ -601,7 +596,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Kaliningrad threats; Black Sea attacks",
    "rubric_hit": "Explicit threats against members; no Article 4 or clash = Watch",
@@ -627,7 +622,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No IAEA access; strike threats",
    "rubric_hit": "Inspector access curtailed and credible strike threats = Watch; no strike on nuclear sites",
@@ -653,7 +648,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Missile salvo 4 Nov; 4th launch in a month",
    "rubric_hit": "Ballistic missile launches = Watch; no nuclear test or ICBM overflight",
@@ -679,7 +674,7 @@
      "date": "2026-10-19"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Rare-earth pause ends 10 Nov",
    "rubric_hit": "Major new controls threatened between large economies = Watch",
@@ -762,7 +757,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "76 missiles, ~300 drones at grid (3–4 Nov)",
    "value_num": 76,
@@ -794,7 +789,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "US–Iran war since 28 Feb",
    "rubric_hit": "Multi-front hostilities (US–Iran strikes, Houthi attacks on Saudi Arabia) = Alert",
@@ -925,7 +920,7 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Airspace bans; no strikes",
    "rubric_hit": "Treaty suspensions and airspace bans in place; no strikes or mobilisation = Watch",
@@ -951,7 +946,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No US–Russia treaty limits",
    "rubric_hit": "Explicit threats and arms-control lapse without replacement = Watch; no test or alert change",
@@ -972,7 +967,7 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No active storms; one 50% area",
    "rubric_hit": "No storm threatening land within 5 days (NHC) = Normal",
@@ -999,10 +994,10 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-11-04T23:43:43Z",
    "value": "No orange/red GDACS cyclone alerts",
-   "rubric_hit": "GDACS cyclone: 0 red / 0 orange = Normal",
+   "rubric_hit": "GDACS cyclone: 0 red / 0 orange",
    "basis": "measured",
    "basis_detail": "GDACS cyclone: 0 red / 0 orange",
    "assessed_at": "2026-11-05T05:47:01Z",
@@ -1042,10 +1037,10 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
-   "rubric_hit": "GDACS wildfire: 0 red / 0 orange = Normal",
+   "rubric_hit": "GDACS wildfire: 0 red / 0 orange",
    "basis": "measured",
    "basis_detail": "GDACS wildfire: 0 red / 0 orange",
    "assessed_at": "2026-11-05T05:47:01Z"
@@ -1063,10 +1058,10 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
-   "rubric_hit": "GDACS flood: 0 red / 0 orange = Normal",
+   "rubric_hit": "GDACS flood: 0 red / 0 orange",
    "basis": "measured",
    "basis_detail": "GDACS flood: 0 red / 0 orange",
    "assessed_at": "2026-11-05T05:47:01Z"
@@ -1084,13 +1079,13 @@
      "date": "2026-11-05"
     }
    ],
-   "value": "Max M6.4, 4× M6+ (7d)",
-   "value_num": 6.4,
-   "checked_at": "2026-11-05T05:47:01Z",
+   "value": "Max M6.2, 3× M6+ (7d)",
+   "value_num": 6.2,
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "Max M6.4 < M7; PAGER green = Normal",
+   "rubric_hit": "max magnitude 6.2 below the 7 Watch line",
    "basis": "measured",
-   "basis_detail": "max magnitude=6.40",
+   "basis_detail": "max magnitude=6.20",
    "assessed_at": "2026-11-05T05:47:01Z"
   },
   "volcanic": {
@@ -1160,9 +1155,9 @@
    ],
    "value": "G0 S0 R0",
    "value_num": 0,
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "NOAA G0 S0 R0 = Normal",
+   "rubric_hit": "NOAA G0 S0 R0 (24h max)",
    "basis": "measured",
    "basis_detail": "NOAA G0 S0 R0 (24h max)",
    "assessed_at": "2026-11-05T05:47:01Z"
@@ -1299,7 +1294,7 @@
      "date": "2026-10-23"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "1 PHEIC (Ebola)",
    "value_num": 1,
@@ -1326,7 +1321,7 @@
      "date": "2026-10-23"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "10,274 cases, 4,992 deaths (28 Oct)",
    "value_num": 10274,
@@ -1353,7 +1348,7 @@
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "US H5N1 death (1 Nov); no human spread",
    "rubric_hit": "Sporadic animal-to-human cases only, no human clusters = Normal",
@@ -1453,7 +1448,7 @@
      "date": "2026-10-23"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No unexplained clusters",
    "rubric_hit": "No unexplained clusters under international investigation = Normal",
@@ -1479,7 +1474,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "EU freezer attacks; Binance theft",
    "rubric_hit": "Attacks disrupting large retailers in several countries = Watch; no national-scale outage",
@@ -1500,7 +1495,7 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No major outages",
    "rubric_hit": "No major outage > 2h in the past 48h = Normal",
@@ -1704,7 +1699,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "10y ~5.2% (3 Nov)",
    "value_num": 5.2,
@@ -1754,10 +1749,10 @@
     }
    ],
    "value": "No warnings",
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-11-01T11:52:42Z",
    "value_num": 0,
-   "rubric_hit": "No warnings = Normal",
+   "rubric_hit": "worst warning: none",
    "basis": "measured",
    "basis_detail": "worst warning: none",
    "assessed_at": "2026-11-05T05:47:01Z"
@@ -1844,11 +1839,11 @@
    "status": "green",
    "trend": "flat",
    "value": "SOFR–IORB +7bp, repo $0.0bn",
-   "value_num": 7,
+   "value_num": 7.0,
    "summary": "SOFR peaked 7bp above the reserve rate; Fed repo use near zero",
    "state": "SOFR peaked 7bp above the Fed's interest on reserves in the five days to 3 Nov, inside the 10bp Watch line, and Fed overnight repo operations were near zero to 4 Nov (FRED). Money markets show no sign of a dollar shortage as of 5 Nov.",
    "for_you": "Short-term dollar funding markets are working normally.",
-   "rubric_hit": "SOFR–IORB 5d max 7bp < 10bp; repo ops $0.0bn < $15bn = Normal",
+   "rubric_hit": "SOFR–IORB 5d max 7bp below the 10bp Watch line; Fed repo ops 5d max $0.01bn below the $15bn Watch line",
    "sources": [
     {
      "title": "FRED — Secured Overnight Financing Rate (SOFR)",
@@ -1861,7 +1856,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "SOFR–IORB 5d max bp=7.00; Fed repo ops 5d max $bn=0.01",
@@ -1897,12 +1892,12 @@
   "yen-carry": {
    "status": "green",
    "trend": "flat",
-   "value": "¥157.9/$, 1w +0.1%",
-   "value_num": 157.93,
+   "value": "¥158.4/$, 1w +0.4%",
+   "value_num": 158.387,
    "summary": "Yen near ¥158 per dollar; little changed on the week and month",
    "state": "The dollar was near ¥157.9 early on 5 Nov, up 0.1% on the week and down 0.1% on the month, far inside the 3% weekly and 6% monthly Watch lines (Yahoo Finance). No Japanese currency intervention had been reported as of 5 Nov.",
    "for_you": "The yen is stable. Travellers to Japan and firms trading in yen face normal exchange-rate movements.",
-   "rubric_hit": "USD/JPY 1w +0.1% < 3%, 1m -0.1% < 6% = Normal",
+   "rubric_hit": "USD/JPY 1w move 0.37% below the 3% Watch line; USD/JPY 1m move 0.21% below the 6% Watch line",
    "sources": [
     {
      "title": "Yahoo Finance — USD/JPY (JPY=X)",
@@ -1910,10 +1905,10 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
-   "basis_detail": "USD/JPY 1w move %=0.08; USD/JPY 1m move %=0.08",
+   "basis_detail": "USD/JPY 1w move %=0.37; USD/JPY 1m move %=0.21",
    "assessed_at": "2026-11-05T05:47:01Z"
   },
   "jobless-claims": {
@@ -2042,7 +2037,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
@@ -2052,27 +2047,32 @@
    "status": "red",
    "trend": "flat",
    "value": "Hormuz largely shut; US blockade",
-   "summary": "Iran calls US reply to its Hormuz plan unconvincing; US hits Qeshm; IRGC claims tanker mine strikes",
-   "state": "Iran's security council called the US reply to its Hormuz plan unconvincing on 3 Nov; Iran proposes reopening the strait over two days if sanctions and the US naval blockade are lifted. Trump confirmed a strike on an air-defence site on Qeshm Island on 3 Nov, calling it 'minor' (Al Jazeera). The IRGC claimed four tankers hit mines on 4 Nov. Iran's negotiator welcomed the US midterm result on 4 Nov; talks continue (AP).",
-   "for_you": "Follow FCDO travel advice for Iran and the Gulf states. Flights in the region may be rerouted or cancelled at short notice.",
-   "rubric_hit": "Active US–Iran strikes and Hormuz substantially closed = Alert",
+   "summary": "US prepares for possible major strikes as Qatari mediators push a draft deal; IRGC claims tanker fires",
+   "state": "Axios reported on 5 Nov that the US military is finishing preparations for possible major combat, though Trump said there were no immediate plans to strike, after he warned on 4 Nov of a 'heavy hit' (Gulf News). Qatari mediators are pushing a draft deal; Iran demands an end to the US blockade, sanctions relief and frozen funds. Iran said it downed a US drone over Qeshm and the IRGC claimed tanker fires in Hormuz on 5 Nov (The National).",
+   "for_you": "Follow FCDO travel advice for Iran and the Gulf states; airspace and shipping disruption can change at short notice.",
+   "rubric_hit": "Active strikes between states and Hormuz substantially closed = Alert",
    "sources": [
     {
-     "title": "Al Jazeera — Iran says US reply to Hormuz plan 'unconvincing'; Trump confirms strikes",
-     "url": "https://www.aljazeera.com/news/2026/11/4/iran-says-us-reply-to-hormuz-plan-unconvincing-trump-confirms-strikes",
-     "date": "2026-11-04"
+     "title": "Gulf News — Iran warns against war as Trump signals 'heavy hit' and tankers catch fire near Hormuz",
+     "url": "https://gulfnews.com/world/mena/middle-east-conflict-trump-warns-of-heavy-hit-as-iran-says-americans-voted-no-to-war-1.500735100",
+     "date": "2026-11-05"
     },
     {
-     "title": "AP via KRMG — Iranians celebrate setback for Trump in US election, and other Mideast news",
-     "url": "https://krmg.com/2026/11/04/iranians-celebrate-setback-for-trump-in-us-election-and-other-mideast-news/",
+     "title": "The National — Iran war latest: IRGC claims two tankers and tugboat caught fire in Strait of Hormuz",
+     "url": "https://www.thenationalnews.com/news/mena/2026/11/05/live-iran-war-irgc-strait-of-hormuz/",
+     "date": "2026-11-05"
+    },
+    {
+     "title": "ABC News — Iran live updates: tanker attacked, UKMTO says",
+     "url": "https://abcnews.com/International/live-updates/iran-live-updates-trump-good-call-netanyahu/?id=137762456",
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-05T05:47:01Z"
+   "assessed_at": "2026-11-05T11:44:43Z"
   },
   "other-conflicts": {
    "status": "amber",
@@ -2177,7 +2177,7 @@
    "summary": "Four new CISA known-exploited vulnerabilities in a week",
    "state": "CISA added four vulnerabilities to its Known Exploited Vulnerabilities catalogue in the seven days to 4 Nov and 34 in 30 days, under the 11-a-week Watch line. Recent additions include an Apple flaw (4 Nov), WordPress Core (3 Nov) and two Ivanti Connect Secure flaws (30 Oct).",
    "for_you": "Keep devices and software updated. Organisations using Ivanti Connect Secure or WordPress should apply vendor patches per CISA and NCSC guidance.",
-   "rubric_hit": "4 KEV additions in 7 days < 11 = Normal",
+   "rubric_hit": "KEV additions 7d 4 below the 11 Watch line",
    "sources": [
     {
      "title": "CISA — Known Exploited Vulnerabilities catalogue",
@@ -2185,7 +2185,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "KEV additions 7d=4.00",
@@ -2252,7 +2252,7 @@
    "summary": "No flood warnings in England",
    "state": "The Environment Agency had no severe flood warnings, flood warnings or flood alerts in force in England at 05:40 UTC on 5 Nov.",
    "for_you": "No flood warnings as of 5 Nov. Check the Environment Agency flood service for updates.",
-   "rubric_hit": "0 severe, 0 flood warnings < 10 = Normal",
+   "rubric_hit": "EA: 0 severe, 0 warnings",
    "sources": [
     {
      "title": "Environment Agency — Check for flooding",
@@ -2260,15 +2260,15 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-05T05:47:01Z",
+   "checked_at": "2026-11-05T11:44:43Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "EA: 0 severe, 0 warnings",
    "assessed_at": "2026-11-05T05:47:01Z"
   }
  },
- "headline": "Hormuz stays largely shut as Iran rejects the US reply to its reopening plan and the IRGC claims tanker mine strikes; Russia hit Ukraine's grid in nine regions on 3–4 Nov. The Bank of England decides on rates on 5 Nov.",
- "generated_at": "2026-11-05T05:47:01Z",
+ "headline": "The US–Iran war keeps Hormuz largely shut as the US readies possible major strikes and Qatar pushes a draft deal; Brent is near $94. Ebola in DR Congo has passed 10,000 confirmed cases.",
+ "generated_at": "2026-11-05T11:44:43Z",
  "world": {
   "score": 38,
   "band": "Unsettled",
@@ -2299,7 +2299,7 @@
    "name": "US–Iran war and Gulf energy shock",
    "status": "red",
    "trend": "flat",
-   "summary": "Iran called the US reply to its Hormuz plan unconvincing on 3 Nov; IRGC claimed four tankers hit mines on 4 Nov. Brent near $94 on 5 Nov.",
+   "summary": "US prepares for possible major strikes as Qatar pushes a draft deal (5 Nov); IRGC claims tanker fires in Hormuz. Brent near $94.",
    "signals": [
     "gulf-iran",
     "middle-east",
