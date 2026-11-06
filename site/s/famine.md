@@ -1,18 +1,18 @@
-# Famine — WATCH (worsening)
-id famine · Humanitarian · horizon acute · checked 2026-11-05T17:48Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-07T05:48Z
+# Famine — WATCH (stable)
+id famine · Humanitarian · horizon acute · checked 2026-11-06T17:59Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-08T05:59Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/famine
 
-Value: Risk-of-famine alerts: Sudan, Somalia
-Rated on: Risk-of-famine alerts = Watch; no current Phase 5 confirmed
+Value: Risk-of-famine alert: Sudan
+Rated on: Watch: IPC risk-of-famine alert for Darfur and Kordofan; no confirmed Phase 5
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: Super El Niño [super-el-nino]
 Situation: Sudan war [sudan-war]
 
-IPC warns of growing famine risk in Darfur and Kordofan; El Niño drought adds risk
+IPC alert warns of growing famine risk in Darfur and Kordofan; no current Phase 5 classification
 
-Why it's at this level: An IPC alert on 12 Oct warned of a growing risk of famine in parts of Greater Darfur and Greater Kordofan, where drought affects about half of Sudan (WHO). FEWS NET warns that El Niño drought will deepen hunger in East and southern Africa into 2027. No current IPC Phase 5 classification was confirmed as of 5 Nov.
+Why it's at this level: An IPC alert on 12 Oct warned of a growing risk of famine in parts of Greater Darfur and Greater Kordofan in Sudan (WHO). FEWS NET continues to track a credible risk of famine in parts of Sudan, and El Niño drought threatens East and southern Africa. No current IPC Phase 5 classification had been confirmed as of 6 Nov.
 
-What this means for you: Humanitarian appeals from WFP, UNICEF and other UN agencies list how to support affected populations.
+What this means for you: Mainly affects people in Sudan and neighbouring countries. Prices of staple imports in the region tend to rise as needs grow.
 
 Why it matters: Famine is the most extreme humanitarian failure, almost always man-made by conflict.
 What moves it: War, sieges, aid access, harvest failure, funding cuts.
@@ -21,4 +21,4 @@ Rubric — Alert: Famine (IPC Phase 5) confirmed in at least one area. | Watch: 
 
 Sources:
 - WHO — IPC Sudan food insecurity and malnutrition alert (2026-10-12) https://www.who.int/news/item/12-10-2026-ipc-sudan-food-insecurity-and-malnutrition-alert
-- FEWS NET — 2026–2027 El Niño food security impacts (2026-11-05) https://fews.net/global/special-report/october-2026
+- FEWS NET — Sudan (2026-11-06) https://fews.net/east-africa/sudan

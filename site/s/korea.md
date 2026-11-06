@@ -1,11 +1,10 @@
 # Korean peninsula — WATCH (stable)
-id korea · Geopolitics · horizon acute · checked 2026-11-06T11:42Z · text written 2026-11-06T05:46Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-07T01:42Z
+id korea · Geopolitics · horizon acute · checked 2026-11-06T17:59Z · text written 2026-11-06T05:46Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-07T07:59Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/korea
 
 Value: Missile salvo 4 Nov; 4th launch in a month
 Rated on: Ballistic missile launches = Watch; no nuclear test or overflight
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
-Situation: Binance theft and North Korean escalation [binance-hack]
 
 North Korea fired several missiles on 4 Nov, its fourth launch in a month
 

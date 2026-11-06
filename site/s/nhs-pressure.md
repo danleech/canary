@@ -1,16 +1,16 @@
 # NHS & respiratory — NORMAL (worsening)
-id nhs-pressure · UK Watch · horizon acute · checked 2026-11-05T17:48Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-07T05:48Z
+id nhs-pressure · UK Watch · horizon acute · checked 2026-11-06T17:59Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-08T05:59Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/nhs-pressure
 
-Value: Flu low but rising (wk 44)
-Rated on: Respiratory activity near baseline, no widespread critical incidents = Normal
+Value: Flu low, GP positivity 11% (wk 44)
+Rated on: Normal: flu, COVID and RSV at low or baseline levels; no widespread critical incidents
 Basis: published — Follows UKHSA surveillance and NHS England situation reports, read from the cited source by the AI assessor and checked against the rubric.
 
-UKHSA publishes 5 Nov flu report; flu low but rising; doctors strike 14–19 Nov
+UKHSA: flu low but GP positivity rising, COVID low, RSV at baseline; consultants strike 25–26 Nov
 
-Why it's at this level: UKHSA's 29 Oct report showed flu activity low but GP swab positivity rising to 11.0%, COVID low and falling and RSV at baseline; its next report, covering data to 1 Nov, was published on 5 Nov (UKHSA). Resident doctors in England strike from 14 to 19 Nov (BMA). No widespread critical incidents have been reported.
+Why it's at this level: UKHSA's 29 Oct report, covering 19–25 Oct, showed flu circulating at low levels with GP swab positivity up from 7.8% to 11.0%, COVID-19 low and easing, and RSV rising but at baseline (UKHSA). A later report was not visible in searches on 6 Nov. Consultants in England strike on 25–26 Nov (NHS Employers). No widespread critical incidents had been reported.
 
-What this means for you: Eligible people can book flu and COVID-19 vaccines through the NHS; use NHS 111 for non-emergency advice.
+What this means for you: NHS advice is to get a flu vaccine if eligible and to use NHS 111 for urgent but non-emergency care. Expect fewer planned appointments on strike days.
 
 Why it matters: Winter respiratory waves and NHS capacity directly affect access to care for everyone in the UK.
 What moves it: Flu, COVID, RSV, norovirus, staffing, strikes.
@@ -18,5 +18,5 @@ What moves it: Flu, COVID, RSV, norovirus, staffing, strikes.
 Rubric — Alert: High or very high flu activity nationally, or widespread critical incidents. | Watch: Respiratory activity above baseline and rising, or several trusts in critical incidents. | Normal: Respiratory activity at baseline and no widespread critical incidents.
 
 Sources:
-- UKHSA — National flu and COVID-19 surveillance report, 5 Nov (2026-11-05) https://www.gov.uk/government/statistics/national-flu-and-covid-19-surveillance-reports-2026-to-2027-season/national-flu-and-covid-19-surveillance-report-5-november-2026-week-45
-- BMA — Resident doctors announce six days of strike action (2026-11-05) https://www.bma.org.uk/bma-media-centre/resident-doctors-announce-six-days-of-strike-action-in-england-after-government-offer-rejected
+- UKHSA — National flu and COVID-19 surveillance report: 29 October 2026 (week 44) (2026-10-29) https://www.gov.uk/government/statistics/national-flu-and-covid-19-surveillance-reports-2026-to-2027-season/national-flu-and-covid-19-surveillance-report-29-october-2026-week-44
+- NHS Employers — Consultant doctors announce strikes in November (2026-10-26) https://www.nhsemployers.org/news/consultant-doctors-announce-strikes-november

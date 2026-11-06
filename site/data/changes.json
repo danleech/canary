@@ -1,5 +1,45 @@
 [
  {
+  "t": "2026-11-06T17:59:39Z",
+  "id": "fertiliser",
+  "name": "Fertiliser supply",
+  "from": "red",
+  "to": "amber",
+  "reason": "Gulf fertiliser exports still face Hormuz attacks; escorted shipments recovering, so Alert unconfirmed"
+ },
+ {
+  "t": "2026-11-06T17:59:39Z",
+  "id": "food-prices",
+  "name": "Global food prices",
+  "from": "red",
+  "to": "amber",
+  "reason": "FAO food price index eased to 133.9 in October, below the 135 Alert line but up 5.9% on a year"
+ },
+ {
+  "t": "2026-11-06T17:59:39Z",
+  "id": "oil",
+  "name": "Oil (Brent)",
+  "from": "red",
+  "to": "amber",
+  "reason": "Brent near $98 on 6 Nov, down 7% in a month; Watch as escorted Gulf shipments recover"
+ },
+ {
+  "t": "2026-11-06T17:59:39Z",
+  "id": "uk-energy-cap",
+  "name": "UK energy price cap",
+  "from": "red",
+  "to": "amber",
+  "reason": "Cap £1,723; Cornwall Insight forecasts £1,999 in January, a 16% rise, below the 20% Alert line"
+ },
+ {
+  "t": "2026-11-06T17:59:39Z",
+  "id": "cholera-dengue",
+  "name": "Cholera & mosquito-borne",
+  "from": "amber",
+  "to": "red",
+  "reason": "Cholera has killed about 1,800 in DR Congo this year, including the conflict-hit east, as Ebola spreads"
+ },
+ {
   "t": "2026-11-06T05:46:40Z",
   "id": "gold",
   "name": "Gold (fear gauge)",

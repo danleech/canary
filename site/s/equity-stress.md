@@ -1,10 +1,10 @@
 # US equity stress — WATCH (worsening)
-id equity-stress · Markets · horizon acute · checked 2026-11-06T11:42Z · text written 2026-11-06T05:46Z · at this level since 2026-11-05T17:48Z · stale after 2026-11-07T01:42Z
+id equity-stress · Markets · horizon acute · checked 2026-11-06T17:59Z · text written 2026-11-06T05:46Z · at this level since 2026-11-05T17:48Z · stale after 2026-11-07T07:59Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/equity-stress
 
-Value: VIX 26.7, S&P -6.0%
-Rated on: VIX 26.7 ≥ 20 Watch line; S&P drawdown 5.95% ≥ 5% Watch line
-Basis: measured — Set by a fixed rule applied to open data (VIX = 26.67 · S&P drawdown % = 5.95). Anyone can reproduce it from the public metrics file.
+Value: VIX 24.2, S&P -5.4%
+Rated on: VIX 24.2 ≥ 20 Watch line; S&P drawdown 5.42% ≥ 5% Watch line
+Basis: measured — Set by a fixed rule applied to open data (VIX = 24.24 · S&P drawdown % = 5.42). Anyone can reproduce it from the public metrics file.
 
 S&P 500 falls 4.3% on 5 Nov, its worst day since 2025, as chip stocks plunge; VIX 28
 

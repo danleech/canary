@@ -1,5 +1,5 @@
 # Pacific & Indian cyclones — NORMAL (stable)
-id other-cyclones · Weather & Hazards · horizon acute · checked 2026-11-06T11:42Z · text written 2026-11-06T05:46Z · at this level since 2026-11-04T23:43Z · stale after 2026-11-07T01:42Z
+id other-cyclones · Weather & Hazards · horizon acute · checked 2026-11-06T17:59Z · text written 2026-11-06T05:46Z · at this level since 2026-11-04T23:43Z · stale after 2026-11-07T07:59Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/other-cyclones
 
 Value: No orange/red GDACS cyclone alerts

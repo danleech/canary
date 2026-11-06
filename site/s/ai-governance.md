@@ -1,16 +1,16 @@
 # AI incidents & governance — WATCH (stable)
-id ai-governance · Technology & Cyber · horizon acute · checked 2026-11-05T17:48Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-07T05:48Z
+id ai-governance · Technology & Cyber · horizon acute · checked 2026-11-06T17:59Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-08T05:59Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/ai-governance
 
-Value: EU AI Act duties 2 Dec; deepfake apps
-Rated on: Significant AI misuse incident = Watch
+Value: Gemini lawsuit; midterm deepfakes
+Rated on: Watch: significant AI misuse allegations and widespread election deepfakes; no AI attack on critical infrastructure
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-Hundreds of apps found hiding abusive deepfake tools; EU AI Act duties widen on 2 Dec
+Parents sue Google over Gemini on school laptops; deepfake ads spread in US midterm campaigns
 
-Why it's at this level: Researchers found hundreds of apps on major app stores were part of a network hiding sexually abusive deepfake tools, AppleInsider reported on 2 Nov. Deepfake ads were widespread in the US midterms (Washington Sun). Further EU AI Act obligations apply from 2 Dec. No AI-enabled attack on critical infrastructure had been reported as of 5 Nov.
+Why it's at this level: Parents in California sued Google, alleging its Gemini chatbot on school Chromebooks harmed a teenager, Just Security reported on 6 Nov. AI deepfake ads have grown more common in US midterm campaigns (Al Jazeera). No AI-enabled attack on critical infrastructure or AI-attributed mass harm had been reported as of 6 Nov.
 
-What this means for you: Be cautious of unverified audio, video and images, especially around elections.
+What this means for you: Treat political video and audio shared online with caution, especially near elections. Parents may wish to review the AI tools enabled on school devices.
 
 Why it matters: Powerful AI systems are being deployed faster than safeguards; serious incidents or governance breakdowns carry systemic risk.
 What moves it: Model releases, misuse incidents, regulation, compute controls, deepfakes in elections.
@@ -18,5 +18,5 @@ What moves it: Model releases, misuse incidents, regulation, compute controls, d
 Rubric — Alert: AI-enabled attack on critical infrastructure, or AI-attributed mass harm event. | Watch: A significant AI misuse incident, major deepfake disruption, or regulatory confrontation. | Normal: No serious AI-attributed harm events or governance shocks this week.
 
 Sources:
-- AppleInsider — Hundreds of AI apps hid sexually abusive deepfake tools (2026-11-02) https://appleinsider.com/articles/26/11/02/hundreds-of-ai-apps-were-part-of-a-network-hiding-sexually-abusive-deepfake-tools
-- Washington Sun — Deepfake ads erupted in 2026 (2026-11-05) https://www.washingtonsun.com/campaigns/deepfake-ads-proliferate-2026-camapigns-concern-2028
+- Just Security — Early Edition: November 6, 2026 (2026-11-06) https://www.justsecurity.org/163619/early-edition-november-6-2026/
+- Al Jazeera — AI deepfake ads grow more popular in US midterm campaigns (2026-10-09) https://www.aljazeera.com/economy/2026/10/9/ai-deepfake-ads-grow-more-popular-in-us-midterm-campaigns-blurring-truth
