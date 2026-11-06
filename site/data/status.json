@@ -18,13 +18,13 @@
      "date": "2026-11-06"
     }
    ],
-   "value": "VIX 28.2, S&P -6.0%",
-   "value_num": 28.18,
-   "checked_at": "2026-11-06T05:46:40Z",
+   "value": "VIX 26.7, S&P -6.0%",
+   "value_num": 26.67,
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-11-05T17:48:17Z",
-   "rubric_hit": "VIX 28.2 in 20–30 band; S&P drawdown 6.0% in 5–15% Watch band",
+   "rubric_hit": "VIX 26.7 ≥ 20 Watch line; S&P drawdown 5.95% ≥ 5% Watch line",
    "basis": "measured",
-   "basis_detail": "VIX=28.18; S&P drawdown %=5.95",
+   "basis_detail": "VIX=26.67; S&P drawdown %=5.95",
    "assessed_at": "2026-11-06T05:46:40Z"
   },
   "ftse": {
@@ -40,13 +40,13 @@
      "date": "2026-11-06"
     }
    ],
-   "value": "10,783, -1.2% from high",
-   "value_num": 10782.66,
-   "checked_at": "2026-11-06T05:46:40Z",
+   "value": "10,541, -3.4% from high",
+   "value_num": 10540.66,
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "FTSE drawdown 1.2% < 5%; worst day −1.1% > −2.5%",
+   "rubric_hit": "FTSE drawdown 3.39% below the 5% Watch line",
    "basis": "measured",
-   "basis_detail": "FTSE drawdown %=1.17",
+   "basis_detail": "FTSE drawdown %=3.39",
    "assessed_at": "2026-11-06T05:46:40Z"
   },
   "bond-volatility": {
@@ -68,10 +68,10 @@
     }
    ],
    "value": "MOVE 98, 10y 4.84%",
-   "value_num": 97.9222,
-   "checked_at": "2026-11-06T05:46:40Z",
+   "value_num": 97.922,
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "MOVE 98 and 10y 1m move 39bp at the Watch lines (100, 40bp)",
+   "rubric_hit": "MOVE 97.9 has not yet cleared the 90 exit line, so Watch holds; US10y 1m move 39.4bp has not yet cleared the 36bp exit line, so Watch holds",
    "basis": "measured",
    "basis_detail": "MOVE=97.92; US10y 1m move bp=39.40",
    "assessed_at": "2026-11-06T05:46:40Z"
@@ -91,9 +91,9 @@
    ],
    "value": "HY OAS 3.32%",
    "value_num": 3.32,
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "HY OAS 3.32% < 4.0% Watch line",
+   "rubric_hit": "HY OAS 3.32% below the 4% Watch line",
    "basis": "measured",
    "basis_detail": "HY OAS %=3.32",
    "assessed_at": "2026-11-06T05:46:40Z"
@@ -111,13 +111,13 @@
      "date": "2026-11-06"
     }
    ],
-   "value": "DXY 101.8, 3m +1.9%",
-   "value_num": 101.566,
-   "checked_at": "2026-11-06T05:46:40Z",
+   "value": "DXY 102.0, 3m +2.1%",
+   "value_num": 101.97,
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "DXY 3m +1.9% < 5%; level 101.8 within 90–108",
+   "rubric_hit": "DXY 3m move 2.15% below the 5% Watch line",
    "basis": "measured",
-   "basis_detail": "DXY 3m move %=1.95",
+   "basis_detail": "DXY 3m move %=2.15",
    "assessed_at": "2026-11-06T05:46:40Z"
   },
   "banking-stress": {
@@ -140,9 +140,9 @@
    ],
    "value": "STLFSI -0.52, CISS 0.01",
    "value_num": -0.5224,
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "STLFSI −0.52 < 0; CISS 0.008 < 0.25; no failures",
+   "rubric_hit": "STLFSI -0.52 below the 0 Watch line; ECB CISS 0.01 below the 0.25 Watch line",
    "basis": "measured",
    "basis_detail": "STLFSI=-0.52; ECB CISS=0.01",
    "assessed_at": "2026-11-06T05:46:40Z"
@@ -160,13 +160,13 @@
      "date": "2026-11-06"
     }
    ],
-   "value": "$4,053, 3m -8.8%",
-   "value_num": 4103.2,
-   "checked_at": "2026-11-06T05:46:40Z",
+   "value": "$4,081, 3m -8.1%",
+   "value_num": 4080.9,
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-11-06T05:46:40Z",
-   "rubric_hit": "Gold 3m −8.8% > 8% fall = Watch",
+   "rubric_hit": "3m fall -8.1% (Watch)",
    "basis": "measured",
-   "basis_detail": "Gold 3m gain %=-8.75; 3m fall -8.8%",
+   "basis_detail": "Gold 3m gain %=-8.11; 3m fall -8.1%",
    "assessed_at": "2026-11-06T05:46:40Z"
   },
   "crypto": {
@@ -182,13 +182,13 @@
      "date": "2026-11-06"
     }
    ],
-   "value": "BTC $75,540, -13% from high",
-   "value_num": 75861.33,
-   "checked_at": "2026-11-06T05:46:40Z",
+   "value": "BTC $76,016, -12% from high",
+   "value_num": 76015.94,
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-11-04T17:53:13Z",
-   "rubric_hit": "BTC drawdown 12.8% < 25%; no de-peg",
+   "rubric_hit": "BTC drawdown 12.2% below the 25% Watch line",
    "basis": "measured",
-   "basis_detail": "BTC drawdown %=12.77",
+   "basis_detail": "BTC drawdown %=12.22",
    "assessed_at": "2026-11-06T05:46:40Z"
   },
   "us-recession": {
@@ -211,9 +211,9 @@
    ],
    "value": "Sahm 0.00, 10y–2y +0.38",
    "value_num": 0.0,
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "Sahm 0.00 < 0.30; no negative GDP quarter",
+   "rubric_hit": "Sahm 0 below the 0.3 Watch line",
    "basis": "measured",
    "basis_detail": "Sahm=0.00",
    "assessed_at": "2026-11-06T05:46:40Z"
@@ -383,29 +383,34 @@
   "oil": {
    "status": "red",
    "trend": "flat",
-   "summary": "Brent near $99 on 6 Nov; Alert holds on the Hormuz supply outage",
-   "state": "Brent was near $99.4 early on 6 Nov, down 5% in a month and inside the Watch price band (Yahoo Finance). Alert is kept on the physical outage: Hormuz remains largely shut, UKMTO counted 35 vessels hit in October, the most of the war, and Iran reported three more tankers damaged on 5 Nov (Nation Thailand).",
-   "for_you": "Fuel, heating and transport costs stay exposed to Gulf supply; prices can move sharply on news from Hormuz.",
+   "summary": "Brent near $99 on 6 Nov, set for a 12% weekly fall; Alert holds on the Hormuz supply outage",
+   "state": "Brent traded near $98.6 on 6 Nov, down 6% in a month and inside the Watch price band (Yahoo Finance), and is on course for a weekly fall of about 12% after the US midterms (Grafa). Alert is kept on the physical outage: Hormuz traffic was below 60% of typical levels and at least five vessel incidents were reported in the Gulf from 1 to 5 Nov (Voice of Emirates; Grafa).",
+   "for_you": "Fuel, heating and transport costs remain exposed to Gulf supply disruption; prices have swung sharply day to day this week.",
    "sources": [
     {
-     "title": "Yahoo Finance — BZ=F",
+     "title": "Yahoo Finance — Brent crude futures (BZ=F)",
      "url": "https://finance.yahoo.com/quote/BZ%3DF",
      "date": "2026-11-06"
     },
     {
-     "title": "Nation Thailand — Iran reports three tankers damaged in Hormuz on November 5",
-     "url": "https://www.nationthailand.com/news/world/40073163",
+     "title": "Voice of Emirates — Oil prices rise: Brent nears $100, while U.S. crude hits $91.66",
+     "url": "https://www.voiceofemirates.com/en/business/2026/11/06/oil-prices-rise-brent-nears-100-while-u-s-crude-hits-91-66/",
+     "date": "2026-11-06"
+    },
+    {
+     "title": "Grafa — Oil prices face 12% weekly drop as Gulf risks persist",
+     "url": "https://grafa.com/en/news/united-states/brent-wti-oil-prices-12-percent-weekly-drop-middle-east-tensions",
      "date": "2026-11-06"
     }
    ],
-   "value": "$99.4, 1m -5%",
-   "value_num": 99.44,
-   "checked_at": "2026-11-06T05:46:40Z",
+   "value": "$98.6, 1m -6%",
+   "value_num": 98.62,
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "Major physical supply outage > 2 mb/d (Hormuz largely shut)",
-   "basis": "measured",
-   "basis_detail": "Brent $=99.42; Brent 1m %=-5.06",
-   "assessed_at": "2026-11-06T05:46:40Z"
+   "rubric_hit": "Major physical supply outage (Hormuz traffic <60% of normal) = Alert; price $98.6 alone = Watch",
+   "basis": "judged",
+   "basis_detail": "raised above the data floor on reported events",
+   "assessed_at": "2026-11-06T11:42:55Z"
   },
   "eu-gas": {
    "status": "red",
@@ -425,13 +430,13 @@
      "date": "2026-11-06"
     }
    ],
-   "value": "€90/MWh",
-   "value_num": 89.64,
-   "checked_at": "2026-11-06T05:46:40Z",
+   "value": "€88/MWh",
+   "value_num": 87.51,
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "TTF €89.6 > €70 Alert line",
+   "rubric_hit": "TTF €87.5/MWh > €70/MWh Alert line",
    "basis": "measured",
-   "basis_detail": "TTF €/MWh=89.64",
+   "basis_detail": "TTF €/MWh=87.51",
    "assessed_at": "2026-11-06T05:46:40Z"
   },
   "chokepoints": {
@@ -452,7 +457,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Hormuz largely shut; 3 tankers hit 5 Nov",
    "rubric_hit": "Hormuz traffic materially impeded = Alert",
@@ -554,7 +559,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "49 PLA aircraft near Taiwan (3 Nov)",
    "rubric_hit": "Routine-to-elevated PLA activity; no large-scale declared exercise",
@@ -581,7 +586,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Poland border alert; Kaliningrad threats",
    "rubric_hit": "Explicit threats and border provocations; no Article 4 or clash",
@@ -607,7 +612,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No IAEA access; strike threats",
    "rubric_hit": "Inspector access curtailed + credible strike threats = Watch",
@@ -633,7 +638,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Missile salvo 4 Nov; 4th launch in a month",
    "rubric_hit": "Ballistic missile launches = Watch; no nuclear test or overflight",
@@ -659,7 +664,7 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Rare-earth pause ends 10 Nov",
    "rubric_hit": "Major new controls threatened between large economies = Watch",
@@ -742,7 +747,7 @@
      "date": "2026-11-01"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Grid strikes; 128 drones 4–5 Nov",
    "value_num": 76,
@@ -754,28 +759,28 @@
   "middle-east": {
    "status": "red",
    "trend": "flat",
-   "summary": "Israeli strikes on south Lebanon kill one on 4 Nov; US–Iran war fronts stay active",
-   "state": "An Israeli drone strike killed a man in south Lebanon on 4 Nov, the first such death since September, Lebanon's health ministry said; Lebanon says Israel's war since March has killed more than 4,300 people (Arab News/AFP). The US–Iran war continues, with US strikes near Hormuz from 2 Nov (Washington Post) and tankers hit on 5 Nov. Several fronts are active at once.",
-   "for_you": "Follow FCDO travel advice for Israel, Lebanon and the Gulf, which advises against travel to several areas.",
+   "summary": "Houthi missile aimed at Madinah condemned by Gulf states; Israeli strikes kill four in Gaza",
+   "state": "A Houthi ballistic missile aimed at Madinah drew condemnation from Qatar, Kuwait, Bahrain and Jordan, and Israeli attacks killed four Palestinians in Gaza despite the ceasefire, Anadolu reported on 6 Nov. An Israeli strike killed a man in south Lebanon on 4 Nov, Lebanon's health ministry said. The US–Iran war continues, with Iran saying it downed two US drones on 5 Nov. Several fronts are active at once.",
+   "for_you": "Follow FCDO travel advice for Israel, Lebanon, Yemen and the Gulf; flight disruption across the region can occur at short notice.",
    "sources": [
     {
-     "title": "Arab News — Lebanon says Israeli strike kills one in south",
-     "url": "https://www.arabnews.com/middle-east/lebanon-says-israeli-strike-kills-one-in-south-3009799",
-     "date": "2026-11-04"
+     "title": "Anadolu Agency — Morning Briefing: Nov. 6, 2026",
+     "url": "https://www.aa.com.tr/en/world/morning-briefing-nov-6-2026/4113576",
+     "date": "2026-11-06"
     },
     {
-     "title": "Washington Post — US has conducted defensive strikes on Iranian targets in the Strait of Hormuz",
-     "url": "https://www.washingtonpost.com/world/2026/11/02/iran-us-trump-netanyahu-israel-war/3fc55c16-d69b-11f1-930a-e08f8086f5ac_story.html",
-     "date": "2026-11-02"
+     "title": "Grafa — Oil prices face 12% weekly drop as Gulf risks persist",
+     "url": "https://grafa.com/en/news/united-states/brent-wti-oil-prices-12-percent-weekly-drop-middle-east-tensions",
+     "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "US–Iran war since 28 Feb",
-   "rubric_hit": "Multi-front escalation: US–Iran war plus Israel–Lebanon strikes",
+   "rubric_hit": "Multi-front escalation (Iran, Yemen, Gaza, Lebanon) = Alert",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-06T05:46:40Z"
+   "assessed_at": "2026-11-06T11:42:55Z"
   },
   "sudan": {
    "status": "red",
@@ -895,7 +900,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Airspace bans; no strikes",
    "rubric_hit": "Treaty suspensions and frozen relations = Watch; no strikes",
@@ -921,7 +926,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No US–Russia treaty limits",
    "rubric_hit": "Arms-control lapse without replacement + explicit threats = Watch",
@@ -942,7 +947,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No active Atlantic storms",
    "rubric_hit": "No hurricane active or threatening land within 5 days",
@@ -964,7 +969,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-11-04T23:43:43Z",
    "value": "No orange/red GDACS cyclone alerts",
    "rubric_hit": "GDACS cyclone: 0 red / 0 orange",
@@ -1012,7 +1017,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
    "rubric_hit": "GDACS wildfire: 0 red / 0 orange",
@@ -1033,7 +1038,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
    "rubric_hit": "GDACS flood: 0 red / 0 orange",
@@ -1059,11 +1064,11 @@
      "date": "2026-11-05"
     }
    ],
-   "value": "Max M6.1, 3× M6+ (7d)",
+   "value": "Max M6.1, 4× M6+ (7d)",
    "value_num": 6.1,
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "Max M6.1 < M7; PAGER green; no tsunami",
+   "rubric_hit": "max magnitude 6.1 below the 7 Watch line",
    "basis": "measured",
    "basis_detail": "max magnitude=6.10",
    "assessed_at": "2026-11-06T05:46:40Z"
@@ -1130,9 +1135,9 @@
    ],
    "value": "G0 S0 R1",
    "value_num": 0,
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "G0 S0 R1 within Normal (G0–G2, S0–S1, R0–R2)",
+   "rubric_hit": "NOAA G0 S0 R1 (24h max)",
    "basis": "measured",
    "basis_detail": "NOAA G0 S0 R1 (24h max)",
    "assessed_at": "2026-11-06T05:46:40Z"
@@ -1264,7 +1269,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "1 PHEIC (Ebola)",
    "value_num": 1,
@@ -1291,7 +1296,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "10,668 cases, 5,198 deaths (3 Nov)",
    "value_num": 10668,
@@ -1318,7 +1323,7 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "US H5N1 death (1 Nov); no human spread",
    "rubric_hit": "Sporadic animal-to-human cases only = Normal",
@@ -1428,7 +1433,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No unexplained clusters",
    "rubric_hit": "No unexplained clusters under investigation",
@@ -1454,7 +1459,7 @@
      "date": "2026-10-13"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "EU freezer attacks; Binance theft",
    "rubric_hit": "Attack disrupting large companies across several countries = Watch",
@@ -1475,7 +1480,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No major outages",
    "rubric_hit": "No major multi-hour outages in past 48h",
@@ -1689,7 +1694,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "10y ~5.1%; BoE hiked 5 Nov",
    "value_num": 5.2,
@@ -1744,10 +1749,10 @@
     }
    ],
    "value": "No warnings",
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-11-01T11:52:42Z",
    "value_num": 0,
-   "rubric_hit": "No warnings in force",
+   "rubric_hit": "worst warning: none",
    "basis": "measured",
    "basis_detail": "worst warning: none",
    "assessed_at": "2026-11-06T05:46:40Z"
@@ -1833,7 +1838,7 @@
    "summary": "SOFR peaked 7bp above the reserve rate; Fed repo use near zero",
    "state": "SOFR was 4bp above the Fed's interest on reserves on 4 Nov and peaked at 7bp over five days, inside the 10bp Watch line; Fed overnight repo operations were zero to 5 Nov (FRED). Money markets show no sign of a dollar shortage as of 6 Nov.",
    "for_you": "Short-term funding markets are calm; strain here would usually show up before wider credit problems.",
-   "rubric_hit": "SOFR–IORB 5d max 7bp < 10bp; repo $0bn < $15bn",
+   "rubric_hit": "SOFR–IORB 5d max 7bp below the 10bp Watch line; Fed repo ops 5d max $0bn below the $15bn Watch line",
    "sources": [
     {
      "title": "FRED — SOFR",
@@ -1846,7 +1851,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "SOFR–IORB 5d max bp=7.00; Fed repo ops 5d max $bn=0.00",
@@ -1882,12 +1887,12 @@
   "yen-carry": {
    "status": "green",
    "trend": "flat",
-   "value": "¥157.8/$, 1w +0.1%",
-   "value_num": 157.46,
+   "value": "¥158.2/$, 1w +0.4%",
+   "value_num": 158.25,
    "summary": "Yen near ¥158 per dollar; little changed on the week and month",
    "state": "The dollar was near ¥157.8 early on 6 Nov, up 0.1% on the week and down 0.1% on the month, far inside the 3% weekly and 6% monthly Watch lines (Yahoo Finance). No Japanese currency intervention had been reported as of 6 Nov.",
    "for_you": "The yen is stable; a sudden jump would signal leveraged positions being unwound across markets.",
-   "rubric_hit": "USD/JPY 1w +0.1% < 3%; 1m −0.1% < 6%",
+   "rubric_hit": "USD/JPY 1w move 0.36% below the 3% Watch line; USD/JPY 1m move 0.12% below the 6% Watch line",
    "sources": [
     {
      "title": "Yahoo Finance — JPY=X",
@@ -1895,10 +1900,10 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
-   "basis_detail": "USD/JPY 1w move %=0.10; USD/JPY 1m move %=0.14",
+   "basis_detail": "USD/JPY 1w move %=0.36; USD/JPY 1m move %=0.12",
    "assessed_at": "2026-11-06T05:46:40Z"
   },
   "jobless-claims": {
@@ -2011,53 +2016,53 @@
    "status": "amber",
    "trend": "up",
    "value": "Flight bomb hoaxes (2–5 Nov)",
-   "summary": "Hoax bomb threats hit at least 17 European flights on 5 Nov, the third wave in a week; no state blamed",
-   "state": "False bomb threats affected at least 17 flights across Europe on 5 Nov after similar hoaxes earlier in the week; no explosives were found (ABC News Australia). Bulgaria reported three emergency landings and Czech police rated threats to Prague-bound flights as low credibility (The National). Remote attacks on supermarket refrigeration hit EU stores on 2 Nov. No state has been formally blamed.",
-   "for_you": "Expect occasional diversions and delays on European flights; follow airline and airport advice.",
-   "rubric_hit": "Repeated aviation disruption; no airport shutdowns or state attribution yet",
+   "summary": "Hoax bomb threats hit at least 18 European flights; Poland detains six suspected of supplying Russia",
+   "state": "At least 18 European passenger flights faced bomb threats in the latest wave, nine Prague-bound planes were investigated and Ireland's RTE was evacuated over a bomb threat, Anadolu reported on 6 Nov; no explosives were found and no state has been formally blamed. Polish security services detained six people suspected of supplying military components to Russia for its intelligence services.",
+   "for_you": "Expect occasional flight diversions and security checks. Follow airline and airport notices, and report suspicious items to police.",
+   "rubric_hit": "Repeated hoax disruption and espionage arrests, no airport closure or state attribution = Watch",
    "sources": [
     {
-     "title": "ABC News — Bomb threat hoaxes divert planes over Europe for third time this week",
-     "url": "https://www.abc.net.au/news/2026-11-05/bomb-threat-diverts-planes-across-europe/107352984",
-     "date": "2026-11-05"
-    },
-    {
-     "title": "The National — European flights diverted after second wave of bomb threats",
-     "url": "https://www.thenationalnews.com/news/europe/2026/11/05/european-flights-diverted-after-second-wave-of-bomb-threats/",
-     "date": "2026-11-05"
+     "title": "Anadolu Agency — Morning Briefing: Nov. 6, 2026",
+     "url": "https://www.aa.com.tr/en/world/morning-briefing-nov-6-2026/4113576",
+     "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-06T05:46:40Z"
+   "assessed_at": "2026-11-06T11:42:55Z"
   },
   "gulf-iran": {
    "status": "red",
    "trend": "flat",
    "value": "Hormuz largely shut; US blockade",
-   "summary": "Tankers hit in Hormuz on 5 Nov; US officials say forces are poised to resume major combat",
-   "state": "Iran said several tankers hit mines in Hormuz on 5 Nov, and Pentagon officials told the New York Times that thousands of US forces are poised to resume major combat against Iran on Trump's orders (Al Jazeera). US strikes hit an air-defence site on Qeshm Island on 3 Nov (Stars and Stripes). Iran demands an end to the US blockade and sanctions relief.",
-   "for_you": "Follow FCDO travel advice for Iran and the Gulf states, which can change quickly.",
-   "rubric_hit": "Active strikes between states; Hormuz substantially closed",
+   "summary": "Iran says it downed two US drones over Qeshm; Trump threatens further strikes as tanker attacks continue",
+   "state": "Iran's Revolutionary Guards said on 5 Nov they brought down two US MQM-170 drones over Qeshm Island, and President Trump said the US may have to destroy the rest of Iran (Anadolu Agency). Iran reported three tankers damaged in the Gulf on 5 Nov and Hormuz traffic was below 60% of normal on 6 Nov (Grafa; Voice of Emirates). Active state-on-state hostilities meet the Alert line.",
+   "for_you": "Follow FCDO travel advice for the Gulf region; airspace and shipping disruption can change at short notice.",
+   "rubric_hit": "Active strikes between states and attacks on Gulf shipping = Alert",
    "sources": [
     {
-     "title": "Al Jazeera — Iran says tankers struck in Hormuz amid fears of new US attack",
-     "url": "https://www.aljazeera.com/news/2026/11/5/iran-says-tankers-struck-in-hormuz-amid-fears-of-new-us-attack",
-     "date": "2026-11-05"
+     "title": "Anadolu Agency — Morning Briefing: Nov. 6, 2026",
+     "url": "https://www.aa.com.tr/en/world/morning-briefing-nov-6-2026/4113576",
+     "date": "2026-11-06"
     },
     {
-     "title": "Stars and Stripes — US quietly strikes Iranian island in Strait of Hormuz",
-     "url": "https://www.stripes.com/theaters/middle_east/2026-11-03/us-strikes-iran-qeshm-island-hormuz-23348317.html",
-     "date": "2026-11-03"
+     "title": "Grafa — Oil prices face 12% weekly drop as Gulf risks persist",
+     "url": "https://grafa.com/en/news/united-states/brent-wti-oil-prices-12-percent-weekly-drop-middle-east-tensions",
+     "date": "2026-11-06"
+    },
+    {
+     "title": "Voice of Emirates — Oil prices rise: Brent nears $100, while U.S. crude hits $91.66",
+     "url": "https://www.voiceofemirates.com/en/business/2026/11/06/oil-prices-rise-brent-nears-100-while-u-s-crude-hits-91-66/",
+     "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-06T05:46:40Z"
+   "assessed_at": "2026-11-06T11:42:55Z"
   },
   "other-conflicts": {
    "status": "amber",
@@ -2158,11 +2163,11 @@
    "status": "green",
    "trend": "flat",
    "value": "2 KEV adds (7d), 34 (30d)",
-   "value_num": 4,
+   "value_num": 2,
    "summary": "Two new CISA known-exploited vulnerabilities in a week",
    "state": "CISA added two vulnerabilities to its Known Exploited Vulnerabilities catalogue in the seven days to 4 Nov and 34 in 30 days, under the 11-a-week Watch line. The latest are an Apple flaw (4 Nov) and WordPress Core (3 Nov).",
    "for_you": "Keep devices and software updated; NCSC publishes guidance on patching.",
-   "rubric_hit": "KEV adds 7d = 2 < 11",
+   "rubric_hit": "KEV additions 7d 2 below the 11 Watch line",
    "sources": [
     {
      "title": "CISA — Known Exploited Vulnerabilities catalogue",
@@ -2170,7 +2175,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "KEV additions 7d=2.00",
@@ -2242,7 +2247,7 @@
    "summary": "No flood warnings in England",
    "state": "The Environment Agency had no severe flood warnings, flood warnings or flood alerts in force in England at 05:40 UTC on 6 Nov.",
    "for_you": "Check the Environment Agency flood service if heavy rain is forecast.",
-   "rubric_hit": "0 severe, 0 flood warnings",
+   "rubric_hit": "EA: 0 severe, 0 warnings",
    "sources": [
     {
      "title": "Environment Agency — Check for flooding",
@@ -2250,15 +2255,15 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-06T05:46:40Z",
+   "checked_at": "2026-11-06T11:42:55Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "EA: 0 severe, 0 warnings",
    "assessed_at": "2026-11-06T05:46:40Z"
   }
  },
- "headline": "US stocks suffered their worst day since 2025 on 5 Nov as chip shares plunged. Hormuz stays largely shut with more tankers hit, Russia keeps striking Ukraine's grid, and DR Congo's Ebola outbreak passed 10,600 cases.",
- "generated_at": "2026-11-06T05:46:40Z",
+ "headline": "The US–Iran war keeps Hormuz traffic below 60% of normal and Brent near $99 on 6 Nov; Russia's strikes on Ukraine's grid continue and DR Congo's Ebola outbreak has passed 10,600 cases.",
+ "generated_at": "2026-11-06T11:42:55Z",
  "world": {
   "score": 39,
   "band": "Unsettled",

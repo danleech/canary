@@ -1,23 +1,23 @@
 {
- "fetched_at": "2026-11-06T05:41:19Z",
+ "fetched_at": "2026-11-06T11:41:07Z",
  "ok": 32,
  "failed": [],
  "metrics": {
   "vix": {
-   "value": 28.18,
-   "as_of": "2026-11-05T21:15:01Z",
+   "value": 26.67,
+   "as_of": "2026-11-06T11:26:01Z",
    "high_52w": 31.05,
-   "pct_1y": 98,
-   "drawdown_pct": -9.24,
-   "chg_1w_pct": 45.11,
-   "chg_1m_pct": 82.87,
-   "chg_3m_pct": 84.42,
-   "chg_1m_abs": 12.77,
+   "pct_1y": 96,
+   "drawdown_pct": -14.11,
+   "chg_1w_pct": 26.1,
+   "chg_1m_pct": 79.72,
+   "chg_3m_pct": 83.3,
+   "chg_1m_abs": 11.83,
    "worst_day_5d_pct": -20.26,
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/%5EVIX",
    "licence": "derived values only; raw series not republished (licence)",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "spx": {
    "value": 7353.73,
@@ -33,23 +33,23 @@
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/%5EGSPC",
    "licence": "derived values only; raw series not republished (licence)",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "ftse": {
-   "value": 10782.66,
-   "as_of": "2026-11-05T16:40:45Z",
+   "value": 10540.66,
+   "as_of": "2026-11-06T11:26:07Z",
    "high_52w": 10910.5996,
-   "pct_1y": 88,
-   "drawdown_pct": -1.17,
-   "chg_1w_pct": 0.49,
-   "chg_1m_pct": 3.27,
-   "chg_3m_pct": -0.74,
-   "chg_1m_abs": 341.0604,
-   "worst_day_5d_pct": -1.14,
+   "pct_1y": 61,
+   "drawdown_pct": -3.39,
+   "chg_1w_pct": -2.05,
+   "chg_1m_pct": -0.11,
+   "chg_3m_pct": -2.8,
+   "chg_1m_abs": -11.4396,
+   "worst_day_5d_pct": -2.24,
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/%5EFTSE",
    "licence": "derived values only; raw series not republished (licence)",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "move": {
    "value": 97.922,
@@ -65,7 +65,7 @@
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/%5EMOVE",
    "licence": "derived values only; raw series not republished (licence)",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "us10y": {
    "value": 4.837,
@@ -81,87 +81,87 @@
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/%5ETNX",
    "licence": "derived values only; raw series not republished (licence)",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "dxy": {
-   "value": 101.767,
-   "as_of": "2026-11-06T05:31:19Z",
+   "value": 101.97,
+   "as_of": "2026-11-06T11:31:06Z",
    "high_52w": 102.58,
-   "pct_1y": 92,
-   "drawdown_pct": -0.79,
-   "chg_1w_pct": 0.02,
-   "chg_1m_pct": -0.43,
-   "chg_3m_pct": 1.95,
-   "chg_1m_abs": -0.443,
+   "pct_1y": 94,
+   "drawdown_pct": -0.59,
+   "chg_1w_pct": 0.22,
+   "chg_1m_pct": -0.23,
+   "chg_3m_pct": 2.15,
+   "chg_1m_abs": -0.24,
    "worst_day_5d_pct": -0.35,
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/DX-Y.NYB",
    "licence": "derived values only; raw series not republished (licence)",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "gold": {
-   "value": 4052.6,
-   "as_of": "2026-11-06T05:31:19Z",
+   "value": 4080.9,
+   "as_of": "2026-11-06T11:31:02Z",
    "high_52w": 5318.3999,
-   "pct_1y": 8,
-   "drawdown_pct": -23.8,
-   "chg_1w_pct": 2.09,
-   "chg_1m_pct": -3.88,
-   "chg_3m_pct": -8.75,
-   "chg_1m_abs": -163.6998,
-   "worst_day_5d_pct": -1.48,
+   "pct_1y": 13,
+   "drawdown_pct": -23.27,
+   "chg_1w_pct": 2.8,
+   "chg_1m_pct": -3.21,
+   "chg_3m_pct": -8.11,
+   "chg_1m_abs": -135.3998,
+   "worst_day_5d_pct": -0.79,
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/GC%3DF",
    "licence": "derived values only; raw series not republished (licence)",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "btc": {
-   "value": 75540.34,
-   "as_of": "2026-11-06T05:41:17Z",
+   "value": 76015.94,
+   "as_of": "2026-11-06T11:41:04Z",
    "high_52w": 86602.9141,
-   "pct_1y": 54,
-   "drawdown_pct": -12.77,
-   "chg_1w_pct": -3.46,
-   "chg_1m_pct": -7.31,
-   "chg_3m_pct": -5.19,
-   "chg_1m_abs": -5960.4647,
-   "worst_day_5d_pct": -6.05,
+   "pct_1y": 57,
+   "drawdown_pct": -12.22,
+   "chg_1w_pct": -0.86,
+   "chg_1m_pct": -6.59,
+   "chg_3m_pct": -4.77,
+   "chg_1m_abs": -5366.2084,
+   "worst_day_5d_pct": -5.55,
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/BTC-USD",
    "licence": "derived values only; raw series not republished (licence)",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "brent": {
-   "value": 99.42,
-   "as_of": "2026-11-06T05:31:05Z",
+   "value": 98.62,
+   "as_of": "2026-11-06T11:30:15Z",
    "high_52w": 118.35,
-   "pct_1y": 67,
-   "drawdown_pct": -15.99,
-   "chg_1w_pct": -5.11,
-   "chg_1m_pct": -5.06,
-   "chg_3m_pct": 11.82,
-   "chg_1m_abs": -5.3,
+   "pct_1y": 65,
+   "drawdown_pct": -16.67,
+   "chg_1w_pct": -5.87,
+   "chg_1m_pct": -5.83,
+   "chg_3m_pct": 10.92,
+   "chg_1m_abs": -6.1,
    "worst_day_5d_pct": -8.67,
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/BZ%3DF",
    "licence": "derived values only; raw series not republished (licence)",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "ttf": {
-   "value": 89.64,
-   "as_of": "2026-11-05T17:47:51Z",
+   "value": 87.51,
+   "as_of": "2026-11-06T11:03:53Z",
    "high_52w": 103.944,
-   "pct_1y": 96,
-   "drawdown_pct": -13.76,
-   "chg_1w_pct": -13.76,
-   "chg_1m_pct": 13.69,
-   "chg_3m_pct": 47.44,
-   "chg_1m_abs": 10.791,
-   "worst_day_5d_pct": -8.74,
+   "pct_1y": 94,
+   "drawdown_pct": -15.81,
+   "chg_1w_pct": -7.75,
+   "chg_1m_pct": 7.46,
+   "chg_3m_pct": 48.99,
+   "chg_1m_abs": 6.076,
+   "worst_day_5d_pct": -3.84,
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/TTF%3DF",
    "licence": "derived values only; raw series not republished (licence)",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "stlfsi": {
    "value": -0.5224,
@@ -223,7 +223,7 @@
    ],
    "source": "FRED STLFSI4 (St Louis Fed Financial Stress Index)",
    "url": "https://fred.stlouisfed.org/series/STLFSI4",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "sahm": {
    "value": 0.0,
@@ -269,7 +269,7 @@
    ],
    "source": "FRED SAHMREALTIME (Sahm rule real-time)",
    "url": "https://fred.stlouisfed.org/series/SAHMREALTIME",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "t10y2y": {
    "value": 0.38,
@@ -369,7 +369,7 @@
    ],
    "source": "FRED T10Y2Y (10y–2y spread)",
    "url": "https://fred.stlouisfed.org/series/T10Y2Y",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "us_cpi": {
    "value": 4.02,
@@ -416,17 +416,25 @@
    "rising_3m": false,
    "source": "FRED CPIAUCSL (BLS CPI-U, y/y %)",
    "url": "https://fred.stlouisfed.org/series/CPIAUCSL",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "quakes": {
    "value": 6.1,
-   "as_of": "2026-11-06T05:41:19Z",
-   "count_m45": 91,
-   "count_m6": 3,
+   "as_of": "2026-11-06T11:41:07Z",
+   "count_m45": 90,
+   "count_m6": 4,
    "count_m7": 0,
    "max_pager": "green",
    "tsunami_flags": 0,
    "top": [
+    {
+     "mag": 6.1,
+     "place": "156 km SE of Hasaki, Japan",
+     "time": "2026-11-06T10:39:24Z",
+     "alert": "green",
+     "tsunami": false,
+     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000twg9"
+    },
     {
      "mag": 6.1,
      "place": "Fiji region",
@@ -458,29 +466,29 @@
      "alert": "green",
      "tsunami": false,
      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tv4i"
-    },
-    {
-     "mag": 5.4,
-     "place": "203 km NW of Port-Olry, Vanuatu",
-     "time": "2026-11-01T06:26:42Z",
-     "alert": "green",
-     "tsunami": false,
-     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tun8"
     }
    ],
    "source": "USGS (M4.5+ past 7 days)",
    "url": "https://earthquake.usgs.gov/earthquakes/map/",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "gdacs": {
    "value": "green",
-   "as_of": "2026-11-06T05:41:19Z",
+   "as_of": "2026-11-06T11:41:07Z",
    "by_type": {
     "cyclone": {
      "red": 0,
      "orange": 0,
-     "green": 1,
+     "green": 2,
      "events": [
+      {
+       "name": "Tropical Cyclone THIRTYONE-26",
+       "alert": "green",
+       "country": "Japan",
+       "from": "2026-11-06T06:00:00",
+       "to": "2026-11-06T06:00:00",
+       "url": "https://www.gdacs.org/report.aspx?eventid=1001347&episodeid=1&eventtype=TC"
+      },
       {
        "name": "Tropical Cyclone IN-FA-26",
        "alert": "green",
@@ -494,19 +502,19 @@
     "flood": {
      "red": 0,
      "orange": 0,
-     "green": 0,
+     "green": 4,
      "events": []
     },
     "wildfire": {
      "red": 0,
      "orange": 0,
-     "green": 88,
+     "green": 80,
      "events": []
     },
     "earthquake": {
      "red": 0,
      "orange": 0,
-     "green": 11,
+     "green": 14,
      "events": []
     },
     "volcano": {
@@ -524,11 +532,11 @@
    },
    "source": "GDACS (UN/EC Global Disaster Alert and Coordination System)",
    "url": "https://www.gdacs.org/",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "swpc": {
    "value": "G0 S0 R0",
-   "as_of": "2026-11-06T05:39:00Z",
+   "as_of": "2026-11-06T11:38:00Z",
    "G": 0,
    "S": 0,
    "R": 0,
@@ -538,7 +546,7 @@
    "G_forecast_max": 1,
    "source": "NOAA Space Weather Prediction Center",
    "url": "https://www.swpc.noaa.gov/",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "co2": {
    "value": 427.28,
@@ -652,7 +660,7 @@
    ],
    "source": "NOAA GML Mauna Loa (weekly)",
    "url": "https://gml.noaa.gov/ccgg/trends/",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "oni": {
    "value": 2.46,
@@ -698,19 +706,18 @@
    ],
    "source": "NOAA CPC Oceanic Niño Index",
    "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/ONI_v5.php",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "sea_ice": {
-   "value": -1.652,
-   "as_of": "2026-11-04",
+   "value": -1.655,
+   "as_of": "2026-11-05",
    "arctic": {
-    "extent": 8.241,
-    "as_of": "2026-11-04",
-    "anomaly": -1.652,
+    "extent": 8.311,
+    "as_of": "2026-11-05",
+    "anomaly": -1.655,
     "record_low_for_date": false,
-    "rank_low": 5,
+    "rank_low": 4,
     "series": [
-     6.131,
      6.042,
      6.031,
      5.896,
@@ -799,17 +806,17 @@
      8.016,
      8.135,
      8.153,
-     8.241
+     8.241,
+     8.311
     ]
    },
    "antarctic": {
-    "extent": 15.563,
-    "as_of": "2026-11-04",
-    "anomaly": -1.612,
+    "extent": 15.516,
+    "as_of": "2026-11-05",
+    "anomaly": -1.56,
     "record_low_for_date": false,
     "rank_low": 3,
     "series": [
-     16.341,
      16.292,
      16.085,
      15.975,
@@ -898,12 +905,13 @@
      15.736,
      15.699,
      15.631,
-     15.563
+     15.563,
+     15.516
     ]
    },
    "source": "NSIDC Sea Ice Index v4 (anomaly vs 1981–2010, million km²)",
    "url": "https://nsidc.org/arcticseaicenews/sea-ice-tools/",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "global_temp": {
    "value": 2.02,
@@ -1005,11 +1013,11 @@
    ],
    "source": "Climate Reanalyzer (ERA5) — °C above pre-industrial ≈ 1991–2020 anomaly + 0.88",
    "url": "https://climatereanalyzer.org/clim/t2_daily/",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "metoffice": {
    "value": "none",
-   "as_of": "2026-11-06T05:41:19Z",
+   "as_of": "2026-11-06T11:41:07Z",
    "counts": {
     "yellow": 0,
     "amber": 0,
@@ -1018,7 +1026,7 @@
    "items": [],
    "source": "Met Office National Severe Weather Warnings",
    "url": "https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "hy_oas": {
    "value": 3.32,
@@ -1034,7 +1042,7 @@
    "source": "FRED BAMLH0A0HYM2 (US HY OAS %)",
    "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
    "licence": "derived values only; raw series not republished (licence)",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "sofr_iorb": {
    "value": 4.0,
@@ -1136,7 +1144,7 @@
    ],
    "source": "FRED SOFR minus IORB (New York Fed / Federal Reserve)",
    "url": "https://fred.stlouisfed.org/series/SOFR",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "repo_ops": {
    "value": 0.0,
@@ -1236,7 +1244,7 @@
    ],
    "source": "FRED RPONTSYD (Fed overnight repo operations, $bn)",
    "url": "https://fred.stlouisfed.org/series/RPONTSYD",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "icsa": {
    "value": 189000.0,
@@ -1300,23 +1308,23 @@
    ],
    "source": "FRED ICSA (US Department of Labor initial claims)",
    "url": "https://fred.stlouisfed.org/series/ICSA",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "usdjpy": {
-   "value": 157.839,
-   "as_of": "2026-11-06T05:41:26Z",
+   "value": 158.25,
+   "as_of": "2026-11-06T11:41:15Z",
    "high_52w": 163.864,
-   "pct_1y": 42,
-   "drawdown_pct": -3.68,
-   "chg_1w_pct": 0.1,
-   "chg_1m_pct": -0.14,
-   "chg_3m_pct": -0.9,
-   "chg_1m_abs": -0.224,
-   "worst_day_5d_pct": -0.33,
+   "pct_1y": 50,
+   "drawdown_pct": -3.43,
+   "chg_1w_pct": 0.36,
+   "chg_1m_pct": 0.12,
+   "chg_3m_pct": -0.64,
+   "chg_1m_abs": 0.187,
+   "worst_day_5d_pct": -0.07,
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/JPY%3DX",
    "licence": "derived values only; raw series not republished (licence)",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "kev": {
    "value": 2,
@@ -1364,11 +1372,11 @@
    ],
    "source": "CISA Known Exploited Vulnerabilities catalogue",
    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "ea_floods": {
    "value": 0,
-   "as_of": "2026-11-06T05:41:19Z",
+   "as_of": "2026-11-06T11:41:07Z",
    "counts": {
     "severe": 0,
     "warning": 0,
@@ -1377,7 +1385,7 @@
    "worst": [],
    "source": "Environment Agency flood warnings (England)",
    "url": "https://check-for-flooding.service.gov.uk/",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "ciss": {
    "value": 0.0083,
@@ -1477,7 +1485,7 @@
    ],
    "source": "ECB CISS (Composite Indicator of Systemic Stress, euro area)",
    "url": "https://data.ecb.europa.eu/data/datasets/CISS",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "epu": {
    "value": 290.3,
@@ -1487,7 +1495,7 @@
    "licence": "derived values only; raw series not republished (licence)",
    "source": "Economic Policy Uncertainty index, daily US, 7-day average (Baker, Bloom & Davis)",
    "url": "https://www.policyuncertainty.com/us_daily.html",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   },
   "gpr": {
    "value": 137.6,
@@ -1497,7 +1505,7 @@
    "licence": "derived values only; raw series not republished (licence)",
    "source": "Geopolitical Risk index, daily, 7-day average (Caldara & Iacoviello)",
    "url": "https://www.matteoiacoviello.com/gpr.htm",
-   "fetched_at": "2026-11-06T05:41:19Z"
+   "fetched_at": "2026-11-06T11:41:07Z"
   }
  }
 }

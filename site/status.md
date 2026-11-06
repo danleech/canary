@@ -1,31 +1,31 @@
 # Canary — all signals
-as_of 2026-11-06T05:46Z · next run ~11:40 UK · stale after 2026-11-06T19:46Z (36h for daily-tier signals)
+as_of 2026-11-06T11:42Z · next run ~17:40 UK · stale after 2026-11-07T01:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
-Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
+Basis: 26 measured from open data, 10 follow a published figure, 53 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 status: ALERT acute/material risk now · WATCH elevated · NORMAL background · PENDING not yet assessed. (c)=chronic, (s)=seasonal horizon. basis: measured (open data, fixed rule) · published (an official or named body's figure) · judged (AI reading of news). Detail: /s/{id}.md
 
 | id | status | trend | basis | value | summary |
 |---|---|---|---|---|---|
 | sovereign-debt | ALERT | stable | judged | OAT–Bund ~160bp (2 Nov) | France–Bund spread near 160bp, above the 150bp Alert line, as unions strike on 5 Nov |
-| oil | ALERT | stable | measured | $99.4, 1m -5% | Brent near $99 on 6 Nov; Alert holds on the Hormuz supply outage |
-| eu-gas | ALERT | improving | measured | €90/MWh | European gas near €90/MWh, 14% lower on the week but above the €70 Alert line |
+| oil | ALERT | stable | judged | $98.6, 1m -6% | Brent near $99 on 6 Nov, set for a 12% weekly fall; Alert holds on the Hormuz supply outage |
+| eu-gas | ALERT | improving | measured | €88/MWh | European gas near €90/MWh, 14% lower on the week but above the €70 Alert line |
 | chokepoints | ALERT | stable | judged | Hormuz largely shut; 3 tankers hit 5 Nov | Iran says three tankers hit mines and caught fire in Hormuz on 5 Nov; 35 vessels hit in October |
 | freight | ALERT | improving | published | WCI $4,429/FEU (29 Oct) | Drewry container index $4,429 on 29 Oct, above the $4,000 Alert line |
 | food-prices | ALERT | stable | published | FAO index 136.0 (Sep) | FAO food price index 136.0 in September, above the 135 Alert line; October due 6 Nov |
 | fertiliser | ALERT | stable | judged | Hormuz closed to Gulf urea exports | Gulf urea exports still stuck behind a largely closed Hormuz; tankers hit on 5 Nov |
 | russia-ukraine | ALERT | stable | judged | Grid strikes; 128 drones 4–5 Nov | Russia keeps up mass drone strikes on Ukraine's grid; Ukraine hits Russian refineries |
-| middle-east | ALERT | stable | judged | US–Iran war since 28 Feb | Israeli strikes on south Lebanon kill one on 4 Nov; US–Iran war fronts stay active |
+| middle-east | ALERT | stable | judged | US–Iran war since 28 Feb | Houthi missile aimed at Madinah condemned by Gulf states; Israeli strikes kill four in Gaza |
 | sudan | ALERT | worsening | judged | Drone strikes on grid and civilians | Drone strikes on Sudan's grid and civilians continue; UN warns of their deadly impact |
-| gulf-iran | ALERT | stable | judged | Hormuz largely shut; US blockade | Tankers hit in Hormuz on 5 Nov; US officials say forces are poised to resume major combat |
+| gulf-iran | ALERT | stable | judged | Hormuz largely shut; US blockade | Iran says it downed two US drones over Qeshm; Trump threatens further strikes as tanker attacks continue |
 | global-temp | ALERT (c) | worsening | measured | +1.98°C vs pre-industrial | Global temperature 1.98°C above pre-industrial on 30 Oct, a record for the date |
 | enso | ALERT (s) | worsening | measured | ONI +2.5 (El Niño) | Super El Niño: ONI +2.5°C for Aug–Oct |
 | ebola | ALERT | worsening | published | 10,668 cases, 5,198 deaths (3 Nov) | DR Congo Ebola outbreak reaches 10,668 confirmed cases; trials of two new vaccines approved |
 | uk-energy-cap | ALERT | stable | judged | £1,723 now; Jan forecast up 16%+ | Energy cap £1,723; final January forecasts point to the highest cap since January 2024 |
 | uk-threat-level | ALERT | stable | published | Threat level: Severe | UK national threat level Severe: an attack is highly likely |
-| equity-stress | WATCH | worsening | measured | VIX 28.2, S&P -6.0% | S&P 500 falls 4.3% on 5 Nov, its worst day since 2025, as chip stocks plunge; VIX 28 |
+| equity-stress | WATCH | worsening | measured | VIX 26.7, S&P -6.0% | S&P 500 falls 4.3% on 5 Nov, its worst day since 2025, as chip stocks plunge; VIX 28 |
 | bond-volatility | WATCH | improving | measured | MOVE 98, 10y 4.84% | MOVE index near 98 and US 10-year yield 4.84%, both at the edge of the Watch lines |
-| gold | WATCH | stable | measured | $4,053, 3m -8.8% | Gold near $4,053, down 8.8% over three months, past the 8% fall Watch line |
+| gold | WATCH | stable | measured | $4,081, 3m -8.1% | Gold near $4,053, down 8.8% over three months, past the 8% fall Watch line |
 | private-credit | WATCH | stable | judged | BDC redemptions above 5% caps | Non-traded BDC redemption requests still exceed quarterly caps; no forced sales or bank spillover |
 | us-inflation | WATCH | stable | measured | CPI 4.0% y/y (Sep) | US CPI 4.0% y/y in September; October data due 10 Nov |
 | central-banks | WATCH | worsening | judged | BoE 4% (5 Nov); RBA 4.85% | Bank of England raises Bank Rate to 4% on 5 Nov and warns inflation will near 5% |
@@ -36,7 +36,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | korea | WATCH | stable | judged | Missile salvo 4 Nov; 4th launch in a month | North Korea fired several missiles on 4 Nov, its fourth launch in a month |
 | trade-war | WATCH | worsening | judged | Rare-earth pause ends 10 Nov | China's rare-earth control pause ends 10 Nov with no renewal announced |
 | sanctions | WATCH | stable | judged | US blockade of Iran; Graham Act in force | US naval blockade of Iran continues; lifting it is central to Iran's terms |
-| hybrid-threats | WATCH | worsening | judged | Flight bomb hoaxes (2–5 Nov) | Hoax bomb threats hit at least 17 European flights on 5 Nov, the third wave in a week; no state blamed |
+| hybrid-threats | WATCH | worsening | judged | Flight bomb hoaxes (2–5 Nov) | Hoax bomb threats hit at least 18 European flights; Poland detains six suspected of supplying Russia |
 | drc-east | WATCH | stable | judged | Kivu clashes; no city changed hands | MONUSCO chief meets Kabila-led coalition in Goma; fighting continues without major gains |
 | sahel | WATCH | stable | judged | Insurgency; no capital blockade | JNIM insurgency persists in Mali; no blockade or fall of a capital reported |
 | myanmar | WATCH | stable | judged | Civil war; Sittwe encircled | Junta airstrikes hit Rakhine townships as the Arakan Army presses Sittwe |
@@ -62,13 +62,13 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | uk-rates | WATCH | worsening | published | CPI 3.5% (Sep); Bank Rate 4% | Bank of England raises Bank Rate to 4% on 5 Nov; warns inflation will near 5% |
 | gilts | WATCH | stable | judged | 10y ~5.1%; BoE hiked 5 Nov | Gilt yields rise after the Bank of England's first rate rise since 2023 on 5 Nov |
 | uk-disruption | WATCH | worsening | judged | Doctors' strikes 14–19 and 25–26 Nov | Resident doctors strike 14–19 Nov; consultants 25–26 Nov |
-| ftse | NORMAL | stable | measured | 10,783, -1.2% from high | FTSE 100 near 10,783 on 5 Nov, 1.2% below its high, despite the US sell-off |
+| ftse | NORMAL | stable | measured | 10,541, -3.4% from high | FTSE 100 near 10,783 on 5 Nov, 1.2% below its high, despite the US sell-off |
 | credit-spreads | NORMAL | stable | measured | HY OAS 3.32% | US high-yield spreads 3.32%, inside the 4% Watch line |
-| dollar | NORMAL | stable | measured | DXY 101.8, 3m +1.9% | Dollar index near 101.8, up 1.9% over three months |
+| dollar | NORMAL | stable | measured | DXY 102.0, 3m +2.1% | Dollar index near 101.8, up 1.9% over three months |
 | banking-stress | NORMAL | stable | measured | STLFSI -0.52, CISS 0.01 | Financial stress gauges low; no bank failures reported |
-| crypto | NORMAL | stable | measured | BTC $75,540, -13% from high | Bitcoin near $75,500, 13% off its high; no stablecoin de-peg |
+| crypto | NORMAL | stable | measured | BTC $76,016, -12% from high | Bitcoin near $75,500, 13% off its high; no stablecoin de-peg |
 | funding-stress | NORMAL | stable | measured | SOFR–IORB +4bp, repo $0.0bn | SOFR peaked 7bp above the reserve rate; Fed repo use near zero |
-| yen-carry | NORMAL | stable | measured | ¥157.8/$, 1w +0.1% | Yen near ¥158 per dollar; little changed on the week and month |
+| yen-carry | NORMAL | stable | measured | ¥158.2/$, 1w +0.4% | Yen near ¥158 per dollar; little changed on the week and month |
 | us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.38 | Sahm indicator 0.00; yield curve +0.38; October payrolls due 6 Nov |
 | euro-growth | NORMAL | stable | judged | Q3 GDP +0.4%; Oct PMI 51.9 | Euro-area composite PMI 51.9 in October; Q3 GDP grew 0.4% |
 | china-economy | NORMAL | stable | judged | Q3 GDP +4.5%; Caixin services 50.8 | China services growth slows to 50.8 in October; factory PMI in contraction |
@@ -82,7 +82,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | heat | NORMAL | stable | judged | No major heatwave warnings (5 Nov) | No top-tier heatwave warnings over large populations |
 | wildfires | NORMAL | stable | measured | GDACS: no orange/red | No GDACS orange or red wildfire alerts |
 | floods | NORMAL | stable | measured | GDACS: no orange/red | No GDACS orange or red flood alerts |
-| earthquakes | NORMAL | stable | measured | Max M6.1, 3× M6+ (7d) | Largest quake M6.1 near Fiji on 5 Nov; no PAGER alerts or tsunami warnings |
+| earthquakes | NORMAL | stable | measured | Max M6.1, 4× M6+ (7d) | Largest quake M6.1 near Fiji on 5 Nov; no PAGER alerts or tsunami warnings |
 | volcanic | NORMAL | stable | judged | Mayon ash; no red codes on major routes | Mayon spews ash and evacuations grow; no red aviation codes on major air routes |
 | space-weather | NORMAL | stable | measured | G0 S0 R1 | No geomagnetic or radiation storms; at most G1 forecast |
 | cold-storms | NORMAL | stable | judged | Mountain snow advisories (US West) | Winter weather advisories in the US Rockies; no deadly cold wave |
