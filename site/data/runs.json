@@ -1,5 +1,60 @@
 [
  {
+  "t": "2026-11-06T05:46:40Z",
+  "applied": 41,
+  "changed": [
+   "gold"
+  ],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 3,
+   "judged": 17
+  },
+  "held": 0,
+  "sources": {
+   "citations": 66,
+   "news_citations": 34,
+   "outlets": 38,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     3
+    ],
+    [
+     "nationthailand.com",
+     3
+    ],
+    [
+     "stripes.com",
+     3
+    ],
+    [
+     "japantimes.co.jp",
+     2
+    ],
+    [
+     "abc.net.au",
+     1
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 20,
+   "predicted_active": 0,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": [
+    "cyber",
+    "korea",
+    "russia-nato",
+    "russia-ukraine"
+   ]
+  }
+ },
+ {
   "t": "2026-11-05T23:42:51Z",
   "applied": 41,
   "changed": [],

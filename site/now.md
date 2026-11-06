@@ -1,19 +1,19 @@
 # Canary — world risk status
-as_of 2026-11-05T23:42Z · next run ~05:40 UK · stale after 2026-11-06T13:42Z (36h for daily-tier signals)
+as_of 2026-11-06T05:46Z · next run ~11:40 UK · stale after 2026-11-06T19:46Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
-World State 38/100 (Unsettled) · 16 Alert · 38 Watch · 35 Normal
-Headline: The US–Iran war keeps Hormuz largely shut after tankers were hit on 5 Nov; Russia–Ukraine and the Middle East stay at Alert, and Bundibugyo Ebola in DR Congo has passed 10,000 cases.
+World State 39/100 (Unsettled) · 16 Alert · 39 Watch · 34 Normal
+Headline: US stocks suffered their worst day since 2025 on 5 Nov as chip shares plunged. Hormuz stays largely shut with more tankers hit, Russia keeps striking Ukraine's grid, and DR Congo's Ebola outbreak passed 10,600 cases.
 
 ## Situations (8 cross-domain events; Alerts below are grouped under them)
-- US–Iran war and Gulf energy shock [ALERT, stable]: Tankers hit in Hormuz on 5 Nov; Tehran contacts Gulf states amid fears of US strikes. Brent rebounds to about $97. → alert: gulf-iran, middle-east, oil, eu-gas, fertiliser, chokepoints, freight, uk-energy-cap; watch: iran-nuclear, sanctions, semiconductors
-- Russia–Ukraine war and NATO's flank [ALERT, worsening]: Russian strikes keep hitting Ukraine's grid; an aid-centre strike on 3 Nov was among the deadliest. Talks set for 10–11 Nov. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
+- US–Iran war and Gulf energy shock [ALERT, stable]: Iran says more tankers hit mines in Hormuz on 5 Nov; US officials say forces are poised to resume major combat. Brent near $99. → alert: gulf-iran, middle-east, oil, eu-gas, fertiliser, chokepoints, freight, uk-energy-cap; watch: iran-nuclear, sanctions, semiconductors
+- Russia–Ukraine war and NATO's flank [ALERT, worsening]: Russia launched 128 drones overnight into 5 Nov after mass grid strikes; NATO commander warns Poland of border provocations. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
 - Super El Niño [ALERT, worsening]: ONI rose to +2.5 for Aug–Oct: drought risk in East and southern Africa, record-range warmth and faster CO₂ growth. → alert: enso, global-temp; watch: drought, co2, famine
-- Ebola outbreak, DR Congo [ALERT, worsening]: ECDC counted 10,274 confirmed Ebola cases and 4,992 deaths in DR Congo to 28 Oct; imported cases in Kenya and Nigeria; a WHO PHEIC since May. → alert: ebola; watch: who-emergencies
+- Ebola outbreak, DR Congo [ALERT, worsening]: ECDC counted 10,668 confirmed Ebola cases and 5,198 deaths in DR Congo to 3 Nov; cases in Kenya; a WHO PHEIC since May. → alert: ebola; watch: who-emergencies
 - Sudan war [ALERT, worsening]: UN warns of deadly drone strikes on Sudan's grid and civilians; a South Kordofan fuel-station strike killed at least 7 on 4 Nov. → alert: sudan; watch: famine
 - France: debt stress and protests [ALERT, stable]: OAT–Bund spread near 160bp; nationwide strike on 5 Nov with largely peaceful marches; budget deadline 17 Nov. → alert: sovereign-debt; watch: civil-unrest
-- Energy shock feeding inflation [WATCH, worsening]: Bank of England raised Bank Rate to 4% on 5 Nov and warned inflation will near 5%; US CPI 4.0%; RBA hiked on 3 Nov. → watch: us-inflation, central-banks, uk-rates, bond-volatility, gilts; normal: em-stress
+- Energy shock feeding inflation [WATCH, worsening]: Bank of England raised Bank Rate to 4% on 5 Nov, its first rise since 2023; traders add to bets on a December hike. → watch: us-inflation, central-banks, uk-rates, bond-volatility, gilts; normal: em-stress
 - Binance theft and North Korean escalation [WATCH, worsening]: FBI blames North Korea for a $6.3bn Binance theft; Pyongyang denied it and fired several missiles on 4 Nov. Binance withdrawals have resumed. → watch: cyber, korea
 
 ## Other Alerts
@@ -21,11 +21,11 @@ Headline: The US–Iran war keeps Hormuz largely shut after tankers were hit on 
 - UK terrorism threat level [uk-threat-level] stable: UK national threat level Severe: an attack is highly likely
 
 ## Changed in last 24h
+- Gold (fear gauge) [gold]: NORMAL→WATCH — Gold near $4,053, down 8.8% over three months, past the 8% fall Watch line (2026-11-06T05:46Z)
 - US equity stress [equity-stress]: NORMAL→WATCH — S&P 500 falls over 3% on 5 Nov as chip stocks slide; drawdown passes the 5% Watch line (2026-11-05T17:48Z)
-- Pacific & Indian cyclones [other-cyclones]: ALERT→NORMAL — Cyclone Murasu has dissipated inland; no GDACS orange or red cyclone alerts in force (2026-11-04T23:43Z)
 
 ## Watch (ids; detail at /s/{id}.md)
-equity-stress, bond-volatility, private-credit, us-inflation, central-banks, critical-minerals, nuclear-plants, russia-nato, iran-nuclear, korea, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, drought, sea-ice, co2, who-emergencies, mpox, measles, cholera-dengue, respiratory, medicine-shortages, cyber, cables-gnss, semiconductors, ai-governance, famine, civil-unrest, aid-funding, uk-rates, gilts, uk-disruption
+equity-stress, bond-volatility, gold, private-credit, us-inflation, central-banks, critical-minerals, nuclear-plants, russia-nato, iran-nuclear, korea, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, drought, sea-ice, co2, who-emergencies, mpox, measles, cholera-dengue, respiratory, medicine-shortages, cyber, cables-gnss, semiconductors, ai-governance, famine, civil-unrest, aid-funding, uk-rates, gilts, uk-disruption
 
 ## Sentiment (measured from open data; context only, never changes a status)
 News tone vs own past 6 months (GDELT, 7 days to 2026-11-05; number = % of past weeks less negative): gloomier: economy (96), tech (100); brighter: conflict (11), energy (4), trade (15), climate (4), disasters (10), health (0); typical: migration

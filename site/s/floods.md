@@ -1,5 +1,5 @@
 # Major floods — NORMAL (stable)
-id floods · Weather & Hazards · horizon acute · checked 2026-11-05T23:42Z · text written 2026-11-05T05:47Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-06T13:42Z
+id floods · Weather & Hazards · horizon acute · checked 2026-11-06T05:46Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-06T19:46Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/floods
 
 Value: GDACS: no orange/red
@@ -8,9 +8,9 @@ Basis: measured — Set by a fixed rule applied to open data (GDACS flood: 0 red
 
 No GDACS orange or red flood alerts
 
-Why it's at this level: GDACS listed no orange or red flood alerts on 5 Nov, with four green-level events. No single flood with mass displacement or major loss of life had been reported.
+Why it's at this level: GDACS listed no orange or red flood alerts on 6 Nov and no active flood events. No single flood with mass displacement or major loss of life had been reported.
 
-What this means for you: No major flood alert as of 5 Nov. Travellers should check national weather services for local warnings.
+What this means for you: No major flood event under way; follow national agencies for local warnings.
 
 Why it matters: Floods affect more people than any other hazard, displacing millions each year.
 What moves it: Extreme rainfall, monsoons, cyclones, snowmelt, dam failures.
@@ -18,4 +18,4 @@ What moves it: Extreme rainfall, monsoons, cyclones, snowmelt, dam failures.
 Rubric — Alert: GDACS red flood alert, or > 100 deaths in a single event. | Watch: GDACS orange flood alert, or a flood displacing > 50,000. | Normal: No GDACS orange/red flood alerts.
 
 Sources:
-- GDACS — Global Disaster Alert and Coordination System (2026-11-05) https://www.gdacs.org/
+- GDACS (2026-11-06) https://www.gdacs.org/
