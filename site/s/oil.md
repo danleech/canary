@@ -1,10 +1,10 @@
 # Oil (Brent) — WATCH (improving)
-id oil · Energy & Commodities · horizon acute · checked 2026-11-06T17:59Z · at this level since 2026-11-06T17:59Z · stale after 2026-11-07T07:59Z
+id oil · Energy & Commodities · horizon acute · checked 2026-11-06T23:41Z · text written 2026-11-06T17:59Z · at this level since 2026-11-06T17:59Z · stale after 2026-11-07T13:41Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/oil
 
-Value: $97.6, 1m -7%
-Rated on: Brent $97.6 in the $85–110 Watch band; >2 mb/d outage not confirmed this run
-Basis: measured — Set by a fixed rule applied to open data (Brent $ = 97.61 · Brent 1m % = -6.79). Anyone can reproduce it from the public metrics file.
+Value: $97.8, 1m -7%
+Rated on: Brent $97.8 ≥ $85 Watch line
+Basis: measured — Set by a fixed rule applied to open data (Brent $ = 97.76 · Brent 1m % = -6.65). Anyone can reproduce it from the public metrics file.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
 Brent near $98 on 6 Nov, down 7% in a month; Watch as escorted Gulf shipments recover

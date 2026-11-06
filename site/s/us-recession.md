@@ -1,8 +1,8 @@
 # US recession risk — NORMAL (stable)
-id us-recession · Economy · horizon acute · checked 2026-11-06T17:59Z · text written 2026-11-06T05:46Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-07T07:59Z
+id us-recession · Economy · horizon acute · checked 2026-11-06T23:41Z · text written 2026-11-06T05:46Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-07T13:41Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/us-recession
 
-Value: Sahm 0.00, 10y–2y +0.38
+Value: Sahm 0.00, 10y–2y +0.35
 Rated on: Sahm 0 below the 0.3 Watch line
 Basis: measured — Set by a fixed rule applied to open data (Sahm = 0.00). Anyone can reproduce it from the public metrics file.
 

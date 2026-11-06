@@ -2,7 +2,7 @@
 
 > Canary rates 89 global risk signals in 11 domains (markets, economy, energy, geopolitics, armed conflict, weather and hazards, climate, health, cyber, humanitarian, UK) as Normal, Watch or Alert, four times a day. Each status is an attention level assessed by an AI model (Anthropic Claude) against published rubrics, with sources. Not a forecast or advice.
 
-Last updated 2026-11-06T17:59Z. Treat the data as stale after 2026-11-07T07:59Z (36h for daily-tier signals). Next run about 23:40 UK. Licence: CC BY 4.0 for Canary's statuses and text — attribute "Canary (canary.danleech.com)"; third-party data and sources remain their owners'.
+Last updated 2026-11-06T23:41Z. Treat the data as stale after 2026-11-07T13:41Z (36h for daily-tier signals). Next run about 05:40 UK. Licence: CC BY 4.0 for Canary's statuses and text — attribute "Canary (canary.danleech.com)"; third-party data and sources remain their owners'.
 
 ## Start here (smallest first)
 - [Current brief](https://canary.danleech.com/now.md): situations, every Alert, last-24h changes, Watch ids (~1,450 tokens)

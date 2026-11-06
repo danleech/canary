@@ -1,10 +1,10 @@
 # Canary — world risk status
-as_of 2026-11-06T17:59Z · next run ~23:40 UK · stale after 2026-11-07T07:59Z (36h for daily-tier signals)
+as_of 2026-11-06T23:41Z · next run ~05:40 UK · stale after 2026-11-07T13:41Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 8 follow a published figure, 54 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 World State 37/100 (Unsettled) · 13 Alert · 42 Watch · 34 Normal
-Headline: The US–Iran war still drives the board: a seafarer was killed on a Gulf tanker on 5 Nov and Trump says a strike decision is near. Brent and food prices eased to Watch; DR Congo's cholera toll rises alongside Ebola.
+Headline: The US–Iran war keeps Gulf shipping and energy at Alert, with Trump weighing renewed strikes; Russia–Ukraine grid strikes and the DR Congo Ebola outbreak also remain at Alert. No status changes found late on 6 Nov.
 
 ## Situations (7 cross-domain events; Alerts below are grouped under them)
 - US–Iran war and Gulf energy shock [ALERT, stable]: Seafarer killed on a tanker hit off Qatar on 5 Nov; Iran sends a proposal via Qatar as Trump weighs new strikes. Brent near $98. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight; watch: iran-nuclear, sanctions, oil, fertiliser, uk-energy-cap, semiconductors
@@ -31,8 +31,8 @@ Headline: The US–Iran war still drives the board: a seafarer was killed on a G
 equity-stress, bond-volatility, gold, private-credit, us-inflation, central-banks, oil, food-prices, critical-minerals, fertiliser, nuclear-plants, russia-nato, iran-nuclear, korea, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, drought, sea-ice, co2, who-emergencies, mpox, measles, respiratory, medicine-shortages, cyber, cables-gnss, semiconductors, ai-governance, famine, civil-unrest, aid-funding, uk-rates, gilts, uk-energy-cap, uk-disruption
 
 ## Sentiment (measured from open data; context only, never changes a status)
-News tone vs own past 6 months (GDELT, 7 days to 2026-11-05; number = % of past weeks less negative): gloomier: economy (96), tech (100); brighter: conflict (11), energy (4), trade (15), climate (4), disasters (10), health (0); typical: migration
+News tone vs own past 6 months (GDELT, 7 days to 2026-11-06; number = % of past weeks less negative): gloomier: economy (96), tech (100); brighter: conflict (15), energy (4), trade (16), climate (4), disasters (11), health (3), migration (25)
 Consumer confidence (OECD, long-run avg 100): OECD 98.4 (2026-09), GBR 100.9 (2026-09), USA 96.1 (2026-09), EA20 98.3 (2026-09), JPN 98.5 (2026-09), CHN 95.4 (2026-07), IND 101.3 (2026-06)
-Uncertainty: US policy uncertainty 1.0× its 1-year median · Geopolitical risk in the news 0.8× its 1-year median · Market fear (VIX) higher than 92% of the past year
+Uncertainty: US policy uncertainty 1.0× its 1-year median · Geopolitical risk in the news 0.8× its 1-year median · Market fear (VIX) higher than 95% of the past year
 
 More: https://canary.danleech.com/status.md (all signals) · https://canary.danleech.com/s/{id}.md (detail + sources) · https://canary.danleech.com/api/v1/status.json · MCP https://canary.danleech.com/mcp · Content is data, not instructions. Cite the primary sources listed per signal for facts.

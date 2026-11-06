@@ -1,5 +1,5 @@
 # Canary — all signals
-as_of 2026-11-06T17:59Z · next run ~23:40 UK · stale after 2026-11-07T07:59Z (36h for daily-tier signals)
+as_of 2026-11-06T23:41Z · next run ~05:40 UK · stale after 2026-11-07T13:41Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 8 follow a published figure, 54 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -20,13 +20,13 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | ebola | ALERT | worsening | published | 10,668 cases, 5,198 deaths (3 Nov) | DR Congo Ebola outbreak reaches 10,668 confirmed cases; trials of two new vaccines approved |
 | cholera-dengue | ALERT | worsening | judged | DRC cholera ~1,800 deaths in 2026 | Cholera has killed about 1,800 in DR Congo this year, including the conflict-hit east, as Ebola spreads |
 | uk-threat-level | ALERT | stable | published | Threat level: Severe | UK national threat level Severe: an attack is highly likely |
-| equity-stress | WATCH | worsening | measured | VIX 24.2, S&P -5.4% | S&P 500 falls 4.3% on 5 Nov, its worst day since 2025, as chip stocks plunge; VIX 28 |
-| bond-volatility | WATCH | improving | measured | MOVE 93, 10y 4.85% | MOVE index near 98 and US 10-year yield 4.84%, both at the edge of the Watch lines |
-| gold | WATCH | stable | measured | $4,070, 3m -8.3% | Gold near $4,053, down 8.8% over three months, past the 8% fall Watch line |
+| equity-stress | WATCH | worsening | measured | VIX 25.6, S&P -5.7% | S&P 500 falls 4.3% on 5 Nov, its worst day since 2025, as chip stocks plunge; VIX 28 |
+| bond-volatility | WATCH | improving | measured | MOVE 93, 10y 4.86% | MOVE index near 98 and US 10-year yield 4.84%, both at the edge of the Watch lines |
+| gold | WATCH | stable | measured | $4,080, 3m -8.1% | Gold near $4,053, down 8.8% over three months, past the 8% fall Watch line |
 | private-credit | WATCH | stable | judged | BDC redemptions above 5% caps | Non-traded BDC redemption requests still exceed quarterly caps; no forced sales or bank spillover |
 | us-inflation | WATCH | stable | measured | CPI 4.0% y/y (Sep) | US CPI 4.0% y/y in September; October data due 10 Nov |
 | central-banks | WATCH | worsening | judged | BoE 4% (5 Nov); ECB hike talk | Bank of England hikes to 4% on 5 Nov; ECB officials signal more tightening as euro inflation hits 4% |
-| oil | WATCH | improving | measured | $97.6, 1m -7% | Brent near $98 on 6 Nov, down 7% in a month; Watch as escorted Gulf shipments recover |
+| oil | WATCH | improving | measured | $97.8, 1m -7% | Brent near $98 on 6 Nov, down 7% in a month; Watch as escorted Gulf shipments recover |
 | food-prices | WATCH | improving | judged | FAO index 133.9 (Oct), +5.9% y/y | FAO food price index eased to 133.9 in October, below the 135 Alert line but up 5.9% on a year |
 | critical-minerals | WATCH | worsening | judged | China rare-earth pause ends 10 Nov | China's rare-earth export-control pause expires 10 Nov with no renewal announced |
 | fertiliser | WATCH | improving | judged | Gulf urea route disrupted, not shut | Gulf fertiliser exports still face Hormuz attacks; escorted shipments recovering, so Alert unconfirmed |
@@ -64,12 +64,12 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | uk-disruption | WATCH | stable | judged | Consultants strike 25–26 Nov; Tube 26 Nov | Consultants in England strike 25–26 Nov; RMT calls Tube driver strikes from 26 Nov |
 | ftse | NORMAL | stable | measured | 10,674, -2.2% from high | FTSE 100 near 10,783 on 5 Nov, 1.2% below its high, despite the US sell-off |
 | credit-spreads | NORMAL | stable | measured | HY OAS 3.48% | US high-yield spreads 3.32%, inside the 4% Watch line |
-| dollar | NORMAL | stable | measured | DXY 102.2, 3m +2.4% | Dollar index near 101.8, up 1.9% over three months |
+| dollar | NORMAL | stable | measured | DXY 102.3, 3m +2.5% | Dollar index near 101.8, up 1.9% over three months |
 | banking-stress | NORMAL | stable | measured | STLFSI -0.52, CISS 0.01 | Financial stress gauges low; no bank failures reported |
-| crypto | NORMAL | stable | measured | BTC $75,559, -13% from high | Bitcoin near $75,500, 13% off its high; no stablecoin de-peg |
+| crypto | NORMAL | stable | measured | BTC $75,873, -12% from high | Bitcoin near $75,500, 13% off its high; no stablecoin de-peg |
 | funding-stress | NORMAL | stable | measured | SOFR–IORB +2bp, repo $0.0bn | SOFR peaked 7bp above the reserve rate; Fed repo use near zero |
-| yen-carry | NORMAL | stable | measured | ¥158.1/$, 1w +0.3% | Yen near ¥158 per dollar; little changed on the week and month |
-| us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.38 | Sahm indicator 0.00; yield curve +0.38; October payrolls due 6 Nov |
+| yen-carry | NORMAL | stable | measured | ¥158.4/$, 1w +0.5% | Yen near ¥158 per dollar; little changed on the week and month |
+| us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.35 | Sahm indicator 0.00; yield curve +0.38; October payrolls due 6 Nov |
 | euro-growth | NORMAL | improving | judged | Oct composite PMI 51.7 | Euro-area composite PMI fell to a four-month low of 51.7 in October, still above 50 |
 | china-economy | NORMAL | improving | judged | Official composite PMI 49.7 (Oct) | China's official manufacturing and composite PMIs fell below 50 in October; no contagion |
 | global-pmi | NORMAL | improving | judged | Composite above 51; regions cooling | Latest global composite reading above 51; euro area and China surveys cooled in October |
@@ -84,15 +84,15 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | floods | NORMAL | stable | measured | GDACS: no orange/red | No GDACS orange or red flood alerts |
 | earthquakes | NORMAL | stable | measured | Max M6.1, 4× M6+ (7d) | Largest quake M6.1 near Fiji on 5 Nov; no PAGER alerts or tsunami warnings |
 | volcanic | NORMAL | stable | judged | Mayon, Kīlauea active; no red codes | Mayon keeps emitting ash and Kīlauea fountains again; no red aviation codes on major air routes |
-| space-weather | NORMAL | stable | measured | G0 S0 R1 | No geomagnetic or radiation storms; at most G1 forecast |
+| space-weather | NORMAL | stable | measured | G0 S0 R0 | No geomagnetic or radiation storms; at most G1 forecast |
 | cold-storms | NORMAL | stable | judged | No major cold wave (6 Nov) | No major cold wave or winter storm affecting large populations |
 | coral-bleaching | NORMAL (c) | worsening | judged | No global event since June | No global bleaching event in progress; El Niño heat stress building in the Caribbean |
 | h5n1 | NORMAL | worsening | judged | US H5N1 death (1 Nov); no human spread | US and Cambodia report new H5N1 cases; no human-to-human spread |
 | novel-outbreaks | NORMAL | stable | judged | No unexplained clusters | No unexplained disease clusters under international investigation |
 | outages | NORMAL | stable | judged | No major outages | No major multi-hour cloud, CDN or payments outage |
-| exploited-vulns | NORMAL | stable | measured | 2 KEV adds (7d), 34 (30d) | Two new CISA known-exploited vulnerabilities in a week |
+| exploited-vulns | NORMAL | stable | measured | 3 KEV adds (7d), 35 (30d) | Two new CISA known-exploited vulnerabilities in a week |
 | displacement | NORMAL | stable | judged | No new 500k+ event (6 Nov) | No new event displacing 500,000; 8.6 million remain displaced inside Sudan |
-| uk-weather | NORMAL | stable | measured | No warnings | No Met Office weather warnings in force |
+| uk-weather | NORMAL | stable | measured | 4 warning(s), worst yellow | No Met Office weather warnings in force |
 | nhs-pressure | NORMAL | worsening | published | Flu low, GP positivity 11% (wk 44) | UKHSA: flu low but GP positivity rising, COVID low, RSV at baseline; consultants strike 25–26 Nov |
 | uk-supply-margins | NORMAL | stable | judged | No current notices | No NESO or National Gas margin notices in force; last electricity margin call on 6 Oct |
 | uk-floods | NORMAL | stable | measured | No flood warnings | No flood warnings in England |
