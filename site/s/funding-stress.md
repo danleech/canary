@@ -1,5 +1,5 @@
 # Dollar funding stress — NORMAL (stable)
-id funding-stress · Markets · horizon acute · checked 2026-11-07T11:44Z · text written 2026-11-07T05:46Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-08T01:44Z
+id funding-stress · Markets · horizon acute · checked 2026-11-07T17:51Z · text written 2026-11-07T05:46Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-08T07:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/funding-stress
 
 Value: SOFR–IORB +2bp, repo $0.0bn

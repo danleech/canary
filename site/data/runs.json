@@ -1,5 +1,103 @@
 [
  {
+  "t": "2026-11-07T17:51:50Z",
+  "applied": 89,
+  "changed": [],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 27,
+   "published": 11,
+   "judged": 51
+  },
+  "held": 41,
+  "sources": {
+   "citations": 89,
+   "news_citations": 68,
+   "outlets": 74,
+   "top_news_outlets": [
+    [
+     "tradingeconomics.com",
+     4
+    ],
+    [
+     "borsaitaliana.it",
+     2
+    ],
+    [
+     "gcaptain.com",
+     2
+    ],
+    [
+     "longwarjournal.org",
+     2
+    ],
+    [
+     "mining-technology.com",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 56,
+   "predicted_active": 6,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
+  "t": "2026-11-07T17:51:37Z",
+  "applied": 89,
+  "changed": [
+   "co2"
+  ],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 27,
+   "published": 11,
+   "judged": 51
+  },
+  "held": 41,
+  "sources": {
+   "citations": 89,
+   "news_citations": 68,
+   "outlets": 74,
+   "top_news_outlets": [
+    [
+     "tradingeconomics.com",
+     4
+    ],
+    [
+     "borsaitaliana.it",
+     2
+    ],
+    [
+     "gcaptain.com",
+     2
+    ],
+    [
+     "longwarjournal.org",
+     2
+    ],
+    [
+     "mining-technology.com",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 56,
+   "predicted_active": 6,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
   "t": "2026-11-07T11:44:18Z",
   "applied": 41,
   "changed": [],

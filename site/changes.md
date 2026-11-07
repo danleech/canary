@@ -1,8 +1,9 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-07T11:44Z · next run ~17:40 UK · stale after 2026-11-08T01:44Z (36h for daily-tier signals)
+as_of 2026-11-07T17:51Z · next run ~23:40 UK · stale after 2026-11-08T07:51Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
-Basis: 27 measured from open data, 8 follow a published figure, 54 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
+Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
+- 2026-11-07T17:51Z Atmospheric CO₂ [co2]: WATCH→ALERT — CO₂ 428.5 ppm at Mauna Loa, up 3.31 ppm on a year, above the 3 ppm Alert line
 - 2026-11-07T05:46Z US–China / Taiwan [us-china]: NORMAL→WATCH — Taiwan says China has deployed more than 100 navy and coast guard vessels across the Western Pacific
 - 2026-11-06T17:59Z Fertiliser supply [fertiliser]: ALERT→WATCH — Gulf fertiliser exports still face Hormuz attacks; escorted shipments recovering, so Alert unconfirmed
 - 2026-11-06T17:59Z Global food prices [food-prices]: ALERT→WATCH — FAO food price index eased to 133.9 in October, below the 135 Alert line but up 5.9% on a year

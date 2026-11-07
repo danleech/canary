@@ -1,16 +1,16 @@
 # Global activity (PMI) — NORMAL (improving)
-id global-pmi · Economy · horizon acute · checked 2026-11-06T17:59Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-08T05:59Z
+id global-pmi · Economy · horizon acute · checked 2026-11-07T17:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-09T05:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/global-pmi
 
-Value: Composite above 51; regions cooling
-Rated on: Latest global composite > 51 (Normal); October regional surveys cooling
+Value: Global composite 53.2 (Oct)
+Rated on: Global composite 53.2 > 51 = Normal
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-Latest global composite reading above 51; euro area and China surveys cooled in October
+J.P.Morgan global composite PMI eased to 53.2 in October from 54.3, still above 51
 
-Why it's at this level: The J.P.Morgan global composite was well above 51 in September, and the October global composite had not been found as of 6 Nov (TrendForce data). October surveys show cooling: the euro-area composite fell to 51.7 and China's official composite to 49.7 (ActionForex; National Bureau of Statistics). No global reading near the 51 Watch line has been reported, so Normal holds.
+Why it's at this level: The J.P.Morgan Global Composite PMI fell to 53.2 in October from 54.3 in September, its 45th month of expansion, with business optimism at a five-month low (S&P Global data via TrendForce, 4 Nov). The euro-area composite slipped to 51.7 (Borsa Italiana). The global reading remains well above the 51 Watch line.
 
-What this means for you: Slowing activity surveys tend to precede softer hiring and trade. Exporters and commodity producers are most exposed if the global composite falls toward 50.
+What this means for you: Cooling global activity tends to show up in weaker export orders and slower hiring.
 
 Why it matters: Purchasing-manager surveys are the fastest read on whether the world economy is expanding or contracting.
 What moves it: Orders, inventories, trade policy, energy costs, credit conditions.
@@ -18,5 +18,5 @@ What moves it: Orders, inventories, trade policy, energy costs, credit condition
 Rubric — Alert: Global composite < 49. | Watch: Global composite 49–51, or manufacturing < 49. | Normal: J.P.Morgan Global Composite PMI > 51.
 
 Sources:
-- TrendForce DataTrack — JPMorgan Global Composite PMI () https://datatrack.trendforce.com/Chart/content/677/jpmorgan-global-composite-pmi
-- ActionForex — Eurozone PMI composite falls to 51.7 (2026-11-04) https://www.actionforex.com/live-comments/659804-eurozone-pmi-composite-falls-to-51-7-as-demand-weakens-and-business-confidence-slips/
+- TrendForce — JPMorgan Global Composite PMI (2026-11-04) https://datatrack.trendforce.com/Chart/content/677/jpmorgan-global-composite-pmi
+- Borsa Italiana — Unione Europea, PMI composito in ottobre (2026-11-04) https://www.borsaitaliana.it/borsa/notizie/teleborsa/economia/unione-europea-pmi-composito-in-ottobre-93_2026-11-04_TLB-1LINER.html?lang=it
