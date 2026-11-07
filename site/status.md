@@ -1,5 +1,5 @@
 # Canary — all signals
-as_of 2026-11-07T05:46Z · next run ~11:40 UK · stale after 2026-11-07T19:46Z (36h for daily-tier signals)
+as_of 2026-11-07T11:44Z · next run ~17:40 UK · stale after 2026-11-08T01:44Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 8 follow a published figure, 54 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -14,7 +14,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | russia-ukraine | ALERT | stable | judged | Komyshuvakha strike: 53 dead | Death toll from Russia's 2 Nov strike on an aid centre in Komyshuvakha rises to 53; ballistic missiles hit Kyiv |
 | middle-east | ALERT | stable | judged | US–Iran war; Houthi–Saudi strikes | Saudi forces intercept Houthi missiles aimed at Najran on 6 Nov; Israeli strikes kill four in Gaza on 5 Nov |
 | sudan | ALERT | worsening | judged | Drone war on grid; 180 drones intercepted | Drone strikes hit Sudan's power grid and civilians; army says it intercepted 180 drones |
-| gulf-iran | ALERT | stable | judged | Hormuz attacks; US strike decision due | Trump says a decision between a deal and new strikes is near; tanker attacks continue around Hormuz |
+| gulf-iran | ALERT | stable | judged | US strike on Qeshm 7 Nov; talks via Qatar | US strikes Iranian air defences on Qeshm Island on 7 Nov as Iran weighs Qatari proposals for a bridge deal |
 | global-temp | ALERT (c) | worsening | measured | +2.02°C vs pre-industrial | Global temperature 2.02°C above pre-industrial on 31 Oct, a record for the date |
 | enso | ALERT (s) | worsening | measured | ONI +2.5 (El Niño) | Super El Niño: ONI +2.5°C for Aug–Oct |
 | ebola | ALERT | worsening | published | 10,532 cases, 5,126 deaths (2 Nov) | DR Congo Ebola outbreak passes 10,500 confirmed cases and 5,100 deaths; cases also in Kenya and Nigeria |
@@ -33,7 +33,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | nuclear-plants | WATCH | stable | judged | ZNPP off-site power fragile | Zaporizhzhia's off-site power remains fragile as Russian strikes hit Ukraine's grid |
 | us-china | WATCH | worsening | judged | 100+ Chinese vessels in W. Pacific (3 Nov) | Taiwan says China has deployed more than 100 navy and coast guard vessels across the Western Pacific |
 | russia-nato | WATCH | stable | judged | Poland border operation to 8 Nov | Poland keeps a large security operation on its Kaliningrad border after warnings of Russian provocations |
-| iran-nuclear | WATCH | stable | judged | No IAEA access; 60% HEU stock | US offers $20m for information on Iran's nuclear programme; IAEA has lost continuity of knowledge |
+| iran-nuclear | WATCH | stable | judged | No IAEA access; 60% HEU stock | Qatari bridge-deal proposal would let IAEA inspectors into bombed sites; Iran's 60% uranium stock remains unverified |
 | korea | WATCH | stable | judged | Missile salvo 4 Nov; 4th launch in a month | North Korea fired several missiles on 4 Nov, its fourth launch in a month |
 | trade-war | WATCH | worsening | judged | Rare-earth pause ends 10 Nov | China's rare-earth control pause ends 10 Nov with no formal renewal notice |
 | sanctions | WATCH | stable | judged | US blockade of Iran; Graham Act in force | US naval blockade of Iran continues; ending it and sanctions is among Iran's seven demands |
@@ -67,10 +67,10 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | credit-spreads | NORMAL | worsening | measured | HY OAS 3.48% | US high-yield spreads 3.48%, widest in a year but inside the 4% Watch line |
 | dollar | NORMAL | stable | measured | DXY 102.3, 3m +2.5% | Dollar index near 102.3, up 2.5% over three months |
 | banking-stress | NORMAL | stable | measured | STLFSI -0.52, CISS 0.01 | Financial stress gauges low; no bank failures reported |
-| crypto | NORMAL | stable | measured | BTC $75,916, -12% from high | Bitcoin near $75,900, 12% off its high; no stablecoin de-peg |
+| crypto | NORMAL | stable | measured | BTC $75,932, -12% from high | Bitcoin near $75,900, 12% off its high; no stablecoin de-peg |
 | funding-stress | NORMAL | stable | measured | SOFR–IORB +2bp, repo $0.0bn | SOFR 2bp above the reserve rate on 5 Nov; Fed repo use near zero |
 | yen-carry | NORMAL | stable | measured | ¥158.4/$, 1w +0.5% | Yen near ¥158 per dollar; little changed on the week and month |
-| us-recession | NORMAL | stable | measured | Sahm 0.00; Oct payrolls +165k | US adds 165,000 jobs in October and unemployment falls to 4.1%; Sahm indicator 0.00 |
+| us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.35 | US adds 165,000 jobs in October and unemployment falls to 4.1%; Sahm indicator 0.00 |
 | euro-growth | NORMAL | improving | judged | Oct composite PMI 51.7 | Euro-area composite PMI fell to a four-month low of 51.7 in October, still above 50 |
 | china-economy | NORMAL | improving | judged | Official composite PMI 49.7 (Oct) | China's official manufacturing and composite PMIs fell below 50 in October; no contagion |
 | global-pmi | NORMAL | improving | judged | Composite above 51; regions cooling | Latest global composite reading above 51; euro area and China surveys cooled in October |

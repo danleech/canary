@@ -1,5 +1,5 @@
 # US–China / Taiwan — WATCH (worsening)
-id us-china · Geopolitics · horizon acute · checked 2026-11-07T05:46Z · at this level since 2026-11-07T05:46Z · stale after 2026-11-07T19:46Z
+id us-china · Geopolitics · horizon acute · checked 2026-11-07T11:44Z · text written 2026-11-07T05:46Z · at this level since 2026-11-07T05:46Z · stale after 2026-11-08T01:44Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/us-china
 
 Value: 100+ Chinese vessels in W. Pacific (3 Nov)

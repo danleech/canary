@@ -1,13 +1,13 @@
 # Canary — world risk status
-as_of 2026-11-07T05:46Z · next run ~11:40 UK · stale after 2026-11-07T19:46Z (36h for daily-tier signals)
+as_of 2026-11-07T11:44Z · next run ~17:40 UK · stale after 2026-11-08T01:44Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 8 follow a published figure, 54 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 World State 38/100 (Unsettled) · 13 Alert · 43 Watch · 33 Normal
-Headline: Trump weighs a deal or new strikes on Iran as tanker attacks continue near Hormuz; Russia's 2 Nov strike on Komyshuvakha has killed 53; Taiwan reports 100+ Chinese vessels in the Western Pacific.
+Headline: The US struck Iranian air defences on Qeshm Island on 7 Nov as Qatar pushes a bridge deal to reopen Hormuz. Wars in Ukraine and Sudan, DR Congo's Ebola outbreak and high European gas prices keep several signals at Alert.
 
 ## Situations (7 cross-domain events; Alerts below are grouped under them)
-- US–Iran war and Gulf energy shock [ALERT, stable]: Seafarer killed on a tanker hit on 5 Nov; Trump says a deal-or-strikes decision is near and spoke to Qatar's emir on 6 Nov. Brent near $98. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight; watch: iran-nuclear, sanctions, oil, fertiliser, uk-energy-cap, semiconductors
+- US–Iran war and Gulf energy shock [ALERT, stable]: US strikes Iranian air defences on Qeshm on 7 Nov; Iran weighs a Qatari bridge-deal proposal to reopen Hormuz. Brent near $98. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight; watch: iran-nuclear, sanctions, oil, fertiliser, uk-energy-cap, semiconductors
 - Russia–Ukraine war and NATO's flank [ALERT, stable]: Death toll from Russia's 2 Nov strike on Komyshuvakha reaches 53; missiles hit Kyiv on 7 Nov; Poland's border operation runs to 8 Nov. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
 - Super El Niño [ALERT, worsening]: ONI +2.5 for Aug–Oct; record warmth for the date on 31 Oct; El Niño drought hits crops in southern Africa and South-east Asia. → alert: enso, global-temp; watch: drought, co2, famine
 - Ebola outbreak, DR Congo [ALERT, worsening]: ECDC counted 10,532 confirmed Ebola cases and 5,126 deaths in DR Congo to 2 Nov; cases in Kenya and Nigeria; a WHO PHEIC since May. → alert: ebola; watch: who-emergencies

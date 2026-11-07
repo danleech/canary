@@ -1,5 +1,41 @@
 [
  {
+  "t": "2026-11-07T11:44:18Z",
+  "applied": 41,
+  "changed": [],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 3,
+   "judged": 17
+  },
+  "held": 39,
+  "sources": {
+   "citations": 4,
+   "news_citations": 4,
+   "outlets": 2,
+   "top_news_outlets": [
+    [
+     "arabnews.pk",
+     2
+    ],
+    [
+     "euronews.com",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 19,
+   "predicted_active": 1,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
   "t": "2026-11-07T05:46:46Z",
   "applied": 41,
   "changed": [
