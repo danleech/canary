@@ -1,5 +1,5 @@
 # Canary — all signals
-as_of 2026-11-07T17:51Z · next run ~23:40 UK · stale after 2026-11-08T07:51Z (36h for daily-tier signals)
+as_of 2026-11-07T23:41Z · next run ~05:40 UK · stale after 2026-11-08T13:41Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -67,7 +67,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | credit-spreads | NORMAL | worsening | measured | HY OAS 3.48% | US high-yield spreads 3.48%, widest in a year but inside the 4% Watch line |
 | dollar | NORMAL | stable | measured | DXY 102.3, 3m +2.5% | Dollar index near 102.3, up 2.5% over three months |
 | banking-stress | NORMAL | stable | measured | STLFSI -0.52, CISS 0.01 | Financial stress gauges low; no bank failures reported |
-| crypto | NORMAL | stable | measured | BTC $75,757, -13% from high | Bitcoin near $75,900, 12% off its high; no stablecoin de-peg |
+| crypto | NORMAL | stable | measured | BTC $75,693, -13% from high | Bitcoin near $75,900, 12% off its high; no stablecoin de-peg |
 | funding-stress | NORMAL | stable | measured | SOFR–IORB +2bp, repo $0.0bn | SOFR 2bp above the reserve rate on 5 Nov; Fed repo use near zero |
 | yen-carry | NORMAL | stable | measured | ¥158.4/$, 1w +0.5% | Yen near ¥158 per dollar; little changed on the week and month |
 | us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.35 | US adds 165,000 jobs in October and unemployment falls to 4.1%; Sahm indicator 0.00 |
@@ -82,9 +82,9 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | heat | NORMAL | worsening | judged | Heatwave warnings in Queensland | Heatwave warnings in parts of Queensland; no top-tier warnings over large populations found |
 | wildfires | NORMAL | stable | measured | GDACS: no orange/red | No GDACS orange or red wildfire alerts |
 | floods | NORMAL | stable | measured | GDACS: no orange/red | No GDACS orange or red flood alerts |
-| earthquakes | NORMAL | stable | measured | Max M6.1, 4× M6+ (7d) | Largest quake M6.1 off Japan on 6 Nov; no PAGER alerts or tsunami warnings |
+| earthquakes | NORMAL | stable | measured | Max M6.1, 3× M6+ (7d) | Largest quake M6.1 off Japan on 6 Nov; no PAGER alerts or tsunami warnings |
 | volcanic | NORMAL | stable | judged | Mayon active; no red codes | Mayon in the Philippines remains at Alert Level 3; no red aviation codes on major air routes |
-| space-weather | NORMAL | stable | measured | G0 S0 R1 | No geomagnetic, radiation or radio storms; at most G1 forecast |
+| space-weather | NORMAL | stable | measured | G1 S0 R1 | No geomagnetic, radiation or radio storms; at most G1 forecast |
 | cold-storms | NORMAL | stable | judged | No major cold wave (7 Nov) | No major cold wave or winter storm affecting large populations |
 | coral-bleaching | NORMAL (c) | worsening | judged | No global event since June | No global bleaching event in progress; El Niño heat stress building in the Caribbean |
 | h5n1 | NORMAL | stable | judged | US H5N1 death (1 Nov); no human spread | US and Cambodia report new H5N1 cases; no human-to-human spread |
