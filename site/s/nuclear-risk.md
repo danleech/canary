@@ -1,16 +1,16 @@
 # Nuclear risk — WATCH (stable)
-id nuclear-risk · Armed Conflict · horizon acute · checked 2026-11-06T23:41Z · text written 2026-11-06T05:46Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-07T13:41Z
+id nuclear-risk · Armed Conflict · horizon acute · checked 2026-11-07T05:46Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-07T19:46Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/nuclear-risk
 
 Value: No US–Russia treaty limits
-Rated on: Arms-control lapse without replacement + explicit threats = Watch
+Rated on: Arms-control lapse without replacement = Watch
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-No US–Russia arms-control limits; China rejects trilateral talks; North Korean launches
+No US–Russia arms-control limits since New START lapsed; China rejects trilateral talks
 
-Why it's at this level: New START expired in February 2026 with no replacement. The five nuclear-weapon states consulted in New York in early October, but China said on 16 Oct that trilateral talks are not realistic (Arms Control Association). North Korea fired several missiles on 4 Nov (Japan Times). No nuclear test or change in alert levels had been reported as of 6 Nov.
+Why it's at this level: New START has expired with no replacement, and the US rejected Russia's offer to keep its central limits (Arms Control Association, 1 Nov). China said on 16 Oct that trilateral talks are not realistic at this stage, and the US voted against a UN resolution urging no nuclear tests in October. North Korea fired several missiles on 4 Nov (Stars and Stripes). No nuclear test or alert-level change had been reported as of 7 Nov.
 
-What this means for you: No public action needed; official guidance would come from national emergency agencies.
+What this means for you: No direct public impact; this is a long-term risk with no official action advised.
 
 Why it matters: Nuclear use anywhere would be a civilisational shock; arms-control treaties are weaker than at any time since the 1960s.
 What moves it: Threats in active wars, testing, doctrine changes, arms-control collapse, proliferation.
@@ -19,4 +19,4 @@ Rubric — Alert: A nuclear test, changes in deployment/alert levels, or threate
 
 Sources:
 - Arms Control Association — Nuclear-weapon states consult as Trump talks denuclearization (2026-11-01) https://www.armscontrol.org/act/2026-11/news/nuclear-weapon-states-consult-trump-talks-denuclearization
-- Japan Times — North Korea fires off 'several' missiles (2026-11-04) https://japantimes.co.jp/news/2026/11/04/asia-pacific/north-korea-missile-test-november-4
+- Stars and Stripes — North Korea claims new missile technology (2026-11-05) https://stripes.com/theaters/asia_pacific/2026-11-05/north-korea-missile-technology-diplomacy-23369224.html

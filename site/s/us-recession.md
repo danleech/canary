@@ -1,16 +1,16 @@
 # US recession risk — NORMAL (stable)
-id us-recession · Economy · horizon acute · checked 2026-11-06T23:41Z · text written 2026-11-06T05:46Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-07T13:41Z
+id us-recession · Economy · horizon acute · checked 2026-11-07T05:46Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-07T19:46Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/us-recession
 
-Value: Sahm 0.00, 10y–2y +0.35
-Rated on: Sahm 0 below the 0.3 Watch line
+Value: Sahm 0.00; Oct payrolls +165k
+Rated on: Sahm 0.00 < 0.30 and payrolls positive = Normal
 Basis: measured — Set by a fixed rule applied to open data (Sahm = 0.00). Anyone can reproduce it from the public metrics file.
 
-Sahm indicator 0.00; yield curve +0.38; October payrolls due 6 Nov
+US adds 165,000 jobs in October and unemployment falls to 4.1%; Sahm indicator 0.00
 
-Why it's at this level: The real-time Sahm rule indicator is 0.00 (September data), far from the 0.5 trigger, and the 10y–2y Treasury curve was +0.38 on 5 Nov (FRED). October payrolls are due on 6 Nov.
+Why it's at this level: US employers added 165,000 jobs in October against forecasts of about 65,000, and the unemployment rate fell to 4.1%, figures released on 6 Nov showed (Fox Business; BNN Bloomberg/Reuters). The real-time Sahm rule indicator is 0.00, far from the 0.5 trigger, and the 10y–2y Treasury curve was +0.35 on 6 Nov (FRED).
 
-What this means for you: US labour data do not point to recession yet; payrolls on 6 Nov will update the picture.
+What this means for you: The US labour market is still adding jobs; recession indicators are not flashing.
 
 Why it matters: A US recession drags world trade, earnings and jobs; it is the single biggest swing factor for the global cycle.
 What moves it: Labour market, consumer spending, credit conditions, rates and fiscal policy.
@@ -18,5 +18,6 @@ What moves it: Labour market, consumer spending, credit conditions, rates and fi
 Rubric — Alert: Sahm ≥ 0.50, or two consecutive negative GDP quarters, or NBER declares recession. | Watch: Sahm 0.30–0.49, or one negative GDP quarter, or payrolls negative in a release. | Normal: Sahm rule indicator < 0.30 and no negative GDP quarter in the latest two releases.
 
 Sources:
-- FRED — SAHMREALTIME (2026-11-06) https://fred.stlouisfed.org/series/SAHMREALTIME
-- FRED — T10Y2Y (2026-11-06) https://fred.stlouisfed.org/series/T10Y2Y
+- FRED — Sahm rule real-time (2026-11-07) https://fred.stlouisfed.org/series/SAHMREALTIME
+- Fox Business — Nasdaq rises as AI and chip stocks recover (2026-11-06) https://www.foxbusiness.com/markets/stocks-11-6-2026
+- BNN Bloomberg (Reuters) — Wall Street stocks in relief rally after heavy AI-related selloff (2026-11-06) https://www.bnnbloomberg.ca/markets/dow-jones/2026/11/06/wall-street-stocks-in-relief-rally-after-heavy-ai-related-selloff/

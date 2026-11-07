@@ -1,8 +1,9 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-06T23:41Z · next run ~05:40 UK · stale after 2026-11-07T13:41Z (36h for daily-tier signals)
+as_of 2026-11-07T05:46Z · next run ~11:40 UK · stale after 2026-11-07T19:46Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 8 follow a published figure, 54 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
+- 2026-11-07T05:46Z US–China / Taiwan [us-china]: NORMAL→WATCH — Taiwan says China has deployed more than 100 navy and coast guard vessels across the Western Pacific
 - 2026-11-06T17:59Z Fertiliser supply [fertiliser]: ALERT→WATCH — Gulf fertiliser exports still face Hormuz attacks; escorted shipments recovering, so Alert unconfirmed
 - 2026-11-06T17:59Z Global food prices [food-prices]: ALERT→WATCH — FAO food price index eased to 133.9 in October, below the 135 Alert line but up 5.9% on a year
 - 2026-11-06T17:59Z Oil (Brent) [oil]: ALERT→WATCH — Brent near $98 on 6 Nov, down 7% in a month; Watch as escorted Gulf shipments recover

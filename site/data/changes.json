@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-07T05:46:46Z",
+  "id": "us-china",
+  "name": "US–China / Taiwan",
+  "from": "green",
+  "to": "amber",
+  "reason": "Taiwan says China has deployed more than 100 navy and coast guard vessels across the Western Pacific"
+ },
+ {
   "t": "2026-11-06T17:59:39Z",
   "id": "fertiliser",
   "name": "Fertiliser supply",

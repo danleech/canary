@@ -1,17 +1,17 @@
 # Iran nuclear programme — WATCH (stable)
-id iran-nuclear · Geopolitics · horizon acute · checked 2026-11-06T23:41Z · text written 2026-11-06T17:59Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-07T13:41Z
+id iran-nuclear · Geopolitics · horizon acute · checked 2026-11-07T05:46Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-07T19:46Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/iran-nuclear
 
-Value: Iran proposal via Qatar; strike threats
-Rated on: Watch: inspector access curtailed and credible strike threats; no strike on nuclear sites
-Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
+Value: No IAEA access; 60% HEU stock
+Rated on: Enrichment at 60% and inspector access curtailed = Watch
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
-Iran sends a nuclear proposal via Qatar on 5 Nov as Trump weighs resuming strikes; no IAEA access
+US offers $20m for information on Iran's nuclear programme; IAEA has lost continuity of knowledge
 
-Why it's at this level: Iran sent a formal nuclear and peace proposal to the US through Qatar on 5 Nov, conditioning talks on seven demands including an end to sanctions and the naval blockade (Fox News; Just Security). President Trump said he would decide soon on resuming military action and questioned whether more strikes were needed against the nuclear programme (Khaleej Times). The IAEA still lacks access to key sites; no strike on a nuclear facility was reported as of 6 Nov.
+Why it's at this level: The US State Department offered up to $20m on 6 Nov for information on Iran's nuclear programme, saying the IAEA had lost continuity of knowledge over centrifuge production and that Iran's 60% enriched uranium is a short step from weapons grade (CBS News). Iran has suspended inspections since the June 2025 strikes. Qatar is pressing a draft deal that could restart direct talks (Gulf News). No strike on a nuclear site was reported as of 7 Nov.
 
-What this means for you: Follow FCDO travel advice for Iran and the Gulf. Renewed strikes would raise risks to regional travel and shipping.
+What this means for you: No direct effect on the public outside the region; follow FCDO travel advice for Iran and the Gulf.
 
 Why it matters: A nuclear-armed Iran — or strikes to prevent one — could ignite the Gulf and send oil far higher.
 What moves it: Enrichment levels, IAEA access, Israeli/US military posture, snapback sanctions, talks.
@@ -19,6 +19,5 @@ What moves it: Enrichment levels, IAEA access, Israeli/US military posture, snap
 Rubric — Alert: Strikes on nuclear sites, NPT withdrawal, or evidence of weaponisation. | Watch: Enrichment at ≥ 60% or inspector access curtailed, or credible strike threats. | Normal: IAEA access and active diplomacy; no escalation.
 
 Sources:
-- Fox News — Iran war news: nuclear proposal, Hegseth budget request (2026-11-06) https://www.foxnews.com/live-news/iran-war-news-nuclear-proposal-hegseth-congress-budget-request-11-06-26
-- Khaleej Times — War live updates, 6 November 2026 (2026-11-06) https://www.khaleejtimes.com/world/mena/us-israel-iran-saudi-arabia-yemen-war-live-updates-november-6-2026
-- Just Security — Early Edition: November 6, 2026 (2026-11-06) https://www.justsecurity.org/163619/early-edition-november-6-2026/
+- CBS News — Iran war updates: Trump touts imminent decision on new strikes (2026-11-06) https://www.cbsnews.com/live-updates/iran-war-trump-us-strait-hormuz-persian-gulf/
+- Gulf News — Trump signals 'heavy hit' as tankers catch fire near Hormuz (2026-11-05) https://gulfnews.com/world/mena/middle-east-conflict-trump-warns-of-heavy-hit-as-iran-says-americans-voted-no-to-war-1.500735100

@@ -1,5 +1,64 @@
 [
  {
+  "t": "2026-11-07T05:46:46Z",
+  "applied": 41,
+  "changed": [
+   "us-china"
+  ],
+  "warnings": [
+   "sources: bnnbloomberg.ca supplies 5 of 43 news citations (12%); diversify next run (errors above 20%)",
+   "sources: cbsnews.com supplies 5 of 43 news citations (12%); diversify next run (errors above 20%)"
+  ],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 3,
+   "judged": 17
+  },
+  "held": 0,
+  "sources": {
+   "citations": 73,
+   "news_citations": 43,
+   "outlets": 37,
+   "top_news_outlets": [
+    [
+     "bnnbloomberg.ca",
+     5
+    ],
+    [
+     "cbsnews.com",
+     5
+    ],
+    [
+     "gulfnews.com",
+     4
+    ],
+    [
+     "stripes.com",
+     3
+    ],
+    [
+     "tradingeconomics.com",
+     3
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 20,
+   "predicted_active": 0,
+   "quiet_but_status_changed": [
+    "us-china"
+   ],
+   "quiet_but_trend_changed": [
+    "h5n1",
+    "hybrid-threats",
+    "russia-nato"
+   ]
+  }
+ },
+ {
   "t": "2026-11-06T23:41:50Z",
   "applied": 41,
   "changed": [],
