@@ -20,9 +20,9 @@
    ],
    "value": "VIX 25.6, S&P -5.7%",
    "value_num": 25.64,
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-11-05T17:48:17Z",
-   "rubric_hit": "VIX 25.6 in 20–30 Watch band; S&P drawdown 5.7% in 5–15% band",
+   "rubric_hit": "VIX 25.6 ≥ 20 Watch line; S&P drawdown 5.65% ≥ 5% Watch line",
    "basis": "measured",
    "basis_detail": "VIX=25.64; S&P drawdown %=5.65",
    "assessed_at": "2026-11-08T05:51:00Z"
@@ -42,9 +42,9 @@
    ],
    "value": "10,674, -2.2% from high",
    "value_num": 10673.94,
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "Drawdown 2.2% < 5%; worst day -1.1% > -2.5% line",
+   "rubric_hit": "FTSE drawdown 2.17% below the 5% Watch line",
    "basis": "measured",
    "basis_detail": "FTSE drawdown %=2.17",
    "assessed_at": "2026-11-08T05:51:00Z"
@@ -68,10 +68,10 @@
     }
    ],
    "value": "MOVE 93, 10y 4.86%",
-   "value_num": 92.77,
-   "checked_at": "2026-11-08T05:51:00Z",
+   "value_num": 92.7721,
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "MOVE 93 < 100 and 10y 1m move 38bp < 40bp; Watch held (hysteresis)",
+   "rubric_hit": "MOVE 92.8 has not yet cleared the 90 exit line, so Watch holds; US10y 1m move 38.5bp has not yet cleared the 36bp exit line, so Watch holds",
    "basis": "measured",
    "basis_detail": "MOVE=92.77; US10y 1m move bp=38.50",
    "assessed_at": "2026-11-08T05:51:00Z"
@@ -91,9 +91,9 @@
    ],
    "value": "HY OAS 3.48%",
    "value_num": 3.48,
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "HY OAS 3.48% < 4.0%; 1m widening 39bp < 100bp",
+   "rubric_hit": "HY OAS 3.48% below the 4% Watch line",
    "basis": "measured",
    "basis_detail": "HY OAS %=3.48",
    "assessed_at": "2026-11-08T05:51:00Z"
@@ -112,10 +112,10 @@
     }
    ],
    "value": "DXY 102.3, 3m +2.5%",
-   "value_num": 102.28,
-   "checked_at": "2026-11-08T05:51:00Z",
+   "value_num": 102.279,
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "DXY 3m +2.5% < 5%; level 102.3 within 90–108",
+   "rubric_hit": "DXY 3m move 2.46% below the 5% Watch line",
    "basis": "measured",
    "basis_detail": "DXY 3m move %=2.46",
    "assessed_at": "2026-11-08T05:51:00Z"
@@ -139,10 +139,10 @@
     }
    ],
    "value": "STLFSI -0.52, CISS 0.01",
-   "value_num": -0.52,
-   "checked_at": "2026-11-08T05:51:00Z",
+   "value_num": -0.5224,
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "STLFSI -0.52 < 0; CISS 0.0068 < 0.25; no failures",
+   "rubric_hit": "STLFSI -0.52 below the 0 Watch line; ECB CISS 0.01 below the 0.25 Watch line",
    "basis": "measured",
    "basis_detail": "STLFSI=-0.52; ECB CISS=0.01",
    "assessed_at": "2026-11-08T05:51:00Z"
@@ -162,9 +162,9 @@
    ],
    "value": "$4,075, 3m -8.2%",
    "value_num": 4074.9,
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-11-06T05:46:40Z",
-   "rubric_hit": "3m change -8.2% < -8% fall line = Watch",
+   "rubric_hit": "3m fall -8.2% (Watch)",
    "basis": "measured",
    "basis_detail": "Gold 3m gain %=-8.25; 3m fall -8.2%",
    "assessed_at": "2026-11-08T05:51:00Z"
@@ -182,13 +182,13 @@
      "date": "2026-11-08"
     }
    ],
-   "value": "BTC $75,724, -13% from high",
-   "value_num": 75723.78,
-   "checked_at": "2026-11-08T05:51:00Z",
+   "value": "BTC $75,893, -12% from high",
+   "value_num": 75892.95,
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-11-04T17:53:13Z",
-   "rubric_hit": "BTC drawdown 12.6% < 25%; no de-peg or exchange failure",
+   "rubric_hit": "BTC drawdown 12.4% below the 25% Watch line",
    "basis": "measured",
-   "basis_detail": "BTC drawdown %=12.56",
+   "basis_detail": "BTC drawdown %=12.37",
    "assessed_at": "2026-11-08T05:51:00Z"
   },
   "us-recession": {
@@ -211,9 +211,9 @@
    ],
    "value": "Sahm 0.00, 10y–2y +0.35",
    "value_num": 0.0,
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "Sahm 0.00 < 0.30; no negative GDP quarter",
+   "rubric_hit": "Sahm 0 below the 0.3 Watch line",
    "basis": "measured",
    "basis_detail": "Sahm=0.00",
    "assessed_at": "2026-11-08T05:51:00Z"
@@ -400,9 +400,9 @@
    ],
    "value": "$98.3, 1m -6%",
    "value_num": 98.32,
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-11-06T17:59:39Z",
-   "rubric_hit": "Brent $98 in $85–110 Watch band; 1m -6%",
+   "rubric_hit": "Brent $98.3 ≥ $85 Watch line",
    "basis": "measured",
    "basis_detail": "Brent $=98.32; Brent 1m %=-6.11",
    "assessed_at": "2026-11-08T05:51:00Z"
@@ -421,10 +421,10 @@
     }
    ],
    "value": "€86/MWh",
-   "value_num": 85.59,
-   "checked_at": "2026-11-08T05:51:00Z",
+   "value_num": 85.588,
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "TTF €86 > €70 Alert line",
+   "rubric_hit": "TTF €85.6/MWh > €70/MWh Alert line",
    "basis": "measured",
    "basis_detail": "TTF €/MWh=85.59",
    "assessed_at": "2026-11-08T05:51:00Z"
@@ -432,34 +432,34 @@
   "chokepoints": {
    "status": "red",
    "trend": "flat",
-   "summary": "Iran's navy says a tanker hit a mine and caught fire in Hormuz on 7 Nov; US disables a blockade runner",
-   "state": "Iran's navy said an oil tanker hit a mine and caught fire in the eastern Strait of Hormuz on 7 Nov (The New Arab), and US Central Command said it fired on and disabled a cargo ship trying to break its blockade of Iranian ports the same day (RFE/RL). UKMTO reported 11 attacks on commercial vessels in the seven days to 4 Nov, and the Revolutionary Guards say Hormuz stays closed until their conditions are met. Iran makes ending the US port blockade a condition of any deal (Euronews). Traffic remains materially impeded.",
-   "for_you": "Check FCDO travel advice for the Gulf. Shipping disruption tends to raise freight costs and delay goods over the following weeks.",
+   "summary": "Iran says two tankers hit mines in Hormuz; UKMTO reports a tanker fire off Khasab on 7 Nov",
+   "state": "Iran's Revolutionary Guards said on 8 Nov that two oil tankers hit naval mines and caught fire while using unauthorised routes through Hormuz, and UKMTO reported a tanker fire about 8 nautical miles north-west of Khasab, Oman, at 19:20 UTC on 7 Nov, with the crew evacuated (Gulf News; Hellenic Shipping News). US Central Command disabled a cargo ship trying to break its blockade on 7 Nov (RFE/RL). The Guards' navy says the strait stays closed until Iran's conditions are met; traffic remains materially impeded.",
+   "for_you": "Shipping through the Gulf, and the oil, gas and freight costs tied to it, remain exposed to continued disruption. Seafarers and operators can follow UKMTO advisories.",
    "sources": [
     {
-     "title": "The New Arab — Houthis say they targeted Saudi oil sites, troops and Riyadh airport",
-     "url": "https://www.newarab.com/news/houthis-say-targeted-saudi-oil-sites-troops-and-riyadh-airport",
-     "date": "2026-11-07"
+     "title": "Hellenic Shipping News — Iran claims two oil tankers struck mines in Strait of Hormuz as UK issues fresh shipping alert",
+     "url": "https://www.hellenicshippingnews.com/iran-claims-two-oil-tankers-struck-mines-in-strait-of-hormuz-as-uk-issues-fresh-shipping-alert/",
+     "date": "2026-11-08"
     },
     {
-     "title": "RFE/RL — Iran live blog: US forces disable ship seeking to break blockade",
+     "title": "Gulf News — UAE rescues 22 crew in Gulf of Oman as US tightens Iran blockade",
+     "url": "https://gulfnews.com/world/mena/uae-rescues-22-crew-in-gulf-of-oman-as-us-tightens-iran-blockade-and-tehran-lifts-missile-limits-1.500739993",
+     "date": "2026-11-08"
+    },
+    {
+     "title": "RFE/RL — US forces disable ship seeking to break Iran blockade",
      "url": "https://www.rferl.org/a/iran-live-blog-trump-middle-east/33803414.html",
-     "date": "2026-11-07"
-    },
-    {
-     "title": "Euronews — US launches new targeted strikes on Iran as Trump claims progress in talks",
-     "url": "https://www.euronews.com/2026/11/07/us-launches-new-targeted-strikes-on-iran-as-trump-claims-progress-in-talks-with-tehran",
      "date": "2026-11-07"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Hormuz closed by IRGC; blockade enforced",
-   "rubric_hit": "Hormuz traffic materially impeded = Alert",
+   "rubric_hit": "Hormuz traffic materially impeded: IRGC says strait closed; tankers hit 7–8 Nov",
    "basis": "judged",
    "basis_detail": "",
    "value_num": 30,
-   "assessed_at": "2026-11-08T05:51:00Z"
+   "assessed_at": "2026-11-08T11:43:31Z"
   },
   "freight": {
    "status": "red",
@@ -549,7 +549,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-11-07T05:46:46Z",
    "value": "11 PLA aircraft, 10 warships (7 Nov)",
    "rubric_hit": "Large-scale PLA activity around Taiwan, no blockade = Watch",
@@ -576,7 +576,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Poland border operation to 8 Nov",
    "rubric_hit": "Alleged provocation on NATO border, no Article 4 = Watch",
@@ -602,7 +602,7 @@
      "date": "2026-11-07"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No IAEA access; 60% HEU unverified",
    "rubric_hit": "60% enrichment stock, no IAEA access = Watch",
@@ -628,7 +628,7 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Missile salvo 4 Nov; 4th launch in a month",
    "rubric_hit": "Ballistic missile launches (4 Nov) = Watch",
@@ -654,7 +654,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Rare-earth pause ends 10 Nov",
    "rubric_hit": "Major export controls threatened between large economies = Watch",
@@ -717,60 +717,65 @@
   "russia-ukraine": {
    "status": "red",
    "trend": "flat",
-   "summary": "Russia fires 172 drones and 36 ballistic missiles overnight to 7 Nov; Abu Dhabi talks set for 10 Nov",
-   "state": "President Zelenskyy said Russia launched 172 drones and 36 ballistic missiles overnight into 7 Nov, of which only four missiles were intercepted; at least two people were killed and Kyiv's energy facilities and Northern Bridge were damaged (Al Jazeera; Kyiv Independent). It follows the 2 Nov strike on an aid centre in Komyshuvakha that killed at least 50. US-brokered talks with Russia and Ukraine are set for Abu Dhabi on 10 Nov.",
-   "for_you": "Check FCDO travel advice for Ukraine and neighbouring countries. Energy-grid strikes tend to cause power cuts in Ukraine.",
+   "summary": "Russia's 7 Nov barrage hit substations linked to nuclear plants, Kyiv says; Abu Dhabi talks set for 10–11 Nov",
+   "state": "President Zelenskyy said Russia launched 172 drones and 36 ballistic missiles on 7 Nov to black out Ukraine before winter, hitting substations linked to the Rivne and Khmelnytskyi nuclear plants; no reactor damage was reported, and reported casualty counts differ (RFE/RL via Eurasia Review; IBTimes). Ukraine's foreign minister called for an urgent IAEA board meeting. It follows the 2 Nov strike on an aid site that killed at least 31 (PBS). US-brokered talks are set for Abu Dhabi on 10–11 Nov.",
+   "for_you": "Follow FCDO travel advice for Ukraine and neighbouring areas. Power cuts in Ukraine are likely to continue affecting civilians as winter begins.",
    "sources": [
     {
-     "title": "Al Jazeera — Zelenskyy accuses Russia of escalating strikes ahead of peace talks",
-     "url": "https://www.aljazeera.com/news/2026/11/7/russia-launches-missile-attack-on-kyiv-injuring-residents",
-     "date": "2026-11-07"
+     "title": "Eurasia Review (RFE/RL) — Zelenskyy says Russia seeks blackout in Ukraine ahead of US-mediated talks in Abu Dhabi",
+     "url": "https://www.eurasiareview.com/08112026-zelenskyy-says-russia-seeks-blackout-in-ukraine-ahead-of-us-mediated-talks-in-abu-dhabi/",
+     "date": "2026-11-08"
     },
     {
-     "title": "Kyiv Independent — Russian ballistic missiles slam Kyiv as Northern Bridge damaged",
-     "url": "https://kyivindependent.com/",
-     "date": "2026-11-07"
+     "title": "IBTimes Singapore — Russia strikes substations linked to Ukraine's nuclear plants days before peace talks",
+     "url": "https://www.ibtimes.sg/russia-strikes-substations-linked-ukraines-nuclear-plants-days-before-peace-talks-96038",
+     "date": "2026-11-08"
+    },
+    {
+     "title": "PBS NewsHour — Russian strikes on Ukrainian aid site kill at least 31 people",
+     "url": "https://www.pbs.org/newshour/world/russian-strikes-on-ukrainian-aid-site-kill-at-least-31-people-with-dozens-still-missing",
+     "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "208 drones and missiles on 7 Nov",
    "value_num": 208,
-   "rubric_hit": "Mass-casualty strikes and large missile barrages = Alert",
+   "rubric_hit": "Mass strikes on energy grid and nuclear-linked substations (7 Nov); aid-site strike 2 Nov",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-08T05:51:00Z"
+   "assessed_at": "2026-11-08T11:43:31Z"
   },
   "middle-east": {
    "status": "red",
    "trend": "up",
-   "summary": "Houthis claim six attacks on Saudi oil sites and Riyadh airport on 7 Nov; Houthis say Saudi strikes killed 27",
-   "state": "Houthi spokesman Yahya Saree said on 7 Nov the group carried out six operations against Aramco facilities, Riyadh airport and Saudi troops; Saudi Arabia had not responded publicly (Middle East Eye). Houthi-run media said Saudi strikes on a village in Sanaa province killed 27 people the same day, a figure not independently confirmed (The New Arab). In Gaza, rain flooded shelters on 7 Nov as aid deliveries stay below agreed levels (Al Jazeera).",
-   "for_you": "Check FCDO travel advice for Saudi Arabia, Yemen, Israel and Lebanon before travelling; flights in the region can be disrupted at short notice.",
+   "summary": "Saudi Arabia says it intercepted two Houthi missiles at Riyadh on 8 Nov; shrapnel damaged an Aramco building",
+   "state": "Saudi Arabia's Energy Ministry said shrapnel from an attempted attack damaged an Aramco administrative building in Riyadh on 8 Nov, with no injuries, and the Saudi-led coalition said it intercepted two Houthi missiles (The Week; CNN). The Houthis claimed six operations against Saudi oil sites, Riyadh airport and troops on 7 Nov (WION). The Houthi-run health ministry said Saudi strikes near Sanaa on 7 Nov killed at least 33 people, a figure not independently confirmed.",
+   "for_you": "People in or travelling to the region can check FCDO travel advice. Attacks on Saudi oil sites add to the exposure of energy markets already affected by the Gulf conflict.",
    "sources": [
     {
-     "title": "Middle East Eye — Houthis claim attacks on Saudi Aramco sites, Riyadh airport and troops",
-     "url": "https://middleeasteye.net/live-blog/live-blog-update/houthis-claim-attacks-saudi-aramco-sites-riyadh-airport-and-troops",
-     "date": "2026-11-07"
+     "title": "The Week — Saudi Aramco building damaged in Riyadh after Houthi attack from Yemen intercepted",
+     "url": "https://www.theweek.in/news/middle-east/2026/11/08/saudi-aramco-building-damaged-in-riyadh-after-houthi-attack-from-yemen-intercepted.html",
+     "date": "2026-11-08"
     },
     {
-     "title": "The New Arab — Houthis say they targeted Saudi oil sites, troops and Riyadh airport",
-     "url": "https://www.newarab.com/news/houthis-say-targeted-saudi-oil-sites-troops-and-riyadh-airport",
-     "date": "2026-11-07"
+     "title": "CNN — Building owned by Saudi oil giant damaged in missile attack on Riyadh's financial district",
+     "url": "https://www.cnn.com/2026/11/08/middleeast/saudi-arabia-riyadh-missile-financial-intl",
+     "date": "2026-11-08"
     },
     {
-     "title": "Al Jazeera — Rains flood thousands of displaced families' tents in Gaza",
-     "url": "https://www.aljazeera.com/news/2026/11/7/rains-flood-thousands-of-tents-in-gaza",
+     "title": "WION — Yemen strikes kill at least 27 near Sanaa as Houthis claim attacks on Saudi oil sites",
+     "url": "https://www.wionews.com/world/yemen-strikes-kill-at-least-27-near-sanaa-as-houthis-claim-missile-and-drone-attacks-on-saudi-oil-sites-riyadh-airport-1794069483286",
      "date": "2026-11-07"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Houthi–Saudi strikes; US–Iran war",
-   "rubric_hit": "Multi-front escalation (Saudi–Houthi, US–Iran, Gaza) = Alert",
+   "value": "Riyadh missile attack 8 Nov; US–Iran war",
+   "rubric_hit": "Multi-front escalation: Houthi–Saudi cross-border strikes 7–8 Nov alongside the US–Iran war",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-08T05:51:00Z"
+   "assessed_at": "2026-11-08T11:43:31Z"
   },
   "sudan": {
    "status": "red",
@@ -895,7 +900,7 @@
      "date": "2026-10-18"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Airspace bans to 24 Nov; no strikes",
    "rubric_hit": "Frozen relations and reciprocal bans, no strikes = Watch",
@@ -921,7 +926,7 @@
      "date": "2026-11-07"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No US–Russia treaty limits",
    "rubric_hit": "Arms-control lapse without replacement; doctrine threats = Watch",
@@ -947,7 +952,7 @@
      "date": "2026-11-07"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No active Atlantic storms",
    "rubric_hit": "No storm threatening land within 5 days = Normal",
@@ -969,10 +974,10 @@
      "date": "2026-11-08"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-11-04T23:43:43Z",
    "value": "No orange/red GDACS cyclone alerts",
-   "rubric_hit": "0 GDACS orange/red cyclone alerts",
+   "rubric_hit": "GDACS cyclone: 0 red / 0 orange",
    "basis": "measured",
    "basis_detail": "GDACS cyclone: 0 red / 0 orange",
    "assessed_at": "2026-11-08T05:51:00Z",
@@ -1017,10 +1022,10 @@
      "date": "2026-11-08"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
-   "rubric_hit": "0 GDACS orange/red wildfire alerts",
+   "rubric_hit": "GDACS wildfire: 0 red / 0 orange",
    "basis": "measured",
    "basis_detail": "GDACS wildfire: 0 red / 0 orange",
    "assessed_at": "2026-11-08T05:51:00Z",
@@ -1039,10 +1044,10 @@
      "date": "2026-11-08"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
-   "rubric_hit": "0 GDACS orange/red flood alerts",
+   "rubric_hit": "GDACS flood: 0 red / 0 orange",
    "basis": "measured",
    "basis_detail": "GDACS flood: 0 red / 0 orange",
    "assessed_at": "2026-11-08T05:51:00Z",
@@ -1063,9 +1068,9 @@
    ],
    "value": "Max M6.1, 3× M6+ (7d)",
    "value_num": 6.1,
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "No M7+ and no PAGER orange/red in 7 days",
+   "rubric_hit": "max magnitude 6.1 below the 7 Watch line",
    "basis": "measured",
    "basis_detail": "max magnitude=6.10",
    "assessed_at": "2026-11-08T05:51:00Z"
@@ -1137,9 +1142,9 @@
    ],
    "value": "G1 S0 R1",
    "value_num": 1,
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "G1 S0 R1 within G0–G2, S0–S1, R0–R2",
+   "rubric_hit": "NOAA G1 S0 R1 (24h max)",
    "basis": "measured",
    "basis_detail": "NOAA G1 S0 R1 (24h max)",
    "assessed_at": "2026-11-08T05:51:00Z"
@@ -1291,7 +1296,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "1 PHEIC (Ebola)",
    "value_num": 1,
@@ -1318,7 +1323,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "10,668 cases, 5,198 deaths (3 Nov)",
    "value_num": 10668,
@@ -1350,7 +1355,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "US H5N1 death (1 Nov); no human spread",
    "rubric_hit": "Sporadic animal-to-human cases only = Normal",
@@ -1450,7 +1455,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No unexplained clusters",
    "rubric_hit": "No unexplained clusters under investigation = Normal",
@@ -1476,7 +1481,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "EU cold-storage attacks; unclaimed",
    "rubric_hit": "Attack disrupting large companies across countries = Watch",
@@ -1497,7 +1502,7 @@
      "date": "2026-11-07"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No major outages",
    "rubric_hit": "No major outage > 2h in 48h = Normal",
@@ -1701,7 +1706,7 @@
      "date": "2026-11-07"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "10y 5.16%, 30y 5.62%",
    "value_num": 5.16,
@@ -1751,10 +1756,10 @@
     }
    ],
    "value": "8 warning(s), worst yellow",
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-11-01T11:52:42Z",
    "value_num": 8,
-   "rubric_hit": "Only yellow warnings (fog), no amber or red",
+   "rubric_hit": "worst warning: yellow",
    "basis": "measured",
    "basis_detail": "worst warning: yellow",
    "assessed_at": "2026-11-08T05:51:00Z"
@@ -1841,7 +1846,7 @@
    "summary": "SOFR 2bp above the reserve rate on 5 Nov; Fed repo use near zero",
    "state": "SOFR was 2bp above the Fed's interest on reserves on 5 Nov and peaked at 7bp over five days, inside the 10bp Watch line; Fed overnight repo operations were zero on 6 Nov (FRED). Money markets show no sign of a dollar shortage as of 8 Nov.",
    "for_you": "Short-term dollar funding is functioning normally; no knock-on effects for banks or businesses are visible.",
-   "rubric_hit": "SOFR–IORB 5d max 7bp < 10bp; repo $0bn < $15bn",
+   "rubric_hit": "SOFR–IORB 5d max 7bp below the 10bp Watch line; Fed repo ops 5d max $0bn below the $15bn Watch line",
    "sources": [
     {
      "title": "FRED — SOFR",
@@ -1854,7 +1859,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "SOFR–IORB 5d max bp=7.00; Fed repo ops 5d max $bn=0.00",
@@ -1891,11 +1896,11 @@
    "status": "green",
    "trend": "flat",
    "value": "¥158.4/$, 1w +0.5%",
-   "value_num": 158.43,
+   "value_num": 158.425,
    "summary": "Yen near ¥158 per dollar on 8 Nov; little changed on the week and month",
    "state": "The dollar was near ¥158.4 early on 8 Nov, up 0.5% on the week and 0.2% on the month, far inside the 3% weekly and 6% monthly Watch lines (Yahoo Finance). No Japanese currency intervention had been reported as of 8 Nov.",
    "for_you": "A weak yen makes travel to Japan cheaper for foreign visitors; no market stress is linked to it as of 8 Nov.",
-   "rubric_hit": "USD/JPY 1w +0.5% < 3%; 1m +0.2% < 6%",
+   "rubric_hit": "USD/JPY 1w move 0.47% below the 3% Watch line; USD/JPY 1m move 0.23% below the 6% Watch line",
    "sources": [
     {
      "title": "Yahoo Finance — USD/JPY",
@@ -1903,7 +1908,7 @@
      "date": "2026-11-08"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "USD/JPY 1w move %=0.47; USD/JPY 1m move %=0.23",
@@ -2030,7 +2035,7 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
@@ -2039,33 +2044,33 @@
   "gulf-iran": {
    "status": "red",
    "trend": "flat",
-   "value": "US strike on Qeshm 6 Nov; Qatar mediates",
-   "summary": "US strikes Iranian air defences on Qeshm late on 6 Nov; Trump says talks progressing as Qatar mediates",
-   "state": "President Trump said US forces carried out minor strikes on an Iranian air-defence site on Qeshm Island late on 6 Nov, and Iranian media reported two missiles hit the Suza area; Iran said it downed a US drone, which the US has not confirmed (Al Jazeera). Trump said there had been a lot of progress with Iran, and Qatar said on 7 Nov its mediation continues (Euronews). US Central Command disabled a blockade runner on 7 Nov (RFE/RL).",
-   "for_you": "Check FCDO travel advice for Iran and the Gulf states, which can change at short notice.",
-   "rubric_hit": "Active strikes between states and attacks on shipping = Alert",
+   "value": "US land-route task force; Qatar mediates",
+   "summary": "US launches Task Force Iron Gate on 7 Nov to curb Iran's land routes; US strike on Qeshm on 6 Nov; mediation continues",
+   "state": "US Central Command announced Task Force Iron Gate on 7 Nov to disrupt land and Caspian routes into Iran, adding to its naval blockade; Iran's Revolutionary Guards said the effort will fail (Al Jazeera; AFP via Malay Mail). President Trump confirmed US strikes on an Iranian air-defence site on Qeshm late on 6 Nov (Al Jazeera). Qatar and other mediators are working to prevent a return to full-scale fighting, and Iran says it will not make concessions (Khaleej Times).",
+   "for_you": "People with links to the Gulf can check FCDO travel advice. Energy and shipping costs remain exposed while the conflict and blockade continue.",
+   "rubric_hit": "Active US–Iran strikes (Qeshm, 6 Nov) and attacks on Gulf shipping; Hormuz restricted",
    "sources": [
     {
-     "title": "Al Jazeera — Trump confirms new US strikes on Iran's Qeshm island",
-     "url": "https://www.aljazeera.com/news/2026/11/7/trump-confirms-new-us-strikes-on-irans-qeshm-island",
-     "date": "2026-11-07"
+     "title": "Al Jazeera — US launches task force to disrupt Iran's land-based supply routes",
+     "url": "https://www.aljazeera.com/news/2026/11/8/us-launches-task-force-to-disrupt-irans-land-based-supply-routes",
+     "date": "2026-11-08"
     },
     {
-     "title": "Euronews — US launches new targeted strikes on Iran as Trump claims progress in talks",
-     "url": "https://www.euronews.com/2026/11/07/us-launches-new-targeted-strikes-on-iran-as-trump-claims-progress-in-talks-with-tehran",
-     "date": "2026-11-07"
+     "title": "Malay Mail (AFP) — US launches task force to disrupt land transit routes into Iran",
+     "url": "https://www.malaymail.com/news/world/2026/11/08/us-launches-task-force-to-disrupt-land-transit-routes-into-iran/242489",
+     "date": "2026-11-08"
     },
     {
-     "title": "RFE/RL — Iran live blog: US forces disable ship seeking to break blockade",
-     "url": "https://www.rferl.org/a/iran-live-blog-trump-middle-east/33803414.html",
+     "title": "Khaleej Times — US to set up task force to prevent Iran from ground transit of weapons",
+     "url": "https://www.khaleejtimes.com/world/mena/us-to-set-up-new-team-against-iran-land-commerce-task-force-iron-gate",
      "date": "2026-11-07"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-08T05:51:00Z"
+   "assessed_at": "2026-11-08T11:43:31Z"
   },
   "other-conflicts": {
    "status": "amber",
@@ -2175,7 +2180,7 @@
    "summary": "Three new CISA known-exploited vulnerabilities in a week, including SonicWall VPN",
    "state": "CISA added three vulnerabilities to its Known Exploited Vulnerabilities catalogue in the seven days to 6 Nov and 30 in 30 days, under the 11-a-week Watch line. The latest are a SonicWall SSL VPN flaw (6 Nov), an Apple flaw (4 Nov) and WordPress Core (3 Nov).",
    "for_you": "Keep devices and software updated; NCSC publishes guidance on patching.",
-   "rubric_hit": "3 KEV additions in 7d < 11",
+   "rubric_hit": "KEV additions 7d 3 below the 11 Watch line",
    "sources": [
     {
      "title": "CISA — Known Exploited Vulnerabilities Catalog",
@@ -2183,7 +2188,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "KEV additions 7d=3.00",
@@ -2250,7 +2255,7 @@
    "summary": "No flood warnings in England",
    "state": "The Environment Agency had no severe flood warnings, flood warnings or flood alerts in force in England at 05:40 UTC on 8 Nov.",
    "for_you": "No action needed; check the Environment Agency flood service if heavy rain is forecast.",
-   "rubric_hit": "0 severe, 0 flood warnings",
+   "rubric_hit": "EA: 0 severe, 0 warnings",
    "sources": [
     {
      "title": "Environment Agency — Check for flooding",
@@ -2258,15 +2263,15 @@
      "date": "2026-11-08"
     }
    ],
-   "checked_at": "2026-11-08T05:51:00Z",
+   "checked_at": "2026-11-08T11:43:31Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "EA: 0 severe, 0 warnings",
    "assessed_at": "2026-11-08T05:51:00Z"
   }
  },
- "headline": "The US–Iran war and Hormuz closure keep energy and shipping at Alert, as Houthis claim attacks on Saudi oil sites on 7 Nov. Russia's 7 Nov barrage hit Kyiv's grid ahead of 10 Nov Abu Dhabi talks; Ebola passes 10,600 cases.",
- "generated_at": "2026-11-08T05:51:00Z",
+ "headline": "Iran says two tankers hit mines in Hormuz as the US widens its campaign to Iran's land routes; a Houthi missile attack damages an Aramco building in Riyadh on 8 Nov. Russia's 7 Nov barrage hit nuclear-linked substations before Abu Dhabi talks.",
+ "generated_at": "2026-11-08T11:43:31Z",
  "world": {
   "score": 38,
   "band": "Unsettled",
@@ -2297,7 +2302,7 @@
    "name": "US–Iran war and Gulf energy shock",
    "status": "red",
    "trend": "flat",
-   "summary": "US strikes Qeshm air defences on 6 Nov; Iran says Hormuz stays closed; Houthis claim attacks on Saudi oil sites on 7 Nov. Brent near $98.",
+   "summary": "US launches Iron Gate task force on 7 Nov; Iran says two tankers hit mines in Hormuz; missile attack damages Aramco building in Riyadh on 8 Nov. Brent near $98.",
    "signals": [
     "gulf-iran",
     "middle-east",
@@ -2317,7 +2322,7 @@
    "name": "Russia–Ukraine war and NATO's flank",
    "status": "red",
    "trend": "flat",
-   "summary": "Russia fires 172 drones and 36 ballistic missiles overnight to 7 Nov; Abu Dhabi talks set for 10 Nov; Poland's border operation runs to 8 Nov.",
+   "summary": "Russia's 7 Nov barrage of 172 drones and 36 ballistic missiles hit nuclear-linked substations, Kyiv says; Abu Dhabi talks set for 10–11 Nov.",
    "signals": [
     "russia-ukraine",
     "russia-nato",

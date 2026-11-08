@@ -1,5 +1,5 @@
 # Canary — all signals
-as_of 2026-11-08T05:51Z · next run ~11:40 UK · stale after 2026-11-08T19:51Z (36h for daily-tier signals)
+as_of 2026-11-08T11:43Z · next run ~17:40 UK · stale after 2026-11-09T01:43Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -9,12 +9,12 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 |---|---|---|---|---|---|
 | sovereign-debt | ALERT | stable | judged | OAT–Bund ~152bp (6 Nov) | France–Bund spread about 152bp, above the 150bp Alert line; OFCE put it at 163bp on 3 Nov |
 | eu-gas | ALERT | improving | measured | €86/MWh | European gas near €86/MWh, down sharply on the week but above the €70 Alert line |
-| chokepoints | ALERT | stable | judged | Hormuz closed by IRGC; blockade enforced | Iran's navy says a tanker hit a mine and caught fire in Hormuz on 7 Nov; US disables a blockade runner |
+| chokepoints | ALERT | stable | judged | Hormuz closed by IRGC; blockade enforced | Iran says two tankers hit mines in Hormuz; UKMTO reports a tanker fire off Khasab on 7 Nov |
 | freight | ALERT | improving | published | WCI $4,389/FEU (5 Nov) | Drewry container index eased to $4,389 per 40ft on 5 Nov, still above the $4,000 Alert line |
-| russia-ukraine | ALERT | stable | judged | 208 drones and missiles on 7 Nov | Russia fires 172 drones and 36 ballistic missiles overnight to 7 Nov; Abu Dhabi talks set for 10 Nov |
-| middle-east | ALERT | worsening | judged | Houthi–Saudi strikes; US–Iran war | Houthis claim six attacks on Saudi oil sites and Riyadh airport on 7 Nov; Houthis say Saudi strikes killed 27 |
+| russia-ukraine | ALERT | stable | judged | 208 drones and missiles on 7 Nov | Russia's 7 Nov barrage hit substations linked to nuclear plants, Kyiv says; Abu Dhabi talks set for 10–11 Nov |
+| middle-east | ALERT | worsening | judged | Riyadh missile attack 8 Nov; US–Iran war | Saudi Arabia says it intercepted two Houthi missiles at Riyadh on 8 Nov; shrapnel damaged an Aramco building |
 | sudan | ALERT | worsening | judged | Drone war on grid; power cut in cities | RSF-blamed drone strikes push Sudan's power grid near collapse; Khartoum accuses Ethiopia of strikes |
-| gulf-iran | ALERT | stable | judged | US strike on Qeshm 6 Nov; Qatar mediates | US strikes Iranian air defences on Qeshm late on 6 Nov; Trump says talks progressing as Qatar mediates |
+| gulf-iran | ALERT | stable | judged | US land-route task force; Qatar mediates | US launches Task Force Iron Gate on 7 Nov to curb Iran's land routes; US strike on Qeshm on 6 Nov; mediation continues |
 | global-temp | ALERT (c) | worsening | measured | +1.99°C vs pre-industrial | Global temperature 1.99°C above pre-industrial on 1 Nov, a record for the date |
 | co2 | ALERT (c) | worsening | measured | 428.5 ppm, +3.31/yr | CO₂ 428.5 ppm at Mauna Loa, up 3.31 ppm on a year, above the 3 ppm Alert line |
 | enso | ALERT (s) | worsening | measured | ONI +2.5 (El Niño) | Super El Niño: Oceanic Niño Index +2.46°C for Aug–Oct |
@@ -67,7 +67,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | credit-spreads | NORMAL | worsening | measured | HY OAS 3.48% | US high-yield spreads 3.48% on 5 Nov, widest in a year but inside the 4% Watch line |
 | dollar | NORMAL | stable | measured | DXY 102.3, 3m +2.5% | Dollar index near 102.3 on 6 Nov, up 2.5% over three months |
 | banking-stress | NORMAL | stable | measured | STLFSI -0.52, CISS 0.01 | Financial stress gauges low; no bank failures or rescues reported |
-| crypto | NORMAL | stable | measured | BTC $75,724, -13% from high | Bitcoin near $75,700 on 8 Nov, 13% off its high; no stablecoin de-peg |
+| crypto | NORMAL | stable | measured | BTC $75,893, -12% from high | Bitcoin near $75,700 on 8 Nov, 13% off its high; no stablecoin de-peg |
 | funding-stress | NORMAL | stable | measured | SOFR–IORB +2bp, repo $0.0bn | SOFR 2bp above the reserve rate on 5 Nov; Fed repo use near zero |
 | yen-carry | NORMAL | stable | measured | ¥158.4/$, 1w +0.5% | Yen near ¥158 per dollar on 8 Nov; little changed on the week and month |
 | us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.35 | Sahm recession indicator at 0.00 after a strong October jobs report; yield curve +0.35 |

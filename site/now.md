@@ -1,14 +1,14 @@
 # Canary — world risk status
-as_of 2026-11-08T05:51Z · next run ~11:40 UK · stale after 2026-11-08T19:51Z (36h for daily-tier signals)
+as_of 2026-11-08T11:43Z · next run ~17:40 UK · stale after 2026-11-09T01:43Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 World State 38/100 (Unsettled) · 14 Alert · 42 Watch · 33 Normal
-Headline: The US–Iran war and Hormuz closure keep energy and shipping at Alert, as Houthis claim attacks on Saudi oil sites on 7 Nov. Russia's 7 Nov barrage hit Kyiv's grid ahead of 10 Nov Abu Dhabi talks; Ebola passes 10,600 cases.
+Headline: Iran says two tankers hit mines in Hormuz as the US widens its campaign to Iran's land routes; a Houthi missile attack damages an Aramco building in Riyadh on 8 Nov. Russia's 7 Nov barrage hit nuclear-linked substations before Abu Dhabi talks.
 
 ## Situations (7 cross-domain events; Alerts below are grouped under them)
-- US–Iran war and Gulf energy shock [ALERT, stable]: US strikes Qeshm air defences on 6 Nov; Iran says Hormuz stays closed; Houthis claim attacks on Saudi oil sites on 7 Nov. Brent near $98. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight; watch: iran-nuclear, sanctions, oil, fertiliser, uk-energy-cap, semiconductors
-- Russia–Ukraine war and NATO's flank [ALERT, stable]: Russia fires 172 drones and 36 ballistic missiles overnight to 7 Nov; Abu Dhabi talks set for 10 Nov; Poland's border operation runs to 8 Nov. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
+- US–Iran war and Gulf energy shock [ALERT, stable]: US launches Iron Gate task force on 7 Nov; Iran says two tankers hit mines in Hormuz; missile attack damages Aramco building in Riyadh on 8 Nov. Brent near $98. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight; watch: iran-nuclear, sanctions, oil, fertiliser, uk-energy-cap, semiconductors
+- Russia–Ukraine war and NATO's flank [ALERT, stable]: Russia's 7 Nov barrage of 172 drones and 36 ballistic missiles hit nuclear-linked substations, Kyiv says; Abu Dhabi talks set for 10–11 Nov. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
 - Super El Niño [ALERT, worsening]: ONI +2.5 for Aug–Oct; record warmth for the date on 1 Nov; CO₂ growth 3.3 ppm/yr; drought threat in southern Africa and Asia. → alert: enso, global-temp, co2; watch: drought, famine
 - Ebola outbreak, DR Congo [ALERT, worsening]: WHO counts 10,668 confirmed Ebola cases and 5,198 deaths in DR Congo to 3 Nov; cases in Kenya and Nigeria; a WHO PHEIC since May. → alert: ebola; watch: who-emergencies
 - Sudan war [ALERT, worsening]: Drone strikes push Sudan's power grid near collapse (AP, 1 Nov); Khartoum accuses Ethiopia of drone strikes on 3 Nov; IPC warns of famine risk. → alert: sudan; watch: famine

@@ -1,5 +1,53 @@
 [
  {
+  "t": "2026-11-08T11:43:31Z",
+  "applied": 41,
+  "changed": [],
+  "warnings": [],
+  "note": "Searches returned few items dated after the 05:51 UK text; 16 listed signals held on that basis. CNN Riyadh page and Channels TV could not be opened; CNN cited from its search result.",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 3,
+   "judged": 17
+  },
+  "held": 37,
+  "sources": {
+   "citations": 12,
+   "news_citations": 12,
+   "outlets": 12,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     1
+    ],
+    [
+     "cnn.com",
+     1
+    ],
+    [
+     "eurasiareview.com",
+     1
+    ],
+    [
+     "gulfnews.com",
+     1
+    ],
+    [
+     "hellenicshippingnews.com",
+     1
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 19,
+   "predicted_active": 1,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
   "t": "2026-11-08T05:51:00Z",
   "applied": 41,
   "changed": [],

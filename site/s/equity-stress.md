@@ -1,9 +1,9 @@
 # US equity stress — WATCH (stable)
-id equity-stress · Markets · horizon acute · checked 2026-11-08T05:51Z · at this level since 2026-11-05T17:48Z · stale after 2026-11-08T19:51Z
+id equity-stress · Markets · horizon acute · checked 2026-11-08T11:43Z · text written 2026-11-08T05:51Z · at this level since 2026-11-05T17:48Z · stale after 2026-11-09T01:43Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/equity-stress
 
 Value: VIX 25.6, S&P -5.7%
-Rated on: VIX 25.6 in 20–30 Watch band; S&P drawdown 5.7% in 5–15% band
+Rated on: VIX 25.6 ≥ 20 Watch line; S&P drawdown 5.65% ≥ 5% Watch line
 Basis: measured — Set by a fixed rule applied to open data (VIX = 25.64 · S&P drawdown % = 5.65). Anyone can reproduce it from the public metrics file.
 
 S&P 500 ends the week of 6 Nov 5.7% below its high; VIX 25.6, inside the Watch band
