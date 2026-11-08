@@ -1,5 +1,5 @@
 # European gas (TTF) — ALERT (improving)
-id eu-gas · Energy & Commodities · horizon acute · checked 2026-11-08T11:43Z · text written 2026-11-08T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-09T01:43Z
+id eu-gas · Energy & Commodities · horizon acute · checked 2026-11-08T17:55Z · text written 2026-11-08T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-09T07:55Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/eu-gas
 
 Value: €86/MWh

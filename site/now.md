@@ -1,29 +1,29 @@
 # Canary — world risk status
-as_of 2026-11-08T11:43Z · next run ~17:40 UK · stale after 2026-11-09T01:43Z (36h for daily-tier signals)
+as_of 2026-11-08T17:55Z · next run ~23:40 UK · stale after 2026-11-09T07:55Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
-World State 38/100 (Unsettled) · 14 Alert · 42 Watch · 33 Normal
-Headline: Iran says two tankers hit mines in Hormuz as the US widens its campaign to Iran's land routes; a Houthi missile attack damages an Aramco building in Riyadh on 8 Nov. Russia's 7 Nov barrage hit nuclear-linked substations before Abu Dhabi talks.
+World State 39/100 (Unsettled) · 14 Alert · 43 Watch · 32 Normal
+Headline: Hormuz traffic is about 20% of pre-war levels as Iran reports tanker fires on 8 Nov; Zaporizhzhia lost all off-site power on 8 Nov for the 27th time; DR Congo's Ebola outbreak passes 10,700 confirmed cases.
 
 ## Situations (7 cross-domain events; Alerts below are grouped under them)
-- US–Iran war and Gulf energy shock [ALERT, stable]: US launches Iron Gate task force on 7 Nov; Iran says two tankers hit mines in Hormuz; missile attack damages Aramco building in Riyadh on 8 Nov. Brent near $98. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight; watch: iran-nuclear, sanctions, oil, fertiliser, uk-energy-cap, semiconductors
-- Russia–Ukraine war and NATO's flank [ALERT, stable]: Russia's 7 Nov barrage of 172 drones and 36 ballistic missiles hit nuclear-linked substations, Kyiv says; Abu Dhabi talks set for 10–11 Nov. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
-- Super El Niño [ALERT, worsening]: ONI +2.5 for Aug–Oct; record warmth for the date on 1 Nov; CO₂ growth 3.3 ppm/yr; drought threat in southern Africa and Asia. → alert: enso, global-temp, co2; watch: drought, famine
-- Ebola outbreak, DR Congo [ALERT, worsening]: WHO counts 10,668 confirmed Ebola cases and 5,198 deaths in DR Congo to 3 Nov; cases in Kenya and Nigeria; a WHO PHEIC since May. → alert: ebola; watch: who-emergencies
-- Sudan war [ALERT, worsening]: Drone strikes push Sudan's power grid near collapse (AP, 1 Nov); Khartoum accuses Ethiopia of drone strikes on 3 Nov; IPC warns of famine risk. → alert: sudan; watch: famine
-- France: debt stress and protests [ALERT, stable]: OAT–Bund spread about 152bp on 6 Nov (OFCE: 163bp on 3 Nov); Fitch outlook negative on 3 Nov; mass strikes on 5 Nov; budget deadline 17 Nov. → alert: sovereign-debt; watch: civil-unrest
-- Energy shock feeding inflation [WATCH, worsening]: Bank of England raised Bank Rate to 4% on 5 Nov; euro-area inflation hit 4.0% in October and ECB officials signal more hikes. → watch: us-inflation, central-banks, uk-rates, bond-volatility, gilts; normal: em-stress
+- US–Iran war and Gulf energy shock [ALERT, stable]: Iran reports tankers on fire in Hormuz on 8 Nov; UKMTO counts 8 attacks in the strait in the week to 8 Nov; US disabled a cargo ship on 7 Nov. Brent near $98. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight; watch: iran-nuclear, sanctions, oil, fertiliser, uk-energy-cap, semiconductors
+- Russia–Ukraine war and NATO's flank [ALERT, stable]: Zaporizhzhia lost all off-site power on 8 Nov, its 27th total loss, the IAEA says; Russian barrage on 7 Nov; Abu Dhabi talks set for 10–11 Nov. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
+- Super El Niño [ALERT, worsening]: ONI +2.5 for Aug–Oct; record warmth for the date on 2 Nov; CO₂ growth 3.4 ppm/yr; drought threat in southern Africa and Asia. → alert: enso, global-temp, co2; watch: drought, famine
+- Ebola outbreak, DR Congo [ALERT, worsening]: ECDC counts 10,741 confirmed Ebola cases and 5,230 deaths in DR Congo to 5 Nov; cases in Kenya and Nigeria; a WHO PHEIC since May. → alert: ebola; watch: who-emergencies
+- Sudan war [ALERT, worsening]: RSF drone campaign on fuel and power, 21 sets of strikes by 5 Nov; a reported 153–226 killed at Amiet market on 19 Oct; IPC warns of famine risk. → alert: sudan; watch: famine
+- France: debt stress and protests [ALERT, stable]: OAT–Bund spread 153.9bp on 6 Nov, down from a 174.6bp peak on 22 Oct; Fitch outlook negative on 30 Oct; mass strikes on 5 Nov. → alert: sovereign-debt; watch: civil-unrest
+- Energy shock feeding inflation [WATCH, worsening]: Bank of England raised Bank Rate to 4% on 5 Nov; euro-area inflation hit 4.0% in October and the ECB held at 2.5% with a December rise in view. → watch: us-inflation, central-banks, uk-rates, bond-volatility, gilts; normal: em-stress
 
 ## Other Alerts
-- Cholera & mosquito-borne [cholera-dengue] worsening, AI-judged: Cholera has killed thousands in DR Congo, including the conflict-hit east, as the country also fights Ebola
-- UK terrorism threat level [uk-threat-level] stable: UK national threat level Severe: an attack is highly likely
+- Cholera & mosquito-borne [cholera-dengue] worsening, AI-judged: Cholera deaths continue in DR Congo, with insecurity limiting access in the east; DRC leads new deaths globally
+- UK terrorism threat level [uk-threat-level] stable, AI-judged: UK national terrorism threat level Severe: an attack is highly likely; no change found as of 8 Nov
 
 ## Changed in last 24h
-- Atmospheric CO₂ [co2]: WATCH→ALERT — CO₂ 428.5 ppm at Mauna Loa, up 3.31 ppm on a year, above the 3 ppm Alert line (2026-11-07T17:51Z)
+- Extreme heat [heat]: NORMAL→WATCH — Severe to extreme heatwave warnings across northern Australia; heat warnings in Mozambique to 8 Nov (2026-11-08T17:55Z)
 
 ## Watch (ids; detail at /s/{id}.md)
-equity-stress, bond-volatility, gold, private-credit, us-inflation, central-banks, oil, food-prices, critical-minerals, fertiliser, nuclear-plants, us-china, russia-nato, iran-nuclear, korea, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, drought, sea-ice, who-emergencies, mpox, measles, respiratory, medicine-shortages, cyber, cables-gnss, semiconductors, ai-governance, famine, civil-unrest, aid-funding, uk-rates, gilts, uk-energy-cap, uk-disruption
+equity-stress, bond-volatility, gold, private-credit, us-inflation, central-banks, oil, food-prices, critical-minerals, fertiliser, nuclear-plants, us-china, russia-nato, iran-nuclear, korea, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, heat, drought, sea-ice, who-emergencies, mpox, measles, respiratory, medicine-shortages, cyber, cables-gnss, semiconductors, ai-governance, famine, civil-unrest, aid-funding, uk-rates, gilts, uk-energy-cap, uk-disruption
 
 ## Sentiment (measured from open data; context only, never changes a status)
 News tone vs own past 6 months (GDELT, 7 days to 2026-11-07; number = % of past weeks less negative): gloomier: economy (96), tech (100); brighter: conflict (13), energy (4), trade (16), climate (4), disasters (7), health (4); typical: migration

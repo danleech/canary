@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-08T17:55:23Z",
+  "id": "heat",
+  "name": "Extreme heat",
+  "from": "green",
+  "to": "amber",
+  "reason": "Severe to extreme heatwave warnings across northern Australia; heat warnings in Mozambique to 8 Nov"
+ },
+ {
   "t": "2026-11-07T17:51:37Z",
   "id": "co2",
   "name": "Atmospheric CO₂",

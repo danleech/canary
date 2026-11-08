@@ -1,17 +1,17 @@
 # Shipping chokepoints — ALERT (stable)
-id chokepoints · Energy & Commodities · horizon acute · checked 2026-11-08T11:43Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-09T01:43Z
+id chokepoints · Energy & Commodities · horizon acute · checked 2026-11-08T17:55Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-09T07:55Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/chokepoints
 
-Value: Hormuz closed by IRGC; blockade enforced
-Rated on: Hormuz traffic materially impeded: IRGC says strait closed; tankers hit 7–8 Nov
+Value: Hormuz ~20% of pre-war traffic; blockade on
+Rated on: Hormuz traffic materially impeded, about 20% of pre-war levels: Alert line
 Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
-Iran says two tankers hit mines in Hormuz; UKMTO reports a tanker fire off Khasab on 7 Nov
+Iran says three tankers burned in Hormuz on 8 Nov; traffic about 20% of pre-war levels as US blockade continues
 
-Why it's at this level: Iran's Revolutionary Guards said on 8 Nov that two oil tankers hit naval mines and caught fire while using unauthorised routes through Hormuz, and UKMTO reported a tanker fire about 8 nautical miles north-west of Khasab, Oman, at 19:20 UTC on 7 Nov, with the crew evacuated (Gulf News; Hellenic Shipping News). US Central Command disabled a cargo ship trying to break its blockade on 7 Nov (RFE/RL). The Guards' navy says the strait stays closed until Iran's conditions are met; traffic remains materially impeded.
+Why it's at this level: Iran's Revolutionary Guards said on 8 Nov that three tankers burned after using unauthorised routes, and the UAE National Guard rescued 22 people from a burning cargo ship in the Gulf of Oman. UKMTO counted eight confirmed attacks in the strait and three in the Gulf in the week to 8 Nov, with three vessels sunk; few mine claims are independently confirmed (The National). Traffic is about 20% of pre-war levels (Lloyd's List Intelligence via The National); Windward counted at least 16 transits in the 20 hours to 14:00 UTC on 6 Nov. US Central Command says it has redirected 147 vessels and disabled five since July (Al Jazeera).
 
-What this means for you: Shipping through the Gulf, and the oil, gas and freight costs tied to it, remain exposed to continued disruption. Seafarers and operators can follow UKMTO advisories.
+What this means for you: Crews and operators in the Gulf face direct risk; UKMTO issues incident warnings for mariners. Oil, gas, fertiliser and freight costs worldwide stay exposed to the disruption.
 
 Why it matters: Around 30% of seaborne oil and much container trade passes Hormuz, Bab el-Mandeb/Suez, Panama and Malacca; disruption raises prices worldwide.
 What moves it: Houthi/Iran attacks, war-risk insurance, drought (Panama), naval incidents, piracy.
@@ -19,6 +19,6 @@ What moves it: Houthi/Iran attacks, war-risk insurance, drought (Panama), naval 
 Rubric — Alert: Hormuz traffic materially impeded, or any chokepoint closed, or two or more disrupted at once. | Watch: One chokepoint disrupted (attacks, large-scale diversions, draught restrictions). | Normal: All major chokepoints operating normally.
 
 Sources:
-- Hellenic Shipping News — Iran claims two oil tankers struck mines in Strait of Hormuz as UK issues fresh shipping alert (2026-11-08) https://www.hellenicshippingnews.com/iran-claims-two-oil-tankers-struck-mines-in-strait-of-hormuz-as-uk-issues-fresh-shipping-alert/
-- Gulf News — UAE rescues 22 crew in Gulf of Oman as US tightens Iran blockade (2026-11-08) https://gulfnews.com/world/mena/uae-rescues-22-crew-in-gulf-of-oman-as-us-tightens-iran-blockade-and-tehran-lifts-missile-limits-1.500739993
-- RFE/RL — US forces disable ship seeking to break Iran blockade (2026-11-07) https://www.rferl.org/a/iran-live-blog-trump-middle-east/33803414.html
+- The National — 'Smoke blanketing the strait': Iran steps up campaign of threats to shipping (2026-11-08) https://www.thenationalnews.com/news/mena/2026/11/08/smoke-blanketing-the-strait-iran-steps-up-campaign-of-threats-to-shipping/
+- Al Jazeera — US launches task force to disrupt Iran's land-based supply routes (2026-11-08) https://www.aljazeera.com/news/2026/11/8/us-launches-task-force-to-disrupt-irans-land-based-supply-routes
+- Windward — Strait of Hormuz insights (2026-11-06) https://insights.windward.ai/

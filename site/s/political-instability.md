@@ -1,16 +1,16 @@
 # Political instability — NORMAL (stable)
-id political-instability · Geopolitics · horizon acute · checked 2026-11-07T17:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-09T05:51Z
+id political-instability · Geopolitics · horizon acute · checked 2026-11-08T17:55Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-10T05:55Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/political-instability
 
-Value: No G20 collapse; Indonesia probe widens
-Rated on: No G20 collapse, contested election or coup = Normal
-Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
+Value: No G20 collapse; Indonesia probe continues
+Rated on: Normal: no G20 government collapse, contested election or coup found in the past month as of 8 Nov.
+Basis: judged — The AI assessor's reading of 1 source from 1 outlet against the rubric. Check the sources before relying on it.
 
-Indonesia names former police chief a suspect in the Prabowo wiretap case; no G20 government collapse
+Indonesia detains three police generals over alleged wiretapping of Prabowo; no G20 government collapse reported
 
-Why it's at this level: Indonesian police detained three police generals on 3 Nov over alleged tapping of President Prabowo's phone, and former national police chief Listyo Sigit Prabowo has been named a suspect (Jakarta Post; Indonesia Business Post). No G20 government had fallen and no coup or contested election had been reported as of 7 Nov.
+Why it's at this level: Indonesian police announced on 3 Nov the detention of three senior generals, including former national police chief Listyo Sigit Prabowo, over alleged illegal wiretapping of President Prabowo and others. Coordinating Minister Yusril Ihza Mahendra said investigators found no indication of treason (ABC Australia, 4 Nov). Searches on 8 Nov found no G20 government collapse, coup or contested election in the past month, so the status stays at Normal.
 
-What this means for you: No direct effect on most readers; travellers can check FCDO advice for the countries involved.
+What this means for you: Nothing here currently changes daily life for most people. People in Indonesia and those with interests there are the most exposed if the inquiry widens, and it tends to affect relations between the police and the presidency first.
 
 Why it matters: Coups, contested elections and constitutional crises in large economies unsettle markets, alliances and policy.
 What moves it: Elections, government collapses, coups, emergency rule, mass protest movements.
@@ -18,5 +18,4 @@ What moves it: Elections, government collapses, coups, emergency rule, mass prot
 Rubric — Alert: Coup or constitutional crisis in a G20 country, or deadly unrest threatening a G20 government. | Watch: Government collapse or contested election in a G20 country, or a coup anywhere. | Normal: No G20 government collapse, contested election or coup in the past month.
 
 Sources:
-- The Jakarta Post — Three police generals named in plot to bug Prabowo (2026-11-04) https://www.thejakartapost.com/indonesia/2026/11/04/three-police-generals-named-in-plot-to-bug-prabowo
-- Indonesia Business Post — Former police chief Listyo named suspect (2026-11-07) https://indonesiabusinesspost.com/7746/national-resilience/former-police-chief-listyo-named-suspect-in-alleged-wiretapping-of-prabowo
+- ABC News (Australia) — Indonesian police generals accused of illegally tapping phone of president and journalists (2026-11-04) https://www.abc.net.au/news/2026-11-04/indonesian-police-detained-over-alleged-wiretapping-of-president/107344464

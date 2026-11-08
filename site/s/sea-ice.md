@@ -1,16 +1,16 @@
 # Polar sea ice — WATCH (stable)
-id sea-ice · Climate · horizon chronic · checked 2026-11-07T17:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-09T05:51Z
+id sea-ice · Climate · horizon chronic · checked 2026-11-08T17:55Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-10T05:55Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/sea-ice
 
-Value: Arctic -1.57, Antarctic -1.50M km²
-Rated on: Worst anomaly -1.57M km² below -1.0M Watch line; no record low
-Basis: measured — Set by a fixed rule applied to open data (worst anomaly -1.57M km²). Anyone can reproduce it from the public metrics file.
+Value: Arctic -1.53, Antarctic -1.46M km²
+Rated on: Watch: Arctic -1.53M km² and Antarctic -1.46M km² both below -1.0M line; no record low for the date (7 Nov)
+Basis: measured — Set by a fixed rule applied to open data (worst anomaly -1.53M km²). Anyone can reproduce it from the public metrics file.
 
-Arctic sea ice 1.57M km² and Antarctic 1.50M km² below average on 6 Nov
+Arctic sea ice 1.53M km² and Antarctic 1.46M km² below average on 7 Nov
 
-Why it's at this level: On 6 Nov Arctic sea-ice extent was 8.43 million km², about 1.57 million below the 1981–2010 average and fourth-lowest for the date; Antarctic extent was about 1.50 million below average (NSIDC). Both are in the Watch band and neither pole is at a record low for the date.
+Why it's at this level: On 7 Nov Arctic sea-ice extent was 8.55 million km², about 1.53 million below the 1981–2010 average and fifth-lowest for the date. Antarctic extent was 15.46 million km², about 1.46 million below average and third-lowest for the date (NSIDC). Both are past the −1.0 million Watch line, and neither pole is at a record low for the date.
 
-What this means for you: Low sea ice affects polar ecosystems and shipping routes; it has little direct effect on daily life elsewhere.
+What this means for you: Sea-ice loss mainly affects polar ecosystems, regional climate and shipping routes. It has no immediate effect on most people's daily lives.
 
 Why it matters: Sea ice reflects sunlight and regulates ocean circulation; record lows accelerate warming.
 What moves it: Air and ocean temperatures, winds, season.

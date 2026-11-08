@@ -1,17 +1,17 @@
 # Atmospheric CO₂ — ALERT (worsening)
-id co2 · Climate · horizon chronic · checked 2026-11-07T17:51Z · at this level since 2026-11-07T17:51Z · stale after 2026-11-09T05:51Z
+id co2 · Climate · horizon chronic · checked 2026-11-08T17:55Z · at this level since 2026-11-07T17:51Z · stale after 2026-11-10T05:55Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/co2
 
-Value: 428.5 ppm, +3.31/yr
-Rated on: CO₂ y/y +3.31 ppm > 3.0 ppm Alert line
-Basis: measured — Set by a fixed rule applied to open data (CO₂ y/y ppm = 3.31). Anyone can reproduce it from the public metrics file.
+Value: 428.6 ppm, +3.36/yr
+Rated on: Alert: year-on-year growth 3.36 ppm > 3.0 ppm line (week of 1 Nov)
+Basis: measured — Set by a fixed rule applied to open data (CO₂ y/y ppm = 3.36). Anyone can reproduce it from the public metrics file.
 Situation: Super El Niño [super-el-nino]
 
-CO₂ 428.5 ppm at Mauna Loa, up 3.31 ppm on a year, above the 3 ppm Alert line
+CO₂ 428.6 ppm at Mauna Loa, up 3.36 ppm on a year, above the 3 ppm Alert line
 
-Why it's at this level: Mauna Loa recorded 428.5 ppm in the week of 1 Nov, 3.31 ppm higher than a year earlier, above the 3 ppm/yr Alert line and up from 2.12 ppm on the previous weekly reading (NOAA GML). Weekly growth figures are noisy, but strong El Niño years usually speed up CO₂ growth as land carbon sinks weaken, and the ONI stands at +2.5 (NOAA CPC).
+Why it's at this level: Mauna Loa recorded 428.57 ppm in the week of 1 Nov, 3.36 ppm higher than a year earlier and above the 3 ppm per year Alert line (NOAA GML). Weekly growth figures are noisy, so one reading can move the rate noticeably. The weekly level has risen from 425.91 ppm over the past eight readings.
 
-What this means for you: Faster CO₂ growth adds to long-term warming; it has no immediate effect on daily life.
+What this means for you: CO₂ growth is a slow indicator of long-term warming rather than an immediate hazard. It shapes climate risk over decades.
 
 Why it matters: CO₂ concentration is the main long-run driver of warming; the growth rate shows whether emissions cuts are biting.
 What moves it: Fossil emissions, land sinks, El Niño (weakens sinks), wildfires.
@@ -19,5 +19,4 @@ What moves it: Fossil emissions, land sinks, El Niño (weakens sinks), wildfires
 Rubric — Alert: > 3.0 ppm. | Watch: 2.0–3.0 ppm. | Normal: Year-on-year growth < 2.0 ppm.
 
 Sources:
-- NOAA GML — Trends in atmospheric CO₂ (Mauna Loa) (2026-11-07) https://gml.noaa.gov/ccgg/trends/
-- NOAA CPC — Oceanic Niño Index (2026-11-07) https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/ONI_v5.php
+- NOAA GML — Trends in atmospheric CO₂, Mauna Loa weekly (2026-11-01) https://gml.noaa.gov/ccgg/trends/

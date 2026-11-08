@@ -1,5 +1,110 @@
 [
  {
+  "t": "2026-11-08T17:55:43Z",
+  "applied": 89,
+  "changed": [],
+  "warnings": [],
+  "note": "Search budget ran out mid-run. CrisisWatch could not be opened, so the surprise check was partial; russia-ukraine held pending a full rewrite; direct fetches of mi5.gov.uk, drewry.co.uk, ipcinfo.org and some official pages failed.",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 27,
+   "published": 11,
+   "judged": 51
+  },
+  "held": 34,
+  "sources": {
+   "citations": 119,
+   "news_citations": 81,
+   "outlets": 93,
+   "top_news_outlets": [
+    [
+     "tradingeconomics.com",
+     3
+    ],
+    [
+     "aa.com.tr",
+     2
+    ],
+    [
+     "abc.net.au",
+     2
+    ],
+    [
+     "aljazeera.com",
+     2
+    ],
+    [
+     "criticalthreats.org",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 57,
+   "predicted_active": 5,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
+  "t": "2026-11-08T17:55:23Z",
+  "applied": 89,
+  "changed": [
+   "heat"
+  ],
+  "warnings": [],
+  "note": "Search budget ran out mid-run. CrisisWatch could not be opened, so the surprise check was partial; russia-ukraine held pending a full rewrite; direct fetches of mi5.gov.uk, drewry.co.uk, ipcinfo.org and some official pages failed.",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 27,
+   "published": 11,
+   "judged": 51
+  },
+  "held": 34,
+  "sources": {
+   "citations": 120,
+   "news_citations": 82,
+   "outlets": 94,
+   "top_news_outlets": [
+    [
+     "tradingeconomics.com",
+     3
+    ],
+    [
+     "aa.com.tr",
+     2
+    ],
+    [
+     "abc.net.au",
+     2
+    ],
+    [
+     "aljazeera.com",
+     2
+    ],
+    [
+     "criticalthreats.org",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 57,
+   "predicted_active": 5,
+   "quiet_but_status_changed": [
+    "heat"
+   ],
+   "quiet_but_trend_changed": [
+    "nuclear-plants",
+    "other-conflicts",
+    "sovereign-debt",
+    "sudan"
+   ]
+  }
+ },
+ {
   "t": "2026-11-08T11:43:31Z",
   "applied": 41,
   "changed": [],
