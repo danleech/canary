@@ -1,5 +1,58 @@
 [
  {
+  "t": "2026-11-08T05:51:00Z",
+  "applied": 41,
+  "changed": [],
+  "warnings": [
+   "sources: rferl.org supplies 5 of 34 news citations (15%); diversify next run (errors above 20%)",
+   "sources: euronews.com supplies 4 of 34 news citations (12%); diversify next run (errors above 20%)"
+  ],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 3,
+   "judged": 17
+  },
+  "held": 0,
+  "sources": {
+   "citations": 69,
+   "news_citations": 34,
+   "outlets": 34,
+   "top_news_outlets": [
+    [
+     "rferl.org",
+     5
+    ],
+    [
+     "euronews.com",
+     4
+    ],
+    [
+     "aljazeera.com",
+     3
+    ],
+    [
+     "newarab.com",
+     2
+    ],
+    [
+     "armscontrol.org",
+     1
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 19,
+   "predicted_active": 1,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": [
+    "middle-east"
+   ]
+  }
+ },
+ {
   "t": "2026-11-07T23:41:53Z",
   "applied": 41,
   "changed": [],

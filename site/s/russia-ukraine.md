@@ -1,17 +1,17 @@
 # Russia–Ukraine — ALERT (stable)
-id russia-ukraine · Armed Conflict · horizon acute · checked 2026-11-07T23:41Z · text written 2026-11-07T05:46Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-08T13:41Z
+id russia-ukraine · Armed Conflict · horizon acute · checked 2026-11-08T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-08T19:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/russia-ukraine
 
-Value: Komyshuvakha strike: 53 dead
-Rated on: Mass-casualty strike (53 killed, 2 Nov) = Alert
-Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
+Value: 208 drones and missiles on 7 Nov
+Rated on: Mass-casualty strikes and large missile barrages = Alert
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: Russia–Ukraine war and NATO's flank [russia-ukraine-war]
 
-Death toll from Russia's 2 Nov strike on an aid centre in Komyshuvakha rises to 53; ballistic missiles hit Kyiv
+Russia fires 172 drones and 36 ballistic missiles overnight to 7 Nov; Abu Dhabi talks set for 10 Nov
 
-Why it's at this level: The Zaporizhzhia regional administration said on 6 Nov that 53 people were killed by Russia's 2 Nov strike on a former school handing out aid in Komyshuvakha, where a second strike hit a shelter (Interfax-Ukraine; Kyiv Post). Russian ballistic missiles hit Kyiv overnight into 7 Nov, injuring at least three, and Ukraine struck a refinery in Saratov region (Kyiv Independent). Trilateral talks in Abu Dhabi are planned.
+Why it's at this level: President Zelenskyy said Russia launched 172 drones and 36 ballistic missiles overnight into 7 Nov, of which only four missiles were intercepted; at least two people were killed and Kyiv's energy facilities and Northern Bridge were damaged (Al Jazeera; Kyiv Independent). It follows the 2 Nov strike on an aid centre in Komyshuvakha that killed at least 50. US-brokered talks with Russia and Ukraine are set for Abu Dhabi on 10 Nov.
 
-What this means for you: For travel, follow FCDO advice, which warns against all travel to Ukraine.
+What this means for you: Check FCDO travel advice for Ukraine and neighbouring countries. Energy-grid strikes tend to cause power cuts in Ukraine.
 
 Why it matters: Europe's largest war since 1945 shapes European security, energy, food exports and defence budgets.
 What moves it: Front-line offensives, strike campaigns on energy, Western aid, negotiations, nuclear plant safety.
@@ -19,6 +19,5 @@ What moves it: Front-line offensives, strike campaigns on energy, Western aid, n
 Rubric — Alert: Significant escalation — major new offensive, mass-casualty strikes, a nuclear-plant safety incident, or new state involvement. | Watch: Active war at sustained intensity, or a ceasefire under strain. | Normal: Ceasefire or peace deal holding.
 
 Sources:
-- Interfax-Ukraine — Death toll from Nov 2 strike on Komyshuvakha rises to 53 (2026-11-06) https://en.interfax.com.ua/news/general/1232268.html
-- Kyiv Post — Russian bombing of Komyshuvakha kills 53 (2026-11-06) https://www.kyivpost.com/post/89335
-- Kyiv Independent — latest news (2026-11-07) https://kyivindependent.com/
+- Al Jazeera — Zelenskyy accuses Russia of escalating strikes ahead of peace talks (2026-11-07) https://www.aljazeera.com/news/2026/11/7/russia-launches-missile-attack-on-kyiv-injuring-residents
+- Kyiv Independent — Russian ballistic missiles slam Kyiv as Northern Bridge damaged (2026-11-07) https://kyivindependent.com/

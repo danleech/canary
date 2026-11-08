@@ -1,5 +1,5 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-07T23:41Z · next run ~05:40 UK · stale after 2026-11-08T13:41Z (36h for daily-tier signals)
+as_of 2026-11-08T05:51Z · next run ~11:40 UK · stale after 2026-11-08T19:51Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -27,4 +27,3 @@ Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judge
 - 2026-11-01T11:52Z UK weather warnings [uk-weather]: WATCH→NORMAL — No Met Office weather warnings in force
 - 2026-11-01T11:52Z Atmospheric CO₂ [co2]: NORMAL→WATCH — CO₂ growth reaches 2 ppm a year as El Niño weakens carbon sinks
 - 2026-11-01T11:52Z Pacific & Indian cyclones [other-cyclones]: NORMAL→ALERT — GDACS red alert as Cyclone Murasu heads for Andhra Pradesh landfall on 3 Nov
-- 2026-10-31T23:53Z UK weather warnings [uk-weather]: NORMAL→WATCH — Yellow fog warnings across most of England and Wales for 1 Nov
