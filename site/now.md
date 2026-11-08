@@ -1,14 +1,14 @@
 # Canary — world risk status
-as_of 2026-11-08T17:55Z · next run ~23:40 UK · stale after 2026-11-09T07:55Z (36h for daily-tier signals)
+as_of 2026-11-08T23:44Z · next run ~05:40 UK · stale after 2026-11-09T13:44Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 World State 39/100 (Unsettled) · 14 Alert · 43 Watch · 32 Normal
-Headline: Hormuz traffic is about 20% of pre-war levels as Iran reports tanker fires on 8 Nov; Zaporizhzhia lost all off-site power on 8 Nov for the 27th time; DR Congo's Ebola outbreak passes 10,700 confirmed cases.
+Headline: Russian strikes cut power to over 850,000 in Ukraine on 8 Nov ahead of Abu Dhabi talks; Trump says renewed strikes on Iran are unlikely as Hormuz attacks continue; the Saudi-led coalition hit a Houthi launcher after the attack on Riyadh.
 
 ## Situations (7 cross-domain events; Alerts below are grouped under them)
-- US–Iran war and Gulf energy shock [ALERT, stable]: Iran reports tankers on fire in Hormuz on 8 Nov; UKMTO counts 8 attacks in the strait in the week to 8 Nov; US disabled a cargo ship on 7 Nov. Brent near $98. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight; watch: iran-nuclear, sanctions, oil, fertiliser, uk-energy-cap, semiconductors
-- Russia–Ukraine war and NATO's flank [ALERT, stable]: Zaporizhzhia lost all off-site power on 8 Nov, its 27th total loss, the IAEA says; Russian barrage on 7 Nov; Abu Dhabi talks set for 10–11 Nov. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
+- US–Iran war and Gulf energy shock [ALERT, stable]: Trump says renewed strikes on Iran are unlikely if talks progress (8 Nov); tankers on fire in Hormuz; US disabled a ship on 7 Nov. Brent near $97. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight; watch: iran-nuclear, sanctions, oil, fertiliser, uk-energy-cap, semiconductors
+- Russia–Ukraine war and NATO's flank [ALERT, stable]: Russian strikes cut power to over 850,000 on 8 Nov; Zaporizhzhia lost all off-site power, the IAEA says; Abu Dhabi talks set for 10–11 Nov. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
 - Super El Niño [ALERT, worsening]: ONI +2.5 for Aug–Oct; record warmth for the date on 2 Nov; CO₂ growth 3.4 ppm/yr; drought threat in southern Africa and Asia. → alert: enso, global-temp, co2; watch: drought, famine
 - Ebola outbreak, DR Congo [ALERT, worsening]: ECDC counts 10,741 confirmed Ebola cases and 5,230 deaths in DR Congo to 5 Nov; cases in Kenya and Nigeria; a WHO PHEIC since May. → alert: ebola; watch: who-emergencies
 - Sudan war [ALERT, worsening]: RSF drone campaign on fuel and power, 21 sets of strikes by 5 Nov; a reported 153–226 killed at Amiet market on 19 Oct; IPC warns of famine risk. → alert: sudan; watch: famine
@@ -26,7 +26,7 @@ Headline: Hormuz traffic is about 20% of pre-war levels as Iran reports tanker f
 equity-stress, bond-volatility, gold, private-credit, us-inflation, central-banks, oil, food-prices, critical-minerals, fertiliser, nuclear-plants, us-china, russia-nato, iran-nuclear, korea, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, heat, drought, sea-ice, who-emergencies, mpox, measles, respiratory, medicine-shortages, cyber, cables-gnss, semiconductors, ai-governance, famine, civil-unrest, aid-funding, uk-rates, gilts, uk-energy-cap, uk-disruption
 
 ## Sentiment (measured from open data; context only, never changes a status)
-News tone vs own past 6 months (GDELT, 7 days to 2026-11-07; number = % of past weeks less negative): gloomier: economy (96), tech (100); brighter: conflict (13), energy (4), trade (16), climate (4), disasters (7), health (4); typical: migration
+News tone vs own past 6 months (GDELT, 7 days to 2026-11-08; number = % of past weeks less negative): gloomier: economy (96), tech (100); brighter: conflict (18), energy (5), trade (15), climate (4), disasters (13), health (11); typical: migration
 Consumer confidence (OECD, long-run avg 100): OECD 98.4 (2026-09), GBR 100.9 (2026-09), USA 96.1 (2026-09), EA20 98.3 (2026-09), JPN 98.5 (2026-09), CHN 95.4 (2026-07), IND 101.3 (2026-06)
 Uncertainty: US policy uncertainty 1.2× its 1-year median · Geopolitical risk in the news 0.8× its 1-year median · Market fear (VIX) higher than 95% of the past year
 

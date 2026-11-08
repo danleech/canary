@@ -1,5 +1,101 @@
 [
  {
+  "t": "2026-11-08T23:44:25Z",
+  "applied": 41,
+  "changed": [],
+  "warnings": [],
+  "note": "CrisisWatch's current edition did not surface in search; the surprise check relied on general news searches and found nothing to add. Fourteen listed signals held after searches found nothing new.",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 3,
+   "judged": 17
+  },
+  "held": 35,
+  "sources": {
+   "citations": 15,
+   "news_citations": 14,
+   "outlets": 12,
+   "top_news_outlets": [
+    [
+     "abc.net.au",
+     2
+    ],
+    [
+     "israelhayom.com",
+     2
+    ],
+    [
+     "khaleejtimes.com",
+     2
+    ],
+    [
+     "aljazeera.com",
+     1
+    ],
+    [
+     "aninews.in",
+     1
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 19,
+   "predicted_active": 1,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
+  "t": "2026-11-08T23:44:16Z",
+  "applied": 41,
+  "changed": [],
+  "warnings": [],
+  "note": "CrisisWatch's current edition did not surface in search; the surprise check relied on general news searches and found nothing to add. Fourteen listed signals held after searches found nothing new.",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 3,
+   "judged": 17
+  },
+  "held": 35,
+  "sources": {
+   "citations": 15,
+   "news_citations": 14,
+   "outlets": 12,
+   "top_news_outlets": [
+    [
+     "abc.net.au",
+     2
+    ],
+    [
+     "israelhayom.com",
+     2
+    ],
+    [
+     "khaleejtimes.com",
+     2
+    ],
+    [
+     "aljazeera.com",
+     1
+    ],
+    [
+     "aninews.in",
+     1
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 19,
+   "predicted_active": 1,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
   "t": "2026-11-08T17:55:43Z",
   "applied": 89,
   "changed": [],

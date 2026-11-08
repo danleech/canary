@@ -20,7 +20,7 @@
    ],
    "value": "VIX 25.6, S&P -5.7%",
    "value_num": 25.64,
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-11-05T17:48:17Z",
    "rubric_hit": "VIX 25.6 ≥ 20 Watch line; S&P drawdown 5.65% ≥ 5% Watch line",
    "basis": "measured",
@@ -42,7 +42,7 @@
    ],
    "value": "10,674, -2.2% from high",
    "value_num": 10673.94,
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "FTSE drawdown 2.17% below the 5% Watch line",
    "basis": "measured",
@@ -69,7 +69,7 @@
    ],
    "value": "MOVE 93, 10y 4.86%",
    "value_num": 92.7721,
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "MOVE 92.8 has not yet cleared the 90 exit line, so Watch holds; US10y 1m move 38.5bp has not yet cleared the 36bp exit line, so Watch holds",
    "basis": "measured",
@@ -91,7 +91,7 @@
    ],
    "value": "HY OAS 3.48%",
    "value_num": 3.48,
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "HY OAS 3.48% below the 4% Watch line",
    "basis": "measured",
@@ -111,13 +111,13 @@
      "date": "2026-11-06"
     }
    ],
-   "value": "DXY 102.3, 3m +2.5%",
-   "value_num": 102.279,
-   "checked_at": "2026-11-08T17:55:43Z",
+   "value": "DXY 102.3, 3m +2.2%",
+   "value_num": 102.257,
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "DXY 3m move 2.46% below the 5% Watch line",
+   "rubric_hit": "DXY 3m move 2.25% below the 5% Watch line",
    "basis": "measured",
-   "basis_detail": "DXY 3m move %=2.46",
+   "basis_detail": "DXY 3m move %=2.25",
    "assessed_at": "2026-11-08T05:51:00Z"
   },
   "banking-stress": {
@@ -140,7 +140,7 @@
    ],
    "value": "STLFSI -0.52, CISS 0.01",
    "value_num": -0.5224,
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "STLFSI -0.52 below the 0 Watch line; ECB CISS 0.01 below the 0.25 Watch line",
    "basis": "measured",
@@ -160,13 +160,13 @@
      "date": "2026-11-06"
     }
    ],
-   "value": "$4,075, 3m -8.2%",
-   "value_num": 4074.9,
-   "checked_at": "2026-11-08T17:55:43Z",
+   "value": "$4,076, 3m -8.2%",
+   "value_num": 4075.9,
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-11-06T05:46:40Z",
    "rubric_hit": "3m fall -8.2% (Watch)",
    "basis": "measured",
-   "basis_detail": "Gold 3m gain %=-8.25; 3m fall -8.2%",
+   "basis_detail": "Gold 3m gain %=-8.22; 3m fall -8.2%",
    "assessed_at": "2026-11-08T05:51:00Z"
   },
   "crypto": {
@@ -182,13 +182,13 @@
      "date": "2026-11-08"
     }
    ],
-   "value": "BTC $75,644, -13% from high",
-   "value_num": 75644.15,
-   "checked_at": "2026-11-08T17:55:43Z",
+   "value": "BTC $75,048, -13% from high",
+   "value_num": 75048.42,
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-11-04T17:53:13Z",
-   "rubric_hit": "BTC drawdown 12.7% below the 25% Watch line",
+   "rubric_hit": "BTC drawdown 13.3% below the 25% Watch line",
    "basis": "measured",
-   "basis_detail": "BTC drawdown %=12.65",
+   "basis_detail": "BTC drawdown %=13.34",
    "assessed_at": "2026-11-08T05:51:00Z"
   },
   "us-recession": {
@@ -211,7 +211,7 @@
    ],
    "value": "Sahm 0.00, 10y–2y +0.35",
    "value_num": 0.0,
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "Sahm 0 below the 0.3 Watch line",
    "basis": "measured",
@@ -398,13 +398,13 @@
      "date": "2026-11-07"
     }
    ],
-   "value": "$98.3, 1m -6%",
-   "value_num": 98.32,
-   "checked_at": "2026-11-08T17:55:43Z",
+   "value": "$97.4, 1m -7%",
+   "value_num": 97.4,
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-11-06T17:59:39Z",
-   "rubric_hit": "Brent $98.3 ≥ $85 Watch line",
+   "rubric_hit": "Brent $97.4 ≥ $85 Watch line",
    "basis": "measured",
-   "basis_detail": "Brent $=98.32; Brent 1m %=-6.11",
+   "basis_detail": "Brent $=97.40; Brent 1m %=-6.99",
    "assessed_at": "2026-11-08T05:51:00Z"
   },
   "eu-gas": {
@@ -422,7 +422,7 @@
    ],
    "value": "€86/MWh",
    "value_num": 85.588,
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "TTF €85.6/MWh > €70/MWh Alert line",
    "basis": "measured",
@@ -452,7 +452,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Hormuz ~20% of pre-war traffic; blockade on",
    "rubric_hit": "Hormuz traffic materially impeded, about 20% of pre-war levels: Alert line",
@@ -544,29 +544,34 @@
   "us-china": {
    "status": "amber",
    "trend": "flat",
-   "summary": "PLA activity near Taiwan eases from the 3 Nov peak; Taiwan counts 11 aircraft and 10 warships on 7 Nov",
-   "state": "Taiwan's defence ministry recorded 11 PLA aircraft, 10 warships and three other Chinese government vessels in the 24 hours to 06:00 on 7 Nov, and 125 aircraft sightings since 1 Nov (Voice of Emirates, citing the ministry). That is down from 49 aircraft in the 24 hours to 3 Nov, which an analyst called a quiet exercise without a formal announcement (Taipei Times). Watch is kept while the large deployment persists.",
-   "for_you": "Check FCDO travel advice for Taiwan if travelling. Cross-strait tension tends to weigh on technology supply chains.",
+   "summary": "Taiwan's 8 Nov count falls to 4 PLA aircraft and 6 warships, from 11 aircraft and 10 warships on 7 Nov",
+   "state": "Taiwan's defence ministry reported 4 PLA aircraft and 6 naval vessels near the island in its 8 Nov count (ANI; The Tribune), down from 11 aircraft and 10 warships on 7 Nov (Taiwan News). Activity has fallen through the week, but Watch is kept as one low daily count does not show the recent large deployment has ended. No blockade, clash or break in diplomatic channels was reported as of 8 Nov.",
+   "for_you": "Exposure is indirect: Taiwan makes most of the world's advanced chips, so a sustained crisis would affect electronics supply.",
    "sources": [
     {
-     "title": "Voice of Emirates — Taiwan detects intensive Chinese military activity in its vicinity",
-     "url": "https://www.voiceofemirates.com/en/politics/2026/11/07/taiwan-detects-intensive-chinese-military-activity-in-its-vicinity-with-dozens-of-aircraft-and-vessels-spotted/",
-     "date": "2026-11-07"
+     "title": "ANI — Taiwan detects 4 PLA aircraft, 6 PLAN vessels",
+     "url": "https://aninews.in/news/world/asia/taiwan-detects-4-pla-aircraft-6-plan-vessels-operating-near-territory20261108072451/",
+     "date": "2026-11-08"
     },
     {
-     "title": "Taipei Times — Heightened Chinese activity detected",
-     "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/11/04/2003867122",
-     "date": "2026-11-04"
+     "title": "The Tribune — Taiwan detects 4 PLA aircraft, 6 PLAN vessels",
+     "url": "https://www.tribuneindia.com/news/world/taiwan-detects-4-pla-aircraft-6-plan-vessels-operating-near-territory",
+     "date": "2026-11-08"
+    },
+    {
+     "title": "Taiwan News — Taiwan tracks 11 Chinese military aircraft and 13 ships",
+     "url": "https://www.taiwannews.com.tw/news/6473240",
+     "date": "2026-11-07"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-11-07T05:46:46Z",
-   "value": "11 PLA aircraft, 10 warships (7 Nov)",
-   "rubric_hit": "Large-scale PLA activity around Taiwan, no blockade = Watch",
+   "value": "4 PLA aircraft, 6 warships (8 Nov report)",
+   "rubric_hit": "Recent large-scale PLA activity around Taiwan = Watch; no blockade or clash",
    "basis": "judged",
    "basis_detail": "",
-   "value_num": 11,
-   "assessed_at": "2026-11-08T05:51:00Z"
+   "value_num": 4,
+   "assessed_at": "2026-11-08T23:44:25Z"
   },
   "russia-nato": {
    "status": "amber",
@@ -586,7 +591,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Poland border operation to 8 Nov",
    "rubric_hit": "Alleged provocation on NATO border, no Article 4 = Watch",
@@ -597,28 +602,33 @@
   "iran-nuclear": {
    "status": "amber",
    "trend": "flat",
-   "summary": "Iran refuses nuclear talks until its conditions are met; Revolutionary Guards warn on doctrine",
-   "state": "Two Middle East officials said on 7 Nov that Iran is reviewing Qatari proposals on the nuclear dispute but still refuses nuclear talks until core conditions such as lifting the US port blockade are met (Euronews). A Revolutionary Guards spokesman said on 7 Nov that Iran would respond if its leadership changed nuclear doctrine, and the US offered up to $20m for information on the programme on 6 Nov (RFE/RL). No strike on a nuclear site was reported.",
-   "for_you": "No direct public-safety effect outside the region. Check FCDO travel advice for Iran and the Gulf.",
+   "summary": "Iran says mediators stopped travelling after the US midterms; Trump ties any renewed strikes to the talks",
+   "state": "Iran's Foreign Minister Araghchi said on state TV on 8 Nov that mediators had stopped travelling after the shock of the US election results (Israel Hayom; Khaleej Times). President Trump told CNN the same day that renewed strikes were unlikely to be needed while nuclear and Hormuz talks progress. AP reported on 8 Nov that Iran is reviewing Qatari proposals but will not negotiate on nuclear issues until the US meets its conditions (ABC Australia). No strike on a nuclear site was reported as of 8 Nov.",
+   "for_you": "No public safety guidance applies. The dispute feeds into the risk of renewed Gulf hostilities and into energy prices.",
    "sources": [
     {
-     "title": "Euronews — US launches new targeted strikes on Iran as Trump claims progress in talks",
-     "url": "https://www.euronews.com/2026/11/07/us-launches-new-targeted-strikes-on-iran-as-trump-claims-progress-in-talks-with-tehran",
-     "date": "2026-11-07"
+     "title": "Khaleej Times — Live updates, 8 November",
+     "url": "https://www.khaleejtimes.com/world/mena/us-israel-iran-saudi-arabia-yemen-war-live-updates-november-8-2026",
+     "date": "2026-11-08"
     },
     {
-     "title": "RFE/RL — Iran live blog: US forces disable ship seeking to break blockade",
-     "url": "https://www.rferl.org/a/iran-live-blog-trump-middle-east/33803414.html",
-     "date": "2026-11-07"
+     "title": "ABC News Australia — Iran reviews de-escalation proposals",
+     "url": "https://www.abc.net.au/news/2026-11-08/iran-strait-of-hormuz-update-explosions-talks/107360730",
+     "date": "2026-11-08"
+    },
+    {
+     "title": "Israel Hayom — Trump on Iran talks",
+     "url": "https://www.israelhayom.com/2026/11/08/trump-renewed-strikes-on-iran-highly-unlikely-to-be-necessary/",
+     "date": "2026-11-08"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "No IAEA access; 60% HEU unverified",
-   "rubric_hit": "60% enrichment stock, no IAEA access = Watch",
+   "value": "No IAEA access; talks stalled 8 Nov",
+   "rubric_hit": "Inspector access curtailed; 60% enriched stock unverified = Watch",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-08T05:51:00Z"
+   "assessed_at": "2026-11-08T23:44:25Z"
   },
   "korea": {
    "status": "amber",
@@ -633,7 +643,7 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "4 weapons tests in a week to 4 Nov",
    "rubric_hit": "Watch: missile launches, with four tests in the week to 4 Nov. Alert line (nuclear test, ICBM overflight of Japan or military clash) not met.",
@@ -659,7 +669,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Rare-earth pause ends 10 Nov",
    "rubric_hit": "Major export controls threatened between large economies = Watch",
@@ -722,65 +732,60 @@
   "russia-ukraine": {
    "status": "red",
    "trend": "flat",
-   "summary": "Russia's 7 Nov barrage hit substations linked to nuclear plants, Kyiv says; Abu Dhabi talks set for 10–11 Nov",
-   "state": "President Zelenskyy said Russia launched 172 drones and 36 ballistic missiles on 7 Nov to black out Ukraine before winter, hitting substations linked to the Rivne and Khmelnytskyi nuclear plants; no reactor damage was reported, and reported casualty counts differ (RFE/RL via Eurasia Review; IBTimes). Ukraine's foreign minister called for an urgent IAEA board meeting. It follows the 2 Nov strike on an aid site that killed at least 31 (PBS). US-brokered talks are set for Abu Dhabi on 10–11 Nov.",
-   "for_you": "Follow FCDO travel advice for Ukraine and neighbouring areas. Power cuts in Ukraine are likely to continue affecting civilians as winter begins.",
+   "summary": "Russian strikes cut power to more than 850,000 on 8 Nov; US-brokered Abu Dhabi talks are set for 10–11 Nov",
+   "state": "Russian strikes on 8 Nov left more than 850,000 customers without power, including over 600,000 in Dnipropetrovsk region, DTEK said, with supply being restored (Euronews). President Zelenskyy said drones hit rescuers at Komyshuvakha, site of the 2 Nov bombing, and reported 115 missiles and over 3,000 attack drones in the past week. Russia's defence ministry says it will keep striking energy sites (Al Jazeera). US-brokered talks are set for Abu Dhabi on 10–11 Nov.",
+   "for_you": "FCDO travel advice is the official guide for anyone with links to Ukraine. Attacks on energy sites affect heating and water supply as winter begins.",
    "sources": [
     {
-     "title": "Eurasia Review (RFE/RL) — Zelenskyy says Russia seeks blackout in Ukraine ahead of US-mediated talks in Abu Dhabi",
-     "url": "https://www.eurasiareview.com/08112026-zelenskyy-says-russia-seeks-blackout-in-ukraine-ahead-of-us-mediated-talks-in-abu-dhabi/",
+     "title": "Al Jazeera — Russian strikes leave hundreds of thousands without electricity",
+     "url": "https://www.aljazeera.com/news/2026/11/8/russian-strikes-on-ukraine-leave-hundreds-of-thousands-without-electricity",
      "date": "2026-11-08"
     },
     {
-     "title": "IBTimes Singapore — Russia strikes substations linked to Ukraine's nuclear plants days before peace talks",
-     "url": "https://www.ibtimes.sg/russia-strikes-substations-linked-ukraines-nuclear-plants-days-before-peace-talks-96038",
+     "title": "Euronews — Russian strikes leave 850,000 without power",
+     "url": "https://www.euronews.com/2026/11/08/russian-strikes-on-ukraine-leave-850000-without-power-as-zelenskyy-reports-drone-attack-on",
      "date": "2026-11-08"
-    },
-    {
-     "title": "PBS NewsHour — Russian strikes on Ukrainian aid site kill at least 31 people",
-     "url": "https://www.pbs.org/newshour/world/russian-strikes-on-ukrainian-aid-site-kill-at-least-31-people-with-dozens-still-missing",
-     "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "208 drones and missiles on 7 Nov",
+   "value": "850,000 without power on 8 Nov",
    "value_num": 208,
-   "rubric_hit": "Mass strikes on energy grid and nuclear-linked substations (7 Nov); aid-site strike 2 Nov",
+   "rubric_hit": "Mass strikes on energy infrastructure, escalating before talks = Alert",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-08T11:43:31Z"
+   "assessed_at": "2026-11-08T23:44:25Z"
   },
   "middle-east": {
    "status": "red",
    "trend": "up",
-   "summary": "Saudi Arabia says it intercepted two Houthi missiles at Riyadh on 8 Nov; shrapnel damaged an Aramco building",
-   "state": "Saudi Arabia's Energy Ministry said shrapnel from an attempted attack damaged an Aramco administrative building in Riyadh on 8 Nov, with no injuries, and the Saudi-led coalition said it intercepted two Houthi missiles (The Week; CNN). The Houthis claimed six operations against Saudi oil sites, Riyadh airport and troops on 7 Nov (WION). The Houthi-run health ministry said Saudi strikes near Sanaa on 7 Nov killed at least 33 people, a figure not independently confirmed.",
-   "for_you": "People in or travelling to the region can check FCDO travel advice. Attacks on Saudi oil sites add to the exposure of energy markets already affected by the Gulf conflict.",
+   "summary": "Saudi-led coalition says it destroyed a Houthi launcher in Sanaa on 8 Nov after missiles targeted Riyadh",
+   "state": "The Saudi-led coalition said it destroyed a Houthi ballistic missile launch platform in Sanaa on 8 Nov, after intercepting two ballistic and two cruise missiles aimed at Riyadh and the south (Khaleej Times). Saudi Arabia's Energy Ministry said debris damaged an Aramco administrative building in Riyadh, with no casualties (CNN), and witnesses reported damage to a tower in the King Abdullah Financial District (Malay Mail). The Houthi-run health ministry said strikes near Sanaa killed 33 people, a figure not independently confirmed.",
+   "for_you": "FCDO travel advice is the official guide for Saudi Arabia, Yemen, Israel and neighbouring states. Airspace and airport closures can follow attacks at short notice.",
    "sources": [
     {
-     "title": "The Week — Saudi Aramco building damaged in Riyadh after Houthi attack from Yemen intercepted",
-     "url": "https://www.theweek.in/news/middle-east/2026/11/08/saudi-aramco-building-damaged-in-riyadh-after-houthi-attack-from-yemen-intercepted.html",
+     "title": "Khaleej Times — Coalition targets Houthi launchers",
+     "url": "https://www.khaleejtimes.com/world/mena/us-israel-iran-saudi-arabia-yemen-war-live-updates-november-8-2026",
      "date": "2026-11-08"
     },
     {
-     "title": "CNN — Building owned by Saudi oil giant damaged in missile attack on Riyadh's financial district",
+     "title": "CNN — Aramco building damaged in Riyadh attack",
      "url": "https://www.cnn.com/2026/11/08/middleeast/saudi-arabia-riyadh-missile-financial-intl",
      "date": "2026-11-08"
     },
     {
-     "title": "WION — Yemen strikes kill at least 27 near Sanaa as Houthis claim attacks on Saudi oil sites",
-     "url": "https://www.wionews.com/world/yemen-strikes-kill-at-least-27-near-sanaa-as-houthis-claim-missile-and-drone-attacks-on-saudi-oil-sites-riyadh-airport-1794069483286",
-     "date": "2026-11-07"
+     "title": "Malay Mail — Houthis target Riyadh financial district",
+     "url": "https://www.malaymail.com/news/world/2026/11/08/houthis-target-riyadh-financial-district-as-witnesses-report-damage-to-aramco-tower/242472",
+     "date": "2026-11-08"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Riyadh missile attack 8 Nov; US–Iran war",
-   "rubric_hit": "Multi-front escalation: Houthi–Saudi cross-border strikes 7–8 Nov alongside the US–Iran war",
+   "value": "Riyadh attacked 8 Nov; coalition hits Sanaa",
+   "rubric_hit": "Multi-front escalation with cross-border strikes = Alert",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-08T11:43:31Z"
+   "assessed_at": "2026-11-08T23:44:25Z"
   },
   "sudan": {
    "status": "red",
@@ -915,7 +920,7 @@
      "date": "2026-10-18"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Airspace bans to 24 Nov; no strikes",
    "rubric_hit": "Frozen relations and reciprocal bans, no strikes = Watch",
@@ -941,7 +946,7 @@
      "date": "2026-11-07"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No US–Russia treaty limits",
    "rubric_hit": "Arms-control lapse without replacement; doctrine threats = Watch",
@@ -952,29 +957,24 @@
   "atlantic-cyclones": {
    "status": "green",
    "trend": "flat",
-   "summary": "No tropical cyclones in the Atlantic; a low south-east of Bermuda has a 10% chance of forming",
-   "state": "The National Hurricane Center's outlook at 07:00 EST on 7 Nov showed no tropical cyclones in the Atlantic (NHC). A non-tropical low several hundred miles south-south-east of Bermuda had a 10% chance of formation over seven days and was not threatening land (CBS12). The season ends on 30 Nov.",
-   "for_you": "No action needed; follow the National Hurricane Center and local agencies if travelling to the Caribbean.",
+   "summary": "No tropical cyclones in the Atlantic; NHC puts the low south-east of Bermuda at near 0% for formation",
+   "state": "The National Hurricane Center's outlook at 19:00 EST on 7 Nov showed no active tropical cyclones in the Atlantic. A non-tropical low several hundred miles south-south-east of Bermuda has a near 0% chance of formation through seven days and is expected to merge with a front within a day or two. The season ends on 30 Nov.",
+   "for_you": "National Hurricane Center advisories are the official source for anyone in hurricane-prone areas.",
    "sources": [
     {
-     "title": "NOAA National Hurricane Center — Tropical Weather Outlook",
-     "url": "https://www.nhc.noaa.gov/",
-     "date": "2026-11-07"
-    },
-    {
-     "title": "CBS12 — NHC gives Atlantic disturbance a low chance of development",
-     "url": "https://cbs12.com/weather/hurricane-maps/nhc-gives-atlantic-disturbance-a-low-chance-of-development",
+     "title": "NOAA NHC — Atlantic Tropical Weather Outlook",
+     "url": "https://www.nhc.noaa.gov/text/refresh/MIATWOAT+shtml/index.shtml",
      "date": "2026-11-07"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No active Atlantic storms",
-   "rubric_hit": "No storm threatening land within 5 days = Normal",
+   "rubric_hit": "NHC: no cyclone active or threatening land within 5 days = Normal",
    "basis": "published",
    "basis_detail": "NOAA National Hurricane Center",
    "value_num": 0,
-   "assessed_at": "2026-11-08T05:51:00Z"
+   "assessed_at": "2026-11-08T23:44:25Z"
   },
   "other-cyclones": {
    "status": "green",
@@ -989,7 +989,7 @@
      "date": "2026-11-08"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-11-04T23:43:43Z",
    "value": "No orange/red GDACS cyclone alerts",
    "rubric_hit": "GDACS cyclone: 0 red / 0 orange",
@@ -1042,7 +1042,7 @@
      "date": "2026-11-08"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
    "rubric_hit": "GDACS wildfire: 0 red / 0 orange",
@@ -1064,7 +1064,7 @@
      "date": "2026-11-08"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
    "rubric_hit": "GDACS flood: 0 red / 0 orange",
@@ -1088,7 +1088,7 @@
    ],
    "value": "Max M6.1, 2× M6+ (7d)",
    "value_num": 6.1,
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "max magnitude 6.1 below the 7 Watch line",
    "basis": "measured",
@@ -1167,7 +1167,7 @@
    ],
    "value": "G1 S0 R1",
    "value_num": 1,
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "NOAA G1 S0 R1 (24h max)",
    "basis": "measured",
@@ -1311,7 +1311,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "1 PHEIC (Ebola)",
    "value_num": 1,
@@ -1338,7 +1338,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "10,741 cases, 5,230 deaths (5 Nov)",
    "value_num": 10741,
@@ -1370,7 +1370,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "US H5N1 death (1 Nov); no human spread",
    "rubric_hit": "Sporadic animal-to-human cases only = Normal",
@@ -1485,7 +1485,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Two single-case probes; no clusters",
    "rubric_hit": "Normal: no unexplained cluster under international investigation (two single-case events, Shamonda and Russia, without known onward spread)",
@@ -1516,7 +1516,7 @@
      "date": "2026-11-08"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "EU cold-chain attacks; US advisory 5 Nov",
    "rubric_hit": "Watch: attacks disrupting large retailers and a critical service. Alert line not met: no national-scale attack on power, health or finance, and no destructive state-attributed attack.",
@@ -1537,7 +1537,7 @@
      "date": "2026-11-07"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No major outages",
    "rubric_hit": "No major outage > 2h in 48h = Normal",
@@ -1746,7 +1746,7 @@
      "date": "2026-11-07"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "10y 5.16%, 30y 5.62%",
    "value_num": 5.16,
@@ -1800,8 +1800,8 @@
      "date": "2026-11-08"
     }
    ],
-   "value": "8 warning(s), worst yellow",
-   "checked_at": "2026-11-08T17:55:43Z",
+   "value": "9 warning(s), worst yellow",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-11-01T11:52:42Z",
    "value_num": 8,
    "rubric_hit": "worst warning: yellow",
@@ -1914,7 +1914,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "SOFR–IORB 5d max bp=7.00; Fed repo ops 5d max $bn=0.00",
@@ -1950,12 +1950,12 @@
   "yen-carry": {
    "status": "green",
    "trend": "flat",
-   "value": "¥158.4/$, 1w +0.5%",
-   "value_num": 158.425,
+   "value": "¥158.4/$, 1w +0.4%",
+   "value_num": 158.376,
    "summary": "Yen near ¥158 per dollar on 8 Nov; little changed on the week and month",
    "state": "The dollar was near ¥158.4 early on 8 Nov, up 0.5% on the week and 0.2% on the month, far inside the 3% weekly and 6% monthly Watch lines (Yahoo Finance). No Japanese currency intervention had been reported as of 8 Nov.",
    "for_you": "A weak yen makes travel to Japan cheaper for foreign visitors; no market stress is linked to it as of 8 Nov.",
-   "rubric_hit": "USD/JPY 1w move 0.47% below the 3% Watch line; USD/JPY 1m move 0.23% below the 6% Watch line",
+   "rubric_hit": "USD/JPY 1w move 0.44% below the 3% Watch line; USD/JPY 1m move 0.2% below the 6% Watch line",
    "sources": [
     {
      "title": "Yahoo Finance — USD/JPY",
@@ -1963,10 +1963,10 @@
      "date": "2026-11-08"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
-   "basis_detail": "USD/JPY 1w move %=0.47; USD/JPY 1m move %=0.23",
+   "basis_detail": "USD/JPY 1w move %=0.44; USD/JPY 1m move %=0.20",
    "assessed_at": "2026-11-08T05:51:00Z"
   },
   "jobless-claims": {
@@ -2090,7 +2090,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
@@ -2099,28 +2099,33 @@
   "gulf-iran": {
    "status": "red",
    "trend": "flat",
-   "value": "US hits M/V Huda 7 Nov; tankers mined 8 Nov",
-   "summary": "US disables a cargo ship on 7 Nov; Iran reports blasts at Qeshm and Jask and says two tankers hit mines on 8 Nov",
-   "state": "CENTCOM said US forces struck the stern of the St Kitts-flagged M/V Huda in the Gulf of Oman on 7 Nov after it refused to halt (India TV). Iranian state media reported explosions on Qeshm Island and at Jask, cause unexplained, and Iran's military said on 8 Nov that two tankers caught fire after hitting mines near the Strait of Hormuz (ABC Australia). President Trump said on 6 Nov that US forces had carried out limited strikes on an Iranian air-defence system. Iran is reviewing Qatari proposals.",
-   "for_you": "Merchant crews and shipping firms in the Gulf and Gulf of Oman are most directly exposed; UKMTO issues warnings for mariners. Travellers to the region can check FCDO travel advice. Energy and freight costs tend to follow events in the strait.",
-   "rubric_hit": "Alert: active strikes between states and attacks on shipping, including the US strike on M/V Huda on 7 Nov and Iran's report of tankers hitting mines on 8 Nov.",
+   "value": "Tankers hit; Trump says strikes unlikely",
+   "summary": "Trump tells CNN renewed strikes are unlikely if talks progress; blasts at Qeshm and tanker fires reported on 8 Nov",
+   "state": "President Trump told CNN on 8 Nov that renewed strikes were highly unlikely to be needed while nuclear and Hormuz talks progress, while saying bridges remained in US sights (Israel Hayom). Four explosions were heard at Bahman Port on Qeshm, cause unclear. CENTCOM said a US aircraft disabled a St Kitts-flagged ship in the Gulf of Oman on 7 Nov (ABC Australia). The Revolutionary Guards said three tankers caught fire, and UKMTO reported a tanker hit by a projectile (Iran International). Foreign Minister Araghchi said mediators had stopped travelling.",
+   "for_you": "FCDO travel advice is the official guide for Iran and the Gulf states. Continued shipping attacks feed through to fuel and freight costs.",
+   "rubric_hit": "Active US–Iran strikes and attacks on Gulf shipping = Alert",
    "sources": [
     {
-     "title": "ABC News (Australia) — Explosions heard in Strait of Hormuz as Iran reviews de-escalation proposals",
-     "url": "https://abc.net.au/news/2026-11-08/iran-strait-of-hormuz-update-explosions-talks/107360730",
+     "title": "Israel Hayom — Trump: renewed strikes on Iran highly unlikely",
+     "url": "https://www.israelhayom.com/2026/11/08/trump-renewed-strikes-on-iran-highly-unlikely-to-be-necessary/",
      "date": "2026-11-08"
     },
     {
-     "title": "India TV — US disables cargo ship in Gulf of Oman, Iran reports explosions on Qeshm Island",
-     "url": "https://www.indiatvnews.com/news/world/us-disables-cargo-ship-in-gulf-of-oman-iran-reports-explosions-on-qeshm-island-2026-11-08-1058929",
+     "title": "ABC News Australia — Explosions heard in Strait of Hormuz",
+     "url": "https://www.abc.net.au/news/2026-11-08/iran-strait-of-hormuz-update-explosions-talks/107360730",
+     "date": "2026-11-08"
+    },
+    {
+     "title": "Iran International — Trump signals openness to Iran deal",
+     "url": "https://www.iranintl.com/en/202611086475",
      "date": "2026-11-08"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-08T17:55:43Z"
+   "assessed_at": "2026-11-08T23:44:25Z"
   },
   "other-conflicts": {
    "status": "amber",
@@ -2253,7 +2258,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "KEV additions 7d=3.00",
@@ -2334,15 +2339,15 @@
      "date": "2026-11-08"
     }
    ],
-   "checked_at": "2026-11-08T17:55:43Z",
+   "checked_at": "2026-11-08T23:44:25Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "EA: 0 severe, 0 warnings",
    "assessed_at": "2026-11-08T05:51:00Z"
   }
  },
- "headline": "Hormuz traffic is about 20% of pre-war levels as Iran reports tanker fires on 8 Nov; Zaporizhzhia lost all off-site power on 8 Nov for the 27th time; DR Congo's Ebola outbreak passes 10,700 confirmed cases.",
- "generated_at": "2026-11-08T17:55:43Z",
+ "headline": "Russian strikes cut power to over 850,000 in Ukraine on 8 Nov ahead of Abu Dhabi talks; Trump says renewed strikes on Iran are unlikely as Hormuz attacks continue; the Saudi-led coalition hit a Houthi launcher after the attack on Riyadh.",
+ "generated_at": "2026-11-08T23:44:25Z",
  "world": {
   "score": 39,
   "band": "Unsettled",
@@ -2373,7 +2378,7 @@
    "name": "US–Iran war and Gulf energy shock",
    "status": "red",
    "trend": "flat",
-   "summary": "Iran reports tankers on fire in Hormuz on 8 Nov; UKMTO counts 8 attacks in the strait in the week to 8 Nov; US disabled a cargo ship on 7 Nov. Brent near $98.",
+   "summary": "Trump says renewed strikes on Iran are unlikely if talks progress (8 Nov); tankers on fire in Hormuz; US disabled a ship on 7 Nov. Brent near $97.",
    "signals": [
     "gulf-iran",
     "middle-east",
@@ -2393,7 +2398,7 @@
    "name": "Russia–Ukraine war and NATO's flank",
    "status": "red",
    "trend": "flat",
-   "summary": "Zaporizhzhia lost all off-site power on 8 Nov, its 27th total loss, the IAEA says; Russian barrage on 7 Nov; Abu Dhabi talks set for 10–11 Nov.",
+   "summary": "Russian strikes cut power to over 850,000 on 8 Nov; Zaporizhzhia lost all off-site power, the IAEA says; Abu Dhabi talks set for 10–11 Nov.",
    "signals": [
     "russia-ukraine",
     "russia-nato",
