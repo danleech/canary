@@ -1,5 +1,5 @@
 # Trade war & tariffs — WATCH (stable)
-id trade-war · Geopolitics · horizon acute · checked 2026-11-09T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-09T19:53Z
+id trade-war · Geopolitics · horizon acute · checked 2026-11-09T11:44Z · text written 2026-11-09T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-10T01:44Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/trade-war
 
 Value: Rare-earth pause ends 10 Nov; no notice found

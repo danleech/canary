@@ -1,5 +1,5 @@
 # US–China / Taiwan — WATCH (stable)
-id us-china · Geopolitics · horizon acute · checked 2026-11-09T05:53Z · at this level since 2026-11-07T05:46Z · stale after 2026-11-09T19:53Z
+id us-china · Geopolitics · horizon acute · checked 2026-11-09T11:44Z · text written 2026-11-09T05:53Z · at this level since 2026-11-07T05:46Z · stale after 2026-11-10T01:44Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/us-china
 
 Value: 4 PLA aircraft, 6 warships (8 Nov report)

@@ -1,9 +1,9 @@
 # UK weather warnings — NORMAL (stable)
-id uk-weather · UK Watch · horizon acute · checked 2026-11-09T05:53Z · at this level since 2026-11-01T11:52Z · stale after 2026-11-09T19:53Z
+id uk-weather · UK Watch · horizon acute · checked 2026-11-09T11:44Z · text written 2026-11-09T05:53Z · at this level since 2026-11-01T11:52Z · stale after 2026-11-10T01:44Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/uk-weather
 
-Value: 9 warning(s), worst yellow
-Rated on: Worst warning yellow; no amber or red. Yellow fog warnings are short-lived, so Normal held
+Value: 8 warning(s), worst yellow
+Rated on: worst warning: yellow
 Basis: measured — Set by a fixed rule applied to open data (worst warning: yellow). Anyone can reproduce it from the public metrics file.
 
 Yellow fog warnings across England, Wales and Northern Ireland; no amber or red warnings

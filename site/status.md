@@ -1,5 +1,5 @@
 # Canary — all signals
-as_of 2026-11-09T05:53Z · next run ~11:40 UK · stale after 2026-11-09T19:53Z (36h for daily-tier signals)
+as_of 2026-11-09T11:44Z · next run ~17:40 UK · stale after 2026-11-10T01:44Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -8,25 +8,25 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | id | status | trend | basis | value | summary |
 |---|---|---|---|---|---|
 | sovereign-debt | ALERT | improving | judged | OAT–Bund 153.9bp (6 Nov) | France–Bund spread 153.9bp on 6 Nov, above the 150bp Alert line but below its 174.6bp peak of 22 Oct |
-| eu-gas | ALERT | improving | measured | €86/MWh | European gas near €86/MWh at the 6 Nov close, down 9% on the week but above the €70 Alert line |
+| eu-gas | ALERT | improving | measured | €84/MWh | European gas near €86/MWh at the 6 Nov close, down 9% on the week but above the €70 Alert line |
 | chokepoints | ALERT | stable | judged | Hormuz ~20% of pre-war traffic; blockade on | Hormuz traffic about 20% of pre-war levels; Iraq reaches understanding with US on oil exports via a lane near Oman |
 | freight | ALERT | improving | published | WCI $4,389/FEU (5 Nov) | Drewry container index eased 1% to $4,389 per 40ft on 5 Nov, still above the $4,000 Alert line |
-| russia-ukraine | ALERT | stable | judged | Zaporizhzhia off-grid about 10 hours on 8 Nov | Zaporizhzhia plant lost all off-site power for hours on 8 Nov; Abu Dhabi talks due from 10 Nov amid energy strikes |
+| russia-ukraine | ALERT | stable | judged | 317 drones overnight to 9 Nov; talks 10–11 Nov | Russia sent 317 drones overnight to 9 Nov and hit the grid; Abu Dhabi talks due 10–11 Nov; Zaporizhzhia off-grid 8 Nov |
 | middle-east | ALERT | worsening | judged | Houthi-Saudi exchanges; Gaza strikes 8 Nov | Saudi Arabia intercepts missiles aimed at Riyadh on 8 Nov after strikes near Sanaa; Israeli attacks continue in Gaza |
 | sudan | ALERT | stable | judged | RSF drone campaign; Amiet market strike toll | RSF drone campaign on fuel and power continues; a reported 153–226 died in a 19 Oct army strike on Amiet market |
-| gulf-iran | ALERT | stable | judged | Tankers hit 8 Nov; Trump says strikes unlikely | Trump calls new strikes highly unlikely while talks progress; Iran says tankers burned in Hormuz on 8 Nov |
+| gulf-iran | ALERT | stable | judged | Rubio: no breakthrough; blockade enforced | Rubio sees no breakthrough with Iran; Trump calls new strikes highly unlikely if a deal is signed; US blockade continues |
 | global-temp | ALERT (c) | worsening | measured | +2.01°C vs pre-industrial | Global temperature 2.01°C above pre-industrial on 2 Nov, a record for the date |
 | co2 | ALERT (c) | worsening | measured | 428.6 ppm, +3.36/yr | CO₂ 428.6 ppm at Mauna Loa, up 3.36 ppm on a year, above the 3 ppm Alert line |
 | enso | ALERT (s) | worsening | measured | ONI +2.5 (El Niño) | Very strong El Niño: Oceanic Niño Index +2.46°C for Aug–Oct, still rising |
 | ebola | ALERT | worsening | published | 10,741 cases, 5,230 deaths (5 Nov) | DR Congo Ebola outbreak at 10,741 confirmed cases and 5,230 deaths on 5 Nov; Nigeria's first case came on 20 Oct |
 | cholera-dengue | ALERT | worsening | judged | DRC cholera: 3,644 deaths since 2025 | Cholera deaths continue in DR Congo, with insecurity limiting access in the east; DRC leads new deaths globally |
 | uk-threat-level | ALERT | stable | judged | Threat level: Severe | UK national terrorism threat level Severe: an attack is highly likely; no change found as of 8 Nov |
-| equity-stress | WATCH | stable | measured | VIX 25.6, S&P -5.7% | S&P 500 ended 6 Nov 5.7% below its high; VIX 25.6, inside the Watch band; US markets reopen on 9 Nov |
+| equity-stress | WATCH | stable | measured | VIX 23.4, S&P -5.7% | S&P 500 ended 6 Nov 5.7% below its high; VIX 25.6, inside the Watch band; US markets reopen on 9 Nov |
 | bond-volatility | WATCH | improving | measured | MOVE 93, 10y 4.86% | MOVE index 93 and US 10-year yield 4.86% at the 6 Nov close; both just inside Normal levels |
 | private-credit | WATCH | stable | judged | Q3 BDC tenders above 5% caps; 15 of 55 prorated | Non-traded BDC tender requests still exceed 5% caps; 15 of 55 prorated in Q3; no forced sales or bank losses found |
 | us-inflation | WATCH | stable | measured | CPI 4.0% y/y (Sep) | US CPI 4.0% y/y in September, inside the Watch band; October data not yet published as of 8 Nov |
 | central-banks | WATCH | worsening | judged | BoE 4% (5 Nov); ECB 2.5%, Lagarde leaving | Bank of England raised rates to 4% on 5 Nov; ECB held at 2.5% with a December rise in view and Lagarde leaving early |
-| oil | WATCH | improving | measured | $97.4, 1m -9% | Brent near $97 on 9 Nov after Trump called new Iran attacks unlikely; ships still being hit near Hormuz |
+| oil | WATCH | improving | measured | $95.0, 1m -11% | Brent near $97 on 9 Nov after Trump called new Iran attacks unlikely; ships still being hit near Hormuz |
 | food-prices | WATCH | improving | published | FAO index 133.9 (Oct), +5.9% y/y | FAO food price index eased to 133.9 in October, below the 135 Alert line but up 5.9% on a year |
 | critical-minerals | WATCH | worsening | judged | China rare-earth pause ends 10 Nov | China's rare-earth export-control pause ends on 10 Nov; no legal renewal found as of 8 Nov |
 | fertiliser | WATCH | stable | judged | Urea subdued; Tampa ammonia +$95 (Nov) | Urea subdued awaiting an Indian tender, ammonia up; Hormuz about 20% of pre-war traffic, not shut, so Alert unconfirmed |
@@ -60,17 +60,17 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | civil-unrest | WATCH | worsening | judged | France strikes 5 Nov; Rawalakot crackdown | France's 5 Nov strike drew 575,000 by official count; security operation against protest camps in Pakistani Kashmir |
 | aid-funding | WATCH | worsening | judged | WFP Gaza cuts; Sudan shortfall | WFP is cutting Gaza food aid for about 500,000 people over a $450m gap; Sudan operation about one-third funded in Sept |
 | uk-rates | WATCH | worsening | published | CPI 3.5% (Sep); Bank Rate 4% | Bank of England raised Bank Rate to 4% on 5 Nov; CPI 3.5% in September, expected near 5% by mid-2027 |
-| gilts | WATCH | stable | judged | 10y about 5.15%, 30y 5.62% (6 Nov) | 10-year gilt yield about 5.15% and 30-year 5.62% on 6 Nov, after the Bank of England's rate rise on 5 Nov |
+| gilts | WATCH | stable | judged | 10y about 5.15% (9 Nov), 1m -29bp | 10-year gilt yield about 5.15% and 30-year 5.62% on 6 Nov, after the Bank of England's rate rise on 5 Nov |
 | uk-energy-cap | WATCH | worsening | published | £1,723 now; Jan forecasts £1,999–£2,250 | Cap £1,723; January forecasts range from Cornwall Insight's £1,999 to suppliers' £2,250; a 20%-plus rise is unconfirmed |
 | uk-disruption | WATCH | stable | judged | Consultants strike 25–26 Nov; Tube 26 Nov | Consultants in England strike from 25 Nov for two days; RMT Tube strikes are listed from 26 Nov |
-| ftse | NORMAL | stable | measured | 10,674, -2.2% from high | FTSE 100 closed at 10,674 on 6 Nov, 2.2% below its 52-week high; London reopens on 9 Nov |
+| ftse | NORMAL | stable | measured | 10,752, -1.4% from high | FTSE 100 closed at 10,674 on 6 Nov, 2.2% below its 52-week high; London reopens on 9 Nov |
 | credit-spreads | NORMAL | worsening | measured | HY OAS 3.48% | US high-yield spreads 3.48% on 5 Nov, widest in a year but inside the 4% Watch line |
-| dollar | NORMAL | stable | measured | DXY 102.1, 3m +2.1% | Dollar index near 102.1 early on 9 Nov, up 2.1% over three months and close to its 52-week high |
+| dollar | NORMAL | stable | measured | DXY 101.8, 3m +1.8% | Dollar index near 102.1 early on 9 Nov, up 2.1% over three months and close to its 52-week high |
 | banking-stress | NORMAL | stable | measured | STLFSI -0.52, CISS 0.01 | Financial stress gauges low; searches on 9 Nov found no notable bank failure or rescue |
-| gold | NORMAL | improving | measured | $4,134, 3m -7.5% | Gold near $4,134 on 9 Nov, down 7.5% over three months and back inside the Normal band |
-| crypto | NORMAL | stable | measured | BTC $74,314, -14% from high | Bitcoin near $74,300 on 9 Nov, 14% off its high; Binance resumed withdrawals by 1 Nov after a $6.3bn breach |
+| gold | NORMAL | improving | measured | $4,117, 3m -7.8% | Gold near $4,134 on 9 Nov, down 7.5% over three months and back inside the Normal band |
+| crypto | NORMAL | stable | measured | BTC $74,531, -14% from high | Bitcoin near $74,300 on 9 Nov, 14% off its high; Binance resumed withdrawals by 1 Nov after a $6.3bn breach |
 | funding-stress | NORMAL | stable | measured | SOFR–IORB +2bp, repo $0.0bn | SOFR 2bp above the reserve rate on 5 Nov; Fed repo use near zero |
-| yen-carry | NORMAL | stable | measured | ¥158.3/$, 1w +0.4% | Yen near ¥158 per dollar on 9 Nov; little changed on the week and month |
+| yen-carry | NORMAL | stable | measured | ¥157.9/$, 1w +0.2% | Yen near ¥158 per dollar on 9 Nov; little changed on the week and month |
 | us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.35 | Sahm recession indicator at 0.00; yield curve +0.35; weekly jobless claims near a one-year low |
 | euro-growth | NORMAL | improving | judged | Oct composite PMI 51.7; Q3 GDP +0.4% | Euro-area Q3 GDP rose 0.4% and October composite PMI slipped to 51.7, both still above the Normal lines |
 | china-economy | NORMAL | improving | judged | Official mfg PMI 49.3 (Oct); Q3 GDP +4.5% | China's official manufacturing PMI fell to 49.3 in October; Q3 growth of 4.5% near target, no contagion found |
@@ -92,7 +92,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | outages | NORMAL | stable | judged | No major outages | No major multi-hour cloud, CDN or payments outage found 7 to 9 Nov; only minor Cloudflare incidents |
 | exploited-vulns | NORMAL | stable | measured | 3 KEV adds (7d), 30 (30d) | Three new CISA known-exploited vulnerabilities in a week, including SonicWall VPN |
 | displacement | NORMAL | stable | judged | No new 500k+ event found (8 Nov) | No new event displacing 500,000 in a month found as of 8 Nov; Sudan's long-running crisis continues |
-| uk-weather | NORMAL | stable | measured | 9 warning(s), worst yellow | Yellow fog warnings across England, Wales and Northern Ireland; no amber or red warnings |
+| uk-weather | NORMAL | stable | measured | 8 warning(s), worst yellow | Yellow fog warnings across England, Wales and Northern Ireland; no amber or red warnings |
 | nhs-pressure | NORMAL | worsening | published | Flu low, trends variable (wk 44) | UKHSA 5 Nov: flu low with variable trends, COVID low and falling, RSV rising from baseline; consultants strike 25–26 Nov |
 | uk-supply-margins | NORMAL | stable | published | No notices found; winter margin 5.9 GW | No NESO or National Gas margin notices found as of 8 Nov; NESO forecasts a 5.9 GW winter margin |
 | uk-floods | NORMAL | stable | measured | No flood warnings | No flood warnings or alerts in force in England on 9 Nov |
