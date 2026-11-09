@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-09T05:53:46Z",
+  "id": "gold",
+  "name": "Gold (fear gauge)",
+  "from": "amber",
+  "to": "green",
+  "reason": "Gold near $4,134 on 9 Nov, down 7.5% over three months and back inside the Normal band"
+ },
+ {
   "t": "2026-11-08T17:55:23Z",
   "id": "heat",
   "name": "Extreme heat",

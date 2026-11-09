@@ -1,8 +1,9 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-08T23:44Z · next run ~05:40 UK · stale after 2026-11-09T13:44Z (36h for daily-tier signals)
+as_of 2026-11-09T05:53Z · next run ~11:40 UK · stale after 2026-11-09T19:53Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
-Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
+Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
+- 2026-11-09T05:53Z Gold (fear gauge) [gold]: WATCH→NORMAL — Gold near $4,134 on 9 Nov, down 7.5% over three months and back inside the Normal band
 - 2026-11-08T17:55Z Extreme heat [heat]: NORMAL→WATCH — Severe to extreme heatwave warnings across northern Australia; heat warnings in Mozambique to 8 Nov
 - 2026-11-07T17:51Z Atmospheric CO₂ [co2]: WATCH→ALERT — CO₂ 428.5 ppm at Mauna Loa, up 3.31 ppm on a year, above the 3 ppm Alert line
 - 2026-11-07T05:46Z US–China / Taiwan [us-china]: NORMAL→WATCH — Taiwan says China has deployed more than 100 navy and coast guard vessels across the Western Pacific
@@ -22,6 +23,3 @@ Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judge
 - 2026-11-02T23:43Z US equity stress [equity-stress]: NORMAL→WATCH — VIX above 20 at a three-month high as tech sell-off extends; S&P 500 3.5% off its high
 - 2026-11-02T18:00Z Gold (fear gauge) [gold]: WATCH→NORMAL — Gold near $3,970, down 7.8% over three months, just inside the Watch line
 - 2026-11-02T11:58Z Pacific & Indian cyclones [other-cyclones]: WATCH→ALERT — Cyclone Murasu, a GDACS red alert, due to cross the Andhra Pradesh coast on 2–3 Nov
-- 2026-11-02T05:51Z Pacific & Indian cyclones [other-cyclones]: ALERT→WATCH — Severe Cyclone Murasu due to hit south Andhra Pradesh overnight 2–3 Nov; GDACS now green
-- 2026-11-02T05:51Z Gold (fear gauge) [gold]: NORMAL→WATCH — Gold down 9% in three months, crossing the 8% fall Watch line
-- 2026-11-01T23:50Z Crypto stress [crypto]: NORMAL→WATCH — Record $6.3bn hack at Binance; withdrawals reopening, Bitcoin 10% off its high

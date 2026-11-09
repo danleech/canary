@@ -1,5 +1,105 @@
 [
  {
+  "t": "2026-11-09T05:53:55Z",
+  "applied": 41,
+  "changed": [],
+  "warnings": [],
+  "note": "CrisisWatch could not be opened, so the surprise check used 9 Nov news digests. The NHC page could not be opened, so atlantic-cyclones cites a report of its 8 Nov outlook and is recorded as judged. Crypto stays Normal on Binance resuming withdrawals on 1 Nov after its $6.3bn breach; uk-weather stays Normal with yellow fog warnings across nine regions.",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 2,
+   "judged": 18
+  },
+  "held": 0,
+  "sources": {
+   "citations": 86,
+   "news_citations": 49,
+   "outlets": 53,
+   "top_news_outlets": [
+    [
+     "aawsat.com",
+     2
+    ],
+    [
+     "aljazeera.com",
+     2
+    ],
+    [
+     "dawn.com",
+     2
+    ],
+    [
+     "newarab.com",
+     2
+    ],
+    [
+     "timesofisrael.com",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 19,
+   "predicted_active": 1,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
+  "t": "2026-11-09T05:53:46Z",
+  "applied": 41,
+  "changed": [
+   "gold"
+  ],
+  "warnings": [],
+  "note": "CrisisWatch could not be opened, so the surprise check used 9 Nov news digests. The NHC page could not be opened, so atlantic-cyclones cites a report of its 8 Nov outlook and is recorded as judged. Crypto stays Normal on Binance resuming withdrawals on 1 Nov after its $6.3bn breach; uk-weather stays Normal with yellow fog warnings across nine regions.",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 2,
+   "judged": 18
+  },
+  "held": 0,
+  "sources": {
+   "citations": 86,
+   "news_citations": 49,
+   "outlets": 53,
+   "top_news_outlets": [
+    [
+     "aawsat.com",
+     2
+    ],
+    [
+     "aljazeera.com",
+     2
+    ],
+    [
+     "dawn.com",
+     2
+    ],
+    [
+     "newarab.com",
+     2
+    ],
+    [
+     "timesofisrael.com",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 19,
+   "predicted_active": 1,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": [
+    "trade-war"
+   ]
+  }
+ },
+ {
   "t": "2026-11-08T23:44:25Z",
   "applied": 41,
   "changed": [],

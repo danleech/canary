@@ -1,17 +1,17 @@
 # Shipping chokepoints — ALERT (stable)
-id chokepoints · Energy & Commodities · horizon acute · checked 2026-11-08T23:44Z · text written 2026-11-08T17:55Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-09T13:44Z
+id chokepoints · Energy & Commodities · horizon acute · checked 2026-11-09T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-09T19:53Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/chokepoints
 
 Value: Hormuz ~20% of pre-war traffic; blockade on
-Rated on: Hormuz traffic materially impeded, about 20% of pre-war levels: Alert line
+Rated on: Alert: Hormuz traffic materially impeded, at about 20% of pre-war levels per Lloyd's List Intelligence (8 Nov)
 Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
-Iran says three tankers burned in Hormuz on 8 Nov; traffic about 20% of pre-war levels as US blockade continues
+Hormuz traffic about 20% of pre-war levels; Iraq reaches understanding with US on oil exports via a lane near Oman
 
-Why it's at this level: Iran's Revolutionary Guards said on 8 Nov that three tankers burned after using unauthorised routes, and the UAE National Guard rescued 22 people from a burning cargo ship in the Gulf of Oman. UKMTO counted eight confirmed attacks in the strait and three in the Gulf in the week to 8 Nov, with three vessels sunk; few mine claims are independently confirmed (The National). Traffic is about 20% of pre-war levels (Lloyd's List Intelligence via The National); Windward counted at least 16 transits in the 20 hours to 14:00 UTC on 6 Nov. US Central Command says it has redirected 147 vessels and disabled five since July (Al Jazeera).
+Why it's at this level: Lloyd's List Intelligence puts Hormuz traffic at about 20% of pre-war levels, and UKMTO confirmed eight attacks in the strait and three in the Gulf in the week to 8 Nov, with three vessels sunk (The National). The Revolutionary Guards claim at least 12 ships have burned since the start of November, mostly after mine strikes; few such claims are independently confirmed (The National). Iraq reached an understanding with the US on 8 Nov to export oil through a lane near Oman (Asharq Al-Awsat). IMF PortWatch logged one transit on 1 Nov against a pre-crisis 85 a day (Gulf News), a far lower count than Lloyd's.
 
-What this means for you: Crews and operators in the Gulf face direct risk; UKMTO issues incident warnings for mariners. Oil, gas, fertiliser and freight costs worldwide stay exposed to the disruption.
+What this means for you: Crews and operators can follow UKMTO notices and flag-state advisories. Disruption at Hormuz tends to feed through to longer delivery times and higher freight and insurance costs, with import-dependent economies in Asia and Europe most exposed.
 
 Why it matters: Around 30% of seaborne oil and much container trade passes Hormuz, Bab el-Mandeb/Suez, Panama and Malacca; disruption raises prices worldwide.
 What moves it: Houthi/Iran attacks, war-risk insurance, drought (Panama), naval incidents, piracy.
@@ -19,6 +19,6 @@ What moves it: Houthi/Iran attacks, war-risk insurance, drought (Panama), naval 
 Rubric — Alert: Hormuz traffic materially impeded, or any chokepoint closed, or two or more disrupted at once. | Watch: One chokepoint disrupted (attacks, large-scale diversions, draught restrictions). | Normal: All major chokepoints operating normally.
 
 Sources:
-- The National — 'Smoke blanketing the strait': Iran steps up campaign of threats to shipping (2026-11-08) https://www.thenationalnews.com/news/mena/2026/11/08/smoke-blanketing-the-strait-iran-steps-up-campaign-of-threats-to-shipping/
-- Al Jazeera — US launches task force to disrupt Iran's land-based supply routes (2026-11-08) https://www.aljazeera.com/news/2026/11/8/us-launches-task-force-to-disrupt-irans-land-based-supply-routes
-- Windward — Strait of Hormuz insights (2026-11-06) https://insights.windward.ai/
+- 'Smoke blanketing the strait': Iran steps up campaign of threats to shipping (2026-11-08) https://www.thenationalnews.com/news/mena/2026/11/08/smoke-blanketing-the-strait-iran-steps-up-campaign-of-threats-to-shipping/
+- Oil Falls as Trump Says New Iran Attacks 'Unlikely' (2026-11-09) https://english.aawsat.com/business/5339128-oil-falls-trump-says-new-iran-attacks-%E2%80%98unlikely%E2%80%99
+- Oil Prices Dip Amid US-Iran Talks, But Gulf Crude Surges Over 3% (2026-11-09) https://gulfnews.com/business/energy/oil-dips-again-on-iran-talks-hopes-but-physical-gulf-crude-climbs-1.500740662
