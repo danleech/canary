@@ -1,16 +1,16 @@
 # Major cyber incidents — WATCH (stable)
-id cyber · Technology & Cyber · horizon acute · checked 2026-11-09T11:44Z · text written 2026-11-09T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-10T01:44Z
+id cyber · Technology & Cyber · horizon acute · checked 2026-11-10T17:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-11T07:53Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/cyber
 
-Value: Cold-chain attacks; OpenSSH flaw exploited
-Rated on: Attacks disrupting critical services and large retailers (European cold-chain attacks; US advisory 5 Nov): Watch. No national-scale attack found.
+Value: Cold-chain attacks across Europe
+Rated on: Attack campaign disrupting large retailers' refrigeration across Europe; no national-scale infrastructure attack
 Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 
-Refrigeration-control attacks hit shops across Europe and French blood banks; US agencies issued a warning on 5 Nov
+Attacks on supermarket refrigeration controls hit stores in about ten European countries; no culprit named
 
-Why it's at this level: Attacks on refrigeration controls hit stores in Belgium, Luxembourg and Sweden in a second wave, with later reports from Finland, Ireland, Estonia and the Netherlands (Help Net Security). France's blood service confirmed on 3 Nov that cold rooms were affected through a supplier, with no products lost (The Register). Five US agencies warned on 5 Nov of attacks on these systems, naming no culprit. GreyNoise first saw an OpenSSH authentication bypass exploited on 7 Nov, on a limited scale. No national-scale attack on power, health or finance had been found as of 9 Nov.
+Why it's at this level: Attacks on refrigeration controls hit grocery stores in at least nine European countries on 2 Nov, with Germany, Romania and the UK added on 3 Nov; Belgian prosecutors opened an investigation and an EU spokesman said the incidents were not isolated (The Local, 3 Nov). France's CERT-FR had warned on 12 Oct of compromised refrigeration controllers, and no group has claimed responsibility (ACHR News). No national-scale attack on power, health or finance had been found as of 10 Nov.
 
-What this means for you: Food retailers, cold-storage operators and health services using connected refrigeration are most exposed. Organisations can follow NCSC guidance and the joint CISA and FBI advisory; administrators can check vendor advisories for OpenSSH.
+What this means for you: Shoppers may see products withdrawn as a precaution where chilled storage was affected. Organisations running internet-connected building controls can find guidance from the NCSC and CERT-FR.
 
 Why it matters: Ransomware and state hacking now shut down hospitals, retailers, carmakers and airports for weeks.
 What moves it: Ransomware gangs, state actors, zero-days, supply-chain compromises.
@@ -18,6 +18,6 @@ What moves it: Ransomware gangs, state actors, zero-days, supply-chain compromis
 Rubric — Alert: National-scale attack on critical infrastructure (power, health, finance), or a destructive state-attributed attack. | Watch: Ransomware or attack disrupting a large company or critical service, or a mass-exploited zero-day. | Normal: No major incidents disrupting critical services this week.
 
 Sources:
-- US agencies warn attackers are targeting refrigeration systems that protect food and medicine (2026-11-06) https://www.helpnetsecurity.com/2026/11/06/cyberattacks-refrigeration-systems-cisa-fbi/
-- Cyberattack on French plasma stores is enough to make your blood boil (2026-11-04) https://www.theregister.com/security/2026/11/04/cyberattack-on-french-plasma-stores-is-enough-to-make-your-blood-boil/5307519
-- SSHole (CVE-2026-123158) Activity 2026 (2026-11-08) https://sshole.events.greynoise.io/
+- The Local Denmark — Fridge cyberattack on supermarkets across Europe prompts EU warning (2026-11-03) https://www.thelocal.dk/20261103/fridge-cyberattack-on-supermarkets-across-europe-prompts-eu-warning
+- ACHR News — European supermarkets report more refrigeration cyber incidents (2026-11-03) https://www.achrnews.com/articles/166944-european-supermarkets-report-more-refrigeration-cyber-incidents
+- Help Net Security — Week in review: refrigeration cyberattacks hit European retailers again (2026-11-08) https://www.helpnetsecurity.com/tag/week_in_review/

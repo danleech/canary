@@ -1,5 +1,116 @@
 [
  {
+  "t": "2026-11-10T17:53:58Z",
+  "applied": 89,
+  "changed": [],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 27,
+   "published": 11,
+   "judged": 51
+  },
+  "held": 0,
+  "sources": {
+   "citations": 164,
+   "news_citations": 98,
+   "outlets": 94,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     5
+    ],
+    [
+     "thenationalnews.com",
+     4
+    ],
+    [
+     "tradingeconomics.com",
+     4
+    ],
+    [
+     "cbsnews.com",
+     3
+    ],
+    [
+     "gulfnews.com",
+     3
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 61,
+   "predicted_active": 1,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
+  "t": "2026-11-10T17:53:51Z",
+  "applied": 89,
+  "changed": [
+   "gold"
+  ],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 27,
+   "published": 11,
+   "judged": 51
+  },
+  "held": 0,
+  "sources": {
+   "citations": 164,
+   "news_citations": 98,
+   "outlets": 94,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     5
+    ],
+    [
+     "thenationalnews.com",
+     4
+    ],
+    [
+     "tradingeconomics.com",
+     4
+    ],
+    [
+     "cbsnews.com",
+     3
+    ],
+    [
+     "gulfnews.com",
+     3
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 61,
+   "predicted_active": 1,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": [
+    "aid-funding",
+    "china-economy",
+    "cholera-dengue",
+    "civil-unrest",
+    "cold-storms",
+    "critical-minerals",
+    "drought",
+    "hybrid-threats",
+    "middle-east",
+    "nuclear-plants",
+    "semiconductors",
+    "trade-war"
+   ]
+  }
+ },
+ {
   "t": "2026-11-09T11:44:20Z",
   "applied": 41,
   "changed": [],

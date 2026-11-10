@@ -1,16 +1,16 @@
-# Humanitarian funding gap — WATCH (worsening)
-id aid-funding · Humanitarian · horizon acute · checked 2026-11-08T17:55Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-10T05:55Z
+# Humanitarian funding gap — WATCH (stable)
+id aid-funding · Humanitarian · horizon acute · checked 2026-11-10T17:53Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-12T05:53Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/aid-funding
 
-Value: WFP Gaza cuts; Sudan shortfall
-Rated on: Watch: major ration cuts announced (WFP Gaza caseload 1.6m to 1.1m). Alert line not met: no pipeline break forcing large-scale suspension found as of 8 Nov.
-Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
+Value: WFP Gaza cuts; Ethiopia rations at 60%
+Rated on: Major ration cuts announced (WFP Gaza, Ethiopia); no large-scale pipeline break found
+Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 
-WFP is cutting Gaza food aid for about 500,000 people over a $450m gap; Sudan operation about one-third funded in Sept
+WFP cuts Gaza food aid for 500,000 people; its Ethiopia plan is 46% funded with cereal rations at 60%
 
-Why it's at this level: WFP said on 19 Oct that about half a million people in Gaza would lose food assistance as its monthly caseload falls from 1.6m to 1.1m, and that it needs $450m for Gaza and the West Bank to March 2027 (WFP). On 14 Sep WFP said its Sudan operation was about one-third funded, and IOM warned that the humanitarian system there could collapse (UN News). Searches on 8 Nov found no formal large-scale suspension of food or health aid in a famine-risk country.
+Why it's at this level: WFP said on 19 Oct that about half a million people in Gaza would lose food assistance, needing $450m for Gaza and the West Bank to March 2027. Its October Ethiopia brief says needs for November to April are 46% funded, a $251m gap, with cereal rations at 60% (Ethiopian Business Review, 26 Oct). IOM and UNHCR warn that emergency shelter in Sudan is running out. Searches on 10 Nov found no formal large-scale suspension of food or health aid.
 
-What this means for you: People relying on WFP rations in Gaza, the West Bank and Sudan are most exposed. Aid agencies are choosing whom to keep supporting as budgets shrink.
+What this means for you: Funding gaps are cutting rations for refugees and people in Gaza, Ethiopia and Sudan. There is no direct effect in the UK.
 
 Why it matters: When appeals go unfunded, food aid and health services are cut first; funding gaps lead famine and displacement by months.
 What moves it: Donor budgets and aid cuts, new crises competing for funds, access constraints.
@@ -19,4 +19,5 @@ Rubric — Alert: Pipeline breaks forcing large-scale suspension of food or heal
 
 Sources:
 - WFP — Funding cuts force WFP to drastically reduce lifesaving assistance in Gaza (2026-10-19) https://www.wfp.org/news/funding-cuts-force-wfp-drastically-reduce-lifesaving-assistance-gaza
-- UN News — UN agencies warn humanitarian system in Sudan 'could collapse' (2026-09-14) https://news.un.org/en/story/2026/09/1168331
+- Ethiopian Business Review — WFP faces $251 million funding gap, keeps food rations at 60% (2026-10-26) https://ethiopianbusinessreview.net/wfp-faces-251-million-funding-gap-keeps-food-rations-at-60/
+- IOM — IOM and UNHCR warn millions in Sudan risk losing emergency shelter as funding runs out (2026-09-14) https://www.iom.int/news/iom-and-unhcr-warn-millions-sudan-risk-losing-emergency-shelter-funding-runs-out

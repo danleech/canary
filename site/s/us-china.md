@@ -1,16 +1,16 @@
 # US–China / Taiwan — WATCH (stable)
-id us-china · Geopolitics · horizon acute · checked 2026-11-09T11:44Z · text written 2026-11-09T05:53Z · at this level since 2026-11-07T05:46Z · stale after 2026-11-10T01:44Z
+id us-china · Geopolitics · horizon acute · checked 2026-11-10T17:53Z · at this level since 2026-11-07T05:46Z · stale after 2026-11-11T07:53Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/us-china
 
-Value: 4 PLA aircraft, 6 warships (8 Nov report)
-Rated on: Watch: large-scale PLA activity around Taiwan assessed (49 sorties on 2 Nov; over 100 vessels on 3 Nov); no blockade, clash or severed channels
-Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
+Value: Trade truce to 10 Jan; Shenzhen APEC next week
+Rated on: Elevated PLA activity around Taiwan; no blockade, quarantine or clash
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-Taiwan counted 4 PLA aircraft and 6 warships on 8 Nov; analysts flag a possible unannounced large exercise
+US and China extended their trade truce to 10 Jan 2027 on 9 Nov; Trump and Xi expected at APEC in Shenzhen next week
 
-Why it's at this level: Taiwan's defence ministry reported 4 PLA aircraft and 6 naval vessels in the 24 hours to 06:00 on 8 Nov (ANI); no 9 Nov count was found. AEI and ISW assessed on 6 Nov that China may be running a large unannounced exercise simulating isolation of Taiwan, after 49 sorties on 2 Nov and over 100 naval and coast guard vessels reported in the West Pacific on 3 Nov; this is not confirmed. No blockade or clash was reported as of 9 Nov, and China says it is in contact over a three-way leaders' meeting in Shenzhen in November (AP via Taipei Times).
+Why it's at this level: China and the US extended their trade truce to 10 Jan 2027 on 9 Nov, and Presidents Trump and Xi are expected to meet at APEC in Shenzhen in the week of 16 Nov (The National). Taiwan's defence ministry reported heightened PLA activity around the island in early November, after analysts flagged a possible unannounced exercise; this is not confirmed (Taipei Times, 4 Nov). No blockade, clash or severed channel was reported as of 10 Nov.
 
-What this means for you: Shipping and flights near Taiwan can face short-notice changes during PLA activity. FCDO travel advice is the official guide for UK travellers to Taiwan and China.
+What this means for you: Dialogue is active, but military pressure around Taiwan keeps a risk to shipping and chip supply chains. Travellers should check FCDO travel advice for Taiwan and China.
 
 Why it matters: The world's two largest economies; a Taiwan crisis would halt most advanced chip supply and risk great-power war.
 What moves it: PLA exercises, tariffs and tech controls, diplomacy, Taiwan politics, South China Sea incidents.
@@ -18,6 +18,5 @@ What moves it: PLA exercises, tariffs and tech controls, diplomacy, Taiwan polit
 Rubric — Alert: Blockade or 'quarantine' of Taiwan, military clash, or severed diplomatic channels. | Watch: Large-scale PLA exercises around Taiwan, major new sanctions/controls, or a naval/air incident. | Normal: Managed relations; dialogue channels open; routine PLA activity.
 
 Sources:
-- Taiwan detects 4 PLA aircraft, 6 PLAN vessels operating near territory (2026-11-08) https://news.webindia123.com/news/Articles/World/20261108/4517223.html
-- China & Taiwan Update, November 6, 2026 (2026-11-06) https://www.aei.org/commentary/china-taiwan-update-november-6-2026/
-- China confirms plans for Xi-Trump-Putin meeting (2026-11-08) https://taipeitimes.com/News/front/archives/2026/11/08/2003867352
+- The National — China extends pause on rare earth export curbs for two months (2026-11-09) https://www.thenationalnews.com/news/us/2026/11/09/china-extends-pause-on-rare-earth-export-curbs-for-two-months/
+- Taipei Times — Heightened Chinese activity detected (2026-11-04) https://www.taipeitimes.com/News/taiwan/archives/2026/11/04/2003867122

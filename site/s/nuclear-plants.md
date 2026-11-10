@@ -1,17 +1,17 @@
-# Nuclear plant safety — WATCH (worsening)
-id nuclear-plants · Energy & Commodities · horizon acute · checked 2026-11-08T17:55Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-10T05:55Z
+# Nuclear plant safety — WATCH (stable)
+id nuclear-plants · Energy & Commodities · horizon acute · checked 2026-11-10T17:53Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-12T05:53Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/nuclear-plants
 
-Value: ZNPP lost all off-site power on 8 Nov
-Rated on: Plant lost all off-site power on 8 Nov (Watch line); no safety-system damage, INES 2+ event or release reported for Alert
-Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
+Value: ZNPP off-site power lost and restored 8 Nov
+Rated on: Plant lost all off-site power (8 Nov); no damage to safety systems or release
+Basis: judged — The AI assessor's reading of 1 source from 1 outlet against the rubric. Check the sources before relying on it.
 Situation: Russia–Ukraine war and NATO's flank [russia-ukraine-war]
 
-Zaporizhzhia lost all off-site power on 8 Nov for the 27th time; on diesel generators with about two weeks' fuel
+Zaporizhzhia lost all off-site power on 8 Nov for the 27th time; the IAEA said it was restored about 10 hours later
 
-Why it's at this level: Zaporizhzhia lost its last external line, Ferosplavna-1, early on 8 Nov, the 27th total loss of off-site power of the war, and is running on emergency diesel generators with fuel for about two weeks, the IAEA said; the cause and location are not yet known (Anadolu). The plant's Russian-installed management reported normal radiation levels (Reuters via Internazionale). IAEA Director General Grossi described a continued precarious nuclear safety situation. No damage to safety systems or radiological release had been reported as of 8 Nov.
+Why it's at this level: Zaporizhzhia lost its sole 330 kV external line on 8 Nov, the 27th total loss of off-site power of the war, and ran on emergency diesel generators until the IAEA confirmed power was restored about 10 hours later (Kyiv Independent, 9 Nov). The cause and location of the fault are not yet known, and Director General Grossi described a continued precarious nuclear safety situation. No damage to safety systems or radiological release was reported.
 
-What this means for you: Radiation levels were reported normal. The exposure is local to the plant area and depends on how soon grid power returns before generator fuel runs down.
+What this means for you: There is no radiological risk reported to the public. People in the region should follow guidance from Ukraine's State Nuclear Regulatory Inspectorate; the IAEA publishes updates on the plant.
 
 Why it matters: Fighting near nuclear power plants risks a radiological release; the IAEA reports on Zaporizhzhia and other plants in or near war zones.
 What moves it: Off-site power losses, strikes near plants, staffing, cooling water, military occupation.
@@ -19,5 +19,4 @@ What moves it: Off-site power losses, strikes near plants, staffing, cooling wat
 Rubric — Alert: Damage to safety-critical systems, an INES level 2 or higher event, or a radiological release. | Watch: A plant loses all off-site power, strikes land near a plant, or the IAEA reports a deteriorating safety situation. | Normal: No new IAEA safety concerns at plants in or near conflict zones.
 
 Sources:
-- Anadolu — Zaporizhzhya nuclear plant loses all external power for 27th time (2026-11-08) https://www.aa.com.tr/en/world/ukraines-zaporizhzhya-nuclear-plant-loses-all-external-power-for-27th-time-un-nuclear-watchdog/4115903
-- Reuters via Internazionale — Zaporizhzhia nuclear plant relying on generators again after losing external power supply (2026-11-08) https://www.internazionale.it/ultime-notizie-reuters/2026/11/08/zaporizhzhia-nuclear-plant-loses-external-power-supply-russian-installed-management-says
+- Kyiv Independent — Power to Zaporizhzhia nuclear power plant cut, restored, IAEA says (2026-11-09) https://kyivindependent.com/power-to-zaporizhzhia-nuclear-power-plant-cut-restored-iaea-says/

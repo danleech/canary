@@ -1,16 +1,16 @@
 # Pacific & Indian cyclones — NORMAL (stable)
-id other-cyclones · Weather & Hazards · horizon acute · checked 2026-11-09T11:44Z · text written 2026-11-09T05:53Z · at this level since 2026-11-04T23:43Z · stale after 2026-11-10T01:44Z
+id other-cyclones · Weather & Hazards · horizon acute · checked 2026-11-10T17:53Z · at this level since 2026-11-04T23:43Z · stale after 2026-11-11T07:53Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/other-cyclones
 
 Value: No orange/red GDACS cyclone alerts
-Rated on: GDACS cyclone: 0 red / 0 orange
+Rated on: GDACS cyclone alerts: 0 red, 0 orange (10 Nov): Normal
 Basis: measured — Set by a fixed rule applied to open data (GDACS cyclone: 0 red / 0 orange). Anyone can reproduce it from the public metrics file.
 
-No GDACS orange or red cyclone alerts; three green-level storms including Pena and Cempaka
+No GDACS orange or red cyclone alerts on 10 Nov; Pena and Cempaka rated green and weakening
 
-Why it's at this level: GDACS listed no orange or red tropical cyclone alerts on 9 Nov; its three current entries, Pena in the Pacific, Cempaka near Japan and a southern-hemisphere storm, were rated green (GDACS).
+Why it's at this level: GDACS listed no orange or red tropical cyclone alerts on 10 Nov. Its two current entries, Tropical Cyclone Pena and Tropical Cyclone Cempaka near Japan, were both rated green, with their tracks ending on 10 Nov (GDACS). No typhoon or cyclone threatening land within 72 hours was flagged.
 
-What this means for you: No major storm alert is current. National meteorological agencies such as JMA and IMD issue the official warnings for people in affected areas.
+What this means for you: No significant Pacific or Indian Ocean cyclone threat is flagged. Travellers to cyclone-prone regions can follow FCDO travel advice and local met services such as JMA and IMD.
 
 Why it matters: Typhoons and cyclones are the deadliest weather events, threatening densely populated coasts in Asia and the Indian Ocean.
 What moves it: Ocean heat, ENSO phase, season (W Pacific peaks Jul–Oct; N Indian Apr–Jun & Oct–Dec).
@@ -18,4 +18,4 @@ What moves it: Ocean heat, ENSO phase, season (W Pacific peaks Jul–Oct; N Indi
 Rubric — Alert: GDACS red cyclone alert, or a super-typhoon/severe cyclone landfall on a populated coast. | Watch: GDACS orange cyclone alert, or a typhoon/cyclone threatening land within 72h. | Normal: No GDACS orange/red tropical cyclone alerts.
 
 Sources:
-- GDACS — Global Disaster Alerts (2026-11-09) https://www.gdacs.org/
+- GDACS — Global Disaster Alert and Coordination System, current tropical cyclone alerts (2026-11-10) https://www.gdacs.org/

@@ -1,16 +1,16 @@
 # Nuclear risk — WATCH (stable)
-id nuclear-risk · Armed Conflict · horizon acute · checked 2026-11-09T11:44Z · text written 2026-11-09T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-10T01:44Z
+id nuclear-risk · Armed Conflict · horizon acute · checked 2026-11-10T17:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-11T07:53Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/nuclear-risk
 
-Value: No US–Russia limits; Zaporizhzhia outage 8 Nov
-Rated on: Watch: arms-control lapse without replacement (New START, expired 5 Feb 2026); no nuclear test, alert-level change or threatened use found
+Value: No US–Russia limits; N Korea tests surge
+Rated on: Arms-control lapse without replacement (New START); no test or alert-level change
 Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 
-New START lapsed without replacement; Zaporizhzhia lost off-site power on 8 Nov; no nuclear test or alert change found
+New START has lapsed without replacement; North Korean weapons tests surge; no nuclear test or alert change found
 
-Why it's at this level: New START expired on 5 Feb 2026 with no replacement agreement described (Carnegie). The Zaporizhzhia plant lost all off-site power on 8 Nov and switched to emergency diesel generators, with fuel for about two weeks; IAEA head Rafael Grossi called the safety situation precarious (Anadolu), and power was restored hours later (Reuters via Yahoo). Searches on 9 Nov found no nuclear test, change in alert levels or new explicit threat of use.
+Why it's at this level: New START has expired, and the US rejected Russia's offer to keep observing its central limits while seeking a new treaty (Arms Control Association, 1 Nov). Bloomberg reported on 8 Nov that North Korean weapons tests are running at twice the pace of Trump's first term. Zaporizhzhia lost all off-site power on 8 Nov before it was restored (Moscow Times). Searches on 10 Nov found no nuclear test, alert-level change or explicit threat of use.
 
-What this means for you: Reports of the 8 Nov outage described no radiation release. The IAEA publishes Zaporizhzhia updates, and national radiation-protection agencies are the official source if advice is ever issued.
+What this means for you: No change in practical risk for the public. UK guidance on radiation emergencies is published by UKHSA.
 
 Why it matters: Nuclear use anywhere would be a civilisational shock; arms-control treaties are weaker than at any time since the 1960s.
 What moves it: Threats in active wars, testing, doctrine changes, arms-control collapse, proliferation.
@@ -18,6 +18,6 @@ What moves it: Threats in active wars, testing, doctrine changes, arms-control c
 Rubric — Alert: A nuclear test, changes in deployment/alert levels, or threatened use in an active conflict. | Watch: Explicit threats, unusual exercises, doctrine changes, or arms-control lapses without replacement. | Normal: No explicit nuclear threats or tests; arms-control dialogue active.
 
 Sources:
-- Ukraine's Zaporizhzhya nuclear plant loses all external power for 27th time: UN nuclear watchdog (2026-11-08) https://www.aa.com.tr/en/world/ukraines-zaporizhzhya-nuclear-plant-loses-all-external-power-for-27th-time-un-nuclear-watchdog/4115903
-- Power restored to Zaporizhzhia nuclear plant, IAEA says (2026-11-08) https://www.yahoo.com/news/articles/zaporizhzhia-nuclear-plant-loses-external-084120498.html
-- Russia's Latest Weapons Have Left Strategic Stability on the Brink of Collapse (2026-01-21) https://carnegieendowment.org/russia-eurasia/politika/2026/01/russia-us-new-arms-race
+- Arms Control Association — Nuclear-weapon states consult as Trump talks denuclearization (2026-11-01) https://www.armscontrol.org/act/2026-11/news/nuclear-weapon-states-consult-trump-talks-denuclearization
+- Bloomberg — North Korea's weapons tests surge to twice Trump first-term pace (2026-11-08) https://www.bloomberg.com/news/articles/2026-11-08/north-korea-s-weapons-tests-surge-to-twice-trump-first-term-pace
+- The Moscow Times — Zaporizhzhia nuclear plant relying on generators again (2026-11-08) https://www.themoscowtimes.com/2026/11/08/zaporizhzhia-nuclear-plant-relying-on-generators-again-after-losing-internal-power-supply-a94202

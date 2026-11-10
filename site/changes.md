@@ -1,8 +1,9 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-09T11:44Z · next run ~17:40 UK · stale after 2026-11-10T01:44Z (36h for daily-tier signals)
+as_of 2026-11-10T17:53Z · next run ~23:40 UK · stale after 2026-11-11T07:53Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
-Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
+Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
+- 2026-11-10T17:53Z Gold (fear gauge) [gold]: NORMAL→WATCH — Gold near $4,027 on 10 Nov, down 8.9% over three months, past the 8% fall that marks Watch
 - 2026-11-09T05:53Z Gold (fear gauge) [gold]: WATCH→NORMAL — Gold near $4,134 on 9 Nov, down 7.5% over three months and back inside the Normal band
 - 2026-11-08T17:55Z Extreme heat [heat]: NORMAL→WATCH — Severe to extreme heatwave warnings across northern Australia; heat warnings in Mozambique to 8 Nov
 - 2026-11-07T17:51Z Atmospheric CO₂ [co2]: WATCH→ALERT — CO₂ 428.5 ppm at Mauna Loa, up 3.31 ppm on a year, above the 3 ppm Alert line
@@ -19,7 +20,3 @@ Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judge
 - 2026-11-04T17:53Z Crypto stress [crypto]: WATCH→NORMAL — Bitcoin 7% off its high; Binance withdrawals resuming after record theft
 - 2026-11-04T17:53Z US equity stress [equity-stress]: WATCH→NORMAL — VIX back below 20 and S&P 500 1.4% off its high after Democrats win Congress
 - 2026-11-04T11:42Z Gold (fear gauge) [gold]: WATCH→NORMAL — Gold near $4,050, down 7.9% over three months, just inside the Normal band
-- 2026-11-02T23:43Z Gold (fear gauge) [gold]: NORMAL→WATCH — Gold near $3,950, down 8.2% over three months, past the Watch line
-- 2026-11-02T23:43Z US equity stress [equity-stress]: NORMAL→WATCH — VIX above 20 at a three-month high as tech sell-off extends; S&P 500 3.5% off its high
-- 2026-11-02T18:00Z Gold (fear gauge) [gold]: WATCH→NORMAL — Gold near $3,970, down 7.8% over three months, just inside the Watch line
-- 2026-11-02T11:58Z Pacific & Indian cyclones [other-cyclones]: WATCH→ALERT — Cyclone Murasu, a GDACS red alert, due to cross the Andhra Pradesh coast on 2–3 Nov

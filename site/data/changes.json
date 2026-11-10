@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-10T17:53:51Z",
+  "id": "gold",
+  "name": "Gold (fear gauge)",
+  "from": "green",
+  "to": "amber",
+  "reason": "Gold near $4,027 on 10 Nov, down 8.9% over three months, past the 8% fall that marks Watch"
+ },
+ {
   "t": "2026-11-09T05:53:46Z",
   "id": "gold",
   "name": "Gold (fear gauge)",
