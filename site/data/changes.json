@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-10T23:42:05Z",
+  "id": "exploited-vulns",
+  "name": "Exploited vulnerabilities",
+  "from": "green",
+  "to": "amber",
+  "reason": "CISA added 12 known-exploited vulnerabilities in seven days to 10 Nov, above the 11-a-week Watch line"
+ },
+ {
   "t": "2026-11-10T17:53:51Z",
   "id": "gold",
   "name": "Gold (fear gauge)",

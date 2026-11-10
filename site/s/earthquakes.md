@@ -1,9 +1,9 @@
 # Earthquakes & tsunami — NORMAL (stable)
-id earthquakes · Weather & Hazards · horizon acute · checked 2026-11-10T17:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-11T07:53Z
+id earthquakes · Weather & Hazards · horizon acute · checked 2026-11-10T23:42Z · text written 2026-11-10T17:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-11T13:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/earthquakes
 
 Value: Max M6.4, 3× M6+ (7d)
-Rated on: Max M6.4 in 7 days, no M7+, PAGER green, no tsunami warning: Normal
+Rated on: max magnitude 6.4 below the 7 Watch line
 Basis: measured — Set by a fixed rule applied to open data (max magnitude = 6.40). Anyone can reproduce it from the public metrics file.
 
 Largest quake M6.4 near Lata, Solomon Islands, on 9 Nov; no M7+, PAGER orange or red, or tsunami flag

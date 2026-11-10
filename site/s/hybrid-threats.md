@@ -1,5 +1,5 @@
 # Europe hybrid attacks — WATCH (worsening)
-id hybrid-threats · Geopolitics · horizon acute · checked 2026-11-10T17:53Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-11T07:53Z
+id hybrid-threats · Geopolitics · horizon acute · checked 2026-11-10T23:42Z · text written 2026-11-10T17:53Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-11T13:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/hybrid-threats
 
 Value: France blames IRGC unit for store hacks (9 Nov)

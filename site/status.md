@@ -1,5 +1,5 @@
 # Canary — all signals
-as_of 2026-11-10T17:53Z · next run ~23:40 UK · stale after 2026-11-11T07:53Z (36h for daily-tier signals)
+as_of 2026-11-10T23:42Z · next run ~05:40 UK · stale after 2026-11-11T13:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -21,13 +21,13 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | ebola | ALERT | worsening | published | 10,741 cases, 5,230 deaths (5 Nov) | DR Congo Ebola outbreak at 10,741 confirmed cases and 5,230 deaths on 5 Nov; spread reached a province bordering CAR |
 | cholera-dengue | ALERT | stable | judged | DRC: 288 cholera deaths in month to 27 Oct | DR Congo leads new cholera deaths globally, with 288 in the month to 27 Oct; insecurity limits access in the east |
 | uk-threat-level | ALERT | stable | judged | Threat level: Severe | UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 10 Nov |
-| equity-stress | WATCH | improving | measured | VIX 20.6, S&P -4.3% | S&P 500 4.3% below its high and VIX 20.6 on 10 Nov, both easing but VIX still just inside the Watch band |
-| bond-volatility | WATCH | stable | measured | MOVE 94, 10y 5.01% | MOVE index 94 and US 10-year yield back above 5% on 10 Nov after hot CPI; Watch kept by the measured floor |
-| gold | WATCH | improving | measured | $4,027, 3m -8.9% | Gold near $4,027 on 10 Nov, down 8.9% over three months, past the 8% fall that marks Watch |
+| equity-stress | WATCH | improving | measured | VIX 19.5, S&P -3.8% | S&P 500 4.3% below its high and VIX 20.6 on 10 Nov, both easing but VIX still just inside the Watch band |
+| bond-volatility | WATCH | stable | measured | MOVE 92, 10y 4.98% | MOVE index 94 and US 10-year yield back above 5% on 10 Nov after hot CPI; Watch kept by the measured floor |
+| gold | WATCH | improving | measured | $4,044, 3m -8.5% | Gold near $4,027 on 10 Nov, down 8.9% over three months, past the 8% fall that marks Watch |
 | private-credit | WATCH | stable | judged | BDC tenders above 5% caps; ASIC flags gaps | Redemption limits at large private credit funds persist; Australia's ASIC flags weak disclosure on 10 Nov |
 | us-inflation | WATCH | worsening | measured | CPI ~4.1% y/y (Oct), +0.4% m/m | US CPI rose 0.4% in October, above forecasts; annual rate near 4.1% by index, rising for three months |
 | central-banks | WATCH | worsening | judged | Fed, ECB, BoJ eye December rises; BoE 4% | Fed, ECB and BoJ all leaning to December rate rises as inflation climbs; BoE raised to 4% on 5 Nov |
-| oil | WATCH | improving | measured | $92.0 · 1m -13% | Brent near $92, down 13% on the month as US–Iran talks continue; ships still being attacked near Hormuz |
+| oil | WATCH | improving | measured | $91.8, 1m -13% | Brent near $92, down 13% on the month as US–Iran talks continue; ships still being attacked near Hormuz |
 | food-prices | WATCH | improving | published | FAO index 133.9 (Oct), +5.9% y/y | FAO food price index 133.9 in October, below the 135 Alert line but up 5.9% on a year; next release 4 Dec |
 | critical-minerals | WATCH | improving | judged | Rare-earth pause extended to 10 Jan 2027 | China extended its pause on new rare-earth export controls to 10 Jan 2027 on 9 Nov; April 2025 licensing still in force |
 | fertiliser | WATCH | stable | judged | Egypt urea $535/t FOB, +17% since Sep | Egyptian urea cleared near $535 a tonne for November, up 17% since September as gas supply to plants was cut 20% |
@@ -57,6 +57,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | cables-gnss | WATCH | stable | judged | Fitburg sabotage verdict; GPS jamming | Finnish court convicts Fitburg crew over Baltic cable damage; no new cable cut found as of 10 Nov |
 | semiconductors | WATCH | improving | judged | Rare-earth pause extended to 10 Jan | China extends its pause on expanded rare-earth export controls to 10 Jan; no TSMC or Samsung stoppage found |
 | ai-governance | WATCH | stable | judged | $129m deepfake fraud charges; EU draft law | US charges three over a $129m deepfake executive fraud; EU readies draft rules on AI companion chatbots |
+| exploited-vulns | WATCH | worsening | measured | 12 KEV adds (7d), 40 (30d) | CISA added 12 known-exploited vulnerabilities in seven days to 10 Nov, above the 11-a-week Watch line |
 | famine | WATCH | stable | published | Risk of Famine: Sudan, South Sudan | FEWS NET sees risk of Famine in Darfur and South Kordofan; no area classified as Famine as of 10 Nov |
 | civil-unrest | WATCH | stable | judged | Rawalakot deaths 5 Nov; France protests | Deaths reported in a 5 Nov security operation in Rawalakot, Pakistani Kashmir; France's cost-of-living protests continue |
 | aid-funding | WATCH | stable | judged | WFP Gaza cuts; Ethiopia rations at 60% | WFP cuts Gaza food aid for 500,000 people; its Ethiopia plan is 46% funded with cereal rations at 60% |
@@ -66,12 +67,12 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | uk-disruption | WATCH | stable | judged | Tube strikes 26–27 Nov; consultants 25–26 Nov | Consultants in England strike from 25 Nov for 48 hours; RMT Tube strikes on 26 and 27 Nov, with more dates to February |
 | ftse | NORMAL | stable | measured | 10,752, -1.5% from high | FTSE 100 near 10,752 on 10 Nov, 1.5% below its 52-week high; no daily fall above 2.5% this week |
 | credit-spreads | NORMAL | stable | measured | HY OAS 3.34% | US high-yield spreads 3.34% on 9 Nov, narrower than the 5 Nov one-year high and inside the 4% Watch line |
-| dollar | NORMAL | worsening | measured | DXY 102.4, 3m +2.4% | Dollar index 102.4 on 10 Nov, up 2.4% over three months and just under its 52-week high |
+| dollar | NORMAL | worsening | measured | DXY 102.2, 3m +2.3% | Dollar index 102.4 on 10 Nov, up 2.4% over three months and just under its 52-week high |
 | banking-stress | NORMAL | stable | measured | STLFSI -0.52, CISS 0.01 | Financial stress gauges low; US bank failures in 2026 remain small community banks |
-| crypto | NORMAL | worsening | measured | BTC $72,933, -16% from high | Bitcoin near $72,900 on 10 Nov, 16% below its high and 13% lower on the month; no stablecoin de-peg found |
+| crypto | NORMAL | worsening | measured | BTC $73,711, -15% from high | Bitcoin near $72,900 on 10 Nov, 16% below its high and 13% lower on the month; no stablecoin de-peg found |
 | funding-stress | NORMAL | stable | measured | SOFR–IORB -2bp, repo $0.0bn | SOFR 2bp below the reserve rate on 9 Nov; Fed repo use near zero |
-| yen-carry | NORMAL | stable | measured | ¥158.8/$, 1w +0.2% | Yen near ¥158.8 per dollar on 10 Nov, little changed on week and month; BoJ summary points to a December rise |
-| us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.32 | Sahm recession indicator 0.00 for October; yield curve +0.32; jobless claims at a one-year low |
+| yen-carry | NORMAL | stable | measured | ¥158.7/$, 1w +0.2% | Yen near ¥158.8 per dollar on 10 Nov, little changed on week and month; BoJ summary points to a December rise |
+| us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.25 | Sahm recession indicator 0.00 for October; yield curve +0.32; jobless claims at a one-year low |
 | euro-growth | NORMAL | improving | published | Oct composite PMI ~52; Q3 GDP +0.4% | Euro-area October composite PMI near 52 and Q3 GDP +0.4%, both above Normal lines; Sentix morale dipped on 9 Nov |
 | china-economy | NORMAL | stable | judged | Oct CPI +0.7%, PPI +5.7% y/y | China's October CPI rose 0.7% and factory prices 5.7%; no deflation or contagion found, though demand is soft |
 | global-pmi | NORMAL | improving | published | Global composite 53.2 (Oct) | J.P.Morgan global composite PMI 53.2 in October, down from 54.3 but above the 51 Watch line |
@@ -90,7 +91,6 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | h5n1 | NORMAL | stable | judged | 3 cattle-linked US cases; no human spread | Three Yakima County H5N1 cases in 2026, all linked to infected dairy cattle, one fatal; no human-to-human spread |
 | novel-outbreaks | NORMAL | stable | judged | No unexplained clusters | No unexplained clusters under international investigation found to 10 Nov; UKHSA lists only known pathogens |
 | outages | NORMAL | stable | judged | No major outages | No major multi-hour cloud, CDN or payments outage found 8 to 10 Nov |
-| exploited-vulns | NORMAL | worsening | measured | 6 KEV adds (7d), 34 (30d) | Six new CISA known-exploited vulnerabilities in a week, including OpenSSH and SonicWall VPN; below Watch line |
 | displacement | NORMAL | stable | judged | Moyale ~50,000; no 500k event found | About 50,000 fled Ethiopian clashes into Kenya since late October; no new event displacing 500,000 found |
 | uk-weather | NORMAL | stable | measured | No warnings | No Met Office weather warnings in force on 10 Nov |
 | nhs-pressure | NORMAL | worsening | published | Flu low, RSV rising (wk 44) | UKHSA 5 Nov: flu low with variable trends, COVID low and falling, RSV rising at baseline; next update 12 Nov |

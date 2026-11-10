@@ -1,9 +1,9 @@
 # Dollar funding stress — NORMAL (stable)
-id funding-stress · Markets · horizon acute · checked 2026-11-10T17:53Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-11T07:53Z
+id funding-stress · Markets · horizon acute · checked 2026-11-10T23:42Z · text written 2026-11-10T17:53Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-11T13:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/funding-stress
 
 Value: SOFR–IORB -2bp, repo $0.0bn
-Rated on: SOFR–IORB 5d max 7bp < 10bp; Fed repo $0.0bn < $15bn
+Rated on: SOFR–IORB 5d max 7bp below the 10bp Watch line; Fed repo ops 5d max $0bn below the $15bn Watch line
 Basis: measured — Set by a fixed rule applied to open data (SOFR–IORB 5d max bp = 7.00 · Fed repo ops 5d max $bn = 0.00). Anyone can reproduce it from the public metrics file.
 
 SOFR 2bp below the reserve rate on 9 Nov; Fed repo use near zero

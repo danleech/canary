@@ -1,9 +1,9 @@
 # UK flood warnings — NORMAL (stable)
-id uk-floods · UK Watch · horizon acute · checked 2026-11-10T17:53Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-11T07:53Z
+id uk-floods · UK Watch · horizon acute · checked 2026-11-10T23:42Z · text written 2026-11-10T17:53Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-11T13:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/uk-floods
 
 Value: No flood warnings
-Rated on: 0 severe and 0 EA flood warnings in force (<10, Normal)
+Rated on: EA: 0 severe, 0 warnings
 Basis: measured — Set by a fixed rule applied to open data (EA: 0 severe, 0 warnings). Anyone can reproduce it from the public metrics file.
 
 No flood warnings or alerts in force in England on 10 Nov
