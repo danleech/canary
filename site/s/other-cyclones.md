@@ -1,9 +1,9 @@
 # Pacific & Indian cyclones — NORMAL (stable)
-id other-cyclones · Weather & Hazards · horizon acute · checked 2026-11-11T05:51Z · at this level since 2026-11-04T23:43Z · stale after 2026-11-11T19:51Z
+id other-cyclones · Weather & Hazards · horizon acute · checked 2026-11-11T11:42Z · text written 2026-11-11T05:51Z · at this level since 2026-11-04T23:43Z · stale after 2026-11-12T01:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/other-cyclones
 
 Value: No orange/red GDACS cyclone alerts
-Rated on: 0 GDACS orange/red cyclone alerts
+Rated on: GDACS cyclone: 0 red / 0 orange
 Basis: measured — Set by a fixed rule applied to open data (GDACS cyclone: 0 red / 0 orange). Anyone can reproduce it from the public metrics file.
 
 No GDACS orange or red cyclone alerts on 11 Nov; Pena and Cempaka rated green with tracks ending

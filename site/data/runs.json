@@ -1,5 +1,85 @@
 [
  {
+  "t": "2026-11-11T11:42:08Z",
+  "applied": 41,
+  "changed": [],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 2,
+   "judged": 18
+  },
+  "held": 40,
+  "sources": {
+   "citations": 3,
+   "news_citations": 3,
+   "outlets": 3,
+   "top_news_outlets": [
+    [
+     "france24.com",
+     1
+    ],
+    [
+     "interfax.com.ua",
+     1
+    ],
+    [
+     "theprint.in",
+     1
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 19,
+   "predicted_active": 1,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
+  "t": "2026-11-11T11:42:04Z",
+  "applied": 41,
+  "changed": [],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 2,
+   "judged": 18
+  },
+  "held": 40,
+  "sources": {
+   "citations": 3,
+   "news_citations": 3,
+   "outlets": 3,
+   "top_news_outlets": [
+    [
+     "france24.com",
+     1
+    ],
+    [
+     "interfax.com.ua",
+     1
+    ],
+    [
+     "theprint.in",
+     1
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 19,
+   "predicted_active": 1,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
   "t": "2026-11-11T05:51:56Z",
   "applied": 41,
   "changed": [],

@@ -1,10 +1,10 @@
 # US equity stress — WATCH (improving)
-id equity-stress · Markets · horizon acute · checked 2026-11-11T05:51Z · at this level since 2026-11-05T17:48Z · stale after 2026-11-11T19:51Z
+id equity-stress · Markets · horizon acute · checked 2026-11-11T11:42Z · text written 2026-11-11T05:51Z · at this level since 2026-11-05T17:48Z · stale after 2026-11-12T01:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/equity-stress
 
-Value: VIX 19.5, S&P -3.8%
-Rated on: VIX 19.5 < 20 and drawdown 3.8% < 5%; measured floor holds Watch
-Basis: measured — Set by a fixed rule applied to open data (VIX = 19.46 · S&P drawdown % = 3.81). Anyone can reproduce it from the public metrics file.
+Value: VIX 18.5, S&P -3.8%
+Rated on: VIX 18.5 has not yet cleared the 18 exit line, so Watch holds
+Basis: measured — Set by a fixed rule applied to open data (VIX = 18.54 · S&P drawdown % = 3.81). Anyone can reproduce it from the public metrics file.
 
 VIX 19.5 and S&P 500 3.8% below its high on 10 Nov, both just inside Normal lines; measured floor keeps Watch
 

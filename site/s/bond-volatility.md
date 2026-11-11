@@ -1,9 +1,9 @@
 # Bond market volatility — WATCH (stable)
-id bond-volatility · Markets · horizon acute · checked 2026-11-11T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-11T19:51Z
+id bond-volatility · Markets · horizon acute · checked 2026-11-11T11:42Z · text written 2026-11-11T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-12T01:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/bond-volatility
 
 Value: MOVE 92, 10y 4.98%
-Rated on: MOVE 92 < 100 and 10y 1m move 23bp < 40bp; measured floor holds Watch
+Rated on: MOVE 92.4 has not yet cleared the 90 exit line, so Watch holds
 Basis: measured — Set by a fixed rule applied to open data (MOVE = 92.43 · US10y 1m move bp = 23.40). Anyone can reproduce it from the public metrics file.
 Situation: Energy shock feeding inflation [energy-inflation]
 
