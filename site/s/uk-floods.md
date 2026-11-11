@@ -1,5 +1,5 @@
 # UK flood warnings — NORMAL (stable)
-id uk-floods · UK Watch · horizon acute · checked 2026-11-11T11:42Z · text written 2026-11-11T05:51Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-12T01:42Z
+id uk-floods · UK Watch · horizon acute · checked 2026-11-11T17:56Z · text written 2026-11-11T05:51Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-12T07:56Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/uk-floods
 
 Value: No flood warnings

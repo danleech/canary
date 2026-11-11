@@ -1,5 +1,21 @@
 [
  {
+  "t": "2026-11-11T17:56:07Z",
+  "id": "sovereign-debt",
+  "name": "Sovereign debt stress",
+  "from": "red",
+  "to": "amber",
+  "reason": "France–Bund 10-year spread about 147bp on 10 Nov, back below the 150bp Alert line from a 174.6bp peak on 22 Oct"
+ },
+ {
+  "t": "2026-11-11T17:56:07Z",
+  "id": "equity-stress",
+  "name": "US equity stress",
+  "from": "amber",
+  "to": "green",
+  "reason": "VIX 17.7 and S&P 500 2.4% below its high on 11 Nov, both inside Normal lines after a 3.8% weekly rise"
+ },
+ {
   "t": "2026-11-11T05:51:50Z",
   "id": "cyber",
   "name": "Major cyber incidents",
