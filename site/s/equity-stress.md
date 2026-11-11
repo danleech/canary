@@ -1,16 +1,16 @@
 # US equity stress — WATCH (improving)
-id equity-stress · Markets · horizon acute · checked 2026-11-10T23:42Z · text written 2026-11-10T17:53Z · at this level since 2026-11-05T17:48Z · stale after 2026-11-11T13:42Z
+id equity-stress · Markets · horizon acute · checked 2026-11-11T05:51Z · at this level since 2026-11-05T17:48Z · stale after 2026-11-11T19:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/equity-stress
 
 Value: VIX 19.5, S&P -3.8%
-Rated on: VIX 19.5 has not yet cleared the 18 exit line, so Watch holds
+Rated on: VIX 19.5 < 20 and drawdown 3.8% < 5%; measured floor holds Watch
 Basis: measured — Set by a fixed rule applied to open data (VIX = 19.46 · S&P drawdown % = 3.81). Anyone can reproduce it from the public metrics file.
 
-S&P 500 4.3% below its high and VIX 20.6 on 10 Nov, both easing but VIX still just inside the Watch band
+VIX 19.5 and S&P 500 3.8% below its high on 10 Nov, both just inside Normal lines; measured floor keeps Watch
 
-Why it's at this level: The S&P 500 traded near 7,479 late on 10 Nov, 4.3% below its 52-week high of 7,819 and 2.7% lower on the week, after a worst single day of -4.4% in the past five sessions (Yahoo Finance). The VIX was 20.6, down from 25.6 at the 6 Nov close but still just above the 20 line that marks Watch. A hotter-than-expected October CPI report on 10 Nov weighed on stocks during the session.
+Why it's at this level: The VIX closed near 19.5 on 10 Nov, just under the 20 line, down from above 25 on 6 Nov (Yahoo Finance). The S&P 500 ended near 7,521, 3.8% below its 52-week high of 7,819 and 2.2% lower on the week, after a worst day of -4.4% in the past five sessions. Both readings now sit inside the Normal lines, but the measured floor keeps Watch until they clear them more decisively.
 
-What this means for you: Pensions, ISAs and other stock-market savings are exposed to swings while volatility stays elevated. Short-term falls of this size are common and have often reversed; the gauges are well short of crisis levels.
+What this means for you: Share prices have been swinging more than usual. People with investments or pensions in US shares may see larger day-to-day moves than normal.
 
 Why it matters: The S&P 500 is the world's risk barometer; sharp falls and spiking volatility transmit to pensions, credit and confidence globally.
 What moves it: Earnings, interest-rate expectations, liquidity, geopolitical shocks, positioning and leverage.
@@ -18,5 +18,5 @@ What moves it: Earnings, interest-rate expectations, liquidity, geopolitical sho
 Rubric — Alert: VIX > 30, or drawdown > 15%, or a market-wide circuit breaker trips. | Watch: VIX 20–30, or drawdown 5–15%. | Normal: VIX < 20 and S&P 500 drawdown from 52-week high < 5%.
 
 Sources:
-- Yahoo Finance — S&P 500 (^GSPC) (2026-11-10) https://finance.yahoo.com/quote/%5EGSPC
-- Yahoo Finance — CBOE Volatility Index (^VIX) (2026-11-10) https://finance.yahoo.com/quote/%5EVIX
+- Yahoo Finance — CBOE Volatility Index (2026-11-11) https://finance.yahoo.com/quote/%5EVIX
+- Yahoo Finance — S&P 500 (2026-11-11) https://finance.yahoo.com/quote/%5EGSPC

@@ -1,5 +1,107 @@
 [
  {
+  "t": "2026-11-11T05:51:56Z",
+  "applied": 41,
+  "changed": [],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 2,
+   "judged": 18
+  },
+  "held": 0,
+  "sources": {
+   "citations": 72,
+   "news_citations": 35,
+   "outlets": 36,
+   "top_news_outlets": [
+    [
+     "theprint.in",
+     3
+    ],
+    [
+     "thestar.com.my",
+     3
+    ],
+    [
+     "bleepingcomputer.com",
+     2
+    ],
+    [
+     "cbsnews.com",
+     2
+    ],
+    [
+     "lloydslistintelligence.com",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 20,
+   "predicted_active": 0,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
+  "t": "2026-11-11T05:51:50Z",
+  "applied": 41,
+  "changed": [
+   "cyber"
+  ],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 2,
+   "judged": 18
+  },
+  "held": 0,
+  "sources": {
+   "citations": 72,
+   "news_citations": 35,
+   "outlets": 36,
+   "top_news_outlets": [
+    [
+     "theprint.in",
+     3
+    ],
+    [
+     "thestar.com.my",
+     3
+    ],
+    [
+     "bleepingcomputer.com",
+     2
+    ],
+    [
+     "cbsnews.com",
+     2
+    ],
+    [
+     "lloydslistintelligence.com",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 20,
+   "predicted_active": 0,
+   "quiet_but_status_changed": [
+    "cyber"
+   ],
+   "quiet_but_trend_changed": [
+    "cyber"
+   ]
+  }
+ },
+ {
   "t": "2026-11-10T23:42:05Z",
   "applied": 41,
   "changed": [

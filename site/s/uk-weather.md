@@ -1,16 +1,16 @@
 # UK weather warnings — NORMAL (stable)
-id uk-weather · UK Watch · horizon acute · checked 2026-11-10T23:42Z · text written 2026-11-10T17:53Z · at this level since 2026-11-01T11:52Z · stale after 2026-11-11T13:42Z
+id uk-weather · UK Watch · horizon acute · checked 2026-11-11T05:51Z · at this level since 2026-11-01T11:52Z · stale after 2026-11-11T19:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/uk-weather
 
 Value: No warnings
-Rated on: worst warning: none
+Rated on: No warnings in force
 Basis: measured — Set by a fixed rule applied to open data (worst warning: none). Anyone can reproduce it from the public metrics file.
 
-No Met Office weather warnings in force on 10 Nov
+No Met Office weather warnings in force on 11 Nov
 
-Why it's at this level: The Met Office had no yellow, amber or red weather warnings in force at 17:44 UTC on 10 Nov, after fog warnings on 9 Nov expired (Met Office). This is within the Normal band.
+Why it's at this level: The Met Office had no yellow, amber or red weather warnings in force at 05:40 UTC on 11 Nov (Met Office). This is within the Normal band.
 
-What this means for you: No action needed. Check the Met Office forecast and warnings before travel as autumn fog and wind can develop quickly.
+What this means for you: No action needed. Check Met Office warnings before travel if the forecast changes.
 
 Why it matters: Met Office warnings are the official signal for disruption to travel, power and safety in the UK.
 What moves it: Storms, heavy rain, snow and ice, heat, fog, thunderstorms.
@@ -18,4 +18,4 @@ What moves it: Storms, heavy rain, snow and ice, heat, fog, thunderstorms.
 Rubric — Alert: Any red warning in force. | Watch: Widespread yellow or any amber warning in force. | Normal: No warnings, or only localised yellow warnings.
 
 Sources:
-- Met Office — UK weather warnings (2026-11-10) https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings
+- Met Office — UK weather warnings (2026-11-11) https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings
