@@ -18,13 +18,13 @@
      "date": "2026-11-11"
     }
    ],
-   "value": "VIX 17.7, S&P -2.4%",
-   "value_num": 17.71,
-   "checked_at": "2026-11-11T17:56:07Z",
+   "value": "VIX 17.5, S&P -2.5%",
+   "value_num": 17.49,
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-11-11T17:56:07Z",
-   "rubric_hit": "VIX 17.7 < 20 and S&P 500 drawdown 2.4% < 5%: Normal line",
+   "rubric_hit": "VIX 17.5 below the 20 Watch line; S&P drawdown 2.55% below the 5% Watch line",
    "basis": "measured",
-   "basis_detail": "VIX=17.71; S&P drawdown %=2.35",
+   "basis_detail": "VIX=17.49; S&P drawdown %=2.55",
    "assessed_at": "2026-11-11T17:56:07Z"
   },
   "ftse": {
@@ -42,7 +42,7 @@
    ],
    "value": "10,835, -0.7% from high",
    "value_num": 10835.47,
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "FTSE drawdown 0.69% below the 5% Watch line",
    "basis": "measured",
@@ -69,7 +69,7 @@
    ],
    "value": "MOVE 92, 10y 5.00%",
    "value_num": 92.4315,
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "MOVE 92.4 has not yet cleared the 90 exit line, so Watch holds",
    "basis": "measured",
@@ -91,7 +91,7 @@
    ],
    "value": "HY OAS 3.34%",
    "value_num": 3.34,
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "HY OAS 3.34% below the 4% Watch line",
    "basis": "measured",
@@ -116,13 +116,13 @@
      "date": "2026-11-11"
     }
    ],
-   "value": "DXY 102.9, 3m +3.2%",
-   "value_num": 102.914,
-   "checked_at": "2026-11-11T17:56:07Z",
+   "value": "DXY 102.8, 3m +3.2%",
+   "value_num": 102.843,
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "DXY 3m move 3.25% below the 5% Watch line",
+   "rubric_hit": "DXY 3m move 3.18% below the 5% Watch line",
    "basis": "measured",
-   "basis_detail": "DXY 3m move %=3.25",
+   "basis_detail": "DXY 3m move %=3.18",
    "assessed_at": "2026-11-11T05:51:56Z"
   },
   "banking-stress": {
@@ -145,7 +145,7 @@
    ],
    "value": "STLFSI -0.52, CISS 0.01",
    "value_num": -0.5224,
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "STLFSI -0.52 below the 0 Watch line; ECB CISS 0.01 below the 0.25 Watch line",
    "basis": "measured",
@@ -165,13 +165,13 @@
      "date": "2026-11-11"
     }
    ],
-   "value": "$4,010, 3m -9.6%",
-   "value_num": 4009.5,
-   "checked_at": "2026-11-11T17:56:07Z",
+   "value": "$3,987, 3m -10.2%",
+   "value_num": 3986.7,
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-11-10T17:53:51Z",
-   "rubric_hit": "3m fall -9.6% (Watch)",
+   "rubric_hit": "3m fall -10.2% (Watch)",
    "basis": "measured",
-   "basis_detail": "Gold 3m gain %=-9.64; 3m fall -9.6%",
+   "basis_detail": "Gold 3m gain %=-10.15; 3m fall -10.2%",
    "assessed_at": "2026-11-11T05:51:56Z"
   },
   "crypto": {
@@ -187,13 +187,13 @@
      "date": "2026-11-11"
     }
    ],
-   "value": "BTC $74,535, -14% from high",
-   "value_num": 74535.0,
-   "checked_at": "2026-11-11T17:56:07Z",
+   "value": "BTC $73,779, -15% from high",
+   "value_num": 73779.16,
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-11-04T17:53:13Z",
-   "rubric_hit": "BTC drawdown 13.9% below the 25% Watch line",
+   "rubric_hit": "BTC drawdown 14.8% below the 25% Watch line",
    "basis": "measured",
-   "basis_detail": "BTC drawdown %=13.93",
+   "basis_detail": "BTC drawdown %=14.81",
    "assessed_at": "2026-11-11T05:51:56Z"
   },
   "us-recession": {
@@ -221,7 +221,7 @@
    ],
    "value": "Sahm 0.00, 10y–2y +0.25",
    "value_num": 0.0,
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "Sahm 0 below the 0.3 Watch line",
    "basis": "measured",
@@ -403,13 +403,13 @@
      "date": "2026-11-10"
     }
    ],
-   "value": "$92.8, 1m -12%",
-   "value_num": 92.82,
-   "checked_at": "2026-11-11T17:56:07Z",
+   "value": "$92.4, 1m -13%",
+   "value_num": 92.43,
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-11-06T17:59:39Z",
-   "rubric_hit": "Brent $92.8 ≥ $85 Watch line",
+   "rubric_hit": "Brent $92.4 ≥ $85 Watch line",
    "basis": "measured",
-   "basis_detail": "Brent $=92.82; Brent 1m %=-12.48",
+   "basis_detail": "Brent $=92.43; Brent 1m %=-12.85",
    "assessed_at": "2026-11-11T05:51:56Z"
   },
   "eu-gas": {
@@ -431,12 +431,12 @@
     }
    ],
    "value": "€87/MWh",
-   "value_num": 87.0,
-   "checked_at": "2026-11-11T17:56:07Z",
+   "value_num": 87.22,
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "TTF €87/MWh > €70/MWh Alert line",
+   "rubric_hit": "TTF €87.2/MWh > €70/MWh Alert line",
    "basis": "measured",
-   "basis_detail": "TTF €/MWh=87.00",
+   "basis_detail": "TTF €/MWh=87.22",
    "assessed_at": "2026-11-11T05:51:56Z"
   },
   "chokepoints": {
@@ -462,7 +462,7 @@
      "date": "2026-11-11"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Hormuz largely shut; tankers hit mines 11 Nov",
    "rubric_hit": "Alert: Hormuz traffic materially impeded; mine strikes on tankers 11 Nov",
@@ -560,7 +560,7 @@
      "date": "2026-11-09"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-11-07T05:46:46Z",
    "value": "Trade truce to 10 Jan; APEC Shenzhen next week",
    "rubric_hit": "Major controls suspended but disputes active; no blockade or clash",
@@ -587,7 +587,7 @@
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Poland border alert 2–8 Nov; no Article 4",
    "rubric_hit": "Sabotage warnings and explicit threats to members = Watch; no Article 4",
@@ -609,7 +609,7 @@
      "date": "2026-10-27"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No IAEA access to bombed sites; ~440 kg at 60%",
    "rubric_hit": "60% enrichment stock and inspector access curtailed = Watch",
@@ -636,7 +636,7 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Last launch found 4 Nov",
    "rubric_hit": "Ballistic and cruise missile launches in past two weeks = Watch",
@@ -663,7 +663,7 @@
      "date": "2026-11-09"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "US–China truce extended to 10 Jan 2027",
    "rubric_hit": "Major tariffs threatened between large economies, currently suspended = Watch",
@@ -749,7 +749,7 @@
      "date": "2026-11-11"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Abu Dhabi talks end; ZNPP worker killed 9 Nov",
    "value_num": 162,
@@ -781,7 +781,7 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Houthis hit Saudi pipeline 9 Nov; Riyadh fire",
    "rubric_hit": "Alert: major cross-border strikes (Houthi missiles at Riyadh 10 Nov; East-West pipeline hit 9 Nov)",
@@ -917,7 +917,7 @@
      "date": "2026-11-11"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "LoC fire reported early Nov; no strikes",
    "rubric_hit": "Ceasefire violations and treaty suspension = Watch; no strikes",
@@ -943,7 +943,7 @@
      "date": "2026-11-08"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No US–Russia limits; N Korea tests surge",
    "rubric_hit": "Arms-control lapse without replacement = Watch",
@@ -969,7 +969,7 @@
      "date": "2026-11-09"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No active Atlantic storms",
    "rubric_hit": "No hurricane active or threatening land within 5 days",
@@ -991,7 +991,7 @@
      "date": "2026-11-11"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-11-04T23:43:43Z",
    "value": "No orange/red GDACS cyclone alerts",
    "rubric_hit": "GDACS cyclone: 0 red / 0 orange",
@@ -1040,7 +1040,7 @@
      "date": "2026-11-11"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
    "rubric_hit": "GDACS wildfire: 0 red / 0 orange",
@@ -1062,7 +1062,7 @@
      "date": "2026-11-11"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
    "rubric_hit": "GDACS flood: 0 red / 0 orange",
@@ -1086,7 +1086,7 @@
    ],
    "value": "Max M6.4, 3× M6+ (7d)",
    "value_num": 6.4,
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "max magnitude 6.4 below the 7 Watch line",
    "basis": "measured",
@@ -1160,13 +1160,13 @@
      "date": "2026-11-11"
     }
    ],
-   "value": "G0 S0 R0",
+   "value": "G0 S0 R1",
    "value_num": 0,
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "NOAA G0 S0 R0 (24h max)",
+   "rubric_hit": "NOAA G0 S0 R1 (24h max)",
    "basis": "measured",
-   "basis_detail": "NOAA G0 S0 R0 (24h max)",
+   "basis_detail": "NOAA G0 S0 R1 (24h max)",
    "assessed_at": "2026-11-11T05:51:56Z"
   },
   "global-temp": {
@@ -1307,7 +1307,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Ebola PHEIC in force",
    "value_num": 1,
@@ -1334,7 +1334,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "10,741 cases, 5,230 deaths (5 Nov)",
    "value_num": 10741,
@@ -1361,7 +1361,7 @@
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "3 cattle-linked US cases; no human spread",
    "rubric_hit": "Sporadic animal-to-human cases only = Normal",
@@ -1473,7 +1473,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No unexplained clusters",
    "rubric_hit": "No unexplained clusters under international investigation",
@@ -1504,7 +1504,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-11-11T05:51:50Z",
    "value": "France blames IRGC for destructive fridge hacks",
    "rubric_hit": "Destructive state-attributed attack (France attributes fridge attacks to IRGC, 9 Nov) = Alert",
@@ -1525,7 +1525,7 @@
      "date": "2026-11-11"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No major outages",
    "rubric_hit": "No major multi-hour outage in past 48h",
@@ -1729,7 +1729,7 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "10y ~5.18% (10 Nov), near 19-year highs",
    "value_num": 5.18,
@@ -1779,7 +1779,7 @@
     }
    ],
    "value": "No warnings",
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-11-01T11:52:42Z",
    "value_num": 0,
    "rubric_hit": "worst warning: none",
@@ -1889,7 +1889,7 @@
      "date": "2026-11-11"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "SOFR–IORB 5d max bp=7.00; Fed repo ops 5d max $bn=0.00",
@@ -1920,12 +1920,12 @@
   "yen-carry": {
    "status": "green",
    "trend": "flat",
-   "value": "¥159.8/$, 1w +0.9%",
-   "value_num": 159.827,
+   "value": "¥159.7/$, 1w +0.8%",
+   "value_num": 159.698,
    "summary": "Yen near ¥158.8 per dollar on 11 Nov, little changed on the week and month; no intervention reported",
    "state": "The dollar was near ¥158.8 early on 11 Nov, up 0.3% on both the week and the month, far inside the 3% weekly and 6% monthly Watch lines (Yahoo Finance). The yen is about 3% stronger than its 52-week low of ¥163.9 per dollar. No Japanese currency intervention was found as of 11 Nov.",
    "for_you": "The yen is weak but steady. A sudden yen surge can unsettle global markets, but none is under way.",
-   "rubric_hit": "USD/JPY 1w move 0.93% below the 3% Watch line; USD/JPY 1m move 0.95% below the 6% Watch line",
+   "rubric_hit": "USD/JPY 1w move 0.85% below the 3% Watch line; USD/JPY 1m move 0.87% below the 6% Watch line",
    "sources": [
     {
      "title": "Yahoo Finance — USD/JPY",
@@ -1933,10 +1933,10 @@
      "date": "2026-11-11"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
-   "basis_detail": "USD/JPY 1w move %=0.93; USD/JPY 1m move %=0.95",
+   "basis_detail": "USD/JPY 1w move %=0.85; USD/JPY 1m move %=0.87",
    "assessed_at": "2026-11-11T05:51:56Z"
   },
   "jobless-claims": {
@@ -2052,7 +2052,7 @@
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
@@ -2079,7 +2079,7 @@
      "date": "2026-11-11"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
@@ -2197,7 +2197,7 @@
      "date": "2026-11-11"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-11-10T23:42:05Z",
    "basis": "measured",
    "basis_detail": "KEV additions 7d=11.00",
@@ -2273,15 +2273,15 @@
      "date": "2026-11-11"
     }
    ],
-   "checked_at": "2026-11-11T17:56:07Z",
+   "checked_at": "2026-11-11T23:41:57Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "EA: 0 severe, 0 warnings",
    "assessed_at": "2026-11-11T05:51:56Z"
   }
  },
- "headline": "Hormuz stays largely shut as Iran reports mine strikes on tankers (11 Nov); Russia–Ukraine talks in Abu Dhabi end without a deal; France–Bund spread slips below 150bp; Ebola in DR Congo passes 10,700 cases.",
- "generated_at": "2026-11-11T17:56:07Z",
+ "headline": "Hormuz stays largely shut under the US blockade after Iran reported tankers hitting mines on 11 Nov; Abu Dhabi Ukraine talks ended without a deal; the DR Congo Ebola outbreak tops 10,700 cases.",
+ "generated_at": "2026-11-11T23:41:57Z",
  "world": {
   "score": 39,
   "band": "Unsettled",

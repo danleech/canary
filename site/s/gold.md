@@ -1,10 +1,10 @@
 # Gold (fear gauge) — WATCH (improving)
-id gold · Markets · horizon acute · checked 2026-11-11T17:56Z · text written 2026-11-11T05:51Z · at this level since 2026-11-10T17:53Z · stale after 2026-11-12T07:56Z
+id gold · Markets · horizon acute · checked 2026-11-11T23:41Z · text written 2026-11-11T05:51Z · at this level since 2026-11-10T17:53Z · stale after 2026-11-12T13:41Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/gold
 
-Value: $4,010, 3m -9.6%
-Rated on: 3m fall -9.6% (Watch)
-Basis: measured — Set by a fixed rule applied to open data (Gold 3m gain % = -9.64 · 3m fall -9.6%). Anyone can reproduce it from the public metrics file.
+Value: $3,987, 3m -10.2%
+Rated on: 3m fall -10.2% (Watch)
+Basis: measured — Set by a fixed rule applied to open data (Gold 3m gain % = -10.15 · 3m fall -10.2%). Anyone can reproduce it from the public metrics file.
 
 Gold near $4,068 on 11 Nov, down 8.3% over three months, just past the 8% fall that marks Watch
 

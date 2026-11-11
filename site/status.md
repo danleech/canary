@@ -1,5 +1,5 @@
 # Canary — all signals
-as_of 2026-11-11T17:56Z · next run ~23:40 UK · stale after 2026-11-12T07:56Z (36h for daily-tier signals)
+as_of 2026-11-11T23:41Z · next run ~05:40 UK · stale after 2026-11-12T13:41Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -22,12 +22,12 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | cyber | ALERT | worsening | judged | France blames IRGC for destructive fridge hacks | France on 9 Nov blamed an IRGC unit for attacks on refrigeration in about 700 stores that caused at least 15 fires |
 | uk-threat-level | ALERT | stable | judged | Threat level: Severe | UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 11 Nov |
 | bond-volatility | WATCH | stable | measured | MOVE 92, 10y 5.00% | MOVE index 92 and US 10-year yield near 4.98% on 10 Nov; readings under Watch lines but the measured floor keeps Watch |
-| gold | WATCH | improving | measured | $4,010, 3m -9.6% | Gold near $4,068 on 11 Nov, down 8.3% over three months, just past the 8% fall that marks Watch |
+| gold | WATCH | improving | measured | $3,987, 3m -10.2% | Gold near $4,068 on 11 Nov, down 8.3% over three months, just past the 8% fall that marks Watch |
 | private-credit | WATCH | stable | judged | BDC tenders above caps; ASIC stop orders | Redemption limits at large private credit funds persist; Australia's ASIC issued new stop orders on 10 Nov |
 | us-inflation | WATCH | worsening | measured | CPI 4.1% y/y (Oct), rising 3 months | US CPI about 4.1% a year in October by the FRED index, up from 4.0% and rising for three months |
 | central-banks | WATCH | worsening | judged | Fed Dec rise priced ~89%; BoE at 4% | Markets price an 89% chance of a December Fed rate rise after hot October CPI; BoE signals another rise is likely |
 | sovereign-debt | WATCH | improving | judged | OAT–Bund ~147bp (10 Nov) | France–Bund 10-year spread about 147bp on 10 Nov, back below the 150bp Alert line from a 174.6bp peak on 22 Oct |
-| oil | WATCH | improving | measured | $92.8, 1m -12% | Brent near $92, down 13% on the month as the US pauses strikes on Iran; Hormuz still largely shut |
+| oil | WATCH | improving | measured | $92.4, 1m -13% | Brent near $92, down 13% on the month as the US pauses strikes on Iran; Hormuz still largely shut |
 | food-prices | WATCH | improving | published | FAO index 133.9 (Oct), +5.9% y/y | FAO food price index 133.9 in October, below the 135 Alert line but up 5.9% on a year; next release 4 Dec |
 | critical-minerals | WATCH | improving | judged | Rare-earth pause extended to 10 Jan 2027 | China extended its pause on new rare-earth export controls to 10 Jan 2027 on 9 Nov; April 2025 licensing still in force |
 | fertiliser | WATCH | stable | judged | Egypt urea $535/t FOB, +17% since Sep | Egyptian urea cleared near $535 a tonne for November, up 17% since September after gas supply to some plants was cut |
@@ -64,14 +64,14 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | gilts | WATCH | stable | judged | 10y ~5.18% (10 Nov), near 19-year highs | 10-year gilt near 5.18% on 10 Nov as BoE signals another rate rise; yields near 19-year highs, no weak auction found |
 | uk-energy-cap | WATCH | worsening | published | £1,723 now; Jan forecast £1,999 (+16%) | Cap £1,723 a year; Cornwall Insight forecasts £1,999 for January, a 16% rise; Ofgem's January cap is due late November |
 | uk-disruption | WATCH | stable | judged | Consultants 25–26 Nov; Tube strikes 26–27 Nov | Consultants in England strike on 25–26 Nov; RMT Tube strikes on 26 and 27 Nov, with more dates to February |
-| equity-stress | NORMAL | improving | measured | VIX 17.7, S&P -2.4% | VIX 17.7 and S&P 500 2.4% below its high on 11 Nov, both inside Normal lines after a 3.8% weekly rise |
+| equity-stress | NORMAL | improving | measured | VIX 17.5, S&P -2.5% | VIX 17.7 and S&P 500 2.4% below its high on 11 Nov, both inside Normal lines after a 3.8% weekly rise |
 | ftse | NORMAL | stable | measured | 10,835, -0.7% from high | FTSE 100 near 10,752 on 10 Nov, 1.5% below its 52-week high; no daily fall above 2.5% this week |
 | credit-spreads | NORMAL | stable | measured | HY OAS 3.34% | US high-yield spreads 3.34% on 9 Nov, below the 5 Nov one-year high and inside the 4% Watch line |
-| dollar | NORMAL | worsening | measured | DXY 102.9, 3m +3.2% | Dollar index near 102.2 on 11 Nov, up 2.6% over three months and just under its 52-week high |
+| dollar | NORMAL | worsening | measured | DXY 102.8, 3m +3.2% | Dollar index near 102.2 on 11 Nov, up 2.6% over three months and just under its 52-week high |
 | banking-stress | NORMAL | stable | measured | STLFSI -0.52, CISS 0.01 | Financial stress gauges low: St Louis Fed index -0.52 and ECB stress indicator 0.006; no notable bank failure found |
-| crypto | NORMAL | worsening | measured | BTC $74,535, -14% from high | Bitcoin near $73,700 on 11 Nov, 15% below its high and 12% lower on the month; no stablecoin de-peg found |
+| crypto | NORMAL | worsening | measured | BTC $73,779, -15% from high | Bitcoin near $73,700 on 11 Nov, 15% below its high and 12% lower on the month; no stablecoin de-peg found |
 | funding-stress | NORMAL | stable | measured | SOFR–IORB -2bp, repo $0.0bn | SOFR 2bp below the Fed's reserve rate on 9 Nov; Fed repo use near zero on 10 Nov |
-| yen-carry | NORMAL | stable | measured | ¥159.8/$, 1w +0.9% | Yen near ¥158.8 per dollar on 11 Nov, little changed on the week and month; no intervention reported |
+| yen-carry | NORMAL | stable | measured | ¥159.7/$, 1w +0.8% | Yen near ¥158.8 per dollar on 11 Nov, little changed on the week and month; no intervention reported |
 | us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.25 | Sahm recession indicator 0.00 for October; yield curve +0.25 on 10 Nov; jobless claims at a one-year low |
 | euro-growth | NORMAL | improving | published | Oct flash PMI 51.9; Q3 GDP +0.4% | Euro-area Q3 GDP +0.4% and October flash composite PMI 51.9, both above Normal lines; next GDP estimate 13 Nov |
 | china-economy | NORMAL | stable | judged | Oct CPI +0.7%, PPI +5.7% y/y | China's October CPI rose 0.7% and factory prices 5.7%, fastest in about 4.5 years; no deflation or contagion found |
@@ -85,7 +85,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | floods | NORMAL | stable | measured | GDACS: no orange/red | No GDACS orange or red flood alerts on 11 Nov; only green-level flood events listed |
 | earthquakes | NORMAL | stable | measured | Max M6.4, 3× M6+ (7d) | Largest quake M6.4 near Lata, Solomon Islands, on 9 Nov; no M7+, PAGER orange or red, or damaging tsunami |
 | volcanic | NORMAL | stable | judged | Mayon at Level 3; no red aviation codes | No red aviation codes, large eruptions or ash closures found as of 11 Nov; Mayon remains at Alert Level 3 |
-| space-weather | NORMAL | stable | measured | G0 S0 R0 | NOAA scales at G0 S0 R0 in the 24 hours to 11 Nov; no geomagnetic storm forecast |
+| space-weather | NORMAL | stable | measured | G0 S0 R1 | NOAA scales at G0 S0 R0 in the 24 hours to 11 Nov; no geomagnetic storm forecast |
 | cold-storms | NORMAL | worsening | judged | No major cold wave (11 Nov) | No major cold wave or winter storm found on 11 Nov; Met Office says a weakening polar vortex raises later cold risk |
 | coral-bleaching | NORMAL (c) | worsening | judged | No global event; Caribbean heat stress | No global bleaching event declared as of 11 Nov; El Niño heat stress forecast across the Caribbean into November |
 | h5n1 | NORMAL | stable | judged | 3 cattle-linked US cases; no human spread | Three Yakima County H5N1 cases in 2026, linked to dairy cattle, one fatal; no human-to-human spread found |

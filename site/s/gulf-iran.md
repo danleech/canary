@@ -1,5 +1,5 @@
 # Gulf / US–Iran war — ALERT (stable)
-id gulf-iran · Armed Conflict · horizon acute · checked 2026-11-11T17:56Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-12T07:56Z
+id gulf-iran · Armed Conflict · horizon acute · checked 2026-11-11T23:41Z · text written 2026-11-11T17:56Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-12T13:41Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/gulf-iran
 
 Value: Hormuz shut; tankers hit mines 11 Nov

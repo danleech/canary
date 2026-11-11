@@ -1,5 +1,5 @@
 # Bond market volatility — WATCH (stable)
-id bond-volatility · Markets · horizon acute · checked 2026-11-11T17:56Z · text written 2026-11-11T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-12T07:56Z
+id bond-volatility · Markets · horizon acute · checked 2026-11-11T23:41Z · text written 2026-11-11T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-12T13:41Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/bond-volatility
 
 Value: MOVE 92, 10y 5.00%

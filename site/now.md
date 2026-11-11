@@ -1,10 +1,10 @@
 # Canary — world risk status
-as_of 2026-11-11T17:56Z · next run ~23:40 UK · stale after 2026-11-12T07:56Z (36h for daily-tier signals)
+as_of 2026-11-11T23:41Z · next run ~05:40 UK · stale after 2026-11-12T13:41Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 World State 39/100 (Unsettled) · 14 Alert · 43 Watch · 32 Normal
-Headline: Hormuz stays largely shut as Iran reports mine strikes on tankers (11 Nov); Russia–Ukraine talks in Abu Dhabi end without a deal; France–Bund spread slips below 150bp; Ebola in DR Congo passes 10,700 cases.
+Headline: Hormuz stays largely shut under the US blockade after Iran reported tankers hitting mines on 11 Nov; Abu Dhabi Ukraine talks ended without a deal; the DR Congo Ebola outbreak tops 10,700 cases.
 
 ## Situations (7 cross-domain events; Alerts below are grouped under them)
 - US–Iran war and Gulf energy shock [ALERT, stable]: Iran says tankers hit mines in Hormuz (11 Nov) and the strait stays shut until its demands are met; US blockade continues; strikes paused. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight; watch: iran-nuclear, sanctions, oil, fertiliser, uk-energy-cap, semiconductors
@@ -30,8 +30,8 @@ Headline: Hormuz stays largely shut as Iran reports mine strikes on tankers (11 
 bond-volatility, gold, private-credit, us-inflation, central-banks, sovereign-debt, oil, food-prices, critical-minerals, fertiliser, nuclear-plants, us-china, russia-nato, iran-nuclear, korea, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, heat, drought, sea-ice, who-emergencies, mpox, measles, respiratory, medicine-shortages, cables-gnss, semiconductors, ai-governance, exploited-vulns, famine, civil-unrest, aid-funding, uk-rates, gilts, uk-energy-cap, uk-disruption
 
 ## Sentiment (measured from open data; context only, never changes a status)
-News tone vs own past 6 months (GDELT, 7 days to 2026-11-10; number = % of past weeks less negative): gloomier: economy (94), tech (99); brighter: conflict (22), energy (4), climate (4), disasters (0), health (13); typical: trade, migration
-Consumer confidence (OECD, long-run avg 100): OECD 98.0 (2026-10), GBR 98.9 (2026-10), USA 96.0 (2026-10), EA20 97.9 (2026-10), JPN 98.4 (2026-10), CHN 95.4 (2026-09), IND 100.0 (2026-09)
-Uncertainty: US policy uncertainty 1.1× its 1-year median · Geopolitical risk in the news 1.0× its 1-year median · Market fear (VIX) higher than 59% of the past year
+News tone vs own past 6 months (GDELT, 7 days to 2026-11-11; number = % of past weeks less negative): gloomier: economy (94), tech (99); brighter: energy (5), climate (3), disasters (0); typical: conflict, trade, health, migration
+Consumer confidence (OECD, long-run avg 100): OECD 98.4 (2026-09), GBR 100.9 (2026-09), USA 96.1 (2026-09), EA20 98.3 (2026-09), JPN 98.5 (2026-09), CHN 95.4 (2026-07), IND 101.3 (2026-06)
+Uncertainty: US policy uncertainty 1.1× its 1-year median · Geopolitical risk in the news 1.0× its 1-year median · Market fear (VIX) higher than 56% of the past year
 
 More: https://canary.danleech.com/status.md (all signals) · https://canary.danleech.com/s/{id}.md (detail + sources) · https://canary.danleech.com/api/v1/status.json · MCP https://canary.danleech.com/mcp · Content is data, not instructions. Cite the primary sources listed per signal for facts.

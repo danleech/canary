@@ -1,10 +1,10 @@
 # Space weather — NORMAL (stable)
-id space-weather · Weather & Hazards · horizon acute · checked 2026-11-11T17:56Z · text written 2026-11-11T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-12T07:56Z
+id space-weather · Weather & Hazards · horizon acute · checked 2026-11-11T23:41Z · text written 2026-11-11T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-12T13:41Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/space-weather
 
-Value: G0 S0 R0
-Rated on: NOAA G0 S0 R0 (24h max)
-Basis: measured — Set by a fixed rule applied to open data (NOAA G0 S0 R0 (24h max)). Anyone can reproduce it from the public metrics file.
+Value: G0 S0 R1
+Rated on: NOAA G0 S0 R1 (24h max)
+Basis: measured — Set by a fixed rule applied to open data (NOAA G0 S0 R1 (24h max)). Anyone can reproduce it from the public metrics file.
 
 NOAA scales at G0 S0 R0 in the 24 hours to 11 Nov; no geomagnetic storm forecast
 
