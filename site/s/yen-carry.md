@@ -1,10 +1,10 @@
 # Yen & carry trade — NORMAL (stable)
-id yen-carry · Markets · horizon acute · checked 2026-11-12T17:53Z · text written 2026-11-12T05:52Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-13T07:53Z
+id yen-carry · Markets · horizon acute · checked 2026-11-12T23:42Z · text written 2026-11-12T05:52Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-13T13:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/yen-carry
 
-Value: ¥159.8/$, 1w +1.4%
-Rated on: USD/JPY 1w move 1.44% below the 3% Watch line; USD/JPY 1m move 1.15% below the 6% Watch line
-Basis: measured — Set by a fixed rule applied to open data (USD/JPY 1w move % = 1.44 · USD/JPY 1m move % = 1.15). Anyone can reproduce it from the public metrics file.
+Value: ¥159.9/$, 1w +1.5%
+Rated on: USD/JPY 1w move 1.5% below the 3% Watch line; USD/JPY 1m move 1.21% below the 6% Watch line
+Basis: measured — Set by a fixed rule applied to open data (USD/JPY 1w move % = 1.50 · USD/JPY 1m move % = 1.21). Anyone can reproduce it from the public metrics file.
 
 Yen near ¥159.7 per dollar on 12 Nov, 1.4% weaker on the week; no intervention reported
 

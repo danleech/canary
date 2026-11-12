@@ -1,5 +1,5 @@
 # Canary — all signals
-as_of 2026-11-12T17:53Z · next run ~23:40 UK · stale after 2026-11-13T07:53Z (36h for daily-tier signals)
+as_of 2026-11-12T23:42Z · next run ~05:40 UK · stale after 2026-11-13T13:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -21,13 +21,13 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | cholera-dengue | ALERT | stable | judged | Over 3,000 cholera deaths in 2026 (WHO) | WHO counts over 3,000 cholera deaths in 2026, nearly nine in ten in Africa; DR Congo led new deaths in October |
 | cyber | ALERT | stable | judged | France blames IRGC for destructive fridge hacks | France blamed an IRGC unit on 9 Nov for attacks on refrigeration in about 700 stores that caused at least 15 fires |
 | uk-threat-level | ALERT | stable | judged | Threat level: Severe | UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 12 Nov |
-| bond-volatility | WATCH | improving | measured | MOVE 97, 10y 5.11% | MOVE index 92 on 10 Nov and US 10-year yield near 5.00% on 11 Nov; under Watch lines, measured floor keeps Watch |
-| gold | WATCH | improving | measured | $3,876, 3m -13.4% | Gold near $3,978 on 12 Nov, down 11.1% over three months, beyond the 8% fall that marks Watch |
+| bond-volatility | WATCH | improving | measured | MOVE 98, 10y 5.10% | MOVE index 92 on 10 Nov and US 10-year yield near 5.00% on 11 Nov; under Watch lines, measured floor keeps Watch |
+| gold | WATCH | improving | measured | $3,882, 3m -13.2% | Gold near $3,978 on 12 Nov, down 11.1% over three months, beyond the 8% fall that marks Watch |
 | private-credit | WATCH | stable | judged | Fund redemption caps persist; no forced sales | Large private credit funds keep limiting redemptions; no forced asset sales or bank losses found as of 12 Nov |
 | us-inflation | WATCH | worsening | measured | CPI 4.1% y/y (Oct), rising 3 months | US CPI about 4.1% a year in October and rising for three months; Fed officials discuss faster rate rises |
 | central-banks | WATCH | worsening | judged | Fed Dec rise priced ~90%; ECB rise expected | Markets price about a 90% chance of a December Fed rate rise; Fed officials discuss faster moves and ECB set to raise |
 | sovereign-debt | WATCH | worsening | judged | OAT–Bund ~149bp (12 Nov) | France–Bund 10-year spread widened back to about 149bp on 12 Nov, just under the 150bp Alert line |
-| oil | WATCH | improving | measured | $94.6, 1m -11% | Brent near $92 on 12 Nov, down 13% on the month as US strikes on Iran pause; Hormuz still largely shut |
+| oil | WATCH | improving | measured | $95.9, 1m -9% | Brent near $92 on 12 Nov, down 13% on the month as US strikes on Iran pause; Hormuz still largely shut |
 | food-prices | WATCH | improving | published | FAO index 133.9 (Oct), +5.9% y/y | FAO food price index 133.9 in October, below the 135 Alert line but up 5.9% on a year; next release 4 Dec |
 | critical-minerals | WATCH | stable | judged | Rare-earth pause extended to 10 Jan 2027 | China extended its pause on new rare-earth export controls to 10 Jan 2027; April 2025 licensing still in force |
 | fertiliser | WATCH | worsening | judged | Egypt urea $535/t FOB; gas cuts up to 33% | Egypt raised gas curtailments on fertiliser plants to 33% on 9 Nov; Egyptian urea near $535 a tonne, up 17% since Sep |
@@ -64,15 +64,15 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | gilts | WATCH | improving | judged | 10y ~5.2% (12 Nov), down ~20bp in a month | 10-year gilt near 5.22% on 11 Nov, about 22bp lower over a month; long yields still high; no weak auction found |
 | uk-energy-cap | WATCH | worsening | published | £1,723 now; Jan forecast £1,999 (+16%) | Cap £1,723 a year; Cornwall Insight forecasts £1,999 for January, a 16% rise; Ofgem's January cap is due late November |
 | uk-disruption | WATCH | stable | judged | Consultants 25–27 Nov; Tube strikes from Nov | Consultants in England strike 25–27 Nov; Tube drivers set strikes from late November into the Christmas period |
-| equity-stress | NORMAL | improving | measured | VIX 17.6, S&P -2.4% | VIX 17.5 and S&P 500 2.5% below its high on 11 Nov; both inside Normal lines after a 3.6% weekly gain |
+| equity-stress | NORMAL | improving | measured | VIX 18.7, S&P -2.9% | VIX 17.5 and S&P 500 2.5% below its high on 11 Nov; both inside Normal lines after a 3.6% weekly gain |
 | ftse | NORMAL | stable | measured | 10,863, -0.4% from high | FTSE 100 near 10,835 on 11 Nov, 0.7% below its 52-week high; no daily fall above 2.5% in five sessions |
 | credit-spreads | NORMAL | stable | measured | HY OAS 3.30% | US high-yield spreads 3.34% on 9 Nov, below the 5 Nov one-year high of 3.48% and inside the 4% Watch line |
 | dollar | NORMAL | worsening | measured | DXY 103.2, 3m +3.5% | Dollar index near 103.0 on 12 Nov, a 52-week high, up 3.4% over three months; inside Normal lines |
 | banking-stress | NORMAL | stable | measured | STLFSI -0.49, CISS 0.01 | Financial stress gauges low: St Louis Fed index -0.52 and ECB stress indicator 0.006; no notable bank failure found |
-| crypto | NORMAL | worsening | measured | BTC $71,753, -17% from high | Bitcoin near $73,500 on 12 Nov, 15% below its high and 9.6% lower on the month; no stablecoin de-peg found |
+| crypto | NORMAL | worsening | measured | BTC $71,156, -18% from high | Bitcoin near $73,500 on 12 Nov, 15% below its high and 9.6% lower on the month; no stablecoin de-peg found |
 | funding-stress | NORMAL | stable | measured | SOFR–IORB -1bp, repo $0.0bn | SOFR 2bp below the Fed's reserve rate on 9 Nov; Fed repo use near zero on 10 Nov |
-| yen-carry | NORMAL | stable | measured | ¥159.8/$, 1w +1.4% | Yen near ¥159.7 per dollar on 12 Nov, 1.4% weaker on the week; no intervention reported |
-| us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.25 | Sahm recession indicator 0.00 for October; yield curve +0.25 on 10 Nov; jobless claims at a one-year low |
+| yen-carry | NORMAL | stable | measured | ¥159.9/$, 1w +1.5% | Yen near ¥159.7 per dollar on 12 Nov, 1.4% weaker on the week; no intervention reported |
+| us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.24 | Sahm recession indicator 0.00 for October; yield curve +0.25 on 10 Nov; jobless claims at a one-year low |
 | euro-growth | NORMAL | stable | published | Oct flash PMI 51.9; Q3 GDP +0.4% | Euro-area Q3 GDP +0.4% and October composite PMI 51.9, above Normal lines; Eurostat's next GDP estimate due 13 Nov |
 | china-economy | NORMAL | stable | judged | Oct CPI +0.7%, PPI +5.7% y/y | China's October CPI rose 0.7% and factory prices 5.7%; weak lending expected but no deflation or contagion found |
 | global-pmi | NORMAL | improving | published | Global composite 53.2 (Oct) | J.P.Morgan global composite PMI 53.2 in October, down from 54.3 but above the 51 Watch line |
@@ -85,7 +85,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | floods | NORMAL | stable | measured | GDACS: no orange/red | No GDACS orange or red flood alerts on 12 Nov; only four green-level flood events listed |
 | earthquakes | NORMAL | stable | measured | Max M6.4, 2× M6+ (7d) | Largest quake M6.4 near Lata, Solomon Islands, on 9 Nov; no M7+, PAGER orange or red, or damaging tsunami |
 | volcanic | NORMAL | stable | judged | No red aviation codes (12 Nov) | No red aviation codes, VEI 4+ eruptions or ash-related airspace closures found as of 12 Nov |
-| space-weather | NORMAL | stable | measured | G0 S0 R1 | NOAA scales peaked at G0 S0 R1 in the 24 hours to 12 Nov; no geomagnetic storm forecast |
+| space-weather | NORMAL | stable | measured | G0 S0 R0 | NOAA scales peaked at G0 S0 R1 in the 24 hours to 12 Nov; no geomagnetic storm forecast |
 | cold-storms | NORMAL | worsening | judged | No major cold wave (12 Nov) | No major cold wave or top-tier winter-storm warning confirmed on 12 Nov; polar vortex disruption raises later cold risk |
 | coral-bleaching | NORMAL (c) | worsening | judged | No global event declared (12 Nov) | No new global bleaching event declared as of 12 Nov; El Niño heat stress threatens Caribbean reefs |
 | h5n1 | NORMAL | stable | judged | 3 cattle-linked US cases; no human spread | Three Yakima County H5N1 cases in 2026, all linked to infected dairy cattle, one fatal; no human-to-human spread found |

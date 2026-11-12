@@ -1,5 +1,5 @@
 # Trade war & tariffs — WATCH (improving)
-id trade-war · Geopolitics · horizon acute · checked 2026-11-12T17:53Z · text written 2026-11-12T05:52Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-13T07:53Z
+id trade-war · Geopolitics · horizon acute · checked 2026-11-12T23:42Z · text written 2026-11-12T05:52Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-13T13:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/trade-war
 
 Value: US–China truce extended to 10 Jan 2027

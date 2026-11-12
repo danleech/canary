@@ -1,10 +1,10 @@
 # Canary — world risk status
-as_of 2026-11-12T17:53Z · next run ~23:40 UK · stale after 2026-11-13T07:53Z (36h for daily-tier signals)
+as_of 2026-11-12T23:42Z · next run ~05:40 UK · stale after 2026-11-13T13:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 World State 39/100 (Unsettled) · 14 Alert · 43 Watch · 32 Normal
-Headline: Hormuz stays shut as more tankers are hit on 11–12 Nov while US envoys meet in Moscow; Ebola in DR Congo passes 11,000 cases, Sudan's war grinds on and the France–Bund spread nears 150bp.
+Headline: Gulf shipping attacks, the Russia–Ukraine war and Ebola in DR Congo keep Alerts in place; late-evening checks on 12 Nov found no new developments that change any status.
 
 ## Situations (7 cross-domain events; Alerts below are grouped under them)
 - US–Iran war and Gulf energy shock [ALERT, stable]: Iran says Hormuz stays shut pending its conditions; tankers hit by explosions 11–12 Nov, IRGC claims mines; US blockade holds. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight; watch: iran-nuclear, sanctions, oil, fertiliser, uk-energy-cap, semiconductors
@@ -21,15 +21,14 @@ Headline: Hormuz stays shut as more tankers are hit on 11–12 Nov while US envo
 - UK terrorism threat level [uk-threat-level] stable, AI-judged: UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 12 Nov
 
 ## Changed in last 24h
-- Sovereign debt stress [sovereign-debt]: ALERT→WATCH — France–Bund 10-year spread about 147bp on 10 Nov, back below the 150bp Alert line from a 174.6bp peak on 22 Oct (2026-11-11T17:56Z)
-- US equity stress [equity-stress]: WATCH→NORMAL — VIX 17.7 and S&P 500 2.4% below its high on 11 Nov, both inside Normal lines after a 3.8% weekly rise (2026-11-11T17:56Z)
+- No status changes.
 
 ## Watch (ids; detail at /s/{id}.md)
 bond-volatility, gold, private-credit, us-inflation, central-banks, sovereign-debt, oil, food-prices, critical-minerals, fertiliser, nuclear-plants, us-china, russia-nato, iran-nuclear, korea, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, heat, drought, sea-ice, who-emergencies, mpox, measles, respiratory, medicine-shortages, cables-gnss, semiconductors, ai-governance, exploited-vulns, famine, civil-unrest, aid-funding, uk-rates, gilts, uk-energy-cap, uk-disruption
 
 ## Sentiment (measured from open data; context only, never changes a status)
-News tone vs own past 6 months (GDELT, 7 days to 2026-11-11; number = % of past weeks less negative): gloomier: economy (94), tech (99); brighter: energy (5), climate (3), disasters (0); typical: conflict, trade, health, migration
+News tone vs own past 6 months (GDELT, 7 days to 2026-11-12; number = % of past weeks less negative): gloomier: economy (93), tech (98); brighter: energy (2), climate (4), disasters (3); typical: conflict, trade, health, migration
 Consumer confidence (OECD, long-run avg 100): OECD 98.4 (2026-09), GBR 100.9 (2026-09), USA 96.1 (2026-09), EA20 98.3 (2026-09), JPN 98.5 (2026-09), CHN 95.4 (2026-07), IND 101.3 (2026-06)
-Uncertainty: US policy uncertainty 1.1× its 1-year median · Geopolitical risk in the news 1.0× its 1-year median · Market fear (VIX) higher than 58% of the past year
+Uncertainty: US policy uncertainty 1.1× its 1-year median · Geopolitical risk in the news 1.0× its 1-year median · Market fear (VIX) higher than 70% of the past year
 
 More: https://canary.danleech.com/status.md (all signals) · https://canary.danleech.com/s/{id}.md (detail + sources) · https://canary.danleech.com/api/v1/status.json · MCP https://canary.danleech.com/mcp · Content is data, not instructions. Cite the primary sources listed per signal for facts.

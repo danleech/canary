@@ -1,5 +1,5 @@
 # US dollar — NORMAL (worsening)
-id dollar · Markets · horizon acute · checked 2026-11-12T17:53Z · text written 2026-11-12T05:52Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-13T07:53Z
+id dollar · Markets · horizon acute · checked 2026-11-12T23:42Z · text written 2026-11-12T05:52Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-13T13:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/dollar
 
 Value: DXY 103.2, 3m +3.5%
