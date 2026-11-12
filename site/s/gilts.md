@@ -1,8 +1,8 @@
 # Gilt market — WATCH (improving)
-id gilts · UK Watch · horizon acute · checked 2026-11-12T11:42Z · text written 2026-11-12T05:52Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-13T01:42Z
+id gilts · UK Watch · horizon acute · checked 2026-11-12T17:53Z · text written 2026-11-12T05:52Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-13T07:53Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/gilts
 
-Value: 10y ~5.22% (11 Nov), down ~22bp in a month
+Value: 10y ~5.2% (12 Nov), down ~20bp in a month
 Rated on: Watch: 30y gilt near multi-decade highs (~5.65% on 11 Nov); 10y moved ~22bp in a month, below the 40bp line
 Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 Situation: Energy shock feeding inflation [energy-inflation]
