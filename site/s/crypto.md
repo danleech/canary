@@ -1,10 +1,10 @@
 # Crypto stress — NORMAL (worsening)
-id crypto · Markets · horizon acute · checked 2026-11-12T05:52Z · at this level since 2026-11-04T17:53Z · stale after 2026-11-12T19:52Z
+id crypto · Markets · horizon acute · checked 2026-11-12T11:42Z · text written 2026-11-12T05:52Z · at this level since 2026-11-04T17:53Z · stale after 2026-11-13T01:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/crypto
 
-Value: BTC $73,489, -15% from high
-Rated on: BTC drawdown 15.1% < 25%, no de-peg = Normal
-Basis: measured — Set by a fixed rule applied to open data (BTC drawdown % = 15.14). Anyone can reproduce it from the public metrics file.
+Value: BTC $72,927, -16% from high
+Rated on: BTC drawdown 15.8% below the 25% Watch line
+Basis: measured — Set by a fixed rule applied to open data (BTC drawdown % = 15.79). Anyone can reproduce it from the public metrics file.
 
 Bitcoin near $73,500 on 12 Nov, 15% below its high and 9.6% lower on the month; no stablecoin de-peg found
 
