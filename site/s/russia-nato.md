@@ -1,17 +1,17 @@
-# Russia–NATO — WATCH (stable)
-id russia-nato · Geopolitics · horizon acute · checked 2026-11-11T23:41Z · text written 2026-11-11T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-12T13:41Z
+# Russia–NATO — WATCH (worsening)
+id russia-nato · Geopolitics · horizon acute · checked 2026-11-12T05:52Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-12T19:52Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/russia-nato
 
-Value: Poland border alert 2–8 Nov; no Article 4
-Rated on: Sabotage warnings and explicit threats to members = Watch; no Article 4
+Value: Drones over 3 Baltic states 10–11 Nov
+Rated on: Airspace/drone violations (Baltic states, 10–11 Nov) = Watch; no Article 4 or direct clash
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: Russia–Ukraine war and NATO's flank [russia-ukraine-war]
 
-Poland ran a Kaliningrad border operation over sabotage warnings from 2 Nov; no Article 4 request or direct clash found
+Drones from Belarus crossed Lithuania, Latvia and Estonia on 10–11 Nov; NATO jets failed to down one; no Article 4
 
-Why it's at this level: Polish security forces launched an operation on the Kaliningrad border on 2 Nov after warnings of planned sabotage, deploying counter-terrorism police (Kyiv Independent; Ukrainska Pravda). Poland said on 4 Nov it had thwarted a possible provocation near the border. No Article 4 request, direct clash or attack on NATO territory was found as of 11 Nov.
+Why it's at this level: Overnight on 10–11 Nov drones entering from Belarus triggered air-raid alerts in Lithuania, Latvia and Estonia; NATO fighters twice failed to shoot one down over Lithuania before it flew on through Latvia and Estonia into Russia (Euronews; Reuters via Daily Maverick). Officials said the drone type and origin were not confirmed, and no injuries were reported. No Article 4 request, direct clash or attack on NATO territory was found as of 11 Nov.
 
-What this means for you: Follow national police and government guidance if travelling near NATO's eastern borders.
+What this means for you: Residents of the Baltic states may see short-notice shelter alerts; follow national civil protection instructions. Travellers can check FCDO travel advice for Lithuania, Latvia and Estonia.
 
 Why it matters: Direct Russia–NATO confrontation is the most likely path to a European war involving the UK.
 What moves it: Airspace and drone incursions, sabotage, Baltic incidents, nuclear signalling, Ukraine war spillover.
@@ -19,5 +19,5 @@ What moves it: Airspace and drone incursions, sabotage, Baltic incidents, nuclea
 Rubric — Alert: Article 4 consultations, a direct military clash, or an attack on NATO territory. | Watch: Airspace/drone violations, sabotage attributed to Russia, or explicit threats against members. | Normal: No notable incidents on NATO territory in the past two weeks.
 
 Sources:
-- Kyiv Independent — Poland deploys counter-terrorism police near Russian border amid sabotage warnings (2026-11-02) https://kyivindependent.com/poland-deploys-counterterrorism-police-near-russian-border-amid-sabotage-warnings/
-- Ukrainska Pravda — Polish security forces prepare for possible sabotage on border with Kaliningrad (2026-11-02) https://www.pravda.com.ua/eng/news/2026/11/02/8060934/
+- Euronews — 'A restless and difficult night' in the Baltics as NATO fighter jets fail to shoot down drone (2026-11-11) https://www.euronews.com/2026/11/11/a-restless-and-difficult-night-in-the-baltics-as-nato-fighter-jets-fail-to-shoot-down-dron
+- Daily Maverick (Reuters) — Baltic nations briefly issue drone alerts as Russia, Ukraine exchange strikes (2026-11-11) https://www.dailymaverick.co.za/article/2026-11-11-baltic-nations-briefly-issue-drone-alerts-as-russia-ukraine-exchange-strikes/

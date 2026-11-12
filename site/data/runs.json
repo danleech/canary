@@ -1,5 +1,109 @@
 [
  {
+  "t": "2026-11-12T05:52:23Z",
+  "applied": 41,
+  "changed": [],
+  "warnings": [
+   "sources: aljazeera.com supplies 6 of 39 news citations (15%); diversify next run (errors above 20%)"
+  ],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 3,
+   "judged": 17
+  },
+  "held": 0,
+  "sources": {
+   "citations": 74,
+   "news_citations": 39,
+   "outlets": 43,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     6
+    ],
+    [
+     "bloomberg.com",
+     2
+    ],
+    [
+     "gulfnews.com",
+     2
+    ],
+    [
+     "aa.com.tr",
+     1
+    ],
+    [
+     "abc.net.au",
+     1
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 19,
+   "predicted_active": 1,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
+  "t": "2026-11-12T05:52:19Z",
+  "applied": 41,
+  "changed": [],
+  "warnings": [
+   "sources: aljazeera.com supplies 6 of 39 news citations (15%); diversify next run (errors above 20%)"
+  ],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 3,
+   "judged": 17
+  },
+  "held": 0,
+  "sources": {
+   "citations": 74,
+   "news_citations": 39,
+   "outlets": 43,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     6
+    ],
+    [
+     "bloomberg.com",
+     2
+    ],
+    [
+     "gulfnews.com",
+     2
+    ],
+    [
+     "aa.com.tr",
+     1
+    ],
+    [
+     "abc.net.au",
+     1
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 19,
+   "predicted_active": 1,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": [
+    "gilts",
+    "iran-nuclear",
+    "russia-nato"
+   ]
+  }
+ },
+ {
   "t": "2026-11-11T23:41:57Z",
   "applied": 41,
   "changed": [],

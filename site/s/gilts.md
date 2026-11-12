@@ -1,17 +1,17 @@
-# Gilt market — WATCH (stable)
-id gilts · UK Watch · horizon acute · checked 2026-11-11T23:41Z · text written 2026-11-11T17:56Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-12T13:41Z
+# Gilt market — WATCH (improving)
+id gilts · UK Watch · horizon acute · checked 2026-11-12T05:52Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-12T19:52Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/gilts
 
-Value: 10y ~5.18% (10 Nov), near 19-year highs
-Rated on: Gilt yields at multi-decade highs: Watch; no BoE intervention or 10y move > 75bp in a month
-Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
+Value: 10y ~5.22% (11 Nov), down ~22bp in a month
+Rated on: Watch: 30y gilt near multi-decade highs (~5.65% on 11 Nov); 10y moved ~22bp in a month, below the 40bp line
+Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 Situation: Energy shock feeding inflation [energy-inflation]
 
-10-year gilt near 5.18% on 10 Nov as BoE signals another rate rise; yields near 19-year highs, no weak auction found
+10-year gilt near 5.22% on 11 Nov, about 22bp lower over a month; long yields still high; no weak auction found
 
-Why it's at this level: The 10-year gilt yield rose to about 5.18% on 10 Nov, tracking US Treasuries after hot US inflation data, as Deputy Governor Lombardelli said another near-term Bank of England rise was likely (Trading Economics). Yields remain near their highest since 2007 after the 5 Nov rate rise to 4% (Bank of England). No weak auction or BoE intervention was found as of 11 Nov, so Watch is kept.
+Why it's at this level: The 10-year gilt yield held near 5.22% on 11 Nov as markets leaned towards another Bank of England rise in December, about 22bp lower than a month earlier and inside the Normal band for 10-year moves (Trading Economics). The 30-year yield was about 5.65% on 11 Nov, some 27bp lower over the month but still near its highest levels in decades (The Private Banker). The BoE raised Bank Rate to 4% on 5 Nov (CNBC). With no weak auction or BoE intervention found, Watch is kept for long yields near multi-decade highs.
 
-What this means for you: High gilt yields feed through to fixed mortgage rates and annuity pricing, and raise the government's borrowing costs. Mortgage deals tend to reprice within weeks of moves in gilt yields.
+What this means for you: High gilt yields tend to keep fixed mortgage rates and government borrowing costs elevated. Annuity rates and savings rates also track gilts. This describes market conditions only and is not advice.
 
 Why it matters: Gilt yields set UK mortgage rates and the government's borrowing costs; the 2022 LDI crisis showed how fast it can break.
 What moves it: Fiscal credibility, BoE policy, inflation, global bond moves, pension-fund flows.
@@ -19,5 +19,6 @@ What moves it: Fiscal credibility, BoE policy, inflation, global bond moves, pen
 Rubric — Alert: BoE intervention, or 10y moved > 75bp in a month. | Watch: 30y gilt at multi-decade highs, or 10y moved 40–75bp in a month, or a weak auction. | Normal: 10y gilt moved < 40bp in a month and auctions orderly.
 
 Sources:
-- Trading Economics — UK Bond Yields Edge Up (2026-11-10) https://tradingeconomics.com/united-kingdom/government-bond-yield/news/599209
-- Bank of England — November 2026 Monetary Policy Report (2026-11-05) https://www.bankofengland.co.uk/monetary-policy-report/2026/november-2026
+- Trading Economics — UK 10-Year Gilt Yield (2026-11-11) https://tradingeconomics.com/united-kingdom/government-bond-yield
+- The Private Banker — Gilt yields hold near 5.2% as traders lean toward a December BoE hike (2026-11-11) https://leprivatebanker.com/2026/11/11/gilt-yields-hold-near-5-2-as-traders-lean-toward-a-december-boe-hike-even-with-the-10-year-down-21-basis-points-on-the-month/
+- CNBC — Bank of England hikes interest rate for the first time since Iran war (2026-11-05) https://www.cnbc.com/2026/11/05/interest-rates-inflation-uk.html

@@ -1,7 +1,7 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-11T23:41Z · next run ~05:40 UK · stale after 2026-11-12T13:41Z (36h for daily-tier signals)
+as_of 2026-11-12T05:52Z · next run ~11:40 UK · stale after 2026-11-12T19:52Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
-Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
+Basis: 27 measured from open data, 12 follow a published figure, 50 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 - 2026-11-11T17:56Z Sovereign debt stress [sovereign-debt]: ALERT→WATCH — France–Bund 10-year spread about 147bp on 10 Nov, back below the 150bp Alert line from a 174.6bp peak on 22 Oct
 - 2026-11-11T17:56Z US equity stress [equity-stress]: WATCH→NORMAL — VIX 17.7 and S&P 500 2.4% below its high on 11 Nov, both inside Normal lines after a 3.8% weekly rise
@@ -19,4 +19,3 @@ Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judge
 - 2026-11-06T17:59Z Cholera & mosquito-borne [cholera-dengue]: WATCH→ALERT — Cholera has killed about 1,800 in DR Congo this year, including the conflict-hit east, as Ebola spreads
 - 2026-11-06T05:46Z Gold (fear gauge) [gold]: NORMAL→WATCH — Gold near $4,053, down 8.8% over three months, past the 8% fall Watch line
 - 2026-11-05T17:48Z US equity stress [equity-stress]: NORMAL→WATCH — S&P 500 falls over 3% on 5 Nov as chip stocks slide; drawdown passes the 5% Watch line
-- 2026-11-04T23:43Z Pacific & Indian cyclones [other-cyclones]: ALERT→NORMAL — Cyclone Murasu has dissipated inland; no GDACS orange or red cyclone alerts in force
