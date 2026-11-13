@@ -18,13 +18,13 @@
      "date": "2026-11-12"
     }
    ],
-   "value": "VIX 19.8, S&P -3.6%",
-   "value_num": 19.83,
-   "checked_at": "2026-11-13T17:58:06Z",
+   "value": "VIX 19.3, S&P -3.3%",
+   "value_num": 19.3,
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-11-11T17:56:07Z",
-   "rubric_hit": "VIX 19.8 below the 20 Watch line; S&P drawdown 3.62% below the 5% Watch line",
+   "rubric_hit": "VIX 19.3 below the 20 Watch line; S&P drawdown 3.29% below the 5% Watch line",
    "basis": "measured",
-   "basis_detail": "VIX=19.83; S&P drawdown %=3.62",
+   "basis_detail": "VIX=19.30; S&P drawdown %=3.29",
    "assessed_at": "2026-11-13T05:53:11Z"
   },
   "ftse": {
@@ -42,7 +42,7 @@
    ],
    "value": "10,903, -0.1% from high",
    "value_num": 10902.56,
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "FTSE drawdown 0.07% below the 5% Watch line",
    "basis": "measured",
@@ -67,13 +67,13 @@
      "date": "2026-11-12"
     }
    ],
-   "value": "MOVE 99, 10y 5.14%",
-   "value_num": 99.2527,
-   "checked_at": "2026-11-13T17:58:06Z",
+   "value": "MOVE 99, 10y 5.15%",
+   "value_num": 98.79,
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "MOVE 99.3 has not yet cleared the 90 exit line, so Watch holds",
+   "rubric_hit": "MOVE 98.8 has not yet cleared the 90 exit line, so Watch holds",
    "basis": "measured",
-   "basis_detail": "MOVE=99.25; US10y 1m move bp=3.90",
+   "basis_detail": "MOVE=98.79; US10y 1m move bp=5.60",
    "assessed_at": "2026-11-13T05:53:11Z"
   },
   "credit-spreads": {
@@ -91,7 +91,7 @@
    ],
    "value": "HY OAS 3.20%",
    "value_num": 3.2,
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "HY OAS 3.2% below the 4% Watch line",
    "basis": "measured",
@@ -117,12 +117,12 @@
     }
    ],
    "value": "DXY 103.4, 3m +3.8%",
-   "value_num": 103.394,
-   "checked_at": "2026-11-13T17:58:06Z",
+   "value_num": 103.411,
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "DXY 3m move 3.76% below the 5% Watch line",
+   "rubric_hit": "DXY 3m move 3.77% below the 5% Watch line",
    "basis": "measured",
-   "basis_detail": "DXY 3m move %=3.76",
+   "basis_detail": "DXY 3m move %=3.77",
    "assessed_at": "2026-11-13T05:53:11Z"
   },
   "banking-stress": {
@@ -145,7 +145,7 @@
    ],
    "value": "STLFSI -0.49, CISS 0.01",
    "value_num": -0.4918,
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "STLFSI -0.49 below the 0 Watch line; ECB CISS 0.01 below the 0.25 Watch line",
    "basis": "measured",
@@ -165,13 +165,13 @@
      "date": "2026-11-13"
     }
    ],
-   "value": "$3,885, 3m -12.1%",
-   "value_num": 3885.1,
-   "checked_at": "2026-11-13T17:58:06Z",
+   "value": "$3,888, 3m -12.1%",
+   "value_num": 3887.6,
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-11-10T17:53:51Z",
    "rubric_hit": "3m fall -12.1% (Watch)",
    "basis": "measured",
-   "basis_detail": "Gold 3m gain %=-12.11; 3m fall -12.1%",
+   "basis_detail": "Gold 3m gain %=-12.06; 3m fall -12.1%",
    "assessed_at": "2026-11-13T05:53:11Z"
   },
   "crypto": {
@@ -187,13 +187,13 @@
      "date": "2026-11-13"
     }
    ],
-   "value": "BTC $68,976, -20% from high",
-   "value_num": 68975.71,
-   "checked_at": "2026-11-13T17:58:06Z",
+   "value": "BTC $68,129, -21% from high",
+   "value_num": 68128.81,
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-11-04T17:53:13Z",
-   "rubric_hit": "BTC drawdown 20.4% below the 25% Watch line",
+   "rubric_hit": "BTC drawdown 21.3% below the 25% Watch line",
    "basis": "measured",
-   "basis_detail": "BTC drawdown %=20.35",
+   "basis_detail": "BTC drawdown %=21.33",
    "assessed_at": "2026-11-13T05:53:11Z"
   },
   "us-recession": {
@@ -214,9 +214,9 @@
      "date": "2026-11-07"
     }
    ],
-   "value": "Sahm 0.00, 10y–2y +0.24",
+   "value": "Sahm 0.00, 10y–2y +0.27",
    "value_num": 0.0,
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "Sahm 0 below the 0.3 Watch line",
    "basis": "measured",
@@ -388,13 +388,13 @@
      "date": "2026-11-11"
     }
    ],
-   "value": "$95.8, 1m -13%",
-   "value_num": 95.79,
-   "checked_at": "2026-11-13T17:58:06Z",
+   "value": "$96.1, 1m -13%",
+   "value_num": 96.08,
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-11-06T17:59:39Z",
-   "rubric_hit": "Brent $95.8 ≥ $85 Watch line",
+   "rubric_hit": "Brent $96.1 ≥ $85 Watch line",
    "basis": "measured",
-   "basis_detail": "Brent $=95.79; Brent 1m %=-12.81",
+   "basis_detail": "Brent $=96.08; Brent 1m %=-12.54",
    "assessed_at": "2026-11-13T05:53:11Z"
   },
   "eu-gas": {
@@ -417,7 +417,7 @@
    ],
    "value": "€90/MWh",
    "value_num": 89.545,
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "TTF €89.5/MWh > €70/MWh Alert line",
    "basis": "measured",
@@ -447,7 +447,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Hormuz restricted; new mine claim 13 Nov",
    "rubric_hit": "Hormuz traffic materially impeded: daily transits single digits to low double digits vs ~138/day in 2025 (Alert)",
@@ -540,7 +540,7 @@
      "date": "2026-11-10"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-11-07T05:46:46Z",
    "value": "29 PLA aircraft 12 Nov; Trump–Xi 18–19 Nov",
    "rubric_hit": "Large-scale PLA activity around Taiwan and Western Pacific drills (Watch); no blockade or clash (Alert not met)",
@@ -567,7 +567,7 @@
      "date": "2026-11-10"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Baltic drone alerts 10–11 Nov; no Article 4",
    "rubric_hit": "Watch: drone violations of Baltic airspace 10–11 Nov and a Russia-linked espionage arrest; no Article 4 or clash",
@@ -594,7 +594,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "IAEA 13 Nov: no access, HEU unverified",
    "rubric_hit": "Inspector access curtailed; ~400+ kg enriched uranium unverified (Watch); no strike, NPT exit or weaponisation (Alert not met)",
@@ -621,7 +621,7 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Last launch found 4 Nov",
    "rubric_hit": "Ballistic or cruise missile launches: multiple missiles fired 4 Nov, within two weeks (Watch)",
@@ -648,7 +648,7 @@
      "date": "2026-11-09"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Trump threatens to double Mexico tariffs",
    "rubric_hit": "New major tariff threatened between large economies: US threat to double Mexico tariffs, 12 Nov (Watch)",
@@ -734,7 +734,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Zaporizhzhia flats hit 13 Nov; 30 injured",
    "value_num": 162,
@@ -761,7 +761,7 @@
      "date": "2026-11-11"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Gaza hospital strike 11 Nov; Houthi–Saudi fire",
    "rubric_hit": "Alert: major cross-border strikes — Houthi missiles at Riyadh and coalition strikes in Yemen, 8–12 Nov",
@@ -892,7 +892,7 @@
      "date": "2026-10-18"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Airspace ban to 24 Nov; no strikes found",
    "rubric_hit": "Treaty suspensions in place (Indus Waters Treaty, airspace bans) (Watch); no cross-border strikes",
@@ -918,7 +918,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No US–Russia treaty limits since 5 Feb",
    "rubric_hit": "Watch: arms-control lapse without replacement (New START expired 5 Feb); no test, alert change or threatened use",
@@ -939,7 +939,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No storms; none forecast for 7 days",
    "rubric_hit": "Normal: no hurricane active and none threatening land within 5 days; NHC expects no formation in 7 days (13 Nov)",
@@ -961,7 +961,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-11-04T23:43:43Z",
    "value": "No orange/red GDACS cyclone alerts",
    "rubric_hit": "GDACS cyclone: 0 red / 0 orange",
@@ -1010,7 +1010,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
    "rubric_hit": "GDACS wildfire: 0 red / 0 orange",
@@ -1032,7 +1032,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
    "rubric_hit": "GDACS flood: 0 red / 0 orange",
@@ -1061,7 +1061,7 @@
    ],
    "value": "Max M6.4, 1× M6+ (7d)",
    "value_num": 6.4,
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "max magnitude 6.4 below the 7 Watch line",
    "basis": "measured",
@@ -1132,7 +1132,7 @@
    ],
    "value": "G0 S0 R0",
    "value_num": 0,
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "NOAA G0 S0 R0 (24h max)",
    "basis": "measured",
@@ -1272,7 +1272,7 @@
      "date": "2026-11-01"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Ebola PHEIC in force",
    "value_num": 1,
@@ -1284,34 +1284,29 @@
   "ebola": {
    "status": "red",
    "trend": "up",
-   "summary": "DR Congo Ebola reached 10,920 confirmed cases and 5,323 deaths by 7 Nov per ECDC; outbreak spans eight provinces",
-   "state": "ECDC reported on 9 Nov that DR Congo had 10,920 confirmed cases and 5,323 deaths to 7 Nov, up 179 cases since 6 Nov, across eight provinces (ECDC). On 11 Nov WHO's Director-General cited signs of slowing in some areas but said new hotspots continue to emerge and insecurity is hampering the response (WHO). Kenya has nine cases and two deaths, none new since 20 Oct, and Nigeria's case of 20 Oct was evacuated to Switzerland. Cases far exceed the 1,000 Alert line.",
-   "for_you": "Risk outside DR Congo and its neighbours is rated low by WHO. Travellers to the region can check FCDO travel advice; anyone unwell after returning can follow NHS and UKHSA guidance on seeking care.",
+   "summary": "DR Congo's Ebola outbreak passed 11,000 cases and 5,387 deaths by 11 Nov; WHO says new hotspots keep emerging",
+   "state": "DR Congo's Bundibugyo Ebola outbreak passed 11,000 cases with 5,387 deaths by 11 Nov, the country's deadliest on record (Al Jazeera, 11 Nov). ECDC had counted 10,920 confirmed cases and 5,323 deaths to 7 Nov across eight provinces (ECDC, 9 Nov). WHO's Director-General said on 11 Nov there are signs of slowing in some areas but new hotspots continue to emerge. Cases far exceed the 1,000 Alert line.",
+   "for_you": "Risk outside affected areas remains low. Travellers should check FCDO travel advice for DR Congo and follow WHO and UKHSA guidance.",
    "sources": [
     {
-     "title": "ECDC — Ebola disease outbreak, DR Congo: update 9 November 2026",
+     "title": "ECDC — Ebola disease caused by Bundibugyo virus, update 9 Nov 2026",
      "url": "https://www.ecdc.europa.eu/en/public-health-events/2026-eip-00026/2026-11-09",
      "date": "2026-11-09"
     },
     {
-     "title": "WHO — Director-General's remarks at the Member State briefing on Ebola in the DRC, 11 November 2026",
-     "url": "https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-member-state-briefing-on-ebola-outbreak-in-the-democratic-republic-of-the-congo---11-november-2026",
+     "title": "Al Jazeera — Ebola cases in DR Congo pass 11,000, with 5,387 deaths",
+     "url": "https://aljazeera.com/news/2026/11/11/ebola-cases-in-dr-congo-pass-11000-with-5387-deaths",
      "date": "2026-11-11"
-    },
-    {
-     "title": "WHO — Disease Outbreak News: Ebola disease caused by Bundibugyo virus, DRC, Kenya and Nigeria",
-     "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON625",
-     "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "10,920 cases, 5,323 deaths (ECDC, 7 Nov)",
-   "value_num": 10920,
-   "rubric_hit": "Alert: more than 1,000 cases (10,920 confirmed in DR Congo to 7 Nov per ECDC)",
+   "value": "Over 11,000 cases, 5,387 deaths (11 Nov)",
+   "value_num": 11000,
+   "rubric_hit": "Over 11,000 cases > 1,000 Alert line",
    "basis": "published",
    "basis_detail": "WHO, Africa CDC and ECDC case counts",
-   "assessed_at": "2026-11-13T05:53:11Z"
+   "assessed_at": "2026-11-13T23:42:59Z"
   },
   "h5n1": {
    "status": "green",
@@ -1331,7 +1326,7 @@
      "date": "2026-11-01"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "3 cattle-linked US cases; no human spread",
    "rubric_hit": "Normal: sporadic animal-to-human cases only (three cattle-exposed cases in Washington, no human-to-human spread)",
@@ -1438,7 +1433,7 @@
      "date": "2026-11-09"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No unexplained clusters",
    "rubric_hit": "Normal: no unexplained clusters under international investigation",
@@ -1469,7 +1464,7 @@
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-11-11T05:51:50Z",
    "value": "France blames IRGC unit for store sabotage",
    "rubric_hit": "Alert: destructive state-attributed attack (France attributes store sabotage to IRGC-linked unit, 10 Nov)",
@@ -1495,7 +1490,7 @@
      "date": "2026-11-12"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-11-13T05:53:06Z",
    "value": "Microsoft 365 outage ~10h on 12 Nov",
    "rubric_hit": "Watch: major cloud outage > 2h in past 48h (Microsoft 365, ~10h on 12 Nov); payments and airlines not reported hit",
@@ -1705,7 +1700,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "10y above 5.3% (13 Nov); 2y highest since 2023",
    "value_num": 5.34,
@@ -1750,7 +1745,7 @@
     }
    ],
    "value": "No warnings",
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-11-01T11:52:42Z",
    "value_num": 0,
    "rubric_hit": "worst warning: none",
@@ -1860,7 +1855,7 @@
      "date": "2026-11-12"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "SOFR–IORB 5d max bp=2.00; Fed repo ops 5d max $bn=0.00",
@@ -1891,12 +1886,12 @@
   "yen-carry": {
    "status": "green",
    "trend": "flat",
-   "value": "¥159.9/$, 1w +1.0%",
-   "value_num": 159.918,
+   "value": "¥159.7/$, 1w +0.9%",
+   "value_num": 159.686,
    "summary": "Yen near ¥160.0 per dollar on 13 Nov, 1.1% weaker on the week; no intervention reported",
    "state": "The dollar was near ¥160.0 early on 13 Nov, up 1.1% on the week and 1.2% on the month, inside the 3% weekly and 6% monthly Watch lines (Yahoo Finance). The yen is about 2.4% stronger than its 52-week low of ¥163.9 per dollar. No Japanese currency intervention was found as of 13 Nov.",
    "for_you": "A weak yen makes travel to Japan cheaper for visitors; sudden reversals can unsettle global markets, but moves are currently moderate.",
-   "rubric_hit": "USD/JPY 1w move 1.03% below the 3% Watch line; USD/JPY 1m move 1.12% below the 6% Watch line",
+   "rubric_hit": "USD/JPY 1w move 0.88% below the 3% Watch line; USD/JPY 1m move 0.98% below the 6% Watch line",
    "sources": [
     {
      "title": "Yahoo Finance — USD/JPY (JPY=X)",
@@ -1904,10 +1899,10 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
-   "basis_detail": "USD/JPY 1w move %=1.03; USD/JPY 1m move %=1.12",
+   "basis_detail": "USD/JPY 1w move %=0.88; USD/JPY 1m move %=0.98",
    "assessed_at": "2026-11-13T05:53:11Z"
   },
   "jobless-claims": {
@@ -2028,7 +2023,7 @@
      "date": "2026-11-12"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
@@ -2060,7 +2055,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
@@ -2170,12 +2165,12 @@
   "exploited-vulns": {
    "status": "amber",
    "trend": "flat",
-   "value": "10 KEV adds (7d), 34 (30d)",
-   "value_num": 10,
+   "value": "12 KEV adds (7d), 36 (30d)",
+   "value_num": 12,
    "summary": "CISA added 10 known-exploited vulnerabilities in seven days to 10 Nov; Watch holds until the exit margin clears",
    "state": "CISA's Known Exploited Vulnerabilities catalogue gained 10 entries in the seven days to 10 Nov and 34 in 30 days, including flaws in Microsoft Office, Cisco BroadWorks, Barracuda Email Security Gateway and Google Chromium added on 10 Nov (CISA). That is just under the 11-a-week Watch line but has not cleared the exit margin, so Watch holds. No emergency directive for mass exploitation of a ubiquitous product was found as of 13 Nov.",
    "for_you": "Install security updates promptly, including Microsoft's and Google Chrome's November updates; the NCSC publishes guidance for organisations and individuals.",
-   "rubric_hit": "KEV additions 7d 10 has not yet cleared the 9.9 exit line, so Watch holds",
+   "rubric_hit": "KEV additions 7d 12 ≥ 11 Watch line",
    "sources": [
     {
      "title": "CISA — Known Exploited Vulnerabilities Catalog",
@@ -2183,10 +2178,10 @@
      "date": "2026-11-10"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-11-10T23:42:05Z",
    "basis": "measured",
-   "basis_detail": "KEV additions 7d=10.00",
+   "basis_detail": "KEV additions 7d=12.00",
    "assessed_at": "2026-11-13T05:53:11Z"
   },
   "aid-funding": {
@@ -2259,15 +2254,15 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-13T17:58:06Z",
+   "checked_at": "2026-11-13T23:42:59Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "EA: 0 severe, 0 warnings",
    "assessed_at": "2026-11-13T05:53:11Z"
   }
  },
- "headline": "Iran says a gas tanker hit a mine in Hormuz on 13 Nov as the strait stays restricted; Russia's strikes cut power across Ukraine; France–Bund spread nears 150bp as Fed and BoE rate-rise bets grow.",
- "generated_at": "2026-11-13T17:58:06Z",
+ "headline": "The US–Iran conflict keeps Gulf shipping under attack after a reported mine strike on a gas carrier on 13 Nov; Russia's strikes on Ukrainian cities and the grid continue, and DR Congo's Ebola outbreak has passed 11,000 cases.",
+ "generated_at": "2026-11-13T23:42:59Z",
  "world": {
   "score": 40,
   "band": "Strained",
@@ -2344,7 +2339,7 @@
    "name": "Ebola outbreak, DR Congo",
    "status": "red",
    "trend": "up",
-   "summary": "DR Congo Ebola at 10,920 confirmed cases and 5,323 deaths to 7 Nov (ECDC); WHO emergency since 17 May; WHO said on 11 Nov it remains one.",
+   "summary": "DR Congo Ebola passed 11,000 cases and 5,387 deaths by 11 Nov; WHO emergency since 17 May, still in force on 11 Nov.",
    "signals": [
     "ebola",
     "who-emergencies"

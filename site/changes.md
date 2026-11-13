@@ -1,5 +1,5 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-13T17:58Z · next run ~23:40 UK · stale after 2026-11-14T07:58Z (36h for daily-tier signals)
+as_of 2026-11-13T23:42Z · next run ~05:40 UK · stale after 2026-11-14T13:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 12 follow a published figure, 50 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -15,8 +15,3 @@ Basis: 27 measured from open data, 12 follow a published figure, 50 are AI judge
 - 2026-11-08T17:55Z Extreme heat [heat]: NORMAL→WATCH — Severe to extreme heatwave warnings across northern Australia; heat warnings in Mozambique to 8 Nov
 - 2026-11-07T17:51Z Atmospheric CO₂ [co2]: WATCH→ALERT — CO₂ 428.5 ppm at Mauna Loa, up 3.31 ppm on a year, above the 3 ppm Alert line
 - 2026-11-07T05:46Z US–China / Taiwan [us-china]: NORMAL→WATCH — Taiwan says China has deployed more than 100 navy and coast guard vessels across the Western Pacific
-- 2026-11-06T17:59Z Fertiliser supply [fertiliser]: ALERT→WATCH — Gulf fertiliser exports still face Hormuz attacks; escorted shipments recovering, so Alert unconfirmed
-- 2026-11-06T17:59Z Global food prices [food-prices]: ALERT→WATCH — FAO food price index eased to 133.9 in October, below the 135 Alert line but up 5.9% on a year
-- 2026-11-06T17:59Z Oil (Brent) [oil]: ALERT→WATCH — Brent near $98 on 6 Nov, down 7% in a month; Watch as escorted Gulf shipments recover
-- 2026-11-06T17:59Z UK energy price cap [uk-energy-cap]: ALERT→WATCH — Cap £1,723; Cornwall Insight forecasts £1,999 in January, a 16% rise, below the 20% Alert line
-- 2026-11-06T17:59Z Cholera & mosquito-borne [cholera-dengue]: WATCH→ALERT — Cholera has killed about 1,800 in DR Congo this year, including the conflict-hit east, as Ebola spreads

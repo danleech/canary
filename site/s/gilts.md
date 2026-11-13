@@ -1,5 +1,5 @@
 # Gilt market — WATCH (worsening)
-id gilts · UK Watch · horizon acute · checked 2026-11-13T17:58Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-14T07:58Z
+id gilts · UK Watch · horizon acute · checked 2026-11-13T23:42Z · text written 2026-11-13T17:58Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-14T13:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/gilts
 
 Value: 10y above 5.3% (13 Nov); 2y highest since 2023
