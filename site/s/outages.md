@@ -1,5 +1,5 @@
 # Internet & cloud outages — WATCH (worsening)
-id outages · Technology & Cyber · horizon acute · checked 2026-11-13T11:42Z · text written 2026-11-13T05:53Z · at this level since 2026-11-13T05:53Z · stale after 2026-11-14T01:42Z
+id outages · Technology & Cyber · horizon acute · checked 2026-11-13T17:58Z · text written 2026-11-13T05:53Z · at this level since 2026-11-13T05:53Z · stale after 2026-11-14T07:58Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/outages
 
 Value: Microsoft 365 outage ~10h on 12 Nov

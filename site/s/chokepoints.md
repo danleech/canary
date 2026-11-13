@@ -1,17 +1,17 @@
 # Shipping chokepoints — ALERT (stable)
-id chokepoints · Energy & Commodities · horizon acute · checked 2026-11-13T11:42Z · text written 2026-11-13T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-14T01:42Z
+id chokepoints · Energy & Commodities · horizon acute · checked 2026-11-13T17:58Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-14T07:58Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/chokepoints
 
-Value: Hormuz restricted; 4 tankers hit 11–12 Nov
-Rated on: Hormuz traffic materially impeded: transits restricted by Iran, 4 tankers reported hit 11–12 Nov (Alert)
-Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
+Value: Hormuz restricted; new mine claim 13 Nov
+Rated on: Hormuz traffic materially impeded: daily transits single digits to low double digits vs ~138/day in 2025 (Alert)
+Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
-Iran says four tankers hit mines in Hormuz on 11–12 Nov; transits still limited to routes Tehran authorises
+Iran says a gas carrier hit a mine east of Hormuz on 13 Nov; JMIC rates the strait severe, transits far below 2025
 
-Why it's at this level: Iran's Revolutionary Guards said two supertankers were disabled on 11 Nov on what it called an unauthorised route, and its army said two more hit mines in the eastern strait on 12 Nov; Reuters could not verify the claims (Business Recorder, 13 Nov). UKMTO reported a vessel hit by a projectile off Ras Al-Khaimah on 11 Nov. Tehran still restricts transits to routes it authorises, while the US runs a naval blockade of Iranian ports (Euronews, 11 Nov). At least 10 ships were hit in 1–10 Nov.
+Why it's at this level: Iran's Revolutionary Guards said a gas carrier hit a mine and exploded east of the Strait of Hormuz on 13 Nov after using an unauthorised route; the claim is unverified. JMIC recorded four tanker attacks on 10–11 Nov, rates the strait's threat level severe and puts daily transits in single digits to low double digits, against about 138 a day in 2025 (Safety4Sea, 13 Nov). UKMTO counted traffic about 65% below pre-conflict levels in the week to 10 Nov (Gulf News), and a senior Iranian lawmaker told Euronews on 6 Nov the standoff over the strait was not sustainable.
 
-What this means for you: Shipping through the Gulf faces rerouting, delays and higher insurance costs, which tend to feed through to fuel and freight prices. Travellers to the region should check FCDO travel advice.
+What this means for you: Gulf oil, LNG and LPG cargoes face attack risk, delays and higher insurance costs, which tends to feed through to fuel and energy prices. Travellers and seafarers in the region should follow FCDO travel advice and UKMTO guidance.
 
 Why it matters: Around 30% of seaborne oil and much container trade passes Hormuz, Bab el-Mandeb/Suez, Panama and Malacca; disruption raises prices worldwide.
 What moves it: Houthi/Iran attacks, war-risk insurance, drought (Panama), naval incidents, piracy.
@@ -19,5 +19,6 @@ What moves it: Houthi/Iran attacks, war-risk insurance, drought (Panama), naval 
 Rubric — Alert: Hormuz traffic materially impeded, or any chokepoint closed, or two or more disrupted at once. | Watch: One chokepoint disrupted (attacks, large-scale diversions, draught restrictions). | Normal: All major chokepoints operating normally.
 
 Sources:
-- Business Recorder (Reuters) — Four tankers struck by explosions in Hormuz: Iran (2026-11-13) https://www.brecorder.com/news/40448684/four-tankers-struck-by-explosions-in-hormuz-iran
-- Euronews — Oil prices rise as investors monitor shipping disruption in the Strait of Hormuz (2026-11-11) https://www.euronews.com/2026/11/11/oil-markets-rise-as-investors-monitor-shipping-disruption-in-the-strait-of-hormuz
+- Safety4Sea — Strait of Hormuz: New gas carrier incident reported amid rising security threats (2026-11-13) https://safety4sea.com/strait-of-hormuz-new-gas-carrier-incident-reported-amid-rising-security-threats/
+- Gulf News — Hormuz shipping 'below normal, but not stalled': UKMTO (2026-11-10) https://gulfnews.com/world/mena/hormuz-shipping-below-normal-but-not-stalled-ukmto-1.500741839
+- Euronews — Hormuz standoff not sustainable, senior Iranian lawmaker tells Euronews (2026-11-06) https://www.euronews.com/2026/11/06/hormuz-standoff-not-sustainable-senior-iranian-lawmaker-tells-euronews

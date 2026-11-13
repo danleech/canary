@@ -1,17 +1,17 @@
 # Sudan — ALERT (stable)
-id sudan · Armed Conflict · horizon acute · checked 2026-11-12T17:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-14T05:53Z
+id sudan · Armed Conflict · horizon acute · checked 2026-11-13T17:58Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-15T05:58Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/sudan
 
-Value: RSF drone kills 9 in Blue Nile; Kordofan battles
-Rated on: Massacres or mass-casualty attacks on civilians reported (Alert): repeated drone strikes, 9 killed in Blue Nile
-Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
+Value: WFP drops 900,000 people; Blue Nile drone deaths
+Rated on: Alert: repeated deadly drone strikes on civilians and famine risk in Darfur and Kordofan (WFP cut 900,000 from aid, 12 Nov)
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: Sudan war [sudan-war]
 
-An official said an RSF drone killed 9 civilians in Blue Nile; UNICEF says long-range drone strikes are now the norm
+WFP says funding cuts removed 900,000 people from food aid; an RSF drone killed 9 in Blue Nile, reported 10 Nov
 
-Why it's at this level: A local official said an RSF drone attack on Bani Shako village in Blue Nile state killed at least nine civilians, reported on 10 Nov (Anadolu via A News). UNICEF said on 10 Nov that drones now strike up to 1,500 km away, that up to 15 power stations were hit in October, and that two in three child casualties this year were caused by drones (UN News). The army said on 8 Nov it had taken Ayal Bakhit and Umm Marahik in West Kordofan (Yeni Şafak). Repeated deadly drone strikes on civilians and severe malnutrition keep the Alert.
+Why it's at this level: WFP said on 12 Nov that funding shortfalls cut the number it reaches in Sudan from over 4 million in August to just over 3 million, with about 900,000 people losing food aid; in August it was helping 880,000 people in famine-risk areas (UN News). A local governor said an RSF drone strike on Bani Shako village in Blue Nile state killed at least nine civilians, reported on 10 Nov (Anadolu via A News). Repeated deadly drone strikes on civilians and hunger in famine-risk areas keep the Alert.
 
-What this means for you: FCDO advises against all travel to Sudan. Exposure is mainly through humanitarian need, refugee flows to neighbouring states and Red Sea trade.
+What this means for you: Civilians in Darfur, Kordofan and Blue Nile face drone strikes, displacement and hunger. Travellers should follow FCDO advice against all travel to Sudan. Neighbouring Chad, South Sudan and Egypt continue to receive refugees.
 
 Why it matters: The world's largest displacement and hunger crisis; regional spillover into Chad, South Sudan and the Red Sea.
 What moves it: SAF–RSF fighting, sieges, foreign arms supplies, aid access, famine.
@@ -19,6 +19,5 @@ What moves it: SAF–RSF fighting, sieges, foreign arms supplies, aid access, fa
 Rubric — Alert: Major sieges or massacres reported, or famine spreading to new areas. | Watch: Active war at sustained intensity. | Normal: Ceasefire holding and aid flowing.
 
 Sources:
-- UN News — Sudan war: first 'suicide' drone attacks, now long-range strikes are the norm (2026-11-10) https://news.un.org/en/story/2026/11/1168771
-- A News (Anadolu) — 9 civilians killed in RSF drone attack in Sudan's Blue Nile state: official (2026-11-10) https://www.anews.com.tr/africa/2026/11/10/9-civilians-killed-in-rsf-drone-attack-in-sudans-blue-nile-state-official
-- Yeni Şafak — Sudan army downs 4th drone in week, presses advance in West Kordofan (2026-11-08) https://en.yenisafak.com/world/sudan-army-downs-4th-drone-in-week-presses-advance-in-west-kordofan-3725316
+- UN News — Aid is the 'only hope' for millions in Sudan, WFP chief warns, as funding cuts deepen hunger crisis (2026-11-12) https://news.un.org/en/story/2026/11/1168793
+- A News (Anadolu) — 9 civilians killed in RSF drone attack in Sudan's Blue Nile state: Official (2026-11-10) https://www.anews.com.tr/africa/2026/11/10/9-civilians-killed-in-rsf-drone-attack-in-sudans-blue-nile-state-official

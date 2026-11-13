@@ -1,16 +1,16 @@
 # Myanmar — WATCH (stable)
-id myanmar · Armed Conflict · horizon acute · checked 2026-11-12T17:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-14T05:53Z
+id myanmar · Armed Conflict · horizon acute · checked 2026-11-13T17:58Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-15T05:58Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/myanmar
 
-Value: Junta seizes 11 posts; Kachin clashes go on
-Rated on: Civil war at sustained intensity (Watch); no major city fallen or new mass-casualty airstrike (Alert line)
-Basis: judged — The AI assessor's reading of 2 sources from 1 outlet against the rubric. Check the sources before relying on it.
+Value: Junta claims 11 resistance bases near Bago
+Rated on: Watch: civil war at sustained intensity; no major city fallen and no new mass-casualty airstrike confirmed
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-Junta says it took 11 resistance positions since early Nov; KIA captured 3 outposts near Maw Luu amid airstrikes
+Junta says it seized a NUG command and 10 other bases near the Mon–Bago border; no major city has changed hands
 
-Why it's at this level: The military said on 11 Nov it had seized 11 positions from PDF, NUG and KNU forces since early November, including a NUG regional command (Myanmar Now). The Kachin Independence Army and allied PDF captured three junta outposts south of Maw Luu on the Sagaing–Kachin border after attacks from 4 Nov, with civilian casualties reported from airstrikes on nearby villages (Myanmar Now, 10 Nov). No major city has changed hands and no new mass-casualty airstrike was found as of 12 Nov, so the signal stays at Watch.
+Why it's at this level: State media said on 10 Nov that the army seized a NUG special region command and 10 other bases along the Mon state–Bago region border after a six-day operation; the claim could not be independently verified (AP via ABC News). Myanmar Now reported on 11 Nov that the military claims 11 positions taken from PDF, NUG and KNU forces since early November. No major city has changed hands and no new mass-casualty airstrike was confirmed as of 13 Nov, so the signal stays at Watch.
 
-What this means for you: UK travellers should check FCDO travel advice for Myanmar, which advises against travel to much of the country. Exposure is mainly through displacement and border trade with Thailand, China and India.
+What this means for you: Civilians in conflict areas face airstrikes and displacement. Travellers should follow FCDO advice, which warns against travel to much of Myanmar. Fighting can disrupt border trade and road links at short notice.
 
 Why it matters: A multi-sided civil war affecting 50 million people, with spillover to China, Thailand, India and Bangladesh.
 What moves it: Resistance offensives, junta airstrikes, Chinese mediation, elections, humanitarian access.
@@ -18,5 +18,5 @@ What moves it: Resistance offensives, junta airstrikes, Chinese mediation, elect
 Rubric — Alert: Major city falls, mass-casualty airstrikes, or cross-border escalation. | Watch: Civil war at sustained intensity. | Normal: Nationwide ceasefire holding.
 
 Sources:
+- ABC News (AP) — Myanmar army seizes key resistance HQ and bases held by opposition, state media says (2026-11-10) https://abcnews.com/International/wireStory/myanmar-army-seizes-key-resistance-headquarters-10-bases-138003361
 - Myanmar Now — Myanmar junta seizes NUG Special Military Region and PDF camps (2026-11-11) https://myanmar-now.org/en/news/myanmar-junta-seizes-nug-special-military-region-and-pdf-camps/
-- Myanmar Now — Fighting intensifies near Sagaing-Kachin border as resistance forces capture three military outposts (2026-11-10) https://myanmar-now.org/en/news/fighting-intensifies-near-sagaing-kachin-border-as-resistance-forces-capture-three-military-outposts/

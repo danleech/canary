@@ -1,5 +1,21 @@
 [
  {
+  "t": "2026-11-13T17:58:01Z",
+  "id": "uk-disruption",
+  "name": "UK strikes & disruption",
+  "from": "amber",
+  "to": "green",
+  "reason": "BMA paused the 25–27 Nov consultant strike on 11 Nov for talks; London Tube driver strikes start 26 Nov"
+ },
+ {
+  "t": "2026-11-13T17:58:01Z",
+  "id": "nhs-pressure",
+  "name": "NHS & respiratory",
+  "from": "green",
+  "to": "amber",
+  "reason": "UKHSA 12 Nov: flu now above baseline and rising, at low levels; COVID-19 stable; RSV hospital admissions rising"
+ },
+ {
   "t": "2026-11-13T05:53:06Z",
   "id": "outages",
   "name": "Internet & cloud outages",
