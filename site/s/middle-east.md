@@ -1,17 +1,17 @@
 # Israel, Gaza & region — ALERT (stable)
-id middle-east · Armed Conflict · horizon acute · checked 2026-11-12T23:42Z · text written 2026-11-12T17:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-13T13:42Z
+id middle-east · Armed Conflict · horizon acute · checked 2026-11-13T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-13T19:53Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/middle-east
 
-Value: Gaza hospital strike 11 Nov; Yemen–Saudi strikes
-Rated on: Major cross-border strikes (Alert): Houthi missiles at Riyadh and coalition strikes in Yemen; Gaza ceasefire repeatedly violated
-Basis: judged — The AI assessor's reading of 3 sources from 2 outlets against the rubric. Check the sources before relying on it.
+Value: Houthi–Saudi strikes 8–12 Nov; Gaza strikes
+Rated on: Major cross-border strikes: Houthi missiles and drones on Saudi Arabia, coalition strikes on Sanaa 8–12 Nov (Alert)
+Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
-An Israeli strike on Gaza's Nasser Hospital killed 6 on 11 Nov; Houthi–Saudi cross-border strikes continue in Yemen
+Houthis claim strikes on Saudi oil sites and Riyadh to 12 Nov as coalition hits Sanaa; Israeli strikes in Gaza continue
 
-Why it's at this level: Gaza health authorities said an Israeli strike on Nasser Hospital in Khan Younis killed six people, including a surgeon, on 11 Nov, despite the ceasefire (NPR, 12 Nov; Al Jazeera). In Yemen, the Saudi-led coalition said it shot down a Houthi ballistic missile over the Riyadh region, and Houthi media said strikes north of Sanaa killed 27, as the government's coalition-backed offensive continued (Al Jazeera, 7 Nov). Cross-border strikes on the Yemen–Saudi front set the Alert.
+Why it's at this level: Saudi Arabia said its East-West oil pipeline was hit on 9 Nov and that the coalition intercepted missiles fired at Riyadh on 10 Nov, while Houthi media reported coalition strikes on Sanaa fuel sites (Al Jazeera, 10 Nov). On 12 Nov the Houthis claimed attacks on a pipeline pumping station and an Aramco building in Riyadh (Khaleej Times). In Gaza, medics said Israeli strikes and gunfire killed five people on 10 Nov despite the ceasefire (AP via AJC). Cross-border strikes on the Yemen–Saudi front set the Alert.
 
-What this means for you: UK travellers should check FCDO travel advice for Israel, the Palestinian territories, Lebanon, Yemen and Saudi Arabia, which can change at short notice.
+What this means for you: Travellers to Saudi Arabia, Yemen, Israel, Gaza or Lebanon should check FCDO travel advice, which can change at short notice. Flights in the region may be suspended or rerouted.
 
 Why it matters: Conflict involving Israel, Gaza, Lebanon, Syria and Yemen threatens civilians, shipping and wider escalation. Direct hostilities with Iran are tracked under Gulf / US–Iran war.
 What moves it: Ceasefire status, Iran-linked groups, hostage talks, humanitarian access, US posture.
@@ -19,6 +19,6 @@ What moves it: Ceasefire status, Iran-linked groups, hostage talks, humanitarian
 Rubric — Alert: Multi-front escalation, major cross-border strikes between Israel and its neighbours, or mass-casualty events. | Watch: Ongoing hostilities on one front, or a ceasefire repeatedly violated. | Normal: Ceasefires holding across fronts (Gaza, Lebanon, Syria, Yemen).
 
 Sources:
-- NPR — Israeli strike on a Gaza hospital kills 6 people, health authorities say (2026-11-12) https://www.npr.org/2026/11/12/nx-s1-6038339/israeli-strike-gaza-hospital
-- Al Jazeera — Israeli strike on Gaza's Nasser Hospital kills surgeon, five others (2026-11-11) https://www.aljazeera.com/news/2026/11/11/israeli-strikes-hit-tent-camp-as-five-killed-in-gaza
-- Al Jazeera — Yemeni gov't forces report advances as Houthis say deadly strikes hit Sanaa (2026-11-07) https://www.aljazeera.com/news/2026/11/7/yemeni-govt-forces-report-advances-as-houthis-say-deadly-strikes-hit-sanaa
+- Al Jazeera — Saudi Arabia downs missiles fired at Riyadh after Houthi attack on pipeline (2026-11-10) https://www.aljazeera.com/news/2026/11/10/saudi-arabia-downs-missiles-fired-at-riyadh-after-houthi-attack-on-pipeline
+- Khaleej Times — Saudi official inspects Aramco Riyadh office after Houthi attack (2026-11-10) https://www.khaleejtimes.com/gulf/saudi-official-aramco-riyadh-office-houthi-attack
+- AJC (AP) — Israeli strikes and gunfire in Gaza kill 5 people and other Mideast news (2026-11-11) https://www.ajc.com/news/2026/11/israeli-strikes-and-gunfire-in-gaza-kill-5-people-and-other-mideast-news/

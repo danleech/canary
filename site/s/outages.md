@@ -1,16 +1,16 @@
-# Internet & cloud outages — NORMAL (stable)
-id outages · Technology & Cyber · horizon acute · checked 2026-11-12T23:42Z · text written 2026-11-12T05:52Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-13T13:42Z
+# Internet & cloud outages — WATCH (worsening)
+id outages · Technology & Cyber · horizon acute · checked 2026-11-13T05:53Z · at this level since 2026-11-13T05:53Z · stale after 2026-11-13T19:53Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/outages
 
-Value: No major outages
-Rated on: No major multi-hour cloud/CDN/payments outage in past 48h = Normal
+Value: Microsoft 365 outage ~10h on 12 Nov
+Rated on: Watch: major cloud outage > 2h in past 48h (Microsoft 365, ~10h on 12 Nov); payments and airlines not reported hit
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-No major multi-hour cloud, CDN or payments outage found 10 to 12 Nov
+A Microsoft 365 outage on 12 Nov cut Outlook and Teams for about 10 hours worldwide; Microsoft says not a cyberattack
 
-Why it's at this level: Cloudflare's status history for 10 and 11 Nov lists only regional network issues and product faults, all resolved, with no global incident (Cloudflare Status). An outage tracker found no internet-wide outage on 9 or 10 Nov (IsInternetUp). Searches on 12 Nov found no major multi-hour cloud, CDN or payments outage, so the level stays Normal.
+Why it's at this level: On 12 Nov Microsoft 365 services that depend on Exchange Online, including Outlook and Teams, were disrupted for about 10 hours for businesses and government bodies worldwide, with more than 130,000 US problem reports at the peak (Reuters). Microsoft said a large number of servers became unavailable and the load was not caused by a traffic surge; no cyberattack has been found (HCAMag). No effect on payments, airlines or emergency services was reported, so this is Watch, not Alert.
 
-What this means for you: No widespread disruption to online services, payments or airline systems was found. Service status pages give the latest on any single provider.
+What this means for you: Email and collaboration tools may still be patchy as Microsoft completes recovery. Check the Microsoft 365 service status page and your IT team's notices before assuming a local fault.
 
 Why it matters: A handful of cloud and CDN providers carry much of the internet; one bad update can halt airlines, banks and payments.
 What moves it: Software updates, configuration errors, attacks, power failures.
@@ -18,5 +18,5 @@ What moves it: Software updates, configuration errors, attacks, power failures.
 Rubric — Alert: Multi-hour global outage hitting payments, airlines or emergency services, ongoing or within 24h. | Watch: A major cloud/CDN/payments outage > 2h in the past 48h. | Normal: No major multi-hour outages in the past 48h.
 
 Sources:
-- Cloudflare Status — Incident history (2026-11-11) https://www.cloudflarestatus.com/history
-- IsInternetUp — Internet & cloud outages, November 2026 (2026-11-11) https://www.isinternetup.com/outages
+- Reuters via MarketScreener — Microsoft outage drags on for hours, disrupting Outlook, Teams for businesses and governments (2026-11-12) https://www.marketscreener.com/news/microsoft-outage-drags-on-for-hours-disrupting-outlook-teams-for-businesses-and-governments-ce785ed9d88af02d
+- HCAMag — Microsoft outage disrupts Outlook and Teams for businesses worldwide (2026-11-12) https://www.hcamag.com/us/news/general/microsoft-outage-disrupts-outlook-and-teams-for-businesses-worldwide/597212

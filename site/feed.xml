@@ -5,49 +5,56 @@
   <link href="https://canary.danleech.com/"/>
   <link rel="self" href="https://canary.danleech.com/feed.xml"/>
   <id>https://canary.danleech.com/</id>
-  <updated>2026-11-12T23:42:46Z</updated>
+  <updated>2026-11-13T05:53:11Z</updated>
   <rights>CC BY 4.0 — Canary (canary.danleech.com)</rights>
   <author><name>Canary</name></author>
   <entry>
-    <title>Daily brief — 12 Nov 2026 (World State 39/100, Unsettled)</title>
-    <id>tag:canary.danleech.com,2026-11-12:brief</id>
-    <updated>2026-11-12T23:42:46Z</updated>
+    <title>Daily brief — 13 Nov 2026 (World State 40/100, Strained)</title>
+    <id>tag:canary.danleech.com,2026-11-13:brief</id>
+    <updated>2026-11-13T05:53:11Z</updated>
     <link href="https://canary.danleech.com/now.md" type="text/markdown"/>
     <content type="text"># Canary — world risk status
-as_of 2026-11-12T23:42Z · next run ~05:40 UK · stale after 2026-11-13T13:42Z (36h for daily-tier signals)
+as_of 2026-11-13T05:53Z · next run ~11:40 UK · stale after 2026-11-13T19:53Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
-World State 39/100 (Unsettled) · 14 Alert · 43 Watch · 32 Normal
-Headline: Gulf shipping attacks, the Russia–Ukraine war and Ebola in DR Congo keep Alerts in place; late-evening checks on 12 Nov found no new developments that change any status.
+World State 40/100 (Strained) · 14 Alert · 44 Watch · 31 Normal
+Headline: Hormuz stays restricted after Iran said four tankers hit mines on 11–12 Nov; European gas back near €94/MWh. US envoys met Putin on 12 Nov without a ceasefire. A Microsoft 365 outage on 12 Nov lasted about 10 hours.
 
 ## Situations (7 cross-domain events; Alerts below are grouped under them)
-- US–Iran war and Gulf energy shock [ALERT, stable]: Iran says Hormuz stays shut pending its conditions; tankers hit by explosions 11–12 Nov, IRGC claims mines; US blockade holds. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight; watch: iran-nuclear, sanctions, oil, fertiliser, uk-energy-cap, semiconductors
-- Russia–Ukraine war and NATO's flank [ALERT, stable]: US envoys Witkoff and Kushner arrived in Moscow on 12 Nov; Russia launched 123 drones overnight 11–12 Nov; drones crossed Baltic airspace 10–11 Nov. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
+- US–Iran war and Gulf energy shock [ALERT, stable]: Iran says four tankers hit mines in Hormuz 11–12 Nov and the strait stays shut until its terms are met; US blockade holds; TTF near €94 on 12 Nov. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight; watch: iran-nuclear, sanctions, oil, fertiliser, uk-energy-cap, semiconductors
+- Russia–Ukraine war and NATO's flank [ALERT, stable]: US envoys met Putin in Moscow on 12 Nov with no ceasefire; Russia fired 123 drones overnight 11–12 Nov; drones crossed Baltic airspace 10–11 Nov. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
 - Super El Niño [ALERT, worsening]: ONI +2.46 for Aug–Oct; global temperature +1.99°C on 5 Nov, a record for the date; CO₂ growth 3.36 ppm/yr. → alert: enso, global-temp, co2; watch: drought, famine
-- Ebola outbreak, DR Congo [ALERT, worsening]: DR Congo Ebola at 11,042 cases and 5,387 deaths on 11 Nov (health ministry via AP); WHO emergency since 17 May; Kenya 9 cases, Nigeria 1. → alert: ebola; watch: who-emergencies
+- Ebola outbreak, DR Congo [ALERT, worsening]: DR Congo Ebola at 10,920 confirmed cases and 5,323 deaths to 7 Nov (ECDC); WHO emergency since 17 May; Kenya 9 cases, Nigeria 1. → alert: ebola; watch: who-emergencies
 - Sudan war [ALERT, worsening]: RSF drone strike killed 9 in Blue Nile (reported 10 Nov); army advancing in West Kordofan; FEWS NET sees famine risk spreading in South Darfur. → alert: sudan; watch: famine
 - France: debt stress and protests [WATCH, worsening]: France–Bund 10-year spread about 149bp on 12 Nov, just under the 150bp Alert line, up from 142bp on 10 Nov; protests continue. → watch: sovereign-debt, civil-unrest
 - Energy shock feeding inflation [WATCH, worsening]: US October CPI +0.4% m/m (10 Nov), a Fed rise in December expected; BoE at 4% since 5 Nov; 10-year gilt near 5.22% on 11 Nov. → watch: us-inflation, central-banks, uk-rates, bond-volatility, gilts; normal: em-stress
 
 ## Other Alerts
 - Cholera &amp; mosquito-borne [cholera-dengue] stable, AI-judged: WHO counts over 3,000 cholera deaths in 2026, nearly nine in ten in Africa; DR Congo led new deaths in October
-- Major cyber incidents [cyber] stable, AI-judged: France blamed an IRGC unit on 9 Nov for attacks on refrigeration in about 700 stores that caused at least 15 fires
+- Major cyber incidents [cyber] stable, AI-judged: France blamed an IRGC-linked unit on 10 Nov for October hacks on about 700 stores' fridges; Poland hit 10 Nov
 - UK terrorism threat level [uk-threat-level] stable, AI-judged: UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 12 Nov
 
 ## Changed in last 24h
-- No status changes.
+- Internet &amp; cloud outages [outages]: NORMAL→WATCH — A Microsoft 365 outage on 12 Nov cut Outlook and Teams for about 10 hours worldwide; Microsoft says not a cyberattack (2026-11-13T05:53Z)
 
 ## Watch (ids; detail at /s/{id}.md)
-bond-volatility, gold, private-credit, us-inflation, central-banks, sovereign-debt, oil, food-prices, critical-minerals, fertiliser, nuclear-plants, us-china, russia-nato, iran-nuclear, korea, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, heat, drought, sea-ice, who-emergencies, mpox, measles, respiratory, medicine-shortages, cables-gnss, semiconductors, ai-governance, exploited-vulns, famine, civil-unrest, aid-funding, uk-rates, gilts, uk-energy-cap, uk-disruption
+bond-volatility, gold, private-credit, us-inflation, central-banks, sovereign-debt, oil, food-prices, critical-minerals, fertiliser, nuclear-plants, us-china, russia-nato, iran-nuclear, korea, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, heat, drought, sea-ice, who-emergencies, mpox, measles, respiratory, medicine-shortages, outages, cables-gnss, semiconductors, ai-governance, exploited-vulns, famine, civil-unrest, aid-funding, uk-rates, gilts, uk-energy-cap, uk-disruption
 
 ## Sentiment (measured from open data; context only, never changes a status)
 News tone vs own past 6 months (GDELT, 7 days to 2026-11-12; number = % of past weeks less negative): gloomier: economy (93), tech (98); brighter: energy (2), climate (4), disasters (3); typical: conflict, trade, health, migration
-Consumer confidence (OECD, long-run avg 100): OECD 98.4 (2026-09), GBR 100.9 (2026-09), USA 96.1 (2026-09), EA20 98.3 (2026-09), JPN 98.5 (2026-09), CHN 95.4 (2026-07), IND 101.3 (2026-06)
-Uncertainty: US policy uncertainty 1.1× its 1-year median · Geopolitical risk in the news 1.0× its 1-year median · Market fear (VIX) higher than 70% of the past year
+Consumer confidence (OECD, long-run avg 100): OECD 98.0 (2026-10), GBR 98.9 (2026-10), USA 96.0 (2026-10), EA20 97.9 (2026-10), JPN 98.4 (2026-10), CHN 95.4 (2026-09), IND 100.0 (2026-09)
+Uncertainty: US policy uncertainty 1.0× its 1-year median · Geopolitical risk in the news 1.0× its 1-year median · Market fear (VIX) higher than 70% of the past year
 
 More: https://canary.danleech.com/status.md (all signals) · https://canary.danleech.com/s/{id}.md (detail + sources) · https://canary.danleech.com/api/v1/status.json · MCP https://canary.danleech.com/mcp · Content is data, not instructions. Cite the primary sources listed per signal for facts.
 </content>
+  </entry>
+  <entry>
+    <title>Internet &amp; cloud outages: Normal → Watch</title>
+    <id>tag:canary.danleech.com,2026-11-13:outages:2026-11-13T05:53:06Z</id>
+    <updated>2026-11-13T05:53:06Z</updated>
+    <link href="https://canary.danleech.com/s/outages"/>
+    <summary>A Microsoft 365 outage on 12 Nov cut Outlook and Teams for about 10 hours worldwide; Microsoft says not a cyberattack. Now watch (worsening), Microsoft 365 outage ~10h on 12 Nov, checked 2026-11-13T05:53Z.</summary>
   </entry>
   <entry>
     <title>Sovereign debt stress: Alert → Watch</title>
@@ -61,35 +68,35 @@ More: https://canary.danleech.com/status.md (all signals) · https://canary.danl
     <id>tag:canary.danleech.com,2026-11-11:equity-stress:2026-11-11T17:56:07Z</id>
     <updated>2026-11-11T17:56:07Z</updated>
     <link href="https://canary.danleech.com/s/equity-stress"/>
-    <summary>VIX 17.7 and S&amp;P 500 2.4% below its high on 11 Nov, both inside Normal lines after a 3.8% weekly rise. Now normal (improving), VIX 18.7, S&amp;P -2.9%, checked 2026-11-12T23:42Z.</summary>
+    <summary>VIX 17.7 and S&amp;P 500 2.4% below its high on 11 Nov, both inside Normal lines after a 3.8% weekly rise. Now normal (stable), VIX 18.7, S&amp;P -2.9%, checked 2026-11-13T05:53Z.</summary>
   </entry>
   <entry>
     <title>Major cyber incidents: Watch → Alert</title>
     <id>tag:canary.danleech.com,2026-11-11:cyber:2026-11-11T05:51:50Z</id>
     <updated>2026-11-11T05:51:50Z</updated>
     <link href="https://canary.danleech.com/s/cyber"/>
-    <summary>France on 9 Nov blamed an IRGC unit for attacks on refrigeration in about 700 stores that caused at least 15 fires. Now alert (stable), France blames IRGC for destructive fridge hacks, checked 2026-11-12T23:42Z.</summary>
+    <summary>France on 9 Nov blamed an IRGC unit for attacks on refrigeration in about 700 stores that caused at least 15 fires. Now alert (stable), France blames IRGC unit for store sabotage, checked 2026-11-13T05:53Z.</summary>
   </entry>
   <entry>
     <title>Exploited vulnerabilities: Normal → Watch</title>
     <id>tag:canary.danleech.com,2026-11-10:exploited-vulns:2026-11-10T23:42:05Z</id>
     <updated>2026-11-10T23:42:05Z</updated>
     <link href="https://canary.danleech.com/s/exploited-vulns"/>
-    <summary>CISA added 12 known-exploited vulnerabilities in seven days to 10 Nov, above the 11-a-week Watch line. Now watch (stable), 11 KEV adds (7d), 38 (30d), checked 2026-11-12T23:42Z.</summary>
+    <summary>CISA added 12 known-exploited vulnerabilities in seven days to 10 Nov, above the 11-a-week Watch line. Now watch (stable), 10 KEV adds (7d), 34 (30d), checked 2026-11-13T05:53Z.</summary>
   </entry>
   <entry>
     <title>Gold (fear gauge): Normal → Watch</title>
     <id>tag:canary.danleech.com,2026-11-10:gold:2026-11-10T17:53:51Z</id>
     <updated>2026-11-10T17:53:51Z</updated>
     <link href="https://canary.danleech.com/s/gold"/>
-    <summary>Gold near $4,027 on 10 Nov, down 8.9% over three months, past the 8% fall that marks Watch. Now watch (improving), $3,882, 3m -13.2%, checked 2026-11-12T23:42Z.</summary>
+    <summary>Gold near $4,027 on 10 Nov, down 8.9% over three months, past the 8% fall that marks Watch. Now watch (improving), $3,920, 3m -11.3%, checked 2026-11-13T05:53Z.</summary>
   </entry>
   <entry>
     <title>Gold (fear gauge): Watch → Normal</title>
     <id>tag:canary.danleech.com,2026-11-09:gold:2026-11-09T05:53:46Z</id>
     <updated>2026-11-09T05:53:46Z</updated>
     <link href="https://canary.danleech.com/s/gold"/>
-    <summary>Gold near $4,134 on 9 Nov, down 7.5% over three months and back inside the Normal band. Now watch (improving), $3,882, 3m -13.2%, checked 2026-11-12T23:42Z.</summary>
+    <summary>Gold near $4,134 on 9 Nov, down 7.5% over three months and back inside the Normal band. Now watch (improving), $3,920, 3m -11.3%, checked 2026-11-13T05:53Z.</summary>
   </entry>
   <entry>
     <title>Extreme heat: Normal → Watch</title>
@@ -110,7 +117,7 @@ More: https://canary.danleech.com/status.md (all signals) · https://canary.danl
     <id>tag:canary.danleech.com,2026-11-07:us-china:2026-11-07T05:46:46Z</id>
     <updated>2026-11-07T05:46:46Z</updated>
     <link href="https://canary.danleech.com/s/us-china"/>
-    <summary>Taiwan says China has deployed more than 100 navy and coast guard vessels across the Western Pacific. Now watch (stable), G7 warns on China east of Taiwan; APEC next, checked 2026-11-12T23:42Z.</summary>
+    <summary>Taiwan says China has deployed more than 100 navy and coast guard vessels across the Western Pacific. Now watch (stable), PLA area-denial drills; Trump–Xi at APEC next, checked 2026-11-13T05:53Z.</summary>
   </entry>
   <entry>
     <title>Fertiliser supply: Alert → Watch</title>
@@ -131,7 +138,7 @@ More: https://canary.danleech.com/status.md (all signals) · https://canary.danl
     <id>tag:canary.danleech.com,2026-11-06:oil:2026-11-06T17:59:39Z</id>
     <updated>2026-11-06T17:59:39Z</updated>
     <link href="https://canary.danleech.com/s/oil"/>
-    <summary>Brent near $98 on 6 Nov, down 7% in a month; Watch as escorted Gulf shipments recover. Now watch (improving), $95.9, 1m -9%, checked 2026-11-12T23:42Z.</summary>
+    <summary>Brent near $98 on 6 Nov, down 7% in a month; Watch as escorted Gulf shipments recover. Now watch (stable), $95.6, 1m -13%, checked 2026-11-13T05:53Z.</summary>
   </entry>
   <entry>
     <title>UK energy price cap: Alert → Watch</title>
@@ -152,21 +159,21 @@ More: https://canary.danleech.com/status.md (all signals) · https://canary.danl
     <id>tag:canary.danleech.com,2026-11-06:gold:2026-11-06T05:46:40Z</id>
     <updated>2026-11-06T05:46:40Z</updated>
     <link href="https://canary.danleech.com/s/gold"/>
-    <summary>Gold near $4,053, down 8.8% over three months, past the 8% fall Watch line. Now watch (improving), $3,882, 3m -13.2%, checked 2026-11-12T23:42Z.</summary>
+    <summary>Gold near $4,053, down 8.8% over three months, past the 8% fall Watch line. Now watch (improving), $3,920, 3m -11.3%, checked 2026-11-13T05:53Z.</summary>
   </entry>
   <entry>
     <title>US equity stress: Normal → Watch</title>
     <id>tag:canary.danleech.com,2026-11-05:equity-stress:2026-11-05T17:48:17Z</id>
     <updated>2026-11-05T17:48:17Z</updated>
     <link href="https://canary.danleech.com/s/equity-stress"/>
-    <summary>S&amp;P 500 falls over 3% on 5 Nov as chip stocks slide; drawdown passes the 5% Watch line. Now normal (improving), VIX 18.7, S&amp;P -2.9%, checked 2026-11-12T23:42Z.</summary>
+    <summary>S&amp;P 500 falls over 3% on 5 Nov as chip stocks slide; drawdown passes the 5% Watch line. Now normal (stable), VIX 18.7, S&amp;P -2.9%, checked 2026-11-13T05:53Z.</summary>
   </entry>
   <entry>
     <title>Pacific &amp; Indian cyclones: Alert → Normal</title>
     <id>tag:canary.danleech.com,2026-11-04:other-cyclones:2026-11-04T23:43:43Z</id>
     <updated>2026-11-04T23:43:43Z</updated>
     <link href="https://canary.danleech.com/s/other-cyclones"/>
-    <summary>Cyclone Murasu has dissipated inland; no GDACS orange or red cyclone alerts in force. Now normal (stable), No orange/red GDACS cyclone alerts, checked 2026-11-12T23:42Z.</summary>
+    <summary>Cyclone Murasu has dissipated inland; no GDACS orange or red cyclone alerts in force. Now normal (stable), No orange/red GDACS cyclone alerts, checked 2026-11-13T05:53Z.</summary>
   </entry>
   <entry>
     <title>Sahel insurgency: Alert → Watch</title>
@@ -180,77 +187,77 @@ More: https://canary.danleech.com/status.md (all signals) · https://canary.danl
     <id>tag:canary.danleech.com,2026-11-04:crypto:2026-11-04T17:53:13Z</id>
     <updated>2026-11-04T17:53:13Z</updated>
     <link href="https://canary.danleech.com/s/crypto"/>
-    <summary>Bitcoin 7% off its high; Binance withdrawals resuming after record theft. Now normal (worsening), BTC $71,156, -18% from high, checked 2026-11-12T23:42Z.</summary>
+    <summary>Bitcoin 7% off its high; Binance withdrawals resuming after record theft. Now normal (worsening), BTC $68,564, -21% from high, checked 2026-11-13T05:53Z.</summary>
   </entry>
   <entry>
     <title>US equity stress: Watch → Normal</title>
     <id>tag:canary.danleech.com,2026-11-04:equity-stress:2026-11-04T17:53:13Z</id>
     <updated>2026-11-04T17:53:13Z</updated>
     <link href="https://canary.danleech.com/s/equity-stress"/>
-    <summary>VIX back below 20 and S&amp;P 500 1.4% off its high after Democrats win Congress. Now normal (improving), VIX 18.7, S&amp;P -2.9%, checked 2026-11-12T23:42Z.</summary>
+    <summary>VIX back below 20 and S&amp;P 500 1.4% off its high after Democrats win Congress. Now normal (stable), VIX 18.7, S&amp;P -2.9%, checked 2026-11-13T05:53Z.</summary>
   </entry>
   <entry>
     <title>Gold (fear gauge): Watch → Normal</title>
     <id>tag:canary.danleech.com,2026-11-04:gold:2026-11-04T11:42:46Z</id>
     <updated>2026-11-04T11:42:46Z</updated>
     <link href="https://canary.danleech.com/s/gold"/>
-    <summary>Gold near $4,050, down 7.9% over three months, just inside the Normal band. Now watch (improving), $3,882, 3m -13.2%, checked 2026-11-12T23:42Z.</summary>
+    <summary>Gold near $4,050, down 7.9% over three months, just inside the Normal band. Now watch (improving), $3,920, 3m -11.3%, checked 2026-11-13T05:53Z.</summary>
   </entry>
   <entry>
     <title>Gold (fear gauge): Normal → Watch</title>
     <id>tag:canary.danleech.com,2026-11-02:gold:2026-11-02T23:43:37Z</id>
     <updated>2026-11-02T23:43:37Z</updated>
     <link href="https://canary.danleech.com/s/gold"/>
-    <summary>Gold near $3,950, down 8.2% over three months, past the Watch line. Now watch (improving), $3,882, 3m -13.2%, checked 2026-11-12T23:42Z.</summary>
+    <summary>Gold near $3,950, down 8.2% over three months, past the Watch line. Now watch (improving), $3,920, 3m -11.3%, checked 2026-11-13T05:53Z.</summary>
   </entry>
   <entry>
     <title>US equity stress: Normal → Watch</title>
     <id>tag:canary.danleech.com,2026-11-02:equity-stress:2026-11-02T23:43:37Z</id>
     <updated>2026-11-02T23:43:37Z</updated>
     <link href="https://canary.danleech.com/s/equity-stress"/>
-    <summary>VIX above 20 at a three-month high as tech sell-off extends; S&amp;P 500 3.5% off its high. Now normal (improving), VIX 18.7, S&amp;P -2.9%, checked 2026-11-12T23:42Z.</summary>
+    <summary>VIX above 20 at a three-month high as tech sell-off extends; S&amp;P 500 3.5% off its high. Now normal (stable), VIX 18.7, S&amp;P -2.9%, checked 2026-11-13T05:53Z.</summary>
   </entry>
   <entry>
     <title>Gold (fear gauge): Watch → Normal</title>
     <id>tag:canary.danleech.com,2026-11-02:gold:2026-11-02T18:00:42Z</id>
     <updated>2026-11-02T18:00:42Z</updated>
     <link href="https://canary.danleech.com/s/gold"/>
-    <summary>Gold near $3,970, down 7.8% over three months, just inside the Watch line. Now watch (improving), $3,882, 3m -13.2%, checked 2026-11-12T23:42Z.</summary>
+    <summary>Gold near $3,970, down 7.8% over three months, just inside the Watch line. Now watch (improving), $3,920, 3m -11.3%, checked 2026-11-13T05:53Z.</summary>
   </entry>
   <entry>
     <title>Pacific &amp; Indian cyclones: Watch → Alert</title>
     <id>tag:canary.danleech.com,2026-11-02:other-cyclones:2026-11-02T11:58:59Z</id>
     <updated>2026-11-02T11:58:59Z</updated>
     <link href="https://canary.danleech.com/s/other-cyclones"/>
-    <summary>Cyclone Murasu, a GDACS red alert, due to cross the Andhra Pradesh coast on 2–3 Nov. Now normal (stable), No orange/red GDACS cyclone alerts, checked 2026-11-12T23:42Z.</summary>
+    <summary>Cyclone Murasu, a GDACS red alert, due to cross the Andhra Pradesh coast on 2–3 Nov. Now normal (stable), No orange/red GDACS cyclone alerts, checked 2026-11-13T05:53Z.</summary>
   </entry>
   <entry>
     <title>Pacific &amp; Indian cyclones: Alert → Watch</title>
     <id>tag:canary.danleech.com,2026-11-02:other-cyclones:2026-11-02T05:51:55Z</id>
     <updated>2026-11-02T05:51:55Z</updated>
     <link href="https://canary.danleech.com/s/other-cyclones"/>
-    <summary>Severe Cyclone Murasu due to hit south Andhra Pradesh overnight 2–3 Nov; GDACS now green. Now normal (stable), No orange/red GDACS cyclone alerts, checked 2026-11-12T23:42Z.</summary>
+    <summary>Severe Cyclone Murasu due to hit south Andhra Pradesh overnight 2–3 Nov; GDACS now green. Now normal (stable), No orange/red GDACS cyclone alerts, checked 2026-11-13T05:53Z.</summary>
   </entry>
   <entry>
     <title>Gold (fear gauge): Normal → Watch</title>
     <id>tag:canary.danleech.com,2026-11-02:gold:2026-11-02T05:51:55Z</id>
     <updated>2026-11-02T05:51:55Z</updated>
     <link href="https://canary.danleech.com/s/gold"/>
-    <summary>Gold down 9% in three months, crossing the 8% fall Watch line. Now watch (improving), $3,882, 3m -13.2%, checked 2026-11-12T23:42Z.</summary>
+    <summary>Gold down 9% in three months, crossing the 8% fall Watch line. Now watch (improving), $3,920, 3m -11.3%, checked 2026-11-13T05:53Z.</summary>
   </entry>
   <entry>
     <title>Crypto stress: Normal → Watch</title>
     <id>tag:canary.danleech.com,2026-11-01:crypto:2026-11-01T23:50:31Z</id>
     <updated>2026-11-01T23:50:31Z</updated>
     <link href="https://canary.danleech.com/s/crypto"/>
-    <summary>Record $6.3bn hack at Binance; withdrawals reopening, Bitcoin 10% off its high. Now normal (worsening), BTC $71,156, -18% from high, checked 2026-11-12T23:42Z.</summary>
+    <summary>Record $6.3bn hack at Binance; withdrawals reopening, Bitcoin 10% off its high. Now normal (worsening), BTC $68,564, -21% from high, checked 2026-11-13T05:53Z.</summary>
   </entry>
   <entry>
     <title>UK weather warnings: Watch → Normal</title>
     <id>tag:canary.danleech.com,2026-11-01:uk-weather:2026-11-01T11:52:42Z</id>
     <updated>2026-11-01T11:52:42Z</updated>
     <link href="https://canary.danleech.com/s/uk-weather"/>
-    <summary>No Met Office weather warnings in force. Now normal (stable), No warnings, checked 2026-11-12T23:42Z.</summary>
+    <summary>No Met Office weather warnings in force. Now normal (stable), No warnings, checked 2026-11-13T05:53Z.</summary>
   </entry>
   <entry>
     <title>Atmospheric CO₂: Normal → Watch</title>
@@ -264,13 +271,13 @@ More: https://canary.danleech.com/status.md (all signals) · https://canary.danl
     <id>tag:canary.danleech.com,2026-11-01:other-cyclones:2026-11-01T11:52:42Z</id>
     <updated>2026-11-01T11:52:42Z</updated>
     <link href="https://canary.danleech.com/s/other-cyclones"/>
-    <summary>GDACS red alert as Cyclone Murasu heads for Andhra Pradesh landfall on 3 Nov. Now normal (stable), No orange/red GDACS cyclone alerts, checked 2026-11-12T23:42Z.</summary>
+    <summary>GDACS red alert as Cyclone Murasu heads for Andhra Pradesh landfall on 3 Nov. Now normal (stable), No orange/red GDACS cyclone alerts, checked 2026-11-13T05:53Z.</summary>
   </entry>
   <entry>
     <title>UK weather warnings: Normal → Watch</title>
     <id>tag:canary.danleech.com,2026-10-31:uk-weather:2026-10-31T23:53:37Z</id>
     <updated>2026-10-31T23:53:37Z</updated>
     <link href="https://canary.danleech.com/s/uk-weather"/>
-    <summary>Yellow fog warnings across most of England and Wales for 1 Nov. Now normal (stable), No warnings, checked 2026-11-12T23:42Z.</summary>
+    <summary>Yellow fog warnings across most of England and Wales for 1 Nov. Now normal (stable), No warnings, checked 2026-11-13T05:53Z.</summary>
   </entry>
 </feed>

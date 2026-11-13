@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-13T05:53:06Z",
+  "id": "outages",
+  "name": "Internet & cloud outages",
+  "from": "green",
+  "to": "amber",
+  "reason": "A Microsoft 365 outage on 12 Nov cut Outlook and Teams for about 10 hours worldwide; Microsoft says not a cyberattack"
+ },
+ {
   "t": "2026-11-11T17:56:07Z",
   "id": "sovereign-debt",
   "name": "Sovereign debt stress",

@@ -1,8 +1,9 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-12T23:42Z · next run ~05:40 UK · stale after 2026-11-13T13:42Z (36h for daily-tier signals)
+as_of 2026-11-13T05:53Z · next run ~11:40 UK · stale after 2026-11-13T19:53Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
+- 2026-11-13T05:53Z Internet & cloud outages [outages]: NORMAL→WATCH — A Microsoft 365 outage on 12 Nov cut Outlook and Teams for about 10 hours worldwide; Microsoft says not a cyberattack
 - 2026-11-11T17:56Z Sovereign debt stress [sovereign-debt]: ALERT→WATCH — France–Bund 10-year spread about 147bp on 10 Nov, back below the 150bp Alert line from a 174.6bp peak on 22 Oct
 - 2026-11-11T17:56Z US equity stress [equity-stress]: WATCH→NORMAL — VIX 17.7 and S&P 500 2.4% below its high on 11 Nov, both inside Normal lines after a 3.8% weekly rise
 - 2026-11-11T05:51Z Major cyber incidents [cyber]: WATCH→ALERT — France on 9 Nov blamed an IRGC unit for attacks on refrigeration in about 700 stores that caused at least 15 fires
@@ -17,4 +18,3 @@ Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judge
 - 2026-11-06T17:59Z Oil (Brent) [oil]: ALERT→WATCH — Brent near $98 on 6 Nov, down 7% in a month; Watch as escorted Gulf shipments recover
 - 2026-11-06T17:59Z UK energy price cap [uk-energy-cap]: ALERT→WATCH — Cap £1,723; Cornwall Insight forecasts £1,999 in January, a 16% rise, below the 20% Alert line
 - 2026-11-06T17:59Z Cholera & mosquito-borne [cholera-dengue]: WATCH→ALERT — Cholera has killed about 1,800 in DR Congo this year, including the conflict-hit east, as Ebola spreads
-- 2026-11-06T05:46Z Gold (fear gauge) [gold]: NORMAL→WATCH — Gold near $4,053, down 8.8% over three months, past the 8% fall Watch line
