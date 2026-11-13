@@ -1,5 +1,5 @@
 # Canary — all signals
-as_of 2026-11-13T05:53Z · next run ~11:40 UK · stale after 2026-11-13T19:53Z (36h for daily-tier signals)
+as_of 2026-11-13T11:42Z · next run ~17:40 UK · stale after 2026-11-14T01:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -22,12 +22,12 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | cyber | ALERT | stable | judged | France blames IRGC unit for store sabotage | France blamed an IRGC-linked unit on 10 Nov for October hacks on about 700 stores' fridges; Poland hit 10 Nov |
 | uk-threat-level | ALERT | stable | judged | Threat level: Severe | UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 12 Nov |
 | bond-volatility | WATCH | stable | measured | MOVE 98, 10y 5.10% | MOVE index 98 and US 10-year yield 5.10% on 12 Nov; MOVE has not cleared the exit margin, so Watch holds |
-| gold | WATCH | improving | measured | $3,920, 3m -11.3% | Gold near $3,920 on 13 Nov, down 11.3% over three months, beyond the 8% fall that marks Watch |
+| gold | WATCH | improving | measured | $3,893, 3m -11.9% | Gold near $3,920 on 13 Nov, down 11.3% over three months, beyond the 8% fall that marks Watch |
 | private-credit | WATCH | stable | judged | Fund redemption caps persist; no forced sales | Large private credit funds keep limiting redemptions; no forced asset sales or bank losses found as of 12 Nov |
 | us-inflation | WATCH | worsening | measured | CPI 4.1% y/y (Oct), rising 3 months | US CPI about 4.1% a year in October and rising for three months; Fed officials discuss faster rate rises |
 | central-banks | WATCH | worsening | judged | Fed Dec rise priced ~90%; ECB rise expected | Markets price about a 90% chance of a December Fed rate rise; Fed officials discuss faster moves and ECB set to raise |
 | sovereign-debt | WATCH | worsening | judged | OAT–Bund ~149bp (12 Nov) | France–Bund 10-year spread widened back to about 149bp on 12 Nov, just under the 150bp Alert line |
-| oil | WATCH | stable | measured | $95.6, 1m -13% | Brent near $95.6 on 13 Nov, up 3% on the week but 13% lower on the month; Hormuz still restricted |
+| oil | WATCH | stable | measured | $96.0, 1m -13% | Brent near $95.6 on 13 Nov, up 3% on the week but 13% lower on the month; Hormuz still restricted |
 | food-prices | WATCH | improving | published | FAO index 133.9 (Oct), +5.9% y/y | FAO food price index 133.9 in October, below the 135 Alert line but up 5.9% on a year; next release 4 Dec |
 | critical-minerals | WATCH | stable | judged | Rare-earth pause extended to 10 Jan 2027 | China extended its pause on new rare-earth export controls to 10 Jan 2027; April 2025 licensing still in force |
 | fertiliser | WATCH | worsening | judged | Egypt urea $535/t FOB; gas cuts up to 33% | Egypt raised gas curtailments on fertiliser plants to 33% on 9 Nov; Egyptian urea near $535 a tonne, up 17% since Sep |
@@ -65,14 +65,14 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | gilts | WATCH | improving | judged | 10y ~5.2% (12 Nov); 2056 gilt sold at 5.54% | 10-year gilt just above 5.2% on 12 Nov after two-month lows; 2056 gilt sold at 5.54% on 10 Nov with solid demand |
 | uk-energy-cap | WATCH | worsening | published | £1,723 now; Jan forecast £1,999 (+16%) | Cap £1,723 a year; Cornwall Insight forecasts £1,999 for January, a 16% rise; Ofgem's January cap is due late November |
 | uk-disruption | WATCH | stable | judged | Consultants 25–27 Nov; Tube strikes from Nov | Consultants in England strike 25–27 Nov; Tube drivers set strikes from late November into the Christmas period |
-| equity-stress | NORMAL | stable | measured | VIX 18.7, S&P -2.9% | VIX 18.7 and S&P 500 2.9% below its high on 12 Nov; both inside Normal lines |
-| ftse | NORMAL | stable | measured | 10,863, -0.4% from high | FTSE 100 near 10,863 on 12 Nov, 0.4% below its 52-week high; no daily fall above 2.5% in five sessions |
+| equity-stress | NORMAL | stable | measured | VIX 18.4, S&P -2.9% | VIX 18.7 and S&P 500 2.9% below its high on 12 Nov; both inside Normal lines |
+| ftse | NORMAL | stable | measured | 10,873, -0.3% from high | FTSE 100 near 10,863 on 12 Nov, 0.4% below its 52-week high; no daily fall above 2.5% in five sessions |
 | credit-spreads | NORMAL | stable | measured | HY OAS 3.30% | US high-yield spreads 3.30% on 11 Nov, below the 5 Nov one-year high of 3.48% and inside the 4% Watch line |
-| dollar | NORMAL | worsening | measured | DXY 103.2, 3m +3.5% | Dollar index near 103.2 on 13 Nov, a 52-week high, up 3.5% over three months; inside Normal lines |
+| dollar | NORMAL | worsening | measured | DXY 103.2, 3m +3.6% | Dollar index near 103.2 on 13 Nov, a 52-week high, up 3.5% over three months; inside Normal lines |
 | banking-stress | NORMAL | stable | measured | STLFSI -0.49, CISS 0.01 | Financial stress gauges low: St Louis Fed index -0.49 and ECB stress indicator 0.006; no notable bank failure found |
-| crypto | NORMAL | worsening | measured | BTC $68,564, -21% from high | Bitcoin near $68,560 on 13 Nov, 21% below its high and 15% lower on the month; no stablecoin de-peg found |
+| crypto | NORMAL | worsening | measured | BTC $69,245, -20% from high | Bitcoin near $68,560 on 13 Nov, 21% below its high and 15% lower on the month; no stablecoin de-peg found |
 | funding-stress | NORMAL | stable | measured | SOFR–IORB -1bp, repo $0.0bn | SOFR 1bp below the Fed's reserve rate on 10 Nov; Fed repo use near zero on 12 Nov |
-| yen-carry | NORMAL | stable | measured | ¥160.0/$, 1w +1.1% | Yen near ¥160.0 per dollar on 13 Nov, 1.1% weaker on the week; no intervention reported |
+| yen-carry | NORMAL | stable | measured | ¥159.9/$, 1w +1.0% | Yen near ¥160.0 per dollar on 13 Nov, 1.1% weaker on the week; no intervention reported |
 | us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.24 | Sahm recession indicator 0.00 for October; yield curve +0.24 on 12 Nov; jobless claims near a one-year low |
 | euro-growth | NORMAL | stable | published | Oct flash PMI 51.9; Q3 GDP +0.4% | Euro-area Q3 GDP +0.4% and October composite PMI 51.9, above Normal lines; Eurostat's next GDP estimate due 13 Nov |
 | china-economy | NORMAL | stable | judged | Oct CPI +0.7%, PPI +5.7% y/y | China's October CPI rose 0.7% and factory prices 5.7%; weak lending expected but no deflation or contagion found |
@@ -84,7 +84,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | other-cyclones | NORMAL | stable | measured | No orange/red GDACS cyclone alerts | No GDACS orange or red cyclone alerts on 13 Nov; Pena and Cempaka rated green with tracks ended |
 | wildfires | NORMAL | stable | measured | GDACS: no orange/red | No GDACS orange or red wildfire alerts on 13 Nov; no fire forcing mass evacuation flagged |
 | floods | NORMAL | stable | measured | GDACS: no orange/red | No GDACS orange or red flood alerts on 13 Nov; only five green-level flood events listed |
-| earthquakes | NORMAL | stable | measured | Max M6.4, 2× M6+ (7d) | Largest quake M6.4 near Lata, Solomon Islands, on 9 Nov; no M7+, PAGER orange or red, or damaging tsunami |
+| earthquakes | NORMAL | stable | measured | Max M6.4, 1× M6+ (7d) | Largest quake M6.4 near Lata, Solomon Islands, on 9 Nov; no M7+, PAGER orange or red, or damaging tsunami |
 | volcanic | NORMAL | stable | judged | No red aviation codes (12 Nov) | No red aviation codes, VEI 4+ eruptions or ash-related airspace closures found as of 12 Nov |
 | space-weather | NORMAL | stable | measured | G0 S0 R0 | NOAA scales at G0 S0 R0 in the 24 hours to 13 Nov; no geomagnetic storm forecast |
 | cold-storms | NORMAL | worsening | judged | No major cold wave (12 Nov) | No major cold wave or top-tier winter-storm warning confirmed on 12 Nov; polar vortex disruption raises later cold risk |

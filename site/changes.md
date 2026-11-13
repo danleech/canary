@@ -1,5 +1,5 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-13T05:53Z · next run ~11:40 UK · stale after 2026-11-13T19:53Z (36h for daily-tier signals)
+as_of 2026-11-13T11:42Z · next run ~17:40 UK · stale after 2026-11-14T01:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
