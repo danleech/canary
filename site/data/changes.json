@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-14T17:56:14Z",
+  "id": "co2",
+  "name": "Atmospheric CO₂",
+  "from": "red",
+  "to": "amber",
+  "reason": "CO₂ 428.6 ppm at Mauna Loa in the week of 8 Nov, up 2.34 ppm on a year, inside the 2–3 ppm Watch band"
+ },
+ {
   "t": "2026-11-13T17:58:01Z",
   "id": "uk-disruption",
   "name": "UK strikes & disruption",

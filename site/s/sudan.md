@@ -1,17 +1,17 @@
 # Sudan — ALERT (stable)
-id sudan · Armed Conflict · horizon acute · checked 2026-11-13T17:58Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-15T05:58Z
+id sudan · Armed Conflict · horizon acute · checked 2026-11-14T17:56Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-16T05:56Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/sudan
 
-Value: WFP drops 900,000 people; Blue Nile drone deaths
-Rated on: Alert: repeated deadly drone strikes on civilians and famine risk in Darfur and Kordofan (WFP cut 900,000 from aid, 12 Nov)
-Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
+Value: Famine risk spreads to South Darfur
+Rated on: Famine spreading to new areas: FEWS NET extends risk of Famine to Sharg Aj-Jabal, South Darfur
+Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 Situation: Sudan war [sudan-war]
 
-WFP says funding cuts removed 900,000 people from food aid; an RSF drone killed 9 in Blue Nile, reported 10 Nov
+FEWS NET says Famine risk has spread to South Darfur and persists around Kadugli and Dilling; Kordofan fighting goes on
 
-Why it's at this level: WFP said on 12 Nov that funding shortfalls cut the number it reaches in Sudan from over 4 million in August to just over 3 million, with about 900,000 people losing food aid; in August it was helping 880,000 people in famine-risk areas (UN News). A local governor said an RSF drone strike on Bani Shako village in Blue Nile state killed at least nine civilians, reported on 10 Nov (Anadolu via A News). Repeated deadly drone strikes on civilians and hunger in famine-risk areas keep the Alert.
+Why it's at this level: FEWS NET's September 2026 to January 2027 update says the risk of Famine has spread to Sharg Aj-Jabal in South Darfur, where acute malnutrition in two of four camps assessed exceeded the Famine threshold, and persists in parts of North Darfur and around Kadugli and Dilling in South Kordofan. Sudan Tribune reported around 11 Nov that the army captured Iyal Bakhit in West Kordofan and downed an RSF drone; the claims could not be independently verified. Famine risk spreading to new areas keeps the Alert.
 
-What this means for you: Civilians in Darfur, Kordofan and Blue Nile face drone strikes, displacement and hunger. Travellers should follow FCDO advice against all travel to Sudan. Neighbouring Chad, South Sudan and Egypt continue to receive refugees.
+What this means for you: Civilians in Darfur and Kordofan face drone strikes, displacement and hunger. FCDO advises against all travel to Sudan. Aid agencies and neighbouring states hosting refugees, notably Chad and South Sudan, are most exposed to further displacement.
 
 Why it matters: The world's largest displacement and hunger crisis; regional spillover into Chad, South Sudan and the Red Sea.
 What moves it: SAF–RSF fighting, sieges, foreign arms supplies, aid access, famine.
@@ -19,5 +19,6 @@ What moves it: SAF–RSF fighting, sieges, foreign arms supplies, aid access, fa
 Rubric — Alert: Major sieges or massacres reported, or famine spreading to new areas. | Watch: Active war at sustained intensity. | Normal: Ceasefire holding and aid flowing.
 
 Sources:
-- UN News — Aid is the 'only hope' for millions in Sudan, WFP chief warns, as funding cuts deepen hunger crisis (2026-11-12) https://news.un.org/en/story/2026/11/1168793
-- A News (Anadolu) — 9 civilians killed in RSF drone attack in Sudan's Blue Nile state: Official (2026-11-10) https://www.anews.com.tr/africa/2026/11/10/9-civilians-killed-in-rsf-drone-attack-in-sudans-blue-nile-state-official
+- FEWS NET — Sudan Key Message Update: risk of Famine expands to parts of South Darfur (2026-11-14) https://fews.net/east-africa/sudan
+- Sudan Tribune — Sudan Army Captures Iyal Bakhit, Downs RSF Drone (2026-11-11) https://sudantribune.com/article/320981
+- Al Jazeera — As aid situation worsens, displaced Sudanese worry about warnings of famine (2026-11-02) https://aljazeera.com/features/2026/11/2/as-aid-situation-worsens-displaced-sudanese-worry-about-warnings-of-famine

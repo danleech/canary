@@ -1,16 +1,16 @@
 # GB energy supply margins — NORMAL (stable)
-id uk-supply-margins · UK Watch · horizon acute · checked 2026-11-13T17:58Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-15T05:58Z
+id uk-supply-margins · UK Watch · horizon acute · checked 2026-11-14T17:56Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-16T05:56Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/uk-supply-margins
 
-Value: No notice in force; EMN 8 Nov for 9 Nov
-Rated on: Normal: no NESO or National Gas notice in force on 13 Nov; the 8 Nov EMN covered only 9 Nov morning
-Basis: judged — The AI assessor's reading of 1 source from 1 outlet against the rubric. Check the sources before relying on it.
+Value: No notice in force; winter margin 9.5%
+Rated on: Normal: NESO reports adequate margins (9.5% buffer); no notice in force
+Basis: published — Follows NESO and National Gas system notices, read from the cited source by the AI assessor and checked against the rubric.
 
-NESO issued a precautionary Electricity Margin Notice for 9 Nov amid low wind; none in force as of 13 Nov
+NESO forecasts a 5.9 GW, 9.5% winter buffer; no Electricity Margin or Gas Margins Notice in force as of 14 Nov
 
-Why it's at this level: NESO issued a precautionary Electricity Margin Notice on the evening of 8 Nov for 06:00–11:00 on 9 Nov, forecasting a shortfall of about 1.4 GW against its required margin as wind output fell, and said there was no risk to supplies (BritBrief). That notice has lapsed, and no further Electricity Margin Notice, capacity market notice or Gas Margins Notice was found in force as of 13 Nov, so the signal stays Normal.
+Why it's at this level: NESO's Winter Outlook of 23 Oct forecasts a 5.9 GW surplus, a 9.5% buffer over peak demand, within the reliability standard, and says routine Electricity Margin Notices do not indicate a risk to supplies (NESO). NESO issued precautionary notices on low-wind days in October, which lapsed (OilPrice.com). Searches on 14 Nov found no Electricity Margin Notice, capacity market notice or Gas Margins Notice in force, so the signal stays Normal.
 
-What this means for you: A margin notice asks generators to make more power available and is not a warning of power cuts. Households need take no action; NESO and National Gas publish any further notices on their websites.
+What this means for you: Electricity and gas supplies in Great Britain are expected to meet demand this winter. Occasional precautionary notices on cold, still days are routine and do not mean power cuts.
 
 Why it matters: When gas or electricity margins tighten, Britain risks price spikes and, at worst, controlled disconnections in winter.
 What moves it: Gas imports and storage, wind output, interconnectors, plant outages, cold weather.
@@ -18,4 +18,5 @@ What moves it: Gas imports and storage, wind output, interconnectors, plant outa
 Rubric — Alert: A Gas Deficit Warning, a high risk of demand control notice, or demand control used. | Watch: NESO issues an Electricity Margin Notice or capacity market notice, or National Gas issues a Gas Margins Notice. | Normal: NESO and National Gas report adequate margins; no notices issued.
 
 Sources:
-- BritBrief — UK power grid operator issues electricity supply warning for Monday as margin falls (2026-11-08) https://britbrief.co.uk/business/energy/uk-grid-issues-electricity-supply-warning-for-monday.html
+- NESO — British electricity supplies secure this winter despite global instability (2026-10-23) https://www.neso.energy/british-electricity-supplies-secure-winter-despite-global-instability-1
+- OilPrice.com — Low wind generation prompts another power margin warning in UK (2026-10-06) https://oilprice.com/Latest-Energy-News/World-News/Low-Wind-Generation-Prompts-Another-Power-Margin-Warning-in-UK.amp.html

@@ -1,16 +1,16 @@
 # Measles & vaccine-preventable — WATCH (worsening)
-id measles · Global Health · horizon acute · checked 2026-11-13T17:58Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-15T05:58Z
+id measles · Global Health · horizon acute · checked 2026-11-14T17:56Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-16T05:56Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/measles
 
-Value: US 5,182 cases in 2026 (5 Nov)
-Rated on: Watch: large outbreaks in a high-income country (US 5,182 cases to 5 Nov); elimination status under PAHO review
+Value: US ~7,500 cases since 2025; PAHO review
+Rated on: Large outbreaks in high-income countries (US ~7,500 cases since 2025) and loss of elimination status = Watch
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-US measles cases pass 5,100 in 2026, the most since 1991; PAHO panel reviewing US elimination status from 10 Nov
+PAHO experts reviewed US measles elimination status to 13 Nov; nearly 7,500 US cases and 11 deaths since early 2025
 
-Why it's at this level: The CDC counted 5,182 US measles cases in 2026 as of 5 Nov, the most since 1991 (Al Jazeera, 7 Nov). Infant deaths announced in New York on 2 Nov and Wisconsin on 5 Nov were the seventh and eighth US measles deaths this year, and a PAHO advisory panel began a four-day review of US elimination status on 10 Nov (Healio, 9 Nov). Large outbreaks in a high-income country meet Watch; loss of elimination status would also be Watch, and a multi-country surge with rising deaths is not clearly established.
+Why it's at this level: PAHO experts met in closed session through 13 Nov to decide whether the US has lost the measles elimination status it has held since 2000, with a decision expected to be made public in the week of 16 Nov; nearly 7,500 US cases and 11 deaths have been reported since early 2025 (Reuters via News Tribune, 11 Nov). Canada, Spain and the UK have already lost elimination status. Infant deaths were announced in New York on 2 Nov and Wisconsin on 5 Nov (Healio, 9 Nov). Large outbreaks in high-income countries meet Watch.
 
-What this means for you: Two MMR doses give strong protection. The NHS and UKHSA advise checking vaccination records before travel, and CDC publishes US outbreak updates. Anyone with measles symptoms should phone their GP or NHS 111 before attending in person.
+What this means for you: Unvaccinated people, infants too young for the MMR jab and those with weak immune systems are most exposed. The NHS advises checking that children and adults have had two doses of MMR.
 
 Why it matters: Falling vaccination rates are bringing back diseases once eliminated; measles is the canary for the rest.
 What moves it: Vaccine coverage, misinformation, health-system disruption.
@@ -18,5 +18,5 @@ What moves it: Vaccine coverage, misinformation, health-system disruption.
 Rubric — Alert: Multi-country surge with rising deaths, or polio/diphtheria resurgence in high-income countries. | Watch: Large outbreaks in high-income countries, or loss of elimination status. | Normal: No large outbreaks in high-income countries.
 
 Sources:
-- Al Jazeera — CDC reports more than 5,000 measles cases, highest number in 35 years (2026-11-07) https://www.aljazeera.com/news/2026/11/7/cdc-reports-more-than-5000-measles-cases-highest-number-in-35-years
+- News Tribune (Reuters) — US faces loss of measles-free status as experts meet for review (2026-11-11) https://www.newstribune.com/news/2026/nov/11/us-faces-loss-of-measles-free-status-as-experts-meet-for-review/
 - Healio — States report first measles deaths in decades ahead of PAHO meeting (2026-11-09) https://www.healio.com/news/infectious-disease/20261109/states-report-first-measles-deaths-in-decades-ahead-of-paho-meeting
