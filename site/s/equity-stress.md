@@ -1,5 +1,5 @@
 # US equity stress — NORMAL (stable)
-id equity-stress · Markets · horizon acute · checked 2026-11-14T17:56Z · text written 2026-11-14T05:54Z · at this level since 2026-11-11T17:56Z · stale after 2026-11-15T07:56Z
+id equity-stress · Markets · horizon acute · checked 2026-11-14T23:42Z · text written 2026-11-14T05:54Z · at this level since 2026-11-11T17:56Z · stale after 2026-11-15T13:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/equity-stress
 
 Value: VIX 19.3, S&P -3.3%

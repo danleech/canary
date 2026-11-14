@@ -1,10 +1,10 @@
 # Canary — world risk status
-as_of 2026-11-14T17:56Z · next run ~23:40 UK · stale after 2026-11-15T07:56Z (36h for daily-tier signals)
+as_of 2026-11-14T23:42Z · next run ~05:40 UK · stale after 2026-11-15T13:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 13 follow a published figure, 49 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
-World State 40/100 (Strained) · 13 Alert · 45 Watch · 31 Normal
-Headline: The US–Iran war keeps Hormuz traffic about 65% below pre-war levels while a very strong El Niño holds global temperatures at record highs. Ebola in DR Congo passes 11,000 cases; CO₂ growth eases to Watch.
+World State 40/100 (Strained) · 13 Alert · 46 Watch · 30 Normal
+Headline: Bitcoin's fall past 25% below its high moves crypto stress to Watch. Alerts persist for the US–Iran war and Hormuz shipping, Russia–Ukraine, the Yemen–Saudi front, DR Congo's Ebola outbreak and the French store sabotage attributed to the IRGC.
 
 ## Situations (7 cross-domain events; Alerts below are grouped under them)
 - US–Iran war and Gulf energy shock [ALERT, stable]: IRGC says it hit a US radar in Bahrain after a 12 Nov strike on Sirik; Iran says an LNG carrier hit a mine on 13 Nov; IAEA lacks access. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight; watch: iran-nuclear, sanctions, oil, fertiliser, uk-energy-cap, semiconductors
@@ -21,15 +21,14 @@ Headline: The US–Iran war keeps Hormuz traffic about 65% below pre-war levels 
 - UK terrorism threat level [uk-threat-level] stable: UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 14 Nov
 
 ## Changed in last 24h
+- Crypto stress [crypto]: NORMAL→WATCH — Bitcoin near $63,400 on 14 Nov, 27% below its 52-week high and 14% lower on the week; no stablecoin de-peg found (2026-11-14T23:42Z)
 - Atmospheric CO₂ [co2]: ALERT→WATCH — CO₂ 428.6 ppm at Mauna Loa in the week of 8 Nov, up 2.34 ppm on a year, inside the 2–3 ppm Watch band (2026-11-14T17:56Z)
-- UK strikes & disruption [uk-disruption]: WATCH→NORMAL — BMA paused the 25–27 Nov consultant strike on 11 Nov for talks; London Tube driver strikes start 26 Nov (2026-11-13T17:58Z)
-- NHS & respiratory [nhs-pressure]: NORMAL→WATCH — UKHSA 12 Nov: flu now above baseline and rising, at low levels; COVID-19 stable; RSV hospital admissions rising (2026-11-13T17:58Z)
 
 ## Watch (ids; detail at /s/{id}.md)
-bond-volatility, gold, private-credit, us-inflation, central-banks, sovereign-debt, oil, food-prices, critical-minerals, fertiliser, nuclear-plants, us-china, russia-nato, iran-nuclear, korea, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, heat, drought, sea-ice, co2, who-emergencies, mpox, measles, respiratory, medicine-shortages, outages, cables-gnss, semiconductors, ai-governance, exploited-vulns, famine, civil-unrest, aid-funding, uk-rates, gilts, uk-energy-cap, nhs-pressure
+bond-volatility, gold, crypto, private-credit, us-inflation, central-banks, sovereign-debt, oil, food-prices, critical-minerals, fertiliser, nuclear-plants, us-china, russia-nato, iran-nuclear, korea, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, heat, drought, sea-ice, co2, who-emergencies, mpox, measles, respiratory, medicine-shortages, outages, cables-gnss, semiconductors, ai-governance, exploited-vulns, famine, civil-unrest, aid-funding, uk-rates, gilts, uk-energy-cap, nhs-pressure
 
 ## Sentiment (measured from open data; context only, never changes a status)
-News tone vs own past 6 months (GDELT, 7 days to 2026-11-13; number = % of past weeks less negative): gloomier: economy (91), tech (98), migration (82); brighter: energy (3), climate (4), disasters (8); typical: conflict, trade, health
+News tone vs own past 6 months (GDELT, 7 days to 2026-11-14; number = % of past weeks less negative): gloomier: economy (87), tech (98), migration (77); brighter: energy (1), climate (4), disasters (7); typical: conflict, trade, health
 Consumer confidence (OECD, long-run avg 100): OECD 98.0 (2026-10), GBR 98.9 (2026-10), USA 96.0 (2026-10), EA20 97.9 (2026-10), JPN 98.4 (2026-10), CHN 95.4 (2026-09), IND 100.0 (2026-09)
 Uncertainty: US policy uncertainty 1.0× its 1-year median · Geopolitical risk in the news 1.0× its 1-year median · Market fear (VIX) higher than 75% of the past year
 

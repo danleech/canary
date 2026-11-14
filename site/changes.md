@@ -1,8 +1,9 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-14T17:56Z · next run ~23:40 UK · stale after 2026-11-15T07:56Z (36h for daily-tier signals)
+as_of 2026-11-14T23:42Z · next run ~05:40 UK · stale after 2026-11-15T13:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 13 follow a published figure, 49 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
+- 2026-11-14T23:42Z Crypto stress [crypto]: NORMAL→WATCH — Bitcoin near $63,400 on 14 Nov, 27% below its 52-week high and 14% lower on the week; no stablecoin de-peg found
 - 2026-11-14T17:56Z Atmospheric CO₂ [co2]: ALERT→WATCH — CO₂ 428.6 ppm at Mauna Loa in the week of 8 Nov, up 2.34 ppm on a year, inside the 2–3 ppm Watch band
 - 2026-11-13T17:58Z UK strikes & disruption [uk-disruption]: WATCH→NORMAL — BMA paused the 25–27 Nov consultant strike on 11 Nov for talks; London Tube driver strikes start 26 Nov
 - 2026-11-13T17:58Z NHS & respiratory [nhs-pressure]: NORMAL→WATCH — UKHSA 12 Nov: flu now above baseline and rising, at low levels; COVID-19 stable; RSV hospital admissions rising

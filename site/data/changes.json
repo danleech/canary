@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-14T23:42:22Z",
+  "id": "crypto",
+  "name": "Crypto stress",
+  "from": "green",
+  "to": "amber",
+  "reason": "Bitcoin near $63,400 on 14 Nov, 27% below its 52-week high and 14% lower on the week; no stablecoin de-peg found"
+ },
+ {
   "t": "2026-11-14T17:56:14Z",
   "id": "co2",
   "name": "Atmospheric CO₂",
