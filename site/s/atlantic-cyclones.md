@@ -1,5 +1,5 @@
 # Atlantic hurricanes — NORMAL (stable)
-id atlantic-cyclones · Weather & Hazards · horizon acute · checked 2026-11-14T05:54Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-14T19:54Z
+id atlantic-cyclones · Weather & Hazards · horizon acute · checked 2026-11-14T11:42Z · text written 2026-11-14T05:54Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-15T01:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/atlantic-cyclones
 
 Value: No storms; none forecast for 7 days

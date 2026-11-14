@@ -1,9 +1,9 @@
 # Banking system stress — NORMAL (stable)
-id banking-stress · Markets · horizon acute · checked 2026-11-14T05:54Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-14T19:54Z
+id banking-stress · Markets · horizon acute · checked 2026-11-14T11:42Z · text written 2026-11-14T05:54Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-15T01:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/banking-stress
 
 Value: STLFSI -0.49, CISS 0.01
-Rated on: STLFSI -0.49 < 0 and ECB CISS 0.0065 < 0.25, no notable bank failure = Normal
+Rated on: STLFSI -0.49 below the 0 Watch line; ECB CISS 0.01 below the 0.25 Watch line
 Basis: measured — Set by a fixed rule applied to open data (STLFSI = -0.49 · ECB CISS = 0.01). Anyone can reproduce it from the public metrics file.
 
 Financial stress gauges low: St Louis Fed index -0.49 and ECB stress indicator 0.0065; no notable bank failure found

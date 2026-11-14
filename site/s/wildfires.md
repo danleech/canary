@@ -1,9 +1,9 @@
 # Wildfires — NORMAL (stable)
-id wildfires · Weather & Hazards · horizon acute · checked 2026-11-14T05:54Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-14T19:54Z
+id wildfires · Weather & Hazards · horizon acute · checked 2026-11-14T11:42Z · text written 2026-11-14T05:54Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-15T01:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/wildfires
 
 Value: GDACS: no orange/red
-Rated on: No GDACS orange or red wildfire alerts and no major evacuations = Normal
+Rated on: GDACS wildfire: 0 red / 0 orange
 Basis: measured — Set by a fixed rule applied to open data (GDACS wildfire: 0 red / 0 orange). Anyone can reproduce it from the public metrics file.
 
 No GDACS orange or red wildfire alerts on 14 Nov; no fire forcing mass evacuation flagged

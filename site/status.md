@@ -1,5 +1,5 @@
 # Canary — all signals
-as_of 2026-11-14T05:54Z · next run ~11:40 UK · stale after 2026-11-14T19:54Z (36h for daily-tier signals)
+as_of 2026-11-14T11:42Z · next run ~17:40 UK · stale after 2026-11-15T01:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 12 follow a published figure, 50 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -70,7 +70,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | credit-spreads | NORMAL | stable | measured | HY OAS 3.20% | US high-yield spreads 3.20% on 12 Nov, below the 5 Nov one-year high of 3.48% and inside the 4% Watch line |
 | dollar | NORMAL | worsening | measured | DXY 103.4, 3m +3.8% | Dollar index 103.4 on 13 Nov, a 52-week high, up 3.8% over three months; inside Normal lines |
 | banking-stress | NORMAL | stable | measured | STLFSI -0.49, CISS 0.01 | Financial stress gauges low: St Louis Fed index -0.49 and ECB stress indicator 0.0065; no notable bank failure found |
-| crypto | NORMAL | worsening | measured | BTC $66,810, -23% from high | Bitcoin near $66,810 on 14 Nov, 23% below its high and 11% lower on the week; no stablecoin de-peg found |
+| crypto | NORMAL | worsening | measured | BTC $67,154, -22% from high | Bitcoin near $66,810 on 14 Nov, 23% below its high and 11% lower on the week; no stablecoin de-peg found |
 | funding-stress | NORMAL | stable | measured | SOFR–IORB +0bp, repo $0.0bn | SOFR level with the Fed's reserve rate on 12 Nov; Fed repo use near zero on 13 Nov |
 | yen-carry | NORMAL | stable | measured | ¥159.7/$, 1w +0.9% | Yen near ¥159.7 per dollar on 13 Nov, 0.9% weaker on the week; no intervention reported |
 | us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.27 | Sahm recession indicator 0.00 for October; yield curve +0.27 on 13 Nov; jobless claims near a one-year low |
