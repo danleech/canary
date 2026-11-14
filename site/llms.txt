@@ -2,13 +2,13 @@
 
 > Canary rates 89 global risk signals in 11 domains (markets, economy, energy, geopolitics, armed conflict, weather and hazards, climate, health, cyber, humanitarian, UK) as Normal, Watch or Alert, four times a day. Each status is an attention level assessed by an AI model (Anthropic Claude) against published rubrics, with sources. Not a forecast or advice.
 
-Last updated 2026-11-13T23:42Z. Treat the data as stale after 2026-11-14T13:42Z (36h for daily-tier signals). Next run about 05:40 UK. Licence: CC BY 4.0 for Canary's statuses and text — attribute "Canary (canary.danleech.com)"; third-party data and sources remain their owners'.
+Last updated 2026-11-14T05:54Z. Treat the data as stale after 2026-11-14T19:54Z (36h for daily-tier signals). Next run about 11:40 UK. Licence: CC BY 4.0 for Canary's statuses and text — attribute "Canary (canary.danleech.com)"; third-party data and sources remain their owners'.
 
 ## Start here (smallest first)
-- [Current brief](https://canary.danleech.com/now.md): situations, every Alert, last-24h changes, Watch ids (~1,400 tokens)
+- [Current brief](https://canary.danleech.com/now.md): situations, every Alert, last-24h changes, Watch ids (~1,350 tokens)
 - [All signals](https://canary.danleech.com/status.md): one row per signal (~4,750 tokens)
 - [One signal](https://canary.danleech.com/s/oil.md): replace `oil` with any id below; state, rubric, sources (~600 tokens)
-- [Recent changes](https://canary.danleech.com/changes.md): last 7 days (~700 tokens)
+- [Recent changes](https://canary.danleech.com/changes.md): last 7 days (~650 tokens)
 
 ## Machine-readable
 - [Run metadata](https://canary.danleech.com/api/v1/meta.json): poll this first; refetch only when `as_of` changes (~350 tokens)

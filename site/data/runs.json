@@ -1,5 +1,59 @@
 [
  {
+  "t": "2026-11-14T05:54:32Z",
+  "applied": 41,
+  "changed": [],
+  "warnings": [
+   "sources: aljazeera.com supplies 5 of 38 news citations (13%); diversify next run (errors above 20%)",
+   "sources: al-monitor.com supplies 4 of 38 news citations (11%); diversify next run (errors above 20%)"
+  ],
+  "note": "Full sweep; research split across subagents. Microsoft 365 outage kept at Watch as it ran past 20h into 13 Nov.",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 3,
+   "judged": 17
+  },
+  "held": 0,
+  "sources": {
+   "citations": 72,
+   "news_citations": 38,
+   "outlets": 35,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     5
+    ],
+    [
+     "al-monitor.com",
+     4
+    ],
+    [
+     "arabnews.com",
+     2
+    ],
+    [
+     "cbsnews.com",
+     2
+    ],
+    [
+     "euronews.com",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 18,
+   "predicted_active": 2,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": [
+    "gilts",
+    "trade-war"
+   ]
+  }
+ },
+ {
   "t": "2026-11-13T23:42:59Z",
   "applied": 41,
   "changed": [],
