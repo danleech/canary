@@ -1,5 +1,5 @@
 # Russia–NATO — WATCH (stable)
-id russia-nato · Geopolitics · horizon acute · checked 2026-11-15T17:48Z · text written 2026-11-15T05:55Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-16T07:48Z
+id russia-nato · Geopolitics · horizon acute · checked 2026-11-15T23:41Z · text written 2026-11-15T05:55Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-16T13:41Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/russia-nato
 
 Value: Lakenheath drones 13 Nov; Baltics 10–11 Nov

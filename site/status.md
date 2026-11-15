@@ -1,5 +1,5 @@
 # Canary — all signals
-as_of 2026-11-15T17:48Z · next run ~23:40 UK · stale after 2026-11-16T07:48Z (36h for daily-tier signals)
+as_of 2026-11-15T23:41Z · next run ~05:40 UK · stale after 2026-11-16T13:41Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 14 follow a published figure, 48 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -21,13 +21,13 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | cyber | ALERT | stable | judged | France blames IRGC unit for store sabotage | France blamed an IRGC-linked unit on 9 Nov for October hacks of fridges at about 700 stores that caused fires |
 | uk-threat-level | ALERT | stable | published | Threat level: Severe | UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 15 Nov |
 | bond-volatility | WATCH | stable | measured | MOVE 99, 10y 5.15% | MOVE index 99 and US 10-year yield 5.15% on 13 Nov; MOVE has not cleared the exit margin, so Watch holds |
-| gold | WATCH | improving | measured | $3,886, 3m -12.1% | Gold near $3,886 on 13 Nov, down 12.1% over three months, beyond the 8% fall that marks Watch |
-| crypto | WATCH | worsening | measured | BTC $64,496, -26% from high | Bitcoin near $64,900 on 15 Nov, 25% below its 52-week high and 12% lower on the week; no stablecoin de-peg found |
+| gold | WATCH | improving | measured | $3,885, 3m -12.1% | Gold near $3,886 on 13 Nov, down 12.1% over three months, beyond the 8% fall that marks Watch |
+| crypto | WATCH | worsening | measured | BTC $65,334, -25% from high | Bitcoin near $64,900 on 15 Nov, 25% below its 52-week high and 12% lower on the week; no stablecoin de-peg found |
 | private-credit | WATCH | stable | judged | Nontraded BDCs cap at 5%; defaults rising | Semi-liquid credit funds keep 5% redemption caps and defaults are rising; no forced sales or bank losses found |
 | us-inflation | WATCH | worsening | measured | CPI 4.1% y/y (Oct), rising 3 months | US CPI 4.1% a year in October, up for a third month and inside the 3.0–4.5% Watch band |
 | central-banks | WATCH | worsening | judged | Dec Fed rise fully priced; yen near 160 | Markets fully price a December Fed rise after hot October CPI; yen near 160 per dollar as Tokyo warns of intervention |
 | sovereign-debt | WATCH | worsening | judged | OAT–Bund 151.8bp (13 Nov), around Alert line | France–Bund 10-year spread 151.8bp on 13 Nov, back just above the 150bp line after 142bp on 10 Nov; US 10-year above 5% |
-| oil | WATCH | stable | measured | $95.8, 1m -13% | Brent near $95.8 on 13 Nov, up 3.5% on the week but 13% lower on the month; inside the Watch band |
+| oil | WATCH | stable | measured | $95.5, 1m -13% | Brent near $95.8 on 13 Nov, up 3.5% on the week but 13% lower on the month; inside the Watch band |
 | food-prices | WATCH | improving | published | FAO index 133.9 (Oct), +5.9% y/y | FAO food price index 133.9 in October, below the 135 Alert line but up 5.9% on a year; next release 4 Dec |
 | critical-minerals | WATCH | stable | judged | Rare-earth pause extended to 10 Jan 2027 | China extended its pause on some rare-earth export controls to 10 Jan 2027 on 9 Nov; April 2025 licensing stays in force |
 | fertiliser | WATCH | stable | judged | Egypt urea ~$535/t after 20% gas cut | Egyptian urea near $535 a tonne after 20% gas cuts to plants; Gulf exports still disrupted by Hormuz restrictions |
@@ -69,10 +69,10 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | equity-stress | NORMAL | stable | measured | VIX 19.3, S&P -3.3% | VIX 19.3 and S&P 500 3.3% below its high at the 13 Nov close; both inside the Normal lines |
 | ftse | NORMAL | stable | measured | 10,903, -0.1% from high | FTSE 100 near 10,903 on 13 Nov, 0.1% below its 52-week high; no daily fall above 2.5% in five sessions |
 | credit-spreads | NORMAL | stable | measured | HY OAS 3.20% | US high-yield spreads 3.20% on 12 Nov, below the 5 Nov one-year high of 3.48% and inside the 4% Watch line |
-| dollar | NORMAL | worsening | measured | DXY 103.4, 3m +3.8% | Dollar index 103.4 on 13 Nov, a 52-week high, up 3.8% over three months; inside the Normal lines |
+| dollar | NORMAL | worsening | measured | DXY 103.4, 3m +4.6% | Dollar index 103.4 on 13 Nov, a 52-week high, up 3.8% over three months; inside the Normal lines |
 | banking-stress | NORMAL | stable | measured | STLFSI -0.49, CISS 0.01 | Financial stress gauges low: St Louis Fed index -0.49 and ECB stress indicator 0.0065; no notable bank failure found |
 | funding-stress | NORMAL | stable | measured | SOFR–IORB +0bp, repo $0.0bn | SOFR level with the Fed's reserve rate on 12 Nov; Fed repo use near zero on 13 Nov |
-| yen-carry | NORMAL | stable | measured | ¥159.7/$, 1w +0.9% | Yen near ¥159.7 per dollar on 13 Nov, 0.9% weaker on the week; no intervention reported |
+| yen-carry | NORMAL | stable | measured | ¥159.8/$, 1w +0.9% | Yen near ¥159.7 per dollar on 13 Nov, 0.9% weaker on the week; no intervention reported |
 | us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.27 | Sahm recession indicator 0.00 for October; yield curve +0.27 on 13 Nov; jobless claims near a one-year low |
 | euro-growth | NORMAL | stable | published | Q3 GDP +0.4%; Oct composite PMI 51.7 | Eurostat puts euro-area Q3 GDP growth at 0.4%; October composite PMI 51.7, above 50; November flash PMI due later |
 | china-economy | NORMAL | stable | judged | Q3 GDP +4.5%; Oct activity data due 16 Nov | China's Q3 growth was 4.5% and October prices rose, so no deflation; October activity data are due on 16 Nov |
