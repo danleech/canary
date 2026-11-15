@@ -1,5 +1,5 @@
 # Oil (Brent) — WATCH (stable)
-id oil · Energy & Commodities · horizon acute · checked 2026-11-15T11:42Z · text written 2026-11-15T05:55Z · at this level since 2026-11-06T17:59Z · stale after 2026-11-16T01:42Z
+id oil · Energy & Commodities · horizon acute · checked 2026-11-15T17:48Z · text written 2026-11-15T05:55Z · at this level since 2026-11-06T17:59Z · stale after 2026-11-16T07:48Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/oil
 
 Value: $95.8, 1m -13%

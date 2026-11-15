@@ -1,5 +1,5 @@
 # Gold (fear gauge) — WATCH (improving)
-id gold · Markets · horizon acute · checked 2026-11-15T11:42Z · text written 2026-11-15T05:55Z · at this level since 2026-11-10T17:53Z · stale after 2026-11-16T01:42Z
+id gold · Markets · horizon acute · checked 2026-11-15T17:48Z · text written 2026-11-15T05:55Z · at this level since 2026-11-10T17:53Z · stale after 2026-11-16T07:48Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/gold
 
 Value: $3,886, 3m -12.1%

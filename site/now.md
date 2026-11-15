@@ -1,24 +1,24 @@
 # Canary — world risk status
-as_of 2026-11-15T11:42Z · next run ~17:40 UK · stale after 2026-11-16T01:42Z (36h for daily-tier signals)
+as_of 2026-11-15T17:48Z · next run ~23:40 UK · stale after 2026-11-16T07:48Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
-Basis: 27 measured from open data, 13 follow a published figure, 49 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
+Basis: 27 measured from open data, 14 follow a published figure, 48 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 World State 40/100 (Strained) · 13 Alert · 46 Watch · 30 Normal
-Headline: The US–Iran war keeps Hormuz traffic far below pre-war levels after Iranian mine claims on 13–14 Nov; Russian strikes on Ukraine and DR Congo's Ebola outbreak of over 11,000 cases remain at Alert.
+Headline: Iran says a supertanker sank after hitting a mine near Hormuz on 15 Nov, unconfirmed; Gulf shipping stays restricted. DR Congo's Ebola outbreak passes 11,000 cases, and the France–Bund spread closed at 151.8bp on 13 Nov.
 
 ## Situations (7 cross-domain events; Alerts below are grouped under them)
-- US–Iran war and Gulf energy shock [ALERT, stable]: Iran says three tankers hit mines near Hormuz on 14 Nov and it downed a US drone; traffic about 65% below pre-war; IAEA lacks access. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight; watch: iran-nuclear, sanctions, oil, fertiliser, uk-energy-cap, semiconductors
+- US–Iran war and Gulf energy shock [ALERT, stable]: IRGC says a supertanker sank after a mine strike near Hormuz on 15 Nov (unconfirmed), after drone and mine claims on 14 Nov; US blockade holds. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight; watch: iran-nuclear, sanctions, oil, fertiliser, uk-energy-cap, semiconductors
 - Russia–Ukraine war and NATO's flank [ALERT, stable]: Russian strikes killed 7 and injured 80 in a day to 14 Nov; drones at RAF Lakenheath 13 Nov; talks continue with no ceasefire. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
-- Super El Niño [ALERT, worsening]: ONI +2.46 for Aug–Oct; global temperature +1.85°C on 8 Nov, a record for the date; CO₂ growth eased to 2.34 ppm/yr in the week of 8 Nov. → alert: enso, global-temp; watch: drought, co2, famine
+- Super El Niño [ALERT, worsening]: ONI +2.46 for Aug–Oct; global temperature +1.83°C on 9 Nov, a record for the date; CO₂ growth 2.35 ppm/yr in the week of 8 Nov. → alert: enso, global-temp; watch: drought, co2, famine
 - Ebola outbreak, DR Congo [ALERT, worsening]: DR Congo Ebola reached 11,197 confirmed cases and 5,471 deaths by 11 Nov (ECDC); WHO emergency since 17 May remains in force. → alert: ebola; watch: who-emergencies
 - Sudan war [ALERT, worsening]: FEWS NET says Famine risk has spread to Sharg Aj-Jabal in South Darfur; fighting goes on in Kordofan; WFP cut 900,000 from food aid. → alert: sudan; watch: famine
-- France: debt stress and protests [WATCH, worsening]: France–Bund 10-year spread about 154bp on 9 Nov, moving either side of the 150bp Alert line; no failed auction or ECB buying. → watch: sovereign-debt, civil-unrest
+- France: debt stress and protests [WATCH, worsening]: France–Bund 10-year spread closed at 151.8bp on 13 Nov, moving either side of the 150bp Alert line; no failed auction or ECB buying. → watch: sovereign-debt, civil-unrest
 - Energy shock feeding inflation [WATCH, worsening]: US CPI 4.1% y/y in Oct; a December Fed rise is fully priced; BoE at 4% and sees UK inflation peaking at 4.8% in 2027; UK CPI due 18 Nov. → watch: us-inflation, central-banks, uk-rates, bond-volatility, gilts; normal: em-stress
 
 ## Other Alerts
-- Cholera & mosquito-borne [cholera-dengue] stable, AI-judged: WHO counts over 3,000 cholera deaths in 2026, nearly nine in ten in Africa; Sudan and Yemen among worst affected
+- Cholera & mosquito-borne [cholera-dengue] stable, AI-judged: WHO counts over 3,000 cholera deaths in 2026, mostly in Africa; Sudan and Yemen among worst affected
 - Major cyber incidents [cyber] stable, AI-judged: France blamed an IRGC-linked unit on 9 Nov for October hacks of fridges at about 700 stores that caused fires
-- UK terrorism threat level [uk-threat-level] stable: UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 14 Nov
+- UK terrorism threat level [uk-threat-level] stable: UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 15 Nov
 
 ## Changed in last 24h
 - Crypto stress [crypto]: NORMAL→WATCH — Bitcoin near $63,400 on 14 Nov, 27% below its 52-week high and 14% lower on the week; no stablecoin de-peg found (2026-11-14T23:42Z)
