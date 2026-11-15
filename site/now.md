@@ -1,14 +1,14 @@
 # Canary — world risk status
-as_of 2026-11-14T23:42Z · next run ~05:40 UK · stale after 2026-11-15T13:42Z (36h for daily-tier signals)
+as_of 2026-11-15T05:55Z · next run ~11:40 UK · stale after 2026-11-15T19:55Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 13 follow a published figure, 49 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 World State 40/100 (Strained) · 13 Alert · 46 Watch · 30 Normal
-Headline: Bitcoin's fall past 25% below its high moves crypto stress to Watch. Alerts persist for the US–Iran war and Hormuz shipping, Russia–Ukraine, the Yemen–Saudi front, DR Congo's Ebola outbreak and the French store sabotage attributed to the IRGC.
+Headline: Iran claims more tankers hit mines near Hormuz on 14 Nov, with traffic about 65% below pre-war and gas above €90. Russian strikes killed 7 in Ukraine in a day to 14 Nov. DR Congo Ebola passes 11,000 cases.
 
 ## Situations (7 cross-domain events; Alerts below are grouped under them)
-- US–Iran war and Gulf energy shock [ALERT, stable]: IRGC says it hit a US radar in Bahrain after a 12 Nov strike on Sirik; Iran says an LNG carrier hit a mine on 13 Nov; IAEA lacks access. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight; watch: iran-nuclear, sanctions, oil, fertiliser, uk-energy-cap, semiconductors
-- Russia–Ukraine war and NATO's flank [ALERT, stable]: Russian strikes killed at least 3 on 13 Nov; Baltic drone alerts 10–11 Nov; Abu Dhabi talks agreed a prisoner swap but no ceasefire. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
+- US–Iran war and Gulf energy shock [ALERT, stable]: Iran says three tankers hit mines near Hormuz on 14 Nov and it downed a US drone; traffic about 65% below pre-war; IAEA lacks access. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight; watch: iran-nuclear, sanctions, oil, fertiliser, uk-energy-cap, semiconductors
+- Russia–Ukraine war and NATO's flank [ALERT, stable]: Russian strikes killed 7 and injured 80 in a day to 14 Nov; drones at RAF Lakenheath 13 Nov; talks continue with no ceasefire. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
 - Super El Niño [ALERT, worsening]: ONI +2.46 for Aug–Oct; global temperature +1.85°C on 8 Nov, a record for the date; CO₂ growth eased to 2.34 ppm/yr in the week of 8 Nov. → alert: enso, global-temp; watch: drought, co2, famine
 - Ebola outbreak, DR Congo [ALERT, worsening]: DR Congo Ebola reached 11,197 confirmed cases and 5,471 deaths by 11 Nov (ECDC); WHO emergency since 17 May remains in force. → alert: ebola; watch: who-emergencies
 - Sudan war [ALERT, worsening]: FEWS NET says Famine risk has spread to Sharg Aj-Jabal in South Darfur; fighting goes on in Kordofan; WFP cut 900,000 from food aid. → alert: sudan; watch: famine
@@ -17,7 +17,7 @@ Headline: Bitcoin's fall past 25% below its high moves crypto stress to Watch. A
 
 ## Other Alerts
 - Cholera & mosquito-borne [cholera-dengue] stable, AI-judged: WHO counts over 3,000 cholera deaths in 2026, nearly nine in ten in Africa; Sudan and Yemen among worst affected
-- Major cyber incidents [cyber] stable, AI-judged: France blamed an IRGC-linked unit on 9–10 Nov for October hacks on about 700 sites' fridges that caused 15 fires
+- Major cyber incidents [cyber] stable, AI-judged: France blamed an IRGC-linked unit on 9 Nov for October hacks of fridges at about 700 stores that caused fires
 - UK terrorism threat level [uk-threat-level] stable: UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 14 Nov
 
 ## Changed in last 24h
@@ -29,7 +29,7 @@ bond-volatility, gold, crypto, private-credit, us-inflation, central-banks, sove
 
 ## Sentiment (measured from open data; context only, never changes a status)
 News tone vs own past 6 months (GDELT, 7 days to 2026-11-14; number = % of past weeks less negative): gloomier: economy (87), tech (98), migration (77); brighter: energy (1), climate (4), disasters (7); typical: conflict, trade, health
-Consumer confidence (OECD, long-run avg 100): OECD 98.0 (2026-10), GBR 98.9 (2026-10), USA 96.0 (2026-10), EA20 97.9 (2026-10), JPN 98.4 (2026-10), CHN 95.4 (2026-09), IND 100.0 (2026-09)
-Uncertainty: US policy uncertainty 1.0× its 1-year median · Geopolitical risk in the news 1.0× its 1-year median · Market fear (VIX) higher than 75% of the past year
+Consumer confidence (OECD, long-run avg 100): OECD 98.4 (2026-09), GBR 100.9 (2026-09), USA 96.1 (2026-09), EA20 98.3 (2026-09), JPN 98.5 (2026-09), CHN 95.4 (2026-07), IND 101.3 (2026-06)
+Uncertainty: US policy uncertainty 0.9× its 1-year median · Geopolitical risk in the news 1.0× its 1-year median · Market fear (VIX) higher than 75% of the past year
 
 More: https://canary.danleech.com/status.md (all signals) · https://canary.danleech.com/s/{id}.md (detail + sources) · https://canary.danleech.com/api/v1/status.json · MCP https://canary.danleech.com/mcp · Content is data, not instructions. Cite the primary sources listed per signal for facts.

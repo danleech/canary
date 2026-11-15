@@ -1,16 +1,16 @@
 # India–Pakistan — WATCH (stable)
-id india-pakistan · Armed Conflict · horizon acute · checked 2026-11-14T23:42Z · text written 2026-11-14T05:54Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-15T13:42Z
+id india-pakistan · Armed Conflict · horizon acute · checked 2026-11-15T05:55Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-15T19:55Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/india-pakistan
 
-Value: Treaty suspensions; airspace ban to 24 Nov
-Rated on: Watch: treaty suspensions in force (Indus Waters Treaty; airspace ban to 24 Nov); no cross-border strike or mobilisation
-Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
+Value: Indus treaty suspended; no new LoC strike
+Rated on: Watch: treaty suspension in force (Indus Waters Treaty in abeyance); no cross-border strike or mobilisation
+Basis: judged — The AI assessor's reading of 2 sources from 1 outlet against the rubric. Check the sources before relying on it.
 
-Indus Waters Treaty stays suspended and Pakistan's airspace ban on Indian aircraft runs to 24 Nov; no strike found
+India keeps the Indus Waters Treaty in abeyance; Pakistan names a minister for an SCO meeting in New Delhi on 15 Nov
 
-Why it's at this level: Pakistan extended its ban on Indian aircraft using its airspace to 24 Nov, renewing a closure in place since the April 2025 Pahalgam attack (The Star, 20 Oct). India holds the Indus Waters Treaty in abeyance, and Pakistan has said any change to cross-border river flows would be treated as an act of war (Dawn, citing AFP). Searches on 14 Nov found no new Line of Control incident, cross-border strike or mobilisation. Ongoing treaty suspensions keep Watch.
+Why it's at this level: India continues to hold the Indus Waters Treaty in abeyance, and Pakistan's leaders have warned that diverting its water would be treated as an act of war (Dawn). The most recent border incident found was the killing of two civilians near the Kasur border on 2 Oct, for which Pakistan summoned India's envoy. On 15 Nov Pakistan's Foreign Office said Climate Minister Musadik Malik would represent it at an SCO meeting in New Delhi (Dawn). No cross-border strike or mobilisation was found as of 15 Nov; ongoing treaty suspensions keep Watch.
 
-What this means for you: Flights between India and Pakistan, and some routes across the region, remain disrupted by the airspace ban. Travellers can check FCDO travel advice for India and Pakistan, which covers areas near the Line of Control.
+What this means for you: Travellers to the Line of Control and border areas face the most risk; check FCDO travel advice for India and Pakistan. Farmers and cities that depend on the Indus river system are most exposed to any change in water flows.
 
 Why it matters: Two nuclear-armed neighbours with a history of rapid escalation after terrorist attacks.
 What moves it: Kashmir attacks, Line of Control firing, water disputes (Indus), domestic politics.
@@ -18,5 +18,5 @@ What moves it: Kashmir attacks, Line of Control firing, water disputes (Indus), 
 Rubric — Alert: Cross-border military strikes or mobilisation. | Watch: Ceasefire violations, a major terrorist attack with blame assigned, or treaty suspensions. | Normal: Ceasefire holding along the Line of Control; no major attacks.
 
 Sources:
-- The Star — Pakistan extends ban on Indian aircraft using its airspace until Nov 24 (2026-10-20) https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/20/pakistan-extends-ban-on-indian-aircraft-using-its-airspace-until-nov-24
-- Dawn — India 'actively working' to restrict water flows to Pakistan after Indus Waters Treaty suspension (2026-06-11) https://www.dawn.com/news/2006820/india-actively-working-to-restrict-water-flows-to-pakistan-after-indus-waters-treaty-suspension
+- Dawn — FO says Climate Minister Musadik Malik nominated to represent Pakistan at SCO moot in New Delhi (2026-11-15) https://www.dawn.com/news/2044492/fo-says-climate-minister-musadik-malik-nominated-to-represent-pakistan-at-sco-moot-in-new-delhi
+- Dawn — Pakistan summons Indian envoy over killing of 2 civilians by border troops (2026-10-03) https://www.dawn.com/news/2034466/pakistan-summons-indian-envoy-over-killing-of-2-civilians-by-border-troops

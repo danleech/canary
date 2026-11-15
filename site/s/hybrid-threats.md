@@ -1,16 +1,16 @@
 # Europe hybrid attacks — WATCH (stable)
-id hybrid-threats · Geopolitics · horizon acute · checked 2026-11-14T23:42Z · text written 2026-11-14T05:54Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-15T13:42Z
+id hybrid-threats · Geopolitics · horizon acute · checked 2026-11-15T05:55Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-15T19:55Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/hybrid-threats
 
-Value: France blames IRGC for store sabotage
-Rated on: Watch: sabotage of ~700 French stores attributed by France to an Iranian state unit (9 Nov); no casualties or repeated multi-country shutdowns
+Value: France blames IRGC; US soldier held in UK
+Rated on: Watch: sabotage attributed to a state (France names IRGC unit, 9 Nov); no casualties or multi-country shutdowns
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-France blamed an IRGC cyber unit on 9 Nov for sabotaging fridges at ~700 stores; Baltic drone alerts on 10–11 Nov
+France blamed an IRGC unit on 9 Nov for sabotage at ~700 stores; UK held a US soldier over Russia spying on 10 Nov
 
-Why it's at this level: On 9 Nov France attributed the October sabotage of refrigeration systems at about 700 grocery stores, which caused food losses and at least 15 fires, to Shahid Kaveh, a cyber unit of Iran's Revolutionary Guards; Paris summoned Iran's ambassador and is seeking EU sanctions (The Record). Drones entering from Belarus triggered shelter alerts across the Baltic states on 10–11 Nov, and Finland briefly restricted air and sea traffic in the eastern Gulf of Finland (Reuters via Al-Monitor). No casualties or repeated multi-country shutdowns were found as of 14 Nov, so the Alert line is not crossed.
+Why it's at this level: On 9 Nov France attributed the October cyber-sabotage of refrigeration systems at about 700 retail stores to the Shahid Kaveh unit linked to Iran's Revolutionary Guards; hoax bomb threats also diverted flights and reached over 6,000 Italian schools in mid-November (LRT). UK counter-terrorism police arrested a US Army soldier near Gloucester on 10 Nov on suspicion of assisting a foreign intelligence service, in a Russia-related case (PBS, citing AP). No sabotage causing casualties or repeated multi-country shutdowns was found as of 15 Nov, so Watch holds.
 
-What this means for you: Businesses running connected building or refrigeration systems are exposed to this kind of attack; the NCSC publishes guidance on securing operational technology. Travellers near Europe's eastern borders may meet short airspace closures.
+What this means for you: Shoppers, travellers and operators of critical services in Europe can face short disruption from cyber-sabotage, hoax threats or drone sightings. Report suspicious activity to the police; UK businesses can follow NCSC and NPSA guidance.
 
 Why it matters: Sabotage, arson and drone incursions over airports and bases are how state confrontation reaches daily life in the UK and Europe.
 What moves it: Russia–NATO tensions, drone and cyber capabilities, proxy recruitment, elections.
@@ -18,5 +18,5 @@ What moves it: Russia–NATO tensions, drone and cyber capabilities, proxy recru
 Rubric — Alert: Repeated airport or infrastructure shutdowns across several countries, or sabotage causing casualties or a major outage. | Watch: Drone incursions close an airport or military base, or a sabotage incident is attributed to a state. | Normal: No significant attributed sabotage or airspace incursions in Europe this week.
 
 Sources:
-- The Record — France blames Iran for fridge cyberattacks (2026-11-09) https://therecord.media/france-blames-iran-for-fridge-cyberattacks
-- Al-Monitor (Reuters) — Baltic nations, Finland issue overnight drone warnings as Russia, Ukraine exchange strikes (2026-11-11) https://www.al-monitor.com/originals/2026/11/baltic-nations-finland-issue-overnight-drone-warnings-russia-ukraine-exchange
+- LRT — Hybrid warfare in Europe: sabotage, cyberattacks, agents at the service of rival powers (2026-11-14) https://www.lrt.lt/en/news-in-english/19/3113117/hybrid-warfare-in-europe-sabotage-cyberattacks-agents-at-the-service-of-rival-powers
+- PBS News — U.S. soldier arrested in Britain accused of espionage linked to Russia (2026-11-10) https://www.pbs.org/newshour/nation/u-s-soldier-arrested-in-britain-accused-of-espionage-linked-to-russia
