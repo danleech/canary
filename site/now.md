@@ -1,10 +1,10 @@
 # Canary — world risk status
-as_of 2026-11-15T05:55Z · next run ~11:40 UK · stale after 2026-11-15T19:55Z (36h for daily-tier signals)
+as_of 2026-11-15T11:42Z · next run ~17:40 UK · stale after 2026-11-16T01:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 13 follow a published figure, 49 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 World State 40/100 (Strained) · 13 Alert · 46 Watch · 30 Normal
-Headline: Iran claims more tankers hit mines near Hormuz on 14 Nov, with traffic about 65% below pre-war and gas above €90. Russian strikes killed 7 in Ukraine in a day to 14 Nov. DR Congo Ebola passes 11,000 cases.
+Headline: The US–Iran war keeps Hormuz traffic far below pre-war levels after Iranian mine claims on 13–14 Nov; Russian strikes on Ukraine and DR Congo's Ebola outbreak of over 11,000 cases remain at Alert.
 
 ## Situations (7 cross-domain events; Alerts below are grouped under them)
 - US–Iran war and Gulf energy shock [ALERT, stable]: Iran says three tankers hit mines near Hormuz on 14 Nov and it downed a US drone; traffic about 65% below pre-war; IAEA lacks access. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight; watch: iran-nuclear, sanctions, oil, fertiliser, uk-energy-cap, semiconductors

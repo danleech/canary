@@ -1,5 +1,5 @@
 # Canary — all signals
-as_of 2026-11-15T05:55Z · next run ~11:40 UK · stale after 2026-11-15T19:55Z (36h for daily-tier signals)
+as_of 2026-11-15T11:42Z · next run ~17:40 UK · stale after 2026-11-16T01:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 13 follow a published figure, 49 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -22,7 +22,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | uk-threat-level | ALERT | stable | published | Threat level: Severe | UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 14 Nov |
 | bond-volatility | WATCH | stable | measured | MOVE 99, 10y 5.15% | MOVE index 99 and US 10-year yield 5.15% on 13 Nov; MOVE has not cleared the exit margin, so Watch holds |
 | gold | WATCH | improving | measured | $3,886, 3m -12.1% | Gold near $3,886 on 13 Nov, down 12.1% over three months, beyond the 8% fall that marks Watch |
-| crypto | WATCH | worsening | measured | BTC $64,865, -25% from high | Bitcoin near $64,900 on 15 Nov, 25% below its 52-week high and 12% lower on the week; no stablecoin de-peg found |
+| crypto | WATCH | worsening | measured | BTC $65,477, -24% from high | Bitcoin near $64,900 on 15 Nov, 25% below its 52-week high and 12% lower on the week; no stablecoin de-peg found |
 | private-credit | WATCH | stable | judged | BDCs at steep NAV discounts; no forced sales | Listed BDCs trade well below NAV and semi-liquid funds cap redemptions; no forced sales or bank losses found |
 | us-inflation | WATCH | worsening | measured | CPI 4.1% y/y (Oct), rising 3 months | US CPI about 4.1% a year in October, rising three months; monthly prices up 0.4%, above forecasts |
 | central-banks | WATCH | worsening | judged | Fed Dec rise priced ~89%; BoE signals more | Markets fully price a December Fed rise after hot October CPI; Bank of England says a further rise is likely |
@@ -92,7 +92,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | h5n1 | NORMAL | stable | judged | Cattle-linked US cases; no human spread | Recent US H5N1 cases in Yakima County were linked to infected cattle; ECDC finds no sustained human spread |
 | novel-outbreaks | NORMAL | stable | judged | No unexplained clusters | WHO reported one fatal Shamonda virus case in France on 2 Nov; no unexplained cluster under investigation |
 | displacement | NORMAL | stable | judged | South Kivu 323,000 in 4 days; below 500k | OCHA counts over 323,000 displaced in South Kivu 6–9 Nov, the largest new event this month but below the 500,000 line |
-| uk-weather | NORMAL | stable | measured | No warnings | No Met Office weather warnings in force on 15 Nov |
+| uk-weather | NORMAL | stable | measured | 7 warning(s), worst yellow | No Met Office weather warnings in force on 15 Nov |
 | uk-disruption | NORMAL | stable | judged | Consultant strike paused; Tube strikes 26 Nov | BMA paused the 25–26 Nov consultant strike on 11 Nov for talks; RMT London Tube strikes start 26 Nov |
 | uk-supply-margins | NORMAL | stable | published | No notice in force; winter margin 9.5% | NESO forecasts a 5.9 GW, 9.5% winter buffer; no Electricity Margin or Gas Margins Notice in force as of 14 Nov |
 | uk-floods | NORMAL | stable | measured | No flood warnings | No flood warnings in force in England on 15 Nov; one lower-level flood alert |
