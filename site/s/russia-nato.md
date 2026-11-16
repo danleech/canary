@@ -1,5 +1,5 @@
 # Russia–NATO — WATCH (worsening)
-id russia-nato · Geopolitics · horizon acute · checked 2026-11-16T11:42Z · text written 2026-11-16T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-17T01:42Z
+id russia-nato · Geopolitics · horizon acute · checked 2026-11-16T17:52Z · text written 2026-11-16T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-17T07:52Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/russia-nato
 
 Value: Estonia to shut Russia border from 1 Dec

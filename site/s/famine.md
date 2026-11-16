@@ -1,18 +1,18 @@
 # Famine — WATCH (stable)
-id famine · Humanitarian · horizon acute · checked 2026-11-15T17:48Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-17T05:48Z
+id famine · Humanitarian · horizon acute · checked 2026-11-16T17:52Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-18T05:52Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/famine
 
 Value: Risk of Famine in Sudan; none confirmed
-Rated on: Watch: FEWS NET 'risk of Famine' in Sudan (Sep 2026–Jan 2027); no IPC Phase 5 Famine confirmed
-Basis: published — Follows IPC classifications and FEWS NET, read from the cited source by the AI assessor and checked against the rubric.
+Rated on: IPC risk-of-famine alerts for Darfur and Kordofan meet Watch; no confirmed Phase 5 classification for Alert
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: Super El Niño [super-el-nino]
 Situation: Sudan war [sudan-war]
 
-FEWS NET assesses risk of Famine in parts of Darfur and South Kordofan; no area is classified as Famine as of 15 Nov
+IPC warns of rising famine risk in Darfur and Kordofan; no area newly classified as Famine as of 16 Nov
 
-Why it's at this level: FEWS NET's Sudan update for September 2026 to January 2027 says the risk of Famine has spread to Sharg Aj-Jabal in South Darfur and persists in parts of North Darfur and around Kadugli and Dilling, but states that its findings do not establish a Famine classification. It reports that 13 of 20 nutrition surveys from June to September found Critical malnutrition. Searches on 15 Nov found no new IPC Famine classification. Risk-of-Famine alerts set Watch.
+Why it's at this level: The IPC alert of 13 Oct found child acute malnutrition above the famine threshold in two South Darfur camps and emergency-level child mortality in surveyed camps, with more than 5 million people facing emergency hunger as war and El Niño drought compound (IRC, citing IPC). The alert raises famine risk but is not a Famine classification. Searches on 16 Nov found no new IPC Famine classification, so risk alerts keep Watch.
 
-What this means for you: Famine risk in Sudan mainly affects displaced people in Darfur and Kordofan. FCDO advises against all travel to Sudan.
+What this means for you: This mainly affects people in Sudan and neighbouring countries receiving refugees. Readers who want to help can find vetted appeals through the UK Disasters Emergency Committee or UN agencies.
 
 Why it matters: Famine is the most extreme humanitarian failure, almost always man-made by conflict.
 What moves it: War, sieges, aid access, harvest failure, funding cuts.
@@ -20,4 +20,5 @@ What moves it: War, sieges, aid access, harvest failure, funding cuts.
 Rubric — Alert: Famine (IPC Phase 5) confirmed in at least one area. | Watch: IPC Phase 5 projected or 'risk of famine' alerts. | Normal: No IPC Phase 5 (Famine) classifications or projections.
 
 Sources:
-- FEWS NET — Sudan Key Message Update, September 2026 to January 2027 (2026-11-15) https://fews.net/east-africa/sudan
+- IRC — War and El Niño-driven drought push Sudan further towards famine (citing IPC alert) (2026-10-13) https://www.rescue.org/press-release/war-and-el-nino-driven-drought-deplete-food-stocks-pushing-sudan-further-towards
+- AllAfrica — IPC Sudan Food Insecurity and Malnutrition Alert (2026-10-13) https://allafrica.com/stories/202610130125.html

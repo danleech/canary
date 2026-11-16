@@ -1,5 +1,106 @@
 [
  {
+  "t": "2026-11-16T17:52:55Z",
+  "applied": 89,
+  "changed": [],
+  "warnings": [],
+  "note": "US CPI metric likely overstates y/y: FRED lacks Oct 2025 CPI (shutdown) and fetch_metrics fred() skips the gap, so y/y compares 13 months after it. us-inflation text quotes BLS Sep 3.7%; status amber either way. Needs a fetcher fix. MI5 page fetched showed stale Substantial; threat level cited from gov.uk.",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 26,
+   "published": 10,
+   "judged": 53
+  },
+  "held": 38,
+  "sources": {
+   "citations": 94,
+   "news_citations": 73,
+   "outlets": 67,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     4
+    ],
+    [
+     "thestar.com.my",
+     4
+    ],
+    [
+     "tradingeconomics.com",
+     4
+    ],
+    [
+     "spglobal.com",
+     3
+    ],
+    [
+     "africanews.com",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 58,
+   "predicted_active": 4,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
+  "t": "2026-11-16T17:52:48Z",
+  "applied": 89,
+  "changed": [
+   "equity-stress"
+  ],
+  "warnings": [],
+  "note": "US CPI metric likely overstates y/y: FRED lacks Oct 2025 CPI (shutdown) and fetch_metrics fred() skips the gap, so y/y compares 13 months after it. us-inflation text quotes BLS Sep 3.7%; status amber either way. Needs a fetcher fix. MI5 page fetched showed stale Substantial; threat level cited from gov.uk.",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 26,
+   "published": 10,
+   "judged": 53
+  },
+  "held": 38,
+  "sources": {
+   "citations": 94,
+   "news_citations": 73,
+   "outlets": 67,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     4
+    ],
+    [
+     "thestar.com.my",
+     4
+    ],
+    [
+     "tradingeconomics.com",
+     4
+    ],
+    [
+     "spglobal.com",
+     3
+    ],
+    [
+     "africanews.com",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 58,
+   "predicted_active": 4,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": [
+    "central-banks",
+    "china-economy"
+   ]
+  }
+ },
+ {
   "t": "2026-11-16T11:42:47Z",
   "applied": 41,
   "changed": [

@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-16T17:52:48Z",
+  "id": "equity-stress",
+  "name": "US equity stress",
+  "from": "green",
+  "to": "amber",
+  "reason": "VIX 21.6 on 16 Nov, above the 20 Watch line, as tech selling pushed the S&P 500 4.7% below its high"
+ },
+ {
   "t": "2026-11-16T11:42:47Z",
   "id": "outages",
   "name": "Internet & cloud outages",
