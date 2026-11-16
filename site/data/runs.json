@@ -1,5 +1,45 @@
 [
  {
+  "t": "2026-11-16T11:42:47Z",
+  "applied": 41,
+  "changed": [
+   "outages"
+  ],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 20,
+   "published": 2,
+   "judged": 19
+  },
+  "held": 39,
+  "sources": {
+   "citations": 3,
+   "news_citations": 2,
+   "outlets": 3,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     1
+    ],
+    [
+     "insurancejournal.com",
+     1
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 19,
+   "predicted_active": 1,
+   "quiet_but_status_changed": [
+    "outages"
+   ],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
   "t": "2026-11-16T05:51:59Z",
   "applied": 41,
   "changed": [

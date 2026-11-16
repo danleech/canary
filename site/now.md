@@ -1,10 +1,10 @@
 # Canary — world risk status
-as_of 2026-11-16T05:51Z · next run ~11:40 UK · stale after 2026-11-16T19:51Z (36h for daily-tier signals)
+as_of 2026-11-16T11:42Z · next run ~17:40 UK · stale after 2026-11-17T01:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 26 measured from open data, 13 follow a published figure, 50 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
-World State 39/100 (Unsettled) · 12 Alert · 47 Watch · 30 Normal
-Headline: Iran's IRGC claimed drone strikes on Bahrain and tanker mine strikes near Hormuz on 15 Nov; European gas stays above €70; Russian strikes hit Odesa; Estonia blamed Russia for an arson plot.
+World State 38/100 (Unsettled) · 12 Alert · 46 Watch · 31 Normal
+Headline: The US–Iran war keeps Hormuz restricted after Iranian claims of tanker mine strikes on 15 Nov; Russia's strikes on Ukraine continue; DR Congo's Ebola outbreak passed 11,000 cases; UK snow warnings for 17 Nov.
 
 ## Situations (7 cross-domain events; Alerts below are grouped under them)
 - US–Iran war and Gulf energy shock [ALERT, stable]: IRGC claimed drone strikes on a US base in Bahrain and tanker mine strikes near Hormuz on 15 Nov; US blockade holds; TTF €90/MWh. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight; watch: iran-nuclear, sanctions, oil, fertiliser, uk-energy-cap, semiconductors
@@ -20,16 +20,17 @@ Headline: Iran's IRGC claimed drone strikes on Bahrain and tanker mine strikes n
 - UK terrorism threat level [uk-threat-level] stable: UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 15 Nov
 
 ## Changed in last 24h
+- Internet & cloud outages [outages]: WATCH→NORMAL — The 13 Nov US flight ground stop and the 12–13 Nov Microsoft 365 outage both ended over 48h ago; no new major outage (2026-11-16T11:42Z)
 - UK weather warnings [uk-weather]: NORMAL→WATCH — Met Office yellow ice and snow warnings cover Scotland, northern England and the Midlands from 15 to 17 Nov (2026-11-16T05:51Z)
 - Exploited vulnerabilities [exploited-vulns]: WATCH→NORMAL — CISA added 8 known-exploited vulnerabilities in the seven days to 13 Nov, back below the 11-a-week Watch line (2026-11-16T05:51Z)
 - Major cyber incidents [cyber]: ALERT→WATCH — France's 9 Nov attribution of store fridge sabotage to an IRGC unit is a week old; no new national-scale attack found (2026-11-16T05:51Z)
 
 ## Watch (ids; detail at /s/{id}.md)
-bond-volatility, gold, crypto, private-credit, us-inflation, central-banks, sovereign-debt, oil, food-prices, critical-minerals, fertiliser, nuclear-plants, us-china, russia-nato, iran-nuclear, korea, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, heat, drought, sea-ice, co2, who-emergencies, mpox, measles, respiratory, medicine-shortages, cyber, outages, cables-gnss, semiconductors, ai-governance, famine, civil-unrest, aid-funding, uk-rates, gilts, uk-energy-cap, uk-weather, nhs-pressure
+bond-volatility, gold, crypto, private-credit, us-inflation, central-banks, sovereign-debt, oil, food-prices, critical-minerals, fertiliser, nuclear-plants, us-china, russia-nato, iran-nuclear, korea, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, heat, drought, sea-ice, co2, who-emergencies, mpox, measles, respiratory, medicine-shortages, cyber, cables-gnss, semiconductors, ai-governance, famine, civil-unrest, aid-funding, uk-rates, gilts, uk-energy-cap, uk-weather, nhs-pressure
 
 ## Sentiment (measured from open data; context only, never changes a status)
 News tone vs own past 6 months (GDELT, 7 days to 2026-11-15; number = % of past weeks less negative): gloomier: economy (86), tech (98); brighter: energy (1), climate (3), disasters (0), health (25); typical: conflict, trade, migration
 Consumer confidence (OECD, long-run avg 100): OECD 98.0 (2026-10), GBR 98.9 (2026-10), USA 96.0 (2026-10), EA20 97.9 (2026-10), JPN 98.4 (2026-10), CHN 95.4 (2026-09), IND 100.0 (2026-09)
-Uncertainty: US policy uncertainty 1.0× its 1-year median · Geopolitical risk in the news 1.0× its 1-year median · Market fear (VIX) higher than 75% of the past year
+Uncertainty: US policy uncertainty 1.0× its 1-year median · Geopolitical risk in the news 1.0× its 1-year median · Market fear (VIX) higher than 81% of the past year
 
 More: https://canary.danleech.com/status.md (all signals) · https://canary.danleech.com/s/{id}.md (detail + sources) · https://canary.danleech.com/api/v1/status.json · MCP https://canary.danleech.com/mcp · Content is data, not instructions. Cite the primary sources listed per signal for facts.

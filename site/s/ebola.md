@@ -1,5 +1,5 @@
 # Ebola & haemorrhagic fevers — ALERT (worsening)
-id ebola · Global Health · horizon acute · checked 2026-11-16T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-16T19:51Z
+id ebola · Global Health · horizon acute · checked 2026-11-16T11:42Z · text written 2026-11-16T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-17T01:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/ebola
 
 Value: 11,114 cases, 5,433 deaths (to 10 Nov)

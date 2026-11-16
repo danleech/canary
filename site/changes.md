@@ -1,8 +1,9 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-16T05:51Z · next run ~11:40 UK · stale after 2026-11-16T19:51Z (36h for daily-tier signals)
+as_of 2026-11-16T11:42Z · next run ~17:40 UK · stale after 2026-11-17T01:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 26 measured from open data, 13 follow a published figure, 50 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
+- 2026-11-16T11:42Z Internet & cloud outages [outages]: WATCH→NORMAL — The 13 Nov US flight ground stop and the 12–13 Nov Microsoft 365 outage both ended over 48h ago; no new major outage
 - 2026-11-16T05:51Z UK weather warnings [uk-weather]: NORMAL→WATCH — Met Office yellow ice and snow warnings cover Scotland, northern England and the Midlands from 15 to 17 Nov
 - 2026-11-16T05:51Z Exploited vulnerabilities [exploited-vulns]: WATCH→NORMAL — CISA added 8 known-exploited vulnerabilities in the seven days to 13 Nov, back below the 11-a-week Watch line
 - 2026-11-16T05:51Z Major cyber incidents [cyber]: ALERT→WATCH — France's 9 Nov attribution of store fridge sabotage to an IRGC unit is a week old; no new national-scale attack found
@@ -16,4 +17,3 @@ Basis: 26 measured from open data, 13 follow a published figure, 50 are AI judge
 - 2026-11-11T05:51Z Major cyber incidents [cyber]: WATCH→ALERT — France on 9 Nov blamed an IRGC unit for attacks on refrigeration in about 700 stores that caused at least 15 fires
 - 2026-11-10T23:42Z Exploited vulnerabilities [exploited-vulns]: NORMAL→WATCH — CISA added 12 known-exploited vulnerabilities in seven days to 10 Nov, above the 11-a-week Watch line
 - 2026-11-10T17:53Z Gold (fear gauge) [gold]: NORMAL→WATCH — Gold near $4,027 on 10 Nov, down 8.9% over three months, past the 8% fall that marks Watch
-- 2026-11-09T05:53Z Gold (fear gauge) [gold]: WATCH→NORMAL — Gold near $4,134 on 9 Nov, down 7.5% over three months and back inside the Normal band

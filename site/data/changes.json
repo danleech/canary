@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-16T11:42:47Z",
+  "id": "outages",
+  "name": "Internet & cloud outages",
+  "from": "amber",
+  "to": "green",
+  "reason": "The 13 Nov US flight ground stop and the 12–13 Nov Microsoft 365 outage both ended over 48h ago; no new major outage"
+ },
+ {
   "t": "2026-11-16T05:51:59Z",
   "id": "uk-weather",
   "name": "UK weather warnings",
