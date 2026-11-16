@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-16T23:43:07Z",
+  "id": "other-cyclones",
+  "name": "Pacific & Indian cyclones",
+  "from": "green",
+  "to": "amber",
+  "reason": "GDACS orange alert for Cyclone Akvan in the Bay of Bengal; IMD expects landfall in Andhra Pradesh by noon on 20 Nov"
+ },
+ {
   "t": "2026-11-16T17:52:48Z",
   "id": "equity-stress",
   "name": "US equity stress",

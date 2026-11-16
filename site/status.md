@@ -1,5 +1,5 @@
 # Canary — all signals
-as_of 2026-11-16T17:52Z · next run ~23:40 UK · stale after 2026-11-17T07:52Z (36h for daily-tier signals)
+as_of 2026-11-16T23:43Z · next run ~05:40 UK · stale after 2026-11-17T13:43Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 26 measured from open data, 10 follow a published figure, 53 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -8,26 +8,26 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | id | status | trend | basis | value | summary |
 |---|---|---|---|---|---|
 | eu-gas | ALERT | worsening | measured | €84/MWh | European gas near €90/MWh on 13 Nov, up 8.5% on the week and above the €70 Alert line; Hormuz LNG route restricted |
-| chokepoints | ALERT | worsening | judged | Hormuz restricted; mine claims 13–15 Nov | Iran says two tankers hit mines near Hormuz on 15 Nov and a supertanker sank; claim unconfirmed; strait restricted |
+| chokepoints | ALERT | worsening | judged | Hormuz restricted; 6 tanker hits claimed | IRGC claims six tankers hit mines near Hormuz since 15 Nov; UKMTO reported one tanker hit by a projectile on 16 Nov |
 | freight | ALERT | improving | published | WCI $4,305/FEU (12 Nov) | Drewry container index fell 2% to $4,305 per 40ft on 12 Nov, still above the $4,000 Alert line; next update 19 Nov |
-| russia-ukraine | ALERT | stable | judged | 4 killed, 69 injured in day to 15 Nov | Russian strikes killed 4 and injured 69 in Ukraine in a day to 15 Nov; 41,000 Odesa households lost power |
+| russia-ukraine | ALERT | stable | judged | 6 killed, 45 injured in day to 16 Nov | Russian strikes killed 6 and injured 45 in Ukraine in a day to 16 Nov; 158 drones launched, outages in six regions |
 | middle-east | ALERT | stable | judged | Houthi missiles at Riyadh 15 Nov; Gaza strikes | Saudi-led coalition intercepted Houthi missiles at Riyadh on 15 Nov; Israel killed a Hamas commander in Gaza on 14 Nov |
 | sudan | ALERT | stable | judged | Famine risk spreads to South Darfur | FEWS NET says Famine risk has spread to South Darfur and persists in North Darfur and around Kadugli and Dilling |
-| gulf-iran | ALERT | stable | judged | Drones at Bahrain 15 Nov; US blockade holds | Iran's IRGC claimed drone strikes on a US base in Bahrain on 15 Nov and tanker mine strikes near Hormuz |
+| gulf-iran | ALERT | worsening | judged | US strikes S. Iran 15 Nov; 3rd carrier arrives | US struck Iranian missile launchers on 15 Nov after Iranian drone and missile attacks; third US carrier arrives |
 | global-temp | ALERT (c) | stable | measured | +1.85°C vs pre-industrial (10 Nov) | Global temperature 1.85°C above pre-industrial on 10 Nov, a record for the date |
 | enso | ALERT (s) | worsening | measured | ONI +2.46 (El Niño) | Very strong El Niño: Oceanic Niño Index +2.46°C for Aug–Oct; next value due early Dec |
 | ebola | ALERT | worsening | published | 11,197 cases, 5,471 deaths (to 11 Nov) | DR Congo's Ebola outbreak reached 11,197 confirmed cases and 5,471 deaths by 11 Nov, ECDC says |
 | cholera-dengue | ALERT | stable | judged | Over 3,000 cholera deaths in 2026 (WHO) | WHO counts over 3,000 cholera deaths in 2026, nearly nine in ten in Africa; Sudan and Yemen among worst affected |
 | uk-threat-level | ALERT | stable | judged | Threat level: Severe | UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 16 Nov |
-| equity-stress | WATCH | worsening | measured | VIX 21.6, S&P -4.7% | VIX 21.6 on 16 Nov, above the 20 Watch line, as tech selling pushed the S&P 500 4.7% below its high |
-| bond-volatility | WATCH | stable | measured | MOVE 99, 10y 5.13% | MOVE index 99 and US 10-year yield 5.15% on 13 Nov after soft 10- and 30-year auctions |
-| gold | WATCH | improving | measured | $3,871, 3m -14.8% | Gold near $3,873 on 16 Nov, down 14.8% over three months, beyond the 8% fall that marks Watch |
-| crypto | WATCH | worsening | measured | BTC $64,990, -25% from high | Bitcoin near $64,700 on 16 Nov, 25% below its 52-week high and 13% lower on the week; no stablecoin de-peg found |
+| equity-stress | WATCH | worsening | measured | VIX 22.9, S&P -5.2% | VIX 21.6 on 16 Nov, above the 20 Watch line, as tech selling pushed the S&P 500 4.7% below its high |
+| bond-volatility | WATCH | stable | measured | MOVE 101, 10y 5.12% | MOVE index 99 and US 10-year yield 5.15% on 13 Nov after soft 10- and 30-year auctions |
+| gold | WATCH | improving | measured | $3,859, 3m -15.1% | Gold near $3,873 on 16 Nov, down 14.8% over three months, beyond the 8% fall that marks Watch |
+| crypto | WATCH | worsening | measured | BTC $64,775, -25% from high | Bitcoin near $64,700 on 16 Nov, 25% below its 52-week high and 13% lower on the week; no stablecoin de-peg found |
 | private-credit | WATCH | stable | judged | Nontraded BDC net outflows $4.1bn in Q3 | Nontraded BDCs saw $4.1bn net outflows in Q3 and a listed BDC sells at 90% of NAV; no wave of gates or bank losses |
 | us-inflation | WATCH | worsening | measured | CPI 3.7% y/y (Sep); Oct +0.4% m/m | US consumer prices rose 0.4% in October after 3.7% annual inflation in September, inside the 3.0–4.5% Watch band |
 | central-banks | WATCH | stable | judged | Dec Fed rise 93% priced; yen near 159.4 | Futures price a 93% chance of a December Fed rise; yen near 159.4 per dollar as Tokyo keeps warning of intervention |
 | sovereign-debt | WATCH | worsening | judged | OAT–Bund 151.8bp (13 Nov); US 10y 5.15% | France–Bund spread 151.8bp on 13 Nov, just above 150bp but not sustained; US 10-year yield near 5.15% on 16 Nov |
-| oil | WATCH | stable | measured | $93.2, 1m -15% | Brent near $95.5 on 16 Nov, up 4.4% on the week; Iran claims tanker mine strikes near Hormuz on 15 Nov |
+| oil | WATCH | stable | measured | $92.1, 1m -16% | Brent near $95.5 on 16 Nov, up 4.4% on the week; Iran claims tanker mine strikes near Hormuz on 15 Nov |
 | food-prices | WATCH | improving | published | FAO index 133.9 (Oct), +5.9% y/y | FAO food price index 133.9 in October, below the 135 Alert line but up 5.9% on a year; next release 4 Dec |
 | critical-minerals | WATCH | stable | judged | Rare-earth pause extended to 10 Jan 2027 | China extended its pause on some rare-earth export controls to 10 Jan 2027 on 9 Nov; April 2025 licensing stays in force |
 | fertiliser | WATCH | stable | judged | Egypt urea ~$535/t; Gulf exports down ~70% | Egyptian urea near $535 a tonne after 20% gas cuts to plants; Gulf fertiliser exports down about 70% on Hormuz |
@@ -45,6 +45,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | india-pakistan | WATCH | stable | judged | Indus treaty suspended; no new LoC strike | India keeps the Indus Waters Treaty in abeyance; a Pakistani minister attends an SCO dialogue in New Delhi |
 | nuclear-risk | WATCH | stable | judged | No US–Russia treaty limits since 5 Feb | No US–Russia arms limits since New START lapsed; Trump, Xi and Putin to meet on 19 Nov with nuclear arms on the agenda |
 | other-conflicts | WATCH | stable | judged | Ethiopia: Tigray fighting; Badme clashes claimed | Federal forces reportedly retook Rama in Tigray on 7 Nov; Ethiopia–Eritrea clashes near Badme on 9 Nov unconfirmed |
+| other-cyclones | WATCH | worsening | measured | GDACS orange: Cyclone Akvan (India) | GDACS orange alert for Cyclone Akvan in the Bay of Bengal; IMD expects landfall in Andhra Pradesh by noon on 20 Nov |
 | heat | WATCH | stable | judged | Severe heatwave, north Queensland (16 Nov) | BoM severe heatwave warning for Queensland's Peninsula renewed on 16 Nov; no deadly top-tier event found |
 | drought | WATCH | stable | judged | Sudan harvest hit; no famine declared | El Niño drought cuts Sudan's harvest and raises famine risk; no drought famine declaration or exporter harvest failure |
 | sea-ice | WATCH (c) | stable | measured | Arctic -1.63, Antarctic -1.37M km² | Arctic sea ice 1.63M km² and Antarctic about 1.37M km² below average on 15 Nov; neither at a record low |
@@ -62,17 +63,17 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | civil-unrest | WATCH | stable | judged | France cost-of-living protests (7 Nov) | Fourth weekend of cost-of-living protests in France on 7 Nov, with clashes in Paris; no deadly nationwide unrest |
 | aid-funding | WATCH | stable | judged | WFP ration cuts; Sudan shelter aid at 10% | WFP halved Gaza rations; UN says Sudan shelter aid reaches only 10% of those in need; no full suspension |
 | uk-rates | WATCH | worsening | judged | CPI 3.5% (Sep); Bank Rate 4%; Oct CPI 18 Nov | UK CPI 3.5% in September; Bank Rate 4% after 5 Nov rise; October CPI due 18 Nov at 07:00 |
-| gilts | WATCH | stable | judged | 10y ~5.1–5.3% after 5 Nov rate rise | Gilt yields stay elevated after the Bank of England's 5 Nov rate rise, with bets on a December move; UK CPI due 18 Nov |
+| gilts | WATCH | stable | judged | 10y 5.35% (16 Nov), 1m -9bp | 10-year gilt yield at 5.35% on 16 Nov, near multi-year highs; December BoE rise priced; UK CPI due 18 Nov |
 | uk-energy-cap | WATCH | worsening | published | £1,723 now; Jan forecast £1,999 (+16%) | Ofgem cap £1,723 a year to 31 Dec; Cornwall Insight forecasts about £1,999 from January, about 16% higher |
-| uk-weather | WATCH | stable | judged | 7 yellow warnings; none amber or red | Seven Met Office yellow warnings for snow on 17 Nov across southern Scotland, northern England and the Midlands |
+| uk-weather | WATCH | stable | judged | 7 yellow snow warnings; none amber or red | Seven Met Office yellow snow warnings for 17 Nov across southern Scotland, northern England and the Midlands |
 | nhs-pressure | WATCH | worsening | published | Flu above baseline and rising (wk 45 data) | UKHSA 12 Nov: flu admissions up to 3.65 per 100,000 and above baseline; COVID-19 stable; RSV rising |
 | ftse | NORMAL | stable | measured | 10,882, -0.3% from high | FTSE 100 near 10,903 on 13 Nov, 0.1% below its 52-week high; no daily fall above 2.5% in five sessions |
 | credit-spreads | NORMAL | stable | measured | HY OAS 3.23% | US high-yield spreads 3.20% on 12 Nov, below the 5 Nov one-year high of 3.48% and inside the 4% Watch line |
-| dollar | NORMAL | worsening | measured | DXY 103.5, 3m +4.7% | Dollar index 103.4 on 16 Nov, a 52-week high, up 4.6% over three months; just inside the 5% Watch line |
+| dollar | NORMAL | worsening | measured | DXY 103.6, 3m +4.8% | Dollar index 103.4 on 16 Nov, a 52-week high, up 4.6% over three months; just inside the 5% Watch line |
 | banking-stress | NORMAL | stable | measured | STLFSI -0.49, CISS 0.01 | Financial stress gauges low: St Louis Fed index -0.49 and ECB stress indicator 0.0065; no notable bank failure found |
 | funding-stress | NORMAL | stable | measured | SOFR–IORB +0bp, repo $0.0bn | SOFR level with the Fed's reserve rate on 12 Nov; Fed repo use near zero on 13 Nov |
-| yen-carry | NORMAL | stable | measured | ¥159.6/$, 1w +0.8% | Yen near ¥159.4 per dollar on 16 Nov, 0.7% weaker on the week; no intervention reported |
-| us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.27 | Sahm recession indicator 0.00 for October; yield curve +0.27 on 13 Nov; jobless claims near a one-year low |
+| yen-carry | NORMAL | stable | measured | ¥159.5/$, 1w +0.8% | Yen near ¥159.4 per dollar on 16 Nov, 0.7% weaker on the week; no intervention reported |
+| us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.29 | Sahm recession indicator 0.00 for October; yield curve +0.27 on 13 Nov; jobless claims near a one-year low |
 | euro-growth | NORMAL | stable | published | Q3 GDP +0.4%; Oct composite PMI 51.7 | Eurostat puts euro-area Q3 GDP growth at 0.4%; October composite PMI 51.7, above 50; November flash PMI due later |
 | china-economy | NORMAL | worsening | judged | Oct output +4.8%, retail +0.4%; Q3 GDP +4.5% | China's October factory output rose 4.8% and retail sales 0.4%, both below forecasts; Q3 growth 4.5%, within target |
 | global-pmi | NORMAL | improving | published | Global composite 53.2 (Oct) | J.P.Morgan global composite PMI 53.2 in October, down from 54.3 but above the 51 Watch line; no newer data by 16 Nov |
@@ -80,10 +81,9 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | em-stress | NORMAL | worsening | judged | Rupiah ~18,200/$ near record; lira ~50/$ | Rupiah near its record low at about 18,200 per dollar on 13 Nov despite intervention; no EM default or IMF rescue |
 | political-instability | NORMAL | stable | judged | Indonesia VP resigned; no G20 collapse | Indonesia's vice-president submitted his resignation on 11 Nov amid an impeachment push; no G20 government collapse |
 | atlantic-cyclones | NORMAL | stable | judged | No Atlantic storms active (16 Nov) | No Atlantic tropical storm or hurricane active on 16 Nov; GDACS lists only a Pacific storm |
-| other-cyclones | NORMAL | stable | measured | No orange/red GDACS cyclone alerts | GDACS lists only a green-level alert for Tropical Cyclone Xavier near the Cook Islands on 16 Nov |
 | wildfires | NORMAL | stable | measured | GDACS: no orange/red | No GDACS orange or red wildfire alerts on 16 Nov; no fire forcing mass evacuation flagged |
 | floods | NORMAL | stable | measured | GDACS: no orange/red | No GDACS orange or red flood alerts on 16 Nov; one green-level flood event listed |
-| earthquakes | NORMAL | stable | measured | Max M5.8, 0× M6+ (7d) | Largest quakes M5.8 off Peru on 13 Nov and near Papua New Guinea on 12 Nov; no M6+, all PAGER green |
+| earthquakes | NORMAL | stable | measured | Max M6.6, 1× M6+ (7d) | Largest quakes M5.8 off Peru on 13 Nov and near Papua New Guinea on 12 Nov; no M6+, all PAGER green |
 | volcanic | NORMAL | stable | judged | No red aviation codes found (16 Nov) | No red aviation codes, VEI 4+ eruptions or ash-related airspace closures found as of 16 Nov; Mayon at alert level 3 |
 | space-weather | NORMAL | stable | measured | G0 S0 R0 | NOAA scales at G0 S0 R0 in the 24 hours to 16 Nov; forecast peaks at a minor G1 storm |
 | cold-storms | NORMAL | stable | judged | No major cold wave (16 Nov) | No top-tier cold or winter-storm warning across a major region on 16 Nov; heavy snow confined to western mountains |

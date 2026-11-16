@@ -1,10 +1,10 @@
 # Crypto stress — WATCH (worsening)
-id crypto · Markets · horizon acute · checked 2026-11-16T17:52Z · text written 2026-11-16T05:51Z · at this level since 2026-11-14T23:42Z · stale after 2026-11-17T07:52Z
+id crypto · Markets · horizon acute · checked 2026-11-16T23:43Z · text written 2026-11-16T05:51Z · at this level since 2026-11-14T23:42Z · stale after 2026-11-17T13:43Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/crypto
 
-Value: BTC $64,990, -25% from high
-Rated on: BTC drawdown 25% has not yet cleared the 22.5% exit line, so Watch holds
-Basis: measured — Set by a fixed rule applied to open data (BTC drawdown % = 24.96). Anyone can reproduce it from the public metrics file.
+Value: BTC $64,775, -25% from high
+Rated on: BTC drawdown 25.2% ≥ 25% Watch line
+Basis: measured — Set by a fixed rule applied to open data (BTC drawdown % = 25.20). Anyone can reproduce it from the public metrics file.
 
 Bitcoin near $64,700 on 16 Nov, 25% below its 52-week high and 13% lower on the week; no stablecoin de-peg found
 

@@ -1,10 +1,10 @@
 # Earthquakes & tsunami — NORMAL (stable)
-id earthquakes · Weather & Hazards · horizon acute · checked 2026-11-16T17:52Z · text written 2026-11-16T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-17T07:52Z
+id earthquakes · Weather & Hazards · horizon acute · checked 2026-11-16T23:43Z · text written 2026-11-16T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-17T13:43Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/earthquakes
 
-Value: Max M5.8, 0× M6+ (7d)
-Rated on: max magnitude 5.8 below the 7 Watch line
-Basis: measured — Set by a fixed rule applied to open data (max magnitude = 5.80). Anyone can reproduce it from the public metrics file.
+Value: Max M6.6, 1× M6+ (7d)
+Rated on: max magnitude 6.6 below the 7 Watch line
+Basis: measured — Set by a fixed rule applied to open data (max magnitude = 6.60). Anyone can reproduce it from the public metrics file.
 
 Largest quakes M5.8 off Peru on 13 Nov and near Papua New Guinea on 12 Nov; no M6+, all PAGER green
 
