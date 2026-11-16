@@ -1,5 +1,29 @@
 [
  {
+  "t": "2026-11-16T05:51:59Z",
+  "id": "uk-weather",
+  "name": "UK weather warnings",
+  "from": "green",
+  "to": "amber",
+  "reason": "Met Office yellow ice and snow warnings cover Scotland, northern England and the Midlands from 15 to 17 Nov"
+ },
+ {
+  "t": "2026-11-16T05:51:59Z",
+  "id": "exploited-vulns",
+  "name": "Exploited vulnerabilities",
+  "from": "amber",
+  "to": "green",
+  "reason": "CISA added 8 known-exploited vulnerabilities in the seven days to 13 Nov, back below the 11-a-week Watch line"
+ },
+ {
+  "t": "2026-11-16T05:51:59Z",
+  "id": "cyber",
+  "name": "Major cyber incidents",
+  "from": "red",
+  "to": "amber",
+  "reason": "France's 9 Nov attribution of store fridge sabotage to an IRGC unit is a week old; no new national-scale attack found"
+ },
+ {
   "t": "2026-11-14T23:42:22Z",
   "id": "crypto",
   "name": "Crypto stress",

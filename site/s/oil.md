@@ -1,17 +1,17 @@
 # Oil (Brent) — WATCH (stable)
-id oil · Energy & Commodities · horizon acute · checked 2026-11-15T23:41Z · text written 2026-11-15T05:55Z · at this level since 2026-11-06T17:59Z · stale after 2026-11-16T13:41Z
+id oil · Energy & Commodities · horizon acute · checked 2026-11-16T05:51Z · at this level since 2026-11-06T17:59Z · stale after 2026-11-16T19:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/oil
 
 Value: $95.5, 1m -13%
-Rated on: Brent $95.5 ≥ $85 Watch line
-Basis: measured — Set by a fixed rule applied to open data (Brent $ = 95.46 · Brent 1m % = -13.11). Anyone can reproduce it from the public metrics file.
+Rated on: Brent $95.5 in $85–110 Watch band
+Basis: measured — Set by a fixed rule applied to open data (Brent $ = 95.51 · Brent 1m % = -12.82). Anyone can reproduce it from the public metrics file.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
-Brent near $95.8 on 13 Nov, up 3.5% on the week but 13% lower on the month; inside the Watch band
+Brent near $95.5 on 16 Nov, up 4.4% on the week; Iran claims tanker mine strikes near Hormuz on 15 Nov
 
-Why it's at this level: Brent closed near $95.8 on 13 Nov, 3.5% higher on the week but 12.8% lower over a month, inside the $85–110 Watch band and 19% below its 52-week high of $118 (Yahoo Finance). Iranian state TV said three tankers hit mines near Hormuz on 14 Nov, claims that are unverified, keeping supply concerns alive (AP). No new outage above 2 mb/d was confirmed this run.
+Why it's at this level: Brent was near $95.5 early on 16 Nov, 4.4% higher on the week but 12.8% lower over a month, inside the $85–110 Watch band and 19% below its 52-week high of $118 (Yahoo Finance). Iran's Revolutionary Guards said on 15 Nov that two tankers hit mines in the southern Strait of Hormuz and one supertanker sank, claims not independently confirmed (Middle East Eye). No new outage above 2 mb/d was confirmed.
 
-What this means for you: Oil prices remain elevated, which tends to keep fuel, heating and transport costs high over the following weeks.
+What this means for you: Oil near $95 keeps fuel, heating and transport costs elevated; further Gulf shipping incidents tend to push prices up quickly.
 
 Why it matters: Oil feeds inflation, transport and household budgets; price spikes have preceded most post-war recessions.
 What moves it: OPEC+ output, Middle East supply risk, sanctions, demand, inventories, shipping disruption.
@@ -19,5 +19,5 @@ What moves it: OPEC+ output, Middle East supply risk, sanctions, demand, invento
 Rubric — Alert: Brent > $110, or 1-month change > +30%, or a major physical supply outage (> 2 mb/d). | Watch: Brent $85–110, or 1-month change +15–30%. | Normal: Brent < $85 and 1-month change < +15%.
 
 Sources:
-- Yahoo Finance — Brent crude futures (BZ=F) (2026-11-13) https://finance.yahoo.com/quote/BZ%3DF
-- AP via KSAT — Israeli drone strike kills 2 Palestinians in Gaza, and other Mideast news (2026-11-14) https://www.ksat.com/news/2026/11/14/israeli-drone-strike-kills-2-palestinians-in-gaza-and-other-mideast-news/
+- Yahoo Finance — Brent crude futures (2026-11-16) https://finance.yahoo.com/quote/BZ%3DF
+- Middle East Eye — Two oil tankers ablaze after striking naval mines in the Strait of Hormuz (2026-11-15) https://www.middleeasteye.net/live-blog/live-blog-update/two-oil-tankers-ablaze-after-striking-naval-mines-strait-hormuz

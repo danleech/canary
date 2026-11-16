@@ -1,8 +1,11 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-15T23:41Z · next run ~05:40 UK · stale after 2026-11-16T13:41Z (36h for daily-tier signals)
+as_of 2026-11-16T05:51Z · next run ~11:40 UK · stale after 2026-11-16T19:51Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
-Basis: 27 measured from open data, 14 follow a published figure, 48 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
+Basis: 26 measured from open data, 13 follow a published figure, 50 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
+- 2026-11-16T05:51Z UK weather warnings [uk-weather]: NORMAL→WATCH — Met Office yellow ice and snow warnings cover Scotland, northern England and the Midlands from 15 to 17 Nov
+- 2026-11-16T05:51Z Exploited vulnerabilities [exploited-vulns]: WATCH→NORMAL — CISA added 8 known-exploited vulnerabilities in the seven days to 13 Nov, back below the 11-a-week Watch line
+- 2026-11-16T05:51Z Major cyber incidents [cyber]: ALERT→WATCH — France's 9 Nov attribution of store fridge sabotage to an IRGC unit is a week old; no new national-scale attack found
 - 2026-11-14T23:42Z Crypto stress [crypto]: NORMAL→WATCH — Bitcoin near $63,400 on 14 Nov, 27% below its 52-week high and 14% lower on the week; no stablecoin de-peg found
 - 2026-11-14T17:56Z Atmospheric CO₂ [co2]: ALERT→WATCH — CO₂ 428.6 ppm at Mauna Loa in the week of 8 Nov, up 2.34 ppm on a year, inside the 2–3 ppm Watch band
 - 2026-11-13T17:58Z UK strikes & disruption [uk-disruption]: WATCH→NORMAL — BMA paused the 25–27 Nov consultant strike on 11 Nov for talks; London Tube driver strikes start 26 Nov
