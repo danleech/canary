@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-17T17:51:12Z",
+  "id": "sovereign-debt",
+  "name": "Sovereign debt stress",
+  "from": "amber",
+  "to": "red",
+  "reason": "France–Bund 10-year spread widened to 155bp on 16 Nov, above the 150bp Alert line for most sessions since late Oct"
+ },
+ {
   "t": "2026-11-17T11:42:50Z",
   "id": "uk-weather",
   "name": "UK weather warnings",

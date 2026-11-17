@@ -1,16 +1,16 @@
 # Myanmar — WATCH (stable)
-id myanmar · Armed Conflict · horizon acute · checked 2026-11-16T17:52Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-18T05:52Z
+id myanmar · Armed Conflict · horizon acute · checked 2026-11-17T17:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-19T05:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/myanmar
 
-Value: Junta claims resistance HQ near Mon–Bago line
-Rated on: Civil war at sustained intensity (Watch); no major city fallen or cross-border escalation (Alert line not met)
-Basis: judged — The AI assessor's reading of 3 sources from 2 outlets against the rubric. Check the sources before relying on it.
+Value: Airstrike on Rakhine IDP camp killed 12, 13 Nov
+Rated on: Watch: civil war at sustained intensity; no major city fallen or cross-border escalation as of 17 Nov
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-Junta says it took a resistance command and 10 bases on the Mon–Bago border; no major city has changed hands
+Witnesses say a military airstrike killed 12 at a Rakhine displacement camp on 13 Nov; no major city changed hands
 
-Why it's at this level: State media said on 10 Nov that the army seized a NUG special region command and 10 other bases along the Mon state–Bago region border after a six-day operation; the claim could not be independently verified (Business Standard; The Star, 11 Nov). Military airstrikes on 1–2 Nov killed at least 15 civilians, including a newborn, at a maternity clinic and a school, according to local sources (The Star, 2 Nov). Searches on 16 Nov found no major city changing hands and no cross-border escalation, so Watch holds.
+Why it's at this level: Witnesses and a rescue group said a military airstrike on the Byar La displacement camp in Ponnagyun township, Rakhine State, killed 12 people, including a five-year-old, and injured 18 on the evening of 13 Nov (AFP via Arab News). On 6 Nov the election commission announced by-elections in 39 constituencies for 4 April 2027 as fighting continues in Sagaing, Mandalay and Chin; ACLED says the war has killed over 100,000 people (The Star). No major city changing hands or cross-border escalation was found as of 17 Nov, so Watch holds.
 
-What this means for you: Civilians in Rakhine, Sagaing, Karenni and Mon areas face airstrikes and displacement. Travellers should follow FCDO advice, which advises against travel to large parts of Myanmar. Border areas with Thailand, China and Bangladesh see refugee flows.
+What this means for you: The FCDO advises against travel to large parts of Myanmar; check its travel advice. The war drives refugee flows to Bangladesh and Thailand and disrupts trade routes with China and India.
 
 Why it matters: A multi-sided civil war affecting 50 million people, with spillover to China, Thailand, India and Bangladesh.
 What moves it: Resistance offensives, junta airstrikes, Chinese mediation, elections, humanitarian access.
@@ -18,6 +18,5 @@ What moves it: Resistance offensives, junta airstrikes, Chinese mediation, elect
 Rubric — Alert: Major city falls, mass-casualty airstrikes, or cross-border escalation. | Watch: Civil war at sustained intensity. | Normal: Nationwide ceasefire holding.
 
 Sources:
-- The Star — Military seizes key resistance headquarters in six-day blitz (2026-11-11) https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/11/military-seizes-key-resistance-headquarters-in-six-day-blitz
-- Business Standard — Myanmar military captures key resistance headquarters, 10 opposition bases (2026-11-10) https://www.business-standard.com/world-news/myanmar-military-captures-key-resistance-headquarters-10-opposition-bases-126111000372_1.html
-- The Star — Newborn among 15 killed as Myanmar military strikes maternity clinic and school, sources say (2026-11-02) https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/02/newborn-among-15-killed-as-myanmar-military-strikes-maternity-clinic-and-school-sources-say
+- Myanmar airstrike on displaced persons camp kills 12: witnesses (2026-11-14) https://www.arabnews.pk/world/myanmar-airstrike-on-displaced-persons-camp-kills-12-witnesses-3007034
+- Myanmar announces by-elections expanding parliament writ and confident of holding on to territories (2026-11-06) https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/06/myanmar-announces-by-elections-expanding-parliament-writ-and-confident-of-holding-on-to-territories

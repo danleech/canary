@@ -1,17 +1,17 @@
 # Sanctions & coercion — WATCH (stable)
-id sanctions · Geopolitics · horizon acute · checked 2026-11-16T17:52Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-18T05:52Z
+id sanctions · Geopolitics · horizon acute · checked 2026-11-17T17:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-19T05:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/sanctions
 
-Value: EU readies Iran cyber sanctions; FAC 16 Nov
-Rated on: Watch: new EU sanctions package on Iran in preparation; no payment-system cut-off or sovereign asset seizure
-Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
+Value: EU preparing Iran cyber sanctions (16 Nov)
+Rated on: Watch: major new package in preparation — EU Iran cyber sanctions announced 16 Nov; no payment cut-off or asset seizure
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
-EU says it is finalising cyber sanctions on Iran over supermarket hacks; ministers met 16 Nov, no outcome published yet
+EU ministers backed further action on Iran over supermarket cyberattacks on 16 Nov; no package formally adopted yet
 
-Why it's at this level: After France attributed October cyberattacks on refrigeration systems at hundreds of European supermarkets to Iran, the EU said on 10 Nov it was finalising new cyber sanctions and was ready for a rapid, united response (Demócrata; Europa Press). EU foreign ministers met in Brussels on 16 Nov with the issue open for discussion; no outcome had been published by 17:45 UTC (Council of the EU). No major economy cut off from payment systems or large seizure of sovereign assets was found, so Watch holds.
+Why it's at this level: At the Foreign Affairs Council on 16 Nov, Kaja Kallas said the EU is preparing further sanctions on Iran after cyberattacks on French supermarket refrigeration systems, saying the threat from Iran increasingly extends to Europe (Middle East Eye). Ministers supported further action but no package was formally adopted; at least 11 other European countries were hit by similar attacks in early November (The Copenhagen Post). No major economy cut off from payment systems or large seizure of sovereign assets was found as of 17 Nov, so Watch holds.
 
-What this means for you: Firms trading with Iran or handling Iranian-linked payments face a growing list of EU, UK and US restrictions; UK businesses can check OFSI guidance.
+What this means for you: Firms trading with Iran, or running internet-connected refrigeration and building-control systems, are most exposed. UK businesses can check current sanctions lists and OFSI guidance on GOV.UK.
 
 Why it matters: Sanctions are now a frontline weapon; secondary sanctions and asset seizures fragment global finance and trade.
 What moves it: Russia/Iran sanctions packages, secondary sanctions, frozen-asset decisions, export controls.
@@ -19,6 +19,5 @@ What moves it: Russia/Iran sanctions packages, secondary sanctions, frozen-asset
 Rubric — Alert: Major economy cut off from payment systems, or large-scale seizure of sovereign assets. | Watch: Major new packages, secondary-sanction threats on large economies, or asset-seizure moves. | Normal: No major new sanctions packages this week.
 
 Sources:
-- Demócrata — The EU prepares new sanctions against Iran after the cyberattacks on supermarket chains in Europe (2026-11-10) https://www.democrata.es/en/international/the-eu-prepares-new-sanctions-against-iran-after-the-cyberattacks-on-supermarket-chains-in-europe/
-- Diario Estrategia (Europa Press) — La UE trabaja en nuevas sanciones contra Irán tras los ciberataques a supermercados (2026-11-10) https://www.diarioestrategia.cl/texto-diario/mostrar/6086328/ue-trabaja-nuevas-sanciones-contra-iran-senalado-ciberataques-supermercados-europeos
-- Council of the EU — Foreign Affairs Council, 16 November 2026 (2026-11-16) https://www.consilium.europa.eu/en/meetings/fac/2026/11/16/
+- EU preparing further sanctions on Iran (2026-11-16) https://www.middleeasteye.net/live-blog/live-blog-update/eu-preparing-further-sanctions-iran
+- EU prepares new Iran sanctions after supermarket cyberattacks (2026-11-17) https://cphpost.dk/2026-11-17/global/eu-prepares-new-iran-sanctions-after-supermarket-cyberattacks/

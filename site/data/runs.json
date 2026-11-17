@@ -1,5 +1,205 @@
 [
  {
+  "t": "2026-11-17T17:51:42Z",
+  "applied": 89,
+  "changed": [],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 27,
+   "published": 14,
+   "judged": 48
+  },
+  "held": 39,
+  "sources": {
+   "citations": 98,
+   "news_citations": 76,
+   "outlets": 76,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     7
+    ],
+    [
+     "itv.com",
+     3
+    ],
+    [
+     "tradingeconomics.com",
+     3
+    ],
+    [
+     "allafrica.com",
+     2
+    ],
+    [
+     "bdnews24.com",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 60,
+   "predicted_active": 2,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
+  "t": "2026-11-17T17:51:37Z",
+  "applied": 89,
+  "changed": [],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 27,
+   "published": 14,
+   "judged": 48
+  },
+  "held": 39,
+  "sources": {
+   "citations": 98,
+   "news_citations": 76,
+   "outlets": 76,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     7
+    ],
+    [
+     "itv.com",
+     3
+    ],
+    [
+     "tradingeconomics.com",
+     3
+    ],
+    [
+     "allafrica.com",
+     2
+    ],
+    [
+     "bdnews24.com",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 60,
+   "predicted_active": 2,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
+  "t": "2026-11-17T17:51:24Z",
+  "applied": 89,
+  "changed": [],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 27,
+   "published": 14,
+   "judged": 48
+  },
+  "held": 39,
+  "sources": {
+   "citations": 98,
+   "news_citations": 76,
+   "outlets": 76,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     7
+    ],
+    [
+     "itv.com",
+     3
+    ],
+    [
+     "tradingeconomics.com",
+     3
+    ],
+    [
+     "allafrica.com",
+     2
+    ],
+    [
+     "bdnews24.com",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 60,
+   "predicted_active": 2,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
+  "t": "2026-11-17T17:51:12Z",
+  "applied": 89,
+  "changed": [
+   "sovereign-debt"
+  ],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 27,
+   "published": 14,
+   "judged": 48
+  },
+  "held": 39,
+  "sources": {
+   "citations": 98,
+   "news_citations": 76,
+   "outlets": 76,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     7
+    ],
+    [
+     "itv.com",
+     3
+    ],
+    [
+     "tradingeconomics.com",
+     3
+    ],
+    [
+     "allafrica.com",
+     2
+    ],
+    [
+     "bdnews24.com",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 60,
+   "predicted_active": 2,
+   "quiet_but_status_changed": [
+    "sovereign-debt"
+   ],
+   "quiet_but_trend_changed": [
+    "china-economy",
+    "other-conflicts",
+    "respiratory"
+   ]
+  }
+ },
+ {
   "t": "2026-11-17T11:42:50Z",
   "applied": 41,
   "changed": [

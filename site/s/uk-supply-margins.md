@@ -1,16 +1,16 @@
 # GB energy supply margins — NORMAL (stable)
-id uk-supply-margins · UK Watch · horizon acute · checked 2026-11-16T17:52Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-18T05:52Z
+id uk-supply-margins · UK Watch · horizon acute · checked 2026-11-17T17:51Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-19T05:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/uk-supply-margins
 
-Value: No notice in force; winter margin 9.5%
-Rated on: No NESO or National Gas notice in force; winter margin 5.9 GW (9.5%): Normal
-Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
+Value: No notice in force; gas buffer 99 mcm/d
+Rated on: No NESO Electricity Margin Notice or National Gas Margins Notice in force (Normal)
+Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 
-NESO forecasts a 5.9 GW, 9.5% winter buffer; no Electricity Margin or Gas Margins Notice found in force on 16 Nov
+Cold spell from 15 Nov raises demand; no Electricity Margin or Gas Margins Notice found in force on 17 Nov
 
-Why it's at this level: NESO's Winter Outlook forecasts a 5.9 GW operational surplus this winter, a 9.5% buffer over peak demand, similar to last winter (Solar Power Portal, 26 Oct). NESO last issued an Electricity Margin Notice on 6 Oct for an evening peak during low wind (OilPrice). Searches on 16 Nov found no Electricity Margin Notice, capacity market notice or Gas Margins Notice in force, so the signal stays Normal; the cold spell from 17 Nov may raise demand.
+Why it's at this level: National Gas's winter outlook of 23 Oct expects sufficient supply, with a 99 mcm/d buffer over a 493 mcm/d peak (Pipeline & Gas Journal). NESO issued an Electricity Margin Notice on 28 Sep for a low-wind evening peak, flagging a 1.4 GW shortfall (OilPrice). Cold weather and frost hit northern Britain from 15 Nov (ITV News), but searches on 17 Nov found no Electricity Margin Notice, capacity market notice or Gas Margins Notice in force, so the signal stays Normal.
 
-What this means for you: Households are not expected to see supply interruptions. Margin notices are routine operational tools that ask generators for more output; they do not by themselves mean power cuts.
+What this means for you: Margin notices are routine signals to generators, not warnings of power cuts. Still, cold, windless evenings are when the system is tightest; NESO and National Gas publish any notices.
 
 Why it matters: When gas or electricity margins tighten, Britain risks price spikes and, at worst, controlled disconnections in winter.
 What moves it: Gas imports and storage, wind output, interconnectors, plant outages, cold weather.
@@ -18,5 +18,6 @@ What moves it: Gas imports and storage, wind output, interconnectors, plant outa
 Rubric — Alert: A Gas Deficit Warning, a high risk of demand control notice, or demand control used. | Watch: NESO issues an Electricity Margin Notice or capacity market notice, or National Gas issues a Gas Margins Notice. | Normal: NESO and National Gas report adequate margins; no notices issued.
 
 Sources:
-- Solar Power Portal — GB to have 9.5% buffer over peak demand this winter, NESO says (2026-10-26) https://www.solarpowerportal.co.uk/energy-policy/-sufficient-supplies-gb-to-have-9-5-buffer-over-peak-demand-this-winter-neso-says-in-annual-outlook
-- OilPrice — Low wind generation prompts another power margin warning in UK (2026-10-06) https://oilprice.com/Latest-Energy-News/World-News/Low-Wind-Generation-Prompts-Another-Power-Margin-Warning-in-UK.amp.html
+- UK gas grid ready for winter with 99 mcm/d supply buffer as peak demand rises, National Gas says (2026-10-23) https://www.pgjonline.com/news/2026/october/uk-gas-grid-ready-for-winter-with-99-mcmd-supply-buffer-as-peak-demand-rises-national-gas-says
+- UK Grid Operator Warns of Tight Power Margins (2026-09-28) https://oilprice.com/Latest-Energy-News/World-News/UK-Grid-Operator-Warns-of-Tight-Power-Margins.html
+- Yellow cold health alerts to come into force in parts of UK amid frosty weather (2026-11-15) https://www.itv.com/news/2026-11-15/yellow-cold-health-alerts-to-come-into-force-in-parts-of-uk-amid-frosty-weather

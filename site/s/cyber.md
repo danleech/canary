@@ -1,5 +1,5 @@
 # Major cyber incidents — WATCH (stable)
-id cyber · Technology & Cyber · horizon acute · checked 2026-11-17T11:42Z · text written 2026-11-17T05:57Z · at this level since 2026-11-16T05:51Z · stale after 2026-11-18T01:42Z
+id cyber · Technology & Cyber · horizon acute · checked 2026-11-17T17:51Z · text written 2026-11-17T05:57Z · at this level since 2026-11-16T05:51Z · stale after 2026-11-18T07:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/cyber
 
 Value: Belarus cloud firm ransomware, 13 Nov
