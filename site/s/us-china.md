@@ -1,5 +1,5 @@
 # US–China / Taiwan — WATCH (stable)
-id us-china · Geopolitics · horizon acute · checked 2026-11-17T17:51Z · text written 2026-11-17T05:57Z · at this level since 2026-11-07T05:46Z · stale after 2026-11-18T07:51Z
+id us-china · Geopolitics · horizon acute · checked 2026-11-17T23:41Z · text written 2026-11-17T05:57Z · at this level since 2026-11-07T05:46Z · stale after 2026-11-18T13:41Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/us-china
 
 Value: No blockade or clash; Shenzhen talks 19 Nov
