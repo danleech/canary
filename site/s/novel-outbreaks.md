@@ -1,16 +1,16 @@
 # Novel / unexplained outbreaks — NORMAL (stable)
-id novel-outbreaks · Global Health · horizon acute · checked 2026-11-16T23:43Z · text written 2026-11-16T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-17T13:43Z
+id novel-outbreaks · Global Health · horizon acute · checked 2026-11-17T05:57Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-17T19:57Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/novel-outbreaks
 
 Value: No unexplained clusters
-Rated on: No unexplained clusters under investigation = Normal
-Basis: judged — The AI assessor's reading of 1 source from 1 outlet against the rubric. Check the sources before relying on it.
+Rated on: No unexplained clusters under international investigation = Normal
+Basis: judged — The AI assessor's reading of 2 sources from 1 outlet against the rubric. Check the sources before relying on it.
 
-WHO reported two sporadic MERS cases in Qatar on 13 Nov with no onward spread; no unexplained cluster found
+No unexplained cluster under international investigation; recent WHO reports cover sporadic known-virus cases
 
-Why it's at this level: WHO reported on 13 Nov that Qatar had notified two laboratory-confirmed MERS cases from August, its first since 2022; all 99 contacts tested negative and WHO found no evidence of sustained human-to-human spread (WHO). MERS is a known pathogen and the cases are sporadic. Searches to 16 Nov found no unexplained cluster under international investigation, so the level stays Normal.
+Why it's at this level: WHO reported on 13 Nov two sporadic MERS cases in Qatar with no onward spread (WHO). WHO's 2 Nov report on the first known human Shamonda virus infection, a fatal case in France, found no further human cases and no evidence of human-to-human spread (WHO). Searches to 17 Nov found no unexplained cluster or novel pathogen under international investigation, so the level stays Normal.
 
-What this means for you: No action needed beyond routine travel health advice; NaTHNaC publishes outbreak updates for travellers.
+What this means for you: Nothing new to act on. WHO's Disease Outbreak News and UKHSA publish any change in advice; travellers can check NHS fit for travel for destination guidance.
 
 Why it matters: The next pandemic will start as an unexplained cluster; early signals matter.
 What moves it: Surveillance reports, unknown illnesses, new pathogens.
@@ -18,4 +18,5 @@ What moves it: Surveillance reports, unknown illnesses, new pathogens.
 Rubric — Alert: A novel pathogen with evidence of human-to-human spread across borders. | Watch: An unexplained cluster or novel pathogen under investigation. | Normal: No unexplained clusters under international investigation.
 
 Sources:
-- WHO — Disease Outbreak News: MERS, Qatar (2026-11-13) https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON626
+- WHO — MERS, Qatar (DON626) (2026-11-13) https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON626
+- WHO — Shamonda virus in human, France (DON623) (2026-11-02) https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON623
