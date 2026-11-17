@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-17T11:42:50Z",
+  "id": "uk-weather",
+  "name": "UK weather warnings",
+  "from": "amber",
+  "to": "green",
+  "reason": "Met Office lists no weather warnings at 11:40 UK on 17 Nov after the morning's yellow snow warnings lapsed"
+ },
+ {
   "t": "2026-11-16T23:43:07Z",
   "id": "other-cyclones",
   "name": "Pacific & Indian cyclones",

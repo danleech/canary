@@ -1,17 +1,17 @@
 # Russia–Ukraine — ALERT (stable)
-id russia-ukraine · Armed Conflict · horizon acute · checked 2026-11-17T05:57Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-17T19:57Z
+id russia-ukraine · Armed Conflict · horizon acute · checked 2026-11-17T11:42Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-18T01:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/russia-ukraine
 
-Value: 158 drones 16 Nov; Dnipro city lost power
-Rated on: Mass strikes: 158 drones on 16 Nov with energy outages; Komyshuvakha toll 72 = Alert
-Basis: judged — The AI assessor's reading of 3 sources from 2 outlets against the rubric. Check the sources before relying on it.
+Value: 14 killed in a day; Kyiv bridges hit 17 Nov
+Rated on: Mass-casualty strikes on energy sites and cities = Alert
+Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 Situation: Russia–Ukraine war and NATO's flank [russia-ukraine-war]
 
-Russia launched 158 drones at Ukraine overnight into 16 Nov; strikes on energy sites left Dnipro without power
+Russian strikes killed 14 across Ukraine in the day to 17 Nov, closing Kyiv's two main bridges and cutting power
 
-Why it's at this level: Ukraine's air force said Russia launched 158 drones overnight into 16 Nov, 131 of which were downed, with impacts at 19 locations (ABC News). Through 16 Nov, local authorities reported deaths in Dnipro, Chernihiv and Balakliia; DTEK said Dnipro lost all power that evening, and the death toll from the 2 Nov strike on Komyshuvakha rose to 72 (Ukrinform). Russia said it downed 1,336 Ukrainian drones the same night. No ceasefire has been agreed, and sustained mass strikes on energy infrastructure keep the Alert.
+Why it's at this level: Local authorities reported that Russian attacks killed 14 people and injured 78 across Ukraine in the day to 17 Nov; strikes damaged and closed Kyiv's Northern and Southern bridges and killed two in Obolonskyi district (Kyiv Independent; Ukrinform). Ukraine's energy ministry imposed emergency power cuts in four regions on 17 Nov, and about 700,000 households in Dnipropetrovsk lost power. Russia said it downed 1,441 Ukrainian drones overnight as Ukraine targeted the Kerch Bridge (AP). Sustained mass strikes keep the Alert.
 
-What this means for you: Severe power and heating outages are affecting Dnipro, Kharkiv, Poltava, Zaporizhzhia and Odesa regions. The FCDO advises against all travel to Ukraine. Airports in western Russia have faced temporary restrictions during drone attacks.
+What this means for you: Follow FCDO travel advice, which advises against all travel to Ukraine. Strikes on the grid mean power, heating and water cuts in Ukrainian cities as winter sets in.
 
 Why it matters: Europe's largest war since 1945 shapes European security, energy, food exports and defence budgets.
 What moves it: Front-line offensives, strike campaigns on energy, Western aid, negotiations, nuclear plant safety.
@@ -19,6 +19,6 @@ What moves it: Front-line offensives, strike campaigns on energy, Western aid, n
 Rubric — Alert: Significant escalation — major new offensive, mass-casualty strikes, a nuclear-plant safety incident, or new state involvement. | Watch: Active war at sustained intensity, or a ceasefire under strain. | Normal: Ceasefire or peace deal holding.
 
 Sources:
-- Dnipro left completely without power after Russian attack (2026-11-16) https://www.ukrinform.net/rubric-ato/4185289-dnipro-left-completely-without-power-after-russian-attack.html
-- Search and rescue operations completed in Komyshuvakha, death toll rises to 72 (2026-11-16) https://www.ukrinform.net/rubric-ato/4185328-search-and-rescue-operations-completed-in-komyshuvakha-death-toll-rises-to-72.html
-- Ukraine fires 1,336 drones into Russia in one of war's largest attacks, Moscow says (2026-11-16) https://abcnews.com/International/ukraine-fires-1336-drones-russia-wars-largest-attacks/story?id=138171397
+- Kyiv Independent — Russian attacks kill 14, injure 78 across Ukraine over past day, hitting Kyiv's bridges (2026-11-17) https://kyivindependent.com/russian-attacks-kill-14-injure-78-across-ukraine-over-past-day-hitting-kyivs-southern-northern-bridges/
+- Ukrinform — Emergency power outages affect four regions following Russian attacks (2026-11-17) https://www.ukrinform.net/rubric-ato/4185477-emergency-power-outages-affect-four-regions-following-russian-attacks.html
+- AP via KSAT — Russian air defenses down more than 1,400 Ukrainian drones as Kyiv hits a key Crimean bridge (2026-11-17) https://www.ksat.com/business/2026/11/17/russian-air-defenses-down-more-than-1400-ukrainian-drones-as-kyiv-hits-a-key-crimean-bridge/

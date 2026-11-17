@@ -1,14 +1,14 @@
 # Canary — world risk status
-as_of 2026-11-17T05:57Z · next run ~11:40 UK · stale after 2026-11-17T19:57Z (36h for daily-tier signals)
+as_of 2026-11-17T11:42Z · next run ~17:40 UK · stale after 2026-11-18T01:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
-Basis: 26 measured from open data, 11 follow a published figure, 52 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
+Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
-World State 39/100 (Unsettled) · 12 Alert · 48 Watch · 29 Normal
-Headline: Gulf war keeps oil, gas and shipping on Alert after Iranian drones at Bahrain and claimed Hormuz mine strikes on 15–16 Nov; Russia hit Ukraine's grid on 16 Nov; US stocks stay in Watch; Cyclone Akvan heads for India.
+World State 39/100 (Unsettled) · 12 Alert · 47 Watch · 30 Normal
+Headline: Russian strikes killed 14 across Ukraine by 17 Nov and closed Kyiv's main bridges. The US–Iran war keeps Hormuz restricted, and DR Congo's Ebola outbreak passed 11,000 cases. UK snow warnings lapsed.
 
 ## Situations (7 cross-domain events; Alerts below are grouped under them)
 - US–Iran war and Gulf energy shock [ALERT, worsening]: Iranian drones at Bahrain on 13 and 15 Nov; IRGC claims tanker mine strikes in Hormuz 15–16 Nov; three US carrier groups enforce the blockade of Iranian ports. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight; watch: iran-nuclear, sanctions, oil, fertiliser, uk-energy-cap, semiconductors
-- Russia–Ukraine war and NATO's flank [ALERT, stable]: Russia launched 158 drones at Ukraine on 16 Nov, cutting power to Dnipro; Estonia blamed Russia's GRU for a 14 Nov plot and will shut its border on 1 Dec. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
+- Russia–Ukraine war and NATO's flank [ALERT, stable]: Russian strikes killed 14 across Ukraine in the day to 17 Nov and closed Kyiv's two main bridges; Estonia will shut its Russian border on 1 Dec. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
 - Super El Niño [ALERT, worsening]: ONI +2.46 for Aug–Oct; global temperature +1.85°C on 10 Nov, a record for the date; CO₂ growth 2.35 ppm/yr in the week of 8 Nov. → alert: enso, global-temp; watch: drought, co2, famine
 - Ebola outbreak, DR Congo [ALERT, worsening]: DR Congo Ebola reached 11,197 confirmed cases and 5,471 deaths by 11 Nov (ECDC); WHO emergency since 17 May remains in force. → alert: ebola; watch: who-emergencies
 - Sudan war [ALERT, worsening]: FEWS NET says Famine risk has spread to Sharg Aj-Jabal in South Darfur; fighting goes on in Kordofan; WFP cut 900,000 from food aid. → alert: sudan; watch: famine
@@ -20,12 +20,12 @@ Headline: Gulf war keeps oil, gas and shipping on Alert after Iranian drones at 
 - UK terrorism threat level [uk-threat-level] stable, AI-judged: UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 16 Nov
 
 ## Changed in last 24h
+- UK weather warnings [uk-weather]: WATCH→NORMAL — Met Office lists no weather warnings at 11:40 UK on 17 Nov after the morning's yellow snow warnings lapsed (2026-11-17T11:42Z)
 - Pacific & Indian cyclones [other-cyclones]: NORMAL→WATCH — GDACS orange alert for Cyclone Akvan in the Bay of Bengal; IMD expects landfall in Andhra Pradesh by noon on 20 Nov (2026-11-16T23:43Z)
 - US equity stress [equity-stress]: NORMAL→WATCH — VIX 21.6 on 16 Nov, above the 20 Watch line, as tech selling pushed the S&P 500 4.7% below its high (2026-11-16T17:52Z)
-- Internet & cloud outages [outages]: WATCH→NORMAL — The 13 Nov US flight ground stop and the 12–13 Nov Microsoft 365 outage both ended over 48h ago; no new major outage (2026-11-16T11:42Z)
 
 ## Watch (ids; detail at /s/{id}.md)
-equity-stress, bond-volatility, gold, crypto, private-credit, us-inflation, central-banks, sovereign-debt, oil, food-prices, critical-minerals, fertiliser, nuclear-plants, us-china, russia-nato, iran-nuclear, korea, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, other-cyclones, heat, drought, sea-ice, co2, who-emergencies, mpox, measles, respiratory, medicine-shortages, cyber, cables-gnss, semiconductors, ai-governance, famine, civil-unrest, aid-funding, uk-rates, gilts, uk-energy-cap, uk-weather, nhs-pressure
+equity-stress, bond-volatility, gold, crypto, private-credit, us-inflation, central-banks, sovereign-debt, oil, food-prices, critical-minerals, fertiliser, nuclear-plants, us-china, russia-nato, iran-nuclear, korea, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, other-cyclones, heat, drought, sea-ice, co2, who-emergencies, mpox, measles, respiratory, medicine-shortages, cyber, cables-gnss, semiconductors, ai-governance, famine, civil-unrest, aid-funding, uk-rates, gilts, uk-energy-cap, nhs-pressure
 
 ## Sentiment (measured from open data; context only, never changes a status)
 News tone vs own past 6 months (GDELT, 7 days to 2026-11-16; number = % of past weeks less negative): gloomier: economy (75), tech (96); brighter: conflict (24), energy (4), climate (1), disasters (0), health (12); typical: trade, migration

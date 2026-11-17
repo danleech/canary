@@ -18,13 +18,13 @@
      "date": "2026-11-17"
     }
    ],
-   "value": "VIX 22.9, S&P -5.2%",
-   "value_num": 22.9,
-   "checked_at": "2026-11-17T05:57:18Z",
+   "value": "VIX 23.3, S&P -5.2%",
+   "value_num": 23.26,
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-11-16T17:52:48Z",
-   "rubric_hit": "VIX 22.9 in 20–30 Watch band; S&P drawdown 5.2% in 5–15% Watch band",
+   "rubric_hit": "VIX 23.3 ≥ 20 Watch line; S&P drawdown 5.15% ≥ 5% Watch line",
    "basis": "measured",
-   "basis_detail": "VIX=22.91; S&P drawdown %=5.15",
+   "basis_detail": "VIX=23.26; S&P drawdown %=5.15",
    "assessed_at": "2026-11-17T05:57:18Z"
   },
   "ftse": {
@@ -40,13 +40,13 @@
      "date": "2026-11-17"
     }
    ],
-   "value": "10,882, -0.3% from high",
-   "value_num": 10882,
-   "checked_at": "2026-11-17T05:57:18Z",
+   "value": "10,800, -1.0% from high",
+   "value_num": 10800.41,
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "FTSE drawdown 0.3% < 5% and no daily fall > 2.5% = Normal",
+   "rubric_hit": "FTSE drawdown 1.01% below the 5% Watch line",
    "basis": "measured",
-   "basis_detail": "FTSE drawdown %=0.27",
+   "basis_detail": "FTSE drawdown %=1.01",
    "assessed_at": "2026-11-17T05:57:18Z"
   },
   "bond-volatility": {
@@ -68,10 +68,10 @@
     }
    ],
    "value": "MOVE 101, 10y 5.12%",
-   "value_num": 101.3,
-   "checked_at": "2026-11-17T05:57:18Z",
+   "value_num": 101.282,
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "MOVE 101 in 100–140 Watch band; 10y 1m move 1.5bp < 40bp",
+   "rubric_hit": "MOVE 101 ≥ 100 Watch line",
    "basis": "measured",
    "basis_detail": "MOVE=101.28; US10y 1m move bp=1.50",
    "assessed_at": "2026-11-17T05:57:18Z"
@@ -91,9 +91,9 @@
    ],
    "value": "HY OAS 3.23%",
    "value_num": 3.23,
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "HY OAS 3.23% < 4.0% and 1m change 0bp = Normal",
+   "rubric_hit": "HY OAS 3.23% below the 4% Watch line",
    "basis": "measured",
    "basis_detail": "HY OAS %=3.23",
    "assessed_at": "2026-11-17T05:57:18Z"
@@ -116,13 +116,13 @@
      "date": "2026-11-13"
     }
    ],
-   "value": "DXY 103.5, 3m +4.7%",
-   "value_num": 103.5,
-   "checked_at": "2026-11-17T05:57:18Z",
+   "value": "DXY 103.6, 3m +4.7%",
+   "value_num": 103.566,
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "DXY 3m +4.7% < 5% and within 90–108 = Normal",
+   "rubric_hit": "DXY 3m move 4.72% below the 5% Watch line",
    "basis": "measured",
-   "basis_detail": "DXY 3m move %=4.65",
+   "basis_detail": "DXY 3m move %=4.72",
    "assessed_at": "2026-11-17T05:57:18Z"
   },
   "banking-stress": {
@@ -144,10 +144,10 @@
     }
    ],
    "value": "STLFSI -0.49, CISS 0.01",
-   "value_num": -0.49,
-   "checked_at": "2026-11-17T05:57:18Z",
+   "value_num": -0.4918,
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "STLFSI -0.49 < 0 and ECB CISS 0.005 < 0.25, no notable failures = Normal",
+   "rubric_hit": "STLFSI -0.49 below the 0 Watch line; ECB CISS 0.01 below the 0.25 Watch line",
    "basis": "measured",
    "basis_detail": "STLFSI=-0.49; ECB CISS=0.01",
    "assessed_at": "2026-11-17T05:57:18Z"
@@ -165,13 +165,13 @@
      "date": "2026-11-17"
     }
    ],
-   "value": "$3,886, 3m -15.0%",
-   "value_num": 3886,
-   "checked_at": "2026-11-17T05:57:18Z",
+   "value": "$3,862, 3m -15.5%",
+   "value_num": 3862.5,
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-11-10T17:53:51Z",
-   "rubric_hit": "Gold 3m fall 15.0% > 8% = Watch; no weekly move > 7%",
+   "rubric_hit": "3m fall -15.5% (Watch)",
    "basis": "measured",
-   "basis_detail": "Gold 3m gain %=-15.00; 3m fall -15.0%",
+   "basis_detail": "Gold 3m gain %=-15.51; 3m fall -15.5%",
    "assessed_at": "2026-11-17T05:57:18Z"
   },
   "crypto": {
@@ -187,13 +187,13 @@
      "date": "2026-11-17"
     }
    ],
-   "value": "BTC $64,870, -25% from high",
-   "value_num": 64870,
-   "checked_at": "2026-11-17T05:57:18Z",
+   "value": "BTC $64,667, -25% from high",
+   "value_num": 64667.23,
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-11-14T23:42:22Z",
-   "rubric_hit": "BTC drawdown 25.1% in 25–45% Watch band",
+   "rubric_hit": "BTC drawdown 25.3% ≥ 25% Watch line",
    "basis": "measured",
-   "basis_detail": "BTC drawdown %=25.10",
+   "basis_detail": "BTC drawdown %=25.33",
    "assessed_at": "2026-11-17T05:57:18Z"
   },
   "us-recession": {
@@ -221,9 +221,9 @@
    ],
    "value": "Sahm 0.00, 10y–2y +0.29",
    "value_num": 0.0,
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "Sahm 0.00 < 0.30, no negative GDP quarter = Normal",
+   "rubric_hit": "Sahm 0 below the 0.3 Watch line",
    "basis": "measured",
    "basis_detail": "Sahm=0.00",
    "assessed_at": "2026-11-17T05:57:18Z"
@@ -403,13 +403,13 @@
      "date": "2026-11-17"
     }
    ],
-   "value": "$91.7, 1m -16%",
-   "value_num": 91.7,
-   "checked_at": "2026-11-17T05:57:18Z",
+   "value": "$92.8, 1m -15%",
+   "value_num": 92.85,
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-11-06T17:59:39Z",
-   "rubric_hit": "Brent $91.7 in $85–110 Watch band; 1m -16%",
+   "rubric_hit": "Brent $92.8 ≥ $85 Watch line",
    "basis": "measured",
-   "basis_detail": "Brent $=91.68; Brent 1m %=-15.73",
+   "basis_detail": "Brent $=92.85; Brent 1m %=-14.65",
    "assessed_at": "2026-11-17T05:57:18Z"
   },
   "eu-gas": {
@@ -431,12 +431,12 @@
     }
    ],
    "value": "€84/MWh",
-   "value_num": 84.0,
-   "checked_at": "2026-11-17T05:57:18Z",
+   "value_num": 84.38,
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "TTF €84/MWh > €70 Alert line",
+   "rubric_hit": "TTF €84.4/MWh > €70/MWh Alert line",
    "basis": "measured",
-   "basis_detail": "TTF €/MWh=84.05",
+   "basis_detail": "TTF €/MWh=84.38",
    "assessed_at": "2026-11-17T05:57:18Z"
   },
   "chokepoints": {
@@ -457,7 +457,7 @@
      "date": "2026-11-11"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Hormuz restricted; IRGC mine claims 15–16 Nov",
    "rubric_hit": "Hormuz traffic materially impeded: attacks on tankers and a US blockade of Iranian ports = Alert",
@@ -555,7 +555,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-11-07T05:46:46Z",
    "value": "No blockade or clash; Shenzhen talks 19 Nov",
    "rubric_hit": "Sustained large-scale PLA activity around Taiwan = Watch; no blockade, clash or severed channels",
@@ -582,7 +582,7 @@
      "date": "2026-11-16"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Estonia to shut Russia border from 1 Dec",
    "rubric_hit": "Sabotage attributed to Russia (GRU, Estonia, 14 Nov) = Watch; no Article 4 or attack on NATO territory",
@@ -609,7 +609,7 @@
      "date": "2026-11-14"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No IAEA access; Iran rejects inspections 14 Nov",
    "rubric_hit": "Inspector access curtailed: IAEA cannot verify Iran's enriched uranium stockpile (report 13 Nov) = Watch",
@@ -636,7 +636,7 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Last launch 4 Nov; troops in Russia",
    "rubric_hit": "Missile launch on 4 Nov and troops deployed to Russia = Watch; no nuclear test or clash",
@@ -658,7 +658,7 @@
      "date": "2026-11-12"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Mexico tariff doubling threatened 12 Nov",
    "rubric_hit": "New major tariff threatened between large economies (US on Mexico, 12 Nov) = Watch; nothing new in force",
@@ -729,34 +729,34 @@
   "russia-ukraine": {
    "status": "red",
    "trend": "flat",
-   "summary": "Russia launched 158 drones at Ukraine overnight into 16 Nov; strikes on energy sites left Dnipro without power",
-   "state": "Ukraine's air force said Russia launched 158 drones overnight into 16 Nov, 131 of which were downed, with impacts at 19 locations (ABC News). Through 16 Nov, local authorities reported deaths in Dnipro, Chernihiv and Balakliia; DTEK said Dnipro lost all power that evening, and the death toll from the 2 Nov strike on Komyshuvakha rose to 72 (Ukrinform). Russia said it downed 1,336 Ukrainian drones the same night. No ceasefire has been agreed, and sustained mass strikes on energy infrastructure keep the Alert.",
-   "for_you": "Severe power and heating outages are affecting Dnipro, Kharkiv, Poltava, Zaporizhzhia and Odesa regions. The FCDO advises against all travel to Ukraine. Airports in western Russia have faced temporary restrictions during drone attacks.",
+   "summary": "Russian strikes killed 14 across Ukraine in the day to 17 Nov, closing Kyiv's two main bridges and cutting power",
+   "state": "Local authorities reported that Russian attacks killed 14 people and injured 78 across Ukraine in the day to 17 Nov; strikes damaged and closed Kyiv's Northern and Southern bridges and killed two in Obolonskyi district (Kyiv Independent; Ukrinform). Ukraine's energy ministry imposed emergency power cuts in four regions on 17 Nov, and about 700,000 households in Dnipropetrovsk lost power. Russia said it downed 1,441 Ukrainian drones overnight as Ukraine targeted the Kerch Bridge (AP). Sustained mass strikes keep the Alert.",
+   "for_you": "Follow FCDO travel advice, which advises against all travel to Ukraine. Strikes on the grid mean power, heating and water cuts in Ukrainian cities as winter sets in.",
    "sources": [
     {
-     "title": "Dnipro left completely without power after Russian attack",
-     "url": "https://www.ukrinform.net/rubric-ato/4185289-dnipro-left-completely-without-power-after-russian-attack.html",
-     "date": "2026-11-16"
+     "title": "Kyiv Independent — Russian attacks kill 14, injure 78 across Ukraine over past day, hitting Kyiv's bridges",
+     "url": "https://kyivindependent.com/russian-attacks-kill-14-injure-78-across-ukraine-over-past-day-hitting-kyivs-southern-northern-bridges/",
+     "date": "2026-11-17"
     },
     {
-     "title": "Search and rescue operations completed in Komyshuvakha, death toll rises to 72",
-     "url": "https://www.ukrinform.net/rubric-ato/4185328-search-and-rescue-operations-completed-in-komyshuvakha-death-toll-rises-to-72.html",
-     "date": "2026-11-16"
+     "title": "Ukrinform — Emergency power outages affect four regions following Russian attacks",
+     "url": "https://www.ukrinform.net/rubric-ato/4185477-emergency-power-outages-affect-four-regions-following-russian-attacks.html",
+     "date": "2026-11-17"
     },
     {
-     "title": "Ukraine fires 1,336 drones into Russia in one of war's largest attacks, Moscow says",
-     "url": "https://abcnews.com/International/ukraine-fires-1336-drones-russia-wars-largest-attacks/story?id=138171397",
-     "date": "2026-11-16"
+     "title": "AP via KSAT — Russian air defenses down more than 1,400 Ukrainian drones as Kyiv hits a key Crimean bridge",
+     "url": "https://www.ksat.com/business/2026/11/17/russian-air-defenses-down-more-than-1400-ukrainian-drones-as-kyiv-hits-a-key-crimean-bridge/",
+     "date": "2026-11-17"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "158 drones 16 Nov; Dnipro city lost power",
-   "value_num": 69,
-   "rubric_hit": "Mass strikes: 158 drones on 16 Nov with energy outages; Komyshuvakha toll 72 = Alert",
+   "value": "14 killed in a day; Kyiv bridges hit 17 Nov",
+   "value_num": 14,
+   "rubric_hit": "Mass-casualty strikes on energy sites and cities = Alert",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-17T05:57:18Z"
+   "assessed_at": "2026-11-17T11:42:50Z"
   },
   "middle-east": {
    "status": "red",
@@ -781,7 +781,7 @@
      "date": "2026-11-16"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Houthi drones over Saudi 16 Nov; Gaza strikes",
    "rubric_hit": "Multi-front escalation: Houthi drones at Saudi Arabia (16 Nov), Iranian strikes on Bahrain, continued Gaza strikes",
@@ -907,7 +907,7 @@
      "date": "2026-11-16"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Indus treaty in abeyance; no LoC strike found",
    "rubric_hit": "Treaty suspension continuing (Indus Waters Treaty in abeyance) = Watch; no cross-border strikes",
@@ -928,7 +928,7 @@
      "date": "2026-11-17"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No US–Russia treaty limits since 5 Feb",
    "rubric_hit": "Arms-control lapse without replacement (New START expired 5 Feb) = Watch; no test or alert change",
@@ -949,7 +949,7 @@
      "date": "2026-11-16"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No Atlantic storms; none expected in 7 days",
    "rubric_hit": "No hurricane active and none forecast to form within 7 days (NHC, 16 Nov) = Normal",
@@ -981,10 +981,10 @@
      "date": "2026-11-17"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-11-16T23:43:07Z",
    "value": "GDACS orange: Cyclone Akvan (India)",
-   "rubric_hit": "GDACS orange cyclone alert (Akvan, India) = Watch; IMD forecasts landfall on 20 Nov, beyond 72h",
+   "rubric_hit": "GDACS cyclone: 0 red / 1 orange (Watch)",
    "basis": "measured",
    "basis_detail": "GDACS cyclone: 0 red / 1 orange",
    "assessed_at": "2026-11-17T05:57:18Z",
@@ -1030,10 +1030,10 @@
      "date": "2026-11-17"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
-   "rubric_hit": "No GDACS orange/red wildfire alerts = Normal",
+   "rubric_hit": "GDACS wildfire: 0 red / 0 orange",
    "basis": "measured",
    "basis_detail": "GDACS wildfire: 0 red / 0 orange",
    "assessed_at": "2026-11-17T05:57:18Z",
@@ -1052,10 +1052,10 @@
      "date": "2026-11-17"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
-   "rubric_hit": "No GDACS orange/red flood alerts = Normal",
+   "rubric_hit": "GDACS flood: 0 red / 0 orange",
    "basis": "measured",
    "basis_detail": "GDACS flood: 0 red / 0 orange",
    "assessed_at": "2026-11-17T05:57:18Z",
@@ -1081,9 +1081,9 @@
    ],
    "value": "Max M6.6, 1× M6+ (7d)",
    "value_num": 6.6,
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "Max M6.6 < M7, PAGER green = Normal",
+   "rubric_hit": "max magnitude 6.6 below the 7 Watch line",
    "basis": "measured",
    "basis_detail": "max magnitude=6.60",
    "assessed_at": "2026-11-17T05:57:18Z"
@@ -1152,9 +1152,9 @@
    ],
    "value": "G0 S0 R0",
    "value_num": 0,
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "NOAA G0 S0 R0 (24h max), forecast G1 = Normal",
+   "rubric_hit": "NOAA G0 S0 R0 (24h max)",
    "basis": "measured",
    "basis_detail": "NOAA G0 S0 R0 (24h max)",
    "assessed_at": "2026-11-17T05:57:18Z"
@@ -1287,7 +1287,7 @@
      "date": "2026-11-15"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Ebola PHEIC in force",
    "value_num": 1,
@@ -1319,7 +1319,7 @@
      "date": "2026-11-15"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "11,197 cases, 5,471 deaths (DRC, to 11 Nov)",
    "value_num": 11197,
@@ -1346,7 +1346,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Three dairy-linked US cases; no human spread",
    "rubric_hit": "Sporadic animal-to-human cases only: three dairy-linked cases in Washington, no human spread = Normal",
@@ -1458,7 +1458,7 @@
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No unexplained clusters",
    "rubric_hit": "No unexplained clusters under international investigation = Normal",
@@ -1484,7 +1484,7 @@
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-11-16T05:51:59Z",
    "value": "Belarus cloud firm ransomware, 13 Nov",
    "rubric_hit": "Ransomware disrupting a large service (ActiveCloud, 13 Nov) = Watch; no national-scale infrastructure attack",
@@ -1505,7 +1505,7 @@
      "date": "2026-11-16"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-11-16T11:42:47Z",
    "value": "No major outage since 13 Nov",
    "rubric_hit": "No major multi-hour outage in the past 48h = Normal",
@@ -1716,7 +1716,7 @@
      "date": "2026-11-16"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "10y 5.35% (16 Nov), 1m -9bp",
    "value_num": 5.35,
@@ -1748,11 +1748,11 @@
    "assessed_at": "2026-11-16T17:52:55Z"
   },
   "uk-weather": {
-   "status": "amber",
-   "trend": "flat",
-   "summary": "Seven Met Office yellow snow warnings for 17 Nov across southern Scotland, northern England and the Midlands",
-   "state": "At 05:41 UTC on 17 Nov the Met Office listed seven yellow warnings and no amber or red warning, all for snow on 17 Nov across Dumfries and Galloway, Lothian and Borders, North East and North West England, Yorkshire and Humber, and the East and West Midlands (Met Office). A yellow warning across this many regions counts as widespread, so Watch is kept.",
-   "for_you": "Expect possible travel delays on roads and rail in the warned areas on 17 Nov. Check Met Office warnings and National Highways or Traffic Scotland before travelling.",
+   "status": "green",
+   "trend": "down",
+   "summary": "Met Office lists no weather warnings at 11:40 UK on 17 Nov after the morning's yellow snow warnings lapsed",
+   "state": "The Met Office warnings feed listed no yellow, amber or red warnings at 11:40 UK on 17 Nov, after seven yellow snow warnings covering southern Scotland, northern England and the Midlands earlier that day had lapsed (Met Office). With no warnings in force, the level returns to Normal.",
+   "for_you": "Check the Met Office forecast and warnings before travelling, as cold weather continues and new warnings can be issued at short notice.",
    "sources": [
     {
      "title": "Met Office — UK weather warnings",
@@ -1760,14 +1760,14 @@
      "date": "2026-11-17"
     }
    ],
-   "value": "7 yellow snow warnings; none amber or red",
-   "checked_at": "2026-11-17T05:57:18Z",
-   "changed_at": "2026-11-16T05:51:59Z",
-   "value_num": 7,
-   "rubric_hit": "Widespread yellow warnings (7 snow warnings across Scotland, N England, Midlands) = Watch",
-   "basis": "judged",
-   "basis_detail": "raised above the data floor on reported events",
-   "assessed_at": "2026-11-17T05:57:18Z"
+   "value": "No Met Office warnings in force",
+   "checked_at": "2026-11-17T11:42:50Z",
+   "changed_at": "2026-11-17T11:42:50Z",
+   "value_num": 0,
+   "rubric_hit": "No Met Office warnings in force = Normal",
+   "basis": "measured",
+   "basis_detail": "worst warning: none",
+   "assessed_at": "2026-11-17T11:42:50Z"
   },
   "nhs-pressure": {
    "status": "amber",
@@ -1849,11 +1849,11 @@
    "status": "green",
    "trend": "flat",
    "value": "SOFR–IORB +0bp, repo $0.0bn",
-   "value_num": 0,
+   "value_num": 0.0,
    "summary": "SOFR level with the Fed's reserve rate on 13 Nov; Fed repo use near zero on 16 Nov",
    "state": "SOFR was 3.90% on 13 Nov, level with the Fed's 3.90% interest on reserves, and did not exceed it over five days, inside the 10bp Watch line (FRED). Fed overnight repo operations were near zero on 16 Nov. These readings show no sign of a dollar shortage.",
    "for_you": "Dollar money markets are functioning normally, so there is no sign of the funding squeeze that can spill into wider markets.",
-   "rubric_hit": "SOFR–IORB 5d max 0bp < 10bp; Fed repo 5d max $0.0bn < $15bn = Normal",
+   "rubric_hit": "SOFR–IORB 5d max 0bp below the 10bp Watch line; Fed repo ops 5d max $0bn below the $15bn Watch line",
    "sources": [
     {
      "title": "FRED — SOFR",
@@ -1866,7 +1866,7 @@
      "date": "2026-11-16"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "SOFR–IORB 5d max bp=0.00; Fed repo ops 5d max $bn=0.00",
@@ -1907,7 +1907,7 @@
    "summary": "Yen near ¥159.2 per dollar on 17 Nov, 0.3% weaker on the week; no intervention reported",
    "state": "The dollar was near ¥159.2 early on 17 Nov, up 0.3% on the week and 0.4% on the month, inside the 3% weekly and 6% monthly Watch lines (Yahoo Finance). The yen is about 2.9% stronger than its 52-week low of ¥163.9 per dollar. No Japanese currency intervention was reported in this run's searches.",
    "for_you": "The yen is weak but stable, so there is no sign of the sudden unwinding of yen-funded trades that can jolt global markets.",
-   "rubric_hit": "USD/JPY 1w +0.3% < 3% and 1m +0.4% < 6% = Normal",
+   "rubric_hit": "USD/JPY 1w move 0.31% below the 3% Watch line; USD/JPY 1m move 0.43% below the 6% Watch line",
    "sources": [
     {
      "title": "Yahoo Finance — USD/JPY",
@@ -1915,10 +1915,10 @@
      "date": "2026-11-17"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
-   "basis_detail": "USD/JPY 1w move %=0.28; USD/JPY 1m move %=0.40",
+   "basis_detail": "USD/JPY 1w move %=0.31; USD/JPY 1m move %=0.43",
    "assessed_at": "2026-11-17T05:57:18Z"
   },
   "jobless-claims": {
@@ -2049,7 +2049,7 @@
      "date": "2026-11-16"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
@@ -2081,7 +2081,7 @@
      "date": "2026-11-16"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
@@ -2197,7 +2197,7 @@
    "summary": "CISA added 2 known-exploited vulnerabilities in the seven days to 17 Nov, below the 11-a-week Watch line",
    "state": "CISA's Known Exploited Vulnerabilities catalogue gained two entries in the seven days to 17 Nov, both on 13 Nov for Check Point products and UnrealIRCd, and 33 in 30 days, below the 11-a-week Watch line (CISA). No emergency directive for mass exploitation of a ubiquitous product was found as of 17 Nov.",
    "for_you": "Organisations running Check Point products should check vendor advisories. The NCSC publishes guidance on patching known-exploited flaws.",
-   "rubric_hit": "2 KEV additions in 7 days < 11 = Normal",
+   "rubric_hit": "KEV additions 7d 2 below the 11 Watch line",
    "sources": [
     {
      "title": "CISA — Known Exploited Vulnerabilities catalogue",
@@ -2205,7 +2205,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-11-16T05:51:59Z",
    "basis": "measured",
    "basis_detail": "KEV additions 7d=2.00",
@@ -2268,12 +2268,12 @@
   "uk-floods": {
    "status": "green",
    "trend": "flat",
-   "value": "1 flood warning, 0 severe",
-   "value_num": 1,
+   "value": "0 severe, 4 flood warnings",
+   "value_num": 4,
    "summary": "One Environment Agency flood warning in England on 17 Nov, at Sandyford Brook, Stafford; no severe warnings",
    "state": "The Environment Agency had one flood warning in force in England at 05:41 UTC on 17 Nov, for Sandyford Brook in Stafford, plus five lower-level flood alerts and no severe flood warnings (Environment Agency). This is well within the Normal band of fewer than 10 flood warnings.",
    "for_you": "Flooding is possible only in the warned area. Check the GOV.UK flood warning service for your location.",
-   "rubric_hit": "0 severe and 1 flood warning < 10 = Normal",
+   "rubric_hit": "EA: 0 severe, 4 warnings",
    "sources": [
     {
      "title": "Environment Agency — Check for flooding",
@@ -2281,22 +2281,22 @@
      "date": "2026-11-17"
     }
    ],
-   "checked_at": "2026-11-17T05:57:18Z",
+   "checked_at": "2026-11-17T11:42:50Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
-   "basis_detail": "EA: 0 severe, 1 warnings",
+   "basis_detail": "EA: 0 severe, 4 warnings",
    "assessed_at": "2026-11-17T05:57:18Z"
   }
  },
- "headline": "Gulf war keeps oil, gas and shipping on Alert after Iranian drones at Bahrain and claimed Hormuz mine strikes on 15–16 Nov; Russia hit Ukraine's grid on 16 Nov; US stocks stay in Watch; Cyclone Akvan heads for India.",
- "generated_at": "2026-11-17T05:57:18Z",
+ "headline": "Russian strikes killed 14 across Ukraine by 17 Nov and closed Kyiv's main bridges. The US–Iran war keeps Hormuz restricted, and DR Congo's Ebola outbreak passed 11,000 cases. UK snow warnings lapsed.",
+ "generated_at": "2026-11-17T11:42:50Z",
  "world": {
   "score": 39,
   "band": "Unsettled",
   "status": "amber",
   "counts": {
-   "green": 29,
-   "amber": 48,
+   "green": 30,
+   "amber": 47,
    "red": 12
   },
   "by_domain": {
@@ -2310,7 +2310,7 @@
    "health": 50,
    "tech": 33,
    "humanitarian": 38,
-   "uk": 38
+   "uk": 31
   },
   "method": 2
  },
@@ -2340,7 +2340,7 @@
    "name": "Russia–Ukraine war and NATO's flank",
    "status": "red",
    "trend": "flat",
-   "summary": "Russia launched 158 drones at Ukraine on 16 Nov, cutting power to Dnipro; Estonia blamed Russia's GRU for a 14 Nov plot and will shut its border on 1 Dec.",
+   "summary": "Russian strikes killed 14 across Ukraine in the day to 17 Nov and closed Kyiv's two main bridges; Estonia will shut its Russian border on 1 Dec.",
    "signals": [
     "russia-ukraine",
     "russia-nato",
