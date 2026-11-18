@@ -1,8 +1,10 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-18T05:53Z · next run ~11:40 UK · stale after 2026-11-18T19:53Z (36h for daily-tier signals)
+as_of 2026-11-18T11:49Z · next run ~17:40 UK · stale after 2026-11-19T01:49Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
+- 2026-11-18T11:49Z Internet & cloud outages [outages]: NORMAL→WATCH — An Apple internal update took down iCloud, App Store and Apple Pay worldwide on 17 Nov; Chase had an outage on 16 Nov
+- 2026-11-18T11:49Z US dollar [dollar]: NORMAL→WATCH — Dollar index 103.8 on 18 Nov, a 52-week high, up 5.1% over three months, crossing the 5% Watch line
 - 2026-11-17T17:51Z Sovereign debt stress [sovereign-debt]: WATCH→ALERT — France–Bund 10-year spread widened to 155bp on 16 Nov, above the 150bp Alert line for most sessions since late Oct
 - 2026-11-17T11:42Z UK weather warnings [uk-weather]: WATCH→NORMAL — Met Office lists no weather warnings at 11:40 UK on 17 Nov after the morning's yellow snow warnings lapsed
 - 2026-11-16T23:43Z Pacific & Indian cyclones [other-cyclones]: NORMAL→WATCH — GDACS orange alert for Cyclone Akvan in the Bay of Bengal; IMD expects landfall in Andhra Pradesh by noon on 20 Nov

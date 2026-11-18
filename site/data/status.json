@@ -18,13 +18,13 @@
      "date": "2026-11-18"
     }
    ],
-   "value": "VIX 25.5, S&P -6.1%",
-   "value_num": 25.46,
-   "checked_at": "2026-11-18T05:53:01Z",
+   "value": "VIX 24.0, S&P -6.1%",
+   "value_num": 23.97,
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-11-16T17:52:48Z",
-   "rubric_hit": "VIX 25.5 in 20–30 Watch band; S&P drawdown 6.1% in 5–15% band",
+   "rubric_hit": "VIX 24 ≥ 20 Watch line; S&P drawdown 6.12% ≥ 5% Watch line",
    "basis": "measured",
-   "basis_detail": "VIX=25.46; S&P drawdown %=6.12",
+   "basis_detail": "VIX=23.97; S&P drawdown %=6.12",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "ftse": {
@@ -40,13 +40,13 @@
      "date": "2026-11-18"
     }
    ],
-   "value": "10,690, -2.0% from high",
-   "value_num": 10689.87,
-   "checked_at": "2026-11-18T05:53:01Z",
+   "value": "10,653, -2.4% from high",
+   "value_num": 10652.91,
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "Drawdown 2.0% < 5%; worst day -1.8% < 2.5% Watch line",
+   "rubric_hit": "FTSE drawdown 2.36% below the 5% Watch line",
    "basis": "measured",
-   "basis_detail": "FTSE drawdown %=2.02",
+   "basis_detail": "FTSE drawdown %=2.36",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "bond-volatility": {
@@ -68,10 +68,10 @@
     }
    ],
    "value": "MOVE 102, 10y 5.10%",
-   "value_num": 101.88,
-   "checked_at": "2026-11-18T05:53:01Z",
+   "value_num": 101.877,
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "MOVE 102 in 100–140 Watch band; 10y 1m move 1bp < 40bp",
+   "rubric_hit": "MOVE 102 ≥ 100 Watch line",
    "basis": "measured",
    "basis_detail": "MOVE=101.88; US10y 1m move bp=1.40",
    "assessed_at": "2026-11-18T05:53:01Z"
@@ -91,19 +91,19 @@
    ],
    "value": "HY OAS 3.34%",
    "value_num": 3.34,
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "HY OAS 3.34% < 4.0% Watch line; 1m change +3bp",
+   "rubric_hit": "HY OAS 3.34% below the 4% Watch line",
    "basis": "measured",
    "basis_detail": "HY OAS %=3.34",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "dollar": {
-   "status": "green",
+   "status": "amber",
    "trend": "up",
-   "summary": "Dollar index 103.7 on 18 Nov, a 52-week high, up 4.9% over three months, just inside the 5% Watch line",
-   "state": "The DXY dollar index was near 103.7 early on 18 Nov, its highest in a year, up 4.9% over three months and 0.5% on the week (Yahoo Finance). That is just inside the 5% three-month Watch line and well within the 90–108 range. SOFR was 3bp above the Fed's reserve rate on 16 Nov, showing no dollar funding strain (FRED).",
-   "for_you": "A stronger dollar raises the cost of dollar-priced imports such as fuel for countries with weaker currencies. This describes conditions only.",
+   "summary": "Dollar index 103.8 on 18 Nov, a 52-week high, up 5.1% over three months, crossing the 5% Watch line",
+   "state": "The DXY dollar index stood at 103.8 on 18 Nov, its highest in a year, up 5.1% over three months and 0.6% on the week, crossing the 5% three-month Watch line (Yahoo Finance). Trading Economics said on 16 Nov the rise to a near 20-month high came as markets priced a quarter-point Fed rise in December. The level remains well inside the 90–108 range and no dollar funding strain was found.",
+   "for_you": "A stronger dollar raises the local cost of dollar-priced goods such as fuel and commodities, and adds pressure on countries and firms with dollar debts.",
    "sources": [
     {
      "title": "Yahoo Finance — US Dollar Index (DX-Y.NYB)",
@@ -111,19 +111,19 @@
      "date": "2026-11-18"
     },
     {
-     "title": "FRED — Secured Overnight Financing Rate",
-     "url": "https://fred.stlouisfed.org/series/SOFR",
-     "date": "2026-11-18"
+     "title": "Trading Economics — Dollar Index Rises to 20-Month High",
+     "url": "https://tradingeconomics.com/united-states/currency/news/601669",
+     "date": "2026-11-16"
     }
    ],
-   "value": "DXY 103.7, 3m +4.9%",
-   "value_num": 103.67,
-   "checked_at": "2026-11-18T05:53:01Z",
-   "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "DXY 3m +4.9% < 5% Watch line; level 103.7 inside 90–108",
+   "value": "DXY 103.8, 3m +5.1%",
+   "value_num": 103.8,
+   "checked_at": "2026-11-18T11:49:35Z",
+   "changed_at": "2026-11-18T11:49:31Z",
+   "rubric_hit": "DXY 3m move +5.1% within 5–8% Watch band",
    "basis": "measured",
-   "basis_detail": "DXY 3m move %=4.93",
-   "assessed_at": "2026-11-18T05:53:01Z"
+   "basis_detail": "DXY 3m move %=5.05",
+   "assessed_at": "2026-11-18T11:49:35Z"
   },
   "banking-stress": {
    "status": "green",
@@ -144,10 +144,10 @@
     }
    ],
    "value": "STLFSI -0.49, CISS 0.01",
-   "value_num": -0.49,
-   "checked_at": "2026-11-18T05:53:01Z",
+   "value_num": -0.4918,
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "STLFSI -0.49 < 0 and CISS 0.005 < 0.25; no bank failure",
+   "rubric_hit": "STLFSI -0.49 below the 0 Watch line; ECB CISS 0.01 below the 0.25 Watch line",
    "basis": "measured",
    "basis_detail": "STLFSI=-0.49; ECB CISS=0.01",
    "assessed_at": "2026-11-18T05:53:01Z"
@@ -165,13 +165,13 @@
      "date": "2026-11-18"
     }
    ],
-   "value": "$3,798, 3m -18.9%",
-   "value_num": 3797.7,
-   "checked_at": "2026-11-18T05:53:01Z",
+   "value": "$3,770, 3m -19.4%",
+   "value_num": 3770.4,
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-11-10T17:53:51Z",
-   "rubric_hit": "3m fall 18.9% > 8% Watch line; weekly move 2.3% < 7% Alert",
+   "rubric_hit": "3m fall -19.4% (Watch)",
    "basis": "measured",
-   "basis_detail": "Gold 3m gain %=-18.86; 3m fall -18.9%",
+   "basis_detail": "Gold 3m gain %=-19.45; 3m fall -19.4%",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "crypto": {
@@ -187,13 +187,13 @@
      "date": "2026-11-18"
     }
    ],
-   "value": "BTC $64,665, -25% from high",
-   "value_num": 64664.57,
-   "checked_at": "2026-11-18T05:53:01Z",
+   "value": "BTC $64,120, -26% from high",
+   "value_num": 64120.04,
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-11-14T23:42:22Z",
-   "rubric_hit": "BTC drawdown 25.3% in 25–45% Watch band",
+   "rubric_hit": "BTC drawdown 26% ≥ 25% Watch line",
    "basis": "measured",
-   "basis_detail": "BTC drawdown %=25.33",
+   "basis_detail": "BTC drawdown %=25.96",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "us-recession": {
@@ -221,9 +221,9 @@
    ],
    "value": "Sahm 0.00, 10y–2y +0.30",
    "value_num": 0.0,
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "Sahm 0.00 < 0.30 Watch line",
+   "rubric_hit": "Sahm 0 below the 0.3 Watch line",
    "basis": "measured",
    "basis_detail": "Sahm=0.00",
    "assessed_at": "2026-11-18T05:53:01Z"
@@ -413,13 +413,13 @@
      "date": "2026-11-16"
     }
    ],
-   "value": "$92.7, 1m -15%",
-   "value_num": 92.7,
-   "checked_at": "2026-11-18T05:53:01Z",
+   "value": "$89.9, 1m -17%",
+   "value_num": 89.9,
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-11-06T17:59:39Z",
-   "rubric_hit": "Brent $92.7 in $85–110 Watch band; 1m change -15%",
+   "rubric_hit": "Brent $89.9 ≥ $85 Watch line",
    "basis": "measured",
-   "basis_detail": "Brent $=92.70; Brent 1m %=-14.81",
+   "basis_detail": "Brent $=89.90; Brent 1m %=-17.39",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "eu-gas": {
@@ -440,46 +440,46 @@
      "date": "2026-11-13"
     }
    ],
-   "value": "€86/MWh",
-   "value_num": 86.33,
-   "checked_at": "2026-11-18T05:53:01Z",
+   "value": "€84/MWh",
+   "value_num": 83.65,
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "TTF €86 > €70 Alert line",
+   "rubric_hit": "TTF €83.7/MWh > €70/MWh Alert line",
    "basis": "measured",
-   "basis_detail": "TTF €/MWh=86.33",
+   "basis_detail": "TTF €/MWh=83.65",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "chokepoints": {
    "status": "red",
    "trend": "flat",
-   "summary": "Windward counted 4 inbound and no outbound Hormuz transits on 17 Nov; an LPG carrier was hit twice off Khasab on 16 Nov",
-   "state": "Windward counted four inbound Hormuz transits, all with AIS off, and none outbound on 17 Nov, with a US blockade active; UKMTO recorded four tanker attacks in and near the strait from 11 to 16 Nov (Windward). An LPG carrier was struck about 2nm off Khasab on 16 Nov and caught fire; Oman evacuated 24 crew and India said two were in hospital (Reuters via Arab News, 17 Nov). Iran's Guards also claim several mine strikes since 15 Nov, unverified (AAP). Traffic remains materially impeded.",
-   "for_you": "Disruption at Hormuz affects oil, LNG and container shipping, with knock-on effects on prices and delivery times. Seafarers should follow UKMTO and flag-state guidance.",
+   "summary": "An ADNOC vessel was attacked in Hormuz on 17 Nov, with one missing and 11 injured; Hormuz traffic remains minimal",
+   "state": "ADNOC Logistics & Services said one of its vessels was attacked while transiting Hormuz on 17 Nov; one crew member is missing and 11 were injured (The National, 18 Nov). Oman said on 18 Nov it evacuated 24 people from a burning tanker off Musandam (Gulf News). UKMTO reported the tanker On Phoenix hit by a projectile on 16 Nov, while Iran's claims of mine strikes remain unverified (Riviera). Windward counted four inbound and no outbound transits on 17 Nov under a US blockade.",
+   "for_you": "Shipping and energy disruption in the Gulf tends to raise fuel, freight and delivery costs. Check FCDO travel advice before travelling to the region.",
    "sources": [
     {
-     "title": "Windward — Daily intelligence: Strait of Hormuz",
-     "url": "https://insights.windward.ai/",
+     "title": "The National — Adnoc L&S ship attacked in Strait of Hormuz with one crew member missing",
+     "url": "https://www.thenationalnews.com/business/energy/2026/11/18/adnoc-ls-ship-attacked-at-strait-of-hormuz-with-one-crew-member-missing/",
      "date": "2026-11-18"
     },
     {
-     "title": "Arab News (Reuters) — Crew abandons gas tanker off Oman after being hit by projectile",
-     "url": "https://www.arabnews.com/middle-east/crew-abandons-gas-tanker-off-oman-after-being-hit-by-projectile-sources-say-3012536",
-     "date": "2026-11-17"
+     "title": "Gulf News — Iran attacks Bahrain, ADNOC vessel hit in Hormuz",
+     "url": "https://gulfnews.com/world/mena/middle-east-war-iran-attacks-bahrain-kuwait-drone-threats-keep-gulf-on-high-alert-as-us-hits-irans-qeshm-1.500751444",
+     "date": "2026-11-18"
     },
     {
-     "title": "Newcastle Herald (AAP) — Two more oil tankers hit mines in Strait of Hormuz",
-     "url": "https://www.newcastleherald.com.au/story/9392037/two-more-oil-tankers-hit-mines-in-strait-of-hormuz/",
-     "date": "2026-11-16"
+     "title": "Riviera — Tanker hit off Oman as attacks and mine claims continue",
+     "url": "https://www.rivieramm.com/news-content-hub/tanker-hit-off-oman-as-attacks-and-mine-claims-in-and-around-strait-of-hormuz-continue-90591",
+     "date": "2026-11-17"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Hormuz 4 inbound, 0 outbound (17 Nov)",
+   "value": "ADNOC vessel hit 17 Nov; 1 missing",
    "rubric_hit": "Hormuz traffic materially impeded = Alert",
    "basis": "judged",
    "basis_detail": "",
    "value_num": 4,
-   "assessed_at": "2026-11-18T05:53:01Z"
+   "assessed_at": "2026-11-18T11:49:35Z"
   },
   "freight": {
    "status": "red",
@@ -580,7 +580,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-11-07T05:46:46Z",
    "value": "No blockade or clash; Shenzhen talks 19 Nov",
    "rubric_hit": "No blockade or clash; Watch kept for PLA activity and trade controls (hysteresis)",
@@ -607,7 +607,7 @@
      "date": "2026-11-15"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Estonia to shut Russia border from 1 Dec",
    "rubric_hit": "Sabotage attributed to Russia = Watch; no Article 4 or clash",
@@ -634,7 +634,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No IAEA access; 60% stockpile unverified",
    "rubric_hit": "60% enrichment and inspector access curtailed = Watch",
@@ -661,7 +661,7 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Last launch 4 Nov",
    "rubric_hit": "Missile launch on 4 Nov within 2 weeks = Watch",
@@ -688,7 +688,7 @@
      "date": "2026-11-12"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Mexico tariff threat restated 16 Nov",
    "rubric_hit": "New major tariffs threatened between large economies = Watch",
@@ -754,34 +754,34 @@
   "russia-ukraine": {
    "status": "red",
    "trend": "flat",
-   "summary": "Seven Russian ballistic missiles struck Kyiv's two Dnipro bridges on 17 Nov; power cut in three regions",
-   "state": "President Zelensky said seven Russian ballistic missiles struck Kyiv's two main Dnipro bridges overnight into 17 Nov; both were closed and Mayor Klitschko said water and heating supplies were disrupted (Kyiv Post). Zelensky reported significant power outages in Dnipropetrovsk, Kharkiv and Zaporizhzhia regions after grid strikes (Kyiv Independent). Ukraine struck the Crimean Bridge for a second day on 17 Nov (The Moscow Times). Sustained mass strikes on infrastructure keep the Alert.",
-   "for_you": "Travel to Ukraine is advised against by the FCDO. Expect continued effects on European energy and grain markets.",
+   "summary": "Russia launched 141 drones overnight into 18 Nov, 126 downed; a jet drone reached Kyiv after the 17 Nov bridge strikes",
+   "state": "Ukraine's air force said Russia launched 141 drones overnight into 18 Nov and 126 were downed (Ukrinform). A jet-powered drone reached Kyiv on the morning of 18 Nov, with debris falling in Darnytskyi district (Censor.NET). This follows the 17 Nov strike by seven ballistic missiles on Kyiv's two main Dnipro bridges, which disrupted water and heating (Kyiv Independent). Sustained mass strikes on infrastructure keep the Alert.",
+   "for_you": "Check FCDO travel advice: it advises against all travel to Ukraine and parts of Russia.",
    "sources": [
     {
-     "title": "Kyiv Post — 7 Russian ballistic missiles hit Kyiv's 2 key bridges",
-     "url": "https://www.kyivpost.com/post/90362",
-     "date": "2026-11-17"
+     "title": "Ukrinform — Air defence neutralises 126 Russian drones used to attack Ukraine overnight",
+     "url": "https://www.ukrinform.net/rubric-ato/4185845-air-defence-neutralises-126-russian-drones-used-to-attack-ukraine-overnight.html",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "Censor.NET — Russia attacked Kyiv with jet-powered drone",
+     "url": "https://censor.net/en/news/4034308/kyiv-under-attack-by-jet-powered-uavs-on-november-18-what-is-known-about-the-consequences",
+     "date": "2026-11-18"
     },
     {
      "title": "Kyiv Independent — 2 key bridges in Kyiv struck in massive Russian ballistic missile attack",
      "url": "https://kyivindependent.com/key-bridges-in-kyiv-struck-in-massive-russian-ballistic-missile-attack-across-ukraine/",
      "date": "2026-11-17"
-    },
-    {
-     "title": "The Moscow Times — Ukraine strikes Crimean Bridge for second day as Russia pounds Kyiv bridges",
-     "url": "https://www.themoscowtimes.com/2026/11/17/ukraine-strikes-crimean-bridge-for-second-day-as-russia-pounds-kyiv-bridges-a94281",
-     "date": "2026-11-17"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "7 missiles hit Kyiv bridges 17 Nov",
-   "value_num": 14,
-   "rubric_hit": "Mass strikes on infrastructure, major escalation = Alert",
+   "value": "141 drones launched 17–18 Nov",
+   "value_num": 141,
+   "rubric_hit": "Mass strikes on infrastructure = significant escalation (Alert)",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-18T05:53:01Z"
+   "assessed_at": "2026-11-18T11:49:35Z"
   },
   "middle-east": {
    "status": "red",
@@ -806,7 +806,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Gaza deaths 17 Nov; Iran strikes on Bahrain",
    "rubric_hit": "Multi-front escalation and cross-border strikes = Alert",
@@ -937,7 +937,7 @@
      "date": "2026-09-01"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Indus treaty in abeyance; no LoC strike found",
    "rubric_hit": "Treaty suspension in force = Watch; no cross-border strikes",
@@ -963,7 +963,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No US–Russia treaty limits since Feb",
    "rubric_hit": "Arms-control lapse without replacement = Watch",
@@ -984,7 +984,7 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No Atlantic storms",
    "rubric_hit": "No hurricane active or threatening land = Normal",
@@ -1016,10 +1016,10 @@
      "date": "2026-11-16"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-11-16T23:43:07Z",
    "value": "GDACS orange: Cyclone Akvan (India)",
-   "rubric_hit": "GDACS orange cyclone alert = Watch",
+   "rubric_hit": "GDACS cyclone: 0 red / 1 orange (Watch)",
    "basis": "measured",
    "basis_detail": "GDACS cyclone: 0 red / 1 orange",
    "assessed_at": "2026-11-18T05:53:01Z",
@@ -1060,10 +1060,10 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
-   "rubric_hit": "No GDACS orange/red wildfire alert = Normal",
+   "rubric_hit": "GDACS wildfire: 0 red / 0 orange",
    "basis": "measured",
    "basis_detail": "GDACS wildfire: 0 red / 0 orange",
    "assessed_at": "2026-11-18T05:53:01Z",
@@ -1082,10 +1082,10 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
-   "rubric_hit": "No GDACS orange/red flood alert = Normal",
+   "rubric_hit": "GDACS flood: 0 red / 0 orange",
    "basis": "measured",
    "basis_detail": "GDACS flood: 0 red / 0 orange",
    "assessed_at": "2026-11-18T05:53:01Z",
@@ -1111,9 +1111,9 @@
    ],
    "value": "Max M6.6, 1× M6+ (7d)",
    "value_num": 6.6,
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "No M7+ or PAGER orange in 7 days = Normal",
+   "rubric_hit": "max magnitude 6.6 below the 7 Watch line",
    "basis": "measured",
    "basis_detail": "max magnitude=6.60",
    "assessed_at": "2026-11-18T05:53:01Z"
@@ -1187,9 +1187,9 @@
    ],
    "value": "G0 S0 R1",
    "value_num": 0,
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "G0 S0 R1 inside G0–G2, S0–S1, R0–R2 Normal band",
+   "rubric_hit": "NOAA G0 S0 R1 (24h max)",
    "basis": "measured",
    "basis_detail": "NOAA G0 S0 R1 (24h max)",
    "assessed_at": "2026-11-18T05:53:01Z"
@@ -1332,7 +1332,7 @@
      "date": "2026-11-15"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Ebola PHEIC in force",
    "value_num": 1,
@@ -1359,7 +1359,7 @@
      "date": "2026-11-12"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "11,200+ cases, 5,500 deaths (DRC, 15 Nov)",
    "value_num": 11200,
@@ -1386,7 +1386,7 @@
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Three dairy-linked US cases; no human spread",
    "rubric_hit": "Sporadic animal-to-human cases only = Normal",
@@ -1488,7 +1488,7 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No unexplained clusters",
    "rubric_hit": "No unexplained cluster under investigation = Normal",
@@ -1514,7 +1514,7 @@
      "date": "2026-11-16"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-11-16T05:51:59Z",
    "value": "Check Point flaw exploited; listed 13 Nov",
    "rubric_hit": "Mass-exploited flaw in a widely used product = Watch",
@@ -1523,26 +1523,31 @@
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "outages": {
-   "status": "green",
-   "trend": "flat",
-   "summary": "No major multi-hour cloud, CDN or payments outage found in the 48h to 18 Nov; Microsoft restored services on 14 Nov",
-   "state": "Microsoft said its services were fully restored on 14 Nov after an hours-long global outage (AP via PBS). Searches found no multi-hour cloud, CDN or payments outage in the 48 hours to 05:40 UTC on 18 Nov, so Normal holds.",
-   "for_you": "No action needed. Provider status pages give the latest during any outage.",
+   "status": "amber",
+   "trend": "up",
+   "summary": "An Apple internal update took down iCloud, App Store and Apple Pay worldwide on 17 Nov; Chase had an outage on 16 Nov",
+   "state": "Apple said an internal update caused worldwide outages on the morning of 17 Nov hitting iCloud sign-in, the App Store and Apple Pay; some account services were still affected hours later, and Apple denied a cyberattack (IBTimes UK). JPMorgan Chase online accounts and transactions failed on 16 Nov, which Chase blamed on a software bug (The National News Desk). Officials say the outages appear unrelated. A payments-linked outage of several hours within 48h sets Watch.",
+   "for_you": "Keep an alternative way to pay and check providers' status pages during outages.",
    "sources": [
     {
-     "title": "PBS NewsHour (AP) — Microsoft says services fully restored after global outage",
-     "url": "https://www.pbs.org/newshour/world/microsoft-says-services-fully-restored-after-global-outage",
-     "date": "2026-11-14"
+     "title": "IBTimes UK — Apple denies cyberattack after internal update causes worldwide outages",
+     "url": "https://www.ibtimes.co.uk/apple-internal-update-caused-worldwide-service-outages-1832960",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "KOMO (National News Desk) — A wave of outages hits US companies and government systems",
+     "url": "https://komonews.com/news/nation-world/list-a-wave-of-outages-hits-us-companies-and-government-systems-in-a-matter-of-days-faa-bank-microsoft",
+     "date": "2026-11-17"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
-   "changed_at": "2026-11-16T11:42:47Z",
-   "value": "No major outage since 14 Nov",
-   "rubric_hit": "No major multi-hour outage in 48h = Normal",
+   "checked_at": "2026-11-18T11:49:35Z",
+   "changed_at": "2026-11-18T11:49:31Z",
+   "value": "Apple services down 17 Nov",
+   "rubric_hit": "Major payments outage > 2h in past 48h (Apple Pay, 17 Nov) = Watch",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-18T05:53:01Z",
-   "value_num": 0
+   "assessed_at": "2026-11-18T11:49:35Z",
+   "value_num": 1
   },
   "cables-gnss": {
    "status": "amber",
@@ -1736,29 +1741,29 @@
   "gilts": {
    "status": "amber",
    "trend": "flat",
-   "summary": "10-year gilt yield rose above 5.35% on 16 Nov, its highest since 23 Oct; 2-year above 5%; UK CPI due 18 Nov",
-   "state": "The 10-year gilt yield rose above 5.35% on 16 Nov, its highest since 23 Oct, and the two-year yield passed 5%, a three-year high (Trading Economics). Markets priced about an 80% chance of a December Bank Rate rise after the November increase, up from 50% at the start of the previous week after September GDP grew 0.2%. The monthly move is inside the 40bp line, but long-dated yields remain elevated ahead of UK inflation data on 18 Nov, so Watch is kept.",
-   "for_you": "Higher gilt yields tend to feed through to fixed-rate mortgage pricing over weeks. This describes market conditions only.",
+   "summary": "UK inflation rose to 3.6% in October, below the BoE forecast; markets cut December rate-rise odds to 80%",
+   "state": "ONS data on 18 Nov showed UK CPI at 3.6% in October, up from 3.5% and a one-year high, but below the Bank of England's 3.7% forecast; core held at 2.8% (Reuters via RTÉ). Markets trimmed the chance of a December Bank Rate rise to 80% from 90%. The 10-year yield reached above 5.35% on 16 Nov; the monthly move stays inside the 40bp line but long yields remain elevated, so Watch is kept.",
+   "for_you": "High gilt yields feed through to fixed mortgage pricing and government borrowing costs; those remortgaging are most exposed.",
    "sources": [
     {
-     "title": "Trading Economics — UK gilts sell off on rate-hike bets",
-     "url": "https://tradingeconomics.com/united-kingdom/government-bond-yield/news/601531",
-     "date": "2026-11-16"
+     "title": "RTÉ — UK inflation rises to one-year high but markets trim rate hike bets",
+     "url": "https://www.rte.ie/news/business/2026/1118/1599633-uk-inflation-figures/",
+     "date": "2026-11-18"
     },
     {
-     "title": "Trading Economics — UK gilt yields climb on expectations of further BoE hikes",
-     "url": "https://tradingeconomics.com/united-kingdom/government-bond-yield/news/601112",
-     "date": "2026-11-13"
+     "title": "The Intermediary — Inflation rises to 3.6% in October",
+     "url": "https://theintermediary.co.uk/2026/11/inflation-rises-to-3-6-in-october-ons/",
+     "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "10y above 5.35% (16 Nov)",
-   "value_num": 5.35,
-   "rubric_hit": "30y gilt near multi-decade highs = Watch; 10y 1m move < 40bp",
+   "value": "10y near 5.3%; CPI 3.6% (Oct)",
+   "value_num": 5.3,
+   "rubric_hit": "30y gilt near multi-decade highs; 10y monthly move < 40bp",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-18T05:53:01Z"
+   "assessed_at": "2026-11-18T11:49:35Z"
   },
   "uk-energy-cap": {
    "status": "amber",
@@ -1796,10 +1801,10 @@
     }
    ],
    "value": "No warnings",
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-11-17T11:42:50Z",
    "value_num": 0,
-   "rubric_hit": "No warnings in force = Normal",
+   "rubric_hit": "worst warning: none",
    "basis": "measured",
    "basis_detail": "worst warning: none",
    "assessed_at": "2026-11-18T05:53:01Z"
@@ -1893,7 +1898,7 @@
    "summary": "SOFR 3bp above the Fed's reserve rate on 16 Nov; Fed repo use near zero on 17 Nov",
    "state": "SOFR was 3.93% on 16 Nov, 3bp above the Fed's 3.90% interest on reserves, and did not exceed that gap over five days, inside the 10bp Watch line (FRED). Fed overnight repo operations were about $0.1bn on 17 Nov, far below the $15bn line. These readings show no sign of a dollar shortage.",
    "for_you": "Calm funding markets mean banks can borrow dollars overnight without strain. This describes conditions only.",
-   "rubric_hit": "SOFR–IORB 3bp < 10bp; repo $0.1bn < $15bn",
+   "rubric_hit": "SOFR–IORB 5d max 3bp below the 10bp Watch line; Fed repo ops 5d max $0.1bn below the $15bn Watch line",
    "sources": [
     {
      "title": "FRED — Secured Overnight Financing Rate",
@@ -1906,7 +1911,7 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "SOFR–IORB 5d max bp=3.00; Fed repo ops 5d max $bn=0.10",
@@ -1943,11 +1948,11 @@
    "status": "green",
    "trend": "flat",
    "value": "¥159.3/$, 1w -0.3%",
-   "value_num": 159.31,
+   "value_num": 159.296,
    "summary": "Yen near ¥159.3 per dollar on 18 Nov, slightly firmer on the week; no intervention found",
    "state": "The dollar was near ¥159.3 early on 18 Nov, down 0.3% on the week and up 0.7% on the month, inside the 3% weekly and 6% monthly Watch lines (Yahoo Finance). The yen is about 2.8% stronger than its 52-week low of ¥163.9 per dollar. No Japanese currency intervention was found in this run's searches.",
    "for_you": "Sharp yen moves can unwind borrowing in yen and ripple through global markets; current moves are small. This describes conditions only.",
-   "rubric_hit": "USD/JPY 1w 0.3% < 3%; 1m 0.7% < 6%",
+   "rubric_hit": "USD/JPY 1w move 0.27% below the 3% Watch line; USD/JPY 1m move 0.65% below the 6% Watch line",
    "sources": [
     {
      "title": "Yahoo Finance — USD/JPY (JPY=X)",
@@ -1955,10 +1960,10 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
-   "basis_detail": "USD/JPY 1w move %=0.26; USD/JPY 1m move %=0.66",
+   "basis_detail": "USD/JPY 1w move %=0.27; USD/JPY 1m move %=0.65",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "jobless-claims": {
@@ -2089,7 +2094,7 @@
      "date": "2026-09-29"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
@@ -2098,34 +2103,34 @@
   },
   "gulf-iran": {
    "status": "red",
-   "trend": "flat",
-   "value": "Iran drones at US radar in Bahrain 16 Nov",
-   "summary": "Iran's Guards claimed drone attacks on US sites in Bahrain on 13, 15 and 16 Nov; US moved a third carrier to the region",
-   "state": "US Central Command confirmed Iran's Guards launched two drones at Bahrain overnight into 13 Nov, both intercepted, after Trump said on 12 Nov he would renew strikes (Reuters via Jerusalem Post). Iran said it targeted a US radar in Bahrain on 15 Nov (Al Jazeera) and claimed a six-drone attack on 16 Nov that Bahrain said it destroyed; the US moved a third carrier into the region on 15 Nov (Drop Site News). Active strikes between states keep the Alert.",
-   "for_you": "Travellers should follow FCDO travel advice for Bahrain, Iran and the Gulf, which can change at short notice. Energy prices remain exposed to the conflict.",
-   "rubric_hit": "Active strikes between states and attacks on shipping = Alert",
+   "trend": "up",
+   "value": "US struck Qeshm missile site 17 Nov",
+   "summary": "US aircraft struck an IRGC missile site on Qeshm on 17 Nov; Iran says drones hit US Patriot systems in Kuwait on 18 Nov",
+   "state": "A US official said US aircraft struck an IRGC missile launch site on Qeshm Island on 17 Nov in self-defence after Iranian drones targeted a US radar in Bahrain; CENTCOM said the drones were intercepted (ANI via Republic). Iran's army said on 18 Nov its drones hit Patriot systems at Ali Al-Salem air base in Kuwait, and the GCC asked the UN Security Council to act (Gulf News). Active strikes between states keep the Alert.",
+   "for_you": "Check FCDO travel advice before travelling to the Gulf; airlines have extended cancellations to some Saudi airports into late November.",
+   "rubric_hit": "Active strikes between states = Alert",
    "sources": [
     {
-     "title": "Jerusalem Post (Reuters) — US CENTCOM confirms Iran targeted US radar in Bahrain",
-     "url": "https://jpost.com/middle-east/iran-news/article-914794",
-     "date": "2026-11-13"
+     "title": "Republic World (ANI) — US strikes IRGC missile launch site on Qeshm Island",
+     "url": "https://www.republicworld.com/world-news/us-strikes-irgc-missile-launch-site-on-irans-qeshm-island-after-attack-on-bahrain-base-2026-11-18-141272",
+     "date": "2026-11-18"
     },
     {
-     "title": "Al Jazeera — Iran says it targets US radar in Bahrain. What do we know?",
-     "url": "https://www.aljazeera.com/news/2026/11/15/iran-says-it-targets-us-radar-in-bahrain-what-do-we-know",
-     "date": "2026-11-15"
+     "title": "Gulf News — Iran attacks Bahrain, Kuwait drone threats; US hits Qeshm",
+     "url": "https://gulfnews.com/world/mena/middle-east-war-iran-attacks-bahrain-kuwait-drone-threats-keep-gulf-on-high-alert-as-us-hits-irans-qeshm-1.500751444",
+     "date": "2026-11-18"
     },
     {
-     "title": "Drop Site News — Oil tankers burning in Hormuz",
-     "url": "https://www.dropsitenews.com/p/oil-tankers-hormuz-senate-leadership-mexican-journalist",
-     "date": "2026-11-16"
+     "title": "Khaleej Times — Middle East war live updates, 18 November 2026",
+     "url": "https://www.khaleejtimes.com/world/mena/us-israel-iran-saudi-arabia-yemen-war-live-updates-november-18-2026",
+     "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-18T05:53:01Z"
+   "assessed_at": "2026-11-18T11:49:35Z"
   },
   "other-conflicts": {
    "status": "amber",
@@ -2242,7 +2247,7 @@
    "summary": "CISA added 3 known-exploited vulnerabilities in the seven days to 18 Nov, below the 11-a-week Watch line",
    "state": "CISA's Known Exploited Vulnerabilities catalogue gained three entries in the seven days to 18 Nov: Perforce Puppet Enterprise on 17 Nov, and Check Point products and UnrealIRCd on 13 Nov; 34 were added in 30 days, below the 11-a-week Watch line (CISA). No emergency directive for mass exploitation of a ubiquitous product was found as of 18 Nov.",
    "for_you": "Organisations should patch catalogued flaws promptly, following CISA and NCSC guidance.",
-   "rubric_hit": "3 KEV additions in 7 days < 11 Watch line",
+   "rubric_hit": "KEV additions 7d 3 below the 11 Watch line",
    "sources": [
     {
      "title": "CISA — Known Exploited Vulnerabilities Catalog",
@@ -2250,7 +2255,7 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-11-16T05:51:59Z",
    "basis": "measured",
    "basis_detail": "KEV additions 7d=3.00",
@@ -2318,12 +2323,12 @@
   "uk-floods": {
    "status": "green",
    "trend": "flat",
-   "value": "0 severe, 2 flood warnings",
-   "value_num": 2,
+   "value": "No flood warnings",
+   "value_num": 0,
    "summary": "Two Environment Agency flood warnings in England on 18 Nov, at Scarborough and Coleshill; no severe warnings",
    "state": "The Environment Agency had two flood warnings in force in England at 05:41 UTC on 18 Nov, for the North Sea at Scarborough Sandside and the River Cole at Coleshill, plus 22 lower-level flood alerts and no severe flood warnings (Environment Agency). This is well within the Normal band of fewer than 10 flood warnings.",
    "for_you": "People in affected areas should check the Environment Agency's flood warning service and sign up for alerts.",
-   "rubric_hit": "0 severe, 2 warnings < 10 = Normal",
+   "rubric_hit": "EA: 0 severe, 0 warnings",
    "sources": [
     {
      "title": "Environment Agency — Check for flooding",
@@ -2331,26 +2336,26 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T05:53:01Z",
+   "checked_at": "2026-11-18T11:49:35Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
-   "basis_detail": "EA: 0 severe, 2 warnings",
+   "basis_detail": "EA: 0 severe, 0 warnings",
    "assessed_at": "2026-11-18T05:53:01Z"
   }
  },
- "headline": "The US–Iran war keeps Gulf shipping and European gas at Alert, with more tankers hit near Hormuz to 16 Nov. Russia struck Kyiv's main bridges on 17 Nov. Trump, Xi and Putin meet in Shenzhen on 19 Nov.",
- "generated_at": "2026-11-18T05:53:01Z",
+ "headline": "US aircraft struck an Iranian missile site on Qeshm on 17 Nov as Iran targeted US bases in Bahrain and Kuwait; an ADNOC vessel was hit in Hormuz. Russia keeps up drone strikes on Ukraine. UK inflation rose to 3.6%.",
+ "generated_at": "2026-11-18T11:49:35Z",
  "world": {
-  "score": 39,
-  "band": "Unsettled",
+  "score": 41,
+  "band": "Strained",
   "status": "amber",
   "counts": {
-   "green": 30,
-   "amber": 46,
+   "green": 28,
+   "amber": 48,
    "red": 13
   },
   "by_domain": {
-   "markets": 23,
+   "markets": 27,
    "economy": 21,
    "energy": 62,
    "geopolitics": 43,
@@ -2358,7 +2363,7 @@
    "hazards": 15,
    "climate": 50,
    "health": 50,
-   "tech": 33,
+   "tech": 42,
    "humanitarian": 38,
    "uk": 31
   },
@@ -2370,7 +2375,7 @@
    "name": "US–Iran war and Gulf energy shock",
    "status": "red",
    "trend": "up",
-   "summary": "Iran fired drones at US sites in Bahrain on 13, 15 and 16 Nov; an LPG tanker was hit off Khasab on 16 Nov and Iran says more tankers hit mines.",
+   "summary": "US struck an IRGC missile site on Qeshm on 17 Nov; Iran targeted US bases in Bahrain and Kuwait; an ADNOC vessel was hit in Hormuz on 17 Nov.",
    "signals": [
     "gulf-iran",
     "middle-east",
@@ -2390,7 +2395,7 @@
    "name": "Russia–Ukraine war and NATO's flank",
    "status": "red",
    "trend": "flat",
-   "summary": "Seven Russian ballistic missiles hit Kyiv's two main bridges on 17 Nov; Estonia will shut its Russian border on 1 Dec after a sabotage plot.",
+   "summary": "Russian missiles hit Kyiv's bridges on 17 Nov and 141 drones were launched overnight into 18 Nov; Estonia shuts its Russian border on 1 Dec.",
    "signals": [
     "russia-ukraine",
     "russia-nato",
@@ -2449,7 +2454,7 @@
    "name": "Energy shock feeding inflation",
    "status": "amber",
    "trend": "up",
-   "summary": "US prices rose 0.4% in Oct after 3.7% y/y in Sep; a December Fed rise is near fully priced; BoE at 4%; UK October CPI due 18 Nov.",
+   "summary": "UK CPI rose to 3.6% in Oct (18 Nov); US prices rose 0.4% in Oct; a December Fed rise is near fully priced; dollar at a 52-week high.",
    "signals": [
     "us-inflation",
     "central-banks",

@@ -1,5 +1,5 @@
 # Major cyber incidents — WATCH (stable)
-id cyber · Technology & Cyber · horizon acute · checked 2026-11-18T05:53Z · at this level since 2026-11-16T05:51Z · stale after 2026-11-18T19:53Z
+id cyber · Technology & Cyber · horizon acute · checked 2026-11-18T11:49Z · text written 2026-11-18T05:53Z · at this level since 2026-11-16T05:51Z · stale after 2026-11-19T01:49Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/cyber
 
 Value: Check Point flaw exploited; listed 13 Nov

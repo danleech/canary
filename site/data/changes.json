@@ -1,5 +1,21 @@
 [
  {
+  "t": "2026-11-18T11:49:31Z",
+  "id": "outages",
+  "name": "Internet & cloud outages",
+  "from": "green",
+  "to": "amber",
+  "reason": "An Apple internal update took down iCloud, App Store and Apple Pay worldwide on 17 Nov; Chase had an outage on 16 Nov"
+ },
+ {
+  "t": "2026-11-18T11:49:31Z",
+  "id": "dollar",
+  "name": "US dollar",
+  "from": "green",
+  "to": "amber",
+  "reason": "Dollar index 103.8 on 18 Nov, a 52-week high, up 5.1% over three months, crossing the 5% Watch line"
+ },
+ {
   "t": "2026-11-17T17:51:12Z",
   "id": "sovereign-debt",
   "name": "Sovereign debt stress",

@@ -1,9 +1,9 @@
 # Earthquakes & tsunami — NORMAL (stable)
-id earthquakes · Weather & Hazards · horizon acute · checked 2026-11-18T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-18T19:53Z
+id earthquakes · Weather & Hazards · horizon acute · checked 2026-11-18T11:49Z · text written 2026-11-18T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-19T01:49Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/earthquakes
 
 Value: Max M6.6, 1× M6+ (7d)
-Rated on: No M7+ or PAGER orange in 7 days = Normal
+Rated on: max magnitude 6.6 below the 7 Watch line
 Basis: measured — Set by a fixed rule applied to open data (max magnitude = 6.60). Anyone can reproduce it from the public metrics file.
 
 M6.6 quake south-west of Tual, Indonesia, on 16 Nov rated PAGER green; no M7+ in seven days

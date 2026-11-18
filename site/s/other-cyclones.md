@@ -1,9 +1,9 @@
 # Pacific & Indian cyclones — WATCH (worsening)
-id other-cyclones · Weather & Hazards · horizon acute · checked 2026-11-18T05:53Z · at this level since 2026-11-16T23:43Z · stale after 2026-11-18T19:53Z
+id other-cyclones · Weather & Hazards · horizon acute · checked 2026-11-18T11:49Z · text written 2026-11-18T05:53Z · at this level since 2026-11-16T23:43Z · stale after 2026-11-19T01:49Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/other-cyclones
 
 Value: GDACS orange: Cyclone Akvan (India)
-Rated on: GDACS orange cyclone alert = Watch
+Rated on: GDACS cyclone: 0 red / 1 orange (Watch)
 Basis: measured — Set by a fixed rule applied to open data (GDACS cyclone: 0 red / 1 orange). Anyone can reproduce it from the public metrics file.
 
 Cyclone Akvan under GDACS orange alert; IMD forecast landfall between Nellore and Tuni around noon on 20 Nov

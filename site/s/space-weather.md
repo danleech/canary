@@ -1,9 +1,9 @@
 # Space weather — NORMAL (stable)
-id space-weather · Weather & Hazards · horizon acute · checked 2026-11-18T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-18T19:53Z
+id space-weather · Weather & Hazards · horizon acute · checked 2026-11-18T11:49Z · text written 2026-11-18T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-19T01:49Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/space-weather
 
 Value: G0 S0 R1
-Rated on: G0 S0 R1 inside G0–G2, S0–S1, R0–R2 Normal band
+Rated on: NOAA G0 S0 R1 (24h max)
 Basis: measured — Set by a fixed rule applied to open data (NOAA G0 S0 R1 (24h max)). Anyone can reproduce it from the public metrics file.
 
 NOAA scales peaked at a minor R1 radio blackout in the 24 hours to 18 Nov; forecast peaks at a minor G1 storm
