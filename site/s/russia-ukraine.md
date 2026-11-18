@@ -1,17 +1,17 @@
 # Russia–Ukraine — ALERT (stable)
-id russia-ukraine · Armed Conflict · horizon acute · checked 2026-11-17T23:41Z · text written 2026-11-17T11:42Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-18T13:41Z
+id russia-ukraine · Armed Conflict · horizon acute · checked 2026-11-18T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-18T19:53Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/russia-ukraine
 
-Value: 14 killed in a day; Kyiv bridges hit 17 Nov
-Rated on: Mass-casualty strikes on energy sites and cities = Alert
+Value: 7 missiles hit Kyiv bridges 17 Nov
+Rated on: Mass strikes on infrastructure, major escalation = Alert
 Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 Situation: Russia–Ukraine war and NATO's flank [russia-ukraine-war]
 
-Russian strikes killed 14 across Ukraine in the day to 17 Nov, closing Kyiv's two main bridges and cutting power
+Seven Russian ballistic missiles struck Kyiv's two Dnipro bridges on 17 Nov; power cut in three regions
 
-Why it's at this level: Local authorities reported that Russian attacks killed 14 people and injured 78 across Ukraine in the day to 17 Nov; strikes damaged and closed Kyiv's Northern and Southern bridges and killed two in Obolonskyi district (Kyiv Independent; Ukrinform). Ukraine's energy ministry imposed emergency power cuts in four regions on 17 Nov, and about 700,000 households in Dnipropetrovsk lost power. Russia said it downed 1,441 Ukrainian drones overnight as Ukraine targeted the Kerch Bridge (AP). Sustained mass strikes keep the Alert.
+Why it's at this level: President Zelensky said seven Russian ballistic missiles struck Kyiv's two main Dnipro bridges overnight into 17 Nov; both were closed and Mayor Klitschko said water and heating supplies were disrupted (Kyiv Post). Zelensky reported significant power outages in Dnipropetrovsk, Kharkiv and Zaporizhzhia regions after grid strikes (Kyiv Independent). Ukraine struck the Crimean Bridge for a second day on 17 Nov (The Moscow Times). Sustained mass strikes on infrastructure keep the Alert.
 
-What this means for you: Follow FCDO travel advice, which advises against all travel to Ukraine. Strikes on the grid mean power, heating and water cuts in Ukrainian cities as winter sets in.
+What this means for you: Travel to Ukraine is advised against by the FCDO. Expect continued effects on European energy and grain markets.
 
 Why it matters: Europe's largest war since 1945 shapes European security, energy, food exports and defence budgets.
 What moves it: Front-line offensives, strike campaigns on energy, Western aid, negotiations, nuclear plant safety.
@@ -19,6 +19,6 @@ What moves it: Front-line offensives, strike campaigns on energy, Western aid, n
 Rubric — Alert: Significant escalation — major new offensive, mass-casualty strikes, a nuclear-plant safety incident, or new state involvement. | Watch: Active war at sustained intensity, or a ceasefire under strain. | Normal: Ceasefire or peace deal holding.
 
 Sources:
-- Kyiv Independent — Russian attacks kill 14, injure 78 across Ukraine over past day, hitting Kyiv's bridges (2026-11-17) https://kyivindependent.com/russian-attacks-kill-14-injure-78-across-ukraine-over-past-day-hitting-kyivs-southern-northern-bridges/
-- Ukrinform — Emergency power outages affect four regions following Russian attacks (2026-11-17) https://www.ukrinform.net/rubric-ato/4185477-emergency-power-outages-affect-four-regions-following-russian-attacks.html
-- AP via KSAT — Russian air defenses down more than 1,400 Ukrainian drones as Kyiv hits a key Crimean bridge (2026-11-17) https://www.ksat.com/business/2026/11/17/russian-air-defenses-down-more-than-1400-ukrainian-drones-as-kyiv-hits-a-key-crimean-bridge/
+- Kyiv Post — 7 Russian ballistic missiles hit Kyiv's 2 key bridges (2026-11-17) https://www.kyivpost.com/post/90362
+- Kyiv Independent — 2 key bridges in Kyiv struck in massive Russian ballistic missile attack (2026-11-17) https://kyivindependent.com/key-bridges-in-kyiv-struck-in-massive-russian-ballistic-missile-attack-across-ukraine/
+- The Moscow Times — Ukraine strikes Crimean Bridge for second day as Russia pounds Kyiv bridges (2026-11-17) https://www.themoscowtimes.com/2026/11/17/ukraine-strikes-crimean-bridge-for-second-day-as-russia-pounds-kyiv-bridges-a94281

@@ -1,16 +1,16 @@
 # Major cyber incidents — WATCH (stable)
-id cyber · Technology & Cyber · horizon acute · checked 2026-11-17T23:41Z · text written 2026-11-17T05:57Z · at this level since 2026-11-16T05:51Z · stale after 2026-11-18T13:41Z
+id cyber · Technology & Cyber · horizon acute · checked 2026-11-18T05:53Z · at this level since 2026-11-16T05:51Z · stale after 2026-11-18T19:53Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/cyber
 
-Value: Belarus cloud firm ransomware, 13 Nov
-Rated on: Ransomware disrupting a large service (ActiveCloud, 13 Nov) = Watch; no national-scale infrastructure attack
-Basis: judged — The AI assessor's reading of 2 sources from 1 outlet against the rubric. Check the sources before relying on it.
+Value: Check Point flaw exploited; listed 13 Nov
+Rated on: Mass-exploited flaw in a widely used product = Watch
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-A ransomware attack on a Belarusian cloud provider disrupted businesses for days; no national-scale attack found
+CISA lists an exploited Check Point flaw; 16 Nov reports say gateways were wiped through it; no national-scale attack
 
-Why it's at this level: On 13 Nov a ransomware attack on Belarusian cloud provider ActiveCloud was reported to have disrupted client businesses for several days (The Record). It follows a second wave of attacks on supermarket refrigeration controllers in six European countries on 2 Nov, which no agency has attributed, after France blamed an IRGC-linked unit for October attacks on about 700 sites (The Record). No national-scale attack on power, health or finance was found as of 17 Nov, so Watch holds.
+Why it's at this level: CISA added a Check Point multi-product vulnerability to its known-exploited catalogue on 13 Nov (CISA). An industry news round-up on 16 Nov reported gateways wiped through the flaws and Maersk confirming data theft after a ransom demand; neither is independently confirmed here (Innovate Cybersecurity). No national-scale attack on power, health or finance was found as of 18 Nov, so Watch holds.
 
-What this means for you: Businesses using remotely managed building or refrigeration controls are most exposed. The NCSC publishes guidance for organisations on securing such systems and reporting incidents.
+What this means for you: Organisations using Check Point gateways should follow vendor and NCSC advisories. Individuals should watch for phishing that follows data breaches.
 
 Why it matters: Ransomware and state hacking now shut down hospitals, retailers, carmakers and airports for weeks.
 What moves it: Ransomware gangs, state actors, zero-days, supply-chain compromises.
@@ -18,5 +18,5 @@ What moves it: Ransomware gangs, state actors, zero-days, supply-chain compromis
 Rubric — Alert: National-scale attack on critical infrastructure (power, health, finance), or a destructive state-attributed attack. | Watch: Ransomware or attack disrupting a large company or critical service, or a mass-exploited zero-day. | Normal: No major incidents disrupting critical services this week.
 
 Sources:
-- Ransomware attack on Belarusian cloud firm disrupts businesses for days (2026-11-13) https://therecord.media/belarus-cloud-provider-activecloud-ransomware-attack
-- Second wave of suspected cyberattacks hits supermarket freezers across Europe (2026-11-02) https://therecord.media/cyberattack-grocery-freezers-europe
+- CISA — Known Exploited Vulnerabilities Catalog (2026-11-18) https://www.cisa.gov/known-exploited-vulnerabilities-catalog
+- Innovate Cybersecurity — Top 10 cybersecurity news, 16 November 2026 (2026-11-16) https://innovatecybersecurity.com/security-threat-advisory/top-10-cybersecurity-news-november-16-2026-and-more/

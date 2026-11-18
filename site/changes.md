@@ -1,7 +1,7 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-17T23:41Z · next run ~05:40 UK · stale after 2026-11-18T13:41Z (36h for daily-tier signals)
+as_of 2026-11-18T05:53Z · next run ~11:40 UK · stale after 2026-11-18T19:53Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
-Basis: 27 measured from open data, 14 follow a published figure, 48 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
+Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 - 2026-11-17T17:51Z Sovereign debt stress [sovereign-debt]: WATCH→ALERT — France–Bund 10-year spread widened to 155bp on 16 Nov, above the 150bp Alert line for most sessions since late Oct
 - 2026-11-17T11:42Z UK weather warnings [uk-weather]: WATCH→NORMAL — Met Office lists no weather warnings at 11:40 UK on 17 Nov after the morning's yellow snow warnings lapsed
@@ -18,5 +18,3 @@ Basis: 27 measured from open data, 14 follow a published figure, 48 are AI judge
 - 2026-11-13T05:53Z Internet & cloud outages [outages]: NORMAL→WATCH — A Microsoft 365 outage on 12 Nov cut Outlook and Teams for about 10 hours worldwide; Microsoft says not a cyberattack
 - 2026-11-11T17:56Z Sovereign debt stress [sovereign-debt]: ALERT→WATCH — France–Bund 10-year spread about 147bp on 10 Nov, back below the 150bp Alert line from a 174.6bp peak on 22 Oct
 - 2026-11-11T17:56Z US equity stress [equity-stress]: WATCH→NORMAL — VIX 17.7 and S&P 500 2.4% below its high on 11 Nov, both inside Normal lines after a 3.8% weekly rise
-- 2026-11-11T05:51Z Major cyber incidents [cyber]: WATCH→ALERT — France on 9 Nov blamed an IRGC unit for attacks on refrigeration in about 700 stores that caused at least 15 fires
-- 2026-11-10T23:42Z Exploited vulnerabilities [exploited-vulns]: NORMAL→WATCH — CISA added 12 known-exploited vulnerabilities in seven days to 10 Nov, above the 11-a-week Watch line
