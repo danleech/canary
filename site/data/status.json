@@ -18,13 +18,13 @@
      "date": "2026-11-18"
     }
    ],
-   "value": "VIX 23.9, S&P -6.2%",
-   "value_num": 23.87,
-   "checked_at": "2026-11-18T17:47:08Z",
+   "value": "VIX 24.6, S&P -6.6%",
+   "value_num": 24.56,
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-11-16T17:52:48Z",
-   "rubric_hit": "VIX 23.9 ≥ 20 Watch line; S&P drawdown 6.22% ≥ 5% Watch line",
+   "rubric_hit": "VIX 24.6 ≥ 20 Watch line; S&P drawdown 6.59% ≥ 5% Watch line",
    "basis": "measured",
-   "basis_detail": "VIX=23.87; S&P drawdown %=6.22",
+   "basis_detail": "VIX=24.56; S&P drawdown %=6.59",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "ftse": {
@@ -42,7 +42,7 @@
    ],
    "value": "10,551, -3.3% from high",
    "value_num": 10551.17,
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "FTSE drawdown 3.29% below the 5% Watch line",
    "basis": "measured",
@@ -67,13 +67,13 @@
      "date": "2026-11-18"
     }
    ],
-   "value": "MOVE 99, 10y 5.07%",
-   "value_num": 98.5091,
-   "checked_at": "2026-11-18T17:47:08Z",
+   "value": "MOVE 98, 10y 5.07%",
+   "value_num": 98.1535,
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "MOVE 98.5 has not yet cleared the 90 exit line, so Watch holds",
+   "rubric_hit": "MOVE 98.2 has not yet cleared the 90 exit line, so Watch holds",
    "basis": "measured",
-   "basis_detail": "MOVE=98.51; US10y 1m move bp=7.60",
+   "basis_detail": "MOVE=98.15; US10y 1m move bp=8.00",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "credit-spreads": {
@@ -91,7 +91,7 @@
    ],
    "value": "HY OAS 3.43%",
    "value_num": 3.43,
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "HY OAS 3.43% below the 4% Watch line",
    "basis": "measured",
@@ -117,12 +117,12 @@
     }
    ],
    "value": "DXY 103.8, 3m +5.1%",
-   "value_num": 103.8,
-   "checked_at": "2026-11-18T17:47:08Z",
+   "value_num": 103.813,
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-11-18T11:49:31Z",
-   "rubric_hit": "DXY 3m move 5.06% ≥ 5% Watch line",
+   "rubric_hit": "DXY 3m move 5.07% ≥ 5% Watch line",
    "basis": "measured",
-   "basis_detail": "DXY 3m move %=5.06",
+   "basis_detail": "DXY 3m move %=5.07",
    "assessed_at": "2026-11-18T11:49:35Z"
   },
   "banking-stress": {
@@ -145,7 +145,7 @@
    ],
    "value": "STLFSI -0.87, CISS 0.01",
    "value_num": -0.8655,
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "STLFSI -0.87 below the 0 Watch line; ECB CISS 0.01 below the 0.25 Watch line",
    "basis": "measured",
@@ -165,13 +165,13 @@
      "date": "2026-11-18"
     }
    ],
-   "value": "$3,750, 3m -19.9%",
-   "value_num": 3750.0,
-   "checked_at": "2026-11-18T17:47:08Z",
+   "value": "$3,739, 3m -20.1%",
+   "value_num": 3738.9,
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-11-10T17:53:51Z",
-   "rubric_hit": "3m fall -19.9% (Watch)",
+   "rubric_hit": "3m fall -20.1% (Watch)",
    "basis": "measured",
-   "basis_detail": "Gold 3m gain %=-19.88; 3m fall -19.9%",
+   "basis_detail": "Gold 3m gain %=-20.12; 3m fall -20.1%",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "crypto": {
@@ -187,13 +187,13 @@
      "date": "2026-11-18"
     }
    ],
-   "value": "BTC $63,191, -27% from high",
-   "value_num": 63191.48,
-   "checked_at": "2026-11-18T17:47:08Z",
+   "value": "BTC $62,896, -27% from high",
+   "value_num": 62896.01,
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-11-14T23:42:22Z",
-   "rubric_hit": "BTC drawdown 27% ≥ 25% Watch line",
+   "rubric_hit": "BTC drawdown 27.4% ≥ 25% Watch line",
    "basis": "measured",
-   "basis_detail": "BTC drawdown %=27.03",
+   "basis_detail": "BTC drawdown %=27.37",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "us-recession": {
@@ -219,9 +219,9 @@
      "date": "2026-11-18"
     }
    ],
-   "value": "Sahm 0.00, 10y–2y +0.30",
+   "value": "Sahm 0.00, 10y–2y +0.27",
    "value_num": 0.0,
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "Sahm 0 below the 0.3 Watch line",
    "basis": "measured",
@@ -413,13 +413,13 @@
      "date": "2026-11-16"
     }
    ],
-   "value": "$88.5, 1m -19%",
-   "value_num": 88.46,
-   "checked_at": "2026-11-18T17:47:08Z",
+   "value": "$88.9, 1m -18%",
+   "value_num": 88.88,
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-11-06T17:59:39Z",
-   "rubric_hit": "Brent $88.5 ≥ $85 Watch line",
+   "rubric_hit": "Brent $88.9 ≥ $85 Watch line",
    "basis": "measured",
-   "basis_detail": "Brent $=88.46; Brent 1m %=-18.71",
+   "basis_detail": "Brent $=88.88; Brent 1m %=-18.32",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "eu-gas": {
@@ -442,7 +442,7 @@
    ],
    "value": "€81/MWh",
    "value_num": 81.105,
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "TTF €81.1/MWh > €70/MWh Alert line",
    "basis": "measured",
@@ -472,7 +472,7 @@
      "date": "2026-11-17"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "ADNOC vessel hit 17 Nov; 1 missing",
    "rubric_hit": "Hormuz traffic materially impeded = Alert",
@@ -575,7 +575,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-11-07T05:46:46Z",
    "value": "No blockade or clash; Shenzhen talks 19 Nov",
    "rubric_hit": "No blockade or clash; Watch kept for PLA activity and trade controls (hysteresis)",
@@ -602,7 +602,7 @@
      "date": "2026-11-15"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Estonia to shut Russia border from 1 Dec",
    "rubric_hit": "Sabotage attributed to Russia = Watch; no Article 4 or clash",
@@ -629,7 +629,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No IAEA access; 60% stockpile unverified",
    "rubric_hit": "60% enrichment and inspector access curtailed = Watch",
@@ -656,7 +656,7 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Last launch 4 Nov",
    "rubric_hit": "Missile launch on 4 Nov within 2 weeks = Watch",
@@ -683,7 +683,7 @@
      "date": "2026-11-12"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Mexico tariff threat restated 16 Nov",
    "rubric_hit": "New major tariffs threatened between large economies = Watch",
@@ -744,65 +744,55 @@
   "russia-ukraine": {
    "status": "red",
    "trend": "flat",
-   "summary": "Russia launched 141 drones overnight into 18 Nov, 126 downed; a jet drone reached Kyiv after the 17 Nov bridge strikes",
-   "state": "Ukraine's air force said Russia launched 141 drones overnight into 18 Nov and 126 were downed (Ukrinform). A jet-powered drone reached Kyiv on the morning of 18 Nov, with debris falling in Darnytskyi district (Censor.NET). This follows the 17 Nov strike by seven ballistic missiles on Kyiv's two main Dnipro bridges, which disrupted water and heating (Kyiv Independent). Sustained mass strikes on infrastructure keep the Alert.",
-   "for_you": "Check FCDO travel advice: it advises against all travel to Ukraine and parts of Russia.",
+   "summary": "Russian attacks killed five and injured 15 across Ukraine in the day to 18 Nov, hitting energy sites in three regions",
+   "state": "Russian attacks killed five people and injured 15 across Ukraine in the day to 18 Nov, damaging energy infrastructure in Kyiv, Mykolaiv and Rivne oblasts; a strike in Rivne cut power to more than 80 settlements (Kyiv Independent). Ukraine's air force said Russia launched 141 drones overnight into 18 Nov and 126 were downed (Ukrinform). This follows the 17 Nov missile strike on Kyiv's Dnipro bridges. Sustained mass strikes on infrastructure keep the Alert.",
+   "for_you": "Follow FCDO travel advice, which advises against all travel to Ukraine. Strikes on energy sites can cause power and heating cuts as winter sets in.",
    "sources": [
     {
-     "title": "Ukrinform — Air defence neutralises 126 Russian drones used to attack Ukraine overnight",
-     "url": "https://www.ukrinform.net/rubric-ato/4185845-air-defence-neutralises-126-russian-drones-used-to-attack-ukraine-overnight.html",
+     "title": "Kyiv Independent — Russian attacks kill 5, injure 15 across Ukraine over past day",
+     "url": "https://kyivindependent.com/russian-attacks-kill-5-injure-15-across-ukraine-over-past-day-as-russia-continues-energy-assault/",
      "date": "2026-11-18"
     },
     {
-     "title": "Censor.NET — Russia attacked Kyiv with jet-powered drone",
-     "url": "https://censor.net/en/news/4034308/kyiv-under-attack-by-jet-powered-uavs-on-november-18-what-is-known-about-the-consequences",
+     "title": "Ukrinform — Air defence neutralises 126 Russian drones",
+     "url": "https://www.ukrinform.net/rubric-ato/4185864-air-defence-neutralises-126-russian-drones-used-to-attack-ukraine-overnight.html",
      "date": "2026-11-18"
-    },
-    {
-     "title": "Kyiv Independent — 2 key bridges in Kyiv struck in massive Russian ballistic missile attack",
-     "url": "https://kyivindependent.com/key-bridges-in-kyiv-struck-in-massive-russian-ballistic-missile-attack-across-ukraine/",
-     "date": "2026-11-17"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "141 drones launched 17–18 Nov",
+   "value": "141 drones 17–18 Nov; 5 killed in a day",
    "value_num": 141,
-   "rubric_hit": "Mass strikes on infrastructure = significant escalation (Alert)",
+   "rubric_hit": "Mass strikes on energy infrastructure (141 drones, 18 Nov) = significant escalation, Alert",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-18T11:49:35Z"
+   "assessed_at": "2026-11-18T23:42:24Z"
   },
   "middle-east": {
    "status": "red",
-   "trend": "flat",
-   "summary": "Israeli fire killed four in Gaza on 17 Nov, medics said; Iran fired drones at Bahrain on 13, 15 and 16 Nov",
-   "state": "Israeli fire killed four people in Gaza, including a six-year-old boy, on 17 Nov, according to medics (Reuters via US News). Bahrain issued its first threat alerts since September on 15 Nov as Iran's Guards said they attacked a US base (Khaleej Times), after a 13 Nov drone attack that US Central Command confirmed (Reuters via Jerusalem Post). Repeated cross-border strikes in the Gulf alongside continuing deaths in Gaza keep the Alert.",
-   "for_you": "Travellers should follow FCDO travel advice for Israel, the Palestinian territories, Lebanon and the Gulf states, which can change at short notice.",
+   "trend": "up",
+   "summary": "Israeli tanks crossed the Yellow Line into central Gaza on 18 Nov, the first such advance since the Oct 2025 ceasefire",
+   "state": "On 18 Nov Israeli tanks advanced along Salahudeen road near Nuseirat and Bureij camps, which residents called the first advance across the Yellow Line since the October 2025 ceasefire; the military said it was targeting Hamas infrastructure and Hamas called it a ceasefire violation (Reuters via CP24). Hospital officials said three Palestinians were killed in the operation (Al Jazeera). Alongside Iran's strikes on Gulf states, this keeps the Alert.",
+   "for_you": "Follow FCDO travel advice for Israel, the Occupied Palestinian Territories, Lebanon and the Gulf, which can change at short notice.",
    "sources": [
     {
-     "title": "US News (Reuters) — Israeli fire kills four, including a 6-year-old boy, in Gaza, medics say",
-     "url": "https://www.usnews.com/news/world/articles/2026-11-17/israeli-fire-kills-four-including-a-6-year-old-boy-in-gaza-medics-say",
-     "date": "2026-11-17"
+     "title": "CP24 (Reuters) — Israel launches ground operation in central Gaza, dozens flee",
+     "url": "https://www.cp24.com/news/world/2026/11/18/israel-launches-ground-operation-in-central-gaza-dozens-flee/",
+     "date": "2026-11-18"
     },
     {
-     "title": "Khaleej Times — Bahrain issues first threat alerts since September as Iran says it attacked US base",
-     "url": "https://www.khaleejtimes.com/world/gulf/bahrain-issues-threat-alerts-irgc-claim-attack-us-base",
-     "date": "2026-11-15"
-    },
-    {
-     "title": "Jerusalem Post (Reuters) — US CENTCOM confirms Iran targeted US radar in Bahrain",
-     "url": "https://jpost.com/middle-east/iran-news/article-914794",
-     "date": "2026-11-13"
+     "title": "Al Jazeera — Palestinians flee refugee camp as Israel begins operation in central Gaza",
+     "url": "https://www.aljazeera.com/news/2026/11/18/palestinians-flee-refugee-camp-as-israel-begins-operation-in-central-gaza",
+     "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Gaza deaths 17 Nov; Iran strikes on Bahrain",
-   "rubric_hit": "Multi-front escalation and cross-border strikes = Alert",
+   "value": "Israeli ground raid in central Gaza 18 Nov",
+   "rubric_hit": "Multi-front escalation: Gaza ground raid (18 Nov) plus Iran–Gulf strikes = Alert",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-18T05:53:01Z"
+   "assessed_at": "2026-11-18T23:42:24Z"
   },
   "sudan": {
    "status": "red",
@@ -928,7 +918,7 @@
      "date": "2026-09-01"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Indus treaty in abeyance; no LoC strike found",
    "rubric_hit": "Treaty suspension in force = Watch; no cross-border strikes",
@@ -954,7 +944,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No US–Russia treaty limits since Feb",
    "rubric_hit": "Arms-control lapse without replacement = Watch",
@@ -975,7 +965,7 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No Atlantic storms",
    "rubric_hit": "No hurricane active or threatening land = Normal",
@@ -1007,7 +997,7 @@
      "date": "2026-11-16"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-11-16T23:43:07Z",
    "value": "GDACS orange: Cyclone Akvan (India)",
    "rubric_hit": "GDACS cyclone: 0 red / 1 orange (Watch)",
@@ -1056,7 +1046,7 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
    "rubric_hit": "GDACS wildfire: 0 red / 0 orange",
@@ -1078,7 +1068,7 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
    "rubric_hit": "GDACS flood: 0 red / 0 orange",
@@ -1105,9 +1095,9 @@
      "date": "2026-11-18"
     }
    ],
-   "value": "Max M6.6, 1× M6+ (7d)",
+   "value": "Max M6.6, 2× M6+ (7d)",
    "value_num": 6.6,
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "max magnitude 6.6 below the 7 Watch line",
    "basis": "measured",
@@ -1176,13 +1166,13 @@
      "date": "2026-11-18"
     }
    ],
-   "value": "G0 S0 R1",
+   "value": "G0 S0 R0",
    "value_num": 0,
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "NOAA G0 S0 R1 (24h max)",
+   "rubric_hit": "NOAA G0 S0 R0 (24h max)",
    "basis": "measured",
-   "basis_detail": "NOAA G0 S0 R1 (24h max)",
+   "basis_detail": "NOAA G0 S0 R0 (24h max)",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "global-temp": {
@@ -1323,7 +1313,7 @@
      "date": "2026-11-15"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Ebola PHEIC in force",
    "value_num": 1,
@@ -1350,7 +1340,7 @@
      "date": "2026-11-12"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "11,200+ cases, 5,500 deaths (DRC, 15 Nov)",
    "value_num": 11200,
@@ -1377,7 +1367,7 @@
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Three dairy-linked US cases; no human spread",
    "rubric_hit": "Sporadic animal-to-human cases only = Normal",
@@ -1489,7 +1479,7 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No unexplained clusters",
    "rubric_hit": "No unexplained cluster under investigation = Normal",
@@ -1515,7 +1505,7 @@
      "date": "2026-11-16"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-11-16T05:51:59Z",
    "value": "Check Point flaw exploited; listed 13 Nov",
    "rubric_hit": "Mass-exploited flaw in a widely used product = Watch",
@@ -1541,7 +1531,7 @@
      "date": "2026-11-17"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-11-18T11:49:31Z",
    "value": "Apple services down 17 Nov",
    "rubric_hit": "Major payments outage > 2h in past 48h (Apple Pay, 17 Nov) = Watch",
@@ -1757,7 +1747,7 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "10y near 5.3%; CPI 3.6% (Oct)",
    "value_num": 5.3,
@@ -1812,7 +1802,7 @@
     }
    ],
    "value": "No warnings",
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-11-17T11:42:50Z",
    "value_num": 0,
    "rubric_hit": "worst warning: none",
@@ -1927,7 +1917,7 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "SOFR–IORB 5d max bp=3.00; Fed repo ops 5d max $bn=0.10",
@@ -1963,12 +1953,12 @@
   "yen-carry": {
    "status": "green",
    "trend": "flat",
-   "value": "¥159.3/$, 1w -0.3%",
-   "value_num": 159.291,
+   "value": "¥159.4/$, 1w -0.2%",
+   "value_num": 159.403,
    "summary": "Yen near ¥159.3 per dollar on 18 Nov, slightly firmer on the week; no intervention found",
    "state": "The dollar was near ¥159.3 early on 18 Nov, down 0.3% on the week and up 0.7% on the month, inside the 3% weekly and 6% monthly Watch lines (Yahoo Finance). The yen is about 2.8% stronger than its 52-week low of ¥163.9 per dollar. No Japanese currency intervention was found in this run's searches.",
    "for_you": "Sharp yen moves can unwind borrowing in yen and ripple through global markets; current moves are small. This describes conditions only.",
-   "rubric_hit": "USD/JPY 1w move 0.28% below the 3% Watch line; USD/JPY 1m move 0.65% below the 6% Watch line",
+   "rubric_hit": "USD/JPY 1w move 0.21% below the 3% Watch line; USD/JPY 1m move 0.72% below the 6% Watch line",
    "sources": [
     {
      "title": "Yahoo Finance — USD/JPY (JPY=X)",
@@ -1976,10 +1966,10 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
-   "basis_detail": "USD/JPY 1w move %=0.28; USD/JPY 1m move %=0.65",
+   "basis_detail": "USD/JPY 1w move %=0.21; USD/JPY 1m move %=0.72",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "jobless-claims": {
@@ -2105,7 +2095,7 @@
      "date": "2026-09-29"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
@@ -2115,33 +2105,28 @@
   "gulf-iran": {
    "status": "red",
    "trend": "up",
-   "value": "US struck Qeshm missile site 17 Nov",
-   "summary": "US aircraft struck an IRGC missile site on Qeshm on 17 Nov; Iran says drones hit US Patriot systems in Kuwait on 18 Nov",
-   "state": "A US official said US aircraft struck an IRGC missile launch site on Qeshm Island on 17 Nov in self-defence after Iranian drones targeted a US radar in Bahrain; CENTCOM said the drones were intercepted (ANI via Republic). Iran's army said on 18 Nov its drones hit Patriot systems at Ali Al-Salem air base in Kuwait, and the GCC asked the UN Security Council to act (Gulf News). Active strikes between states keep the Alert.",
-   "for_you": "Check FCDO travel advice before travelling to the Gulf; airlines have extended cancellations to some Saudi airports into late November.",
-   "rubric_hit": "Active strikes between states = Alert",
+   "value": "Iran fired on Kuwait, Bahrain 18 Nov",
+   "summary": "Iran targeted a US base in Kuwait and sites in Bahrain on 18 Nov after the US struck a missile site on Qeshm on 17 Nov",
+   "state": "Early on 18 Nov Iran targeted Ali Al Salem air base in Kuwait and launched attacks on Bahrain; both said they intercepted the weapons and reported no damage or casualties (AP via Korea Times). This followed a US strike on an IRGC missile site on Qeshm Island on 17 Nov, which a US official called self-defence after Iran's third attempted strike on a US installation in under five days (CBS News). Active strikes between states keep the Alert.",
+   "for_you": "Follow FCDO travel advice for Kuwait, Bahrain and the wider Gulf, which can change at short notice. Regional airspace and flights may be disrupted.",
+   "rubric_hit": "Active strikes between states (US–Iran, 17–18 Nov) = Alert",
    "sources": [
     {
-     "title": "Republic World (ANI) — US strikes IRGC missile launch site on Qeshm Island",
-     "url": "https://www.republicworld.com/world-news/us-strikes-irgc-missile-launch-site-on-irans-qeshm-island-after-attack-on-bahrain-base-2026-11-18-141272",
+     "title": "Korea Times (AP) — Iran widens Gulf attacks by targeting a US air base in Kuwait and sites in Bahrain",
+     "url": "https://www.koreatimes.co.kr/world/20261119/iran-widens-gulf-attacks-by-targeting-a-us-air-base-in-kuwait-and-sites-in-bahrain",
      "date": "2026-11-18"
     },
     {
-     "title": "Gulf News — Iran attacks Bahrain, Kuwait drone threats; US hits Qeshm",
-     "url": "https://gulfnews.com/world/mena/middle-east-war-iran-attacks-bahrain-kuwait-drone-threats-keep-gulf-on-high-alert-as-us-hits-irans-qeshm-1.500751444",
-     "date": "2026-11-18"
-    },
-    {
-     "title": "Khaleej Times — Middle East war live updates, 18 November 2026",
-     "url": "https://www.khaleejtimes.com/world/mena/us-israel-iran-saudi-arabia-yemen-war-live-updates-november-18-2026",
+     "title": "CBS News — Iran war updates: Gulf states and tankers under fire",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-us-gulf-retaliation-strikes-strait-of-hormuz/",
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-18T11:49:35Z"
+   "assessed_at": "2026-11-18T23:42:24Z"
   },
   "other-conflicts": {
    "status": "amber",
@@ -2243,12 +2228,12 @@
   "exploited-vulns": {
    "status": "green",
    "trend": "flat",
-   "value": "3 KEV adds (7d), 34 (30d)",
-   "value_num": 3,
+   "value": "7 KEV adds (7d), 38 (30d)",
+   "value_num": 7,
    "summary": "CISA added 3 known-exploited vulnerabilities in the seven days to 18 Nov, below the 11-a-week Watch line",
    "state": "CISA's Known Exploited Vulnerabilities catalogue gained three entries in the seven days to 18 Nov: Perforce Puppet Enterprise on 17 Nov, and Check Point products and UnrealIRCd on 13 Nov; 34 were added in 30 days, below the 11-a-week Watch line (CISA). No emergency directive for mass exploitation of a ubiquitous product was found as of 18 Nov.",
    "for_you": "Organisations should patch catalogued flaws promptly, following CISA and NCSC guidance.",
-   "rubric_hit": "KEV additions 7d 3 below the 11 Watch line",
+   "rubric_hit": "KEV additions 7d 7 below the 11 Watch line",
    "sources": [
     {
      "title": "CISA — Known Exploited Vulnerabilities Catalog",
@@ -2256,10 +2241,10 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-11-16T05:51:59Z",
    "basis": "measured",
-   "basis_detail": "KEV additions 7d=3.00",
+   "basis_detail": "KEV additions 7d=7.00",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "aid-funding": {
@@ -2332,15 +2317,15 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T17:47:08Z",
+   "checked_at": "2026-11-18T23:42:24Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "EA: 0 severe, 0 warnings",
    "assessed_at": "2026-11-18T05:53:01Z"
   }
  },
- "headline": "US–Iran strikes and Hormuz attacks keep the Gulf at Alert; Cornwall Insight now forecasts a 26% rise in the UK energy cap from January, crossing the Alert line; UK inflation rose to 3.6% in October.",
- "generated_at": "2026-11-18T17:47:08Z",
+ "headline": "Israel made its first ground advance into central Gaza since the 2025 ceasefire on 18 Nov, as Iran fired on Kuwait and Bahrain after a US strike on Qeshm. Trump meets Xi and Putin in Shenzhen on 19 Nov.",
+ "generated_at": "2026-11-18T23:42:24Z",
  "world": {
   "score": 41,
   "band": "Strained",
@@ -2371,7 +2356,7 @@
    "name": "US–Iran war and Gulf energy shock",
    "status": "red",
    "trend": "up",
-   "summary": "US struck an IRGC site on Qeshm on 17 Nov; an ADNOC vessel was hit in Hormuz on 17 Nov; UK cap forecast +26% from Jan (18 Nov).",
+   "summary": "Iran fired on a US base in Kuwait and on Bahrain on 18 Nov after a US strike on Qeshm on 17 Nov; an ADNOC vessel was hit in Hormuz on 17 Nov.",
    "signals": [
     "gulf-iran",
     "middle-east",
@@ -2391,7 +2376,7 @@
    "name": "Russia–Ukraine war and NATO's flank",
    "status": "red",
    "trend": "flat",
-   "summary": "Russian missiles hit Kyiv's bridges on 17 Nov and 141 drones were launched overnight into 18 Nov; Estonia shuts its Russian border on 1 Dec.",
+   "summary": "Russia launched 141 drones overnight into 18 Nov, hitting energy sites in three regions; Estonia shuts its Russian border on 1 Dec.",
    "signals": [
     "russia-ukraine",
     "russia-nato",
