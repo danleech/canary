@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-18T17:47:01Z",
+  "id": "uk-energy-cap",
+  "name": "UK energy price cap",
+  "from": "amber",
+  "to": "red",
+  "reason": "Cornwall Insight's final forecast puts the January cap at about £2,166 a year, 26% above today's £1,723"
+ },
+ {
   "t": "2026-11-18T11:49:31Z",
   "id": "outages",
   "name": "Internet & cloud outages",

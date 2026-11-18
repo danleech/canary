@@ -1,17 +1,17 @@
 # Sanctions & coercion — WATCH (stable)
-id sanctions · Geopolitics · horizon acute · checked 2026-11-17T17:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-19T05:51Z
+id sanctions · Geopolitics · horizon acute · checked 2026-11-18T17:47Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-20T05:47Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/sanctions
 
-Value: EU preparing Iran cyber sanctions (16 Nov)
-Rated on: Watch: major new package in preparation — EU Iran cyber sanctions announced 16 Nov; no payment cut-off or asset seizure
+Value: EU lists 49 Russian banks (16 Nov)
+Rated on: Watch: major new EU (16 Nov) and UK (12 Nov) packages on Russia; no payment-system cut-off or sovereign asset seizure (Alert line)
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
-EU ministers backed further action on Iran over supermarket cyberattacks on 16 Nov; no package formally adopted yet
+EU sanctioned 113 Russian-linked targets incl. 49 banks on 16 Nov; UK hit Russia's 10 largest oil producers on 12 Nov
 
-Why it's at this level: At the Foreign Affairs Council on 16 Nov, Kaja Kallas said the EU is preparing further sanctions on Iran after cyberattacks on French supermarket refrigeration systems, saying the threat from Iran increasingly extends to Europe (Middle East Eye). Ministers supported further action but no package was formally adopted; at least 11 other European countries were hit by similar attacks in early November (The Copenhagen Post). No major economy cut off from payment systems or large seizure of sovereign assets was found as of 17 Nov, so Watch holds.
+Why it's at this level: On 16 Nov the EU Council listed 12 individuals and 101 entities linked to Russia's war economy, including 47 commercial banks, two other credit institutions, 27 oil, gas and mining firms and 15 companies tied to shadow-fleet tankers; a 22nd package is expected before the 26–27 Nov EU summit (Ukrainska Pravda). On 12 Nov the UK sanctioned all 10 of Russia's largest oil producers, including Slavneft and Rosneft's Vostok Oil project (European Pravda). No major economy cut off from payment systems or large seizure of sovereign assets was found as of 18 Nov, so Watch holds.
 
-What this means for you: Firms trading with Iran, or running internet-connected refrigeration and building-control systems, are most exposed. UK businesses can check current sanctions lists and OFSI guidance on GOV.UK.
+What this means for you: Businesses trading with Russia or handling Russian-linked shipments face wider compliance checks; UK firms should follow OFSI guidance on financial sanctions. Effects on consumers tend to show up indirectly through energy and shipping costs.
 
 Why it matters: Sanctions are now a frontline weapon; secondary sanctions and asset seizures fragment global finance and trade.
 What moves it: Russia/Iran sanctions packages, secondary sanctions, frozen-asset decisions, export controls.
@@ -19,5 +19,5 @@ What moves it: Russia/Iran sanctions packages, secondary sanctions, frozen-asset
 Rubric — Alert: Major economy cut off from payment systems, or large-scale seizure of sovereign assets. | Watch: Major new packages, secondary-sanction threats on large economies, or asset-seizure moves. | Normal: No major new sanctions packages this week.
 
 Sources:
-- EU preparing further sanctions on Iran (2026-11-16) https://www.middleeasteye.net/live-blog/live-blog-update/eu-preparing-further-sanctions-iran
-- EU prepares new Iran sanctions after supermarket cyberattacks (2026-11-17) https://cphpost.dk/2026-11-17/global/eu-prepares-new-iran-sanctions-after-supermarket-cyberattacks/
+- Ukrainska Pravda — EU imposes sweeping sanctions on Russian banks, shadow fleet and e-commerce (2026-11-16) https://www.pravda.com.ua/eng/news/2026/11/16/8063100/
+- European Pravda — UK announces massive sanctions against Russia (2026-11-12) https://www.eurointegration.com.ua/eng/news/2026/11/12/7249873/

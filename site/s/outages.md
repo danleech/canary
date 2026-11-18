@@ -1,5 +1,5 @@
 # Internet & cloud outages — WATCH (worsening)
-id outages · Technology & Cyber · horizon acute · checked 2026-11-18T11:49Z · at this level since 2026-11-18T11:49Z · stale after 2026-11-19T01:49Z
+id outages · Technology & Cyber · horizon acute · checked 2026-11-18T17:47Z · text written 2026-11-18T11:49Z · at this level since 2026-11-18T11:49Z · stale after 2026-11-19T07:47Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/outages
 
 Value: Apple services down 17 Nov

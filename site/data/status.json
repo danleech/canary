@@ -18,13 +18,13 @@
      "date": "2026-11-18"
     }
    ],
-   "value": "VIX 24.0, S&P -6.1%",
-   "value_num": 23.97,
-   "checked_at": "2026-11-18T11:49:35Z",
+   "value": "VIX 23.9, S&P -6.2%",
+   "value_num": 23.87,
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-16T17:52:48Z",
-   "rubric_hit": "VIX 24 ≥ 20 Watch line; S&P drawdown 6.12% ≥ 5% Watch line",
+   "rubric_hit": "VIX 23.9 ≥ 20 Watch line; S&P drawdown 6.22% ≥ 5% Watch line",
    "basis": "measured",
-   "basis_detail": "VIX=23.97; S&P drawdown %=6.12",
+   "basis_detail": "VIX=23.87; S&P drawdown %=6.22",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "ftse": {
@@ -40,13 +40,13 @@
      "date": "2026-11-18"
     }
    ],
-   "value": "10,653, -2.4% from high",
-   "value_num": 10652.91,
-   "checked_at": "2026-11-18T11:49:35Z",
+   "value": "10,551, -3.3% from high",
+   "value_num": 10551.17,
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "FTSE drawdown 2.36% below the 5% Watch line",
+   "rubric_hit": "FTSE drawdown 3.29% below the 5% Watch line",
    "basis": "measured",
-   "basis_detail": "FTSE drawdown %=2.36",
+   "basis_detail": "FTSE drawdown %=3.29",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "bond-volatility": {
@@ -67,13 +67,13 @@
      "date": "2026-11-18"
     }
    ],
-   "value": "MOVE 102, 10y 5.10%",
-   "value_num": 101.877,
-   "checked_at": "2026-11-18T11:49:35Z",
+   "value": "MOVE 99, 10y 5.07%",
+   "value_num": 98.5091,
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "MOVE 102 ≥ 100 Watch line",
+   "rubric_hit": "MOVE 98.5 has not yet cleared the 90 exit line, so Watch holds",
    "basis": "measured",
-   "basis_detail": "MOVE=101.88; US10y 1m move bp=1.40",
+   "basis_detail": "MOVE=98.51; US10y 1m move bp=7.60",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "credit-spreads": {
@@ -89,13 +89,13 @@
      "date": "2026-11-18"
     }
    ],
-   "value": "HY OAS 3.34%",
-   "value_num": 3.34,
-   "checked_at": "2026-11-18T11:49:35Z",
+   "value": "HY OAS 3.43%",
+   "value_num": 3.43,
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "HY OAS 3.34% below the 4% Watch line",
+   "rubric_hit": "HY OAS 3.43% below the 4% Watch line",
    "basis": "measured",
-   "basis_detail": "HY OAS %=3.34",
+   "basis_detail": "HY OAS %=3.43",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "dollar": {
@@ -118,11 +118,11 @@
    ],
    "value": "DXY 103.8, 3m +5.1%",
    "value_num": 103.8,
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-18T11:49:31Z",
-   "rubric_hit": "DXY 3m move +5.1% within 5–8% Watch band",
+   "rubric_hit": "DXY 3m move 5.06% ≥ 5% Watch line",
    "basis": "measured",
-   "basis_detail": "DXY 3m move %=5.05",
+   "basis_detail": "DXY 3m move %=5.06",
    "assessed_at": "2026-11-18T11:49:35Z"
   },
   "banking-stress": {
@@ -143,13 +143,13 @@
      "date": "2026-11-18"
     }
    ],
-   "value": "STLFSI -0.49, CISS 0.01",
-   "value_num": -0.4918,
-   "checked_at": "2026-11-18T11:49:35Z",
+   "value": "STLFSI -0.87, CISS 0.01",
+   "value_num": -0.8655,
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "STLFSI -0.49 below the 0 Watch line; ECB CISS 0.01 below the 0.25 Watch line",
+   "rubric_hit": "STLFSI -0.87 below the 0 Watch line; ECB CISS 0.01 below the 0.25 Watch line",
    "basis": "measured",
-   "basis_detail": "STLFSI=-0.49; ECB CISS=0.01",
+   "basis_detail": "STLFSI=-0.87; ECB CISS=0.01",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "gold": {
@@ -165,13 +165,13 @@
      "date": "2026-11-18"
     }
    ],
-   "value": "$3,770, 3m -19.4%",
-   "value_num": 3770.4,
-   "checked_at": "2026-11-18T11:49:35Z",
+   "value": "$3,750, 3m -19.9%",
+   "value_num": 3750.0,
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-10T17:53:51Z",
-   "rubric_hit": "3m fall -19.4% (Watch)",
+   "rubric_hit": "3m fall -19.9% (Watch)",
    "basis": "measured",
-   "basis_detail": "Gold 3m gain %=-19.45; 3m fall -19.4%",
+   "basis_detail": "Gold 3m gain %=-19.88; 3m fall -19.9%",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "crypto": {
@@ -187,13 +187,13 @@
      "date": "2026-11-18"
     }
    ],
-   "value": "BTC $64,120, -26% from high",
-   "value_num": 64120.04,
-   "checked_at": "2026-11-18T11:49:35Z",
+   "value": "BTC $63,191, -27% from high",
+   "value_num": 63191.48,
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-14T23:42:22Z",
-   "rubric_hit": "BTC drawdown 26% ≥ 25% Watch line",
+   "rubric_hit": "BTC drawdown 27% ≥ 25% Watch line",
    "basis": "measured",
-   "basis_detail": "BTC drawdown %=25.96",
+   "basis_detail": "BTC drawdown %=27.03",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "us-recession": {
@@ -221,7 +221,7 @@
    ],
    "value": "Sahm 0.00, 10y–2y +0.30",
    "value_num": 0.0,
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "Sahm 0 below the 0.3 Watch line",
    "basis": "measured",
@@ -231,169 +231,169 @@
   "us-inflation": {
    "status": "amber",
    "trend": "up",
-   "summary": "US consumer prices rose 0.4% in October; index data imply about 4.1% annual inflation, inside the 3.0–4.5% Watch band",
-   "state": "US consumer prices rose 0.4% in October, more than expected (CNBC, 10 Nov). FRED index data imply annual CPI inflation of about 4.1% for October, up from 4.0% in September and rising for three months, inside the 3.0–4.5% Watch band and below the 4.5% Alert line (FRED). November CPI is due in mid-December.",
-   "for_you": "Higher inflation erodes the value of wages and savings and tends to keep borrowing costs elevated. Households on fixed incomes and those refinancing debt are most exposed.",
+   "summary": "FRED index data imply US CPI inflation of about 4.1% in October, up from 4.0% and inside the 3.0–4.5% Watch band",
+   "state": "FRED CPI index data imply annual US consumer price inflation of about 4.1% in October, up from 4.0% in September and rising for three consecutive months, inside the 3.0–4.5% Watch band and below the 4.5% Alert line (FRED). October core CPI rose 0.3% on the month, adding to expectations of a Fed rate rise on 9 Dec (MUFG, 16 Nov). November CPI is due in mid-December.",
+   "for_you": "Households on fixed or slow-rising incomes feel rising prices most, particularly for fuel and food. Higher inflation tends to keep US borrowing costs elevated for mortgages, cards and loans.",
    "sources": [
     {
-     "title": "Consumer Price Index for All Urban Consumers (CPIAUCSL)",
+     "title": "FRED — CPIAUCSL (BLS CPI-U)",
      "url": "https://fred.stlouisfed.org/series/CPIAUCSL",
-     "date": "2026-11-17"
+     "date": "2026-11-18"
     },
     {
-     "title": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
-     "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
-     "date": "2026-11-10"
+     "title": "MUFG Research — JPY Weekly, 16 November 2026",
+     "url": "https://www.mufgresearch.com/fx/jpy-weekly-16-november-2026/",
+     "date": "2026-11-16"
     }
    ],
-   "value": "CPI ~4.1% y/y (Oct); +0.4% m/m",
+   "value": "CPI ~4.1% y/y (Oct); rising 3 months",
    "value_num": 4.08,
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "basis": "measured",
    "basis_detail": "CPI y/y %=4.08; rising 3 months",
-   "rubric_hit": "CPI 4.1% y/y within 3.0–4.5% Watch band and rising 3 months; below 4.5% Alert line",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "rubric_hit": "Watch: CPI 4.08% y/y within 3.0–4.5% band and rising 3 consecutive months; below 4.5% Alert line",
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "euro-growth": {
    "status": "green",
    "trend": "flat",
-   "summary": "Eurostat confirmed euro-area Q3 GDP growth of 0.4% on 13 Nov; October composite PMI 51.7, above 50",
-   "state": "Eurostat's estimate of 13 Nov confirmed euro-area GDP growth of 0.4% in the third quarter, with employment stable (Eurostat). The final HCOB composite PMI for October fell to 51.7, a four-month low, but stayed above 50 (ActionForex). Both readings sit above the Normal lines; November flash PMIs are due later in the month.",
-   "for_you": "Euro-area output is still growing, though momentum has slowed. Exporters and jobs tied to European demand are most exposed if the slowdown deepens.",
+   "summary": "Eurostat confirmed euro-area Q3 GDP growth of 0.4% on 13 Nov; October composite PMI stayed above 50",
+   "state": "Eurostat's estimate of 13 Nov confirmed euro-area GDP growth of 0.4% in the third quarter, with employment stable (Eurostat). S&P Global said on 5 Nov that euro-area growth slowed in October but remained consistent with GDP rising about 0.3% a quarter, with the HCOB composite PMI at a four-month low of 51.7, above 50 (S&P Global). Searches on 18 Nov found no new data; November flash PMIs are due later in the month.",
+   "for_you": "Conditions are broadly stable for euro-area households and businesses, with growth positive and business surveys still in expansion.",
    "sources": [
     {
-     "title": "GDP up by 0.4% and employment stable in the euro area - Euro indicators",
+     "title": "Eurostat — GDP up by 0.4% and employment stable in the euro area",
      "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-13112026-ap",
      "date": "2026-11-13"
     },
     {
-     "title": "Eurozone PMI Composite Falls to 51.7 as Demand Weakens and Business Confidence Slips",
-     "url": "https://www.actionforex.com/live-comments/659804-eurozone-pmi-composite-falls-to-51-7-as-demand-weakens-and-business-confidence-slips/",
-     "date": "2026-11-04"
+     "title": "S&P Global — Global PMI remains elevated in October but dips on heightened economic uncertainty",
+     "url": "https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/11/global-pmi-remains-elevated-in-october-but-dips-on-heightened-economic-uncertainty",
+     "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Q3 GDP +0.4%; Oct composite PMI 51.7",
    "value_num": 0.4,
    "basis": "published",
    "basis_detail": "Eurostat GDP and HCOB PMI",
-   "rubric_hit": "Normal: GDP +0.4% q/q (positive) and composite PMI 51.7 > 50",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "rubric_hit": "Normal: Q3 GDP +0.4% (positive) and October composite PMI 51.7 > 50",
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "china-economy": {
    "status": "green",
    "trend": "down",
-   "summary": "China's October factory output rose 4.8% and retail sales 0.4%, both below forecasts; Q3 growth 4.5%",
-   "state": "Statistics bureau data released on 16 Nov showed October industrial output up 4.8% a year, below the 5.3% forecast, and retail sales up 0.4%, while fixed-asset investment fell 8.1% in January–October (Business Standard; Quartz). Third-quarter growth was 4.5%, at the bottom of the 4.5–5.0% range analysts expect for the year. No new developer default wave or financial contagion was found as of 17 Nov, so Normal holds with momentum weakening.",
-   "for_you": "Weaker Chinese demand tends to weigh on commodity exporters and firms selling into China. No financial contagion has been reported.",
+   "summary": "China's October output rose 4.8% and retail sales 0.4%, below forecasts; new home prices fell 2.4% a year",
+   "state": "Statistics bureau data of 16 Nov showed October industrial output up 4.8% a year and retail sales up 0.4%, both below expectations, while fixed-asset investment fell 8.1% and property investment 21.6% in January–October (JKN). New home prices fell 0.1% on the month and 2.4% on the year, the slowest annual decline since November 2025 (Reuters). Searches on 18 Nov found no new developer default wave or financial contagion, so Normal holds with momentum weakening.",
+   "for_you": "Weaker Chinese demand tends to weigh on exporters of commodities and goods to China. Households and firms elsewhere are not directly exposed to acute stress at present.",
    "sources": [
     {
-     "title": "China's economy slows in Oct as factory output, retail sales miss forecasts",
-     "url": "https://www.business-standard.com/amp/world-news/china-s-economy-slows-in-oct-as-factory-output-retail-sales-miss-forecasts-126111600592_1.html",
+     "title": "JKN — China's production and consumption slow down in October; investment contraction also deepens",
+     "url": "https://news.jkn.co.kr/editions/english/post/1098317",
      "date": "2026-11-16"
     },
     {
-     "title": "China's economy stumbles as retail sales, factory output, and investment all miss",
-     "url": "https://qz.com/china-october-economic-data-retail-sales-investment-miss-111626",
+     "title": "Reuters (via 93.3 The Drive) — Drop in China's new home prices narrows to 11-month low",
+     "url": "https://www.933thedrive.com/2026/11/15/drop-in-chinas-new-home-prices-narrows-to-11-month-low/",
      "date": "2026-11-16"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Oct output +4.8%, retail +0.4%; Q3 GDP +4.5%",
-   "value_num": 4.5,
+   "value": "Oct output +4.8%, retail +0.4%; homes −2.4% y/y",
+   "value_num": 4.8,
    "basis": "judged",
    "basis_detail": "",
-   "rubric_hit": "Normal: Q3 growth 4.5%, near target; no developer default wave or contagion found",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "rubric_hit": "Normal: growth near target (Q3 4.5%), no developer default wave or contagion; Watch would need deflation, defaults or growth clearly below target",
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "central-banks": {
    "status": "amber",
    "trend": "flat",
-   "summary": "Futures fully price a Fed rate rise on 9 Dec; yen near 159.3 per dollar as Tokyo warns against one-sided moves",
-   "state": "CME FedWatch data put the chance of a rate rise at the 9 Dec Fed meeting at 100%, after Governor Waller opened the door to a half-point move (Motley Fool, 16 Nov). Japan's Finance Minister Katayama warned on 13 Nov of one-sided and rapid moves as the yen briefly passed 160 per dollar, after record intervention in July–August (The Edge Malaysia). The yen was near 159.3 on 17 Nov (Yahoo Finance). No emergency inter-meeting move or new intervention was found.",
-   "for_you": "Rising policy rates tend to feed through to mortgage and loan costs. Currency swings affect import prices and travel costs.",
+   "summary": "Markets price a Fed rate rise in December; yen near 159.3 per dollar after Japanese warnings capped it near 160",
+   "state": "Markets priced about a 91% chance of a Fed rate rise in December after Governor Waller said on 10 Nov a half-point move could be considered (Trading Economics; MUFG). The yen touched 160.03 per dollar on 12 Nov before Japan's Vice Finance Minister Mimura warned markets not to forget the summer's intervention (MUFG, 16 Nov). The yen was near 159.3 on 18 Nov (Yahoo Finance). No emergency inter-meeting move or new intervention was found.",
+   "for_you": "Rising rate expectations tend to push up borrowing costs for mortgages and loans. A weak yen raises import costs in Japan and can bring sudden currency moves if officials intervene.",
    "sources": [
     {
-     "title": "There's Now a 100% Chance of a Fed Rate Hike in December",
-     "url": "https://www.fool.com/investing/2026/11/16/theres-now-100-chance-fed-rate-hike-in-december-thats-not-worst-news-for-wall-street/",
+     "title": "MUFG Research — JPY Weekly, 16 November 2026",
+     "url": "https://www.mufgresearch.com/fx/jpy-weekly-16-november-2026/",
      "date": "2026-11-16"
     },
     {
-     "title": "Japan's Katayama warns of one-sided yen moves near 160",
-     "url": "https://theedgemalaysia.com/node/825595",
-     "date": "2026-11-13"
+     "title": "Trading Economics — Yen Weakens on Fed Rate Hike Expectations",
+     "url": "https://tradingeconomics.com/japan/currency/news/600232",
+     "date": "2026-11-11"
     },
     {
-     "title": "USD/JPY quote",
+     "title": "Yahoo Finance — USD/JPY",
      "url": "https://finance.yahoo.com/quote/JPY%3DX",
-     "date": "2026-11-17"
+     "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Dec Fed rise fully priced; yen near 159.3",
+   "value": "Dec Fed rise priced ~91%; yen ~159.3/$",
    "basis": "judged",
    "basis_detail": "",
-   "rubric_hit": "Watch: stagflationary dilemma (Fed hikes into slowing growth) and yen intervention threat; no emergency move for Alert",
-   "value_num": 159.25,
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "rubric_hit": "Watch: stagflationary dilemma with Fed hike priced and Japanese FX intervention warnings near 160 yen; no emergency move (Alert)",
+   "value_num": 159.3,
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "sovereign-debt": {
    "status": "red",
    "trend": "up",
-   "summary": "France–Bund 10-year spread widened to 155bp on 16 Nov, above the 150bp Alert line for most sessions since late Oct",
-   "state": "The France–Germany 10-year spread closed at 155.0bp on 16 Nov, with French yields at 4.93%, up from 142.4bp on 10 Nov; it has closed above 150bp in 11 of 16 sessions since 26 Oct (Ideal Investisseur). French yields rose above 4.95% on 16 Nov on bets of an ECB rate rise (Trading Economics). The US 10-year yield was about 5.10% on 17 Nov (Yahoo Finance). No failed G7 auction or emergency central-bank buying was found.",
-   "for_you": "Higher government borrowing costs tend to pass through to mortgage and business loan rates, and can force tighter budgets. Holders of French debt are most exposed to further moves.",
+   "summary": "France–Bund 10-year spread widened to 156bp on 17 Nov, above the 150bp Alert line in most sessions since late Oct",
+   "state": "The France–Germany 10-year spread closed at 156.3bp on 17 Nov, with French yields at 4.91%, up from 142.4bp on 10 Nov, and has closed above 150bp in most sessions since late Oct (Ideal Investisseur). French 10-year yields eased to about 4.85% on 18 Nov after a sell-off driven by ECB rate-rise bets (Trading Economics). The US 10-year yield was about 5.07% on 18 Nov (Yahoo Finance). No failed G7 auction or emergency central-bank buying was found.",
+   "for_you": "Higher French and US government borrowing costs tend to feed through to mortgage and business loan rates and can tighten public budgets.",
    "sources": [
     {
-     "title": "OAT / Bund spread today: 155.0 bps as of Nov 16, 2026",
+     "title": "Ideal Investisseur — OAT / Bund spread today: 156.3 bps as of Nov 17, 2026",
      "url": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html",
-     "date": "2026-11-16"
-    },
-    {
-     "title": "Trading Economics — France 10-year government bond yield news",
-     "url": "https://tradingeconomics.com/france/government-bond-yield/news/589851",
-     "date": "2026-11-16"
-    },
-    {
-     "title": "US 10-year Treasury yield (^TNX)",
-     "url": "https://finance.yahoo.com/quote/%5ETNX",
      "date": "2026-11-17"
+    },
+    {
+     "title": "Trading Economics — French government bond yield news",
+     "url": "https://tradingeconomics.com/france/government-bond-yield/news/589851",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "Yahoo Finance — US 10-year Treasury yield",
+     "url": "https://finance.yahoo.com/quote/%5ETNX",
+     "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-17T17:51:12Z",
-   "value": "OAT–Bund 155bp (16 Nov); US 10y 5.10%",
-   "value_num": 155.0,
+   "value": "OAT–Bund 156bp (17 Nov); US 10y 5.07%",
+   "value_num": 156.3,
    "basis": "judged",
    "basis_detail": "",
-   "rubric_hit": "France–Bund 155bp > 150bp Alert line (16 Nov), above 150bp in 11 of 16 sessions since 26 Oct",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "rubric_hit": "Alert: France–Bund 10y spread 156.3bp > 150bp Alert line (17 Nov)",
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "global-pmi": {
    "status": "green",
    "trend": "down",
    "summary": "J.P.Morgan global composite PMI 53.2 in October, down from 54.3 but above the 51 Watch line; flash PMIs due later",
-   "state": "The J.P.Morgan Global Composite PMI fell to 53.2 in October from 54.3 in September, as growth eased amid heightened economic uncertainty (S&P Global, 5 Nov). The reading remains well above the 51 Watch line. November flash PMIs for major economies are due later in the month.",
-   "for_you": "Global business activity is still expanding. Firms dependent on export demand would feel a slowdown first.",
+   "state": "The J.P.Morgan Global Composite PMI fell to 53.2 in October from 54.3 in September, its first decline in seven months, as growth eased amid heightened economic uncertainty (S&P Global, 5 Nov). The reading is consistent with global GDP growth of about 2.9% and remains well above the 51 Watch line. Searches on 18 Nov found no newer global reading; November flash PMIs for major economies are due later in the month.",
+   "for_you": "Global business activity is still expanding, so there is no broad downturn signal for jobs or trade at present.",
    "sources": [
     {
-     "title": "J.P.Morgan Global Composite PMI October 2026",
-     "url": "https://www.pmi.spglobal.com/Public/Home/PressRelease/df2d6f49e66b4425b718bad46807492d",
+     "title": "S&P Global — Global PMI remains elevated in October but dips on heightened economic uncertainty",
+     "url": "https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/11/global-pmi-remains-elevated-in-october-but-dips-on-heightened-economic-uncertainty",
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Global composite 53.2 (Oct)",
    "basis": "published",
    "basis_detail": "S&P Global / J.P.Morgan Global PMI",
-   "rubric_hit": "Normal: global composite 53.2 > 51",
+   "rubric_hit": "Normal: J.P.Morgan Global Composite PMI 53.2 > 51",
    "value_num": 53.2,
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "oil": {
    "status": "amber",
@@ -413,13 +413,13 @@
      "date": "2026-11-16"
     }
    ],
-   "value": "$89.9, 1m -17%",
-   "value_num": 89.9,
-   "checked_at": "2026-11-18T11:49:35Z",
+   "value": "$88.5, 1m -19%",
+   "value_num": 88.46,
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-06T17:59:39Z",
-   "rubric_hit": "Brent $89.9 ≥ $85 Watch line",
+   "rubric_hit": "Brent $88.5 ≥ $85 Watch line",
    "basis": "measured",
-   "basis_detail": "Brent $=89.90; Brent 1m %=-17.39",
+   "basis_detail": "Brent $=88.46; Brent 1m %=-18.71",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "eu-gas": {
@@ -440,13 +440,13 @@
      "date": "2026-11-13"
     }
    ],
-   "value": "€84/MWh",
-   "value_num": 83.65,
-   "checked_at": "2026-11-18T11:49:35Z",
+   "value": "€81/MWh",
+   "value_num": 81.105,
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "TTF €83.7/MWh > €70/MWh Alert line",
+   "rubric_hit": "TTF €81.1/MWh > €70/MWh Alert line",
    "basis": "measured",
-   "basis_detail": "TTF €/MWh=83.65",
+   "basis_detail": "TTF €/MWh=81.11",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "chokepoints": {
@@ -472,7 +472,7 @@
      "date": "2026-11-17"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "ADNOC vessel hit 17 Nov; 1 missing",
    "rubric_hit": "Hormuz traffic materially impeded = Alert",
@@ -485,81 +485,76 @@
    "status": "red",
    "trend": "down",
    "summary": "Drewry container index fell 2% to $4,305 per 40ft on 12 Nov, still above the $4,000 Alert line; next update 19 Nov",
-   "state": "Drewry's World Container Index fell 2% to $4,305 per 40ft container on 12 Nov and stays above the $4,000 Alert line (Drewry). Shanghai–New York fell 3% to $9,020, its lowest since August, and Shanghai–Rotterdam 3% to $3,504. Drewry expects transpacific rates to fall further but Asia–Europe rates to rise slightly on blank sailings and surcharges from late November; the next index is due on 19 Nov.",
-   "for_you": "High container rates tend to feed through to retail prices and delivery times for imported goods. Importers on spot contracts are most exposed.",
+   "state": "Drewry's World Container Index fell 2% to $4,305 per 40ft container on 12 Nov, still above the $4,000 Alert line (Drewry). Shanghai–New York fell 3% to $9,020, its lowest since August, Shanghai–Los Angeles 2% to $7,416 and Shanghai–Rotterdam 3% to $3,504. Drewry expects transpacific rates to fall further but Asia–Europe rates to rise slightly on blank sailings and surcharges in the second half of November; the next index is due on 19 Nov.",
+   "for_you": "Importers, retailers and manufacturers relying on Asian goods face higher shipping costs, which tend to feed through to shelf prices and delivery times over the following months. UK consumers are exposed indirectly through imported goods.",
    "sources": [
     {
-     "title": "World Container Index - 12 Nov",
-     "url": "https://www.drewry.co.uk/supply-chain-advisors/supply-chain-expertise/world-container-index-assessed-by-drewry",
+     "title": "Drewry — World Container Index, 12 Nov 2026",
+     "url": "https://www.drewry.co.uk/WCI",
      "date": "2026-11-12"
     },
     {
-     "title": "Drewry WCI Down 2% to $4,305: Transpacific & Asia-Europe Rates Fall",
-     "url": "https://www.indexbox.io/blog/drewry-world-container-index-falls-2-as-transpacific-and-asia-europe-rates-weaken/",
-     "date": "2026-11-13"
+     "title": "Green Worldwide — Freight market update, week 46 2026",
+     "url": "https://www.greenworldwide.com/freight-market-update-week-46-2026/",
+     "date": "2026-11-11"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "WCI $4,305/FEU (12 Nov)",
    "value_num": 4305,
    "basis": "published",
    "basis_detail": "Drewry World Container Index / Freightos Baltic Index",
-   "rubric_hit": "Drewry WCI $4,305/FEU > $4,000 Alert line (12 Nov)",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "rubric_hit": "Drewry WCI $4,305/FEU (12 Nov) > $4,000 Alert line",
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "food-prices": {
    "status": "amber",
    "trend": "down",
    "summary": "FAO food price index 133.9 in October, below the 135 Alert line but up 5.9% on a year; next release 4 Dec",
-   "state": "The FAO Food Price Index averaged 133.9 points in October, released on 6 Nov, down 1.2% on September but 5.9% above October 2025; the next release is due on 4 Dec (FAO). Sugar rose 6.6% on the month while cereals fell 4.5% (Food Ingredients First). The annual rise meets the Watch line and the index stays below 135; no staple export bans by several major exporters were found as of 17 Nov.",
-   "for_you": "Higher world food prices tend to reach shop shelves with a lag and hit import-dependent, lower-income countries hardest.",
+   "state": "The FAO Food Price Index averaged 133.9 points in October, released on 6 Nov, down 1.2% on September but 5.9% above October 2025; the next release is due on 4 Dec (FAO). Sugar rose 6.6% on the month to its highest since December 2024, while cereals fell 4.5% (Food Ingredients First). The annual rise meets the Watch line and the index stays below 135; searches on 18 Nov found no staple export bans by several major exporters.",
+   "for_you": "Households on tight budgets and import-dependent countries are most exposed to higher world food prices, which tend to reach supermarket shelves with a lag of several months.",
    "sources": [
     {
-     "title": "FAO Food Price Index",
+     "title": "FAO — FAO Food Price Index",
      "url": "https://www.fao.org/worldfoodsituation/foodpricesindex/en/",
      "date": "2026-11-06"
     },
     {
-     "title": "FAO food prices October 2026",
+     "title": "Food Ingredients First — FAO food prices October 2026",
      "url": "https://www.foodingredientsfirst.com/news/fao-food-prices-october-2026.html",
      "date": "2026-11-09"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-06T17:59:39Z",
    "value": "FAO index 133.9 (Oct), +5.9% y/y",
    "value_num": 133.9,
    "basis": "published",
    "basis_detail": "FAO Food Price Index",
-   "rubric_hit": "Watch: FFPI y/y +5.9% > +5%; index 133.9 within 120–135",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "rubric_hit": "FAO FFPI 133.9 (Oct) in 120–135 Watch band; y/y +5.9% > +5% Watch line",
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "critical-minerals": {
    "status": "amber",
    "trend": "flat",
-   "summary": "China extended its pause on some rare-earth export controls by two months on 9 Nov; April 2025 licensing stays",
-   "state": "On 9 Nov China extended by two months its pause on rare-earth export controls that was due to end that day, alongside a US extension of tariff exclusions and port-fee suspensions to 10 Jan 2027 (Thompson Hine, 13 Nov). Controls imposed in April 2025 on seven heavy rare earths remain in force, and the IEA estimates full controls could put $6.5tn of annual downstream output outside China at risk (The National, 16 Nov). No production stoppages outside China linked to export bans were found as of 17 Nov, so Watch holds.",
-   "for_you": "Manufacturers of magnets, electric vehicles, electronics and defence equipment are most exposed to licensing delays. No consumer shortages have been reported.",
+   "summary": "China extended its pause on some rare-earth export controls to 10 Jan 2027 on 9 Nov; April 2025 licensing stays",
+   "state": "On 9 Nov China's commerce ministry extended its suspension of some rare-earth export controls, due to end on 10 Nov, to 10 Jan 2027; the pause covers five rare earths, processing technology and some battery and graphite items (S&P Global). Controls imposed in April 2025 on seven heavy rare earths, including dysprosium and terbium, remain in force. Searches on 18 Nov found no production stoppages outside China linked to export bans, so Watch holds.",
+   "for_you": "Makers of electric vehicles, wind turbines, electronics and defence equipment outside China are most exposed to rare-earth licensing delays, which tend to show up first as longer lead times and higher component costs.",
    "sources": [
     {
-     "title": "China Extends Suspension of Rare Earth Export Controls",
-     "url": "https://www.thompsonhinesmartrade.com/2026/11/china-extends-suspension-of-rare-earth-export-controls/",
-     "date": "2026-11-13"
-    },
-    {
-     "title": "China's rare earth curbs put new emphasis on Latin American investment",
-     "url": "https://thenationalnews.com/business/energy/2026/11/16/china-critical-minerals-latin-america",
-     "date": "2026-11-16"
+     "title": "S&P Global — China extends rare earth export suspension to January 2027",
+     "url": "https://www.spglobal.com/energy/en/news-research/latest-news/metals/110926-china-extends-rare-earth-export-suspension-to-january-2027",
+     "date": "2026-11-09"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Rare-earth pause extended to early Jan 2027",
+   "value": "Rare-earth pause extended to 10 Jan 2027",
    "basis": "judged",
    "basis_detail": "",
-   "rubric_hit": "Watch: export licensing on seven rare earths in force since Apr 2025; no reported stoppages outside China for Alert",
-   "assessed_at": "2026-11-17T17:51:42Z",
+   "rubric_hit": "Watch: Chinese licensing on seven heavy rare earths still in force; no reported production stoppages outside China (Alert line)",
+   "assessed_at": "2026-11-18T17:47:08Z",
    "value_num": null
   },
   "us-china": {
@@ -580,7 +575,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-07T05:46:46Z",
    "value": "No blockade or clash; Shenzhen talks 19 Nov",
    "rubric_hit": "No blockade or clash; Watch kept for PLA activity and trade controls (hysteresis)",
@@ -607,7 +602,7 @@
      "date": "2026-11-15"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Estonia to shut Russia border from 1 Dec",
    "rubric_hit": "Sabotage attributed to Russia = Watch; no Article 4 or clash",
@@ -634,7 +629,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No IAEA access; 60% stockpile unverified",
    "rubric_hit": "60% enrichment and inspector access curtailed = Watch",
@@ -661,7 +656,7 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Last launch 4 Nov",
    "rubric_hit": "Missile launch on 4 Nov within 2 weeks = Watch",
@@ -688,7 +683,7 @@
      "date": "2026-11-12"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Mexico tariff threat restated 16 Nov",
    "rubric_hit": "New major tariffs threatened between large economies = Watch",
@@ -700,55 +695,50 @@
   "sanctions": {
    "status": "amber",
    "trend": "flat",
-   "summary": "EU ministers backed further action on Iran over supermarket cyberattacks on 16 Nov; no package formally adopted yet",
-   "state": "At the Foreign Affairs Council on 16 Nov, Kaja Kallas said the EU is preparing further sanctions on Iran after cyberattacks on French supermarket refrigeration systems, saying the threat from Iran increasingly extends to Europe (Middle East Eye). Ministers supported further action but no package was formally adopted; at least 11 other European countries were hit by similar attacks in early November (The Copenhagen Post). No major economy cut off from payment systems or large seizure of sovereign assets was found as of 17 Nov, so Watch holds.",
-   "for_you": "Firms trading with Iran, or running internet-connected refrigeration and building-control systems, are most exposed. UK businesses can check current sanctions lists and OFSI guidance on GOV.UK.",
+   "summary": "EU sanctioned 113 Russian-linked targets incl. 49 banks on 16 Nov; UK hit Russia's 10 largest oil producers on 12 Nov",
+   "state": "On 16 Nov the EU Council listed 12 individuals and 101 entities linked to Russia's war economy, including 47 commercial banks, two other credit institutions, 27 oil, gas and mining firms and 15 companies tied to shadow-fleet tankers; a 22nd package is expected before the 26–27 Nov EU summit (Ukrainska Pravda). On 12 Nov the UK sanctioned all 10 of Russia's largest oil producers, including Slavneft and Rosneft's Vostok Oil project (European Pravda). No major economy cut off from payment systems or large seizure of sovereign assets was found as of 18 Nov, so Watch holds.",
+   "for_you": "Businesses trading with Russia or handling Russian-linked shipments face wider compliance checks; UK firms should follow OFSI guidance on financial sanctions. Effects on consumers tend to show up indirectly through energy and shipping costs.",
    "sources": [
     {
-     "title": "EU preparing further sanctions on Iran",
-     "url": "https://www.middleeasteye.net/live-blog/live-blog-update/eu-preparing-further-sanctions-iran",
+     "title": "Ukrainska Pravda — EU imposes sweeping sanctions on Russian banks, shadow fleet and e-commerce",
+     "url": "https://www.pravda.com.ua/eng/news/2026/11/16/8063100/",
      "date": "2026-11-16"
     },
     {
-     "title": "EU prepares new Iran sanctions after supermarket cyberattacks",
-     "url": "https://cphpost.dk/2026-11-17/global/eu-prepares-new-iran-sanctions-after-supermarket-cyberattacks/",
-     "date": "2026-11-17"
+     "title": "European Pravda — UK announces massive sanctions against Russia",
+     "url": "https://www.eurointegration.com.ua/eng/news/2026/11/12/7249873/",
+     "date": "2026-11-12"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "EU preparing Iran cyber sanctions (16 Nov)",
+   "value": "EU lists 49 Russian banks (16 Nov)",
    "basis": "judged",
    "basis_detail": "",
-   "rubric_hit": "Watch: major new package in preparation — EU Iran cyber sanctions announced 16 Nov; no payment cut-off or asset seizure",
-   "assessed_at": "2026-11-17T17:51:42Z",
-   "value_num": null
+   "rubric_hit": "Watch: major new EU (16 Nov) and UK (12 Nov) packages on Russia; no payment-system cut-off or sovereign asset seizure (Alert line)",
+   "assessed_at": "2026-11-18T17:47:08Z",
+   "value_num": 113
   },
   "political-instability": {
    "status": "green",
    "trend": "flat",
-   "summary": "Indonesia's vice-president resigned on 12 Nov; parliament picks a successor within 60 days. No G20 collapse",
-   "state": "Indonesia's Vice-President Gibran Rakabuming Raka submitted his resignation on 12 Nov after courts ruled his education documents did not meet election requirements, and President Prabowo accepted it; the People's Consultative Assembly must elect a successor within 60 days (Al Jazeera). The House pressed ahead with an impeachment inquiry on 12 Nov (Jakarta Post). This is a constitutional succession rather than a government collapse, and no G20 coup, contested election or government collapse was found as of 17 Nov.",
-   "for_you": "Little direct effect for most readers. Travellers to Indonesia can follow FCDO travel advice, which covers protests and wildfire haze.",
+   "summary": "Indonesia's assembly will choose a new vice-president on 2 Dec after the 12 Nov resignation; no G20 collapse",
+   "state": "Indonesia's Vice-President Gibran Rakabuming Raka resigned on 12 Nov; President Prabowo is to nominate two candidates and the People's Consultative Assembly is scheduled to elect a successor on 2 Dec, with major coalition parties deferring to him (Jakarta Post, 16 Nov). This is a constitutional succession rather than a government collapse, and searches on 18 Nov found no G20 coup, contested election or government collapse.",
+   "for_you": "No direct effect for most readers. Travellers can check FCDO travel advice for any country before going.",
    "sources": [
     {
-     "title": "Indonesia vice president resigns amid dispute over eligibility",
-     "url": "https://aljazeera.com/news/2026/11/12/indonesia-vice-president-resigns-amid-dispute-over-eligibility",
-     "date": "2026-11-12"
-    },
-    {
-     "title": "House presses ahead with Gibran impeachment",
-     "url": "https://www.thejakartapost.com/indonesia/2026/11/12/house-presses-ahead-with-gibran-impeachment",
-     "date": "2026-11-12"
+     "title": "Jakarta Post — Coalition parties make way for possible Gerindra VP",
+     "url": "https://www.thejakartapost.com/indonesia/2026/11/16/coalition-parties-make-way-for-possible-gerindra-vp",
+     "date": "2026-11-16"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "No G20 collapse; Indonesia VP post vacant",
+   "value": "No G20 collapse; Indonesia VP vote 2 Dec",
    "basis": "judged",
    "basis_detail": "",
-   "rubric_hit": "Normal: no G20 government collapse, contested election or coup found in the past month",
-   "assessed_at": "2026-11-17T17:51:42Z",
+   "rubric_hit": "Normal: no G20 government collapse, contested election or coup in the past month",
+   "assessed_at": "2026-11-18T17:47:08Z",
    "value_num": null
   },
   "russia-ukraine": {
@@ -774,7 +764,7 @@
      "date": "2026-11-17"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "141 drones launched 17–18 Nov",
    "value_num": 141,
@@ -806,7 +796,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Gaza deaths 17 Nov; Iran strikes on Bahrain",
    "rubric_hit": "Multi-front escalation and cross-border strikes = Alert",
@@ -819,100 +809,101 @@
    "trend": "flat",
    "summary": "FEWS NET says Famine risk has spread to parts of South Darfur; the army broke the RSF siege of El Obeid in Kordofan",
    "state": "FEWS NET's September 2026 to January 2027 update says the risk of Famine has spread to parts of South Darfur, including East Jebel Marra, where acute malnutrition in two of four camps assessed exceeded the Famine threshold, and persists in North Darfur and around Kadugli and Dilling (FEWS NET). In Kordofan, which the UN calls the war's epicentre, the army broke the RSF siege of El Obeid and took al-Khuwai in West Kordofan, while most aid operations there have halted (Al Jazeera, 14 Nov). Famine risk spreading to new areas keeps the Alert.",
-   "for_you": "Little direct risk to UK readers; the FCDO advises against all travel to Sudan. The war drives displacement into Chad, Egypt and South Sudan and adds to pressure on humanitarian budgets.",
+   "for_you": "Anyone with links to Sudan should follow FCDO travel advice. Humanitarian updates come from UN OCHA; those most exposed are displaced people in Darfur and Kordofan.",
    "sources": [
     {
-     "title": "Sudan: As drought compounds conflict, the risk of Famine expands to parts of South Darfur",
+     "title": "FEWS NET — Sudan: as drought compounds conflict, the risk of Famine expands to parts of South Darfur",
      "url": "https://fews.net/east-africa/sudan",
-     "date": "2026-11-17"
+     "date": "2026-11-18"
     },
     {
-     "title": "How SAF successes in Sudan's Kordofan could turn tide against the RSF",
+     "title": "Al Jazeera — How SAF successes in Sudan's Kordofan could turn tide against the RSF",
      "url": "https://www.aljazeera.com/news/2026/11/14/how-saf-successes-in-sudans-kordofan-could-turn-tide-against-the-rsf",
      "date": "2026-11-14"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Famine risk spreads to South Darfur",
    "basis": "judged",
    "basis_detail": "",
-   "rubric_hit": "Alert: famine spreading to new areas — FEWS NET Famine risk now extends to parts of South Darfur",
+   "rubric_hit": "Alert: famine spreading to new areas (FEWS NET: Famine risk extends to parts of South Darfur)",
    "value_num": 484,
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "drc-east": {
    "status": "amber",
-   "trend": "up",
-   "summary": "FRN fighters advanced 50–60km in South Kivu from 7 Nov, taking Bulambika; no major city has fallen",
-   "state": "The FRN, the Kabila-led movement linked to AFC-M23, began an offensive in South Kivu on the night of 6–7 Nov, taking Bitale, Kambali and Bulambika along the RN3 through Kahuzi-Biega park; the army said it still held Mubugu and Hombo-Sud and was preparing a counter-offensive, and Kalehe's administrator put the displaced at over 160,000 (RFI via AllAfrica, 10 Nov). The FRN said on 6 Nov it faces the army, Burundian forces and allied militias in the Fizi-Uvira-Mwenga highlands (New Times). No capture of Goma, Bukavu or Uvira or direct interstate fighting was found as of 17 Nov, so Watch holds.",
-   "for_you": "Little direct risk to UK readers; follow FCDO travel advice for the DRC. The east produces tin, tantalum and gold, so fighting can disrupt mineral supply chains, and it displaces large numbers of civilians.",
+   "trend": "flat",
+   "summary": "FRN fighters took Bulambika in South Kivu on 8 Nov and the army plans a counter-offensive; no major city has fallen",
+   "state": "The FRN, the Kabila-led movement that replaced AFC-M23 in talks with Kinshasa, took Bulambika in Kalehe territory on 8 Nov after an offensive along the RN3 (Actualite.cd), and the army announced a counter-offensive as fighting spread beyond Kalehe (Africanews, 10 Nov). The FRN said on 4 Nov it had no intention of advancing on Uvira and remained committed to the Doha process (New Times). Searches on 18 Nov found no capture of Goma, Bukavu or Uvira or direct interstate fighting, so Watch holds.",
+   "for_you": "Anyone travelling to eastern DR Congo should check FCDO travel advice. Those most exposed are civilians in Kalehe and nearby territories, where offensives tend to bring new waves of displacement.",
    "sources": [
     {
-     "title": "Offensive des combattants du FRN au Sud-Kivu, plusieurs localités tombent sous leur contrôle",
-     "url": "https://fr.allafrica.com/stories/202611100235.html",
+     "title": "Actualite.cd — Kalehe: les rebelles du FRN prennent le contrôle de Bulambika",
+     "url": "https://actualite.cd/2026/11/08/kalehe-les-rebelles-du-frn-prennent-le-controle-de-bulambika",
+     "date": "2026-11-08"
+    },
+    {
+     "title": "Africanews — DRC: FRN intensifies offensive, putting FARDC under pressure on multiple fronts",
+     "url": "https://www.africanews.com/2026/11/10/drc-frn-intensifies-offensive-putting-fardc-under-pressure-on-multiple-fronts/",
      "date": "2026-11-10"
     },
     {
-     "title": "FRN raises alarm over 'humanitarian catastrophe' in South Kivu",
-     "url": "https://www.newtimes.co.rw/article/40285/news/africa/frn-raises-alarm-over-humanitarian-catastrophe-in-south-kivu/amp",
-     "date": "2026-11-06"
+     "title": "New Times — FRN has no intention to advance towards Uvira: spokesperson",
+     "url": "https://www.newtimes.co.rw/article/40214/news/africa/frn-has-no-intention-to-advance-towards-uvira-spokesperson/amp",
+     "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "FRN took Bulambika 9 Nov; no major city fallen",
+   "value": "FRN took Bulambika 8 Nov; no major city fallen",
    "basis": "judged",
    "basis_detail": "",
-   "rubric_hit": "Watch: active fighting — FRN offensive in South Kivu from 7 Nov; no major city captured, no interstate fighting",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "rubric_hit": "Watch: active fighting in South Kivu; no capture of a major city or direct interstate fighting (Alert line)",
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "sahel": {
    "status": "amber",
    "trend": "flat",
    "summary": "JNIM and IS Sahel fight state forces and each other in Burkina Faso and Mali; no capital or major city has fallen",
-   "state": "Al Qaeda-linked JNIM and Islamic State Sahel Province are fighting each other as well as state forces in Burkina Faso and Mali; IS claimed more than 400 JNIM fighters killed around Ganadaouri on 9 Oct, a figure not independently confirmed (Al Jazeera, 13 Nov). ACLED recorded more than 10,000 deaths from political violence in Burkina Faso, Mali and Niger in January–November 2025. JNIM has expanded into Benin and Togo, but no new fall or blockade of a capital or major city and no new mass-casualty attack in a coastal state was found as of 17 Nov, so Watch holds.",
-   "for_you": "The FCDO advises against all or most travel to large parts of Mali, Burkina Faso and Niger; check its travel advice. The violence drives displacement across West Africa and raises pressure on coastal states such as Benin and Togo.",
+   "state": "Al Qaeda-linked JNIM and Islamic State Sahel Province have fought increasingly deadly battles along Burkina Faso's border with Mali since early September; IS claimed over 400 JNIM fighters killed around Ganadaouri on 9 Oct, a toll not independently confirmed (Al Jazeera, 13 Nov). ACLED recorded more than 10,000 political violence deaths in Burkina Faso, Mali and Niger in January–November 2025, and JNIM has expanded into Benin and Togo. Searches on 18 Nov found no new fall or blockade of a capital or major city and no new mass-casualty attack in a coastal state, so Watch holds.",
+   "for_you": "Anyone travelling to Mali, Burkina Faso, Niger or northern Benin and Togo should check FCDO travel advice. Those most exposed are rural communities and travellers on roads in border areas.",
    "sources": [
     {
-     "title": "Burkina Faso's rival armed groups turn on each other as state loses ground",
-     "url": "https://www.aljazeera.com/amp/news/2026/11/13/burkina-fasos-rival-armed-groups-turn-on-each-other-as-state-loses-ground",
+     "title": "Al Jazeera — Burkina Faso's rival armed groups turn on each other as state loses ground",
+     "url": "https://aljazeera.com/news/2026/11/13/burkina-fasos-rival-armed-groups-turn-on-each-other-as-state-loses-ground",
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-04T17:53:13Z",
    "value": "Insurgency sustained; no capital newly fallen",
    "basis": "judged",
    "basis_detail": "",
-   "rubric_hit": "Watch: sustained insurgency at current levels; no capital or major city fallen or newly blockaded",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "rubric_hit": "Watch: sustained insurgency at current levels; no capital or major city blockaded or fallen (Alert line)",
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "myanmar": {
    "status": "amber",
    "trend": "flat",
    "summary": "Witnesses say a military airstrike killed 12 at a Rakhine displacement camp on 13 Nov; no major city changed hands",
-   "state": "Witnesses and a rescue group said a military airstrike on the Byar La displacement camp in Ponnagyun township, Rakhine State, killed 12 people, including a five-year-old, and injured 18 on the evening of 13 Nov (AFP via Arab News). On 6 Nov the election commission announced by-elections in 39 constituencies for 4 April 2027 as fighting continues in Sagaing, Mandalay and Chin; ACLED says the war has killed over 100,000 people (The Star). No major city changing hands or cross-border escalation was found as of 17 Nov, so Watch holds.",
-   "for_you": "The FCDO advises against travel to large parts of Myanmar; check its travel advice. The war drives refugee flows to Bangladesh and Thailand and disrupts trade routes with China and India.",
+   "state": "Witnesses and a rescue group said a military airstrike on the Byar La displacement camp in Ponnagyun township, Rakhine State, killed 12 people, including a five-year-old, and injured 18 on 13 Nov; AFP could not reach the military for comment (Arab News). Rakhine is largely held by the Arakan Army and blockaded by the military, and ACLED estimates over 100,000 people have been killed since the 2021 coup. Searches on 18 Nov found no major city changing hands or cross-border escalation, so Watch holds.",
+   "for_you": "Anyone travelling to Myanmar should check FCDO travel advice. Those most exposed are civilians in conflict areas, especially displaced people in Rakhine.",
    "sources": [
     {
-     "title": "Myanmar airstrike on displaced persons camp kills 12: witnesses",
+     "title": "Arab News (AFP) — Myanmar airstrike on displaced persons camp kills 12: witnesses",
      "url": "https://www.arabnews.pk/world/myanmar-airstrike-on-displaced-persons-camp-kills-12-witnesses-3007034",
      "date": "2026-11-14"
-    },
-    {
-     "title": "Myanmar announces by-elections expanding parliament writ and confident of holding on to territories",
-     "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/06/myanmar-announces-by-elections-expanding-parliament-writ-and-confident-of-holding-on-to-territories",
-     "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Airstrike on Rakhine IDP camp killed 12, 13 Nov",
    "basis": "judged",
    "basis_detail": "",
-   "rubric_hit": "Watch: civil war at sustained intensity; no major city fallen or cross-border escalation as of 17 Nov",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "rubric_hit": "Watch: civil war at sustained intensity; no major city fallen or cross-border escalation (Alert line)",
+   "assessed_at": "2026-11-18T17:47:08Z",
+   "value_num": 12
   },
   "india-pakistan": {
    "status": "amber",
@@ -937,7 +928,7 @@
      "date": "2026-09-01"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Indus treaty in abeyance; no LoC strike found",
    "rubric_hit": "Treaty suspension in force = Watch; no cross-border strikes",
@@ -963,7 +954,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No US–Russia treaty limits since Feb",
    "rubric_hit": "Arms-control lapse without replacement = Watch",
@@ -984,7 +975,7 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No Atlantic storms",
    "rubric_hit": "No hurricane active or threatening land = Normal",
@@ -1016,7 +1007,7 @@
      "date": "2026-11-16"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-16T23:43:07Z",
    "value": "GDACS orange: Cyclone Akvan (India)",
    "rubric_hit": "GDACS cyclone: 0 red / 1 orange (Watch)",
@@ -1028,23 +1019,28 @@
   "heat": {
    "status": "amber",
    "trend": "flat",
-   "summary": "BoM severe heatwave warning for Queensland's Peninsula renewed on 17 Nov; no deadly top-tier event found",
-   "state": "The Bureau of Meteorology's warning issued at 1:24pm on 17 Nov keeps severe heatwave conditions over the Peninsula district, with maximums in the high 30s to near 40°C, intensifying until mid-week before easing; the North Tropical Coast and Tablelands have dropped to low intensity (WillyWeather, citing BoM). A regional severe warning meets the Watch line. No deadly heatwave under top-tier warnings across a large population was found as of 17 Nov.",
-   "for_you": "People in far north Queensland should follow Bureau of Meteorology warnings and Queensland Health heat advice. Older people, young children, outdoor workers and those with chronic illness are most exposed.",
+   "summary": "BoM severe heatwave warning for Queensland's Peninsula renewed on 18 Nov; no deadly top-tier event found",
+   "state": "The Bureau of Meteorology's warning issued at 1:29pm on 18 Nov keeps severe heatwave conditions over the Peninsula district, with maximums in the high 30s to near 40°C, easing towards the end of the week (WillyWeather, citing BoM). Weipa had 41 straight days above 36°C to 15 Nov, its longest run on record (The Watchers). A regional severe warning meets the Watch line; searches on 18 Nov found no deadly heatwave under top-tier warnings across a large population.",
+   "for_you": "Mainly affects residents of far north Queensland. Travellers to the area can follow Bureau of Meteorology heatwave warnings and Queensland Health heat advice. No UK heat risk at this time of year.",
    "sources": [
     {
-     "title": "WillyWeather — BoM heatwave warning for Queensland (IDQ21013)",
+     "title": "WillyWeather — BoM heatwave warning, Peninsula district",
      "url": "https://www.willyweather.com.au/warnings/warning.html?code=IDQ21013",
-     "date": "2026-11-17"
+     "date": "2026-11-18"
+    },
+    {
+     "title": "The Watchers — Weipa hits 41 straight days above 36°C as severe heatwave grips Far North Queensland",
+     "url": "https://watchers.news/2026/11/16/severe-heatwave-far-north-queensland-weipa-record-november-2026/",
+     "date": "2026-11-16"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-08T17:55:23Z",
-   "value": "Severe heatwave, Cape York Peninsula (17 Nov)",
+   "value": "Severe heatwave, Cape York Peninsula (18 Nov)",
    "basis": "judged",
    "basis_detail": "",
-   "rubric_hit": "Regional BoM severe heatwave warning = Watch; no deadly top-tier event (Alert line)",
-   "assessed_at": "2026-11-17T17:51:42Z",
+   "rubric_hit": "Watch: regional heatwave warning (BoM severe, Peninsula district, 18 Nov); no deadly top-tier event for Alert",
+   "assessed_at": "2026-11-18T17:47:08Z",
    "value_num": null
   },
   "wildfires": {
@@ -1060,7 +1056,7 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
    "rubric_hit": "GDACS wildfire: 0 red / 0 orange",
@@ -1082,7 +1078,7 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
    "rubric_hit": "GDACS flood: 0 red / 0 orange",
@@ -1111,7 +1107,7 @@
    ],
    "value": "Max M6.6, 1× M6+ (7d)",
    "value_num": 6.6,
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "max magnitude 6.6 below the 7 Watch line",
    "basis": "measured",
@@ -1121,55 +1117,50 @@
   "volcanic": {
    "status": "green",
    "trend": "flat",
-   "summary": "No red aviation codes, VEI 4+ eruptions or ash-related airspace closures found as of 17 Nov; Mayon at alert level 3",
-   "state": "Mayon in the Philippines remains at alert level 3 after a moderately explosive eruption on 30 Oct; a minor eruption on 3 Nov sent ash about 1,600 metres high and 3,903 people had evacuated, with no flight disruption reported (Daily Tribune). GDACS listed no volcano alerts on 17 Nov, and searches found no red aviation colour code near major air routes, no VEI 4+ eruption and no major ash-related airspace closure. Ongoing eruptions remain local hazards, so the signal stays Normal.",
-   "for_you": "Air travel is not currently affected by volcanic ash on major routes. People near Mayon should follow Phivolcs and local authority evacuation advice and keep out of the 6 km danger zone.",
+   "summary": "No red aviation codes, VEI 4+ eruptions or ash-related airspace closures found as of 18 Nov; Mayon at alert level 3",
+   "state": "Mayon in the Philippines remains at alert level 3 after a moderately explosive eruption on 30 Oct sent ash about 3,000 metres above the crater; pilots are told to avoid the summit, but no flight cancellations were reported (Nature World News, 4 Nov). Searches on 18 Nov found no red aviation colour code near major air routes, no VEI 4+ eruption and no major ash-related airspace closure. Ongoing eruptions remain local hazards, so the signal stays Normal.",
+   "for_you": "No volcanic ash disruption to flights was found. Travellers to the Philippines or Indonesia can check airline notices and FCDO travel advice for areas near active volcanoes.",
    "sources": [
     {
-     "title": "Daily Tribune — Mayon spews ash plume, displaces nearly 4k residents",
-     "url": "https://tribune.net.ph/2026/11/03/mayon-spews-ash-plume-displaces-nearly-4k-residents",
-     "date": "2026-11-03"
-    },
-    {
-     "title": "GDACS — Global Disaster Alert and Coordination System",
-     "url": "https://www.gdacs.org/",
-     "date": "2026-11-17"
+     "title": "Nature World News — Mayon volcano stays alert level 3 as lava flows and new ash plumes follow explosive eruption",
+     "url": "https://www.natureworldnews.com/articles/73728/20261104/mayon-volcano-stays-alert-level-3-lava-flows-new-ash-plumes-follow-its-explosive-eruption.htm",
+     "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "No red aviation codes found (17 Nov)",
+   "value": "No red aviation codes found (18 Nov)",
    "basis": "judged",
    "basis_detail": "",
-   "rubric_hit": "No aviation colour code red, no VEI 4+ eruption = Normal",
-   "assessed_at": "2026-11-17T17:51:42Z",
+   "rubric_hit": "Normal: no aviation colour code red and no large eruption found as of 18 Nov",
+   "assessed_at": "2026-11-18T17:47:08Z",
    "value_num": null
   },
   "drought": {
    "status": "amber",
    "trend": "flat",
-   "summary": "El Niño drought cuts Sudan's harvest and raises famine risk; no drought famine declaration or exporter harvest failure",
-   "state": "July–September rainfall in Sudan was the lowest in more than three decades, with North Darfur the driest since 1984, and the IPC warned on 12 Oct of rising famine risk in conflict areas (Reuters via TimesLIVE, 23 Oct). GEOGLAM's Crop Monitor of 5 Nov reports drought hampering wheat emergence in southern and central Europe and hurting crops in Mexico and Thailand, but no outright harvest failure. Severe drought in a major crop region keeps Watch; no new drought-driven famine declaration or major exporter harvest failure was found as of 17 Nov.",
-   "for_you": "Households in drought-hit parts of Sudan face the most acute risk. Elsewhere, effects tend to show up later through food prices; ample global grain stocks have so far limited that.",
+   "summary": "Crop Monitor rates Sudan's main-season crops a failure after record-dry rains; no drought famine declaration found",
+   "state": "GEOGLAM's Crop Monitor of 5 Nov rates Sudan's main-season crops a failure after late, below-average rains and conflict, ranks June–September the driest on record across much of South Sudan, and reports drought in northern Ethiopia, the Sahel and South Africa's Western Cape wheat region (Crop Monitor). The IPC warned on 12 Oct of rising famine risk in Sudan's conflict areas (Reuters via TimesLIVE, 23 Oct). Sudan is not a major exporter, so severe drought in crop regions keeps Watch; searches on 18 Nov found no new drought-driven famine declaration.",
+   "for_you": "Most exposed are households in Sudan, South Sudan, Ethiopia and the Sahel, where poor harvests tend to raise local food prices and aid needs. Little direct effect on UK food supply is expected.",
    "sources": [
+    {
+     "title": "GEOGLAM — Crop Monitor for Early Warning, November 2026",
+     "url": "https://cropmonitor.org/crop-monitor-for-early-warning",
+     "date": "2026-11-05"
+    },
     {
      "title": "TimesLIVE (Reuters) — New famine risk haunts war-torn Sudan with El Niño-driven drought",
      "url": "https://www.timeslive.co.za/news/africa/2026-10-23-new-famine-risk-haunts-war-torn-sudan-with-el-nino-driven-drought/",
      "date": "2026-10-23"
-    },
-    {
-     "title": "GEOGLAM — Crop Monitor for AMIS, November 2026",
-     "url": "https://www.cropmonitor.org/crop-monitor-for-amis",
-     "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Sudan harvest hit; no famine declared",
+   "value": "Sudan harvest failure; no famine declared",
    "basis": "judged",
    "basis_detail": "",
-   "rubric_hit": "Severe drought in a major crop region (Sudan; southern Europe emergence) = Watch; no famine or exporter failure",
-   "assessed_at": "2026-11-17T17:51:42Z",
+   "rubric_hit": "Watch: severe drought in major crop regions (Sudan harvest failure, East Africa, Sahel); no famine declaration or major exporter failure for Alert",
+   "assessed_at": "2026-11-18T17:47:08Z",
    "value_num": null
   },
   "space-weather": {
@@ -1187,7 +1178,7 @@
    ],
    "value": "G0 S0 R1",
    "value_num": 0,
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "NOAA G0 S0 R1 (24h max)",
    "basis": "measured",
@@ -1196,122 +1187,122 @@
   },
   "global-temp": {
    "status": "red",
-   "trend": "flat",
-   "summary": "Global temperature 1.88°C above pre-industrial on 11 Nov, a record for the date",
-   "state": "ERA5 data for 11 Nov put global surface air temperature about 1.88°C above pre-industrial levels (14.53°C absolute), a record for the calendar date and above the 1.6°C Alert line (Climate Reanalyzer). The estimate adds 0.88°C to the 1991–2020 anomaly of about 1.0°C. Readings have held above about 1.8°C since late October, with the very strong El Niño adding heat.",
-   "for_you": "Record global warmth raises the odds of heatwaves, heavy rain and marine heatwaves in many regions. Follow national weather service warnings where you live.",
+   "trend": "up",
+   "summary": "Global temperature 1.96°C above pre-industrial on 12 Nov, a record for the date",
+   "state": "ERA5 data for 12 Nov put global surface air temperature about 1.96°C above pre-industrial levels (14.57°C absolute), a record for the calendar date and above the 1.6°C Alert line (Climate Reanalyzer). The estimate adds 0.88°C to the 1991–2020 anomaly of about 1.08°C. Readings have held above about 1.8°C since late October, with the very strong El Niño adding heat.",
+   "for_you": "Record global warmth raises the odds of heatwaves, heavy rain and marine heat in many regions. It is a background indicator rather than a direct UK hazard; follow Met Office warnings for local weather.",
    "sources": [
     {
-     "title": "Climate Reanalyzer — Daily 2-metre air temperature (ERA5)",
+     "title": "Climate Reanalyzer — Daily global surface air temperature (ERA5)",
      "url": "https://climatereanalyzer.org/clim/t2_daily/",
-     "date": "2026-11-11"
+     "date": "2026-11-18"
     }
    ],
-   "value": "+1.88°C vs pre-industrial (11 Nov)",
-   "value_num": 1.88,
-   "checked_at": "2026-11-17T17:51:42Z",
+   "value": "+1.96°C vs pre-industrial (12 Nov)",
+   "value_num": 1.96,
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "basis": "measured",
-   "basis_detail": "°C above pre-industrial=1.88; record for date",
-   "rubric_hit": "+1.88°C > +1.6°C Alert line; record for date",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "basis_detail": "°C above pre-industrial=1.96; record for date",
+   "rubric_hit": "Alert: +1.96°C > +1.6°C line, and a record high for 12 Nov",
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "sea-ice": {
    "status": "amber",
    "trend": "flat",
-   "summary": "Arctic sea ice 1.64M km² and Antarctic 1.41M km² below average on 16 Nov; neither at a record low",
-   "state": "On 16 Nov Arctic sea-ice extent was 9.02 million km², about 1.64 million km² below the 1981–2010 average and the third lowest for the date, as autumn refreeze continued (NSIDC). Antarctic extent was about 1.41 million km² below average, the fourth lowest for the date. Both are past the −1.0 million km² Watch line, and neither pole is at a record low.",
-   "for_you": "Low sea ice mainly affects polar ecosystems, Arctic communities and shipping routes, and adds to longer-term warming. There is no direct day-to-day effect for most readers.",
+   "summary": "Arctic sea ice 1.77M km² and Antarctic 1.36M km² below average on 17 Nov; neither at a record low",
+   "state": "On 17 Nov Arctic sea-ice extent was 9.00 million km², about 1.77 million km² below the 1981–2010 average and the third lowest for the date, with extent dipping slightly between 16 and 17 Nov (NSIDC). Antarctic extent was 14.53 million km², about 1.36 million km² below average and the fourth lowest for the date. Both are past the −1.0 million km² Watch line, and neither pole is at a record low.",
+   "for_you": "Low sea ice is a long-term climate indicator with no immediate effect on daily life in the UK. It tends to add to ocean warming and can affect weather patterns over time.",
    "sources": [
     {
-     "title": "NSIDC — Sea Ice Index tools",
+     "title": "NSIDC — Sea Ice Index v4 daily extent",
      "url": "https://nsidc.org/arcticseaicenews/sea-ice-tools/",
-     "date": "2026-11-16"
+     "date": "2026-11-17"
     }
    ],
-   "value": "Arctic -1.64, Antarctic -1.41M km²",
-   "value_num": -1.64,
-   "checked_at": "2026-11-17T17:51:42Z",
+   "value": "Arctic -1.77, Antarctic -1.36M km²",
+   "value_num": -1.77,
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "basis": "measured",
-   "basis_detail": "worst anomaly -1.64M km²",
-   "rubric_hit": "Arctic -1.64M km² below -1.0M Watch line; no record low (Alert line)",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "basis_detail": "worst anomaly -1.77M km²",
+   "rubric_hit": "Watch: Arctic -1.77M km² and Antarctic -1.36M km² below the -1.0M km² line; no record low for date",
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "co2": {
    "status": "amber",
    "trend": "flat",
    "summary": "CO₂ 428.65 ppm at Mauna Loa in the week of 8 Nov, up 2.35 ppm on a year, inside the 2–3 ppm Watch band",
-   "state": "Mauna Loa recorded 428.65 ppm in the week of 8 Nov, 2.35 ppm higher than a year earlier and inside the 2.0–3.0 ppm Watch band (NOAA GML). No newer weekly figure was available on 17 Nov, and weekly growth figures are noisy. El Niño years tend to bring faster CO₂ growth as tropical land absorbs less carbon.",
-   "for_you": "CO₂ growth is a slow-moving indicator of long-term climate risk rather than an immediate hazard. There is no direct day-to-day effect.",
+   "state": "Mauna Loa recorded 428.65 ppm in the week of 8 Nov, 2.35 ppm higher than a year earlier and inside the 2.0–3.0 ppm Watch band (NOAA GML). No newer weekly figure was available on 18 Nov, and weekly growth figures are noisy. El Niño years tend to bring faster CO₂ growth as tropical land absorbs less carbon.",
+   "for_you": "CO₂ growth is a slow-moving climate indicator with no immediate effect on daily life. Faster growth tends to mean continued warming over the coming decades.",
    "sources": [
     {
-     "title": "NOAA GML — Trends in atmospheric CO₂ (Mauna Loa)",
+     "title": "NOAA GML — Trends in atmospheric carbon dioxide, Mauna Loa",
      "url": "https://gml.noaa.gov/ccgg/trends/",
      "date": "2026-11-08"
     }
    ],
    "value": "428.65 ppm, +2.35/yr",
    "value_num": 2.35,
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-14T17:56:14Z",
    "basis": "measured",
    "basis_detail": "CO₂ y/y ppm=2.35",
-   "rubric_hit": "+2.35 ppm/yr within 2.0–3.0 ppm Watch band",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "rubric_hit": "Watch: year-on-year growth +2.35 ppm within the 2.0–3.0 ppm band",
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "enso": {
    "status": "red",
    "trend": "up",
    "summary": "Very strong El Niño: Oceanic Niño Index +2.46°C for Aug–Oct; next value due early Dec",
-   "state": "NOAA's Oceanic Niño Index for August–October, the latest available on 17 Nov, was +2.46°C, far above the +1.5°C threshold for a strong event (NOAA CPC). GEOGLAM's Crop Monitor of 5 Nov describes the El Niño as strengthening and likely to rank among the strongest since 1950, with a 98% chance of lasting through April 2027. The next ONI value, for September–November, is due in early December.",
-   "for_you": "Strong El Niño years tend to bring drought to southern Africa, Indonesia and Australia, heavier rain in parts of the Americas and East Africa, and higher global temperatures. Follow national weather service outlooks.",
+   "state": "NOAA's Oceanic Niño Index for August–October, the latest available on 18 Nov, was +2.46°C, far above the +1.5°C threshold for a strong event (NOAA CPC). GEOGLAM's Crop Monitor of 5 Nov describes drought linked to the event across parts of Africa and South-East Asia. The next ONI value, for September–November, is due in early December.",
+   "for_you": "A very strong El Niño tends to bring drought to southern Africa, Australia and South-East Asia and heavy rain to parts of the Americas, raising some food prices. Its effect on UK weather is weak and uncertain.",
    "sources": [
     {
-     "title": "NOAA CPC — Oceanic Niño Index (ONI)",
+     "title": "NOAA CPC — Oceanic Niño Index (ONI v5)",
      "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/ONI_v5.php",
-     "date": "2026-11-17"
+     "date": "2026-11-18"
     },
     {
-     "title": "GEOGLAM — Crop Monitor for AMIS, November 2026",
-     "url": "https://www.cropmonitor.org/crop-monitor-for-amis",
+     "title": "GEOGLAM — Crop Monitor for Early Warning, November 2026",
+     "url": "https://cropmonitor.org/crop-monitor-for-early-warning",
      "date": "2026-11-05"
     }
    ],
    "value": "ONI +2.46 (El Niño)",
    "value_num": 2.46,
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "basis": "measured",
    "basis_detail": "|ONI|=2.46",
-   "rubric_hit": "|ONI| 2.46 ≥ 1.5 Alert line (strong event)",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "rubric_hit": "Alert: |ONI| 2.46 ≥ 1.5 strong-event line (ASO 2026)",
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "coral-bleaching": {
    "status": "green",
    "trend": "up",
-   "summary": "No fifth global bleaching event declared by NOAA as of 17 Nov; El Niño heat raises the risk of one",
-   "state": "NOAA Coral Reef Watch's status page, last updated 2 Jun, says the fourth global bleaching event likely ended in 2025, and no fifth event has been declared since (NOAA). A Global Coral Reef Monitoring Network report released on 31 Aug said another event this year was very likely given El Niño conditions (bdnews24). Searches on 17 Nov found no new global declaration or confirmed regional mass bleaching, so Normal holds with an upward trend.",
-   "for_you": "Bleaching mainly affects reef ecosystems and the fisheries and tourism that depend on them. NOAA Coral Reef Watch publishes current heat-stress alerts for reef areas.",
+   "summary": "No fifth global bleaching event declared by NOAA as of 18 Nov; El Niño heat raises the risk of one",
+   "state": "NOAA Coral Reef Watch's status page, last updated 2 Jun, says the fourth global bleaching event likely ended in 2025, and no fifth event has been declared since (NOAA). A Global Coral Reef Monitoring Network report released on 31 Aug said another event was very likely given El Niño temperatures (bdnews24). Searches on 18 Nov found no new global declaration or confirmed regional mass bleaching, so Normal holds with an upward trend.",
+   "for_you": "Bleaching mainly affects reef ecosystems and the coastal communities that depend on them for fishing and tourism. Divers and visitors to tropical reefs may see bleached coral during marine heatwaves.",
    "sources": [
     {
-     "title": "NOAA Coral Reef Watch — Current global bleaching status",
-     "url": "https://coralreefwatch.noaa.gov/satellite/research/coral_bleaching_report.php",
+     "title": "NOAA Coral Reef Watch — Current global bleaching: status update",
+     "url": "https://www.coralreefwatch.noaa.gov/satellite/research/coral_bleaching_report.php",
      "date": "2026-06-02"
     },
     {
-     "title": "bdnews24 — Coral bleaching occurring too frequently for reefs to recover",
+     "title": "bdnews24 — Global coral reefs get less time to recover as oceans heat up",
      "url": "https://bdnews24.com/science/9e4876343337",
      "date": "2026-08-31"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "No global event declared (17 Nov)",
+   "value": "No global event declared (18 Nov)",
    "basis": "published",
    "basis_detail": "NOAA Coral Reef Watch",
-   "rubric_hit": "No global bleaching event declared by NOAA = Normal",
-   "assessed_at": "2026-11-17T17:51:42Z",
+   "rubric_hit": "Normal: no global bleaching event in progress per NOAA Coral Reef Watch (status page, 2 Jun)",
+   "assessed_at": "2026-11-18T17:47:08Z",
    "value_num": null
   },
   "who-emergencies": {
@@ -1332,7 +1323,7 @@
      "date": "2026-11-15"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Ebola PHEIC in force",
    "value_num": 1,
@@ -1359,7 +1350,7 @@
      "date": "2026-11-12"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "11,200+ cases, 5,500 deaths (DRC, 15 Nov)",
    "value_num": 11200,
@@ -1386,7 +1377,7 @@
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Three dairy-linked US cases; no human spread",
    "rubric_hit": "Sporadic animal-to-human cases only = Normal",
@@ -1398,81 +1389,91 @@
   "mpox": {
    "status": "amber",
    "trend": "flat",
-   "summary": "WHO lists clade Ib community transmission in nine European countries; no new mpox emergency declared",
-   "state": "WHO's situation report of 14 Sep, its latest found, lists community transmission of clade Ib in Czechia, France, Germany, Ireland, Italy, the Netherlands, Portugal, Switzerland and the UK, and treats mpox as a graded emergency with standing recommendations to August 2027 (WHO). South Africa had 26 confirmed cases to 27 Oct, 19 of them clade Ib (Daily Maverick, 3 Nov). Searches on 17 Nov found no new emergency of international concern, so clade I spread outside Africa keeps Watch.",
-   "for_you": "Most people's risk is low. Close skin-to-skin or sexual contact carries the main risk. UKHSA guidance covers symptoms, testing and vaccine eligibility for those at higher risk; travellers can check NHS and FCDO advice for affected countries.",
+   "summary": "ECDC counts clade I mpox in 15 EU/EEA countries in October; UK has 298 clade Ib cases; no new emergency declared",
+   "state": "ECDC's update of 13 Nov reports clade I mpox cases from 15 EU/EEA countries in October, mostly among men who have sex with men; monthly cases eased from September but stayed above the first half of 2026, and risk to the general population is rated low (ECDC). UKHSA's overview of 12 Nov counts 298 confirmed UK clade Ib cases to 31 Oct, including community-acquired cases (UKHSA). Searches on 18 Nov found no new emergency of international concern, so clade I spread outside Africa keeps Watch.",
+   "for_you": "Risk to the general public is low. People in higher-risk groups can check NHS and UKHSA guidance on mpox symptoms and vaccine eligibility.",
    "sources": [
     {
-     "title": "Multi-country outbreak of mpox, external situation report 69",
-     "url": "https://cdn.who.int/media/docs/default-source/_sage-2026/multi-country-outbreak-of-mpox--external-situation-report_69.pdf",
-     "date": "2026-09-14"
+     "title": "ECDC — Mpox periodic monitoring, 13 November 2026",
+     "url": "https://www.ecdc.europa.eu/en/public-health-events/2022-sti-00005/2026-11-13",
+     "date": "2026-11-13"
     },
     {
-     "title": "Mpox vaccine stock will be deployed as needed as cases climb to 26",
-     "url": "https://www.dailymaverick.co.za/article/2026-11-03-mpox-vaccine-stock-will-be-deployed-as-needed-as-cases-climb-to-26.md",
-     "date": "2026-11-03"
+     "title": "UKHSA — Mpox outbreak: epidemiological overview, 12 November 2026",
+     "url": "https://www.gov.uk/government/publications/monkeypox-outbreak-epidemiological-overview/mpox-outbreak-epidemiological-overview-12-november-2026",
+     "date": "2026-11-12"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Clade Ib community spread in 9 European states",
-   "basis": "published",
-   "basis_detail": "WHO and Africa CDC",
-   "rubric_hit": "Watch: clade Ib community transmission in nine European countries (WHO, 14 Sep); no PHEIC in effect",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "value": "Clade I in 15 EU/EEA states in Oct (ECDC)",
+   "basis": "judged",
+   "basis_detail": "",
+   "rubric_hit": "Watch: clade I spreading outside Africa (ECDC: 15 EU/EEA countries reported clade I in Oct 2026); no PHEIC with accelerating growth",
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "measles": {
    "status": "amber",
    "trend": "up",
-   "summary": "PAHO has concluded the US has lost measles elimination status, US media reported 14 Nov; 10 US deaths in 2026",
-   "state": "PAHO concluded during the week of 9 Nov that measles transmission has been re-established in the US, ending elimination status held since 2000, according to researchers with knowledge of its deliberations; a public announcement was planned for 17 Nov (KFF Health News, 14 Nov). The CDC counts over 5,400 US cases in 2026, more than double 2025, and states report 10 measles-associated deaths this year; PAHO had not commented publicly (Contagion Live, 14 Nov). Loss of elimination status meets Watch.",
-   "for_you": "Two doses of MMR vaccine prevent about 97% of infections. Check your and your children's vaccination records against NHS or CDC guidance, and follow official travel health advice before visiting areas with outbreaks.",
+   "summary": "PAHO confirmed on 17 Nov that the US, Mexico and Bolivia lost measles elimination; 58,213 cases in Americas in 2026",
+   "state": "PAHO announced on 17 Nov that its re-verification commission, meeting 10–13 Nov, concluded that the United States, Mexico and Bolivia have lost measles elimination status after a year or more of continuous transmission; the three must submit corrective plans (PAHO; Health Policy Watch). The Americas recorded 58,213 cases and 114 deaths in 2026 to 6 Nov (PAHO). The CDC counted 5,412 US cases to 12 Nov, the most since 1991 (Latin Times, citing CDC). Loss of elimination status meets Watch; the Alert line on rising deaths is not clearly crossed.",
+   "for_you": "Measles spreads easily and can be serious. The NHS advises checking that you and your children have had two doses of the MMR vaccine; FCDO travel advice and NHS fit for travel list outbreak destinations.",
    "sources": [
     {
-     "title": "US has lost measles elimination status, global health authorities say",
-     "url": "https://kffhealthnews.org/republish/public-health/us-measles-elimination-status-lost-outbreaks-continuous-spread-year-paho-cdc/",
-     "date": "2026-11-14"
+     "title": "PAHO — Measles in the Americas: questions and answers",
+     "url": "https://www.paho.org/en/news/17-11-2026-measles-americas-questions-and-answers-technical-reference-journalists-and-public",
+     "date": "2026-11-17"
     },
     {
-     "title": "Reports say US loses measles elimination status after 26 years",
-     "url": "https://www.contagionlive.com/view/reports-say-us-loses-measles-elimination-status-after-26-years",
-     "date": "2026-11-14"
+     "title": "Health Policy Watch — United States, Mexico and Bolivia lose measles-free status",
+     "url": "https://healthpolicy-watch.news/three-countries-lose-measles-free-status/",
+     "date": "2026-11-17"
+    },
+    {
+     "title": "Latin Times — PAHO revokes US measles elimination status",
+     "url": "https://www.latintimes.com/paho-revokes-us-measles-elimination-status-601372",
+     "date": "2026-11-15"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "US elimination status reported lost (14 Nov)",
-   "value_num": 7500,
+   "value": "US, Mexico, Bolivia lose elimination (17 Nov)",
+   "value_num": 58213,
    "basis": "judged",
    "basis_detail": "",
-   "rubric_hit": "Watch: loss of elimination status (US, reported 14 Nov) and large outbreaks in high-income countries",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "rubric_hit": "Watch: loss of elimination status (PAHO, 17 Nov: US, Mexico, Bolivia); Americas 58,213 cases, 114 deaths in 2026",
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "cholera-dengue": {
    "status": "red",
    "trend": "flat",
-   "summary": "WHO counts over 3,000 cholera deaths in 2026, nearly nine in ten in Africa; Sudan and Yemen among worst affected",
-   "state": "WHO said around 10 Nov that more than 3,000 people have died of cholera in 2026, nearly nine in ten in Africa, with Sudan, South Sudan, DR Congo, Nigeria and Yemen among high-burden countries (SCMP). WHO reported a cholera surge in Yemen as conflict intensified (Al Jazeera, 13 Oct). Searches on 17 Nov found no sign of the toll easing, so high mortality in conflict-affected countries keeps the Alert.",
-   "for_you": "Risk to most travellers is low. Anyone visiting affected areas should follow FCDO travel advice and NHS Fit for Travel guidance on safe water, food hygiene and cholera vaccination.",
+   "summary": "WHO counts over 3,000 cholera deaths in 2026, nearly nine in ten in Africa; Sudan, South Sudan and Yemen hard hit",
+   "state": "WHO said around 10 Nov that more than 3,000 people have died of cholera in 2026, nearly nine in ten in Africa, after nearly 7,900 deaths in 2025, the deadliest year since 1999; Sudan, South Sudan, DR Congo, Nigeria and Yemen are among the worst-affected countries (SCMP; The Standard, citing AFP). In Europe, ECDC counted 76 locally acquired dengue cases in Italy and 8 in France by 11 Nov, with none new in the latest week (ECDC). Searches on 18 Nov found no sign of the cholera toll easing, so high mortality in conflict zones keeps the Alert.",
+   "for_you": "Travellers to affected areas can check NHS fit for travel and FCDO travel advice for cholera and dengue precautions. Risk in the UK is very low.",
    "sources": [
     {
-     "title": "Over 3,000 already dead from cholera this year, says WHO",
+     "title": "SCMP — Over 3,000 already dead from cholera this year, says WHO",
      "url": "https://www.scmp.com/news/world/africa/article/3373991/over-3000-already-dead-cholera-year-says-who",
      "date": "2026-11-10"
     },
     {
-     "title": "Cholera cases surge in Yemen as conflict intensifies, WHO says",
-     "url": "https://www.aljazeera.com/news/2026/10/13/cholera-cases-surge-in-yemen-as-conflict-intensifies-who-says",
-     "date": "2026-10-13"
+     "title": "The Standard (AFP) — Cholera killed more than 3,000 this year: WHO",
+     "url": "https://www.standardmedia.co.ke/business/world/article/2001561996/cholera-killed-more-than-3000-this-year-who",
+     "date": "2026-11-10"
+    },
+    {
+     "title": "ECDC — Seasonal surveillance of dengue in the EU/EEA, 13 November 2026",
+     "url": "https://www.ecdc.europa.eu/en/public-health-events/2026-evd-00017/2026-11-13",
+     "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-06T17:59:39Z",
    "value": "Over 3,000 cholera deaths in 2026 (WHO)",
    "basis": "judged",
    "basis_detail": "",
-   "rubric_hit": "Alert: large cholera outbreaks with high mortality in conflict zones (Sudan, Yemen); 3,000+ deaths in 2026 (WHO)",
-   "assessed_at": "2026-11-17T17:51:42Z",
+   "rubric_hit": "Alert: large outbreaks with high mortality in conflict zones (WHO: over 3,000 cholera deaths in 2026; Sudan, South Sudan, Yemen)",
+   "assessed_at": "2026-11-18T17:47:08Z",
    "value_num": 3000
   },
   "novel-outbreaks": {
@@ -1488,7 +1489,7 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No unexplained clusters",
    "rubric_hit": "No unexplained cluster under investigation = Normal",
@@ -1514,7 +1515,7 @@
      "date": "2026-11-16"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-16T05:51:59Z",
    "value": "Check Point flaw exploited; listed 13 Nov",
    "rubric_hit": "Mass-exploited flaw in a widely used product = Watch",
@@ -1540,7 +1541,7 @@
      "date": "2026-11-17"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-18T11:49:31Z",
    "value": "Apple services down 17 Nov",
    "rubric_hit": "Major payments outage > 2h in past 48h (Apple Pay, 17 Nov) = Watch",
@@ -1552,191 +1553,191 @@
   "cables-gnss": {
    "status": "amber",
    "trend": "flat",
-   "summary": "Finnish court jailed Fitburg's captain over Baltic cable damage on 5 Nov; no new cable cut found to 17 Nov",
-   "state": "Helsinki District Court on 5 Nov sentenced the Fitburg's Russian captain to 42 months and its boatswain to 34 months over the 31 Dec 2025 anchor-dragging that cut Helsinki–Tallinn telecom cables; both deny wrongdoing (Euronews; Courthouse News, 5 Nov). Searches on 17 Nov found no new cable cut and no major new GNSS jamming escalation. The ruling concerns a past incident, so Watch holds rather than rising.",
-   "for_you": "Most users will notice nothing: traffic reroutes around damaged cables. Airlines and ships flying or sailing near the Baltic may see navigation interference, which aviation authorities manage through procedures and alternative systems.",
+   "summary": "Finnish court jailed Fitburg's captain over Baltic cable damage on 5 Nov; no new cable cut found to 18 Nov",
+   "state": "Helsinki District Court on 5 Nov sentenced the Fitburg's Russian captain to three and a half years over the 31 Dec 2025 anchor-dragging that damaged Gulf of Finland telecom cables, and also convicted a second crew member; both deny wrongdoing (Euronews; Yle, 5 Nov). Searches on 18 Nov found no new cable cut and no major new GNSS jamming escalation. The ruling concerns a past incident, so Watch holds rather than rising.",
+   "for_you": "Cable damage rarely cuts UK internet access because traffic reroutes. Pilots and mariners in the Baltic follow official notices on GPS interference.",
    "sources": [
     {
-     "title": "Finnish court jails Russian captain over Baltic Sea cable sabotage",
+     "title": "Euronews — Finnish court jails Russian captain over Baltic Sea cable sabotage",
      "url": "https://www.euronews.com/2026/11/05/finnish-court-jails-russian-captain-over-baltic-sea-cable-sabotage",
      "date": "2026-11-05"
     },
     {
-     "title": "Finnish court jails Russian captain over Baltic cable sabotage",
-     "url": "https://courthousenews.com/articles/finnish-court-jails-russian-captain-over-baltic-cable-sabotage",
+     "title": "Yle — Fitburg captain sentenced over Gulf of Finland cable damage",
+     "url": "https://yle.fi/a/74-20255306",
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Fitburg crew jailed; no new cut found",
    "basis": "judged",
    "basis_detail": "",
-   "rubric_hit": "Watch: Baltic cable damage incident (Fitburg, convictions 5 Nov); no new cuts isolating a region",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "rubric_hit": "Watch: cable damage incident (court ruled on 5 Nov on Fitburg sabotage of Dec 2025); no multiple cuts isolating a region",
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "semiconductors": {
    "status": "amber",
    "trend": "flat",
    "summary": "Nexperia and STMicro warn AI demand is squeezing mature-chip supply for carmakers; no TSMC or Samsung stoppage",
-   "state": "At the Electronica fair in Munich on 9–10 Nov, Nexperia's interim chief executive said the company was totally oversubscribed and STMicroelectronics' chief executive said he saw many bottlenecks, as suppliers shift capacity towards AI data centres and away from mature chips used in cars and industrial equipment (The Star; The Edge Malaysia, 10 Nov). Searches on 17 Nov found no TSMC or Samsung stoppage and no new controls halting a major supply chain, so shortages in a key segment keep Watch.",
-   "for_you": "Shortages of older chips tend to show up first as longer waits and fewer options for new cars and some industrial or household electronics, rather than as empty shelves.",
+   "state": "At the Electronica fair in Munich on 9–10 Nov, Nexperia's interim chief executive said the company was oversubscribed and STMicroelectronics' chief executive said he saw many bottlenecks, as suppliers shift capacity towards AI data centres and away from mature chips used in cars and industrial equipment (The Star; GM Authority, 10 Nov). Searches on 18 Nov found no TSMC or Samsung stoppage and no new controls halting a major supply chain, so shortages in a key segment keep Watch.",
+   "for_you": "Chip bottlenecks tend to show up first as longer lead times for new cars, electronics and industrial equipment, rather than as empty shelves.",
    "sources": [
     {
-     "title": "Chipmakers warn AI demand is creating bottlenecks in automotive supply chain",
+     "title": "The Star — Chipmakers warn AI demand is creating bottlenecks in automotive supply chain",
      "url": "https://www.thestar.com.my/tech/tech-news/2026/11/10/chipmakers-warn-ai-demand-is-creating-bottlenecks-in-automotive-supply-chain",
      "date": "2026-11-10"
     },
     {
-     "title": "Chipmakers warn AI demand is creating bottlenecks in automotive supply chain",
-     "url": "https://theedgemalaysia.com/node/825210",
+     "title": "GM Authority — Chipmaker CEO warns AI demand creating automotive supply chain bottlenecks",
+     "url": "https://gmauthority.com/blog/2026/11/chipmaker-ceo-warns-ai-demand-creating-automotive-supply-chain-bottlenecks/",
      "date": "2026-11-10"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Mature-chip bottlenecks hit carmakers",
    "basis": "judged",
    "basis_detail": "",
-   "rubric_hit": "Watch: shortages reported in a key segment (mature automotive chips, 10 Nov); no TSMC/Samsung disruption",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "rubric_hit": "Watch: shortages reported in key segments (mature automotive chips, 10 Nov); no major TSMC/Samsung disruption",
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "ai-governance": {
    "status": "amber",
    "trend": "flat",
-   "summary": "US charges three over a $129m deepfake executive fraud; no AI attack on critical infrastructure found",
-   "state": "On 6 Nov US prosecutors charged three men accused of using AI-generated voices and images of chief executives and lawyers to take more than $129m from businesses (ITPro; Greek City Times, 8 Nov). Searches on 17 Nov found no newer AI misuse incident of that scale, no AI-enabled attack on critical infrastructure and no AI-attributed mass harm, so a significant AI misuse incident keeps this at Watch.",
-   "for_you": "Deepfake fraud mainly targets businesses through faked calls or video from senior staff. Action Fraud and the NCSC publish guidance on verifying payment requests through a separate, known channel.",
+   "summary": "US seized infrastructure of a North Korean scheme using deepfake video calls, tied by the FBI to $400m in crypto theft",
+   "state": "The US Justice Department seized cloud infrastructure behind a North Korean scheme that used fake video meetings, including AI-generated deepfakes of cryptocurrency figures, to trick targets into installing malware; the FBI ties it to more than $400m stolen over 18 months (ID Tech, 13 Nov). On 6 Nov US prosecutors charged three men over a $129m fraud using AI to impersonate chief executives (ID Tech). Searches on 18 Nov found no AI-enabled attack on critical infrastructure and no AI-attributed mass harm, so significant misuse keeps Watch.",
+   "for_you": "Deepfake voice and video fraud mostly targets businesses and crypto users. The UK National Cyber Security Centre and Action Fraud publish guidance on verifying unexpected payment or software requests.",
    "sources": [
     {
-     "title": "Three charged after impersonating CEOs and attorneys in $129 million deepfake fraud scheme",
-     "url": "https://www.itpro.com/security/cyber-crime/three-charged-after-impersonating-ceos-and-attorneys-in-usd129-million-deepfake-fraud-scheme",
-     "date": "2026-11-06"
+     "title": "ID Tech — US disrupts North Korean fake video call scheme tied to $400 million theft",
+     "url": "https://idtechwire.com/ai-update-u-s-disrupts-north-korean-fake-video-call-scheme-tied-to-400-million-theft/",
+     "date": "2026-11-13"
     },
     {
-     "title": "US Charges Three Over $129m Deepfake Fraud Routed via Greece",
-     "url": "https://greekcitytimes.com/2026/11/08/deepfake-fraud/",
-     "date": "2026-11-08"
+     "title": "ID Tech — US charges three in $129 million fraud using AI to pose as CEOs",
+     "url": "https://idtechwire.com/ai-update-u-s-charges-three-in-129-million-fraud-using-ai-to-pose-as-ceos/",
+     "date": "2026-11-07"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "$129m deepfake fraud charges",
+   "value": "US disrupts $400m deepfake video-call theft",
    "basis": "judged",
    "basis_detail": "",
-   "rubric_hit": "Watch: significant AI misuse incident ($129m deepfake executive fraud charged 6 Nov)",
-   "assessed_at": "2026-11-17T17:51:42Z",
+   "rubric_hit": "Watch: significant AI misuse incident (deepfake video-call scheme tied to $400m theft, disrupted 13 Nov); no AI attack on critical infrastructure",
+   "assessed_at": "2026-11-18T17:47:08Z",
    "value_num": 129
   },
   "famine": {
    "status": "amber",
    "trend": "flat",
-   "summary": "IPC alert warns of growing famine risk in Darfur and Kordofan; no area newly classified as Famine found as of 17 Nov",
-   "state": "The IPC alert issued on 12–13 Oct found child acute malnutrition above the famine threshold in two South Darfur camps and emergency-level child mortality in surveyed camps, with more than 5 million people facing emergency hunger as war and El Niño-linked drought compound (IRC, 13 Oct; WHO via AllAfrica). The alert warns of a growing risk of famine but is not a new Famine classification. Searches on 17 Nov found no newer IPC Famine classification, so risk alerts keep Watch.",
-   "for_you": "Most exposed are displaced families and young children in Darfur and Kordofan, where drought, blocked access and aid shortfalls combine. Famine classifications tend to follow such alerts if access does not improve.",
+   "summary": "IPC-based warnings of famine risk in Darfur and Kordofan persist; no area newly classified as Famine found as of 18 Nov",
+   "state": "A joint statement on 27 Oct citing IPC analysis warned of a risk of famine in Sudan in the coming months, and WFP says the risk persists in Greater Darfur and Greater Kordofan, with 19.5 million people facing acute hunger and 5 million at emergency levels (Al Jazeera, 2 Nov). These are risk warnings, not a new Famine classification. Searches on 18 Nov found no new IPC Phase 5 Famine classification, so risk alerts keep Watch.",
+   "for_you": "This mainly affects people in Sudan. Official updates come from the IPC, WFP and UN OCHA.",
    "sources": [
     {
-     "title": "War and El Niño-driven drought deplete food stocks, pushing Sudan further towards famine",
-     "url": "https://www.rescue.org/press-release/war-and-el-nino-driven-drought-deplete-food-stocks-pushing-sudan-further-towards",
-     "date": "2026-10-13"
-    },
-    {
-     "title": "Africa: IPC Sudan Food Insecurity and Malnutrition Alert",
-     "url": "https://allafrica.com/stories/202610130125.html",
-     "date": "2026-10-13"
+     "title": "Al Jazeera — As aid situation worsens, displaced Sudanese worry about warnings of famine",
+     "url": "https://aljazeera.com/features/2026/11/2/as-aid-situation-worsens-displaced-sudanese-worry-about-warnings-of-famine",
+     "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Risk of Famine in Sudan; none newly confirmed",
    "basis": "judged",
    "basis_detail": "",
-   "rubric_hit": "IPC 'growing risk of famine' alert for Darfur and Kordofan (Watch); no new IPC Phase 5 classification found",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "rubric_hit": "Watch: 'risk of famine' alerts (IPC-based warning for Sudan, 27 Oct); no new IPC Phase 5 Famine classification found",
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "displacement": {
    "status": "green",
    "trend": "flat",
-   "summary": "Yemen fighting displaced 300,000+ over two months; Darfur flight continues; no event over 500,000 in a month found",
-   "state": "IOM said on 1 Nov that more than 300,000 people had fled fighting in western Yemen, almost all over the previous two months since hostilities intensified in September (Khaleej Times, citing AFP). In Sudan, IOM said on 12 Nov that more than 5,200 people fled villages in North and South Darfur over three days, most into Chad (Anadolu via A News). Neither reaches 500,000 in a month, and searches on 17 Nov found no other new mass displacement event, so the signal stays Normal.",
-   "for_you": "Those most exposed are civilians in western Yemen and Darfur, and neighbouring Chad, which receives most people fleeing Darfur. Large new flows tend to strain camps and aid budgets that are already stretched.",
+   "summary": "About 50,000 fled Ethiopia clashes into Kenya since late Oct; Yemen and Darfur flight go on; none over 500,000/month",
+   "state": "IOM said on 9 Nov that about 50,000 people have crossed into Moyale in northern Kenya since late October, fleeing clashes in Ethiopia's Oromia and Somali regions (UN News via AllAfrica). IOM said on 12 Nov that more than 5,200 people fled villages in North and South Darfur over three days (Anadolu via A News), and earlier counted over 300,000 displaced in western Yemen over two months (Khaleej Times, citing AFP). None reaches 500,000 in a month, so the signal stays Normal.",
+   "for_you": "These events mainly affect people in the regions concerned. UNHCR and IOM publish displacement figures; FCDO travel advice covers affected countries.",
    "sources": [
     {
-     "title": "More than 300,000 have fled fighting in western Yemen: UN",
-     "url": "https://www.khaleejtimes.com/world/mena/un-over-300000-displaced-fighting-western-yemen-houthis",
-     "date": "2026-11-01"
+     "title": "AllAfrica (UN News) — Families who fled Ethiopia for Kenya's Moyale need food, water and shelter",
+     "url": "https://allafrica.com/stories/202611100008.html",
+     "date": "2026-11-09"
     },
     {
-     "title": "Over 5,200 displaced from Sudan's North, South Darfur in 3 days: UN agency",
+     "title": "A News — Over 5,200 displaced from Sudan's North, South Darfur in 3 days: UN agency",
      "url": "https://anews.com.tr/world/2026/11/12/over-5200-displaced-from-sudans-north-south-darfur-in-3-days-un-agency",
      "date": "2026-11-12"
+    },
+    {
+     "title": "Khaleej Times — More than 300,000 have fled fighting in western Yemen: UN",
+     "url": "https://www.khaleejtimes.com/world/mena/un-over-300000-displaced-fighting-western-yemen-houthis",
+     "date": "2026-11-01"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "No new event over 500k/month (17 Nov)",
+   "value": "No new event over 500k/month (18 Nov)",
    "basis": "judged",
    "basis_detail": "",
-   "rubric_hit": "No new event displacing >500,000 in a month; Yemen ~300,000 over two months is below the Watch line",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "rubric_hit": "Normal: no new event displacing >500,000 in a month (largest found: ~50,000 into Kenya since late Oct; 300,000+ in Yemen over two months)",
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "civil-unrest": {
    "status": "amber",
    "trend": "flat",
-   "summary": "Fifth weekend of cost-of-living protests in France on 14 Nov; at least 10 killed in Guinea mining clashes on 12–13 Nov",
-   "state": "France saw a fifth straight Saturday of nationwide cost-of-living protests on 14 Nov, with about 106,000 marchers by the interior ministry's count and 200,000 by union count; no deaths were reported (Malay Mail, citing AFP). In Guinea, the government said at least 10 people were killed and 13 injured in clashes between protesters and security forces in Siguiri over a ban on artisanal gold mining (Al Jazeera, 13 Nov). Sustained protests and localised deadly unrest keep Watch; no deadly nationwide unrest in a major country was found as of 17 Nov.",
-   "for_you": "Travellers to France may meet weekend marches and transport disruption in Paris and other cities; FCDO travel advice lists current local guidance. Turnout in France has been easing since early November.",
+   "summary": "France held a fifth protest Saturday on 14 Nov and a strike day on 17 Nov; at least 10 killed in Guinea mining clashes",
+   "state": "France saw a fifth straight Saturday of nationwide cost-of-living protests on 14 Nov, with about 106,000 marchers by the interior ministry's count and 200,000 by organisers' count; unions called a further strike day for 17 Nov and no deaths were reported (Euronews). In Guinea, the government said at least 10 people were killed in clashes in Siguiri on 12–13 Nov over a ban on artisanal gold mining (Arab News). Sustained protests and localised deadly unrest keep Watch; no deadly nationwide unrest in a major country was found as of 18 Nov.",
+   "for_you": "Protests in France can disrupt transport and city centres on strike days. FCDO travel advice for France and Guinea carries current safety information.",
    "sources": [
     {
-     "title": "More than 100,000 march across France as protests enter fifth weekend",
-     "url": "https://www.malaymail.com/amp/news/world/2026/11/15/more-than-100000-march-across-france-as-protests-enter-fifth-weekend/243325",
-     "date": "2026-11-15"
+     "title": "Euronews — France sees fifth consecutive Saturday of nationwide protests",
+     "url": "https://www.euronews.com/2026/11/14/france-sees-fifth-consecutive-saturday-of-nationwide-protests",
+     "date": "2026-11-14"
     },
     {
-     "title": "At least 10 killed in Guinea clashes over gold mining ban",
-     "url": "https://www.aljazeera.com/news/2026/11/13/at-least-10-killed-in-guinea-in-crackdown-on-gold-mining",
+     "title": "Arab News — 10 killed in clashes in Guinea after artisanal mining ban",
+     "url": "https://www.arabnews.pk/world/10-killed-in-clashes-in-guinea-after-artisanal-mining-ban-3006926",
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "France 5th protest weekend; Guinea clash",
+   "value": "France protests continue; Guinea clash deaths",
    "basis": "judged",
    "basis_detail": "",
-   "rubric_hit": "Significant protests in several countries and deadly unrest in one (Guinea, 10 killed) meet Watch; no deadly nationwide unrest",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "rubric_hit": "Watch: significant protests in several countries or deadly unrest in one (France 106,000 on 14 Nov; Guinea at least 10 killed 12–13 Nov)",
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "uk-rates": {
    "status": "amber",
    "trend": "up",
-   "summary": "UK CPI 3.5% in September; Bank Rate 4% after 5 Nov rise; BoE sees CPI near 5% by mid-2027; October CPI due 18 Nov",
-   "state": "UK CPI inflation was 3.5% in September, inside the 2.5–4.0% Watch band, and the Bank of England raised Bank Rate by 0.25 points to 4% on 5 Nov by an 8–1 vote, projecting CPI near 5% by the second quarter of 2027 (Bank of England). Deutsche Bank expects October inflation to move higher (FXStreet, 11 Nov). The ONS publishes October CPI at 07:00 on 18 Nov; a print above 4% would cross the Alert line.",
-   "for_you": "Rising rates tend to feed through to mortgage and loan costs, with people refixing mortgages most exposed. The Bank of England and ONS publish the official figures.",
+   "summary": "UK CPI rose to 3.6% in October, a one-year high, from 3.5%; Bank Rate 4% with a December rise widely expected",
+   "state": "The ONS reported on 18 Nov that CPI inflation rose to 3.6% in October from 3.5% in September, driven by motor fuels up 33.2% on the year, inside the 2.5–4.0% Watch band (ONS). Core inflation held at 2.8% and services at 3.7%, and markets put the chance of a December rate rise at about 80% (RTÉ). The Bank of England raised Bank Rate to 4% on 5 Nov and expects inflation to peak near 5% next summer (AP).",
+   "for_you": "Rising prices squeeze household budgets, especially for drivers and heating. Borrowers on variable or expiring fixed-rate mortgages are most exposed to further Bank Rate rises.",
    "sources": [
     {
-     "title": "Monetary Policy Report - November 2026",
-     "url": "https://www.bankofengland.co.uk/monetary-policy-report/2026/november-2026",
-     "date": "2026-11-05"
+     "title": "ONS — Consumer price inflation, UK: October 2026",
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/october2026",
+     "date": "2026-11-18"
     },
     {
-     "title": "Consumer price inflation, UK: October 2026 (release calendar)",
-     "url": "https://www.ons.gov.uk/releases/consumerpriceinflationukoctober2026",
-     "date": "2026-11-17"
+     "title": "RTÉ — UK inflation rises to 1-year high, markets trim rate bets",
+     "url": "https://www.rte.ie/news/business/2026/1118/1599633-uk-inflation-figures/",
+     "date": "2026-11-18"
     },
     {
-     "title": "UK inflation to move higher in October – Deutsche Bank",
-     "url": "https://www.fxstreet.com/news/uk-inflation-to-move-higher-in-october-deutsche-bank-202611111327",
-     "date": "2026-11-11"
+     "title": "AP (via KSAT) — UK inflation rises to year high and keeps possibility of second straight rate hike alive",
+     "url": "https://www.ksat.com/business/2026/11/18/uk-inflation-rises-to-year-high-and-keeps-possibility-of-second-straight-rate-hike-alive/",
+     "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "CPI 3.5% (Sep); Bank Rate 4%; Oct CPI 18 Nov",
-   "value_num": 3.5,
+   "value": "CPI 3.6% (Oct); Bank Rate 4%",
+   "value_num": 3.6,
    "basis": "published",
    "basis_detail": "ONS CPI and Bank of England decisions",
-   "rubric_hit": "CPI 3.5% (Sep) within 2.5–4.0% Watch band; BoE raised Bank Rate to 4% on 5 Nov",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "rubric_hit": "Watch: ONS CPI 3.6% within 2.5–4.0% band; below 4.0% Alert line, no emergency BoE move",
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "gilts": {
    "status": "amber",
@@ -1756,7 +1757,7 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "10y near 5.3%; CPI 3.6% (Oct)",
    "value_num": 5.3,
@@ -1766,26 +1767,36 @@
    "assessed_at": "2026-11-18T11:49:35Z"
   },
   "uk-energy-cap": {
-   "status": "amber",
+   "status": "red",
    "trend": "up",
-   "summary": "Ofgem cap £1,723 a year to 31 Dec; Cornwall Insight forecasts about £1,999 from January, about 16% higher",
-   "state": "Ofgem's cap for 1 Oct to 31 Dec 2026 is £1,723 a year for a typical dual-fuel household, inside the £1,700–2,200 Watch band. Cornwall Insight's forecast, last updated 13 Nov and based on wholesale prices at 28 Sep, puts the January to March 2027 cap at about £1,999, roughly 16% higher (Cornwall Insight). That rise is above the 5% Watch line but below the 20% Alert line; Cornwall Insight's next update is due 18 Nov.",
-   "for_you": "Households on standard variable tariffs are most exposed to the January change, which Ofgem confirms in late November. Ofgem and Citizens Advice publish guidance for people struggling with energy bills.",
+   "summary": "Cornwall Insight's final forecast puts the January cap at about £2,166 a year, 26% above today's £1,723",
+   "state": "Cornwall Insight's final forecast, published on 18 Nov from wholesale prices at 17 Nov, puts the January to March 2027 cap at about £2,166 a year for a typical dual-fuel household, 26% (£443) above the current £1,723 and the highest since 2023 (Cornwall Insight; ITV). It cites gas price volatility from the Middle East conflict and record-low European gas storage. A rise of 26% is above the 20% Alert line; Ofgem's own announcement is still to come.",
+   "for_you": "Households on standard variable tariffs, especially those using more energy in winter, are most exposed to the January rise. Ofgem and GOV.UK publish guidance on help with energy bills and support schemes.",
    "sources": [
     {
-     "title": "Default Tariff Cap (Price Cap) Predictions & Insights",
+     "title": "Cornwall Insight — Energy bills set for steep rise in January",
+     "url": "https://www.cornwall-insight.com/press-releases/energy-bills-set-for-steep-rise-in-january/",
+     "date": "2026-11-18"
+    },
+    {
+     "title": "Cornwall Insight — Default Tariff Cap (Price Cap) Predictions & Insights",
      "url": "https://www.cornwall-insight.com/predictions-and-insights-into-the-default-tariff-cap/",
-     "date": "2026-11-13"
+     "date": "2026-11-18"
+    },
+    {
+     "title": "ITV News — Winter energy bill misery on way as price cap set to jump by 26% in January",
+     "url": "https://www.itv.com/news/2026-11-18/winter-energy-bill-misery-on-way-as-price-cap-set-to-jump-by-26-in-january",
+     "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
-   "changed_at": "2026-11-06T17:59:39Z",
-   "value": "£1,723 now; Jan forecast £1,999 (+16%)",
-   "value_num": 1723,
+   "checked_at": "2026-11-18T17:47:08Z",
+   "changed_at": "2026-11-18T17:47:01Z",
+   "value": "£1,723 now; Jan forecast £2,166 (+26%)",
+   "value_num": 26,
    "basis": "published",
    "basis_detail": "Ofgem price cap (forecasts: Cornwall Insight)",
-   "rubric_hit": "Cap £1,723 within £1,700–2,200 Watch band; forecast rise ~16% ≥ 5% Watch line, below 20% Alert",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "rubric_hit": "Alert: Cornwall Insight forecast rise 26% ≥ 20% Alert line (£2,166 from £1,723)",
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "uk-weather": {
    "status": "green",
@@ -1801,7 +1812,7 @@
     }
    ],
    "value": "No warnings",
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-17T11:42:50Z",
    "value_num": 0,
    "rubric_hit": "worst warning: none",
@@ -1812,89 +1823,94 @@
   "nhs-pressure": {
    "status": "amber",
    "trend": "up",
-   "summary": "UKHSA 12 Nov: flu admissions up to 3.65 per 100,000, low impact and rising; RSV rising; cold-health alerts from 15 Nov",
-   "state": "UKHSA's weekly report of 12 Nov, covering 2–8 Nov, puts influenza hospital admissions at 3.65 per 100,000, up from 3.00, in the low impact range, with lab positivity at 8.1% (UKHSA). COVID-19 is stable at baseline, and RSV admissions rose to 1.30 per 100,000 from 0.89. UKHSA yellow cold-health alerts cover northern England from 15 to 19 Nov (ITV News). No widespread NHS critical incidents were found as of 17 Nov; the next report is expected on 19 Nov.",
-   "for_you": "Older people, young children and those with long-term conditions are most exposed as flu and RSV rise. The NHS advises eligible people to get flu and COVID-19 vaccines, and UKHSA advises checking on vulnerable people during cold spells.",
+   "summary": "UKHSA 12 Nov: flu admissions up to 3.65 per 100,000, low level and rising; RSV rising; cold-health alerts to 19 Nov",
+   "state": "UKHSA's weekly data of 12 Nov, covering 2–8 Nov, put influenza hospital admissions at 3.65 per 100,000, up from 3.00, with activity at low levels and lab positivity at 8.1% (UKHSA). COVID-19 is stable and RSV admissions rose to 1.30 per 100,000 from 0.89. UKHSA yellow cold-health alerts cover northern England from 15 to 19 Nov (ITV News). No widespread NHS critical incidents were found on 18 Nov; the next report is expected on 19 Nov.",
+   "for_you": "Eligible people can follow NHS advice on flu and COVID-19 vaccination. UKHSA advises checking on older and vulnerable people during cold-health alerts; use NHS 111 for urgent advice.",
    "sources": [
     {
-     "title": "National flu and COVID-19 surveillance report: 12 November 2026 (week 46)",
-     "url": "https://www.gov.uk/government/statistics/national-flu-and-covid-19-surveillance-reports-2026-to-2027-season/national-flu-and-covid-19-surveillance-report-12-november-2026-week-46",
+     "title": "UKHSA — Latest UKHSA weekly winter virus surveillance data",
+     "url": "https://www.gov.uk/government/news/latest-ukhsa-weekly-winter-virus-surveillance-data",
      "date": "2026-11-12"
     },
     {
-     "title": "Yellow cold health alerts to come into force in parts of UK amid frosty weather",
+     "title": "ITV News — Yellow cold health alerts to come into force in parts of UK amid frosty weather",
      "url": "https://www.itv.com/news/2026-11-15/yellow-cold-health-alerts-to-come-into-force-in-parts-of-uk-amid-frosty-weather",
      "date": "2026-11-15"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-13T17:58:01Z",
    "value": "Flu above baseline and rising (wk 45 data)",
    "basis": "published",
    "basis_detail": "UKHSA surveillance and NHS England situation reports",
-   "rubric_hit": "Flu activity above baseline and rising (admissions 3.65 per 100,000, low impact) meets Watch; not high nationally",
-   "assessed_at": "2026-11-17T17:51:42Z",
+   "rubric_hit": "Watch: flu admissions 3.65/100k above baseline and rising (UKHSA week 45); not yet high nationally",
+   "assessed_at": "2026-11-18T17:47:08Z",
    "value_num": 3.65
   },
   "uk-threat-level": {
    "status": "red",
    "trend": "flat",
-   "summary": "UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 17 Nov",
-   "state": "The UK national terrorism threat level is Severe, meaning an attack is highly likely, after the Joint Terrorism Analysis Centre raised it on 30 Apr 2026 (MI5; Home Office, 1 May). Searches on 17 Nov found no announced change to the level.",
-   "for_you": "Severe is a national assessment, not a warning about a specific place or date. MI5 and police advise staying alert and reporting anything suspicious to police, or 999 in an emergency.",
+   "summary": "UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 18 Nov",
+   "state": "The UK national terrorism threat level is Severe, meaning an attack is highly likely, after the Joint Terrorism Analysis Centre raised it from Substantial on 30 Apr 2026 following a stabbing in Golders Green (Home Office; AP, 30 Apr). Counter Terrorism Policing's ProtectUK service still listed the level as Severe on 18 Nov. Searches on 18 Nov found no announced change.",
+   "for_you": "Follow official advice from MI5 and Counter Terrorism Policing: stay alert in crowded places and report anything suspicious to police. In an emergency, call 999.",
    "sources": [
     {
-     "title": "UK National Terrorism Threat Level Raised To SEVERE",
-     "url": "https://www.mi5.gov.uk/uk-national-terrorism-threat-level-raised-to-severe",
-     "date": "2026-05-01"
+     "title": "ProtectUK — Terrorism threat level update",
+     "url": "https://www.protectuk.police.uk/news-views/terrorism-threat-level-update",
+     "date": "2026-11-18"
     },
     {
-     "title": "UK national threat level raised to severe",
-     "url": "https://www.gov.uk/government/news/uk-national-threat-level-raised-to-severe",
-     "date": "2026-05-01"
+     "title": "GOV.UK — Security Minister statement on national security and threat level",
+     "url": "https://www.gov.uk/government/speeches/security-minister-statement-on-national-security-and-threat-level",
+     "date": "2026-04-30"
+    },
+    {
+     "title": "WTOP (AP) — UK raises national terror threat level from 'substantial' to 'severe' after stabbing attack",
+     "url": "https://wtop.com/world/2026/04/uk-raises-national-terror-threat-level-from-substantial-to-severe-after-stabbing-attack-on-jewish-community/",
+     "date": "2026-04-30"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Threat level: Severe",
-   "basis": "published",
-   "basis_detail": "MI5 / JTAC national threat level",
-   "rubric_hit": "MI5/JTAC national threat level Severe = Alert",
-   "assessed_at": "2026-11-17T17:51:42Z",
+   "basis": "judged",
+   "basis_detail": "",
+   "rubric_hit": "Alert: national threat level Severe (Severe or Critical line)",
+   "assessed_at": "2026-11-18T17:47:08Z",
    "value_num": 4
   },
   "uk-disruption": {
    "status": "green",
    "trend": "flat",
    "summary": "No national-scale strike found for this week; RMT London Underground driver strikes start 26 Nov",
-   "state": "The RMT has called 24-hour London Underground strikes by drivers over working conditions, starting at noon on 26 Nov and again on 17 and 19 Dec (Time Out, 16 Nov). Ice on roads in northern England and Scotland from 15 Nov may lengthen journeys (ITV News, 15 Nov). Searches on 17 Nov found no national-scale strike or nationwide infrastructure disruption due this week, so the signal stays Normal.",
-   "for_you": "London commuters are most exposed to the Tube strikes from 26 Nov. Transport for London and National Rail publish service updates, and the Met Office issues weather warnings for icy roads.",
+   "state": "The RMT has called eight 24-hour London Underground driver strikes over new working arrangements, starting at noon on 26 Nov, then on 17 and 19 Dec and into January and February (ITV News, 6 Nov). An RMT strike at Chiltern Railways on 12 Nov was regional (RaillyNews). Searches on 18 Nov found no national-scale strike or nationwide infrastructure disruption due this week, so the signal stays Normal.",
+   "for_you": "London commuters face Tube disruption from noon on 26 Nov; Transport for London and National Rail Enquiries publish service updates. No national disruption is expected this week.",
    "sources": [
     {
-     "title": "Tube and train strikes for Christmas and winter 2026/2027: full list of dates and lines",
-     "url": "https://www.timeout.com/london/news/tube-and-train-strikes-christmas-winter-2026-2027-full-list-of-dates-and-lines-110626",
-     "date": "2026-11-16"
+     "title": "ITV News — Tube drivers to strike over Christmas period in long-running dispute",
+     "url": "https://www.itv.com/news/2026-11-06/tube-drivers-to-strike-over-christmas-period-in-long-running-dispute",
+     "date": "2026-11-06"
     },
     {
-     "title": "Yellow cold health alerts to come into force in parts of UK amid frosty weather",
-     "url": "https://www.itv.com/news/2026-11-15/yellow-cold-health-alerts-to-come-into-force-in-parts-of-uk-amid-frosty-weather",
-     "date": "2026-11-15"
+     "title": "RaillyNews — 24-hour railway strike in England on 12 November",
+     "url": "https://raillynews.com/2026/11/24-hour-railway-strike-in-england-on-12-november/",
+     "date": "2026-11-11"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-13T17:58:01Z",
    "value": "No national strike; Tube strikes from 26 Nov",
    "basis": "judged",
    "basis_detail": "",
-   "rubric_hit": "No national-scale strike or major infrastructure disruption this week (Normal); Tube strikes are regional",
-   "assessed_at": "2026-11-17T17:51:42Z",
+   "rubric_hit": "Normal: no national-scale strike or disruption this week; Tube action from 26 Nov is local to London",
+   "assessed_at": "2026-11-18T17:47:08Z",
    "value_num": 2
   },
   "funding-stress": {
    "status": "green",
    "trend": "flat",
-   "value": "SOFR–IORB +3bp, repo $0.1bn",
-   "value_num": 3.0,
+   "value": "SOFR–IORB +2bp, repo $0.1bn",
+   "value_num": 2.0,
    "summary": "SOFR 3bp above the Fed's reserve rate on 16 Nov; Fed repo use near zero on 17 Nov",
    "state": "SOFR was 3.93% on 16 Nov, 3bp above the Fed's 3.90% interest on reserves, and did not exceed that gap over five days, inside the 10bp Watch line (FRED). Fed overnight repo operations were about $0.1bn on 17 Nov, far below the $15bn line. These readings show no sign of a dollar shortage.",
    "for_you": "Calm funding markets mean banks can borrow dollars overnight without strain. This describes conditions only.",
@@ -1911,7 +1927,7 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "SOFR–IORB 5d max bp=3.00; Fed repo ops 5d max $bn=0.10",
@@ -1920,39 +1936,39 @@
   "private-credit": {
    "status": "amber",
    "trend": "flat",
-   "value": "Nontraded BDC net outflows $4.1bn in Q3",
-   "value_num": 4.1,
-   "summary": "Nontraded BDCs had $4.1bn net outflows in Q3, leaving $8.2bn of requests unmet; no wave of gates or bank losses",
-   "state": "Preliminary Stanger data show redemptions from nontraded BDCs exceeded new capital by $4.1bn in the third quarter, the third straight quarter of net outflows, and sponsors met only 40% of requests, leaving about $8.2bn unmet; six funds prorated (AltsWire, 8 Nov). BC Partners agreed on 11 Nov to acquire Investcorp's listed BDC amid a sector shakeout (Bloomberg). Searches on 17 Nov found no simultaneous wave of gates, forced asset sales or losses spreading to banks or insurers, so Watch holds.",
-   "for_you": "Investors in semi-liquid private credit funds may be able to withdraw only part of their money each quarter while redemption queues persist. Wider spillover to banks or insurers has not been reported.",
-   "rubric_hit": "Watch: funds limiting redemptions (six prorated in Q3); no multi-fund gating, forced sales or bank losses for Alert",
+   "value": "US private credit default rate 6.2% (Oct)",
+   "value_num": 6.2,
+   "summary": "Fitch's US private credit default rate eased to 6.2% in October; nontraded BDCs still cap redemptions at 5% a quarter",
+   "state": "Fitch data reported on 17 Nov show the trailing 12-month US private credit default rate eased to 6.2% in October from 6.3% in September, with 10.7% for the smallest borrowers (Investment Executive). Nontraded BDCs faced third-quarter redemption requests averaging 9.8% of shares against a usual 5% quarterly cap, leaving a backlog expected to take many quarters to clear (InvestmentNews). Searches on 18 Nov found no simultaneous wave of large fund gates, forced asset sales or losses spreading to banks or insurers, so Watch holds.",
+   "for_you": "Investors in nontraded private credit funds and BDCs may receive only part of any withdrawal request each quarter. Smaller, highly indebted companies that borrow from these funds face the highest default rates.",
+   "rubric_hit": "Watch: nontraded BDC redemption requests ~9.8% vs 5% caps and defaults at 6.2%; no multi-fund gating wave or bank losses (Alert)",
    "sources": [
     {
-     "title": "Nontraded BDC Net Outflows Reach $4.1B in Q3 as Fundraising Falls to Lowest Level Since 2020",
-     "url": "https://altswire.com/nontraded-bdc-net-outflows-reach-4-1b-in-q3-as-fundraising-falls-to-lowest-level-since-2020/",
-     "date": "2026-11-08"
+     "title": "Investment Executive — U.S. private credit defaults ease in October: Fitch",
+     "url": "https://www.investmentexecutive.com/news-story/research-and-markets/u-s-private-credit-defaults-ease-in-october-fitch/",
+     "date": "2026-11-17"
     },
     {
-     "title": "BC Partners to acquire Investcorp BDC amid private credit shakeout",
-     "url": "https://www.bloomberg.com/news/articles/2026-11-11/bc-partners-to-buy-investcorp-bdc-amid-private-credit-shakeout",
-     "date": "2026-11-11"
+     "title": "InvestmentNews — Pace of investors selling nontraded BDCs slows but remains significant, says Fitch",
+     "url": "https://www.investmentnews.com/alternatives/pace-of-investors-selling-nontraded-bdcs-slows-but-remains-significant-according-to-fitch/268574",
+     "date": "2026-10-13"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "yen-carry": {
    "status": "green",
    "trend": "flat",
    "value": "¥159.3/$, 1w -0.3%",
-   "value_num": 159.296,
+   "value_num": 159.291,
    "summary": "Yen near ¥159.3 per dollar on 18 Nov, slightly firmer on the week; no intervention found",
    "state": "The dollar was near ¥159.3 early on 18 Nov, down 0.3% on the week and up 0.7% on the month, inside the 3% weekly and 6% monthly Watch lines (Yahoo Finance). The yen is about 2.8% stronger than its 52-week low of ¥163.9 per dollar. No Japanese currency intervention was found in this run's searches.",
    "for_you": "Sharp yen moves can unwind borrowing in yen and ripple through global markets; current moves are small. This describes conditions only.",
-   "rubric_hit": "USD/JPY 1w move 0.27% below the 3% Watch line; USD/JPY 1m move 0.65% below the 6% Watch line",
+   "rubric_hit": "USD/JPY 1w move 0.28% below the 3% Watch line; USD/JPY 1m move 0.65% below the 6% Watch line",
    "sources": [
     {
      "title": "Yahoo Finance — USD/JPY (JPY=X)",
@@ -1960,10 +1976,10 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
-   "basis_detail": "USD/JPY 1w move %=0.27; USD/JPY 1m move %=0.65",
+   "basis_detail": "USD/JPY 1w move %=0.28; USD/JPY 1m move %=0.65",
    "assessed_at": "2026-11-18T05:53:01Z"
   },
   "jobless-claims": {
@@ -1972,106 +1988,101 @@
    "value": "195k 4wk avg, at 52w low",
    "value_num": 195250,
    "summary": "US initial jobless claims 200,000 in the week to 7 Nov; 4-week average 195,250, at its 52-week low",
-   "state": "Initial US jobless claims were 200,000 in the week to 7 Nov, slightly above forecasts, with the four-week average at 195,250, its 52-week low and far below the 15% Watch line (FRED; ANI, 12 Nov). Layoffs remain low by historical standards. Figures for the week to 14 Nov are due on 19 Nov.",
-   "for_you": "Layoffs remain low, so the US labour market shows no sign of a broad downturn in this measure.",
-   "rubric_hit": "4-week average 195,250, 0% above its 52-week low (< 15% Watch line)",
+   "state": "Initial US jobless claims were 200,000 in the week to 7 Nov, with the four-week average at 195,250, its 52-week low and far below the 15% Watch line (FRED). Layoffs remain low by historical standards. Figures for the week to 14 Nov are due on 19 Nov.",
+   "for_you": "The US jobs market shows no sign of rising layoffs, so job-loss risk for workers remains low by historical standards.",
+   "rubric_hit": "Normal: 4-week average 195,250 is 0% above its 52-week low, below the 15% Watch line",
    "sources": [
     {
-     "title": "Initial Claims (ICSA)",
+     "title": "FRED — ICSA (US initial jobless claims)",
      "url": "https://fred.stlouisfed.org/series/ICSA",
-     "date": "2026-11-17"
-    },
-    {
-     "title": "US initial jobless claims climb to 200,000, four-week average remains unchanged",
-     "url": "https://www.aninews.in/news/business/us-initial-jobless-claims-climb-to-200000-four-week-average-remains-unchanged20261112194746/",
-     "date": "2026-11-12"
+     "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "4wk avg % above 52w low=0.00",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "em-stress": {
    "status": "green",
    "trend": "up",
-   "value": "Rupiah record low ~18,290/$; lira ~50/$",
-   "summary": "Indonesia's rupiah hit record lows near 18,290 per dollar on 16–17 Nov; no EM default or IMF rescue",
-   "state": "Indonesia's rupiah hit record lows near 18,280–18,290 per dollar on 16–17 Nov amid political uncertainty after the vice-president's resignation and expectations of a rate rise, about 1.6% weaker than near 18,000 on 21 Oct (Trading Economics). The Turkish lira has traded near a record of about 50 per dollar since 3 Nov (Trading Economics). Neither has fallen 10% in a month, and no major emerging economy in default, under capital controls or seeking emergency IMF support was found as of 17 Nov.",
-   "for_you": "A weaker rupiah raises import costs in Indonesia. Travellers and firms with costs in these currencies are most exposed to further swings.",
-   "rubric_hit": "Normal: no major EM currency down >10% in a month, no default, capital controls or emergency IMF request",
+   "value": "Rupiah ~18,245/$ near record; BI rate 6%",
+   "summary": "Bank Indonesia raised rates to 6% on 18 Nov to support the rupiah near record lows; no EM default or IMF rescue",
+   "state": "Bank Indonesia unexpectedly raised its benchmark rate by 0.25 points to 6% on 18 Nov and stepped up currency intervention, with the rupiah at about 18,245 per dollar, down 0.66% since end-Oct (Malay Mail). The rupiah briefly touched a record near 18,290 on 17 Nov amid political uncertainty after the vice-president's resignation (Trading Economics). It has not fallen 10% in a month, reserves stood at $146.8bn, and no major emerging economy in default, under capital controls or seeking emergency IMF support was found as of 18 Nov.",
+   "for_you": "People and firms in Indonesia face higher borrowing costs and import prices. Elsewhere, emerging-market stress is contained for now, with no default or emergency IMF programme in a major economy.",
+   "rubric_hit": "Normal: rupiah down 0.66% since end-Oct, below the 10%-in-a-month Watch line; no IMF request, default or capital controls",
    "sources": [
     {
-     "title": "Rupiah Hovers Near IDR 18,000 as BI Adjusts Policy Tools (news stream)",
-     "url": "https://tradingeconomics.com/indonesia/currency/news/593722",
-     "date": "2026-11-17"
+     "title": "Malay Mail — Indonesia hikes benchmark rate to 6pc to shore up weakening rupiah",
+     "url": "https://www.malaymail.com/news/money/2026/11/18/indonesia-hikes-benchmark-rate-to-6pc-to-shore-up-weakening-rupiah/243792",
+     "date": "2026-11-18"
     },
     {
-     "title": "Turkish Lira Holds at Record Lows",
-     "url": "https://tradingeconomics.com/turkey/currency/news/597666",
-     "date": "2026-11-03"
+     "title": "Trading Economics — Rupiah Weakens Near Record Low",
+     "url": "https://tradingeconomics.com/indonesia/currency/news/601414",
+     "date": "2026-11-17"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-17T17:51:42Z",
-   "value_num": 18290
+   "assessed_at": "2026-11-18T17:47:08Z",
+   "value_num": 18245
   },
   "fertiliser": {
    "status": "amber",
    "trend": "flat",
-   "value": "Egypt urea ~$535/t; gas cuts up to 33%",
+   "value": "Egypt urea ~$535/t FOB; US ammonia +17% y/y",
    "value_num": 535,
-   "summary": "Egyptian urea near $535 a tonne as gas cuts to fertiliser plants deepen to as much as 33%; Gulf supply still curbed",
-   "state": "Egyptian granular urea fetched about $535 a tonne FOB for November, up about 17% from September, and gas curtailments to fertiliser plants rose from 20% on 1 Nov to as much as 33%, which is expected to throttle exports (EnterpriseAM, 9 Nov). The Gulf supplies about a third of world urea exports, and about 3.9 million tonnes a year were suspended at the peak of the Hormuz disruption, according to IFPRI (Global Agriculture, 30 Oct). Gulf shipments continue at reduced volumes and no 60% three-month rise in urea was found, so Watch holds.",
-   "for_you": "Higher fertiliser costs tend to squeeze farm margins and can feed into food prices next season. Farmers buying for spring application are most exposed.",
-   "rubric_hit": "Watch: supply from major exporters curtailed (Egypt gas cuts, Gulf exports down); urea +17% in 2 months, below 60% Alert line",
+   "summary": "Egyptian urea near $535 a tonne after gas cuts to fertiliser plants; US ammonia retail prices up 17% on a year",
+   "state": "Egyptian granular urea fetched about $535 a tonne FOB in November contracts, up about 17% from about $457 in September, after Kima reported a 20% cut to its gas supply from 1 Nov (Fertilizer Daily, 9 Nov). In the US, retail anhydrous ammonia averaged $1,003 a short ton in early November, up 17% on a year, while urea was $662, up 11% on a year but down 1.5% on the month (UkrAgroConsult, 12 Nov). No 60% three-month rise in urea or closure of a key export route was found as of 18 Nov, so Watch holds.",
+   "for_you": "Farmers face higher input costs ahead of spring planting, which tends to feed into food prices with a lag. Exposure is greatest for grain growers and for import-dependent countries in Africa and South Asia.",
+   "rubric_hit": "Watch: Egyptian urea up ~17% since Sep with gas curbs on exports; below the 60% three-month Alert line",
    "sources": [
     {
-     "title": "Gov't deepens industrial gas rationing, raising curtailments on fertilizer and methanol plants to 33%",
-     "url": "https://enterpriseam.com/egypt/2026/11/09/govt-deepens-industrial-gas-rationing-raising-curtailments-on-fertilizer-and-methanol-plants-to-33-and-notifying-ezz-steel-of-a-30-cut/",
+     "title": "Fertilizer Daily — Egyptian urea price rises amid gas cuts",
+     "url": "https://www.fertilizerdaily.com/20261109-egyptian-urea-price-gas-cuts/",
      "date": "2026-11-09"
     },
     {
-     "title": "Fertiliser Costs Stay High As Hormuz Conflict Drags Into Ninth Month",
-     "url": "https://www.global-agriculture.com/crop-nutrition/fertiliser-costs-stay-high-as-hormuz-conflict-drags-into-ninth-month/",
-     "date": "2026-10-30"
+     "title": "UkrAgroConsult — Anhydrous ammonia prices in the US rise 17%, urea up 11%",
+     "url": "https://ukragroconsult.com/en/news/anhydrous-ammonia-prices-in-the-us-rise-17-urea-up-11/",
+     "date": "2026-11-12"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-06T17:59:39Z",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "nuclear-plants": {
    "status": "amber",
    "trend": "flat",
-   "value": "ZNPP worker killed 9 Nov; power cut 8 Nov",
-   "summary": "A Zaporizhzhia plant worker was killed by a drone on 9 Nov, a day after off-site power was lost; no safety-system damage",
-   "state": "Zaporizhzhia lost all off-site power for about 10 hours on 8 Nov and ran on diesel generators; IAEA Director General Grossi called it the 27th such event of the conflict (Kyiv Independent). On 9 Nov a plant worker was killed in a drone strike, the second since late October, and the IAEA said such attacks violate nuclear safety pillars (The Moscow Times). Searches on 17 Nov found no damage to safety-critical systems, INES level 2 event or radiological release.",
-   "for_you": "No radiological release has been reported. People in the region should follow guidance from national authorities and the IAEA.",
-   "rubric_hit": "Watch: loss of all off-site power (8 Nov) and attacks near the plant; no safety-system damage or INES 2+ for Alert",
+   "value": "ZNPP power cut 8 Nov; worker killed 9 Nov",
+   "summary": "Zaporizhzhia lost off-site power on 8 Nov and a worker was killed by a drone on 9 Nov; IAEA warns of winter grid risk",
+   "state": "Zaporizhzhia lost all off-site power for more than 12 hours on 8 Nov after a 330kV line was damaged, the 27th such loss of the conflict, and on 15 Nov IAEA Director General Grossi warned that the state of Ukraine's grid poses serious nuclear safety risks that may grow in winter (APA). On 9 Nov a plant worker was killed in a drone attack, the second since 29 Oct, and the IAEA said attacks on nuclear workers must cease (United24). Searches on 18 Nov found no damage to safety-critical systems, INES level 2 event or radiological release.",
+   "for_you": "There is no radiological risk to the UK. For official information on nuclear safety in Ukraine, follow IAEA updates; anyone travelling to the region should check FCDO travel advice for Ukraine.",
+   "rubric_hit": "Watch: ZNPP lost all off-site power on 8 Nov and IAEA reports deteriorating grid safety; no safety-system damage (Alert line)",
    "sources": [
     {
-     "title": "Power to Zaporizhzhia nuclear power plant cut, restored, IAEA says",
-     "url": "https://kyivindependent.com/power-to-zaporizhzhia-nuclear-power-plant-cut-restored-iaea-says/",
-     "date": "2026-11-09"
+     "title": "APA — Grossi: nuclear safety risks at Zaporizhzhia NPP may increase in winter",
+     "url": "https://en.apa.az/europe/grossi-nuclear-safety-risks-at-zaporizhzhia-npp-may-increase-in-winter-536163",
+     "date": "2026-11-15"
     },
     {
-     "title": "Zaporizhzhia Nuclear Plant Worker Killed in Drone Attack, IAEA Says",
-     "url": "https://www.themoscowtimes.com/2026/11/09/zaporizhzhia-nuclear-plant-worker-killed-in-drone-attack-iaea-says-a94213",
+     "title": "United24 Media — Drone kills Zaporizhzhia nuclear plant worker, second in under two weeks",
+     "url": "https://united24media.com/war-in-ukraine/drone-kills-zaporizhzhia-nuclear-plant-worker-second-in-under-two-weeks-24217",
      "date": "2026-11-09"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-17T17:51:42Z",
+   "assessed_at": "2026-11-18T17:47:08Z",
    "value_num": null
   },
   "hybrid-threats": {
@@ -2094,7 +2105,7 @@
      "date": "2026-09-29"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
@@ -2126,7 +2137,7 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
@@ -2137,107 +2148,97 @@
    "trend": "up",
    "value": "Ethiopia–Eritrea artillery fire near Badme",
    "summary": "Ethiopian and Eritrean forces reportedly traded artillery fire near Badme on 11–13 Nov; control of the town is disputed",
-   "state": "Ethiopian federal and Eritrean forces reportedly exchanged artillery fire around Badme on 11–13 Nov, accounts differ on who holds the town, and Eritrea's information ministry accused Ethiopia of invading (Critical Threats, 13 Nov). Federal and Tigrayan forces also clashed around Rama and near Axum on 7–11 Nov, and G7 foreign ministers called for restraint on 11 Nov. Ethiopia and Eritrea cut diplomatic ties on 2 Oct (Africanews). Interstate fighting is reported but unconfirmed, so Watch holds.",
-   "for_you": "Little direct risk to UK readers; the FCDO advises against travel to parts of Ethiopia and the Eritrean border, so check its travel advice. A wider war would add to displacement in the Horn of Africa, near Red Sea shipping lanes.",
-   "rubric_hit": "Watch: significant deterioration not tracked elsewhere — Ethiopia–Eritrea clashes near Badme reported but unconfirmed",
+   "state": "Ethiopian federal and Eritrean forces reportedly exchanged artillery fire around Badme on 11–13 Nov and Ethiopian drones reportedly struck Eritrean positions; ACLED said on 13 Nov that neither side controlled the town, and Eritrea's information ministry accused Ethiopia of invading on 12 Nov (Critical Threats). Federal and Tigrayan forces also clashed around Rama on 7–11 Nov, and G7 foreign ministers called for maximum restraint on 11 Nov. Interstate fighting is reported but not confirmed by either government, so the Alert is unconfirmed and Watch holds.",
+   "for_you": "Anyone travelling to Ethiopia or Eritrea should check FCDO travel advice. Those most exposed are civilians in Tigray and along the Ethiopia–Eritrea border.",
+   "rubric_hit": "Watch: significant deterioration (reported Ethiopia–Eritrea fire near Badme); new interstate war unconfirmed (Alert line)",
    "sources": [
     {
-     "title": "Ethiopia War Security Review, November 13, 2026",
+     "title": "Critical Threats — Africa File, 13 Nov 2026",
      "url": "https://www.criticalthreats.org/analysis/november-13-2026",
      "date": "2026-11-13"
-    },
-    {
-     "title": "Ethiopia and Eritrea sever ties as Tigray fighting intensifies",
-     "url": "https://www.africanews.com/2026/10/02/ethiopia-and-eritrea-sever-ties-as-tigray-fighting-intensifies/",
-     "date": "2026-10-02"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "cold-storms": {
    "status": "green",
    "trend": "flat",
-   "value": "No major cold wave (17 Nov)",
-   "summary": "No top-tier cold or winter-storm warning across a major region on 17 Nov; snow warnings limited to the Oregon Cascades",
-   "state": "The US National Weather Service in Pendleton issued a winter storm warning on 17 Nov for the east slopes of the Oregon Cascades, with 6 to 12 inches of snow on the crest until 18 Nov (KTVZ). The Met Office had no UK weather warnings in force on 17 Nov. Searches found no top-tier warning across a major region and no cold-related power or gas outages, so Normal is kept.",
-   "for_you": "No widespread cold-weather disruption at present. Travellers in mountain areas should follow National Weather Service or Met Office warnings as winter storms begin.",
-   "rubric_hit": "No top-tier cold or winter-storm warning across a major region = Normal",
+   "value": "No major cold wave (18 Nov)",
+   "summary": "No top-tier cold or winter-storm warning across a major region on 18 Nov; snow warnings limited to US mountain areas",
+   "state": "The US National Weather Service in Pendleton issued a winter storm warning on 17 Nov for the east slopes of the Oregon Cascades, with 6 to 12 inches of snow on the crest until 10pm on 18 Nov (KTVZ). In the UK, yellow cold-health alerts cover northern England until 19 Nov, but no top-tier warning is in force. Searches on 18 Nov found no top-tier warning across a major region and no cold-related power or gas outages, so Normal is kept.",
+   "for_you": "Little wider disruption is expected. People in northern England can follow UKHSA cold-health alert advice and Met Office forecasts for icy roads.",
+   "rubric_hit": "Normal: no top-tier cold or winter-storm warning across a major region as of 18 Nov",
    "sources": [
     {
-     "title": "KTVZ — Winter Storm Warning issued 17 Nov by NWS Pendleton OR",
+     "title": "KTVZ — Winter Storm Warning issued 17 November by NWS Pendleton OR",
      "url": "https://ktvz.com/?p=1452566",
-     "date": "2026-11-17"
-    },
-    {
-     "title": "Met Office — UK weather warnings",
-     "url": "https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings",
      "date": "2026-11-17"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-17T17:51:42Z",
+   "assessed_at": "2026-11-18T17:47:08Z",
    "value_num": null
   },
   "respiratory": {
    "status": "amber",
    "trend": "up",
-   "value": "Early US flu season; severity still low",
-   "summary": "US flu admissions reached 9,584 in the week to 7 Nov, early for the season; seven states at high activity",
-   "state": "CDC reported 9,584 flu hospital admissions in the week to 7 Nov, with activity higher than usual for the time of year, H1N1 making up 98.9% of subtyped flu A and severity still rated low (CDC). High flu activity was reported in seven states, up from two the week before (AP via KPTV, 14 Nov). Searches on 17 Nov found no new WHO variant designation and no health systems reported as strained, so an unusually early US season keeps Watch.",
-   "for_you": "Flu vaccination is the main protection. In the UK, check NHS guidance on eligibility for the free flu vaccine; in the US, follow CDC advice. People with symptoms can reduce spread by staying home where possible.",
-   "rubric_hit": "Watch: US flu season unusually early (CDC: activity higher than typical for early Nov); no variant of concern",
+   "value": "US flu admissions 7x last year; severity low",
+   "summary": "US flu admissions hit 9,584 in the week to 7 Nov, over seven times a year earlier; CDC still rates severity low",
+   "state": "CDC reported 9,584 flu hospital admissions in the week to 7 Nov, up 14% on the week and more than seven times the same week of 2025, with seven jurisdictions at high or very high activity and severity still rated low (CDC; Becker's, 16 Nov). The CDC estimates at least 2,100 flu deaths so far this season, including five children (Becker's). Searches on 18 Nov found no new WHO variant designation and no health systems reported as strained, so an unusually early US season keeps Watch.",
+   "for_you": "The NHS offers free flu vaccines to eligible groups, including over-65s, young children and people with some health conditions. UKHSA publishes weekly flu and COVID-19 surveillance.",
+   "rubric_hit": "Watch: a hemisphere's flu season unusually early (US admissions 9,584 in week to 7 Nov, 7x last year); no variant of concern, no systems strained",
    "sources": [
     {
-     "title": "Weekly US Influenza Surveillance Report: week 44, ending 7 November 2026",
+     "title": "CDC — Weekly US Influenza Surveillance Report, week 44 ending 7 November 2026",
      "url": "https://www.cdc.gov/fluview/surveillance/2026-week-44.html",
      "date": "2026-11-13"
     },
     {
-     "title": "Flu season is off to a very early start. Here's where cases are surging right now",
-     "url": "https://www.kptv.com/2026/11/15/flu-season-is-off-very-early-start-heres-where-cases-are-surging-right-now/?outputType=amp",
-     "date": "2026-11-14"
+     "title": "Becker's Hospital Review — Flu admissions running more than 7x higher than last year",
+     "url": "https://www.beckershospitalreview.com/quality/flu-admissions-running-more-than-7x-higher-than-last-year-8-notes-for-clinical-leaders/",
+     "date": "2026-11-16"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-17T17:51:42Z",
-   "value_num": 8396
+   "assessed_at": "2026-11-18T17:47:08Z",
+   "value_num": 9584
   },
   "medicine-shortages": {
    "status": "amber",
    "trend": "flat",
-   "value": "UK SSPs in force; US chemo supply hit",
-   "value_num": 87,
-   "summary": "UK Serious Shortage Protocols run into January; flooded Pfizer plant may prolong US chemo shortages to 2028",
-   "state": "NHSBSA's list checked on 17 Nov shows active Serious Shortage Protocols for lansoprazole orodispersible tablets to 15 Jan 2027, and for Estradot patches and Creon 25000 capsules to 8 Jan 2027, with none issued in November (NHSBSA). A Pfizer joint-venture plant in India closed by floods in July may not resume supply until 2028, prolonging shortages of cytarabine, irinotecan and bleomycin (CancerNetwork, 2 Nov). No widespread rationing was found.",
-   "for_you": "If a usual medicine is unavailable, a UK pharmacist may supply an alternative under a Serious Shortage Protocol. NHS guidance advises not to stop a medicine without speaking to a pharmacist or GP.",
-   "rubric_hit": "Watch: UK Serious Shortage Protocols in force for widely used medicines (NHSBSA, to Jan 2027)",
+   "value": "7 UK SSPs active; US chemo shortages persist",
+   "value_num": 7,
+   "summary": "Seven UK Serious Shortage Protocols active into January; US cancer centres still report chemotherapy shortages",
+   "state": "NHSBSA's list checked on 18 Nov shows seven active Serious Shortage Protocols: lansoprazole orodispersible tablets to 15 Jan 2027, and Estradot patches and Creon 25000 capsules to 8 Jan 2027, with none newer than September (NHSBSA). In the US, shortages of cytarabine, irinotecan, carboplatin and other chemotherapy drugs persist; a September survey found 7% of cancer centres could not continue some treatments (Becker's, 26 Oct). Searches on 18 Nov found no widespread rationing across major health systems, so Watch holds.",
+   "for_you": "Under a Serious Shortage Protocol, pharmacists can supply an alternative without a new prescription. People affected can speak to their pharmacist or GP; NHS guidance covers how SSPs work.",
+   "rubric_hit": "Watch: UK Serious Shortage Protocols for widely used medicines (7 active, NHSBSA); no widespread rationing across major systems",
    "sources": [
     {
-     "title": "Serious Shortage Protocols (SSPs)",
+     "title": "NHSBSA — Serious Shortage Protocols (SSPs)",
      "url": "https://www.nhsbsa.nhs.uk/pharmacies-gp-practices-and-appliance-contractors/serious-shortage-protocols-ssps",
-     "date": "2026-11-17"
+     "date": "2026-11-18"
     },
     {
-     "title": "Flood-damaged plant may prolong US chemotherapy shortages to 2028",
-     "url": "https://www.cancernetwork.com/view/flood-damaged-plant-may-prolong-us-chemotherapy-shortages-to-2028",
-     "date": "2026-11-02"
+     "title": "Becker's Hospital Review — The 2026 chemo shortage: a timeline",
+     "url": "https://www.beckershospitalreview.com/pharmacy/the-2026-chemo-shortage-a-timeline/",
+     "date": "2026-10-26"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "published",
    "basis_detail": "FDA, EMA and NHSBSA shortage lists",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "exploited-vulns": {
    "status": "green",
@@ -2255,7 +2256,7 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-16T05:51:59Z",
    "basis": "measured",
    "basis_detail": "KEV additions 7d=3.00",
@@ -2264,61 +2265,56 @@
   "aid-funding": {
    "status": "amber",
    "trend": "flat",
-   "value": "WFP Gaza cuts; Sudan shelter aid at 10%",
+   "value": "WFP cuts Gaza and Sudan aid; no full suspension",
    "value_num": 23,
-   "summary": "WFP ended monthly aid to 500,000 in Gaza; UN says Sudan shelter aid reaches only 10% in need; no full suspension",
-   "state": "WFP said on 19 Oct that a funding shortfall would end monthly aid to 500,000 people in Gaza and shrink rations for the 1.1 million still reached, having received about half its usual funding for the Palestinian territories in 2026 (Khaleej Times, citing AFP). On 6 Nov the UN said only about 10% of the 15.4 million people in Sudan needing emergency shelter could be prioritised, and IOM said its Sudan warehouses were empty (Reuters via bdnews24). Major ration cuts meet Watch; no large-scale suspension of food or health aid in a famine-risk country was found as of 17 Nov.",
-   "for_you": "Cuts fall hardest on people in Gaza and displaced families in Sudan heading into winter. Aid agencies warn that shortfalls tend to show up later as rising malnutrition and disease.",
-   "rubric_hit": "Major ration cuts announced (WFP Gaza, 500,000 cut from monthly aid) meet Watch; no pipeline break suspending aid at scale",
+   "summary": "WFP cut monthly food aid to about 900,000 displaced Sudanese and 500,000 in Gaza over funding; no full suspension found",
+   "state": "WFP said on 22 Oct that funding shortages forced it to cut monthly food assistance to displaced people in Sudan, affecting about 900,000 people (Al Jazeera, 2 Nov). WFP said on 19 Oct that a shortfall would end monthly aid to 500,000 people in Gaza and shrink rations for those still reached (Khaleej Times, citing AFP). Major ration cuts meet Watch; searches on 18 Nov found no large-scale suspension of food or health aid in a famine-risk country.",
+   "for_you": "Funding gaps mainly affect people relying on aid in Sudan, Gaza and other crises. UN OCHA's Financial Tracking Service publishes appeal funding levels.",
+   "rubric_hit": "Watch: major ration cuts announced (WFP: ~900,000 in Sudan, 22 Oct; 500,000 in Gaza, 19 Oct); no large-scale suspension",
    "sources": [
     {
-     "title": "UN World Food Programme to end monthly aid for 500,000 in Gaza",
-     "url": "https://www.khaleejtimes.com/world/mena/un-world-food-programme-end-monthly-aid-500000-gaza?amp=1",
-     "date": "2026-10-19"
+     "title": "Al Jazeera — As aid situation worsens, displaced Sudanese worry about warnings of famine",
+     "url": "https://aljazeera.com/features/2026/11/2/as-aid-situation-worsens-displaced-sudanese-worry-about-warnings-of-famine",
+     "date": "2026-11-02"
     },
     {
-     "title": "UN warns of shelter shortfall for millions displaced in Sudan",
-     "url": "https://bdnews24.com/world/7wj0vn9vic",
-     "date": "2026-11-06"
+     "title": "Khaleej Times — UN World Food Programme to end monthly aid for 500,000 in Gaza",
+     "url": "https://www.khaleejtimes.com/world/mena/un-world-food-programme-end-monthly-aid-500000-gaza?amp=1",
+     "date": "2026-10-19"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-17T17:51:42Z"
+   "assessed_at": "2026-11-18T17:47:08Z"
   },
   "uk-supply-margins": {
    "status": "green",
    "trend": "flat",
-   "value": "No notice in force; gas buffer 99 mcm/d",
-   "summary": "Cold spell from 15 Nov raises demand; no Electricity Margin or Gas Margins Notice found in force on 17 Nov",
-   "state": "National Gas's winter outlook of 23 Oct expects sufficient supply, with a 99 mcm/d buffer over a 493 mcm/d peak (Pipeline & Gas Journal). NESO issued an Electricity Margin Notice on 28 Sep for a low-wind evening peak, flagging a 1.4 GW shortfall (OilPrice). Cold weather and frost hit northern Britain from 15 Nov (ITV News), but searches on 17 Nov found no Electricity Margin Notice, capacity market notice or Gas Margins Notice in force, so the signal stays Normal.",
-   "for_you": "Margin notices are routine signals to generators, not warnings of power cuts. Still, cold, windless evenings are when the system is tightest; NESO and National Gas publish any notices.",
-   "rubric_hit": "No NESO Electricity Margin Notice or National Gas Margins Notice in force (Normal)",
+   "value": "No notice in force; 5.9 GW winter margin",
+   "summary": "Cold spell in northern Britain raises demand; no Electricity Margin or Gas Margins Notice found in force on 18 Nov",
+   "state": "NESO's winter outlook of 23 Oct forecasts a 5.9 GW margin, a 9.5% buffer over peak demand, and says Electricity Margin Notices are routine in most winters (NESO). National Gas expects sufficient supply, with a 99 mcm/d buffer over a 493 mcm/d peak (Pipeline & Gas Journal). Despite cold weather in northern Britain since 15 Nov, searches on 18 Nov found no Electricity Margin Notice, capacity market notice or Gas Margins Notice in force, so the signal stays Normal.",
+   "for_you": "No supply notices are in force. Households are not expected to see interruptions; NESO and National Gas publish any system notices on their websites.",
+   "rubric_hit": "Normal: NESO and National Gas report adequate margins (5.9 GW, 99 mcm/d); no notice found on 18 Nov",
    "sources": [
     {
-     "title": "UK gas grid ready for winter with 99 mcm/d supply buffer as peak demand rises, National Gas says",
-     "url": "https://www.pgjonline.com/news/2026/october/uk-gas-grid-ready-for-winter-with-99-mcmd-supply-buffer-as-peak-demand-rises-national-gas-says",
+     "title": "NESO — British electricity supplies secure this winter despite global instability",
+     "url": "https://www.neso.energy/british-electricity-supplies-secure-winter-despite-global-instability-1",
      "date": "2026-10-23"
     },
     {
-     "title": "UK Grid Operator Warns of Tight Power Margins",
-     "url": "https://oilprice.com/Latest-Energy-News/World-News/UK-Grid-Operator-Warns-of-Tight-Power-Margins.html",
-     "date": "2026-09-28"
-    },
-    {
-     "title": "Yellow cold health alerts to come into force in parts of UK amid frosty weather",
-     "url": "https://www.itv.com/news/2026-11-15/yellow-cold-health-alerts-to-come-into-force-in-parts-of-uk-amid-frosty-weather",
-     "date": "2026-11-15"
+     "title": "Pipeline & Gas Journal — UK gas grid ready for winter with 99 mcm/d supply buffer, National Gas says",
+     "url": "https://www.pgjonline.com/news/2026/october/uk-gas-grid-ready-for-winter-with-99-mcmd-supply-buffer-as-peak-demand-rises-national-gas-says",
+     "date": "2026-10-23"
     }
    ],
-   "checked_at": "2026-11-17T17:51:42Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-17T17:51:42Z",
-   "value_num": 9.5
+   "assessed_at": "2026-11-18T17:47:08Z",
+   "value_num": 5.9
   },
   "uk-floods": {
    "status": "green",
@@ -2336,23 +2332,23 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-18T11:49:35Z",
+   "checked_at": "2026-11-18T17:47:08Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "EA: 0 severe, 0 warnings",
    "assessed_at": "2026-11-18T05:53:01Z"
   }
  },
- "headline": "US aircraft struck an Iranian missile site on Qeshm on 17 Nov as Iran targeted US bases in Bahrain and Kuwait; an ADNOC vessel was hit in Hormuz. Russia keeps up drone strikes on Ukraine. UK inflation rose to 3.6%.",
- "generated_at": "2026-11-18T11:49:35Z",
+ "headline": "US–Iran strikes and Hormuz attacks keep the Gulf at Alert; Cornwall Insight now forecasts a 26% rise in the UK energy cap from January, crossing the Alert line; UK inflation rose to 3.6% in October.",
+ "generated_at": "2026-11-18T17:47:08Z",
  "world": {
   "score": 41,
   "band": "Strained",
   "status": "amber",
   "counts": {
    "green": 28,
-   "amber": 48,
-   "red": 13
+   "amber": 47,
+   "red": 14
   },
   "by_domain": {
    "markets": 27,
@@ -2365,7 +2361,7 @@
    "health": 50,
    "tech": 42,
    "humanitarian": 38,
-   "uk": 31
+   "uk": 38
   },
   "method": 2
  },
@@ -2375,7 +2371,7 @@
    "name": "US–Iran war and Gulf energy shock",
    "status": "red",
    "trend": "up",
-   "summary": "US struck an IRGC missile site on Qeshm on 17 Nov; Iran targeted US bases in Bahrain and Kuwait; an ADNOC vessel was hit in Hormuz on 17 Nov.",
+   "summary": "US struck an IRGC site on Qeshm on 17 Nov; an ADNOC vessel was hit in Hormuz on 17 Nov; UK cap forecast +26% from Jan (18 Nov).",
    "signals": [
     "gulf-iran",
     "middle-east",
@@ -2407,7 +2403,7 @@
    "name": "Super El Niño",
    "status": "red",
    "trend": "up",
-   "summary": "ONI +2.46 for Aug–Oct; global temperature +1.88°C on 11 Nov, a record for the date; CO₂ growth 2.35 ppm/yr in the week of 8 Nov.",
+   "summary": "ONI +2.46 for Aug–Oct; global temperature +1.96°C on 12 Nov, a record for the date; CO₂ growth 2.35 ppm/yr in the week of 8 Nov.",
    "signals": [
     "enso",
     "global-temp",
@@ -2454,7 +2450,7 @@
    "name": "Energy shock feeding inflation",
    "status": "amber",
    "trend": "up",
-   "summary": "UK CPI rose to 3.6% in Oct (18 Nov); US prices rose 0.4% in Oct; a December Fed rise is near fully priced; dollar at a 52-week high.",
+   "summary": "UK CPI rose to 3.6% in Oct (18 Nov); Bank Indonesia raised rates on 18 Nov to defend the rupiah; a December Fed rise is near fully priced.",
    "signals": [
     "us-inflation",
     "central-banks",

@@ -1,16 +1,16 @@
 # Private credit stress — WATCH (stable)
-id private-credit · Markets · horizon acute · checked 2026-11-17T17:51Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-19T05:51Z
+id private-credit · Markets · horizon acute · checked 2026-11-18T17:47Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-20T05:47Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/private-credit
 
-Value: Nontraded BDC net outflows $4.1bn in Q3
-Rated on: Watch: funds limiting redemptions (six prorated in Q3); no multi-fund gating, forced sales or bank losses for Alert
+Value: US private credit default rate 6.2% (Oct)
+Rated on: Watch: nontraded BDC redemption requests ~9.8% vs 5% caps and defaults at 6.2%; no multi-fund gating wave or bank losses (Alert)
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-Nontraded BDCs had $4.1bn net outflows in Q3, leaving $8.2bn of requests unmet; no wave of gates or bank losses
+Fitch's US private credit default rate eased to 6.2% in October; nontraded BDCs still cap redemptions at 5% a quarter
 
-Why it's at this level: Preliminary Stanger data show redemptions from nontraded BDCs exceeded new capital by $4.1bn in the third quarter, the third straight quarter of net outflows, and sponsors met only 40% of requests, leaving about $8.2bn unmet; six funds prorated (AltsWire, 8 Nov). BC Partners agreed on 11 Nov to acquire Investcorp's listed BDC amid a sector shakeout (Bloomberg). Searches on 17 Nov found no simultaneous wave of gates, forced asset sales or losses spreading to banks or insurers, so Watch holds.
+Why it's at this level: Fitch data reported on 17 Nov show the trailing 12-month US private credit default rate eased to 6.2% in October from 6.3% in September, with 10.7% for the smallest borrowers (Investment Executive). Nontraded BDCs faced third-quarter redemption requests averaging 9.8% of shares against a usual 5% quarterly cap, leaving a backlog expected to take many quarters to clear (InvestmentNews). Searches on 18 Nov found no simultaneous wave of large fund gates, forced asset sales or losses spreading to banks or insurers, so Watch holds.
 
-What this means for you: Investors in semi-liquid private credit funds may be able to withdraw only part of their money each quarter while redemption queues persist. Wider spillover to banks or insurers has not been reported.
+What this means for you: Investors in nontraded private credit funds and BDCs may receive only part of any withdrawal request each quarter. Smaller, highly indebted companies that borrow from these funds face the highest default rates.
 
 Why it matters: Private credit has grown fast outside bank regulation; its losses surface late and can spill into banks, insurers and pension funds.
 What moves it: Defaults among leveraged mid-sized borrowers, payment-in-kind interest, fund redemption requests, bank lending to funds.
@@ -18,5 +18,5 @@ What moves it: Defaults among leveraged mid-sized borrowers, payment-in-kind int
 Rubric — Alert: Several large funds gate at once, forced asset sales, or losses spreading to banks or insurers. | Watch: A large fund limits redemptions, listed BDCs trade at wide discounts to NAV, or a cluster of borrower defaults with heavy losses. | Normal: No notable fund gates, defaults or markdowns beyond the routine.
 
 Sources:
-- Nontraded BDC Net Outflows Reach $4.1B in Q3 as Fundraising Falls to Lowest Level Since 2020 (2026-11-08) https://altswire.com/nontraded-bdc-net-outflows-reach-4-1b-in-q3-as-fundraising-falls-to-lowest-level-since-2020/
-- BC Partners to acquire Investcorp BDC amid private credit shakeout (2026-11-11) https://www.bloomberg.com/news/articles/2026-11-11/bc-partners-to-buy-investcorp-bdc-amid-private-credit-shakeout
+- Investment Executive — U.S. private credit defaults ease in October: Fitch (2026-11-17) https://www.investmentexecutive.com/news-story/research-and-markets/u-s-private-credit-defaults-ease-in-october-fitch/
+- InvestmentNews — Pace of investors selling nontraded BDCs slows but remains significant, says Fitch (2026-10-13) https://www.investmentnews.com/alternatives/pace-of-investors-selling-nontraded-bdcs-slows-but-remains-significant-according-to-fitch/268574

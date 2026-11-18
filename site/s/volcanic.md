@@ -1,16 +1,16 @@
 # Volcanic & aviation ash — NORMAL (stable)
-id volcanic · Weather & Hazards · horizon acute · checked 2026-11-17T17:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-19T05:51Z
+id volcanic · Weather & Hazards · horizon acute · checked 2026-11-18T17:47Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-20T05:47Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/volcanic
 
-Value: No red aviation codes found (17 Nov)
-Rated on: No aviation colour code red, no VEI 4+ eruption = Normal
-Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
+Value: No red aviation codes found (18 Nov)
+Rated on: Normal: no aviation colour code red and no large eruption found as of 18 Nov
+Basis: judged — The AI assessor's reading of 1 source from 1 outlet against the rubric. Check the sources before relying on it.
 
-No red aviation codes, VEI 4+ eruptions or ash-related airspace closures found as of 17 Nov; Mayon at alert level 3
+No red aviation codes, VEI 4+ eruptions or ash-related airspace closures found as of 18 Nov; Mayon at alert level 3
 
-Why it's at this level: Mayon in the Philippines remains at alert level 3 after a moderately explosive eruption on 30 Oct; a minor eruption on 3 Nov sent ash about 1,600 metres high and 3,903 people had evacuated, with no flight disruption reported (Daily Tribune). GDACS listed no volcano alerts on 17 Nov, and searches found no red aviation colour code near major air routes, no VEI 4+ eruption and no major ash-related airspace closure. Ongoing eruptions remain local hazards, so the signal stays Normal.
+Why it's at this level: Mayon in the Philippines remains at alert level 3 after a moderately explosive eruption on 30 Oct sent ash about 3,000 metres above the crater; pilots are told to avoid the summit, but no flight cancellations were reported (Nature World News, 4 Nov). Searches on 18 Nov found no red aviation colour code near major air routes, no VEI 4+ eruption and no major ash-related airspace closure. Ongoing eruptions remain local hazards, so the signal stays Normal.
 
-What this means for you: Air travel is not currently affected by volcanic ash on major routes. People near Mayon should follow Phivolcs and local authority evacuation advice and keep out of the 6 km danger zone.
+What this means for you: No volcanic ash disruption to flights was found. Travellers to the Philippines or Indonesia can check airline notices and FCDO travel advice for areas near active volcanoes.
 
 Why it matters: Major eruptions ground flights (Iceland 2010) and can cool the climate for years.
 What moves it: Volcanic unrest; impact depends on ash plume height and jet-stream direction.
@@ -18,5 +18,4 @@ What moves it: Volcanic unrest; impact depends on ash plume height and jet-strea
 Rubric — Alert: Major airspace closures from ash, or a VEI 4+ eruption. | Watch: Aviation colour code orange/red at a volcano near major air routes, or a large eruption. | Normal: No aviation colour code red; no large eruptions.
 
 Sources:
-- Daily Tribune — Mayon spews ash plume, displaces nearly 4k residents (2026-11-03) https://tribune.net.ph/2026/11/03/mayon-spews-ash-plume-displaces-nearly-4k-residents
-- GDACS — Global Disaster Alert and Coordination System (2026-11-17) https://www.gdacs.org/
+- Nature World News — Mayon volcano stays alert level 3 as lava flows and new ash plumes follow explosive eruption (2026-11-04) https://www.natureworldnews.com/articles/73728/20261104/mayon-volcano-stays-alert-level-3-lava-flows-new-ash-plumes-follow-its-explosive-eruption.htm
