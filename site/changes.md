@@ -1,7 +1,7 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-19T17:49Z · next run ~23:40 UK · stale after 2026-11-20T07:49Z (36h for daily-tier signals)
+as_of 2026-11-19T23:42Z · next run ~05:40 UK · stale after 2026-11-20T13:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
-Basis: 27 measured from open data, 9 follow a published figure, 53 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
+Basis: 26 measured from open data, 9 follow a published figure, 54 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 - 2026-11-19T17:49Z Sovereign debt stress [sovereign-debt]: ALERT→WATCH — France–Bund 10-year spread eased to about 145–150bp on 19 Nov, near the 150bp Alert line; Alert unconfirmed
 - 2026-11-19T05:51Z Korean peninsula [korea]: WATCH→NORMAL — No North Korean launch found since 4 Nov, outside the rubric's two-week window; no border incident

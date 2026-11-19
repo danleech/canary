@@ -1,7 +1,7 @@
 # Canary — all signals
-as_of 2026-11-19T17:49Z · next run ~23:40 UK · stale after 2026-11-20T07:49Z (36h for daily-tier signals)
+as_of 2026-11-19T23:42Z · next run ~05:40 UK · stale after 2026-11-20T13:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
-Basis: 27 measured from open data, 9 follow a published figure, 53 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
+Basis: 26 measured from open data, 9 follow a published figure, 54 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 status: ALERT acute/material risk now · WATCH elevated · NORMAL background · PENDING not yet assessed. (c)=chronic, (s)=seasonal horizon. basis: measured (open data, fixed rule) · published (an official or named body's figure) · judged (AI reading of news). Detail: /s/{id}.md
 
@@ -20,16 +20,16 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | cholera-dengue | ALERT | stable | judged | Over 3,000 cholera deaths in 2026 (WHO) | WHO counts over 3,000 cholera deaths in 2026, nearly nine in ten in Africa; DR Congo, Sudan and Yemen hard hit |
 | uk-energy-cap | ALERT | worsening | judged | £1,723 now; January rise forecast 26–28% | Forecasts put the January cap 26–28% above today's £1,723 a year; Ofgem is due to announce by 25 Nov |
 | uk-threat-level | ALERT | stable | judged | Threat level: Severe | UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 19 Nov |
-| equity-stress | WATCH | worsening | measured | VIX 25.7, S&P -7.2% | VIX closed at 24.6 on 18 Nov and the S&P 500 sits 6.3% below its high, inside both Watch bands |
-| bond-volatility | WATCH | improving | measured | MOVE 94, 10y 5.07% | Treasury volatility index MOVE eased to 98 on 18 Nov, just under the 100 line; US 10-year yield 5.07% |
-| dollar | WATCH | worsening | measured | DXY 103.8, 3m +4.9% | Dollar index 103.9 on 19 Nov, a 52-week high, up about 5% over three months, at the Watch line |
-| gold | WATCH | improving | measured | $3,690, 3m -21.5% | Gold near $3,733 on 19 Nov, down 20.5% over three months, beyond the 8% fall that marks Watch |
-| crypto | WATCH | worsening | measured | BTC $62,966, -27% from high | Bitcoin near $63,300 on 19 Nov, 27% below its 52-week high and 19% lower over a month |
+| equity-stress | WATCH | worsening | measured | VIX 28.4, S&P -8.2% | VIX closed at 24.6 on 18 Nov and the S&P 500 sits 6.3% below its high, inside both Watch bands |
+| bond-volatility | WATCH | improving | measured | MOVE 96, 10y 5.05% | Treasury volatility index MOVE eased to 98 on 18 Nov, just under the 100 line; US 10-year yield 5.07% |
+| dollar | WATCH | worsening | measured | DXY 103.9, 3m +5.0% | Dollar index 103.9 on 19 Nov, a 52-week high, up about 5% over three months, at the Watch line |
+| gold | WATCH | improving | measured | $3,624, 3m -22.9% | Gold near $3,733 on 19 Nov, down 20.5% over three months, beyond the 8% fall that marks Watch |
+| crypto | WATCH | worsening | measured | BTC $61,712, -29% from high | Bitcoin near $63,300 on 19 Nov, 27% below its 52-week high and 19% lower over a month |
 | private-credit | WATCH | stable | judged | US private credit default rate 6.2% (Oct) | Fitch's US private credit default rate eased to 6.2% in October; nontraded BDCs still limit redemptions to 5% a quarter |
 | us-inflation | WATCH | worsening | measured | CPI ~4.1% y/y (Oct); rising 3 months | FRED index data imply US CPI inflation of about 4.1% in October, up from 4.0% and inside the 3.0–4.5% Watch band |
 | central-banks | WATCH | stable | judged | Dec Fed rise priced ~91%; yen ~159.3/$ | Markets price a Fed rate rise in December; Japan steps up warnings as the yen holds near 159.3 per dollar |
 | sovereign-debt | WATCH | improving | judged | OAT–Bund ~145–150bp (19 Nov); US 10y 5.07% | France–Bund 10-year spread eased to about 145–150bp on 19 Nov, near the 150bp Alert line; Alert unconfirmed |
-| oil | WATCH | improving | measured | $90.2, 1m -20% | Brent near $89 on 19 Nov, 21% lower over a month; Hormuz attacks continue but no new outage confirmed |
+| oil | WATCH | improving | measured | $90.0, 1m -20% | Brent near $89 on 19 Nov, 21% lower over a month; Hormuz attacks continue but no new outage confirmed |
 | food-prices | WATCH | improving | published | FAO index 133.9 (Oct), +5.9% y/y | FAO food price index 133.9 in October, below the 135 Alert line but up 5.9% on a year; next release 4 Dec |
 | critical-minerals | WATCH | stable | judged | Rare-earth pause extended to 10 Jan 2027 | China extended its pause on some rare-earth export controls to 10 Jan 2027 on 9 Nov; April 2025 licensing stays |
 | fertiliser | WATCH | stable | judged | Egypt urea ~$535/t FOB; US ammonia +17% y/y | Egyptian urea near $535 a tonne after gas cuts to fertiliser plants; US ammonia retail prices up 17% on a year |
@@ -46,7 +46,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | india-pakistan | WATCH | stable | judged | Indus treaty in abeyance; no LoC strike found | India keeps the Indus Waters Treaty in abeyance; troops fired at suspected infiltration near the LoC on 16 Nov |
 | nuclear-risk | WATCH | stable | judged | No US–Russia treaty limits since Feb | Trump, Xi and Putin discussed nuclear arms cuts in Shenzhen on 19 Nov; no deal found, New START limits still lapsed |
 | other-conflicts | WATCH | worsening | judged | Ethiopia–Eritrea forces mass at border | Ethiopia and Eritrea are reported to be massing forces at the border after artillery exchanges near Badme on 11–13 Nov |
-| other-cyclones | WATCH | worsening | measured | GDACS orange: Cyclone Akvan (India) | Cyclone Akvan under GDACS orange alert; IMD expects landfall between Nellore and Tuni around noon on 20 Nov |
+| other-cyclones | WATCH | improving | judged | Cyclone Akvan due ashore in Andhra 20 Nov | Cyclone Akvan is forecast to cross the Andhra Pradesh coast on 20 Nov; GDACS lowered it to green on 19 Nov |
 | heat | WATCH | improving | judged | Severe heatwave, Cape York to 19 Nov | BoM severe heatwave warning for Queensland's Peninsula runs to 19 Nov; no deadly top-tier heatwave found |
 | drought | WATCH | stable | judged | Sudan harvest failure; no famine declared | Crop Monitor rates Sudan's main-season crops a failure after record-dry rains; no drought famine declaration found |
 | sea-ice | WATCH (c) | stable | measured | Arctic -1.68, Antarctic -1.36M km² | Arctic sea ice 1.68M km² and Antarctic 1.36M km² below average on 18 Nov; neither at a record low |
@@ -71,8 +71,8 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | credit-spreads | NORMAL | stable | measured | HY OAS 3.47% | US high-yield spreads 3.43% on 17 Nov, near their one-year high but inside the 4% Watch line |
 | banking-stress | NORMAL | stable | measured | STLFSI -0.87, CISS 0.01 | Financial stress gauges low: St Louis Fed index -0.87 and ECB stress indicator 0.0075; no notable bank failure found |
 | funding-stress | NORMAL | stable | measured | SOFR–IORB +0bp, repo $0.1bn | SOFR 2bp above the Fed's reserve rate on 17 Nov; no Fed repo use on 18 Nov |
-| yen-carry | NORMAL | stable | measured | ¥159.8/$, 1w -0.0% | Yen near ¥159.6 per dollar on 19 Nov, little changed on the week; no intervention found |
-| us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.27 | Sahm recession indicator 0.00 for October; yield curve +0.27 on 18 Nov; jobless claims near a one-year low |
+| yen-carry | NORMAL | stable | measured | ¥159.7/$, 1w -0.1% | Yen near ¥159.6 per dollar on 19 Nov, little changed on the week; no intervention found |
+| us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.28 | Sahm recession indicator 0.00 for October; yield curve +0.27 on 18 Nov; jobless claims near a one-year low |
 | euro-growth | NORMAL | stable | published | Q3 GDP +0.4%; Oct composite PMI above 50 | Euro-area GDP grew 0.4% in Q3 and the October composite PMI stayed above 50; November flash PMIs not yet out |
 | china-economy | NORMAL | improving | judged | Oct output +4.8%, retail +0.4%; FAI −8.1% YTD | China's October output rose 4.8% and retail sales 0.4%, below forecasts, while fixed-asset investment kept falling |
 | global-pmi | NORMAL | improving | published | Global composite 53.2 (Oct) | Global composite PMI 53.2 in October, down from 54.3 but above the 51 Watch line; November flashes not out yet |

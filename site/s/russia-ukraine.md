@@ -1,5 +1,5 @@
 # Russia–Ukraine — ALERT (stable)
-id russia-ukraine · Armed Conflict · horizon acute · checked 2026-11-19T17:49Z · text written 2026-11-19T11:42Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-20T07:49Z
+id russia-ukraine · Armed Conflict · horizon acute · checked 2026-11-19T23:42Z · text written 2026-11-19T11:42Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-20T13:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/russia-ukraine
 
 Value: 554 strikes on Zaporizhzhia in 24h (19 Nov)

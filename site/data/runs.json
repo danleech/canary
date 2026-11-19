@@ -1,5 +1,37 @@
 [
  {
+  "t": "2026-11-19T23:42:16Z",
+  "applied": 41,
+  "changed": [],
+  "warnings": [],
+  "note": "Late run: searches found nothing material after the previous texts for 20 held judged signals.",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 20,
+   "published": 1,
+   "judged": 20
+  },
+  "held": 40,
+  "sources": {
+   "citations": 2,
+   "news_citations": 1,
+   "outlets": 2,
+   "top_news_outlets": [
+    [
+     "thesouthfirst.com",
+     1
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 18,
+   "predicted_active": 2,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
   "t": "2026-11-19T17:49:47Z",
   "applied": 89,
   "changed": [

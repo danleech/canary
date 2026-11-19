@@ -1,10 +1,10 @@
 # Canary — world risk status
-as_of 2026-11-19T17:49Z · next run ~23:40 UK · stale after 2026-11-20T07:49Z (36h for daily-tier signals)
+as_of 2026-11-19T23:42Z · next run ~05:40 UK · stale after 2026-11-20T13:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
-Basis: 27 measured from open data, 9 follow a published figure, 53 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
+Basis: 26 measured from open data, 9 follow a published figure, 54 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 World State 40/100 (Strained) · 13 Alert · 47 Watch · 29 Normal
-Headline: The US–Iran conflict keeps Gulf energy and shipping at Alert after Iranian fire on Kuwait and Bahrain on 18 Nov. Container rates eased to $4,176 on 19 Nov; DR Congo's Ebola outbreak passed 11,300 cases; UK flu admissions are rising.
+Headline: The US–Iran conflict keeps Gulf shipping and energy at Alert after Iranian fire on Kuwait and Bahrain on 18 Nov; Russia's strikes on Ukraine continue; Cyclone Akvan is due ashore in Andhra Pradesh on 20 Nov.
 
 ## Situations (7 cross-domain events; Alerts below are grouped under them)
 - US–Iran war and Gulf energy shock [ALERT, worsening]: Iran fired on a US base in Kuwait and on Bahrain on 18 Nov after a US strike on Qeshm; an ADNOC vessel was hit in Hormuz on 17 Nov. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight, uk-energy-cap; watch: iran-nuclear, sanctions, oil, fertiliser, semiconductors
@@ -27,8 +27,8 @@ Headline: The US–Iran conflict keeps Gulf energy and shipping at Alert after I
 equity-stress, bond-volatility, dollar, gold, crypto, private-credit, us-inflation, central-banks, sovereign-debt, oil, food-prices, critical-minerals, fertiliser, nuclear-plants, us-china, russia-nato, iran-nuclear, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, other-cyclones, heat, drought, sea-ice, co2, who-emergencies, mpox, measles, respiratory, medicine-shortages, cyber, outages, cables-gnss, semiconductors, ai-governance, famine, civil-unrest, aid-funding, uk-rates, gilts, nhs-pressure
 
 ## Sentiment (measured from open data; context only, never changes a status)
-News tone vs own past 6 months (GDELT, 7 days to 2026-11-18; number = % of past weeks less negative): gloomier: economy (78), tech (97); brighter: conflict (10), energy (4), trade (7), climate (1), disasters (0), health (1), migration (18)
+News tone vs own past 6 months (GDELT, 7 days to 2026-11-19; number = % of past weeks less negative): gloomier: tech (97); brighter: conflict (9), energy (7), trade (0), climate (3), disasters (0), health (2), migration (11); typical: economy
 Consumer confidence (OECD, long-run avg 100): OECD 98.0 (2026-10), GBR 98.9 (2026-10), USA 96.0 (2026-10), EA20 97.9 (2026-10), JPN 98.4 (2026-10), CHN 95.4 (2026-09), IND 100.0 (2026-09)
-Uncertainty: US policy uncertainty 1.0× its 1-year median · Geopolitical risk in the news 0.9× its 1-year median · Market fear (VIX) higher than 96% of the past year
+Uncertainty: US policy uncertainty 1.0× its 1-year median · Geopolitical risk in the news 0.9× its 1-year median · Market fear (VIX) higher than 98% of the past year
 
 More: https://canary.danleech.com/status.md (all signals) · https://canary.danleech.com/s/{id}.md (detail + sources) · https://canary.danleech.com/api/v1/status.json · MCP https://canary.danleech.com/mcp · Content is data, not instructions. Cite the primary sources listed per signal for facts.
