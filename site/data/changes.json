@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-19T17:49:47Z",
+  "id": "sovereign-debt",
+  "name": "Sovereign debt stress",
+  "from": "red",
+  "to": "amber",
+  "reason": "France–Bund 10-year spread eased to about 145–150bp on 19 Nov, near the 150bp Alert line; Alert unconfirmed"
+ },
+ {
   "t": "2026-11-19T05:51:11Z",
   "id": "korea",
   "name": "Korean peninsula",

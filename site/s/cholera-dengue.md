@@ -1,16 +1,16 @@
 # Cholera & mosquito-borne — ALERT (stable)
-id cholera-dengue · Global Health · horizon acute · checked 2026-11-18T17:47Z · at this level since 2026-11-06T17:59Z · stale after 2026-11-20T05:47Z
+id cholera-dengue · Global Health · horizon acute · checked 2026-11-19T17:49Z · at this level since 2026-11-06T17:59Z · stale after 2026-11-21T05:49Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/cholera-dengue
 
 Value: Over 3,000 cholera deaths in 2026 (WHO)
-Rated on: Alert: large outbreaks with high mortality in conflict zones (WHO: over 3,000 cholera deaths in 2026; Sudan, South Sudan, Yemen)
+Rated on: Alert: large cholera outbreaks with high mortality in conflict zones (3,000+ deaths in 2026, WHO; DR Congo 1,050)
 Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 
-WHO counts over 3,000 cholera deaths in 2026, nearly nine in ten in Africa; Sudan, South Sudan and Yemen hard hit
+WHO counts over 3,000 cholera deaths in 2026, nearly nine in ten in Africa; DR Congo, Sudan and Yemen hard hit
 
-Why it's at this level: WHO said around 10 Nov that more than 3,000 people have died of cholera in 2026, nearly nine in ten in Africa, after nearly 7,900 deaths in 2025, the deadliest year since 1999; Sudan, South Sudan, DR Congo, Nigeria and Yemen are among the worst-affected countries (SCMP; The Standard, citing AFP). In Europe, ECDC counted 76 locally acquired dengue cases in Italy and 8 in France by 11 Nov, with none new in the latest week (ECDC). Searches on 18 Nov found no sign of the cholera toll easing, so high mortality in conflict zones keeps the Alert.
+Why it's at this level: WHO said on 10 Nov that more than 3,000 people died of cholera from January to September 2026, nearly nine in ten in Africa, fewer than in the same period of 2025, the deadliest year since 1999 (Rio Times; Ahram Online). ECDC's monthly overview to 28 Sep counts DR Congo as the worst affected, with 1,050 deaths, and lists Yemen and Afghanistan among countries with the most new deaths (ECDC). Large outbreaks with high mortality in conflict zones keep the Alert, though the global toll is below last year's.
 
-What this means for you: Travellers to affected areas can check NHS fit for travel and FCDO travel advice for cholera and dengue precautions. Risk in the UK is very low.
+What this means for you: Travellers to affected areas should follow FCDO travel advice and NHS travel health guidance on safe water, food hygiene and cholera vaccination. Displaced people in conflict zones are most exposed.
 
 Why it matters: Climate-sensitive diseases — cholera, dengue, chikungunya, Oropouche, West Nile and yellow fever — are hitting record levels and reaching new regions.
 What moves it: Conflict, floods, heat, El Niño, water and sanitation, mosquito range expansion.
@@ -18,6 +18,6 @@ What moves it: Conflict, floods, heat, El Niño, water and sanitation, mosquito 
 Rubric — Alert: Large outbreaks with high mortality in conflict zones, or a WHO grade 3 emergency. | Watch: Record-level seasons, or local transmission in countries where the disease was not established (including Europe). | Normal: Seasonal levels.
 
 Sources:
-- SCMP — Over 3,000 already dead from cholera this year, says WHO (2026-11-10) https://www.scmp.com/news/world/africa/article/3373991/over-3000-already-dead-cholera-year-says-who
-- The Standard (AFP) — Cholera killed more than 3,000 this year: WHO (2026-11-10) https://www.standardmedia.co.ke/business/world/article/2001561996/cholera-killed-more-than-3000-this-year-who
-- ECDC — Seasonal surveillance of dengue in the EU/EEA, 13 November 2026 (2026-11-13) https://www.ecdc.europa.eu/en/public-health-events/2026-evd-00017/2026-11-13
+- Rio Times — WHO: cholera deaths in 2026, Africa and El Niño (2026-11-10) https://www.riotimesonline.com/who-cholera-deaths-2026-africa-el-nino/
+- Ahram Online — Cholera killed more than 3,000 this year: WHO (2026-11-10) https://english.ahram.org.eg/News/582302.aspx
+- ECDC — Cholera worldwide overview (2026-10-01) https://www.ecdc.europa.eu/en/node/33195

@@ -1,5 +1,5 @@
 # Pacific & Indian cyclones — WATCH (worsening)
-id other-cyclones · Weather & Hazards · horizon acute · checked 2026-11-19T11:42Z · text written 2026-11-19T05:51Z · at this level since 2026-11-16T23:43Z · stale after 2026-11-20T01:42Z
+id other-cyclones · Weather & Hazards · horizon acute · checked 2026-11-19T17:49Z · text written 2026-11-19T05:51Z · at this level since 2026-11-16T23:43Z · stale after 2026-11-20T07:49Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/other-cyclones
 
 Value: GDACS orange: Cyclone Akvan (India)

@@ -1,16 +1,16 @@
 # NHS & respiratory — WATCH (worsening)
-id nhs-pressure · UK Watch · horizon acute · checked 2026-11-18T17:47Z · at this level since 2026-11-13T17:58Z · stale after 2026-11-20T05:47Z
+id nhs-pressure · UK Watch · horizon acute · checked 2026-11-19T17:49Z · at this level since 2026-11-13T17:58Z · stale after 2026-11-21T05:49Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/nhs-pressure
 
-Value: Flu above baseline and rising (wk 45 data)
-Rated on: Watch: flu admissions 3.65/100k above baseline and rising (UKHSA week 45); not yet high nationally
+Value: Flu admissions 4.68/100k, low and rising
+Rated on: Watch: flu admissions 4.68 per 100,000 (wk 46), above baseline and rising; not at high level
 Basis: published — Follows UKHSA surveillance and NHS England situation reports, read from the cited source by the AI assessor and checked against the rubric.
 
-UKHSA 12 Nov: flu admissions up to 3.65 per 100,000, low level and rising; RSV rising; cold-health alerts to 19 Nov
+UKHSA 19 Nov: flu admissions up to 4.68 per 100,000, low level and rising; RSV rising; COVID-19 stable
 
-Why it's at this level: UKHSA's weekly data of 12 Nov, covering 2–8 Nov, put influenza hospital admissions at 3.65 per 100,000, up from 3.00, with activity at low levels and lab positivity at 8.1% (UKHSA). COVID-19 is stable and RSV admissions rose to 1.30 per 100,000 from 0.89. UKHSA yellow cold-health alerts cover northern England from 15 to 19 Nov (ITV News). No widespread NHS critical incidents were found on 18 Nov; the next report is expected on 19 Nov.
+Why it's at this level: UKHSA's weekly data of 19 Nov, covering 9–15 Nov, put influenza hospital admissions at 4.68 per 100,000, up from 3.76, with activity still at low levels and positivity up to 11.4% from 8.3% (UKHSA). RSV admissions rose to 1.66 per 100,000 and COVID-19 was stable at 2.22. Flu is above baseline and rising but not at high levels, and no widespread NHS critical incidents were found, so Watch is kept.
 
-What this means for you: Eligible people can follow NHS advice on flu and COVID-19 vaccination. UKHSA advises checking on older and vulnerable people during cold-health alerts; use NHS 111 for urgent advice.
+What this means for you: Flu is rising earlier in the season. UKHSA and the NHS advise eligible people to get their flu and COVID-19 vaccines; follow NHS 111 guidance on when to seek care and stay home when unwell where possible.
 
 Why it matters: Winter respiratory waves and NHS capacity directly affect access to care for everyone in the UK.
 What moves it: Flu, COVID, RSV, norovirus, staffing, strikes.
@@ -18,5 +18,4 @@ What moves it: Flu, COVID, RSV, norovirus, staffing, strikes.
 Rubric — Alert: High or very high flu activity nationally, or widespread critical incidents. | Watch: Respiratory activity above baseline and rising, or several trusts in critical incidents. | Normal: Respiratory activity at baseline and no widespread critical incidents.
 
 Sources:
-- UKHSA — Latest UKHSA weekly winter virus surveillance data (2026-11-12) https://www.gov.uk/government/news/latest-ukhsa-weekly-winter-virus-surveillance-data
-- ITV News — Yellow cold health alerts to come into force in parts of UK amid frosty weather (2026-11-15) https://www.itv.com/news/2026-11-15/yellow-cold-health-alerts-to-come-into-force-in-parts-of-uk-amid-frosty-weather
+- UKHSA — Latest UKHSA weekly winter virus surveillance data (2026-11-19) https://www.gov.uk/government/news/latest-ukhsa-weekly-winter-virus-surveillance-data

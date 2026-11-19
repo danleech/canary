@@ -1,5 +1,59 @@
 [
  {
+  "t": "2026-11-19T17:49:47Z",
+  "applied": 89,
+  "changed": [
+   "sovereign-debt"
+  ],
+  "warnings": [],
+  "note": "Research split across five subagents. France–Bund spread near 150bp on 19 Nov; Alert kept under hysteresis. MI5 threat page served stale content; uk-threat-level cited from GOV.UK and ProtectUK.",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 27,
+   "published": 9,
+   "judged": 53
+  },
+  "held": 40,
+  "sources": {
+   "citations": 92,
+   "news_citations": 72,
+   "outlets": 67,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     6
+    ],
+    [
+     "tradingeconomics.com",
+     5
+    ],
+    [
+     "spglobal.com",
+     3
+    ],
+    [
+     "allafrica.com",
+     2
+    ],
+    [
+     "bdnews24.com",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 58,
+   "predicted_active": 4,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": [
+    "displacement",
+    "heat",
+    "semiconductors"
+   ]
+  }
+ },
+ {
   "t": "2026-11-19T11:42:48Z",
   "applied": 41,
   "changed": [],

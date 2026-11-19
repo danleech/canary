@@ -1,16 +1,16 @@
 # Sahel insurgency — WATCH (stable)
-id sahel · Armed Conflict · horizon acute · checked 2026-11-18T17:47Z · at this level since 2026-11-04T17:53Z · stale after 2026-11-20T05:47Z
+id sahel · Armed Conflict · horizon acute · checked 2026-11-19T17:49Z · at this level since 2026-11-04T17:53Z · stale after 2026-11-21T05:49Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/sahel
 
 Value: Insurgency sustained; no capital newly fallen
-Rated on: Watch: sustained insurgency at current levels; no capital or major city blockaded or fallen (Alert line)
+Rated on: Sustained insurgency; no capital or major city fallen or blockaded and no new coastal-state mass-casualty attack (Watch)
 Basis: judged — The AI assessor's reading of 1 source from 1 outlet against the rubric. Check the sources before relying on it.
 
-JNIM and IS Sahel fight state forces and each other in Burkina Faso and Mali; no capital or major city has fallen
+JNIM and IS Sahel keep fighting in Mali and Burkina Faso; air and drone strikes in Mali have doubled since April
 
-Why it's at this level: Al Qaeda-linked JNIM and Islamic State Sahel Province have fought increasingly deadly battles along Burkina Faso's border with Mali since early September; IS claimed over 400 JNIM fighters killed around Ganadaouri on 9 Oct, a toll not independently confirmed (Al Jazeera, 13 Nov). ACLED recorded more than 10,000 political violence deaths in Burkina Faso, Mali and Niger in January–November 2025, and JNIM has expanded into Benin and Togo. Searches on 18 Nov found no new fall or blockade of a capital or major city and no new mass-casualty attack in a coastal state, so Watch holds.
+Why it's at this level: An analysis reported by Reuters on 19 Nov found that air and drone strikes by Malian and Russian Africa Corps forces have more than doubled since the April 2026 insurgent offensive, with recorded strike deaths up nearly 150% (Moscow Times). JNIM and Islamic State Sahel Province continue to fight state forces and each other in Mali and Burkina Faso. Searches on 19 Nov found no new fall or blockade of a capital or major city and no new mass-casualty attack in a coastal state, so Watch holds.
 
-What this means for you: Anyone travelling to Mali, Burkina Faso, Niger or northern Benin and Togo should check FCDO travel advice. Those most exposed are rural communities and travellers on roads in border areas.
+What this means for you: Residents of Mali, Burkina Faso and Niger face attacks, blockades and air strikes. FCDO advises against all travel to most of the region. Fuel and food supply routes into the region stay exposed.
 
 Why it matters: Jihadist groups control growing territory across Mali, Burkina Faso and Niger, driving displacement and coastal-state spillover.
 What moves it: JNIM/IS-Sahel offensives, juntas, Russian forces, blockades, coastal-state attacks.
@@ -18,4 +18,4 @@ What moves it: JNIM/IS-Sahel offensives, juntas, Russian forces, blockades, coas
 Rubric — Alert: Blockade or fall of a capital or major city, or mass-casualty attacks spreading to coastal states. | Watch: Sustained insurgency at current levels. | Normal: Declining violence trend.
 
 Sources:
-- Al Jazeera — Burkina Faso's rival armed groups turn on each other as state loses ground (2026-11-13) https://aljazeera.com/news/2026/11/13/burkina-fasos-rival-armed-groups-turn-on-each-other-as-state-loses-ground
+- The Moscow Times (Reuters) — Russia's Africa Corps deploys new drone in Mali as strikes increase, analysis says (2026-11-19) https://www.themoscowtimes.com/2026/11/19/russias-africa-corps-deploys-new-drone-in-mali-as-strikes-increase-analysis-says-a94321
