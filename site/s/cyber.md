@@ -1,5 +1,5 @@
 # Major cyber incidents — WATCH (improving)
-id cyber · Technology & Cyber · horizon acute · checked 2026-11-19T05:51Z · at this level since 2026-11-16T05:51Z · stale after 2026-11-19T19:51Z
+id cyber · Technology & Cyber · horizon acute · checked 2026-11-19T11:42Z · text written 2026-11-19T05:51Z · at this level since 2026-11-16T05:51Z · stale after 2026-11-20T01:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/cyber
 
 Value: 4 exploited flaws listed 18 Nov

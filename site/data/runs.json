@@ -1,5 +1,101 @@
 [
  {
+  "t": "2026-11-19T11:42:48Z",
+  "applied": 41,
+  "changed": [],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 0,
+   "judged": 20
+  },
+  "held": 38,
+  "sources": {
+   "citations": 6,
+   "news_citations": 6,
+   "outlets": 5,
+   "top_news_outlets": [
+    [
+     "cnbc.com",
+     2
+    ],
+    [
+     "censor.net",
+     1
+    ],
+    [
+     "france24.com",
+     1
+    ],
+    [
+     "kyivindependent.com",
+     1
+    ],
+    [
+     "nbcnews.com",
+     1
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 18,
+   "predicted_active": 2,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
+  "t": "2026-11-19T11:42:43Z",
+  "applied": 41,
+  "changed": [],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 0,
+   "judged": 20
+  },
+  "held": 38,
+  "sources": {
+   "citations": 6,
+   "news_citations": 6,
+   "outlets": 5,
+   "top_news_outlets": [
+    [
+     "cnbc.com",
+     2
+    ],
+    [
+     "censor.net",
+     1
+    ],
+    [
+     "france24.com",
+     1
+    ],
+    [
+     "kyivindependent.com",
+     1
+    ],
+    [
+     "nbcnews.com",
+     1
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 18,
+   "predicted_active": 2,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
   "t": "2026-11-19T05:51:11Z",
   "applied": 41,
   "changed": [

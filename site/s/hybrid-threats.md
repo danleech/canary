@@ -1,5 +1,5 @@
 # Europe hybrid attacks — WATCH (stable)
-id hybrid-threats · Geopolitics · horizon acute · checked 2026-11-19T05:51Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-19T19:51Z
+id hybrid-threats · Geopolitics · horizon acute · checked 2026-11-19T11:42Z · text written 2026-11-19T05:51Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-20T01:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/hybrid-threats
 
 Value: Arson plot foiled, Estonia 14 Nov

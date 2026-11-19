@@ -1,10 +1,10 @@
 # FTSE 100 — NORMAL (worsening)
-id ftse · Markets · horizon acute · checked 2026-11-19T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-19T19:51Z
+id ftse · Markets · horizon acute · checked 2026-11-19T11:42Z · text written 2026-11-19T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-20T01:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/ftse
 
-Value: 10,551, -3.3% from high
-Rated on: Drawdown 3.3% < 5%; worst day -1.8% > -2.5% Watch line
-Basis: measured — Set by a fixed rule applied to open data (FTSE drawdown % = 3.29). Anyone can reproduce it from the public metrics file.
+Value: 10,524, -3.5% from high
+Rated on: FTSE drawdown 3.54% below the 5% Watch line
+Basis: measured — Set by a fixed rule applied to open data (FTSE drawdown % = 3.54). Anyone can reproduce it from the public metrics file.
 
 FTSE 100 at 10,551 on 18 Nov, 3.3% below its high; no daily fall above 2.5% this week
 

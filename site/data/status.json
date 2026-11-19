@@ -23,13 +23,13 @@
      "date": "2026-11-18"
     }
    ],
-   "value": "VIX 24.6, S&P -6.3%",
-   "value_num": 24.56,
-   "checked_at": "2026-11-19T05:51:11Z",
+   "value": "VIX 22.1, S&P -6.3%",
+   "value_num": 22.1,
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-11-16T17:52:48Z",
-   "rubric_hit": "VIX 24.6 in 20–30 Watch band; S&P drawdown 6.3% in 5–15% band",
+   "rubric_hit": "VIX 22.1 ≥ 20 Watch line; S&P drawdown 6.33% ≥ 5% Watch line",
    "basis": "measured",
-   "basis_detail": "VIX=24.56; S&P drawdown %=6.33",
+   "basis_detail": "VIX=22.10; S&P drawdown %=6.33",
    "assessed_at": "2026-11-19T05:51:11Z"
   },
   "ftse": {
@@ -45,13 +45,13 @@
      "date": "2026-11-19"
     }
    ],
-   "value": "10,551, -3.3% from high",
-   "value_num": 10551,
-   "checked_at": "2026-11-19T05:51:11Z",
+   "value": "10,524, -3.5% from high",
+   "value_num": 10524.25,
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "Drawdown 3.3% < 5%; worst day -1.8% > -2.5% Watch line",
+   "rubric_hit": "FTSE drawdown 3.54% below the 5% Watch line",
    "basis": "measured",
-   "basis_detail": "FTSE drawdown %=3.29",
+   "basis_detail": "FTSE drawdown %=3.54",
    "assessed_at": "2026-11-19T05:51:11Z"
   },
   "bond-volatility": {
@@ -73,10 +73,10 @@
     }
    ],
    "value": "MOVE 98, 10y 5.07%",
-   "value_num": 98.15,
-   "checked_at": "2026-11-19T05:51:11Z",
+   "value_num": 98.154,
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "MOVE 98 just below 100 line; held at Watch pending a clear move lower (hysteresis)",
+   "rubric_hit": "MOVE 98.2 has not yet cleared the 90 exit line, so Watch holds",
    "basis": "measured",
    "basis_detail": "MOVE=98.15; US10y 1m move bp=8.00",
    "assessed_at": "2026-11-19T05:51:11Z"
@@ -96,9 +96,9 @@
    ],
    "value": "HY OAS 3.43%",
    "value_num": 3.43,
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "HY OAS 3.43% < 4.0%; 1m widening 14bp < 100bp",
+   "rubric_hit": "HY OAS 3.43% below the 4% Watch line",
    "basis": "measured",
    "basis_detail": "HY OAS %=3.43",
    "assessed_at": "2026-11-19T05:51:11Z"
@@ -121,13 +121,13 @@
      "date": "2026-11-19"
     }
    ],
-   "value": "DXY 103.9, 3m +5.0%",
-   "value_num": 103.9,
-   "checked_at": "2026-11-19T05:51:11Z",
+   "value": "DXY 103.7, 3m +4.7%",
+   "value_num": 103.651,
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-11-18T11:49:31Z",
-   "rubric_hit": "DXY 3m move +4.95%, at the 5% Watch line",
+   "rubric_hit": "DXY 3m move 4.7% has not yet cleared the 4.5% exit line, so Watch holds",
    "basis": "measured",
-   "basis_detail": "DXY 3m move %=4.95",
+   "basis_detail": "DXY 3m move %=4.70",
    "assessed_at": "2026-11-19T05:51:11Z"
   },
   "banking-stress": {
@@ -149,10 +149,10 @@
     }
    ],
    "value": "STLFSI -0.87, CISS 0.01",
-   "value_num": -0.87,
-   "checked_at": "2026-11-19T05:51:11Z",
+   "value_num": -0.8655,
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "STLFSI -0.87 < 0; ECB CISS 0.0075 < 0.25; no bank failure",
+   "rubric_hit": "STLFSI -0.87 below the 0 Watch line; ECB CISS 0.01 below the 0.25 Watch line",
    "basis": "measured",
    "basis_detail": "STLFSI=-0.87; ECB CISS=0.01",
    "assessed_at": "2026-11-19T05:51:11Z"
@@ -170,13 +170,13 @@
      "date": "2026-11-19"
     }
    ],
-   "value": "$3,733, 3m -20.5%",
-   "value_num": 3733,
-   "checked_at": "2026-11-19T05:51:11Z",
+   "value": "$3,731, 3m -20.6%",
+   "value_num": 3730.7,
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-11-10T17:53:51Z",
-   "rubric_hit": "3m change -20.5%, a fall > 8% = Watch",
+   "rubric_hit": "3m fall -20.6% (Watch)",
    "basis": "measured",
-   "basis_detail": "Gold 3m gain %=-20.54; 3m fall -20.5%",
+   "basis_detail": "Gold 3m gain %=-20.59; 3m fall -20.6%",
    "assessed_at": "2026-11-19T05:51:11Z"
   },
   "crypto": {
@@ -192,13 +192,13 @@
      "date": "2026-11-19"
     }
    ],
-   "value": "BTC $63,273, -27% from high",
-   "value_num": 63273,
-   "checked_at": "2026-11-19T05:51:11Z",
+   "value": "BTC $63,862, -26% from high",
+   "value_num": 63862.11,
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-11-14T23:42:22Z",
-   "rubric_hit": "BTC drawdown 26.9% in 25–45% Watch band",
+   "rubric_hit": "BTC drawdown 26.3% ≥ 25% Watch line",
    "basis": "measured",
-   "basis_detail": "BTC drawdown %=26.94",
+   "basis_detail": "BTC drawdown %=26.26",
    "assessed_at": "2026-11-19T05:51:11Z"
   },
   "us-recession": {
@@ -226,9 +226,9 @@
    ],
    "value": "Sahm 0.00, 10y–2y +0.27",
    "value_num": 0.0,
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "Sahm 0.00 < 0.30; no negative GDP quarter",
+   "rubric_hit": "Sahm 0 below the 0.3 Watch line",
    "basis": "measured",
    "basis_detail": "Sahm=0.00",
    "assessed_at": "2026-11-19T05:51:11Z"
@@ -418,13 +418,13 @@
      "date": "2026-11-18"
     }
    ],
-   "value": "$89.3, 1m -21%",
-   "value_num": 89.32,
-   "checked_at": "2026-11-19T05:51:11Z",
+   "value": "$88.6, 1m -22%",
+   "value_num": 88.62,
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-11-06T17:59:39Z",
-   "rubric_hit": "Brent $89.3 in $85–110 Watch band",
+   "rubric_hit": "Brent $88.6 ≥ $85 Watch line",
    "basis": "measured",
-   "basis_detail": "Brent $=89.32; Brent 1m %=-21.07",
+   "basis_detail": "Brent $=88.62; Brent 1m %=-21.69",
    "assessed_at": "2026-11-19T05:51:11Z"
   },
   "eu-gas": {
@@ -445,13 +445,13 @@
      "date": "2026-11-18"
     }
    ],
-   "value": "€81/MWh",
-   "value_num": 81.1,
-   "checked_at": "2026-11-19T05:51:11Z",
+   "value": "€83/MWh",
+   "value_num": 83.0,
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "TTF €81/MWh > €70 Alert line",
+   "rubric_hit": "TTF €83/MWh > €70/MWh Alert line",
    "basis": "measured",
-   "basis_detail": "TTF €/MWh=81.11",
+   "basis_detail": "TTF €/MWh=83.00",
    "assessed_at": "2026-11-19T05:51:11Z"
   },
   "chokepoints": {
@@ -477,7 +477,7 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "ADNOC vessel hit 17 Nov; 1 missing",
    "rubric_hit": "Hormuz traffic materially impeded by repeated attacks on shipping = Alert",
@@ -565,29 +565,29 @@
   "us-china": {
    "status": "amber",
    "trend": "flat",
-   "summary": "US tightened AI chip access for Chinese firms on 16 Nov; Trump and Xi meet at APEC in Shenzhen on 19 Nov",
-   "state": "The US announced restrictions on 16 Nov limiting Chinese companies' use of advanced chips through data centres abroad, days before Trump meets Xi and Putin in Shenzhen on 19 Nov (Deseret News). Taiwan is expected to take a back seat at the talks (Political.org, 16 Nov). No blockade, military clash or severed channel was found as of 19 Nov; Watch holds on new export controls and continuing PLA activity.",
-   "for_you": "Tension over chips and trade can affect electronics supply and prices. No change to travel advice was found.",
+   "summary": "Trump met Xi, then Putin and Xi together, in Shenzhen on 19 Nov; no blockade, clash or severed channel found",
+   "state": "Trump held separate talks with Putin and Xi in Shenzhen on 19 Nov before a three-way meeting (CNBC); the talks ended with no immediate joint statement (NBC News). They followed US restrictions announced on 16 Nov limiting Chinese firms' use of advanced chips through data centres abroad. No blockade, military clash or severed diplomatic channel was found as of 19 Nov; Watch holds on new export controls.",
+   "for_you": "Conditions only: new chip export controls can affect technology supply chains and prices. No change to FCDO travel advice for Taiwan or China was found.",
    "sources": [
     {
-     "title": "Deseret News — Trump, Xi and Putin set to meet on the sidelines of APEC",
-     "url": "https://www.deseret.com/u-s-world/2026/11/16/trump-xi-and-putin-set-to-meet-on-the-sidelines-of-apec",
-     "date": "2026-11-16"
+     "title": "CNBC — Trump holds talks separately with Putin and Xi ahead of trilateral",
+     "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-china-apec-.html",
+     "date": "2026-11-19"
     },
     {
-     "title": "Political.org — Taiwan likely to take a backseat as Trump and Xi prepare for third meeting",
-     "url": "https://political.org/2026/11/16/taiwan-likely-to-take-a-backseat-as-trump-and-xi-prepare-for-third-meeting-of-2026-at-apec-summit-in-shenzhen/",
-     "date": "2026-11-16"
+     "title": "NBC News — Trump-Xi-Putin talks in China wrap up with no immediate statement",
+     "url": "https://www.nbcnews.com/politics/trump-administration/live-blog/trump-xi-putin-china-apec-congress-2026-live-updates-rcna609888",
+     "date": "2026-11-19"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-11-07T05:46:46Z",
    "value": "No blockade or clash; Shenzhen talks 19 Nov",
-   "rubric_hit": "Major new export controls announced 16 Nov = Watch; no blockade or clash",
+   "rubric_hit": "Watch: major new export controls (16 Nov); no blockade or clash",
    "basis": "judged",
    "basis_detail": "",
    "value_num": 10,
-   "assessed_at": "2026-11-19T05:51:11Z"
+   "assessed_at": "2026-11-19T11:42:48Z"
   },
   "russia-nato": {
    "status": "amber",
@@ -607,7 +607,7 @@
      "date": "2026-11-15"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Estonia to shut Russia border from 1 Dec",
    "rubric_hit": "Sabotage attributed to Russia on NATO territory = Watch; no Article 4 or clash",
@@ -634,7 +634,7 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No IAEA access; 60% stockpile unverified",
    "rubric_hit": "60% enrichment and inspector access curtailed = Watch; no strike on nuclear sites or NPT exit",
@@ -656,7 +656,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-11-19T05:51:11Z",
    "value": "Last launch 4 Nov",
    "rubric_hit": "No missile launch in two weeks (last 4 Nov); no border incident = Normal",
@@ -683,7 +683,7 @@
      "date": "2026-11-16"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Mexico tariff threat restated 16 Nov",
    "rubric_hit": "Major tariff increase threatened between large economies = Watch; none in force",
@@ -744,34 +744,29 @@
   "russia-ukraine": {
    "status": "red",
    "trend": "flat",
-   "summary": "Russian attacks killed five and injured 15 in the day to 18 Nov, hitting energy sites in three regions",
-   "state": "Russian attacks killed five people and injured 15 across Ukraine in the day to 18 Nov, damaging energy infrastructure in Kyiv, Mykolaiv and Rivne oblasts (Kyiv Independent). This followed the 17 Nov strikes that hit Kyiv's Southern and Northern bridges, when 14 were killed and 78 injured over a day (Kyiv Independent). Ukraine's air force said 131 of 158 drones were downed overnight into 16 Nov (Interfax-Ukraine). Sustained mass strikes on infrastructure keep the Alert.",
-   "for_you": "Follow FCDO advice against all travel to Ukraine. Strikes on energy sites can affect European power and gas markets.",
+   "summary": "Russian strikes hit several Ukrainian regions into 19 Nov, after energy attacks in three regions on 18 Nov",
+   "state": "Zaporizhzhia's regional head said Russian forces made 554 strikes on 50 settlements in the 24 hours to 19 Nov, killing one and injuring six; drones hit a market in Kharkiv oblast, injuring 13, and 99 Mykolaiv settlements briefly lost power (Censor.net, 19 Nov). In the day to 18 Nov, attacks killed five and injured 15 and damaged energy sites in Kyiv, Mykolaiv and Rivne oblasts (Kyiv Independent). Sustained mass strikes on infrastructure keep the Alert.",
+   "for_you": "Follow FCDO travel advice, which advises against all travel to Ukraine. Strikes on energy infrastructure can affect power supplies across the country during winter.",
    "sources": [
+    {
+     "title": "Censor.net — Shelling of Ukraine on November 19: consequences in the regions",
+     "url": "https://censor.net/en/news/4034523/shelling-of-ukraine-on-november-19-consequences-of-attacks-in-the-regions",
+     "date": "2026-11-19"
+    },
     {
      "title": "Kyiv Independent — Russian attacks kill 5, injure 15 across Ukraine over past day",
      "url": "https://kyivindependent.com/russian-attacks-kill-5-injure-15-across-ukraine-over-past-day-as-russia-continues-energy-assault/",
      "date": "2026-11-18"
-    },
-    {
-     "title": "Kyiv Independent — Russian attacks kill 14, injure 78, hitting Kyiv's bridges",
-     "url": "https://kyivindependent.com/russian-attacks-kill-14-injure-78-across-ukraine-over-past-day-hitting-kyivs-southern-northern-bridges/",
-     "date": "2026-11-17"
-    },
-    {
-     "title": "Interfax-Ukraine — Air defence downs 131 of 158 Russian drones",
-     "url": "https://en.interfax.com.ua/news/general/1236913.html",
-     "date": "2026-11-16"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Energy strikes in 3 regions 18 Nov",
+   "value": "554 strikes on Zaporizhzhia in 24h (19 Nov)",
    "value_num": 141,
-   "rubric_hit": "Mass strikes on infrastructure and bridges, 14 killed on 17 Nov = significant escalation, Alert",
+   "rubric_hit": "Alert: sustained mass strikes on energy infrastructure across several regions",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-19T05:51:11Z"
+   "assessed_at": "2026-11-19T11:42:48Z"
   },
   "middle-east": {
    "status": "red",
@@ -796,7 +791,7 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Israeli ground raid in central Gaza 18 Nov",
    "rubric_hit": "Ground incursion breaching the Gaza ceasefire alongside Iran–Gulf strikes = multi-front escalation, Alert",
@@ -918,7 +913,7 @@
      "date": "2026-11-16"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Indus treaty in abeyance; no LoC strike found",
    "rubric_hit": "Treaty suspension in force and LoC firing = Watch; no cross-border strikes",
@@ -929,33 +924,28 @@
   "nuclear-risk": {
    "status": "amber",
    "trend": "flat",
-   "summary": "No US–Russia arms limits since New START lapsed; Trump, Xi and Putin meet in Shenzhen on 19 Nov",
-   "state": "New START expired in February with no replacement; SIPRI estimates about 5,420 Russian, 5,042 US and 620 Chinese warheads (Deseret News, 16 Nov). China has said it will not join disarmament talks at this stage (Al Jazeera, 16 Nov). Trump plans to raise arms reduction with Xi and Putin in Shenzhen on 19 Nov, though US officials did not expect a deal (Al-Monitor). No test, alert change or threatened use was found as of 19 Nov.",
-   "for_you": "No direct public guidance applies. Arms-control talks in Shenzhen are worth following.",
+   "summary": "Trump, Xi and Putin discussed nuclear arms cuts in Shenzhen on 19 Nov; no deal found, New START limits still lapsed",
+   "state": "At a three-way meeting in Shenzhen on 19 Nov, Trump said the US, China and Russia were uniquely positioned to discuss reducing nuclear weapons (CNBC); France 24 reported the leaders agreed a nuclear war must never be fought. No arms-control agreement was found, and US–Russia treaty limits have been absent since New START expired in February. No test, alert change or threatened use was found as of 19 Nov, so Watch holds.",
+   "for_you": "No official guidance change. The lapse of treaty limits is a long-running condition rather than an immediate threat.",
    "sources": [
     {
-     "title": "Al Jazeera — Why is China resisting a nuclear treaty with the US and Russia?",
-     "url": "https://aljazeera.com/news/2026/11/16/why-is-china-not-keen-on-a-nuclear-treaty-with-us-and-russia",
-     "date": "2026-11-16"
+     "title": "CNBC — Trump: U.S., China, Russia uniquely positioned to discuss reducing nuclear weapons",
+     "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-trilateral-meeting-china.html",
+     "date": "2026-11-19"
     },
     {
-     "title": "Al-Monitor — Trump to raise nuclear arms cuts with Putin, Xi",
-     "url": "https://www.al-monitor.com/originals/2026/11/trump-raise-nuclear-arms-cuts-putin-xi-thursday-white-house-says",
-     "date": "2026-11-13"
-    },
-    {
-     "title": "Deseret News — Trump, Xi and Putin set to meet on the sidelines of APEC",
-     "url": "https://www.deseret.com/u-s-world/2026/11/16/trump-xi-and-putin-set-to-meet-on-the-sidelines-of-apec",
-     "date": "2026-11-16"
+     "title": "France 24 — Trump, Xi and Putin agree that a nuclear war must never be fought",
+     "url": "https://www.france24.com/en/asia-pacific/20261119-xi-trump-putin-talks-live-china-us-russia-leaders-hold-landmark-three-way-meeting",
+     "date": "2026-11-19"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No US–Russia treaty limits since Feb",
-   "rubric_hit": "Arms-control lapse without replacement (New START) = Watch",
+   "rubric_hit": "Watch: arms-control lapse (New START, Feb) without replacement",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-19T05:51:11Z"
+   "assessed_at": "2026-11-19T11:42:48Z"
   },
   "atlantic-cyclones": {
    "status": "green",
@@ -975,7 +965,7 @@
      "date": "2026-11-04"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No Atlantic storms",
    "rubric_hit": "No hurricane active or threatening land = Normal",
@@ -1007,10 +997,10 @@
      "date": "2026-11-17"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-11-16T23:43:07Z",
    "value": "GDACS orange: Cyclone Akvan (India)",
-   "rubric_hit": "GDACS orange cyclone alert and landfall within 72h = Watch",
+   "rubric_hit": "GDACS cyclone: 0 red / 1 orange (Watch)",
    "basis": "measured",
    "basis_detail": "GDACS cyclone: 0 red / 1 orange",
    "assessed_at": "2026-11-19T05:51:11Z",
@@ -1056,10 +1046,10 @@
      "date": "2026-11-19"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
-   "rubric_hit": "No GDACS orange/red wildfire alerts = Normal",
+   "rubric_hit": "GDACS wildfire: 0 red / 0 orange",
    "basis": "measured",
    "basis_detail": "GDACS wildfire: 0 red / 0 orange",
    "assessed_at": "2026-11-19T05:51:11Z",
@@ -1078,10 +1068,10 @@
      "date": "2026-11-19"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
-   "rubric_hit": "No GDACS orange/red flood alerts = Normal",
+   "rubric_hit": "GDACS flood: 0 red / 0 orange",
    "basis": "measured",
    "basis_detail": "GDACS flood: 0 red / 0 orange",
    "assessed_at": "2026-11-19T05:51:11Z",
@@ -1102,9 +1092,9 @@
    ],
    "value": "Max M6.6, 2× M6+ (7d)",
    "value_num": 6.6,
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "No M7+ and no PAGER orange/red in 7 days = Normal",
+   "rubric_hit": "max magnitude 6.6 below the 7 Watch line",
    "basis": "measured",
    "basis_detail": "max magnitude=6.60",
    "assessed_at": "2026-11-19T05:51:11Z"
@@ -1171,11 +1161,11 @@
      "date": "2026-11-19"
     }
    ],
-   "value": "G1 S0 R0 (24h max)",
-   "value_num": 0,
-   "checked_at": "2026-11-19T05:51:11Z",
+   "value": "G1 S0 R0",
+   "value_num": 1,
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "G1 S0 R0 within G0–G2, S0–S1, R0–R2 = Normal",
+   "rubric_hit": "NOAA G1 S0 R0 (24h max)",
    "basis": "measured",
    "basis_detail": "NOAA G1 S0 R0 (24h max)",
    "assessed_at": "2026-11-19T05:51:11Z"
@@ -1318,7 +1308,7 @@
      "date": "2026-11-15"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Ebola PHEIC in force",
    "value_num": 1,
@@ -1350,7 +1340,7 @@
      "date": "2026-11-12"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "11,200+ cases, 5,500 deaths (DRC, 15 Nov)",
    "value_num": 11200,
@@ -1377,7 +1367,7 @@
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Three dairy-linked US cases; no human spread",
    "rubric_hit": "Sporadic animal-to-human cases only = Normal",
@@ -1489,7 +1479,7 @@
      "date": "2026-11-06"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No unexplained clusters",
    "rubric_hit": "No unexplained clusters under international investigation = Normal",
@@ -1510,7 +1500,7 @@
      "date": "2026-11-19"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-11-16T05:51:59Z",
    "value": "4 exploited flaws listed 18 Nov",
    "rubric_hit": "Exploited flaws in widely used products (Check Point, Synology) = Watch; no national-scale attack",
@@ -1536,7 +1526,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-11-18T11:49:31Z",
    "value": "Apple services down 17 Nov",
    "rubric_hit": "Payments-linked cloud outage > 2h within 48h (Apple Pay, 17 Nov) = Watch",
@@ -1757,7 +1747,7 @@
      "date": "2026-11-19"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "10y above 5.3%; CPI 3.6% (Oct)",
    "value_num": 5.3,
@@ -1812,10 +1802,10 @@
     }
    ],
    "value": "No warnings",
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-11-17T11:42:50Z",
    "value_num": 0,
-   "rubric_hit": "No warnings in force = Normal",
+   "rubric_hit": "worst warning: none",
    "basis": "measured",
    "basis_detail": "worst warning: none",
    "assessed_at": "2026-11-19T05:51:11Z"
@@ -1909,12 +1899,12 @@
   "funding-stress": {
    "status": "green",
    "trend": "flat",
-   "value": "SOFR–IORB +2bp, repo $0bn",
-   "value_num": 2,
+   "value": "SOFR–IORB +2bp, repo $0.1bn",
+   "value_num": 2.0,
    "summary": "SOFR 2bp above the Fed's reserve rate on 17 Nov; no Fed repo use on 18 Nov",
    "state": "SOFR was 3.92% on 17 Nov, 2bp above the Fed's 3.90% interest on reserves, and the gap did not exceed 3bp over five days, inside the 10bp Watch line (FRED). Fed overnight repo operations were zero on 18 Nov and peaked at about $0.1bn in five days, far below the $15bn line.",
    "for_you": "Short-term dollar funding markets show no strain.",
-   "rubric_hit": "SOFR–IORB 5d max 3bp < 10bp; repo 5d max $0.1bn < $15bn",
+   "rubric_hit": "SOFR–IORB 5d max 3bp below the 10bp Watch line; Fed repo ops 5d max $0.1bn below the $15bn Watch line",
    "sources": [
     {
      "title": "FRED — SOFR",
@@ -1927,7 +1917,7 @@
      "date": "2026-11-19"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "SOFR–IORB 5d max bp=3.00; Fed repo ops 5d max $bn=0.10",
@@ -1963,12 +1953,12 @@
   "yen-carry": {
    "status": "green",
    "trend": "flat",
-   "value": "¥159.6/$, 1w -0.2%",
-   "value_num": 159.55,
+   "value": "¥159.9/$, 1w -0.0%",
+   "value_num": 159.857,
    "summary": "Yen near ¥159.6 per dollar on 19 Nov, little changed on the week; no intervention found",
    "state": "The dollar was near ¥159.6 early on 19 Nov, down 0.2% on the week and up 0.9% on the month, inside the 3% weekly and 6% monthly Watch lines (Yahoo Finance). The yen is about 2.6% stronger than its 52-week low of ¥163.9 per dollar. No Japanese currency intervention was found in this run's searches.",
    "for_you": "The yen is weak but stable; no sign of a disorderly unwinding of carry trades.",
-   "rubric_hit": "USD/JPY 1w -0.2% < 3%; 1m +0.9% < 6%",
+   "rubric_hit": "USD/JPY 1w move 0.01% below the 3% Watch line; USD/JPY 1m move 1.09% below the 6% Watch line",
    "sources": [
     {
      "title": "Yahoo Finance — USD/JPY",
@@ -1976,10 +1966,10 @@
      "date": "2026-11-19"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
-   "basis_detail": "USD/JPY 1w move %=0.20; USD/JPY 1m move %=0.90",
+   "basis_detail": "USD/JPY 1w move %=0.01; USD/JPY 1m move %=1.09",
    "assessed_at": "2026-11-19T05:51:11Z"
   },
   "jobless-claims": {
@@ -2105,7 +2095,7 @@
      "date": "2026-11-16"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
@@ -2137,7 +2127,7 @@
      "date": "2026-11-17"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
@@ -2248,7 +2238,7 @@
    "summary": "CISA added 7 known-exploited vulnerabilities in the seven days to 18 Nov, below the 11-a-week Watch line",
    "state": "CISA's Known Exploited Vulnerabilities catalogue gained seven entries in the seven days to 18 Nov, four of them on 18 Nov (Synology DSM, LiteLLM, REDCap, Apache Axis) plus Puppet Enterprise on 17 Nov; 32 were added in 30 days (CISA). That is below the 11-a-week Watch line, and no emergency directive for mass exploitation of a ubiquitous product was found.",
    "for_you": "Keep devices and software updated; NCSC guidance covers patching for organisations.",
-   "rubric_hit": "7 KEV additions in 7 days < 11 Watch line",
+   "rubric_hit": "KEV additions 7d 7 below the 11 Watch line",
    "sources": [
     {
      "title": "CISA — Known Exploited Vulnerabilities catalogue",
@@ -2256,7 +2246,7 @@
      "date": "2026-11-19"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-11-16T05:51:59Z",
    "basis": "measured",
    "basis_detail": "KEV additions 7d=7.00",
@@ -2324,7 +2314,7 @@
    "summary": "No Environment Agency flood warnings in England on 19 Nov; 15 lower-level flood alerts",
    "state": "The Environment Agency had no flood warnings and no severe flood warnings in force in England at 05:40 UTC on 19 Nov, with 15 lower-level flood alerts (Environment Agency). This is well within the Normal band of fewer than 10 flood warnings.",
    "for_you": "No flood warnings in force. Check the Environment Agency service for your area if heavy rain is forecast.",
-   "rubric_hit": "0 flood warnings < 10; no severe warnings = Normal",
+   "rubric_hit": "EA: 0 severe, 0 warnings",
    "sources": [
     {
      "title": "Environment Agency — Check for flooding",
@@ -2332,15 +2322,15 @@
      "date": "2026-11-19"
     }
    ],
-   "checked_at": "2026-11-19T05:51:11Z",
+   "checked_at": "2026-11-19T11:42:48Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "EA: 0 severe, 0 warnings",
    "assessed_at": "2026-11-19T05:51:11Z"
   }
  },
- "headline": "Iran fired on Kuwait and Bahrain on 18 Nov as Hormuz attacks continue; Israel's first ground push into central Gaza since the ceasefire; Trump, Xi and Putin meet in Shenzhen on 19 Nov. Cyclone Akvan nears Andhra Pradesh.",
- "generated_at": "2026-11-19T05:51:11Z",
+ "headline": "Trump, Xi and Putin met in Shenzhen on 19 Nov for talks on nuclear arms, Iran and Ukraine. Iran–US strikes across the Gulf and Hormuz tanker attacks keep energy and shipping at Alert; Russian strikes on Ukraine continue.",
+ "generated_at": "2026-11-19T11:42:48Z",
  "world": {
   "score": 40,
   "band": "Strained",
