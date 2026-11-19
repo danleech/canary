@@ -1,17 +1,17 @@
-# Oil (Brent) — WATCH (stable)
-id oil · Energy & Commodities · horizon acute · checked 2026-11-18T23:42Z · text written 2026-11-18T05:53Z · at this level since 2026-11-06T17:59Z · stale after 2026-11-19T13:42Z
+# Oil (Brent) — WATCH (improving)
+id oil · Energy & Commodities · horizon acute · checked 2026-11-19T05:51Z · at this level since 2026-11-06T17:59Z · stale after 2026-11-19T19:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/oil
 
-Value: $88.9, 1m -18%
-Rated on: Brent $88.9 ≥ $85 Watch line
-Basis: measured — Set by a fixed rule applied to open data (Brent $ = 88.88 · Brent 1m % = -18.32). Anyone can reproduce it from the public metrics file.
+Value: $89.3, 1m -21%
+Rated on: Brent $89.3 in $85–110 Watch band
+Basis: measured — Set by a fixed rule applied to open data (Brent $ = 89.32 · Brent 1m % = -21.07). Anyone can reproduce it from the public metrics file.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
-Brent near $92.7 on 18 Nov, 15% lower over a month; Iran says more tankers hit mines near Hormuz
+Brent near $89 on 19 Nov, 21% lower over a month; Hormuz attacks continue but no new outage confirmed
 
-Why it's at this level: Brent was near $92.7 early on 18 Nov, 3.3% lower on the week and 14.8% lower over a month, inside the $85–110 Watch band and 22% below its 52-week high of $118 (Yahoo Finance). Iran's Revolutionary Guards said two tankers hit mines in the Strait of Hormuz on 15 Nov and that a supertanker carrying over 2 million barrels sank; the claim is not independently confirmed (AAP). No new outage above 2 mb/d was confirmed.
+Why it's at this level: Brent was near $89.3 early on 19 Nov, 6.8% lower on the week and 21% lower over a month, inside the $85–110 Watch band and 25% below its 52-week high of $118 (Yahoo Finance). Attacks on shipping around Hormuz continued, including an ADNOC vessel hit on 17 Nov (The National). No new outage above 2 mb/d was confirmed.
 
-What this means for you: Oil prices feed into fuel, heating and transport costs with a lag of weeks. This describes conditions only.
+What this means for you: Fuel prices tend to follow crude with a lag of a few weeks; the recent fall may ease pump prices if it holds.
 
 Why it matters: Oil feeds inflation, transport and household budgets; price spikes have preceded most post-war recessions.
 What moves it: OPEC+ output, Middle East supply risk, sanctions, demand, inventories, shipping disruption.
@@ -19,5 +19,5 @@ What moves it: OPEC+ output, Middle East supply risk, sanctions, demand, invento
 Rubric — Alert: Brent > $110, or 1-month change > +30%, or a major physical supply outage (> 2 mb/d). | Watch: Brent $85–110, or 1-month change +15–30%. | Normal: Brent < $85 and 1-month change < +15%.
 
 Sources:
-- Yahoo Finance — Brent crude futures (BZ=F) (2026-11-18) https://finance.yahoo.com/quote/BZ%3DF
-- Newcastle Herald (AAP) — Two more oil tankers hit mines in Strait of Hormuz (2026-11-16) https://www.newcastleherald.com.au/story/9392037/two-more-oil-tankers-hit-mines-in-strait-of-hormuz/
+- Yahoo Finance — Brent crude (2026-11-19) https://finance.yahoo.com/quote/BZ%3DF
+- The National — Iran attacks Kuwait in widening escalation (2026-11-18) https://www.thenationalnews.com/news/gulf/2026/11/18/iran-attacks-kuwait-in-widening-escalation/

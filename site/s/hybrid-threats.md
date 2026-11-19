@@ -1,16 +1,16 @@
 # Europe hybrid attacks — WATCH (stable)
-id hybrid-threats · Geopolitics · horizon acute · checked 2026-11-18T23:42Z · text written 2026-11-18T05:53Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-19T13:42Z
+id hybrid-threats · Geopolitics · horizon acute · checked 2026-11-19T05:51Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-19T19:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/hybrid-threats
 
-Value: GRU-ordered arson plot foiled, Estonia 14 Nov
-Rated on: Sabotage attributed to a state = Watch; no casualties or major outage
+Value: Arson plot foiled, Estonia 14 Nov
+Rated on: Sabotage incident attributed to a state = Watch
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-Estonia says Russia's GRU commissioned the foiled 14 Nov sabotage of drone maker Threod; eight suspects detained
+Estonia blames Russian military intelligence for the foiled 14 Nov arson at drone maker Threod; five suspects arrested
 
-Why it's at this level: Estonia's foreign minister said on 15 Nov there was clear evidence Russia's GRU ordered an attempted sabotage attack on drone maker Threod Systems in Viimsi, near Tallinn, on 14 Nov; eight suspects were detained and five remain in custody (Newsweek). Estonia earlier blamed Russia for an arson attack on robotics firm Milrem (Defense News, 29 Sep). No sabotage causing casualties or repeated multi-country shutdowns was found as of 18 Nov, so Watch holds.
+Why it's at this level: Estonian security services say Russian military intelligence ordered an attempted arson at drone maker Threod Systems overnight on 14 Nov; eight Latvian residents were detained and five arrested (Meduza, 16 Nov). Tallinn will close its Russian road crossings from 1 Dec (IBTimes UK). No sabotage causing casualties or repeated multi-country shutdowns was found as of 19 Nov, so Watch holds.
 
-What this means for you: Report suspicious activity near infrastructure to local police. In the UK, follow police and MI5 guidance on staying alert.
+What this means for you: Follow national police advice on reporting suspicious activity near infrastructure.
 
 Why it matters: Sabotage, arson and drone incursions over airports and bases are how state confrontation reaches daily life in the UK and Europe.
 What moves it: Russia–NATO tensions, drone and cyber capabilities, proxy recruitment, elections.
@@ -18,5 +18,5 @@ What moves it: Russia–NATO tensions, drone and cyber capabilities, proxy recru
 Rubric — Alert: Repeated airport or infrastructure shutdowns across several countries, or sabotage causing casualties or a major outage. | Watch: Drone incursions close an airport or military base, or a sabotage incident is attributed to a state. | Normal: No significant attributed sabotage or airspace incursions in Europe this week.
 
 Sources:
-- Newsweek — NATO member Estonia to shut Russia border roads after sabotage attack (2026-11-15) https://newsweek.com/nato-member-estonia-to-shut-russia-border-after-sabotage-attack-12717506
-- Defense News — Estonia blames Russia in arson attack on military robotics firm Milrem (2026-09-29) https://www.defensenews.com/global/europe/2026/09/29/estonia-blames-russia-in-arson-attack-on-military-robotics-firm-milrem/
+- Meduza — Estonia is closing its border with Russia after an alleged sabotage attempt (2026-11-16) https://meduza.io/en/feature/2026/11/16/estonia-is-closing-its-border-with-russia-after-an-alleged-sabotage-attempt-and-preparing-to-move-government-services-to-the-cloud-in-case-of-invasion
+- IBTimes UK — Estonia to close road crossings with Russia after alleged GRU sabotage (2026-11-16) https://www.ibtimes.co.uk/estonia-close-road-crossings-russia-alleged-gru-sabotage-1832528

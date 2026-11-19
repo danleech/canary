@@ -1,16 +1,16 @@
 # FTSE 100 — NORMAL (worsening)
-id ftse · Markets · horizon acute · checked 2026-11-18T23:42Z · text written 2026-11-18T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-19T13:42Z
+id ftse · Markets · horizon acute · checked 2026-11-19T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-19T19:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/ftse
 
 Value: 10,551, -3.3% from high
-Rated on: FTSE drawdown 3.29% below the 5% Watch line
+Rated on: Drawdown 3.3% < 5%; worst day -1.8% > -2.5% Watch line
 Basis: measured — Set by a fixed rule applied to open data (FTSE drawdown % = 3.29). Anyone can reproduce it from the public metrics file.
 
-FTSE 100 fell 1.8% to 10,690 on 17 Nov, 2.0% below its high; no daily fall above 2.5% this week
+FTSE 100 at 10,551 on 18 Nov, 3.3% below its high; no daily fall above 2.5% this week
 
-Why it's at this level: The FTSE 100 closed near 10,690 on 17 Nov, a fall of about 1.8% on the day and 1.3% on the week, leaving it 2.0% below its 52-week high of 10,911 (Yahoo Finance). That is inside both the 5% drawdown and 2.5% single-day fall Watch lines.
+Why it's at this level: The FTSE 100 closed near 10,551 on 18 Nov, 2.9% lower on the week and 3.3% below its 52-week high of 10,911 (Yahoo Finance). Its largest daily fall of the past five sessions was 1.8%, inside the 2.5% single-day Watch line, and the drawdown is inside the 5% line.
 
-What this means for you: UK share prices affect pensions and investment funds; a fall of this size is within normal market movement. This describes conditions only.
+What this means for you: UK shares have slipped but remain near their highs. Pension and ISA values may move with global markets.
 
 Why it matters: The UK's main index — a gauge of UK-listed multinationals, pensions and sterling-area sentiment.
 What moves it: Commodity prices, sterling, global risk appetite, UK policy and banking sector news.
@@ -18,4 +18,4 @@ What moves it: Commodity prices, sterling, global risk appetite, UK policy and b
 Rubric — Alert: Drawdown > 12%, or a single-day fall > 4%. | Watch: Drawdown 5–12%, or a single-day fall > 2.5% this week. | Normal: Drawdown from 52-week high < 5% and no single-day fall > 2.5% this week.
 
 Sources:
-- Yahoo Finance — FTSE 100 (^FTSE) (2026-11-18) https://finance.yahoo.com/quote/%5EFTSE
+- Yahoo Finance — FTSE 100 (2026-11-19) https://finance.yahoo.com/quote/%5EFTSE

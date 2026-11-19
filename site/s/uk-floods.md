@@ -1,16 +1,16 @@
 # UK flood warnings — NORMAL (stable)
-id uk-floods · UK Watch · horizon acute · checked 2026-11-18T23:42Z · text written 2026-11-18T05:53Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-19T13:42Z
+id uk-floods · UK Watch · horizon acute · checked 2026-11-19T05:51Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-19T19:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/uk-floods
 
 Value: No flood warnings
-Rated on: EA: 0 severe, 0 warnings
+Rated on: 0 flood warnings < 10; no severe warnings = Normal
 Basis: measured — Set by a fixed rule applied to open data (EA: 0 severe, 0 warnings). Anyone can reproduce it from the public metrics file.
 
-Two Environment Agency flood warnings in England on 18 Nov, at Scarborough and Coleshill; no severe warnings
+No Environment Agency flood warnings in England on 19 Nov; 15 lower-level flood alerts
 
-Why it's at this level: The Environment Agency had two flood warnings in force in England at 05:41 UTC on 18 Nov, for the North Sea at Scarborough Sandside and the River Cole at Coleshill, plus 22 lower-level flood alerts and no severe flood warnings (Environment Agency). This is well within the Normal band of fewer than 10 flood warnings.
+Why it's at this level: The Environment Agency had no flood warnings and no severe flood warnings in force in England at 05:40 UTC on 19 Nov, with 15 lower-level flood alerts (Environment Agency). This is well within the Normal band of fewer than 10 flood warnings.
 
-What this means for you: People in affected areas should check the Environment Agency's flood warning service and sign up for alerts.
+What this means for you: No flood warnings in force. Check the Environment Agency service for your area if heavy rain is forecast.
 
 Why it matters: Flooding is the UK's most common natural hazard; Environment Agency flood warnings are separate from Met Office weather warnings.
 What moves it: Heavy rain, saturated ground, storm surges, high river levels.
@@ -18,4 +18,4 @@ What moves it: Heavy rain, saturated ground, storm surges, high river levels.
 Rubric — Alert: Any severe flood warning (danger to life) in force in the UK. | Watch: 10 or more flood warnings in force in England, or major flooding in Scotland, Wales or Northern Ireland. | Normal: No severe flood warnings and fewer than 10 Environment Agency flood warnings in force.
 
 Sources:
-- Environment Agency — Check for flooding (2026-11-18) https://check-for-flooding.service.gov.uk/
+- Environment Agency — Check for flooding (2026-11-19) https://check-for-flooding.service.gov.uk/
