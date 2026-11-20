@@ -1,5 +1,5 @@
 # Iran nuclear programme — WATCH (stable)
-id iran-nuclear · Geopolitics · horizon acute · checked 2026-11-20T17:51Z · text written 2026-11-20T05:49Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-21T07:51Z
+id iran-nuclear · Geopolitics · horizon acute · checked 2026-11-20T23:42Z · text written 2026-11-20T05:49Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-21T13:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/iran-nuclear
 
 Value: No IAEA access; 60% stockpile unverified

@@ -1,13 +1,13 @@
 # Canary — world risk status
-as_of 2026-11-20T17:51Z · next run ~23:40 UK · stale after 2026-11-21T07:51Z (36h for daily-tier signals)
+as_of 2026-11-20T23:42Z · next run ~05:40 UK · stale after 2026-11-21T13:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 9 follow a published figure, 53 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 World State 40/100 (Strained) · 15 Alert · 44 Watch · 30 Normal
-Headline: US shares slid into a correction and the VIX topped 30 on 20 Nov, while gold fell over 8% in a week on Fed rate-rise bets. Russia's mass strike on Ukraine's grid and US–Iran exchanges in the Gulf keep conflict Alerts in place.
+Headline: Iran says two tankers hit its mines east of Hormuz on 19–20 Nov as US–Iran strikes continue; Russia's 20 Nov barrage on Ukraine's grid, DR Congo's Ebola outbreak and stressed equity markets remain the main alerts.
 
 ## Situations (7 cross-domain events; Alerts below are grouped under them)
-- US–Iran war and Gulf energy shock [ALERT, worsening]: US struck Qeshm and Iran fired on Kuwait and Bahrain on 18 Nov; a tanker was hit off Khasab on 18 Nov; Qatar still mediating. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight, uk-energy-cap; watch: iran-nuclear, sanctions, oil, fertiliser, semiconductors
+- US–Iran war and Gulf energy shock [ALERT, worsening]: US struck Qeshm and Iran fired on Kuwait and Bahrain on 18 Nov; Iran says two tankers hit its mines east of Hormuz on 19–20 Nov. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight, uk-energy-cap; watch: iran-nuclear, sanctions, oil, fertiliser, semiconductors
 - Russia–Ukraine war and NATO's flank [ALERT, worsening]: Russia fired 80+ cruise missiles and about 400 drones at Ukraine on 20 Nov after the Crimean Bridge strike; Estonia shuts its Russian border on 1 Dec. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
 - Super El Niño [ALERT, worsening]: ONI +2.46 for Aug–Oct; global temperature +1.95°C on 14 Nov, a record for the date; Crop Monitor rates Sudan's harvest a failure. → alert: enso, global-temp; watch: drought, co2, famine
 - Ebola outbreak, DR Congo [ALERT, stable]: ECDC counts 11,504 confirmed Ebola cases and 5,630 deaths in DR Congo to 16 Nov; Africa CDC says it is not under control. → alert: ebola; watch: who-emergencies
@@ -34,7 +34,7 @@ Headline: US shares slid into a correction and the VIX topped 30 on 20 Nov, whil
 ftse, bond-volatility, dollar, crypto, private-credit, us-inflation, central-banks, sovereign-debt, oil, food-prices, critical-minerals, fertiliser, nuclear-plants, us-china, russia-nato, iran-nuclear, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, heat, drought, sea-ice, co2, who-emergencies, mpox, measles, respiratory, medicine-shortages, cyber, cables-gnss, semiconductors, ai-governance, famine, civil-unrest, aid-funding, uk-rates, gilts, nhs-pressure
 
 ## Sentiment (measured from open data; context only, never changes a status)
-News tone vs own past 6 months (GDELT, 7 days to 2026-11-19; number = % of past weeks less negative): gloomier: tech (97); brighter: conflict (9), energy (7), trade (0), climate (3), disasters (0), health (2), migration (11); typical: economy
+News tone vs own past 6 months (GDELT, 7 days to 2026-11-20; number = % of past weeks less negative): gloomier: tech (95); brighter: conflict (9), energy (7), trade (0), climate (3), disasters (0), health (1), migration (4); typical: economy
 Consumer confidence (OECD, long-run avg 100): OECD 98.0 (2026-10), GBR 98.9 (2026-10), USA 96.0 (2026-10), EA20 97.9 (2026-10), JPN 98.4 (2026-10), CHN 95.4 (2026-09), IND 100.0 (2026-09)
 Uncertainty: US policy uncertainty 1.0× its 1-year median · Geopolitical risk in the news 0.9× its 1-year median · Market fear (VIX) higher than 100% of the past year
 

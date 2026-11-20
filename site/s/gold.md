@@ -1,10 +1,10 @@
 # Gold (fear gauge) — ALERT (worsening)
-id gold · Markets · horizon acute · checked 2026-11-20T17:51Z · at this level since 2026-11-20T17:50Z · stale after 2026-11-21T07:51Z
+id gold · Markets · horizon acute · checked 2026-11-20T23:42Z · text written 2026-11-20T17:51Z · at this level since 2026-11-20T17:50Z · stale after 2026-11-21T13:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/gold
 
-Value: $3,531, 1w -8.4%, 3m -24.8%
-Rated on: Gold 1-week move -8.4%, beyond the 7% single-week Alert line
-Basis: measured — Set by a fixed rule applied to open data (Gold 3m gain % = -24.79 · 3m fall -24.8% · 1w move -8.4%). Anyone can reproduce it from the public metrics file.
+Value: $3,539, 3m -24.6%
+Rated on: 1w move -8.2% (Alert)
+Basis: measured — Set by a fixed rule applied to open data (Gold 3m gain % = -24.61 · 3m fall -24.6% · 1w move -8.2%). Anyone can reproduce it from the public metrics file.
 
 Gold near $3,531 on 20 Nov, down 8.4% on the week, past the 7% Alert line, as Fed rate-rise bets lift the dollar
 
