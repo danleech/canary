@@ -1,16 +1,16 @@
 # Wildfires — NORMAL (stable)
-id wildfires · Weather & Hazards · horizon acute · checked 2026-11-19T23:42Z · text written 2026-11-19T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-20T13:42Z
+id wildfires · Weather & Hazards · horizon acute · checked 2026-11-20T05:49Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-20T19:49Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/wildfires
 
 Value: GDACS: no orange/red
-Rated on: GDACS wildfire: 0 red / 0 orange
+Rated on: Normal: no GDACS orange/red wildfire alerts, no major evacuations
 Basis: measured — Set by a fixed rule applied to open data (GDACS wildfire: 0 red / 0 orange). Anyone can reproduce it from the public metrics file.
 
-No GDACS orange or red wildfire alerts on 19 Nov; no fire forcing mass evacuation flagged
+No GDACS orange or red wildfire alerts on 20 Nov; no fire forcing mass evacuation flagged
 
-Why it's at this level: GDACS listed no orange or red wildfire alerts at 05:40 UTC on 19 Nov, only 73 green-level fire events worldwide (GDACS). No fire forcing mass evacuation was found in this run.
+Why it's at this level: GDACS listed no orange or red wildfire alerts at 05:41 UTC on 20 Nov, only 82 green-level fire events worldwide (GDACS). No fire forcing mass evacuation was found in this run.
 
-What this means for you: No major wildfire alerts. Follow local fire service guidance where you live or travel.
+What this means for you: No major wildfire threat is flagged. Travellers should check local fire service advice in fire-prone regions.
 
 Why it matters: Large fires destroy towns, cause hazardous smoke over continents and drive insurance losses.
 What moves it: Drought, heat, wind, fuel load, ignition, season.
@@ -18,4 +18,4 @@ What moves it: Drought, heat, wind, fuel load, ignition, season.
 Rubric — Alert: Fires burning into populated areas with fatalities or mass evacuation, or GDACS red. | Watch: Large fires forcing evacuations, or GDACS orange. | Normal: No GDACS orange/red wildfire alerts and no major evacuations.
 
 Sources:
-- GDACS — Global Disaster Alert and Coordination System (2026-11-19) https://www.gdacs.org/
+- GDACS — Global Disaster Alert and Coordination System (2026-11-20) https://www.gdacs.org/

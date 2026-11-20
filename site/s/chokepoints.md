@@ -1,17 +1,17 @@
 # Shipping chokepoints — ALERT (stable)
-id chokepoints · Energy & Commodities · horizon acute · checked 2026-11-19T23:42Z · text written 2026-11-19T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-20T13:42Z
+id chokepoints · Energy & Commodities · horizon acute · checked 2026-11-20T05:49Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-20T19:49Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/chokepoints
 
-Value: ADNOC vessel hit 17 Nov; 1 missing
-Rated on: Hormuz traffic materially impeded by repeated attacks on shipping = Alert
+Value: Tanker hit off Khasab 18 Nov; 7 since 10 Nov
+Rated on: Alert: Hormuz traffic materially impeded by repeated attacks (7 since 10 Nov)
 Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
-An ADNOC vessel was attacked in Hormuz on 17 Nov, with one missing and 11 injured; Hormuz traffic remains impeded
+Tanker hit near Khasab on 18 Nov after an LPG carrier was abandoned on 17 Nov; Hormuz attacks run at about one a day
 
-Why it's at this level: ADNOC Logistics & Services said one of its vessels was attacked in the Strait of Hormuz on the night of 17 Nov; one crew member is missing and 11 were wounded (The National, 18 Nov). UKMTO reported a tanker disabled near Oman on 17 Nov with its engine room on fire and all crew safe, the fourth attack in 24 hours; Iran's Guards claim tankers sank, which is unverified (NewsBytes). Hormuz traffic remains materially impeded.
+Why it's at this level: UKMTO said a tanker outbound through Hormuz was hit in the engine room about 6nm north of Khasab, Oman, on 18 Nov; all crew were reported safe (Gulf News). The LPG tanker Tara Gas was struck twice on 16–17 Nov and abandoned, with one crew member missing; attacks near the strait average about one a day (New York Times). UKMTO has reported seven attacks in or near Hormuz since 10 Nov (Hellenic Shipping News). Some tanker traffic moves under US escort, but transits remain impeded.
 
-What this means for you: Disruption at Hormuz raises shipping and insurance costs and can delay goods. Follow FCDO travel advice for the Gulf region.
+What this means for you: Ships transiting the Gulf, Hormuz and Red Sea face attack risk; operators should follow UKMTO and JMIC advisories. Delays and higher insurance costs can feed through to freight rates and delivery times for imported goods.
 
 Why it matters: Around 30% of seaborne oil and much container trade passes Hormuz, Bab el-Mandeb/Suez, Panama and Malacca; disruption raises prices worldwide.
 What moves it: Houthi/Iran attacks, war-risk insurance, drought (Panama), naval incidents, piracy.
@@ -19,6 +19,6 @@ What moves it: Houthi/Iran attacks, war-risk insurance, drought (Panama), naval 
 Rubric — Alert: Hormuz traffic materially impeded, or any chokepoint closed, or two or more disrupted at once. | Watch: One chokepoint disrupted (attacks, large-scale diversions, draught restrictions). | Normal: All major chokepoints operating normally.
 
 Sources:
-- The National — Iran attacks Kuwait in widening escalation (2026-11-18) https://www.thenationalnews.com/news/gulf/2026/11/18/iran-attacks-kuwait-in-widening-escalation/
-- NewsBytes — Tanker disabled in Strait of Hormuz, Iranian navy confirms (2026-11-17) https://www.newsbytesapp.com/news/world/strait-of-hormuz-tanker-disabled-iranian-navy-confirms/story
-- Arab News — Kuwait, Bahrain fend off Iranian aerial attacks (2026-11-18) https://www.arabnews.com/middle-east/kuwait-bahrain-fend-off-iranian-aerial-attacks-3012614
+- Gulf News — Riyadh skyscraper damaged, tanker hit near Oman as Trump weighs fresh Iran strikes (2026-11-20) https://gulfnews.com/world/mena/middle-east-war-riyadh-skyscraper-damaged-tanker-hit-near-oman-as-trump-weighs-fresh-iran-strikes-1.500752996
+- Hellenic Shipping News — Fresh tanker attack in Hormuz highlights ongoing threats facing Gulf shipping (2026-11-18) https://www.hellenicshippingnews.com/fresh-tanker-attack-in-hormuz-highlights-ongoing-threats-facing-gulf-shipping/
+- New York Times via Philadelphia Inquirer — Iran keeps up unrelenting attacks on ships in the Strait of Hormuz (2026-11-19) https://www.inquirer.com/news/nation-world/iran-strait-hormuz-attacks-20261119.html

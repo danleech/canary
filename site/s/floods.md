@@ -1,16 +1,16 @@
 # Major floods — NORMAL (stable)
-id floods · Weather & Hazards · horizon acute · checked 2026-11-19T23:42Z · text written 2026-11-19T05:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-20T13:42Z
+id floods · Weather & Hazards · horizon acute · checked 2026-11-20T05:49Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-20T19:49Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/floods
 
 Value: GDACS: no orange/red
-Rated on: GDACS flood: 0 red / 0 orange
+Rated on: Normal: no GDACS orange/red flood alerts
 Basis: measured — Set by a fixed rule applied to open data (GDACS flood: 0 red / 0 orange). Anyone can reproduce it from the public metrics file.
 
-No GDACS orange or red flood alerts on 19 Nov; two green-level flood events listed
+No GDACS orange or red flood alerts on 20 Nov; one green-level flood event listed
 
-Why it's at this level: GDACS listed no orange or red flood alerts at 05:40 UTC on 19 Nov, only two green-level flood events worldwide (GDACS). Heavy rain is forecast for coastal Andhra Pradesh around Cyclone Akvan's expected landfall on 20 Nov, tracked under the cyclone signal.
+Why it's at this level: GDACS listed no orange or red flood alerts at 05:41 UTC on 20 Nov, only one green-level flood event worldwide (GDACS). Heavy rain from Cyclone Akvan, which crossed the Odisha–Andhra coast on 20 Nov, is tracked under the cyclone signal.
 
-What this means for you: No major flood alerts worldwide. Follow local warnings where you live or travel.
+What this means for you: No major flood alert is in force worldwide. Travellers to coastal eastern India should follow IMD and local authority warnings.
 
 Why it matters: Floods affect more people than any other hazard, displacing millions each year.
 What moves it: Extreme rainfall, monsoons, cyclones, snowmelt, dam failures.
@@ -18,4 +18,4 @@ What moves it: Extreme rainfall, monsoons, cyclones, snowmelt, dam failures.
 Rubric — Alert: GDACS red flood alert, or > 100 deaths in a single event. | Watch: GDACS orange flood alert, or a flood displacing > 50,000. | Normal: No GDACS orange/red flood alerts.
 
 Sources:
-- GDACS — Global Disaster Alert and Coordination System (2026-11-19) https://www.gdacs.org/
+- GDACS — Global Disaster Alert and Coordination System (2026-11-20) https://www.gdacs.org/

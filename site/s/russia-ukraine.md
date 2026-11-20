@@ -1,17 +1,17 @@
-# Russia–Ukraine — ALERT (stable)
-id russia-ukraine · Armed Conflict · horizon acute · checked 2026-11-19T23:42Z · text written 2026-11-19T11:42Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-20T13:42Z
+# Russia–Ukraine — ALERT (worsening)
+id russia-ukraine · Armed Conflict · horizon acute · checked 2026-11-20T05:49Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-20T19:49Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/russia-ukraine
 
-Value: 554 strikes on Zaporizhzhia in 24h (19 Nov)
-Rated on: Alert: sustained mass strikes on energy infrastructure across several regions
-Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
+Value: ~50 missiles airborne at once, 20 Nov
+Rated on: Alert: mass-casualty strikes and significant escalation (about 50 missiles in one wave, 20 Nov; 14 killed in a day, 17 Nov)
+Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 Situation: Russia–Ukraine war and NATO's flank [russia-ukraine-war]
 
-Russian strikes hit several Ukrainian regions into 19 Nov, after energy attacks in three regions on 18 Nov
+Russia launched a mass missile and drone attack early on 20 Nov after Putin vowed revenge for the Crimean Bridge strike
 
-Why it's at this level: Zaporizhzhia's regional head said Russian forces made 554 strikes on 50 settlements in the 24 hours to 19 Nov, killing one and injuring six; drones hit a market in Kharkiv oblast, injuring 13, and 99 Mykolaiv settlements briefly lost power (Censor.net, 19 Nov). In the day to 18 Nov, attacks killed five and injured 15 and damaged energy sites in Kyiv, Mykolaiv and Rivne oblasts (Kyiv Independent). Sustained mass strikes on infrastructure keep the Alert.
+Why it's at this level: Russia launched a combined missile and drone attack early on 20 Nov; monitoring channels tracked about 50 missiles in the air at once, three people were killed in Kyiv and three city bridges were damaged (UNN, Kyiv Independent). Putin had vowed a more painful response after Ukraine's 17 Nov strike collapsed part of the Crimean Bridge. On 17 Nov local officials reported 14 killed and 78 injured across Ukraine in one day (Kyiv Independent). The UN human rights office said October civilian casualties were up 95% year on year (ISW, 18 Nov).
 
-What this means for you: Follow FCDO travel advice, which advises against all travel to Ukraine. Strikes on energy infrastructure can affect power supplies across the country during winter.
+What this means for you: Civilians across Ukraine, including western regions, face repeated missile and drone strikes and power, heat and water outages. Check FCDO travel advice, which advises against all travel to Ukraine.
 
 Why it matters: Europe's largest war since 1945 shapes European security, energy, food exports and defence budgets.
 What moves it: Front-line offensives, strike campaigns on energy, Western aid, negotiations, nuclear plant safety.
@@ -19,5 +19,6 @@ What moves it: Front-line offensives, strike campaigns on energy, Western aid, n
 Rubric — Alert: Significant escalation — major new offensive, mass-casualty strikes, a nuclear-plant safety incident, or new state involvement. | Watch: Active war at sustained intensity, or a ceasefire under strain. | Normal: Ceasefire or peace deal holding.
 
 Sources:
-- Censor.net — Shelling of Ukraine on November 19: consequences in the regions (2026-11-19) https://censor.net/en/news/4034523/shelling-of-ukraine-on-november-19-consequences-of-attacks-in-the-regions
-- Kyiv Independent — Russian attacks kill 5, injure 15 across Ukraine over past day (2026-11-18) https://kyivindependent.com/russian-attacks-kill-5-injure-15-across-ukraine-over-past-day-as-russia-continues-energy-assault/
+- Kyiv Independent — Russia launches mass missile attack against Ukraine after Putin vows revenge (2026-11-20) https://kyivindependent.com/russia-launches-mass-missile-attack-against-ukraine-after-putin-vows-revenge/
+- UNN — About 50 missiles simultaneously over Ukraine: Russia attacks the western regions, there are fatalities in Kyiv (2026-11-20) https://unn.ua/en/news/about-50-missiles-simultaneously-over-ukraine-russia-attacks-the-western-regions-there-are-fatalities-in-kyiv
+- ISW/Critical Threats — Russian Offensive Campaign Assessment, November 18, 2026 (2026-11-18) https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-november-18-2026

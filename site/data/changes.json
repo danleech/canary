@@ -1,5 +1,29 @@
 [
  {
+  "t": "2026-11-20T05:49:33Z",
+  "id": "outages",
+  "name": "Internet & cloud outages",
+  "from": "amber",
+  "to": "green",
+  "reason": "No major cloud or payments outage found since Apple's on 17 Nov; officials say the US outage wave was not an attack"
+ },
+ {
+  "t": "2026-11-20T05:49:33Z",
+  "id": "other-cyclones",
+  "name": "Pacific & Indian cyclones",
+  "from": "amber",
+  "to": "green",
+  "reason": "Cyclone Akvan weakened and crossed the Odisha–Andhra coast near Gopalpur early on 20 Nov; GDACS green"
+ },
+ {
+  "t": "2026-11-20T05:49:33Z",
+  "id": "gold",
+  "name": "Gold (fear gauge)",
+  "from": "amber",
+  "to": "red",
+  "reason": "Gold near $3,519 on 20 Nov after an 8.7% weekly fall, beyond the 7% weekly Alert line; down 25% in three months"
+ },
+ {
   "t": "2026-11-19T17:49:47Z",
   "id": "sovereign-debt",
   "name": "Sovereign debt stress",
