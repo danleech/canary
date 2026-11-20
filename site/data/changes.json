@@ -1,5 +1,29 @@
 [
  {
+  "t": "2026-11-20T17:50:58Z",
+  "id": "gold",
+  "name": "Gold (fear gauge)",
+  "from": "amber",
+  "to": "red",
+  "reason": "Gold near $3,531 on 20 Nov, down 8.4% on the week, past the 7% single-week Alert line, as Fed rate-rise bets lift the dollar"
+ },
+ {
+  "t": "2026-11-20T17:50:58Z",
+  "id": "ftse",
+  "name": "FTSE 100",
+  "from": "green",
+  "to": "amber",
+  "reason": "FTSE 100 near 10,346 on 20 Nov, 5.2% below its high and 4.9% lower on the week as global shares fell"
+ },
+ {
+  "t": "2026-11-20T17:50:58Z",
+  "id": "equity-stress",
+  "name": "US equity stress",
+  "from": "amber",
+  "to": "red",
+  "reason": "VIX rose to about 32 on 20 Nov, above the 30 Alert line, after the S&P 500 entered a correction on 19 Nov"
+ },
+ {
   "t": "2026-11-20T11:42:08Z",
   "id": "gold",
   "name": "Gold (fear gauge)",

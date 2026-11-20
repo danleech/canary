@@ -1,5 +1,109 @@
 [
  {
+  "t": "2026-11-20T17:51:03Z",
+  "applied": 89,
+  "changed": [],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 27,
+   "published": 9,
+   "judged": 53
+  },
+  "held": 38,
+  "sources": {
+   "citations": 104,
+   "news_citations": 82,
+   "outlets": 72,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     7
+    ],
+    [
+     "tradingeconomics.com",
+     5
+    ],
+    [
+     "nst.com.my",
+     4
+    ],
+    [
+     "thestar.com.my",
+     3
+    ],
+    [
+     "beckershospitalreview.com",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 58,
+   "predicted_active": 4,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
+  "t": "2026-11-20T17:50:58Z",
+  "applied": 89,
+  "changed": [
+   "equity-stress",
+   "ftse",
+   "gold"
+  ],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 27,
+   "published": 9,
+   "judged": 53
+  },
+  "held": 38,
+  "sources": {
+   "citations": 104,
+   "news_citations": 82,
+   "outlets": 72,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     7
+    ],
+    [
+     "tradingeconomics.com",
+     5
+    ],
+    [
+     "nst.com.my",
+     4
+    ],
+    [
+     "thestar.com.my",
+     3
+    ],
+    [
+     "beckershospitalreview.com",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 58,
+   "predicted_active": 4,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": [
+    "displacement",
+    "other-conflicts",
+    "semiconductors"
+   ]
+  }
+ },
+ {
   "t": "2026-11-20T11:42:08Z",
   "applied": 41,
   "changed": [

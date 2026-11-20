@@ -1,16 +1,16 @@
 # Cholera & mosquito-borne — ALERT (stable)
-id cholera-dengue · Global Health · horizon acute · checked 2026-11-19T17:49Z · at this level since 2026-11-06T17:59Z · stale after 2026-11-21T05:49Z
+id cholera-dengue · Global Health · horizon acute · checked 2026-11-20T17:51Z · at this level since 2026-11-06T17:59Z · stale after 2026-11-22T05:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/cholera-dengue
 
 Value: Over 3,000 cholera deaths in 2026 (WHO)
-Rated on: Alert: large cholera outbreaks with high mortality in conflict zones (3,000+ deaths in 2026, WHO; DR Congo 1,050)
+Rated on: Alert: large cholera outbreaks with high mortality in conflict zones (over 3,000 deaths Jan–Sep, WHO)
 Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 
 WHO counts over 3,000 cholera deaths in 2026, nearly nine in ten in Africa; DR Congo, Sudan and Yemen hard hit
 
-Why it's at this level: WHO said on 10 Nov that more than 3,000 people died of cholera from January to September 2026, nearly nine in ten in Africa, fewer than in the same period of 2025, the deadliest year since 1999 (Rio Times; Ahram Online). ECDC's monthly overview to 28 Sep counts DR Congo as the worst affected, with 1,050 deaths, and lists Yemen and Afghanistan among countries with the most new deaths (ECDC). Large outbreaks with high mortality in conflict zones keep the Alert, though the global toll is below last year's.
+Why it's at this level: WHO said on 10 Nov that more than 3,000 people died of cholera from January to September 2026, nearly nine in ten in Africa, fewer than in the same period of 2025 (SCMP; Ahram Online). ECDC's overview of 27 Oct lists DR Congo as worst affected and Yemen and Afghanistan among countries with most new deaths (ECDC). PAHO warned on 21 Oct of rising dengue and chikungunya in the Americas. Large outbreaks with high mortality in conflict zones keep the Alert.
 
-What this means for you: Travellers to affected areas should follow FCDO travel advice and NHS travel health guidance on safe water, food hygiene and cholera vaccination. Displaced people in conflict zones are most exposed.
+What this means for you: Displaced people in conflict zones such as DR Congo, Sudan and Yemen are most exposed. Travellers should follow FCDO, NHS Fit for Travel or WHO advice on food, water and mosquito protection.
 
 Why it matters: Climate-sensitive diseases — cholera, dengue, chikungunya, Oropouche, West Nile and yellow fever — are hitting record levels and reaching new regions.
 What moves it: Conflict, floods, heat, El Niño, water and sanitation, mosquito range expansion.
@@ -18,6 +18,6 @@ What moves it: Conflict, floods, heat, El Niño, water and sanitation, mosquito 
 Rubric — Alert: Large outbreaks with high mortality in conflict zones, or a WHO grade 3 emergency. | Watch: Record-level seasons, or local transmission in countries where the disease was not established (including Europe). | Normal: Seasonal levels.
 
 Sources:
-- Rio Times — WHO: cholera deaths in 2026, Africa and El Niño (2026-11-10) https://www.riotimesonline.com/who-cholera-deaths-2026-africa-el-nino/
+- South China Morning Post — Over 3,000 already dead from cholera this year, says WHO (2026-11-10) https://www.scmp.com/news/world/africa/article/3373991/over-3000-already-dead-cholera-year-says-who
 - Ahram Online — Cholera killed more than 3,000 this year: WHO (2026-11-10) https://english.ahram.org.eg/News/582302.aspx
-- ECDC — Cholera worldwide overview (2026-10-01) https://www.ecdc.europa.eu/en/node/33195
+- ECDC — Cholera worldwide overview, periodic monitoring (2026-10-27) https://www.ecdc.europa.eu/en/public-health-events/2006-eip-00031/2026-10-27

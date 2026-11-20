@@ -1,16 +1,16 @@
-# US equity stress — WATCH (worsening)
-id equity-stress · Markets · horizon acute · checked 2026-11-20T11:42Z · text written 2026-11-20T05:49Z · at this level since 2026-11-16T17:52Z · stale after 2026-11-21T01:42Z
+# US equity stress — ALERT (worsening)
+id equity-stress · Markets · horizon acute · checked 2026-11-20T17:51Z · at this level since 2026-11-20T17:50Z · stale after 2026-11-21T07:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/equity-stress
 
-Value: VIX 29.6, S&P -8.2%
-Rated on: VIX 29.6 ≥ 20 Watch line; S&P drawdown 8.22% ≥ 5% Watch line
-Basis: measured — Set by a fixed rule applied to open data (VIX = 29.63 · S&P drawdown % = 8.22). Anyone can reproduce it from the public metrics file.
+Value: VIX 32.0, S&P -10.2%
+Rated on: VIX 32.0 > 30 Alert line; S&P 500 drawdown 10.2% in the 5–15% Watch band
+Basis: measured — Set by a fixed rule applied to open data (VIX = 32.00 · S&P drawdown % = 10.25). Anyone can reproduce it from the public metrics file.
 
-VIX closed at 28.4 on 19 Nov, near the 30 Alert line; S&P 500 8.2% below its high after a 5% weekly fall
+VIX rose to about 32 on 20 Nov, above the 30 Alert line, after the S&P 500 entered a correction on 19 Nov
 
-Why it's at this level: The VIX closed near 28.4 on 19 Nov, up 47% on the week and close to its 52-week high of 31, but below the 30 Alert line (Yahoo Finance). The S&P 500 ended near 7,176, 8.2% below its 52-week high and 5.1% lower on the week; it fell about 2% on 19 Nov after Fed minutes showed some officials open to larger rate rises (CoinDesk). Chip shares had slipped after Nvidia's results on 18 Nov (TipRanks). Both gauges sit inside the Watch bands.
+Why it's at this level: The VIX was near 32 at 17:25 UTC on 20 Nov, up about 40% on the week and above the 30 Alert line for the first time since March (Yahoo Finance; Nacionale). The S&P 500 was about 10.2% below its 52-week high after it and the Dow entered a correction on 19 Nov in an AI-led sell-off (CNBC), and Asian shares fell on 20 Nov after a sixth straight Wall Street decline (Saxo). The drawdown is inside the 15% line, so the Alert rests on volatility.
 
-What this means for you: US equity markets are in a higher-volatility regime. Pension and investment fund values linked to US shares are more exposed to sharp daily swings than usual.
+What this means for you: US equity markets are in a high-volatility stress regime. Pensions, ISAs and funds with US shares are exposed to large daily swings while it lasts.
 
 Why it matters: The S&P 500 is the world's risk barometer; sharp falls and spiking volatility transmit to pensions, credit and confidence globally.
 What moves it: Earnings, interest-rate expectations, liquidity, geopolitical shocks, positioning and leverage.
@@ -18,6 +18,6 @@ What moves it: Earnings, interest-rate expectations, liquidity, geopolitical sho
 Rubric — Alert: VIX > 30, or drawdown > 15%, or a market-wide circuit breaker trips. | Watch: VIX 20–30, or drawdown 5–15%. | Normal: VIX < 20 and S&P 500 drawdown from 52-week high < 5%.
 
 Sources:
-- Yahoo Finance — CBOE Volatility Index (^VIX) (2026-11-20) https://finance.yahoo.com/quote/%5EVIX
-- Yahoo Finance — S&P 500 (^GSPC) (2026-11-20) https://finance.yahoo.com/quote/%5EGSPC
-- CoinDesk — Bitcoin plunges to lowest since July as broader markets tumble (2026-11-19) https://www.coindesk.com/markets/2026/11/19/live-updates-bitcoin-nears-usd64-000-as-anthropic-s-record-ipo-lifts-tech
+- Yahoo Finance — CBOE Volatility Index (^VIX) (2026-11-20) https://finance.yahoo.com/quote/%5EVIX/
+- CNBC — S&P 500 and Dow enter correction, Nasdaq wipes out 2026 gain as AI sell-off deepens (2026-11-19) https://www.cnbc.com/amp/2026/11/19/stock-market-today-live-updates.html
+- Saxo — Asian stocks tumble after Wall Street's sixth straight decline (2026-11-20) https://www.home.saxo/content/articles/macro/market-quick-take---asian-stocks-tumble-after-wall-streets-sixth-straight-decline---20-november-2026-20112026

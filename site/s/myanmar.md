@@ -1,16 +1,16 @@
 # Myanmar — WATCH (stable)
-id myanmar · Armed Conflict · horizon acute · checked 2026-11-19T17:49Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-21T05:49Z
+id myanmar · Armed Conflict · horizon acute · checked 2026-11-20T17:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-22T05:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/myanmar
 
-Value: 29 civilians killed in Rakhine strikes 12–17 Nov
-Rated on: Civil war at sustained intensity; repeated airstrikes but no major city fallen or cross-border escalation (Watch)
+Value: Airstrike on Rakhine camp killed 12 (13 Nov)
+Rated on: Watch: civil war at sustained intensity; no major city fallen or cross-border escalation
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-Arakan Army says military airstrikes killed 29 civilians in Rakhine and Paletwa, 12–17 Nov; no major city changed hands
+A military airstrike on a Rakhine displacement camp killed 12 on 13 Nov, AFP reported; no major city changed hands
 
-Why it's at this level: The Arakan Army said military airstrikes killed 29 civilians and injured 52 across six Rakhine townships and Paletwa in Chin State on 12–17 Nov, including 13 killed at the Byarla displacement camp in Ponnagyun on 13 Nov (BNI, 19 Nov; Narinjara). These figures come from one side and are not independently verified. Strikes are frequent but no major city changed hands and no cross-border escalation was found as of 19 Nov, so Watch holds.
+Why it's at this level: Witnesses told AFP that a military airstrike on the Byar La displacement camp in Ponnagyun township, Rakhine State, killed 12 people including a child and injured 18 on 13 Nov; the military could not be reached for comment (New Straits Times, 14 Nov). Airstrikes in Rakhine remain frequent, but searches on 20 Nov found no major city changing hands and no cross-border escalation, so Watch holds.
 
-What this means for you: Civilians in Rakhine and Chin states face air strikes and a blockade of supplies. FCDO advises against all travel to much of Myanmar. Rohingya refugees and border communities in Bangladesh stay exposed to new flight.
+What this means for you: Civilians in Rakhine and other conflict areas face airstrikes and displacement. UK nationals should follow FCDO travel advice for Myanmar.
 
 Why it matters: A multi-sided civil war affecting 50 million people, with spillover to China, Thailand, India and Bangladesh.
 What moves it: Resistance offensives, junta airstrikes, Chinese mediation, elections, humanitarian access.
@@ -18,5 +18,5 @@ What moves it: Resistance offensives, junta airstrikes, Chinese mediation, elect
 Rubric — Alert: Major city falls, mass-casualty airstrikes, or cross-border escalation. | Watch: Civil war at sustained intensity. | Normal: Nationwide ceasefire holding.
 
 Sources:
-- BNI — Myanmar junta airstrikes kill 29 civilians, injure 52 across Arakan and Paletwa in one week: AA (2026-11-19) https://www.bnionline.net/en/news/myanmar-junta-airstrikes-kill-29-civilians-injure-52-across-arakan-and-paletwa-one-week-aa
-- Narinjara — Death toll rises to 12 in airstrike on IDP camp in Ponnagyun (2026-11-14) https://www.narinjara.com/news/detail/6af7eb1e3b496a70726955a4
+- New Straits Times — Myanmar airstrike on displaced persons camp kills 12 (2026-11-14) https://www.nst.com.my/amp/world/region/2026/11/1577704/myanmar-airstrike-displaced-persons-camp-kills-12
+- Dhaka Tribune — Myanmar airstrike on displaced persons camp kills 12 (2026-11-14) https://www.dhakatribune.com/world/asia/424604/myanmar-airstrike-on-displaced-persons-camp-kills

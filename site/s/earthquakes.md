@@ -1,5 +1,5 @@
 # Earthquakes & tsunami — NORMAL (stable)
-id earthquakes · Weather & Hazards · horizon acute · checked 2026-11-20T11:42Z · text written 2026-11-20T05:49Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-21T01:42Z
+id earthquakes · Weather & Hazards · horizon acute · checked 2026-11-20T17:51Z · text written 2026-11-20T05:49Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-21T07:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/earthquakes
 
 Value: Max M6.6, 2× M6+ (7d)
