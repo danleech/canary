@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-20T11:42:08Z",
+  "id": "gold",
+  "name": "Gold (fear gauge)",
+  "from": "red",
+  "to": "amber",
+  "reason": "Gold near $3,591 on 20 Nov, down 6.8% on the week, inside the 7% Alert line; down 23.5% over three months"
+ },
+ {
   "t": "2026-11-20T05:49:33Z",
   "id": "outages",
   "name": "Internet & cloud outages",

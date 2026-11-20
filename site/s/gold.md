@@ -1,16 +1,16 @@
-# Gold (fear gauge) — ALERT (worsening)
-id gold · Markets · horizon acute · checked 2026-11-20T05:49Z · at this level since 2026-11-20T05:49Z · stale after 2026-11-20T19:49Z
+# Gold (fear gauge) — WATCH (stable)
+id gold · Markets · horizon acute · checked 2026-11-20T11:42Z · at this level since 2026-11-20T11:42Z · stale after 2026-11-21T01:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/gold
 
-Value: $3,519, 1w -8.7%
-Rated on: Alert: single-week move -8.7% exceeds the 7% line; 3-month fall 25%
-Basis: measured — Set by a fixed rule applied to open data (Gold 3m gain % = -25.03 · 3m fall -25.0% · 1w move -8.7%). Anyone can reproduce it from the public metrics file.
+Value: $3,591, 1w -6.8%, 3m -23.5%
+Rated on: 3m fall 23.5% > 8% Watch line; 1w -6.8% inside the 7% Alert line
+Basis: measured — Set by a fixed rule applied to open data (Gold 3m gain % = -23.51 · 3m fall -23.5%). Anyone can reproduce it from the public metrics file.
 
-Gold near $3,519 on 20 Nov after an 8.7% weekly fall, beyond the 7% weekly Alert line; down 25% in three months
+Gold near $3,591 on 20 Nov, down 6.8% on the week, inside the 7% Alert line; down 23.5% over three months
 
-Why it's at this level: Gold futures were near $3,519 early on 20 Nov, 8.7% lower on the week and 25% lower over three months, past the 7% single-week Alert line; the price is a third below its 52-week high of $5,318 (Yahoo Finance). Spot gold fell 2.7% on 19 Nov to a 14-month low as markets priced a December Fed rate rise and the dollar neared a 19-month high; the Gulf conflict brought no sustained safe-haven buying (Kitco).
+Why it's at this level: Gold futures were near $3,591 at 11:30 UTC on 20 Nov, 6.8% lower on the week and 23.5% lower over three months, and about a third below the 52-week high of $5,318 (Yahoo Finance). The weekly fall has eased back inside the 7% single-week Alert line after reaching 8.7% early on 20 Nov, so the level returns to Watch on the three-month fall of more than 8%. Rate-rise expectations and a firm dollar have weighed on the price through November.
 
-What this means for you: Gold is in a disorderly sell-off driven by rising interest rates and a strong dollar. Holders of gold and gold-linked funds face large swings; the move reflects rate expectations, not easing geopolitical risk.
+What this means for you: Gold is in a sharp downswing as rate-rise expectations build. Savers and funds with precious-metals exposure have seen large swings in value over November.
 
 Why it matters: Gold is the oldest crisis hedge; disorderly surges signal fear about currencies, inflation or geopolitics.
 What moves it: Real interest rates, central-bank buying, geopolitical fear, dollar moves.
@@ -19,4 +19,3 @@ Rubric — Alert: 3-month gain > 20%, or a single-week move > 7% either way. | W
 
 Sources:
 - Yahoo Finance — Gold futures (GC=F) (2026-11-20) https://finance.yahoo.com/quote/GC%3DF
-- Kitco — Gold falls below $3,650, silver tumbles as Fed rate concerns pressure metals (2026-11-19) https://www.kitco.com/news/article/2026-11-19/gold-falls-below-3650-silver-tumbles-fed-rate-concerns-pressure-metals

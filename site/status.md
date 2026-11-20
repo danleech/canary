@@ -1,5 +1,5 @@
 # Canary — all signals
-as_of 2026-11-20T05:49Z · next run ~11:40 UK · stale after 2026-11-20T19:49Z (36h for daily-tier signals)
+as_of 2026-11-20T11:42Z · next run ~17:40 UK · stale after 2026-11-21T01:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -7,11 +7,10 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 
 | id | status | trend | basis | value | summary |
 |---|---|---|---|---|---|
-| gold | ALERT | worsening | measured | $3,519, 1w -8.7% | Gold near $3,519 on 20 Nov after an 8.7% weekly fall, beyond the 7% weekly Alert line; down 25% in three months |
-| eu-gas | ALERT | stable | measured | €84/MWh | European gas at €84/MWh on 19 Nov, above the €70 Alert line; a Troll field outage and low storage lift prices |
+| eu-gas | ALERT | stable | measured | €87/MWh | European gas at €84/MWh on 19 Nov, above the €70 Alert line; a Troll field outage and low storage lift prices |
 | chokepoints | ALERT | stable | judged | Tanker hit off Khasab 18 Nov; 7 since 10 Nov | Tanker hit near Khasab on 18 Nov after an LPG carrier was abandoned on 17 Nov; Hormuz attacks run at about one a day |
 | freight | ALERT | improving | published | WCI $4,176/FEU (19 Nov), −3% w/w | Drewry container index fell 3% to $4,176 per 40ft on 19 Nov, a fourth weekly fall but still above the $4,000 Alert line |
-| russia-ukraine | ALERT | worsening | judged | ~50 missiles airborne at once, 20 Nov | Russia launched a mass missile and drone attack early on 20 Nov after Putin vowed revenge for the Crimean Bridge strike |
+| russia-ukraine | ALERT | worsening | judged | 80+ missiles, ~400 drones on 20 Nov | Russia fired more than 80 cruise missiles and about 400 drones on 20 Nov, one of the war's largest attacks |
 | middle-east | ALERT | stable | judged | Gaza raid ended 19 Nov; Beqaa strikes 20 Nov | Israel ended a Gaza tank raid on 19 Nov and struck Lebanon's Beqaa on 20 Nov; Houthi missile debris hit Riyadh |
 | sudan | ALERT | stable | judged | Famine risk in Darfur; drone strikes in Kordofan | IPC warns famine risk is rising in Darfur and Kordofan; a rights group says an air attack killed 13 in western Sudan |
 | gulf-iran | ALERT | stable | judged | US hit Qeshm, Iran fired on Kuwait 18 Nov | US struck Qeshm and Iran fired drones at Kuwait and Bahrain on 18 Nov; Qatar says talks remain the best route |
@@ -21,15 +20,16 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | cholera-dengue | ALERT | stable | judged | Over 3,000 cholera deaths in 2026 (WHO) | WHO counts over 3,000 cholera deaths in 2026, nearly nine in ten in Africa; DR Congo, Sudan and Yemen hard hit |
 | uk-energy-cap | ALERT | worsening | judged | £1,723 now; January rise forecast 26–28% | Forecasts put the January cap 26–28% above today's £1,723 a year; Ofgem is due to announce by 25 Nov |
 | uk-threat-level | ALERT | stable | judged | Threat level: Severe | UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 19 Nov |
-| equity-stress | WATCH | worsening | measured | VIX 28.4, S&P -8.2% | VIX closed at 28.4 on 19 Nov, near the 30 Alert line; S&P 500 8.2% below its high after a 5% weekly fall |
+| equity-stress | WATCH | worsening | measured | VIX 29.6, S&P -8.2% | VIX closed at 28.4 on 19 Nov, near the 30 Alert line; S&P 500 8.2% below its high after a 5% weekly fall |
 | bond-volatility | WATCH | improving | measured | MOVE 96, 10y 5.05% | Treasury volatility index MOVE at 96 on 19 Nov, below 100; US 10-year yield 5.05%, up 10bp over a month |
-| dollar | WATCH | worsening | measured | DXY 103.8, 3m +4.9% | Dollar index 103.8 on 20 Nov, near a 52-week high and up 4.9% over three months, at the Watch line |
-| crypto | WATCH | worsening | measured | BTC $61,611, -29% from high | Bitcoin near $61,600 on 20 Nov, its lowest since July and 29% below its high; no de-peg or exchange failure |
+| dollar | WATCH | worsening | measured | DXY 103.8, 3m +5.0% | Dollar index 103.8 on 20 Nov, near a 52-week high and up 4.9% over three months, at the Watch line |
+| gold | WATCH | stable | measured | $3,591, 1w -6.8%, 3m -23.5% | Gold near $3,591 on 20 Nov, down 6.8% on the week, inside the 7% Alert line; down 23.5% over three months |
+| crypto | WATCH | worsening | measured | BTC $61,755, -29% from high | Bitcoin near $61,600 on 20 Nov, its lowest since July and 29% below its high; no de-peg or exchange failure |
 | private-credit | WATCH | stable | judged | US private credit default rate 6.2% (Oct) | Fitch's US private credit default rate eased to 6.2% in October; nontraded BDCs still limit redemptions to 5% a quarter |
 | us-inflation | WATCH | worsening | measured | CPI ~4.1% y/y (Oct); rising 3 months | FRED index data imply US CPI inflation of about 4.1% in October, up from 4.0% and inside the 3.0–4.5% Watch band |
 | central-banks | WATCH | stable | judged | Dec Fed rise priced ~91%; yen ~159.3/$ | Markets price a Fed rate rise in December; Japan steps up warnings as the yen holds near 159.3 per dollar |
 | sovereign-debt | WATCH | improving | judged | OAT–Bund ~145–150bp (19 Nov); US 10y 5.07% | France–Bund 10-year spread eased to about 145–150bp on 19 Nov, near the 150bp Alert line; Alert unconfirmed |
-| oil | WATCH | improving | measured | $90.1, 1m -23% | Brent near $90 on 20 Nov, 23% lower over a month; Hormuz attacks continue but a supply surplus weighs |
+| oil | WATCH | improving | measured | $89.1, 1m -24% | Brent near $90 on 20 Nov, 23% lower over a month; Hormuz attacks continue but a supply surplus weighs |
 | food-prices | WATCH | improving | published | FAO index 133.9 (Oct), +5.9% y/y | FAO food price index 133.9 in October, below the 135 Alert line but up 5.9% on a year; next release 4 Dec |
 | critical-minerals | WATCH | stable | judged | Rare-earth pause extended to 10 Jan 2027 | China extended its pause on some rare-earth export controls to 10 Jan 2027 on 9 Nov; April 2025 licensing stays |
 | fertiliser | WATCH | stable | judged | Egypt urea ~$535/t FOB; US ammonia +17% y/y | Egyptian urea near $535 a tonne after gas cuts to fertiliser plants; US ammonia retail prices up 17% on a year |
@@ -65,11 +65,11 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | uk-rates | WATCH | worsening | published | CPI 3.6% (Oct); Bank Rate 4% | UK CPI rose to 3.6% in October from 3.5%; Bank Rate 4% with markets pricing about an 80% chance of a December rise |
 | gilts | WATCH | stable | judged | 10y ~5.30%, 30y 5.77% (19 Nov) | Long gilt yields near multi-decade highs: 10y near 5.3% and 30y 5.77% on 19 Nov, with a December rate rise priced |
 | nhs-pressure | WATCH | worsening | published | Flu admissions 4.68/100k, low and rising | UKHSA 19 Nov: flu admissions up to 4.68 per 100,000, low level and rising; RSV rising; COVID-19 stable |
-| ftse | NORMAL | worsening | measured | 10,453, -4.2% from high | FTSE 100 closed at 10,453 on 19 Nov, 4.2% below its high and 4.1% lower on the week; no daily fall above 2.5% |
+| ftse | NORMAL | worsening | measured | 10,393, -4.8% from high | FTSE 100 closed at 10,453 on 19 Nov, 4.2% below its high and 4.1% lower on the week; no daily fall above 2.5% |
 | credit-spreads | NORMAL | worsening | measured | HY OAS 3.47% | US high-yield spreads 3.47% on 18 Nov, at their one-year high but inside the 4% Watch line |
 | banking-stress | NORMAL | stable | measured | STLFSI -0.87, CISS 0.01 | Financial stress gauges low: St Louis Fed index -0.87 and ECB stress indicator 0.009; no notable bank failure |
 | funding-stress | NORMAL | stable | measured | SOFR–IORB +0bp, repo $0.1bn | SOFR level with the Fed's reserve rate on 18 Nov; Fed repo use near zero on 19 Nov |
-| yen-carry | NORMAL | stable | measured | ¥159.1/$, 1w -0.4% | Yen near ¥159.1 per dollar on 20 Nov, little changed on the week; no intervention found |
+| yen-carry | NORMAL | stable | measured | ¥158.8/$, 1w -0.6% | Yen near ¥159.1 per dollar on 20 Nov, little changed on the week; no intervention found |
 | us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.28 | Sahm recession indicator 0.00 for October; yield curve +0.28 on 19 Nov; jobless claims 203,000 |
 | euro-growth | NORMAL | stable | published | Q3 GDP +0.4%; Oct composite PMI above 50 | Euro-area GDP grew 0.4% in Q3 and the October composite PMI stayed above 50; November flash PMIs not yet out |
 | china-economy | NORMAL | improving | judged | Oct output +4.8%, retail +0.4%; FAI −8.1% YTD | China's October output rose 4.8% and retail sales 0.4%, below forecasts, while fixed-asset investment kept falling |

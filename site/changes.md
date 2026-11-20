@@ -1,8 +1,9 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-20T05:49Z · next run ~11:40 UK · stale after 2026-11-20T19:49Z (36h for daily-tier signals)
+as_of 2026-11-20T11:42Z · next run ~17:40 UK · stale after 2026-11-21T01:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
+- 2026-11-20T11:42Z Gold (fear gauge) [gold]: ALERT→WATCH — Gold near $3,591 on 20 Nov, down 6.8% on the week, inside the 7% Alert line; down 23.5% over three months
 - 2026-11-20T05:49Z Internet & cloud outages [outages]: WATCH→NORMAL — No major cloud or payments outage found since Apple's on 17 Nov; officials say the US outage wave was not an attack
 - 2026-11-20T05:49Z Pacific & Indian cyclones [other-cyclones]: WATCH→NORMAL — Cyclone Akvan weakened and crossed the Odisha–Andhra coast near Gopalpur early on 20 Nov; GDACS green
 - 2026-11-20T05:49Z Gold (fear gauge) [gold]: WATCH→ALERT — Gold near $3,519 on 20 Nov after an 8.7% weekly fall, beyond the 7% weekly Alert line; down 25% in three months
@@ -23,4 +24,3 @@ Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judge
 - 2026-11-14T17:56Z Atmospheric CO₂ [co2]: ALERT→WATCH — CO₂ 428.6 ppm at Mauna Loa in the week of 8 Nov, up 2.34 ppm on a year, inside the 2–3 ppm Watch band
 - 2026-11-13T17:58Z UK strikes & disruption [uk-disruption]: WATCH→NORMAL — BMA paused the 25–27 Nov consultant strike on 11 Nov for talks; London Tube driver strikes start 26 Nov
 - 2026-11-13T17:58Z NHS & respiratory [nhs-pressure]: NORMAL→WATCH — UKHSA 12 Nov: flu now above baseline and rising, at low levels; COVID-19 stable; RSV hospital admissions rising
-- 2026-11-13T05:53Z Internet & cloud outages [outages]: NORMAL→WATCH — A Microsoft 365 outage on 12 Nov cut Outlook and Teams for about 10 hours worldwide; Microsoft says not a cyberattack

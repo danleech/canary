@@ -1,9 +1,9 @@
 # Pacific & Indian cyclones — NORMAL (improving)
-id other-cyclones · Weather & Hazards · horizon acute · checked 2026-11-20T05:49Z · at this level since 2026-11-20T05:49Z · stale after 2026-11-20T19:49Z
+id other-cyclones · Weather & Hazards · horizon acute · checked 2026-11-20T11:42Z · text written 2026-11-20T05:49Z · at this level since 2026-11-20T05:49Z · stale after 2026-11-21T01:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/other-cyclones
 
 Value: Akvan weakened, crossed coast 20 Nov
-Rated on: Normal: no GDACS orange/red cyclone alert; Akvan weakened and made landfall 20 Nov, no storm threatening land within 72h
+Rated on: GDACS cyclone: 0 red / 0 orange
 Basis: measured — Set by a fixed rule applied to open data (GDACS cyclone: 0 red / 0 orange). Anyone can reproduce it from the public metrics file.
 
 Cyclone Akvan weakened and crossed the Odisha–Andhra coast near Gopalpur early on 20 Nov; GDACS green
