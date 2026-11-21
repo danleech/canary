@@ -20,7 +20,7 @@
    ],
    "value": "VIX 35.9, S&P -11.6%",
    "value_num": 35.89,
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-11-20T17:50:58Z",
    "rubric_hit": "VIX 35.9 > 30 Alert line",
    "basis": "measured",
@@ -42,7 +42,7 @@
    ],
    "value": "10,346, -5.2% from high",
    "value_num": 10346.34,
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-11-20T17:50:58Z",
    "rubric_hit": "FTSE drawdown 5.17% ≥ 5% Watch line",
    "basis": "measured",
@@ -69,7 +69,7 @@
    ],
    "value": "MOVE 106, 10y 4.91%",
    "value_num": 106.312,
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "MOVE 106 ≥ 100 Watch line",
    "basis": "measured",
@@ -91,7 +91,7 @@
    ],
    "value": "HY OAS 3.52%",
    "value_num": 3.52,
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "HY OAS 3.52% below the 4% Watch line",
    "basis": "measured",
@@ -123,7 +123,7 @@
    ],
    "value": "DXY 103.8, 3m +5.0%",
    "value_num": 103.84,
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-11-18T11:49:31Z",
    "rubric_hit": "DXY 3m move 4.97% has not yet cleared the 4.5% exit line, so Watch holds",
    "basis": "measured",
@@ -150,7 +150,7 @@
    ],
    "value": "STLFSI -0.87, CISS 0.01",
    "value_num": -0.8655,
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "STLFSI -0.87 below the 0 Watch line; ECB CISS 0.01 below the 0.25 Watch line",
    "basis": "measured",
@@ -182,7 +182,7 @@
    ],
    "value": "$3,515, 3m -25.1%",
    "value_num": 3515.4,
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-11-20T17:50:58Z",
    "rubric_hit": "1w move -8.8% (Alert)",
    "basis": "measured",
@@ -207,13 +207,13 @@
      "date": "2026-11-20"
     }
    ],
-   "value": "BTC $59,888, -31% from high",
-   "value_num": 59887.97,
-   "checked_at": "2026-11-21T17:52:02Z",
+   "value": "BTC $60,117, -31% from high",
+   "value_num": 60117.0,
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-11-14T23:42:22Z",
-   "rubric_hit": "BTC drawdown 30.9% ≥ 25% Watch line",
+   "rubric_hit": "BTC drawdown 30.6% ≥ 25% Watch line",
    "basis": "measured",
-   "basis_detail": "BTC drawdown %=30.85",
+   "basis_detail": "BTC drawdown %=30.60",
    "assessed_at": "2026-11-21T05:46:59Z"
   },
   "us-recession": {
@@ -241,7 +241,7 @@
    ],
    "value": "Sahm 0.00, 10y–2y +0.29",
    "value_num": 0.0,
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "Sahm 0 below the 0.3 Watch line",
    "basis": "measured",
@@ -430,7 +430,7 @@
    ],
    "value": "$90.0, 1m -23%",
    "value_num": 89.95,
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-11-06T17:59:39Z",
    "rubric_hit": "Brent $90 ≥ $85 Watch line",
    "basis": "measured",
@@ -457,7 +457,7 @@
    ],
    "value": "€88/MWh",
    "value_num": 88.451,
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "TTF €88.5/MWh > €70/MWh Alert line",
    "basis": "measured",
@@ -482,7 +482,7 @@
      "date": "2026-11-20"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "2 tankers hit off Khasab 21 Nov",
    "rubric_hit": "Alert: Hormuz traffic materially impeded by attacks and mines (UKMTO, 21 Nov)",
@@ -585,7 +585,7 @@
      "date": "2026-11-17"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-11-07T05:46:46Z",
    "value": "Unannounced 100+ ship drills early Nov",
    "rubric_hit": "Large-scale PLA exercises around Taiwan = Watch",
@@ -612,7 +612,7 @@
      "date": "2026-11-20"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Missiles, drone entered Polish airspace 20 Nov",
    "rubric_hit": "Watch: airspace violations by Russian missiles and a drone over Poland (20 Nov); no Article 4 or attack declared",
@@ -639,7 +639,7 @@
      "date": "2026-11-21"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No IAEA access; US-Israel weigh new strikes",
    "rubric_hit": "Watch: 60% stockpile with inspector access curtailed, plus credible strike threats (CBS, 20 Nov)",
@@ -666,7 +666,7 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-11-19T05:51:11Z",
    "value": "Last launch 4 Nov",
    "rubric_hit": "No missile launch in two weeks = Normal",
@@ -693,7 +693,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Mexico doubling threat 12 Nov; none in force",
    "rubric_hit": "Major tariffs threatened between large economies = Watch",
@@ -774,7 +774,7 @@
      "date": "2026-11-20"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "148 drones, 3 missiles 21 Nov after mass strike",
    "value_num": 488,
@@ -786,28 +786,33 @@
   "middle-east": {
    "status": "red",
    "trend": "flat",
-   "summary": "Israeli fire killed four in Gaza on 21 Nov, civil defence says; Saudi coalition intercepted 3 Houthi missiles",
-   "state": "Gaza's civil defence said Israeli fire killed four people on 21 Nov, three in a drone strike on a food-aid vehicle in Gaza City; the Israeli military said it hit militants, and four were killed near Bureij on 20 Nov (RTE). The health ministry says more than 1,600 Palestinians have been killed since the October 2025 ceasefire. The Saudi-led coalition said it intercepted three Houthi ballistic missiles fired at Riyadh early on 21 Nov (Xinhua). Israel struck Lebanon's Beqaa on 20 Nov. Hostilities on several fronts keep the Alert.",
-   "for_you": "Travel risk in Israel, Gaza, Lebanon, Yemen and parts of Saudi Arabia remains high. Anyone with plans in the region can follow FCDO travel advice.",
+   "summary": "Gaza's civil defence says Israeli strikes killed six on 21 Nov; Saudi coalition intercepted 3 Houthi missiles",
+   "state": "Gaza's civil defence said Israeli strikes killed six people on 21 Nov, including three in a drone strike on a food-aid vehicle in Gaza City; the Israeli military said it targeted militants (Free Malaysia Today, citing AFP; RTE). The health ministry says more than 1,600 Palestinians have been killed since the October 2025 ceasefire. The Saudi-led coalition said it intercepted three Houthi ballistic missiles fired at Riyadh early on 21 Nov, and Israel struck Lebanon's Beqaa on 20 Nov. Hostilities on several fronts keep the Alert.",
+   "for_you": "Check FCDO travel advice before travelling to Israel, the Palestinian territories, Lebanon, Yemen or Saudi Arabia, and follow it if you are already there.",
    "sources": [
+    {
+     "title": "Free Malaysia Today — Gaza civil defence says Israeli strikes kill 6",
+     "url": "https://www.freemalaysiatoday.com/category/world/2026/11/21/gaza-civil-defence-says-israeli-strikes-kill-6",
+     "date": "2026-11-21"
+    },
     {
      "title": "RTE — Israeli fire kills four in Gaza, civil defence says",
      "url": "https://www.rte.ie/news/world/2026/1121/1600131-israeli-strikes-gaza/",
      "date": "2026-11-21"
     },
     {
-     "title": "Xinhua — Saudi-led coalition intercepts Houthi ballistic missiles targeting Riyadh",
-     "url": "https://english.news.cn/20261121/5de2bdb0d3e54a929e9862f4a2c678cf/c.html",
+     "title": "Arab News Pakistan — Gaza civil defense says Israeli strikes kill six",
+     "url": "https://www.arabnews.pk/middle-east/gaza-civil-defense-says-israeli-strikes-kill-six-3007628",
      "date": "2026-11-21"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Gaza strikes 20–21 Nov; Houthi fire at Riyadh",
-   "rubric_hit": "Alert: multi-front hostilities — Gaza strikes, Israeli strike in Lebanon (20 Nov), Houthi missiles at Riyadh (21 Nov)",
+   "value": "Gaza strikes kill 6 on 21 Nov; Houthi missiles",
+   "rubric_hit": "Multi-front hostilities (Gaza, Lebanon, Yemen–Saudi) = Alert",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-21T17:52:02Z"
+   "assessed_at": "2026-11-21T23:42:14Z"
   },
   "sudan": {
    "status": "red",
@@ -928,7 +933,7 @@
      "date": "2026-11-16"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Indus treaty in abeyance; no LoC strike found",
    "rubric_hit": "Treaty suspension and LoC firing = Watch",
@@ -954,7 +959,7 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No US–Russia treaty limits since Feb",
    "rubric_hit": "Arms-control lapse without replacement = Watch",
@@ -980,7 +985,7 @@
      "date": "2026-11-21"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No Atlantic storms",
    "rubric_hit": "No hurricane threatening land = Normal",
@@ -1002,7 +1007,7 @@
      "date": "2026-11-21"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-11-20T05:49:33Z",
    "value": "Xavier (green) only",
    "rubric_hit": "GDACS cyclone: 0 red / 0 orange",
@@ -1051,7 +1056,7 @@
      "date": "2026-11-21"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
    "rubric_hit": "GDACS wildfire: 0 red / 0 orange",
@@ -1073,7 +1078,7 @@
      "date": "2026-11-21"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
    "rubric_hit": "GDACS flood: 0 red / 0 orange",
@@ -1102,7 +1107,7 @@
    ],
    "value": "Max M6.8, 4× M6+ (7d)",
    "value_num": 6.8,
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "max magnitude 6.8 below the 7 Watch line",
    "basis": "measured",
@@ -1178,7 +1183,7 @@
    ],
    "value": "G0 S0 R0",
    "value_num": 0,
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "rubric_hit": "NOAA G0 S0 R0 (24h max)",
    "basis": "measured",
@@ -1318,7 +1323,7 @@
      "date": "2026-11-15"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Ebola PHEIC in force",
    "value_num": 1,
@@ -1350,7 +1355,7 @@
      "date": "2026-11-15"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "11,504 confirmed cases, 5,630 deaths (16 Nov)",
    "value_num": 11504,
@@ -1377,7 +1382,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Oregon dairy-linked human case 19 Nov",
    "rubric_hit": "Sporadic animal-to-human cases only = Normal",
@@ -1495,7 +1500,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No unexplained clusters",
    "rubric_hit": "No unexplained cluster under investigation = Normal",
@@ -1521,7 +1526,7 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-11-16T05:51:59Z",
    "value": "4 exploited flaws added 20 Nov",
    "rubric_hit": "Exploited flaws in widely used products = Watch",
@@ -1543,7 +1548,7 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-11-20T05:49:33Z",
    "value": "No major outage since 17 Nov",
    "rubric_hit": "No major outage > 2h in 48h = Normal",
@@ -1764,7 +1769,7 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "10y above 5.35% (16 Nov)",
    "value_num": 5.3,
@@ -1814,7 +1819,7 @@
     }
    ],
    "value": "1 warning(s), worst yellow",
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-11-17T11:42:50Z",
    "value_num": 0,
    "rubric_hit": "worst warning: yellow",
@@ -1929,7 +1934,7 @@
      "date": "2026-11-21"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "SOFR–IORB 5d max bp=3.00; Fed repo ops 5d max $bn=0.10",
@@ -1978,7 +1983,7 @@
      "date": "2026-11-21"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "USD/JPY 1w move %=0.79; USD/JPY 1m move %=1.29",
@@ -2107,7 +2112,7 @@
      "date": "2026-11-20"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
@@ -2134,7 +2139,7 @@
      "date": "2026-11-20"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
@@ -2263,7 +2268,7 @@
      "date": "2026-11-21"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-11-16T05:51:59Z",
    "basis": "measured",
    "basis_detail": "KEV additions 7d=9.00",
@@ -2339,15 +2344,15 @@
      "date": "2026-11-21"
     }
    ],
-   "checked_at": "2026-11-21T17:52:02Z",
+   "checked_at": "2026-11-21T23:42:14Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "EA: 0 severe, 1 warnings",
    "assessed_at": "2026-11-21T05:46:59Z"
   }
  },
- "headline": "Two tankers were hit off Oman's Khasab on 21 Nov as the US–Iran war goes on; Russia struck Ukraine again on 21 Nov after Polish airspace was breached on 20 Nov. Ebola cases in DR Congo passed 11,500.",
- "generated_at": "2026-11-21T17:52:02Z",
+ "headline": "Hormuz shipping attacks, Russia's strikes on Ukraine with incursions into Polish airspace, and DR Congo's Ebola outbreak lead the board on 21 Nov; equity volatility and European gas remain at Alert.",
+ "generated_at": "2026-11-21T23:42:14Z",
  "world": {
   "score": 39,
   "band": "Unsettled",

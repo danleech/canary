@@ -1,5 +1,5 @@
 # Yen & carry trade — NORMAL (stable)
-id yen-carry · Markets · horizon acute · checked 2026-11-21T17:52Z · text written 2026-11-21T05:46Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-22T07:52Z
+id yen-carry · Markets · horizon acute · checked 2026-11-21T23:42Z · text written 2026-11-21T05:46Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-22T13:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/yen-carry
 
 Value: ¥158.5/$, 1w -0.8%

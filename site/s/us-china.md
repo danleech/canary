@@ -1,5 +1,5 @@
 # US–China / Taiwan — WATCH (stable)
-id us-china · Geopolitics · horizon acute · checked 2026-11-21T17:52Z · text written 2026-11-21T05:46Z · at this level since 2026-11-07T05:46Z · stale after 2026-11-22T07:52Z
+id us-china · Geopolitics · horizon acute · checked 2026-11-21T23:42Z · text written 2026-11-21T05:46Z · at this level since 2026-11-07T05:46Z · stale after 2026-11-22T13:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/us-china
 
 Value: Unannounced 100+ ship drills early Nov

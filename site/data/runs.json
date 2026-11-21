@@ -1,5 +1,45 @@
 [
  {
+  "t": "2026-11-21T23:42:14Z",
+  "applied": 41,
+  "changed": [],
+  "warnings": [],
+  "note": "Late-evening run: searches found little new after the 17:52 UK texts, so most qualitative signals were held.",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 2,
+   "judged": 18
+  },
+  "held": 40,
+  "sources": {
+   "citations": 3,
+   "news_citations": 3,
+   "outlets": 3,
+   "top_news_outlets": [
+    [
+     "arabnews.pk",
+     1
+    ],
+    [
+     "freemalaysiatoday.com",
+     1
+    ],
+    [
+     "rte.ie",
+     1
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 18,
+   "predicted_active": 2,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
   "t": "2026-11-21T17:52:02Z",
   "applied": 89,
   "changed": [

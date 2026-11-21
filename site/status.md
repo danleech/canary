@@ -1,5 +1,5 @@
 # Canary — all signals
-as_of 2026-11-21T17:52Z · next run ~23:40 UK · stale after 2026-11-22T07:52Z (36h for daily-tier signals)
+as_of 2026-11-21T23:42Z · next run ~05:40 UK · stale after 2026-11-22T13:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 9 follow a published figure, 53 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -13,7 +13,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | chokepoints | ALERT | stable | judged | 2 tankers hit off Khasab 21 Nov | UKMTO says two tankers were hit by projectiles off Oman's Khasab on 21 Nov, after Iranian mine claims on 19–20 Nov |
 | freight | ALERT | improving | published | WCI $4,176/FEU (19 Nov), −3% w/w | Drewry container index fell 3% to $4,176 per 40ft on 19 Nov, a fourth weekly fall but still above the $4,000 Alert line |
 | russia-ukraine | ALERT | stable | judged | 148 drones, 3 missiles 21 Nov after mass strike | Russia fired 148 drones and 3 ballistic missiles on 21 Nov, after its 20 Nov mass strike; 2 killed, 83 injured |
-| middle-east | ALERT | stable | judged | Gaza strikes 20–21 Nov; Houthi fire at Riyadh | Israeli fire killed four in Gaza on 21 Nov, civil defence says; Saudi coalition intercepted 3 Houthi missiles |
+| middle-east | ALERT | stable | judged | Gaza strikes kill 6 on 21 Nov; Houthi missiles | Gaza's civil defence says Israeli strikes killed six on 21 Nov; Saudi coalition intercepted 3 Houthi missiles |
 | sudan | ALERT | stable | judged | UN: 1,630+ civilians killed by drones Jan–Oct | Army advances on RSF-held Al Nahud with heavy drone strikes as thousands flee; UN says drones killed 1,630+ civilians |
 | gulf-iran | ALERT | stable | judged | 2 tankers hit off Khasab 21 Nov; strikes go on | UKMTO says two tankers were hit off Oman's Khasab on 21 Nov; the US struck Qeshm and Iran fired at Kuwait in the week |
 | global-temp | ALERT (c) | stable | measured | +1.92°C vs pre-industrial (15 Nov) | Global temperature 1.92°C above pre-industrial on 15 Nov, a record for the date |
@@ -25,7 +25,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | ftse | WATCH | worsening | measured | 10,346, -5.2% from high | FTSE 100 closed near 10,346 on 20 Nov, 5.2% below its high and 4.9% lower on the week |
 | bond-volatility | WATCH | worsening | measured | MOVE 106, 10y 4.91% | Treasury volatility index MOVE back above 100 at 106 on 20 Nov; US 10-year yield 4.91%, little changed over a month |
 | dollar | WATCH | worsening | measured | DXY 103.8, 3m +5.0% | Dollar index 103.8 on 20 Nov, at a 52-week high and 5.0% higher over three months, at the Watch line |
-| crypto | WATCH | worsening | measured | BTC $59,888, -31% from high | Bitcoin near $55,800 on 21 Nov, 36% below its high and 14% lower on the week; no de-peg or exchange failure found |
+| crypto | WATCH | worsening | measured | BTC $60,117, -31% from high | Bitcoin near $55,800 on 21 Nov, 36% below its high and 14% lower on the week; no de-peg or exchange failure found |
 | private-credit | WATCH | stable | judged | Fitch: defaults elevated; BDC exits above 5% cap | Fitch says US private credit defaults stay elevated and nontraded BDC redemption requests remain above the usual cap |
 | us-inflation | WATCH | worsening | measured | CPI ~4.1% y/y (Oct); rising 3 months | FRED index data imply US CPI inflation of about 4.1% in October, up from 4.0%, inside the 3.0–4.5% Watch band |
 | central-banks | WATCH | stable | judged | Dec Fed rise priced; yen ~159/$, no intervention | Markets price a Fed rate rise in December while Japan steps up verbal warnings as the yen trades near 159 per dollar |

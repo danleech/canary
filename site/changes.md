@@ -1,5 +1,5 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-21T17:52Z · next run ~23:40 UK · stale after 2026-11-22T07:52Z (36h for daily-tier signals)
+as_of 2026-11-21T23:42Z · next run ~05:40 UK · stale after 2026-11-22T13:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 9 follow a published figure, 53 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -25,4 +25,3 @@ Basis: 27 measured from open data, 9 follow a published figure, 53 are AI judgem
 - 2026-11-16T05:51Z Exploited vulnerabilities [exploited-vulns]: WATCH→NORMAL — CISA added 8 known-exploited vulnerabilities in the seven days to 13 Nov, back below the 11-a-week Watch line
 - 2026-11-16T05:51Z Major cyber incidents [cyber]: ALERT→WATCH — France's 9 Nov attribution of store fridge sabotage to an IRGC unit is a week old; no new national-scale attack found
 - 2026-11-14T23:42Z Crypto stress [crypto]: NORMAL→WATCH — Bitcoin near $63,400 on 14 Nov, 27% below its 52-week high and 14% lower on the week; no stablecoin de-peg found
-- 2026-11-14T17:56Z Atmospheric CO₂ [co2]: ALERT→WATCH — CO₂ 428.6 ppm at Mauna Loa in the week of 8 Nov, up 2.34 ppm on a year, inside the 2–3 ppm Watch band

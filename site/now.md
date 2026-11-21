@@ -1,10 +1,10 @@
 # Canary — world risk status
-as_of 2026-11-21T17:52Z · next run ~23:40 UK · stale after 2026-11-22T07:52Z (36h for daily-tier signals)
+as_of 2026-11-21T23:42Z · next run ~05:40 UK · stale after 2026-11-22T13:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 9 follow a published figure, 53 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 World State 39/100 (Unsettled) · 15 Alert · 43 Watch · 31 Normal
-Headline: Two tankers were hit off Oman's Khasab on 21 Nov as the US–Iran war goes on; Russia struck Ukraine again on 21 Nov after Polish airspace was breached on 20 Nov. Ebola cases in DR Congo passed 11,500.
+Headline: Hormuz shipping attacks, Russia's strikes on Ukraine with incursions into Polish airspace, and DR Congo's Ebola outbreak lead the board on 21 Nov; equity volatility and European gas remain at Alert.
 
 ## Situations (7 cross-domain events; Alerts below are grouped under them)
 - US–Iran war and Gulf energy shock [ALERT, worsening]: UKMTO says two tankers were hit off Khasab on 21 Nov; Iran claims tanker mine strikes on 19–20 Nov and Houthis fired at Riyadh on 21 Nov. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight, uk-energy-cap; watch: iran-nuclear, sanctions, oil, fertiliser, semiconductors
@@ -28,7 +28,7 @@ Headline: Two tankers were hit off Oman's Khasab on 21 Nov as the US–Iran war 
 ftse, bond-volatility, dollar, crypto, private-credit, us-inflation, central-banks, sovereign-debt, oil, food-prices, critical-minerals, fertiliser, nuclear-plants, us-china, russia-nato, iran-nuclear, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, drought, sea-ice, co2, who-emergencies, mpox, measles, respiratory, medicine-shortages, cyber, cables-gnss, semiconductors, ai-governance, famine, civil-unrest, aid-funding, uk-rates, gilts, nhs-pressure
 
 ## Sentiment (measured from open data; context only, never changes a status)
-News tone vs own past 6 months (GDELT, 7 days to 2026-11-20; number = % of past weeks less negative): gloomier: tech (95); brighter: conflict (9), energy (7), trade (0), climate (3), disasters (0), health (1), migration (4); typical: economy
+News tone vs own past 6 months (GDELT, 7 days to 2026-11-21; number = % of past weeks less negative): gloomier: tech (93); brighter: conflict (7), energy (11), trade (0), climate (6), disasters (0), health (2), migration (4); typical: economy
 Consumer confidence (OECD, long-run avg 100): OECD 98.0 (2026-10), GBR 98.9 (2026-10), USA 96.0 (2026-10), EA20 97.9 (2026-10), JPN 98.4 (2026-10), CHN 95.4 (2026-09), IND 100.0 (2026-09)
 Uncertainty: US policy uncertainty 0.9× its 1-year median · Geopolitical risk in the news 0.9× its 1-year median · Market fear (VIX) higher than 100% of the past year
 
