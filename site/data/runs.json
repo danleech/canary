@@ -1,5 +1,105 @@
 [
  {
+  "t": "2026-11-21T05:46:59Z",
+  "applied": 41,
+  "changed": [],
+  "warnings": [
+   "sources: tradingeconomics.com supplies 5 of 42 news citations (12%); diversify next run (errors above 20%)"
+  ],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 2,
+   "judged": 18
+  },
+  "held": 0,
+  "sources": {
+   "citations": 78,
+   "news_citations": 42,
+   "outlets": 41,
+   "top_news_outlets": [
+    [
+     "tradingeconomics.com",
+     5
+    ],
+    [
+     "aljazeera.com",
+     4
+    ],
+    [
+     "canberratimes.com.au",
+     2
+    ],
+    [
+     "dailywaadaa.com",
+     2
+    ],
+    [
+     "ibtimes.co.uk",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 18,
+   "predicted_active": 2,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
+  "t": "2026-11-21T05:46:52Z",
+  "applied": 41,
+  "changed": [],
+  "warnings": [
+   "sources: tradingeconomics.com supplies 5 of 42 news citations (12%); diversify next run (errors above 20%)"
+  ],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 2,
+   "judged": 18
+  },
+  "held": 0,
+  "sources": {
+   "citations": 78,
+   "news_citations": 42,
+   "outlets": 41,
+   "top_news_outlets": [
+    [
+     "tradingeconomics.com",
+     5
+    ],
+    [
+     "aljazeera.com",
+     4
+    ],
+    [
+     "canberratimes.com.au",
+     2
+    ],
+    [
+     "dailywaadaa.com",
+     2
+    ],
+    [
+     "ibtimes.co.uk",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 18,
+   "predicted_active": 2,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
   "t": "2026-11-20T23:42:49Z",
   "applied": 41,
   "changed": [],
