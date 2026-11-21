@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-21T17:52:02Z",
+  "id": "heat",
+  "name": "Extreme heat",
+  "from": "amber",
+  "to": "green",
+  "reason": "Queensland's severe heatwave warning ended on 19 Nov; Philippine danger-level heat indices are local; no deadly heatwave"
+ },
+ {
   "t": "2026-11-20T17:50:58Z",
   "id": "gold",
   "name": "Gold (fear gauge)",
