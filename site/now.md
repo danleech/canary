@@ -1,10 +1,10 @@
 # Canary — world risk status
-as_of 2026-11-21T05:46Z · next run ~11:40 UK · stale after 2026-11-21T19:46Z (36h for daily-tier signals)
+as_of 2026-11-21T11:43Z · next run ~17:40 UK · stale after 2026-11-22T01:43Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 9 follow a published figure, 53 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 World State 40/100 (Strained) · 15 Alert · 44 Watch · 30 Normal
-Headline: Markets are in a stress regime: the VIX near 36 and gold down 8.8% in a week as Fed rate-rise bets build. Russia fired 84 cruise missiles at Ukraine on 20 Nov; Hormuz mine strikes and Ebola keep their Alerts.
+Headline: Markets remain in a stress regime with the VIX near 36. Russia's 20 Nov missile strikes on Ukraine, Hormuz mine strikes and the DR Congo Ebola outbreak, now 11,376 confirmed cases, keep their Alerts.
 
 ## Situations (7 cross-domain events; Alerts below are grouped under them)
 - US–Iran war and Gulf energy shock [ALERT, worsening]: US struck Iranian launchers after Iran hit a US base in Bahrain in mid-November; Iran says tankers hit its mines near Hormuz on 19–20 Nov. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight, uk-energy-cap; watch: iran-nuclear, sanctions, oil, fertiliser, semiconductors
@@ -25,10 +25,6 @@ Headline: Markets are in a stress regime: the VIX near 36 and gold down 8.8% in 
 - Gold (fear gauge) [gold]: WATCH→ALERT — Gold near $3,531 on 20 Nov, down 8.4% on the week, past the 7% single-week Alert line, as Fed rate-rise bets lift the dollar (2026-11-20T17:50Z)
 - FTSE 100 [ftse]: NORMAL→WATCH — FTSE 100 near 10,346 on 20 Nov, 5.2% below its high and 4.9% lower on the week as global shares fell (2026-11-20T17:50Z)
 - US equity stress [equity-stress]: WATCH→ALERT — VIX rose to about 32 on 20 Nov, above the 30 Alert line, after the S&P 500 entered a correction on 19 Nov (2026-11-20T17:50Z)
-- Gold (fear gauge) [gold]: ALERT→WATCH — Gold near $3,591 on 20 Nov, down 6.8% on the week, inside the 7% Alert line; down 23.5% over three months (2026-11-20T11:42Z)
-- Internet & cloud outages [outages]: WATCH→NORMAL — No major cloud or payments outage found since Apple's on 17 Nov; officials say the US outage wave was not an attack (2026-11-20T05:49Z)
-- Pacific & Indian cyclones [other-cyclones]: WATCH→NORMAL — Cyclone Akvan weakened and crossed the Odisha–Andhra coast near Gopalpur early on 20 Nov; GDACS green (2026-11-20T05:49Z)
-- Gold (fear gauge) [gold]: WATCH→ALERT — Gold near $3,519 on 20 Nov after an 8.7% weekly fall, beyond the 7% weekly Alert line; down 25% in three months (2026-11-20T05:49Z)
 
 ## Watch (ids; detail at /s/{id}.md)
 ftse, bond-volatility, dollar, crypto, private-credit, us-inflation, central-banks, sovereign-debt, oil, food-prices, critical-minerals, fertiliser, nuclear-plants, us-china, russia-nato, iran-nuclear, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, heat, drought, sea-ice, co2, who-emergencies, mpox, measles, respiratory, medicine-shortages, cyber, cables-gnss, semiconductors, ai-governance, famine, civil-unrest, aid-funding, uk-rates, gilts, nhs-pressure

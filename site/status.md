@@ -1,5 +1,5 @@
 # Canary — all signals
-as_of 2026-11-21T05:46Z · next run ~11:40 UK · stale after 2026-11-21T19:46Z (36h for daily-tier signals)
+as_of 2026-11-21T11:43Z · next run ~17:40 UK · stale after 2026-11-22T01:43Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 9 follow a published figure, 53 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -18,14 +18,14 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | gulf-iran | ALERT | stable | judged | US–Iran strikes 15–18 Nov; mines 19–20 Nov | US struck Iranian launchers after Iran hit a US base in Bahrain; Iran says tankers hit its mines on 19–20 Nov |
 | global-temp | ALERT (c) | worsening | measured | +1.95°C vs pre-industrial (14 Nov) | Global temperature 1.95°C above pre-industrial on 14 Nov, a record for the date |
 | enso | ALERT (s) | worsening | measured | ONI +2.46 (El Niño) | Very strong El Niño: Oceanic Niño Index +2.46°C for Aug–Oct; next value due early Dec |
-| ebola | ALERT | stable | published | 11,145 confirmed cases, 5,437 deaths (10 Nov) | Bundibugyo Ebola outbreak reached 11,145 confirmed cases and 5,437 deaths by 10 Nov, mostly in DR Congo |
+| ebola | ALERT | stable | published | 11,376 confirmed cases, 5,568 deaths (14 Nov) | Bundibugyo Ebola outbreak in DR Congo reached 11,376 confirmed cases and 5,568 deaths by 14 Nov, per ECDC |
 | cholera-dengue | ALERT | stable | judged | Over 3,000 cholera deaths in 2026 (WHO) | WHO counts over 3,000 cholera deaths in 2026, nearly nine in ten in Africa; DR Congo, Sudan and Yemen hard hit |
 | uk-energy-cap | ALERT | worsening | judged | £1,723 now; January rise forecast ~27% | Ofgem has not yet set the January cap; forecasts put it 26–27% above the current £1,723, at about £2,166–2,184 |
 | uk-threat-level | ALERT | stable | judged | Threat level: Severe | UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 20 Nov |
 | ftse | WATCH | worsening | measured | 10,346, -5.2% from high | FTSE 100 closed near 10,346 on 20 Nov, 5.2% below its high and 4.9% lower on the week |
 | bond-volatility | WATCH | worsening | measured | MOVE 106, 10y 4.91% | Treasury volatility index MOVE back above 100 at 106 on 20 Nov; US 10-year yield 4.91%, little changed over a month |
 | dollar | WATCH | worsening | measured | DXY 103.8, 3m +5.0% | Dollar index 103.8 on 20 Nov, at a 52-week high and 5.0% higher over three months, at the Watch line |
-| crypto | WATCH | worsening | measured | BTC $55,772, -36% from high | Bitcoin near $55,800 on 21 Nov, 36% below its high and 14% lower on the week; no de-peg or exchange failure found |
+| crypto | WATCH | worsening | measured | BTC $58,134, -33% from high | Bitcoin near $55,800 on 21 Nov, 36% below its high and 14% lower on the week; no de-peg or exchange failure found |
 | private-credit | WATCH | stable | judged | Fitch: defaults elevated; BDC exits slowing | Fitch says US private credit defaults remain elevated and nontraded BDC selling has slowed but stays significant |
 | us-inflation | WATCH | worsening | measured | CPI ~4.1% y/y (Oct); rising 3 months | FRED index data imply US CPI inflation of about 4.1% in October, up from 4.0% and inside the 3.0–4.5% Watch band |
 | central-banks | WATCH | stable | judged | Dec Fed rise priced ~98%; yen near 160/$ | Fed minutes show almost all officials favour more rises; markets price a December move as Japan warns on the yen |
@@ -82,17 +82,17 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | other-cyclones | NORMAL | stable | measured | Xavier (green) only | Only Cyclone Xavier near the Cook Islands and Samoa listed on 21 Nov, at GDACS green |
 | wildfires | NORMAL | stable | measured | GDACS: no orange/red | No GDACS orange or red wildfire alerts on 21 Nov; 79 green-level fire events listed |
 | floods | NORMAL | stable | measured | GDACS: no orange/red | No GDACS orange or red flood alerts on 21 Nov; two green-level flood events listed |
-| earthquakes | NORMAL | stable | measured | Max M6.7, 3× M6+ (7d) | M6.7 quake in Peru's central Andes on 21 Nov rated PAGER green; no M7+ in the past week |
+| earthquakes | NORMAL | stable | measured | Max M6.8, 4× M6+ (7d) | M6.7 quake in Peru's central Andes on 21 Nov rated PAGER green; no M7+ in the past week |
 | volcanic | NORMAL | stable | judged | No red aviation codes found (20 Nov) | No red aviation codes, VEI 4+ eruptions or ash-related airspace closures found by 20 Nov; Kanlaon emitting minor ash |
 | space-weather | NORMAL | stable | measured | G0 S0 R0 | NOAA scales at G0 S0 R0 in the 24 hours to 21 Nov; no geomagnetic storm forecast |
 | cold-storms | NORMAL | stable | judged | No major cold wave (20 Nov) | No top-tier cold or winter-storm warning across a major region on 20 Nov; UK yellow snow and cold alerts have ended |
 | coral-bleaching | NORMAL (c) | worsening | published | No global event declared (20 Nov) | No fifth global bleaching event declared by NOAA as of 20 Nov; El Niño heat raises the risk of one |
-| h5n1 | NORMAL | worsening | judged | Dairy-linked US cases; no human spread | US H5N1 cases remain dairy-linked; Oregon found its first infected herd on 12 Nov; no human spread |
+| h5n1 | NORMAL | worsening | judged | Oregon dairy-linked human case 19 Nov | Oregon confirmed a mild H5 case linked to a Morrow County dairy herd on 19 Nov; no human-to-human spread |
 | novel-outbreaks | NORMAL | stable | judged | No unexplained clusters | No unexplained cluster under international investigation found by 21 Nov |
 | outages | NORMAL | stable | judged | No major outage since 17 Nov | No major cloud or payments outage found since Apple's service disruption on 17 Nov |
 | exploited-vulns | NORMAL | stable | measured | 9 KEV adds (7d), 36 (30d) | CISA added 9 known-exploited vulnerabilities in the seven days to 20 Nov, below the 11-a-week Watch line |
 | displacement | NORMAL | stable | judged | No UN-confirmed event over 500k/month | UNHCR counts up to 50,000 who fled Ethiopia's Moyale clashes into Kenya; no UN-confirmed event over 500,000 a month |
-| uk-weather | NORMAL | stable | measured | No warnings | Met Office lists no weather warnings at 05:40 UK on 21 Nov |
+| uk-weather | NORMAL | stable | measured | 1 warning(s), worst yellow | Met Office lists no weather warnings at 05:40 UK on 21 Nov |
 | uk-disruption | NORMAL | stable | judged | No national strike; consultants' action paused | BMA paused the 25–26 Nov consultants' strike for talks; Tube strikes from 26 Nov are London-only |
 | uk-supply-margins | NORMAL | stable | judged | No notice in force; 5.9 GW winter margin | No Electricity Margin Notice or Gas Margins Notice found in force on 20 Nov; winter outlooks show adequate buffers |
 | uk-floods | NORMAL | stable | measured | No flood warnings | No Environment Agency flood warnings in England on 21 Nov; 12 lower-level flood alerts |
