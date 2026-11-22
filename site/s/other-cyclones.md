@@ -1,9 +1,9 @@
 # Pacific & Indian cyclones — NORMAL (stable)
-id other-cyclones · Weather & Hazards · horizon acute · checked 2026-11-22T05:53Z · at this level since 2026-11-20T05:49Z · stale after 2026-11-22T19:53Z
+id other-cyclones · Weather & Hazards · horizon acute · checked 2026-11-22T11:42Z · text written 2026-11-22T05:53Z · at this level since 2026-11-20T05:49Z · stale after 2026-11-23T01:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/other-cyclones
 
 Value: Xavier (green) only
-Rated on: No GDACS orange/red cyclone alerts
+Rated on: GDACS cyclone: 0 red / 0 orange
 Basis: measured — Set by a fixed rule applied to open data (GDACS cyclone: 0 red / 0 orange). Anyone can reproduce it from the public metrics file.
 
 Only Cyclone Xavier near the Cook Islands listed on 22 Nov, at GDACS green

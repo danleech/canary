@@ -1,5 +1,5 @@
 # Canary — all signals
-as_of 2026-11-22T05:53Z · next run ~11:40 UK · stale after 2026-11-22T19:53Z (36h for daily-tier signals)
+as_of 2026-11-22T11:42Z · next run ~17:40 UK · stale after 2026-11-23T01:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 8 follow a published figure, 54 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -25,7 +25,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | ftse | WATCH | worsening | measured | 10,346, -5.2% from high | FTSE 100 closed near 10,346 on 20 Nov, 5.2% below its 52-week high after a weekly fall of about 4.9% |
 | bond-volatility | WATCH | worsening | measured | MOVE 106, 10y 4.91% | Treasury volatility index MOVE at 106 on 20 Nov, above the 100 Watch line; US 10-year yield 4.91% |
 | dollar | WATCH | worsening | measured | DXY 103.8, 3m +5.0% | Dollar index 103.8 on 20 Nov, near its 52-week high and about 5% higher over three months, at the Watch line |
-| crypto | WATCH | worsening | measured | BTC $58,711, -32% from high | Bitcoin near $58,700 on 22 Nov, 32% below its high and 9.5% lower on the week; no de-peg or exchange failure found |
+| crypto | WATCH | worsening | measured | BTC $60,930, -30% from high | Bitcoin near $58,700 on 22 Nov, 32% below its high and 9.5% lower on the week; no de-peg or exchange failure found |
 | private-credit | WATCH | stable | judged | Fitch: defaults elevated; BDC exits above 5% cap | Fitch says US private credit defaults stay elevated and nontraded BDC redemption requests remain above the usual cap |
 | us-inflation | WATCH | worsening | measured | CPI ~4.1% y/y (Oct); rising 3 months | FRED index data imply US CPI inflation of about 4.1% in October, up from 4.0%, inside the 3.0–4.5% Watch band |
 | central-banks | WATCH | stable | judged | Dec Fed rise priced; yen ~159/$, no intervention | Markets price a Fed rate rise in December while Japan steps up verbal warnings as the yen trades near 159 per dollar |
@@ -67,7 +67,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | nhs-pressure | WATCH | worsening | published | Flu admissions 4.68/100k, low and rising | UKHSA 19 Nov: flu admissions up to 4.68 per 100,000, still low but rising; RSV rising; COVID-19 stable |
 | credit-spreads | NORMAL | worsening | measured | HY OAS 3.52% | US high-yield spreads 3.52% on 19 Nov, a one-year high but inside the 4% Watch line |
 | banking-stress | NORMAL | stable | measured | STLFSI -0.87, CISS 0.01 | Financial stress gauges low: St Louis Fed index -0.87 and ECB stress indicator 0.0095; no bank failure found |
-| funding-stress | NORMAL | stable | measured | SOFR–IORB +1bp, repo $0.0bn | SOFR 1bp above the Fed's reserve rate on 19 Nov; Fed repo use near zero on 20 Nov |
+| funding-stress | NORMAL | stable | measured | SOFR–IORB +1bp, repo $0.1bn | SOFR 1bp above the Fed's reserve rate on 19 Nov; Fed repo use near zero on 20 Nov |
 | yen-carry | NORMAL | stable | measured | ¥158.5/$, 1w -0.8% | Yen near ¥158.5 per dollar on 20 Nov, slightly firmer on the week; no intervention found |
 | us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.29 | Sahm recession indicator 0.00 for October; yield curve +0.29 on 20 Nov; jobless claims 203,000 |
 | euro-growth | NORMAL | stable | published | Q3 GDP +0.4%; Oct composite PMI 51.7 | Euro-area GDP grew 0.4% in Q3 and the final October composite PMI was 51.7; November flash PMIs due 23 Nov |
@@ -92,7 +92,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | outages | NORMAL | stable | judged | No major outage since 17 Nov | No major cloud or payments outage found since Apple's service disruption on 17 Nov |
 | exploited-vulns | NORMAL | stable | measured | 9 KEV adds (7d), 34 (30d) | CISA added 9 known-exploited vulnerabilities in the seven days to 20 Nov, below the 11-a-week Watch line |
 | displacement | NORMAL | stable | judged | No UN-confirmed event over 500k/month | IOM says 300,000+ fled fighting in western Yemen over two months; no UN-confirmed new event over 500,000 a month |
-| uk-weather | NORMAL | stable | measured | 1 warning, worst yellow | One yellow Met Office rain warning for South West England on 22 Nov; no amber or red |
+| uk-weather | NORMAL | stable | measured | 1 warning(s), worst yellow | One yellow Met Office rain warning for South West England on 22 Nov; no amber or red |
 | uk-disruption | NORMAL | stable | judged | No national strike; consultants' action paused | BMA paused the 25–26 Nov consultants' strike for talks; Tube drivers' strikes from 26 Nov are London-only |
 | uk-supply-margins | NORMAL | stable | judged | No notice in force; 5.9 GW winter margin | No Electricity Margin Notice or Gas Margins Notice found in force on 21 Nov; NESO forecasts a 5.9 GW winter surplus |
-| uk-floods | NORMAL | stable | measured | 0 severe, 1 flood warning | One Environment Agency flood warning in England on 22 Nov, for the South Devon coast; 25 flood alerts |
+| uk-floods | NORMAL | stable | measured | 0 severe, 1 flood warnings | One Environment Agency flood warning in England on 22 Nov, for the South Devon coast; 25 flood alerts |

@@ -1,9 +1,9 @@
 # FTSE 100 — WATCH (worsening)
-id ftse · Markets · horizon acute · checked 2026-11-22T05:53Z · at this level since 2026-11-20T17:50Z · stale after 2026-11-22T19:53Z
+id ftse · Markets · horizon acute · checked 2026-11-22T11:42Z · text written 2026-11-22T05:53Z · at this level since 2026-11-20T17:50Z · stale after 2026-11-23T01:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/ftse
 
 Value: 10,346, -5.2% from high
-Rated on: FTSE drawdown 5.2% in 5–12% Watch band
+Rated on: FTSE drawdown 5.17% ≥ 5% Watch line
 Basis: measured — Set by a fixed rule applied to open data (FTSE drawdown % = 5.17). Anyone can reproduce it from the public metrics file.
 
 FTSE 100 closed near 10,346 on 20 Nov, 5.2% below its 52-week high after a weekly fall of about 4.9%

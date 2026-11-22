@@ -1,10 +1,10 @@
 # Canary — world risk status
-as_of 2026-11-22T05:53Z · next run ~11:40 UK · stale after 2026-11-22T19:53Z (36h for daily-tier signals)
+as_of 2026-11-22T11:42Z · next run ~17:40 UK · stale after 2026-11-23T01:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 8 follow a published figure, 54 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 World State 39/100 (Unsettled) · 15 Alert · 43 Watch · 31 Normal
-Headline: Gulf shipping attacks and Russia's 20 Nov mass strike on Ukraine keep conflict Alerts; markets end the week in a stress regime with the VIX near 36 and gold down 8.8% on the week.
+Headline: Attacks on tankers near Hormuz and the US–Iran war keep energy and shipping at Alert, alongside Russia's mass strikes on Ukraine and DR Congo's Ebola outbreak of over 11,500 confirmed cases.
 
 ## Situations (7 cross-domain events; Alerts below are grouped under them)
 - US–Iran war and Gulf energy shock [ALERT, worsening]: UKMTO reported two tanker incidents off Khasab on 21 Nov; Trump called Iran's terms unacceptable on 20 Nov and talks via Qatar continue. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight, uk-energy-cap; watch: iran-nuclear, sanctions, oil, fertiliser, semiconductors

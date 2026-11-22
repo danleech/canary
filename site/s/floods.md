@@ -1,9 +1,9 @@
 # Major floods — NORMAL (stable)
-id floods · Weather & Hazards · horizon acute · checked 2026-11-22T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-22T19:53Z
+id floods · Weather & Hazards · horizon acute · checked 2026-11-22T11:42Z · text written 2026-11-22T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-23T01:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/floods
 
 Value: GDACS: no orange/red
-Rated on: No GDACS orange/red flood alerts
+Rated on: GDACS flood: 0 red / 0 orange
 Basis: measured — Set by a fixed rule applied to open data (GDACS flood: 0 red / 0 orange). Anyone can reproduce it from the public metrics file.
 
 No GDACS orange or red flood alerts on 22 Nov; four green-level flood events listed
