@@ -1,5 +1,5 @@
 # Canary — all signals
-as_of 2026-11-22T17:52Z · next run ~23:40 UK · stale after 2026-11-23T07:52Z (36h for daily-tier signals)
+as_of 2026-11-22T23:41Z · next run ~05:40 UK · stale after 2026-11-23T13:41Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 8 follow a published figure, 54 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -8,7 +8,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | id | status | trend | basis | value | summary |
 |---|---|---|---|---|---|
 | equity-stress | ALERT | worsening | measured | VIX 35.9, S&P -11.6% | VIX closed near 35.9 on 20 Nov, above the 30 Alert line; S&P 500 11.6% below its 52-week high |
-| gold | ALERT | worsening | measured | $3,515, 3m -25.1% | Gold near $3,515 on 20 Nov, 8.8% lower on the week, past the 7% single-week Alert line |
+| gold | ALERT | worsening | measured | $3,576, 3m -23.8% | Gold near $3,515 on 20 Nov, 8.8% lower on the week, past the 7% single-week Alert line |
 | eu-gas | ALERT | stable | measured | €88/MWh | European gas near €88/MWh on 20 Nov, above the €70 Alert line, as Gulf shipping attacks continue |
 | chokepoints | ALERT | stable | judged | 2 tanker incidents off Khasab 21 Nov | UKMTO reported two tanker incidents near Oman's Khasab on 21 Nov, after strikes on tankers on 15, 16 and 18 Nov |
 | freight | ALERT | improving | published | WCI $4,176/FEU (19 Nov), −3% w/w | Drewry container index fell 3% to $4,176 per 40ft on 19 Nov, a fourth weekly fall but still above the $4,000 Alert line |
@@ -24,14 +24,14 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | uk-threat-level | ALERT | stable | judged | Threat level: Severe | UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 22 Nov |
 | ftse | WATCH | worsening | measured | 10,346, -5.2% from high | FTSE 100 closed near 10,346 on 20 Nov, 5.2% below its 52-week high after a weekly fall of about 4.9% |
 | bond-volatility | WATCH | worsening | measured | MOVE 106, 10y 4.91% | Treasury volatility index MOVE at 106 on 20 Nov, above the 100 Watch line; US 10-year yield 4.91% |
-| dollar | WATCH | worsening | measured | DXY 103.8, 3m +5.0% | Dollar index 103.8 on 20 Nov, near its 52-week high and about 5% higher over three months, at the Watch line |
-| crypto | WATCH | worsening | measured | BTC $60,869, -30% from high | Bitcoin near $58,700 on 22 Nov, 32% below its high and 9.5% lower on the week; no de-peg or exchange failure found |
+| dollar | WATCH | worsening | measured | DXY 103.8, 3m +4.7% | Dollar index 103.8 on 20 Nov, near its 52-week high and about 5% higher over three months, at the Watch line |
+| crypto | WATCH | worsening | measured | BTC $61,194, -29% from high | Bitcoin near $58,700 on 22 Nov, 32% below its high and 9.5% lower on the week; no de-peg or exchange failure found |
 | private-credit | WATCH | stable | judged | Nontraded BDC exit requests above 5% cap | Redemption requests at most nontraded BDCs stay above their 5% quarterly cap; no wave of gates or forced sales |
 | us-inflation | WATCH | worsening | measured | CPI ~4.1% y/y (Oct); rising 3 months | FRED index data imply US CPI inflation of about 4.1% in October, up from 4.0%, inside the 3.0–4.5% Watch band |
 | china-economy | WATCH | worsening | judged | Shimao default (Oct); Huafa cut to junk 9 Nov | Developer defaults resume: Shimao defaulted in Oct, a Zhongrong unit faces liquidation, state-owned Huafa cut to junk |
 | central-banks | WATCH | stable | judged | Dec Fed rise fully priced; yen ~158.5/$ | Markets fully price a December Fed rate rise as Waller floats 50bp; Japan warns on the yen but has not intervened |
 | sovereign-debt | WATCH | stable | judged | France–Bund ~150–156bp; OAT 10y near 4.9% | The France–Bund spread hovers around the 150bp Alert line: 156bp on 16 Nov, about 149bp implied on 18 Nov |
-| oil | WATCH | improving | measured | $90.0, 1m -23% | Brent near $90 on 20 Nov, 23% lower over a month; Hormuz tanker attacks continue without a confirmed 2 mb/d outage |
+| oil | WATCH | improving | measured | $89.3, 1m -24% | Brent near $90 on 20 Nov, 23% lower over a month; Hormuz tanker attacks continue without a confirmed 2 mb/d outage |
 | food-prices | WATCH | improving | published | FAO index 133.9 (Oct), +5.9% y/y | FAO food price index 133.9 in October, below the 135 Alert line but up 5.9% on a year; next release 4 Dec |
 | critical-minerals | WATCH | stable | judged | Rare-earth pause extended to 10 Jan 2027 | China extended its pause on some rare-earth export controls to 10 Jan 2027 on 9 Nov; April 2025 licensing stays |
 | fertiliser | WATCH | stable | judged | Egypt urea $535/t FOB, +17% since Sep | Egyptian urea rose to $535 a tonne after gas cuts to plants; Hormuz flows near pre-war levels but tanker attacks go on |
@@ -69,7 +69,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | credit-spreads | NORMAL | worsening | measured | HY OAS 3.52% | US high-yield spreads 3.52% on 19 Nov, a one-year high but inside the 4% Watch line |
 | banking-stress | NORMAL | stable | measured | STLFSI -0.87, CISS 0.01 | Financial stress gauges low: St Louis Fed index -0.87 and ECB stress indicator 0.0095; no bank failure found |
 | funding-stress | NORMAL | stable | measured | SOFR–IORB +1bp, repo $0.1bn | SOFR 1bp above the Fed's reserve rate on 19 Nov; Fed repo use near zero on 20 Nov |
-| yen-carry | NORMAL | stable | measured | ¥158.5/$, 1w -0.8% | Yen near ¥158.5 per dollar on 20 Nov, slightly firmer on the week; no intervention found |
+| yen-carry | NORMAL | stable | measured | ¥158.8/$, 1w -0.6% | Yen near ¥158.5 per dollar on 20 Nov, slightly firmer on the week; no intervention found |
 | us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.29 | Sahm recession indicator 0.00 for October; yield curve +0.29 on 20 Nov; jobless claims 203,000 |
 | euro-growth | NORMAL | stable | published | Q3 GDP +0.4%; Oct composite PMI 51.7 | Euro-area GDP grew 0.4% in Q3, confirmed on 13 Nov; October composite PMI 51.7; November flash PMIs due 23 Nov |
 | global-pmi | NORMAL | improving | published | Global composite 53.2 (Oct) | Global composite PMI 53.2 in October, down from 54.3 but above the 51 Watch line; November flashes due 23 Nov |

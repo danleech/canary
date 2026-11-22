@@ -1,5 +1,5 @@
 # Gulf / US–Iran war — ALERT (stable)
-id gulf-iran · Armed Conflict · horizon acute · checked 2026-11-22T17:52Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-23T07:52Z
+id gulf-iran · Armed Conflict · horizon acute · checked 2026-11-22T23:41Z · text written 2026-11-22T17:52Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-23T13:41Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/gulf-iran
 
 Value: Qatar mediation 20–21 Nov; no ceasefire
