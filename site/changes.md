@@ -1,7 +1,7 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-21T23:42Z · next run ~05:40 UK · stale after 2026-11-22T13:42Z (36h for daily-tier signals)
+as_of 2026-11-22T05:53Z · next run ~11:40 UK · stale after 2026-11-22T19:53Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
-Basis: 27 measured from open data, 9 follow a published figure, 53 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
+Basis: 27 measured from open data, 8 follow a published figure, 54 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 - 2026-11-21T17:52Z Extreme heat [heat]: WATCH→NORMAL — Queensland's severe heatwave warning ended on 19 Nov; Philippine danger-level heat indices are local; no deadly heatwave
 - 2026-11-20T17:50Z Gold (fear gauge) [gold]: WATCH→ALERT — Gold near $3,531 on 20 Nov, down 8.4% on the week, past the 7% single-week Alert line, as Fed rate-rise bets lift the dollar
@@ -24,4 +24,3 @@ Basis: 27 measured from open data, 9 follow a published figure, 53 are AI judgem
 - 2026-11-16T05:51Z UK weather warnings [uk-weather]: NORMAL→WATCH — Met Office yellow ice and snow warnings cover Scotland, northern England and the Midlands from 15 to 17 Nov
 - 2026-11-16T05:51Z Exploited vulnerabilities [exploited-vulns]: WATCH→NORMAL — CISA added 8 known-exploited vulnerabilities in the seven days to 13 Nov, back below the 11-a-week Watch line
 - 2026-11-16T05:51Z Major cyber incidents [cyber]: ALERT→WATCH — France's 9 Nov attribution of store fridge sabotage to an IRGC unit is a week old; no new national-scale attack found
-- 2026-11-14T23:42Z Crypto stress [crypto]: NORMAL→WATCH — Bitcoin near $63,400 on 14 Nov, 27% below its 52-week high and 14% lower on the week; no stablecoin de-peg found

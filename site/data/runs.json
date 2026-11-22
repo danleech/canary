@@ -1,5 +1,55 @@
 [
  {
+  "t": "2026-11-22T05:53:38Z",
+  "applied": 41,
+  "changed": [],
+  "warnings": [
+   "sources: usnews.com supplies 5 of 34 news citations (15%); diversify next run (errors above 20%)"
+  ],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 1,
+   "judged": 19
+  },
+  "held": 0,
+  "sources": {
+   "citations": 73,
+   "news_citations": 34,
+   "outlets": 36,
+   "top_news_outlets": [
+    [
+     "usnews.com",
+     5
+    ],
+    [
+     "kyivpost.com",
+     3
+    ],
+    [
+     "fortune.com",
+     2
+    ],
+    [
+     "gulfnews.com",
+     2
+    ],
+    [
+     "timesofisrael.com",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 18,
+   "predicted_active": 2,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
   "t": "2026-11-21T23:42:14Z",
   "applied": 41,
   "changed": [],
