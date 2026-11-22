@@ -1,9 +1,9 @@
 # UK flood warnings — NORMAL (stable)
-id uk-floods · UK Watch · horizon acute · checked 2026-11-22T11:42Z · text written 2026-11-22T05:53Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-23T01:42Z
+id uk-floods · UK Watch · horizon acute · checked 2026-11-22T17:52Z · text written 2026-11-22T05:53Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-23T07:52Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/uk-floods
 
-Value: 0 severe, 1 flood warnings
-Rated on: EA: 0 severe, 1 warnings
+Value: No flood warnings
+Rated on: EA: 0 severe, 0 warnings
 Basis: measured — Set by a fixed rule applied to open data (EA: 0 severe, 1 warnings). Anyone can reproduce it from the public metrics file.
 
 One Environment Agency flood warning in England on 22 Nov, for the South Devon coast; 25 flood alerts

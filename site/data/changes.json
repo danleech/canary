@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-22T17:52:22Z",
+  "id": "china-economy",
+  "name": "China economy",
+  "from": "green",
+  "to": "amber",
+  "reason": "Developer defaults resume: Shimao defaulted in Oct, a Zhongrong unit faces liquidation, state-owned Huafa cut to junk"
+ },
+ {
   "t": "2026-11-21T17:52:02Z",
   "id": "heat",
   "name": "Extreme heat",

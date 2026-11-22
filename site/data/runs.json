@@ -1,5 +1,60 @@
 [
  {
+  "t": "2026-11-22T17:52:22Z",
+  "applied": 89,
+  "changed": [
+   "china-economy"
+  ],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 27,
+   "published": 8,
+   "judged": 54
+  },
+  "held": 39,
+  "sources": {
+   "citations": 94,
+   "news_citations": 70,
+   "outlets": 74,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     3
+    ],
+    [
+     "spglobal.com",
+     3
+    ],
+    [
+     "criticalthreats.org",
+     2
+    ],
+    [
+     "investinglive.com",
+     2
+    ],
+    [
+     "itv.com",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 59,
+   "predicted_active": 3,
+   "quiet_but_status_changed": [
+    "china-economy"
+   ],
+   "quiet_but_trend_changed": [
+    "china-economy",
+    "em-stress"
+   ]
+  }
+ },
+ {
   "t": "2026-11-22T11:42:04Z",
   "applied": 41,
   "changed": [],

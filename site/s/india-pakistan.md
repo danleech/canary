@@ -1,5 +1,5 @@
 # India–Pakistan — WATCH (stable)
-id india-pakistan · Armed Conflict · horizon acute · checked 2026-11-22T11:42Z · text written 2026-11-22T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-23T01:42Z
+id india-pakistan · Armed Conflict · horizon acute · checked 2026-11-22T17:52Z · text written 2026-11-22T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-23T07:52Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/india-pakistan
 
 Value: Indus treaty in abeyance; no LoC strike
