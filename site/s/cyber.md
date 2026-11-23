@@ -1,16 +1,16 @@
 # Major cyber incidents — WATCH (stable)
-id cyber · Technology & Cyber · horizon acute · checked 2026-11-23T11:43Z · text written 2026-11-23T05:53Z · at this level since 2026-11-16T05:51Z · stale after 2026-11-24T01:43Z
+id cyber · Technology & Cyber · horizon acute · checked 2026-11-23T17:52Z · at this level since 2026-11-16T05:51Z · stale after 2026-11-24T07:52Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/cyber
 
-Value: USDA breach took systems offline 19 Nov
-Rated on: Attack disrupting a critical service (USDA payment systems offline, 16–19 Nov): Watch
-Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
+Value: Guadeloupe hospital hit by cyberattack
+Rated on: Attack disrupting a critical service (hospital) = Watch; no national-scale attack
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-A security breach forced USDA to take farm payment systems offline from 16 Nov; no national-scale attack found
+A cyberattack on Guadeloupe's university hospital from 22 Nov forced paper records and postponed planned care
 
-Why it's at this level: USDA reset all database passwords after its security operations centre found an intrusion, taking farm payment tools, loan-status applications and some staff VPN access offline, with outages expected through the week of 16 Nov; the attacker and any data theft were not known (Nextgov, 19 Nov). Vanderbilt University disabled its Microsoft services after a cyber incident on 17 Nov, and CISA added exploited VMware vCenter, SAP and Cisco flaws to its catalogue on 20 Nov (IBTimes; CISA). Disruption to a federal payments service keeps Watch; no national-scale attack was found.
+Why it's at this level: Guadeloupe's university hospital triggered its emergency plan on 22 Nov after a cyberattack disabled IT systems and phone lines across its sites; planned operations were postponed and emergency calls still work (Outre-mer La 1ère). CISA added nine exploited flaws to its catalogue in the week to 23 Nov, including VMware vCenter, SAP and Cisco flaws on 20 Nov (CISA). Disruption to a hospital keeps Watch; no national-scale attack was found.
 
-What this means for you: Organisations should follow NCSC and CISA advisories and patch flaws on CISA's known-exploited list. US farmers using USDA online services may face delays to payments and loan updates.
+What this means for you: Patients of affected hospitals should follow the hospital's and local health authority's instructions; in France, call 15 in an emergency. Organisations can check CISA's exploited-vulnerabilities catalogue and NCSC guidance for patching.
 
 Why it matters: Ransomware and state hacking now shut down hospitals, retailers, carmakers and airports for weeks.
 What moves it: Ransomware gangs, state actors, zero-days, supply-chain compromises.
@@ -18,6 +18,5 @@ What moves it: Ransomware gangs, state actors, zero-days, supply-chain compromis
 Rubric — Alert: National-scale attack on critical infrastructure (power, health, finance), or a destructive state-attributed attack. | Watch: Ransomware or attack disrupting a large company or critical service, or a mass-exploited zero-day. | Normal: No major incidents disrupting critical services this week.
 
 Sources:
-- Nextgov/FCW — USDA grapples with security breach as IT staff take multiple systems offline (2026-11-19) https://www.nextgov.com/cybersecurity/2026/11/usda-grapples-security-breach-it-staff-take-multiple-systems-offline/417350/
-- IBTimes UK — Cyberattacks and outages in November: the major US disruptions reported so far (2026-11-18) https://www.ibtimes.co.uk/us-businesses-hit-cyber-incidents-outages-1832974
-- CISA — Known Exploited Vulnerabilities Catalog (2026-11-20) https://www.cisa.gov/known-exploited-vulnerabilities-catalog
+- Outre-mer La 1ère — Cyberattaque au CHU de Guadeloupe, plan blanc déclenché (2026-11-23) https://la1ere.franceinfo.fr/guadeloupe/cyberattaque-au-chu-de-guadeloupe-plusieurs-jours-de-perturbations-a-prevoir-l-hopital-s-organise-1760535.html
+- CISA — Known Exploited Vulnerabilities catalogue (2026-11-23) https://www.cisa.gov/known-exploited-vulnerabilities-catalog

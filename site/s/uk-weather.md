@@ -1,10 +1,10 @@
 # UK weather warnings — NORMAL (stable)
-id uk-weather · UK Watch · horizon acute · checked 2026-11-23T11:43Z · text written 2026-11-23T05:53Z · at this level since 2026-11-17T11:42Z · stale after 2026-11-24T01:43Z
+id uk-weather · UK Watch · horizon acute · checked 2026-11-23T17:52Z · text written 2026-11-23T05:53Z · at this level since 2026-11-17T11:42Z · stale after 2026-11-24T07:52Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/uk-weather
 
-Value: No warnings
-Rated on: worst warning: none
-Basis: measured — Set by a fixed rule applied to open data (worst warning: none). Anyone can reproduce it from the public metrics file.
+Value: 1 warning(s), worst yellow
+Rated on: worst warning: yellow
+Basis: measured — Set by a fixed rule applied to open data (worst warning: yellow). Anyone can reproduce it from the public metrics file.
 
 No Met Office weather warnings in force on 23 Nov
 

@@ -1,5 +1,5 @@
 # Novel / unexplained outbreaks — NORMAL (stable)
-id novel-outbreaks · Global Health · horizon acute · checked 2026-11-23T11:43Z · text written 2026-11-23T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-24T01:43Z
+id novel-outbreaks · Global Health · horizon acute · checked 2026-11-23T17:52Z · text written 2026-11-23T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-24T07:52Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/novel-outbreaks
 
 Value: No unexplained clusters

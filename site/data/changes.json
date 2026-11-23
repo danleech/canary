@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-23T17:52:18Z",
+  "id": "ftse",
+  "name": "FTSE 100",
+  "from": "amber",
+  "to": "green",
+  "reason": "FTSE 100 near 10,481 on 23 Nov, 3.9% below its 52-week high after recovering from the 20 Nov low"
+ },
+ {
   "t": "2026-11-23T05:53:09Z",
   "id": "gold",
   "name": "Gold (fear gauge)",
