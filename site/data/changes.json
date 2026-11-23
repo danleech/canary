@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-23T05:53:09Z",
+  "id": "gold",
+  "name": "Gold (fear gauge)",
+  "from": "red",
+  "to": "amber",
+  "reason": "Gold near $3,620 on 23 Nov, 6.3% lower on the week and 22% lower over three months; weekly fall now inside the 7% line"
+ },
+ {
   "t": "2026-11-22T17:52:22Z",
   "id": "china-economy",
   "name": "China economy",

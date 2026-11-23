@@ -1,16 +1,16 @@
 # Banking system stress — NORMAL (stable)
-id banking-stress · Markets · horizon acute · checked 2026-11-22T23:41Z · text written 2026-11-22T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-23T13:41Z
+id banking-stress · Markets · horizon acute · checked 2026-11-23T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-23T19:53Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/banking-stress
 
 Value: STLFSI -0.87, CISS 0.01
-Rated on: STLFSI -0.87 below the 0 Watch line; ECB CISS 0.01 below the 0.25 Watch line
+Rated on: STLFSI -0.87 < 0 and CISS 0.0095 < 0.25; no bank failures
 Basis: measured — Set by a fixed rule applied to open data (STLFSI = -0.87 · ECB CISS = 0.01). Anyone can reproduce it from the public metrics file.
 
 Financial stress gauges low: St Louis Fed index -0.87 and ECB stress indicator 0.0095; no bank failure found
 
-Why it's at this level: The St Louis Fed Financial Stress Index was -0.87 in the week to 13 Nov, and the ECB's systemic stress indicator was 0.0095 on 19 Nov, far below the Watch lines (FRED; ECB). Searches to 22 Nov found no mid-sized or larger bank failure, rescue or emergency facility, despite the equity sell-off.
+Why it's at this level: The St Louis Fed Financial Stress Index was -0.87 in the week to 13 Nov, and the ECB's systemic stress indicator was 0.0095 on 19 Nov, far below the Watch lines (FRED; ECB). Searches to 23 Nov found no mid-sized or larger bank failure, rescue or emergency facility, despite the equity sell-off.
 
-What this means for you: Banking-system stress gauges are in a normal range. Deposit protection schemes such as the UK's FSCS cover eligible deposits regardless.
+What this means for you: No sign of strain in the banking system. Deposit protection schemes such as the FSCS in the UK cover eligible deposits.
 
 Why it matters: Bank failures turn market losses into credit crunches; 2008 and 2023 both began as 'contained' bank problems.
 What moves it: Rate shocks to bond portfolios, commercial property losses, deposit flight, private-credit links.

@@ -1,16 +1,16 @@
 # US–China / Taiwan — WATCH (stable)
-id us-china · Geopolitics · horizon acute · checked 2026-11-22T23:41Z · text written 2026-11-22T05:53Z · at this level since 2026-11-07T05:46Z · stale after 2026-11-23T13:41Z
+id us-china · Geopolitics · horizon acute · checked 2026-11-23T05:53Z · at this level since 2026-11-07T05:46Z · stale after 2026-11-23T19:53Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/us-china
 
-Value: 2 aircraft, 7 ships near Taiwan 21 Nov
-Rated on: Large-scale PLA deployments around Taiwan = Watch
+Value: 2 aircraft, 7 ships, 4 balloons 21 Nov
+Rated on: Watch: large-scale PLA activity around Taiwan in November (230 aircraft, 187 ships to 21 Nov); no blockade or clash
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-Taiwan tracked 2 Chinese military aircraft and 7 ships on 20–21 Nov, after a 100+ vessel deployment in early November
+Taiwan tracked 2 Chinese military aircraft, 7 ships and 4 balloons to 21 Nov; November totals pass 230 aircraft
 
-Why it's at this level: Taiwan's defence ministry tracked two Chinese military aircraft, six naval vessels and one official ship around the island in the 24 hours to 06:00 on 21 Nov, with both aircraft crossing the median line (Taiwan News). In early November Taiwan reported more than 100 Chinese naval and coastguard vessels across the western Pacific and a one-day high of 49 aircraft sorties (SCMP). No blockade or clash was found, so Watch holds.
+Why it's at this level: Taiwan's defence ministry tracked two Chinese military aircraft, six naval vessels, one official ship and four balloons in the 24 hours to 06:00 on 21 Nov; November's running total reached 230 aircraft and 187 ships (Taiwan News). The ministry reported 10 Chinese balloons over three days to 23 Nov (Taipei Times). Activity has eased from a one-day high of 49 aircraft earlier in the month, but no blockade, clash or severed channel was found, so Watch holds.
 
-What this means for you: Tensions are elevated but routine trade and travel continue. Firms reliant on Taiwan-made chips and Taiwan Strait shipping are the most exposed to any escalation.
+What this means for you: No change for travel or trade with Taiwan. Check FCDO travel advice for Taiwan; a large exercise or blockade would chiefly affect shipping, flights and electronics supply chains.
 
 Why it matters: The world's two largest economies; a Taiwan crisis would halt most advanced chip supply and risk great-power war.
 What moves it: PLA exercises, tariffs and tech controls, diplomacy, Taiwan politics, South China Sea incidents.
@@ -19,4 +19,4 @@ Rubric — Alert: Blockade or 'quarantine' of Taiwan, military clash, or severed
 
 Sources:
 - Taiwan News — Taiwan tracks 2 Chinese military aircraft, 7 ships and 4 balloons (2026-11-21) https://www.taiwannews.com.tw/news/6479444
-- SCMP — Taiwan flags massive PLA naval mobilisation, spike in air sorties (2026-11-04) https://www.scmp.com/news/china/military/article/3373249/taiwan-flags-massive-pla-naval-mobilisation-spike-air-sorties
+- Taipei Times — MND detects 10 Chinese balloons over three days (2026-11-23) https://www.taipeitimes.com/News/taiwan/archives/2026/11/23/2003868234
