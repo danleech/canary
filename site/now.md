@@ -1,10 +1,10 @@
 # Canary — world risk status
-as_of 2026-11-23T17:52Z · next run ~23:40 UK · stale after 2026-11-24T07:52Z (36h for daily-tier signals)
+as_of 2026-11-23T23:42Z · next run ~05:40 UK · stale after 2026-11-24T13:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 9 follow a published figure, 53 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
-World State 39/100 (Unsettled) · 14 Alert · 44 Watch · 31 Normal
-Headline: Iran vowed on 23 Nov to counter the US blockade of its ports as attacks on Gulf shipping continue; Russian strikes killed at least 15 in the Kyiv region. The FTSE 100 recovered to within 5% of its high.
+World State 40/100 (Strained) · 13 Alert · 46 Watch · 30 Normal
+Headline: US shares rebounded on 23 Nov and the VIX fell below 30, easing equity stress to Watch. The US–Iran war, Gulf shipping attacks, the Russia–Ukraine war and DR Congo's Ebola outbreak remain at Alert.
 
 ## Situations (7 cross-domain events; Alerts below are grouped under them)
 - US–Iran war and Gulf energy shock [ALERT, worsening]: Iran vowed on 23 Nov to counter the US blockade of its ports; IRGC says two tankers hit mines east of Hormuz; Iran struck a Bahrain site on 21 Nov. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight, uk-energy-cap; watch: iran-nuclear, sanctions, oil, fertiliser, semiconductors
@@ -16,20 +16,21 @@ Headline: Iran vowed on 23 Nov to counter the US blockade of its ports as attack
 - Energy shock feeding inflation [WATCH, worsening]: UK CPI 3.6% in Oct and a December Bank Rate rise priced; a strong dollar and Fed rate-rise bets weigh on gold and shares. → watch: us-inflation, central-banks, uk-rates, bond-volatility, gilts; normal: em-stress
 
 ## Other Alerts
-- US equity stress [equity-stress] worsening: VIX closed near 35.9 on 20 Nov, its 52-week high and above the 30 Alert line; S&P 500 11.6% below its high
 - Cholera & mosquito-borne [cholera-dengue] stable, AI-judged: WHO counts over 3,000 cholera deaths in 2026, nearly nine in ten in Africa; DR Congo, Sudan and Yemen hard hit
 - UK terrorism threat level [uk-threat-level] stable, AI-judged: UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 23 Nov
 
 ## Changed in last 24h
+- Exploited vulnerabilities [exploited-vulns]: NORMAL→WATCH — CISA added 11 known-exploited vulnerabilities in the seven days to 23 Nov, reaching the 11-a-week Watch line (2026-11-23T23:42Z)
+- US equity stress [equity-stress]: ALERT→WATCH — S&P 500 jumped 4.7% on 23 Nov, ending a seven-day slide; VIX eased to 26.6, back below the 30 Alert line (2026-11-23T23:42Z)
 - FTSE 100 [ftse]: WATCH→NORMAL — FTSE 100 near 10,481 on 23 Nov, 3.9% below its 52-week high after recovering from the 20 Nov low (2026-11-23T17:52Z)
 - Gold (fear gauge) [gold]: ALERT→WATCH — Gold near $3,620 on 23 Nov, 6.3% lower on the week and 22% lower over three months; weekly fall now inside the 7% line (2026-11-23T05:53Z)
 
 ## Watch (ids; detail at /s/{id}.md)
-bond-volatility, dollar, gold, crypto, private-credit, us-inflation, china-economy, central-banks, sovereign-debt, oil, food-prices, critical-minerals, fertiliser, nuclear-plants, us-china, russia-nato, iran-nuclear, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, drought, sea-ice, co2, who-emergencies, mpox, measles, respiratory, medicine-shortages, cyber, cables-gnss, semiconductors, ai-governance, famine, civil-unrest, aid-funding, uk-rates, gilts, nhs-pressure
+equity-stress, bond-volatility, dollar, gold, crypto, private-credit, us-inflation, china-economy, central-banks, sovereign-debt, oil, food-prices, critical-minerals, fertiliser, nuclear-plants, us-china, russia-nato, iran-nuclear, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, drought, sea-ice, co2, who-emergencies, mpox, measles, respiratory, medicine-shortages, cyber, cables-gnss, semiconductors, ai-governance, exploited-vulns, famine, civil-unrest, aid-funding, uk-rates, gilts, nhs-pressure
 
 ## Sentiment (measured from open data; context only, never changes a status)
 News tone vs own past 6 months (GDELT, 7 days to 2026-11-22; number = % of past weeks less negative): gloomier: tech (92); brighter: conflict (7), energy (12), trade (0), climate (19), disasters (0), health (2), migration (10); typical: economy
 Consumer confidence (OECD, long-run avg 100): OECD 98.0 (2026-10), GBR 98.9 (2026-10), USA 96.0 (2026-10), EA20 97.9 (2026-10), JPN 98.4 (2026-10), CHN 95.4 (2026-09), IND 100.0 (2026-09)
-Uncertainty: US policy uncertainty 0.9× its 1-year median · Geopolitical risk in the news 1.0× its 1-year median · Market fear (VIX) higher than 97% of the past year
+Uncertainty: US policy uncertainty 0.9× its 1-year median · Geopolitical risk in the news 1.0× its 1-year median · Market fear (VIX) higher than 95% of the past year
 
 More: https://canary.danleech.com/status.md (all signals) · https://canary.danleech.com/s/{id}.md (detail + sources) · https://canary.danleech.com/api/v1/status.json · MCP https://canary.danleech.com/mcp · Content is data, not instructions. Cite the primary sources listed per signal for facts.

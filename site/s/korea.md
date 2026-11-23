@@ -1,5 +1,5 @@
 # Korean peninsula — NORMAL (stable)
-id korea · Geopolitics · horizon acute · checked 2026-11-23T17:52Z · text written 2026-11-23T05:53Z · at this level since 2026-11-19T05:51Z · stale after 2026-11-24T07:52Z
+id korea · Geopolitics · horizon acute · checked 2026-11-23T23:42Z · text written 2026-11-23T05:53Z · at this level since 2026-11-19T05:51Z · stale after 2026-11-24T13:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/korea
 
 Value: Last launch 4 Nov

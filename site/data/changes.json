@@ -1,5 +1,21 @@
 [
  {
+  "t": "2026-11-23T23:42:45Z",
+  "id": "exploited-vulns",
+  "name": "Exploited vulnerabilities",
+  "from": "green",
+  "to": "amber",
+  "reason": "CISA added 11 known-exploited vulnerabilities in the seven days to 23 Nov, reaching the 11-a-week Watch line"
+ },
+ {
+  "t": "2026-11-23T23:42:45Z",
+  "id": "equity-stress",
+  "name": "US equity stress",
+  "from": "red",
+  "to": "amber",
+  "reason": "S&P 500 jumped 4.7% on 23 Nov, ending a seven-day slide; VIX eased to 26.6, back below the 30 Alert line"
+ },
+ {
   "t": "2026-11-23T17:52:18Z",
   "id": "ftse",
   "name": "FTSE 100",
