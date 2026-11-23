@@ -1,5 +1,5 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-23T05:53Z · next run ~11:40 UK · stale after 2026-11-23T19:53Z (36h for daily-tier signals)
+as_of 2026-11-23T11:43Z · next run ~17:40 UK · stale after 2026-11-24T01:43Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 9 follow a published figure, 53 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -22,4 +22,3 @@ Basis: 27 measured from open data, 9 follow a published figure, 53 are AI judgem
 - 2026-11-17T11:42Z UK weather warnings [uk-weather]: WATCH→NORMAL — Met Office lists no weather warnings at 11:40 UK on 17 Nov after the morning's yellow snow warnings lapsed
 - 2026-11-16T23:43Z Pacific & Indian cyclones [other-cyclones]: NORMAL→WATCH — GDACS orange alert for Cyclone Akvan in the Bay of Bengal; IMD expects landfall in Andhra Pradesh by noon on 20 Nov
 - 2026-11-16T17:52Z US equity stress [equity-stress]: NORMAL→WATCH — VIX 21.6 on 16 Nov, above the 20 Watch line, as tech selling pushed the S&P 500 4.7% below its high
-- 2026-11-16T11:42Z Internet & cloud outages [outages]: WATCH→NORMAL — The 13 Nov US flight ground stop and the 12–13 Nov Microsoft 365 outage both ended over 48h ago; no new major outage

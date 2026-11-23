@@ -1,10 +1,10 @@
 # UK flood warnings — NORMAL (stable)
-id uk-floods · UK Watch · horizon acute · checked 2026-11-23T05:53Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-23T19:53Z
+id uk-floods · UK Watch · horizon acute · checked 2026-11-23T11:43Z · text written 2026-11-23T05:53Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-24T01:43Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/uk-floods
 
-Value: 0 severe, 1 flood warning
-Rated on: 0 severe; 1 flood warning (< 10)
-Basis: measured — Set by a fixed rule applied to open data (EA: 0 severe, 1 warnings). Anyone can reproduce it from the public metrics file.
+Value: No flood warnings
+Rated on: EA: 0 severe, 0 warnings
+Basis: measured — Set by a fixed rule applied to open data (EA: 0 severe, 0 warnings). Anyone can reproduce it from the public metrics file.
 
 One Environment Agency flood warning in England on 23 Nov, for the River Ottery in Devon/Cornwall; 24 flood alerts
 

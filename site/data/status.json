@@ -18,13 +18,13 @@
      "date": "2026-11-20"
     }
    ],
-   "value": "VIX 35.9, S&P -11.6%",
-   "value_num": 35.89,
-   "checked_at": "2026-11-23T05:53:09Z",
+   "value": "VIX 30.1, S&P -11.6%",
+   "value_num": 30.15,
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-11-20T17:50:58Z",
-   "rubric_hit": "VIX 35.9 > 30 Alert line; S&P drawdown 11.6% (< 15%)",
+   "rubric_hit": "VIX 30.1 > 30 Alert line",
    "basis": "measured",
-   "basis_detail": "VIX=35.89; S&P drawdown %=11.62",
+   "basis_detail": "VIX=30.15; S&P drawdown %=11.62",
    "assessed_at": "2026-11-23T05:53:09Z"
   },
   "ftse": {
@@ -40,13 +40,13 @@
      "date": "2026-11-20"
     }
    ],
-   "value": "10,346, -5.2% from high",
-   "value_num": 10346,
-   "checked_at": "2026-11-23T05:53:09Z",
+   "value": "10,399, -4.7% from high",
+   "value_num": 10399.39,
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-11-20T17:50:58Z",
-   "rubric_hit": "FTSE drawdown 5.2% within 5–12% Watch band; no daily fall > 2.5%",
+   "rubric_hit": "FTSE drawdown 4.69% has not yet cleared the 4.5% exit line, so Watch holds",
    "basis": "measured",
-   "basis_detail": "FTSE drawdown %=5.17",
+   "basis_detail": "FTSE drawdown %=4.69",
    "assessed_at": "2026-11-23T05:53:09Z"
   },
   "bond-volatility": {
@@ -68,10 +68,10 @@
     }
    ],
    "value": "MOVE 106, 10y 4.91%",
-   "value_num": 106.3,
-   "checked_at": "2026-11-23T05:53:09Z",
+   "value_num": 106.312,
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "MOVE 106 within 100–140 Watch band; 10y 1m move 8bp (< 40bp)",
+   "rubric_hit": "MOVE 106 ≥ 100 Watch line",
    "basis": "measured",
    "basis_detail": "MOVE=106.31; US10y 1m move bp=7.60",
    "assessed_at": "2026-11-23T05:53:09Z"
@@ -91,9 +91,9 @@
    ],
    "value": "HY OAS 3.52%",
    "value_num": 3.52,
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "HY OAS 3.52% < 4.0% Watch line; 1m widening 25bp (< 100bp)",
+   "rubric_hit": "HY OAS 3.52% below the 4% Watch line",
    "basis": "measured",
    "basis_detail": "HY OAS %=3.52",
    "assessed_at": "2026-11-23T05:53:09Z"
@@ -116,13 +116,13 @@
      "date": "2026-11-19"
     }
    ],
-   "value": "DXY 103.7, 3m +4.6%",
-   "value_num": 103.7,
-   "checked_at": "2026-11-23T05:53:09Z",
+   "value": "DXY 103.9, 3m +4.8%",
+   "value_num": 103.892,
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-11-18T11:49:31Z",
-   "rubric_hit": "DXY 3m +4.6%, at the 5% Watch line (held under hysteresis); level inside 90–108",
+   "rubric_hit": "DXY 3m move 4.76% has not yet cleared the 4.5% exit line, so Watch holds",
    "basis": "measured",
-   "basis_detail": "DXY 3m move %=4.88",
+   "basis_detail": "DXY 3m move %=4.76",
    "assessed_at": "2026-11-23T05:53:09Z"
   },
   "banking-stress": {
@@ -143,13 +143,13 @@
      "date": "2026-11-19"
     }
    ],
-   "value": "STLFSI -0.87, CISS 0.01",
-   "value_num": -0.87,
-   "checked_at": "2026-11-23T05:53:09Z",
+   "value": "STLFSI -0.87, CISS 0.02",
+   "value_num": -0.8655,
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "STLFSI -0.87 < 0 and CISS 0.0095 < 0.25; no bank failures",
+   "rubric_hit": "STLFSI -0.87 below the 0 Watch line; ECB CISS 0.02 below the 0.25 Watch line",
    "basis": "measured",
-   "basis_detail": "STLFSI=-0.87; ECB CISS=0.01",
+   "basis_detail": "STLFSI=-0.87; ECB CISS=0.02",
    "assessed_at": "2026-11-23T05:53:09Z"
   },
   "gold": {
@@ -171,12 +171,12 @@
     }
    ],
    "value": "$3,620, 3m -22.2%",
-   "value_num": 3619.5,
-   "checked_at": "2026-11-23T05:53:09Z",
+   "value_num": 3619.6,
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-11-23T05:53:09Z",
-   "rubric_hit": "3m fall 22% > 8% = Watch; 1w move -6.3% inside the 7% Alert line",
+   "rubric_hit": "3m fall -22.2% (Watch)",
    "basis": "measured",
-   "basis_detail": "Gold 3m gain %=-23.26; 3m fall -23.3%",
+   "basis_detail": "Gold 3m gain %=-22.21; 3m fall -22.2%",
    "assessed_at": "2026-11-23T05:53:09Z"
   },
   "crypto": {
@@ -192,13 +192,13 @@
      "date": "2026-11-20"
     }
    ],
-   "value": "BTC $61,553, -29% from high",
-   "value_num": 61553,
-   "checked_at": "2026-11-23T05:53:09Z",
+   "value": "BTC $61,453, -29% from high",
+   "value_num": 61453.31,
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-11-14T23:42:22Z",
-   "rubric_hit": "BTC drawdown 28.9% within 25–45% Watch band; no de-peg or exchange failure",
+   "rubric_hit": "BTC drawdown 29% ≥ 25% Watch line",
    "basis": "measured",
-   "basis_detail": "BTC drawdown %=29.23",
+   "basis_detail": "BTC drawdown %=29.04",
    "assessed_at": "2026-11-23T05:53:09Z"
   },
   "us-recession": {
@@ -226,9 +226,9 @@
    ],
    "value": "Sahm 0.00, 10y–2y +0.29",
    "value_num": 0.0,
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "Sahm 0.00 < 0.30; no negative GDP quarter",
+   "rubric_hit": "Sahm 0 below the 0.3 Watch line",
    "basis": "measured",
    "basis_detail": "Sahm=0.00",
    "assessed_at": "2026-11-23T05:53:09Z"
@@ -403,13 +403,13 @@
      "date": "2026-11-22"
     }
    ],
-   "value": "$90.4, 1m -22%",
-   "value_num": 90.44,
-   "checked_at": "2026-11-23T05:53:09Z",
+   "value": "$88.3, 1m -24%",
+   "value_num": 88.3,
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-11-06T17:59:39Z",
-   "rubric_hit": "Brent $90.4 within $85–110 Watch band; 1m change -22%",
+   "rubric_hit": "Brent $88.3 ≥ $85 Watch line",
    "basis": "measured",
-   "basis_detail": "Brent $=89.73; Brent 1m %=-23.12",
+   "basis_detail": "Brent $=88.30; Brent 1m %=-23.75",
    "assessed_at": "2026-11-23T05:53:09Z"
   },
   "eu-gas": {
@@ -430,13 +430,13 @@
      "date": "2026-11-22"
     }
    ],
-   "value": "€88/MWh",
-   "value_num": 88.45,
-   "checked_at": "2026-11-23T05:53:09Z",
+   "value": "€89/MWh",
+   "value_num": 88.7,
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "TTF €88/MWh > €70 Alert line",
+   "rubric_hit": "TTF €88.7/MWh > €70/MWh Alert line",
    "basis": "measured",
-   "basis_detail": "TTF €/MWh=88.45",
+   "basis_detail": "TTF €/MWh=88.70",
    "assessed_at": "2026-11-23T05:53:09Z"
   },
   "chokepoints": {
@@ -457,7 +457,7 @@
      "date": "2026-11-22"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "22+ attacks in Nov; 3 tankers hit 20–21 Nov",
    "rubric_hit": "Alert: Hormuz traffic materially impeded (UKMTO: 22+ attacks in Nov, 30+ in Oct)",
@@ -545,29 +545,29 @@
   "us-china": {
    "status": "amber",
    "trend": "flat",
-   "summary": "Taiwan tracked 2 Chinese military aircraft, 7 ships and 4 balloons to 21 Nov; November totals pass 230 aircraft",
-   "state": "Taiwan's defence ministry tracked two Chinese military aircraft, six naval vessels, one official ship and four balloons in the 24 hours to 06:00 on 21 Nov; November's running total reached 230 aircraft and 187 ships (Taiwan News). The ministry reported 10 Chinese balloons over three days to 23 Nov (Taipei Times). Activity has eased from a one-day high of 49 aircraft earlier in the month, but no blockade, clash or severed channel was found, so Watch holds.",
-   "for_you": "No change for travel or trade with Taiwan. Check FCDO travel advice for Taiwan; a large exercise or blockade would chiefly affect shipping, flights and electronics supply chains.",
+   "summary": "Taiwan tracked 6 Chinese military aircraft and 12 naval ships around the island in the 24 hours to 23 Nov",
+   "state": "Taiwan's defence ministry tracked six Chinese military aircraft sorties and 12 naval ships around Taiwan in the 24 hours to 06:00 on 23 Nov; five of the sorties crossed the median line into the south-western and eastern ADIZ (Taiwan MND). On 21 Nov it reported two aircraft, six naval vessels and four balloons, with November totals passing 230 aircraft (Taiwan News). Activity is below the month's one-day high of 49 aircraft; no blockade, clash or severed channel was found, so Watch holds.",
+   "for_you": "Tension in the Taiwan Strait mainly affects shipping, air routes and electronics supply chains. Travellers to Taiwan should follow FCDO travel advice.",
    "sources": [
     {
-     "title": "Taiwan News — Taiwan tracks 2 Chinese military aircraft, 7 ships and 4 balloons",
-     "url": "https://www.taiwannews.com.tw/news/6479444",
-     "date": "2026-11-21"
+     "title": "Taiwan MND — PLA activities around Taiwan, 23 Nov 2026",
+     "url": "https://air.mnd.gov.tw/EN/News/News_Detail.aspx?CID=214&ID=59414",
+     "date": "2026-11-23"
     },
     {
-     "title": "Taipei Times — MND detects 10 Chinese balloons over three days",
-     "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/11/23/2003868234",
-     "date": "2026-11-23"
+     "title": "Taiwan News — Chinese military activity around Taiwan",
+     "url": "https://www.taiwannews.com.tw/en/news/5030595",
+     "date": "2026-11-21"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-11-07T05:46:46Z",
-   "value": "2 aircraft, 7 ships, 4 balloons 21 Nov",
-   "rubric_hit": "Watch: large-scale PLA activity around Taiwan in November (230 aircraft, 187 ships to 21 Nov); no blockade or clash",
+   "value": "6 aircraft, 12 ships 22–23 Nov",
+   "rubric_hit": "Sustained PLA activity around Taiwan, no blockade or clash = Watch",
    "basis": "judged",
    "basis_detail": "",
-   "value_num": 2,
-   "assessed_at": "2026-11-23T05:53:09Z"
+   "value_num": 6,
+   "assessed_at": "2026-11-23T11:43:22Z"
   },
   "russia-nato": {
    "status": "amber",
@@ -587,7 +587,7 @@
      "date": "2026-11-20"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Missile, objects in Polish airspace 20 Nov",
    "rubric_hit": "Watch: airspace violation (Russian missile and objects in Polish airspace 20 Nov); no Article 4 request or clash",
@@ -614,7 +614,7 @@
      "date": "2026-11-23"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No regular IAEA access; HEU unverified",
    "rubric_hit": "Watch: inspector access curtailed and credible strike threats; no strike on nuclear sites or NPT withdrawal",
@@ -641,7 +641,7 @@
      "date": "2026-11-05"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-11-19T05:51:11Z",
    "value": "Last launch 4 Nov",
    "rubric_hit": "Normal: no missile launches in two weeks (last launch 4 Nov); no border incidents",
@@ -668,7 +668,7 @@
      "date": "2026-11-12"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Mexico doubling threat 12 Nov; not in force",
    "rubric_hit": "Watch: new major tariffs threatened between large economies (US threat to double tariffs on Mexico, 12 Nov)",
@@ -734,34 +734,34 @@
   "russia-ukraine": {
    "status": "red",
    "trend": "flat",
-   "summary": "A Russian drone strike on flats in Dymer, Kyiv Oblast, killed at least 10 on 22 Nov, after a mass strike on 20 Nov",
-   "state": "A Russian drone attack overnight into 22 Nov destroyed part of an apartment building in Dymer, Kyiv Oblast; the regional governor reported at least 10 killed and the interior minister at least six injured (Kyiv Independent). Overnight into 20 Nov Russia launched more than 100 missiles and about 400 drones, mostly at energy targets, per Ukraine's Air Force; the prime minister reported 8 killed and 28 injured nationwide (Kyiv Post; The Defense Post). Repeated mass strikes keep the Alert.",
-   "for_you": "Travel to Ukraine is advised against by the FCDO; follow its travel advice. Strikes on energy infrastructure cause rolling power and heating cuts across Ukraine as winter sets in, and can affect European gas and power prices.",
+   "summary": "Russian strikes killed at least 15 people in the Kyiv region on 22–23 Nov, including 11 in a block of flats in Dymer",
+   "state": "Russian attacks on the Kyiv region overnight into 23 Nov killed at least 15 people, per AFP: 11 in a five-storey building in Dymer, three at a supermarket in Vyshneve and one in Bila Tserkva, according to regional and local officials (A News). A power substation in Dnipropetrovsk was also hit. Overnight into 20 Nov Russia launched more than 100 missiles and about 400 drones, mostly at energy targets, per Ukraine's Air Force (Kyiv Post). Repeated mass-casualty strikes keep the Alert.",
+   "for_you": "Follow FCDO travel advice, which advises against all travel to Ukraine. Strikes on energy infrastructure are increasing power cuts in Ukraine as winter sets in.",
    "sources": [
     {
-     "title": "Kyiv Independent — Russian attack near Kyiv kills residents of apartment building in Dymer",
-     "url": "https://kyivindependent.com/apartment-building-destroyed-in-kyiv-oblast-following-russian-drone-attack/",
+     "title": "A News (AFP) — Ukraine says Russian strikes kill 15 in Kyiv region",
+     "url": "https://www.anews.com.tr/world/2026/11/23/ukraine-says-russian-strikes-kill-15-in-kyiv-region",
      "date": "2026-11-23"
     },
     {
-     "title": "Kyiv Post — Russian missile, drone barrage kills 8 across Ukraine",
-     "url": "https://www.kyivpost.com/post/90693",
-     "date": "2026-11-20"
+     "title": "Arab News (AFP) — Ukraine says Russian strikes kill 11 in Kyiv region",
+     "url": "https://www.arabnews.com/world/ukraine-says-russian-strikes-kill-11-in-kyiv-region-3013641",
+     "date": "2026-11-23"
     },
     {
-     "title": "The Defense Post — Russia fires over 100 missiles, 400 drones at Ukraine in overnight attack",
-     "url": "https://thedefensepost.com/2026/11/20/russia-fires-missiles-drones-ukraine/",
-     "date": "2026-11-20"
+     "title": "Kyiv Independent — Russian attacks across Ukraine over past day",
+     "url": "https://kyivindependent.com/russian-attacks-kill-10-injure-40-across-ukraine-over-past-day-as-peace-talks-end/",
+     "date": "2026-11-22"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "Dymer strike 22 Nov; 100+ missiles 20 Nov",
-   "value_num": 488,
-   "rubric_hit": "Alert: mass-casualty strikes (100+ missiles and ~400 drones 20 Nov; at least 10 killed in Dymer 22 Nov)",
+   "value": "15+ killed in Kyiv region 22–23 Nov",
+   "value_num": 15,
+   "rubric_hit": "Mass-casualty strikes: 15+ killed in Kyiv region 22–23 Nov = Alert",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-23T05:53:09Z"
+   "assessed_at": "2026-11-23T11:43:22Z"
   },
   "middle-east": {
    "status": "red",
@@ -786,7 +786,7 @@
      "date": "2026-11-19"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Gaza strikes kill 4 on 21 Nov; Yemen active",
    "rubric_hit": "Alert: multi-front escalation (Gaza strikes, Israel–Lebanon strikes, Houthi–Saudi exchanges, Iran–Bahrain attack)",
@@ -919,7 +919,7 @@
      "date": "2026-11-20"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Indus treaty in abeyance; no LoC strike",
    "rubric_hit": "Watch: treaty suspension (Indus Waters Treaty in abeyance); no cross-border strikes or mobilisation",
@@ -945,7 +945,7 @@
      "date": "2026-11-19"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No US–Russia treaty limits since Feb",
    "rubric_hit": "Watch: arms-control lapse without replacement (New START expired; no successor treaty)",
@@ -966,7 +966,7 @@
      "date": "2026-11-22"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No Atlantic storms",
    "rubric_hit": "No hurricane active or threatening land within 5 days: Normal",
@@ -988,7 +988,7 @@
      "date": "2026-11-23"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-11-20T05:49:33Z",
    "value": "Xavier, Akvan (green) only",
    "rubric_hit": "GDACS cyclone: 0 red / 0 orange",
@@ -1037,7 +1037,7 @@
      "date": "2026-11-23"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
    "rubric_hit": "GDACS wildfire: 0 red / 0 orange",
@@ -1059,7 +1059,7 @@
      "date": "2026-11-23"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
    "rubric_hit": "GDACS flood: 0 red / 0 orange",
@@ -1088,9 +1088,9 @@
    ],
    "value": "Max M6.8, 5× M6+ (7d)",
    "value_num": 6.8,
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "No M7+ in 7 days; max PAGER yellow",
+   "rubric_hit": "max magnitude 6.8 below the 7 Watch line",
    "basis": "measured",
    "basis_detail": "max magnitude=6.80",
    "assessed_at": "2026-11-23T05:53:09Z"
@@ -1164,9 +1164,9 @@
    ],
    "value": "G0 S0 R0",
    "value_num": 0,
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "NOAA G0 S0 R0 within G0–G2, S0–S1, R0–R2",
+   "rubric_hit": "NOAA G0 S0 R0 (24h max)",
    "basis": "measured",
    "basis_detail": "NOAA G0 S0 R0 (24h max)",
    "assessed_at": "2026-11-23T05:53:09Z"
@@ -1309,7 +1309,7 @@
      "date": "2026-11-19"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Ebola PHEIC in force",
    "value_num": 1,
@@ -1341,7 +1341,7 @@
      "date": "2026-11-15"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "11,504 confirmed cases, 5,630 deaths (16 Nov)",
    "value_num": 11504,
@@ -1368,7 +1368,7 @@
      "date": "2026-11-03"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Oregon dairy-linked case 19 Nov; 4 US since Oct",
    "rubric_hit": "Sporadic animal-to-human cases only (4 US dairy-linked since 15 Oct); no cluster or human-to-human spread",
@@ -1476,7 +1476,7 @@
      "date": "2026-11-19"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No unexplained clusters",
    "rubric_hit": "No unexplained clusters under international investigation: Normal",
@@ -1507,7 +1507,7 @@
      "date": "2026-11-20"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-11-16T05:51:59Z",
    "value": "USDA breach took systems offline 19 Nov",
    "rubric_hit": "Attack disrupting a critical service (USDA payment systems offline, 16–19 Nov): Watch",
@@ -1534,7 +1534,7 @@
      "date": "2026-11-18"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-11-20T05:49:33Z",
    "value": "No major outage since 17 Nov",
    "rubric_hit": "No major multi-hour outage in the past 48h: Normal",
@@ -1750,7 +1750,7 @@
      "date": "2026-11-20"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "10y 5.24%, 30y 5.72% (20 Nov)",
    "value_num": 5.24,
@@ -1805,10 +1805,10 @@
     }
    ],
    "value": "No warnings",
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-11-17T11:42:50Z",
    "value_num": 1,
-   "rubric_hit": "No Met Office warnings in force",
+   "rubric_hit": "worst warning: none",
    "basis": "measured",
    "basis_detail": "worst warning: none",
    "assessed_at": "2026-11-23T05:53:09Z"
@@ -1893,11 +1893,11 @@
    "status": "green",
    "trend": "flat",
    "value": "SOFR–IORB +1bp, repo $0.1bn",
-   "value_num": 1,
+   "value_num": 1.0,
    "summary": "SOFR 1bp above the Fed's reserve rate on 19 Nov; Fed repo use near zero on 20 Nov",
    "state": "SOFR was 3.91% on 19 Nov, 1bp above the Fed's 3.90% interest on reserves, and the gap did not exceed 3bp over five days, inside the 10bp Watch line (FRED). Fed overnight repo operations were about $0.001bn on 20 Nov and peaked near $0.1bn in five days, far below the $15bn line (FRED).",
    "for_you": "Short-term dollar funding markets are calm, with no sign of the strain that preceded past liquidity squeezes.",
-   "rubric_hit": "SOFR–IORB max 3bp (< 10bp); repo ops max $0.1bn (< $15bn)",
+   "rubric_hit": "SOFR–IORB 5d max 3bp below the 10bp Watch line; Fed repo ops 5d max $0.1bn below the $15bn Watch line",
    "sources": [
     {
      "title": "FRED — Secured Overnight Financing Rate",
@@ -1910,7 +1910,7 @@
      "date": "2026-11-20"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "SOFR–IORB 5d max bp=3.00; Fed repo ops 5d max $bn=0.10",
@@ -1946,12 +1946,12 @@
   "yen-carry": {
    "status": "green",
    "trend": "flat",
-   "value": "¥159.0/$, 1w -0.5%",
-   "value_num": 159.0,
+   "value": "¥159.1/$, 1w -0.4%",
+   "value_num": 159.094,
    "summary": "Yen near ¥159.0 per dollar on 23 Nov, little changed on the week; no intervention found",
    "state": "The dollar was near ¥159.0 early on 23 Nov, down 0.5% on the week and up 1.6% on the month, inside the 3% weekly and 6% monthly Watch lines (Yahoo Finance). The yen is about 3% stronger than its 52-week low. No Japanese currency intervention was found to 23 Nov.",
    "for_you": "The yen is weak but moving gradually, with no sign of the sudden unwinding of carry trades that has unsettled markets in the past.",
-   "rubric_hit": "USD/JPY 1w 0.5% (< 3%), 1m 1.6% (< 6%); no intervention",
+   "rubric_hit": "USD/JPY 1w move 0.43% below the 3% Watch line; USD/JPY 1m move 1.66% below the 6% Watch line",
    "sources": [
     {
      "title": "Yahoo Finance — USD/JPY (JPY=X)",
@@ -1959,10 +1959,10 @@
      "date": "2026-11-20"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
-   "basis_detail": "USD/JPY 1w move %=0.50; USD/JPY 1m move %=1.59",
+   "basis_detail": "USD/JPY 1w move %=0.43; USD/JPY 1m move %=1.66",
    "assessed_at": "2026-11-23T05:53:09Z"
   },
   "jobless-claims": {
@@ -2088,7 +2088,7 @@
      "date": "2026-11-17"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
@@ -2098,33 +2098,28 @@
   "gulf-iran": {
    "status": "red",
    "trend": "up",
-   "value": "Bahrain intercepts Iranian attack 21 Nov",
-   "summary": "Bahrain says it intercepted Iranian aerial attacks on 21 Nov; US blockade of Iranian ports continues; no ceasefire",
-   "state": "Bahrain's state TV said its air defences intercepted Iranian aerial attacks late on 21 Nov, and a fire broke out at an industrial site. The same day Iran said it shot down a US drone over Qeshm Island (Gulf News). Iran calls the US blockade of its ports, now more than 130 days old, an act of war; Trump said on 22 Nov that tankers trying to breach it would be sunk (Euronews). Indirect talks via Qatar continue, and Trump said he may resume strikes after the new year if there is no deal (Iran International, 23 Nov).",
-   "for_you": "Gulf airspace, ports and energy facilities remain exposed to strikes. Anyone in or travelling to Bahrain, Qatar, the UAE or nearby states should follow FCDO travel advice and local authority alerts.",
-   "rubric_hit": "Alert: active strikes between states and attacks on Gulf shipping (Iranian attack on Bahrain 21 Nov; tankers hit)",
+   "value": "Blockade; Iran vows response 23 Nov",
+   "summary": "Iran vowed on 23 Nov to use every means against the US blockade of its ports after Trump threatened blockade runners",
+   "state": "Iran's foreign ministry spokesman Baghaei said on 23 Nov Iran would use every means to counter the US naval blockade of its ports, after Trump said on 22 Nov that ships trying to break it would be sunk; UKMTO confirmed a tanker incident in the Gulf of Oman on 22 Nov (Euronews). Bahrain said it intercepted Iranian aerial attacks late on 21 Nov (Gulf News). A Qatari delegation held two hours of talks in Tehran on 20 Nov, which Iran said were not yet formal negotiations (Al Jazeera).",
+   "for_you": "Follow FCDO travel advice for Iran, Bahrain and the Gulf states, which can change at short notice. The conflict keeps energy and shipping costs elevated.",
+   "rubric_hit": "Attacks on Gulf shipping and state-on-state strikes (Bahrain, 21 Nov) = Alert",
    "sources": [
     {
-     "title": "Gulf News — Middle East war live: Bahrain intercepts Iranian aerial attacks as Hormuz tensions rise",
-     "url": "https://gulfnews.com/uae/middle-east-war-trump-says-iran-wants-deal-but-terms-are-unacceptable-1.500755788",
-     "date": "2026-11-21"
-    },
-    {
-     "title": "Euronews — Tanker incident 'involving military forces' reported in Strait of Hormuz",
-     "url": "https://www.euronews.com/2026/11/22/tanker-incident-involving-military-forces-reported-in-strait-of-hormuz",
-     "date": "2026-11-22"
-    },
-    {
-     "title": "Iran International — US weighs delaying Iran strikes despite Israeli pressure for military action",
-     "url": "https://www.iranintl.com/en/202611231814",
+     "title": "Euronews — Iran vows 'every means' to counter US blockade of Hormuz after Trump threat",
+     "url": "https://www.euronews.com/2026/11/23/iran-vows-every-means-to-counter-us-blockade-of-hormuz-after-trump-threat",
      "date": "2026-11-23"
+    },
+    {
+     "title": "Al Jazeera — Iran says held talks with Qatari mediators, urges US to accept conditions",
+     "url": "https://www.aljazeera.com/news/2026/11/21/iran-says-held-talks-with-qatari-mediators-urges-us-to-accept-conditions",
+     "date": "2026-11-21"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-23T05:53:09Z"
+   "assessed_at": "2026-11-23T11:43:22Z"
   },
   "other-conflicts": {
    "status": "amber",
@@ -2241,7 +2236,7 @@
    "summary": "CISA added 9 known-exploited vulnerabilities in the seven days to 20 Nov, below the 11-a-week Watch line",
    "state": "CISA's Known Exploited Vulnerabilities catalogue gained nine entries in the seven days to 20 Nov, including VMware vCenter, SAP NetWeaver and Apache Roller on 20 Nov; 34 were added in 30 days (CISA). That is below the 11-a-week Watch line, and no emergency directive was found to 23 Nov.",
    "for_you": "Organisations should patch flaws on CISA's known-exploited list and follow NCSC advisories.",
-   "rubric_hit": "9 KEV additions in 7 days (< 11 Watch line)",
+   "rubric_hit": "KEV additions 7d 9 below the 11 Watch line",
    "sources": [
     {
      "title": "CISA — Known Exploited Vulnerabilities Catalog",
@@ -2249,7 +2244,7 @@
      "date": "2026-11-20"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-11-16T05:51:59Z",
    "basis": "measured",
    "basis_detail": "KEV additions 7d=9.00",
@@ -2307,12 +2302,12 @@
   "uk-floods": {
    "status": "green",
    "trend": "flat",
-   "value": "0 severe, 1 flood warning",
-   "value_num": 1,
+   "value": "No flood warnings",
+   "value_num": 0,
    "summary": "One Environment Agency flood warning in England on 23 Nov, for the River Ottery in Devon/Cornwall; 24 flood alerts",
    "state": "The Environment Agency had one flood warning in force in England at 05:40 UTC on 23 Nov, for the River Ottery at Yeolmbridge and Ham Mill, no severe flood warnings and 24 lower-level flood alerts (Environment Agency). This is well within the Normal band of fewer than 10 flood warnings.",
    "for_you": "Check the Environment Agency's flood service for your area and sign up for flood warnings if you live near the River Ottery.",
-   "rubric_hit": "0 severe; 1 flood warning (< 10)",
+   "rubric_hit": "EA: 0 severe, 0 warnings",
    "sources": [
     {
      "title": "Environment Agency — Check for flooding",
@@ -2320,15 +2315,15 @@
      "date": "2026-11-23"
     }
    ],
-   "checked_at": "2026-11-23T05:53:09Z",
+   "checked_at": "2026-11-23T11:43:22Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
-   "basis_detail": "EA: 0 severe, 1 warnings",
+   "basis_detail": "EA: 0 severe, 0 warnings",
    "assessed_at": "2026-11-23T05:53:09Z"
   }
  },
- "headline": "US shares in a high-volatility stress regime ahead of the 23 Nov open; attacks on Hormuz shipping and an Iranian strike on Bahrain keep the Gulf war at Alert; Russian strikes on Ukraine continue.",
- "generated_at": "2026-11-23T05:53:09Z",
+ "headline": "Russian strikes killed at least 15 in the Kyiv region on 22–23 Nov; Iran vowed on 23 Nov to counter the US blockade of its ports as Gulf shipping attacks continue; Ebola in DR Congo passes 11,500 cases.",
+ "generated_at": "2026-11-23T11:43:22Z",
  "world": {
   "score": 40,
   "band": "Strained",

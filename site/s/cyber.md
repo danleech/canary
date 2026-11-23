@@ -1,5 +1,5 @@
 # Major cyber incidents — WATCH (stable)
-id cyber · Technology & Cyber · horizon acute · checked 2026-11-23T05:53Z · at this level since 2026-11-16T05:51Z · stale after 2026-11-23T19:53Z
+id cyber · Technology & Cyber · horizon acute · checked 2026-11-23T11:43Z · text written 2026-11-23T05:53Z · at this level since 2026-11-16T05:51Z · stale after 2026-11-24T01:43Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/cyber
 
 Value: USDA breach took systems offline 19 Nov
