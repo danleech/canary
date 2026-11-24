@@ -1,5 +1,5 @@
 # Europe hybrid attacks — WATCH (stable)
-id hybrid-threats · Geopolitics · horizon acute · checked 2026-11-24T05:53Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-24T19:53Z
+id hybrid-threats · Geopolitics · horizon acute · checked 2026-11-24T11:42Z · text written 2026-11-24T05:53Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-25T01:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/hybrid-threats
 
 Value: Estonia: GRU-ordered arson attempt 14 Nov

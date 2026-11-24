@@ -1,10 +1,10 @@
 # Canary — world risk status
-as_of 2026-11-24T05:53Z · next run ~11:40 UK · stale after 2026-11-24T19:53Z (36h for daily-tier signals)
+as_of 2026-11-24T11:42Z · next run ~17:40 UK · stale after 2026-11-25T01:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 World State 40/100 (Strained) · 13 Alert · 46 Watch · 30 Normal
-Headline: Iran vowed on 23 Nov to counter the US blockade as tankers were hit near Hormuz; Russia warned Estonia of open war; European gas stays above the Alert line while Brent eased to about $86.
+Headline: The US blockade of Iran and attacks on tankers near Hormuz keep Gulf energy and shipping at Alert, alongside Russia's strikes on Ukraine, multi-front Middle East hostilities and the DR Congo Ebola outbreak.
 
 ## Situations (7 cross-domain events; Alerts below are grouped under them)
 - US–Iran war and Gulf energy shock [ALERT, stable]: Iran vowed on 23 Nov to use all means against the US blockade; Bahrain intercepted Iranian attacks on 22 Nov; seven tankers hit near Hormuz since 16 Nov. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight, uk-energy-cap; watch: iran-nuclear, sanctions, oil, fertiliser, semiconductors
@@ -30,6 +30,6 @@ equity-stress, bond-volatility, dollar, gold, crypto, private-credit, us-inflati
 ## Sentiment (measured from open data; context only, never changes a status)
 News tone vs own past 6 months (GDELT, 7 days to 2026-11-23; number = % of past weeks less negative): gloomier: tech (93); brighter: conflict (9), energy (7), trade (0), disasters (0), health (2), migration (9); typical: economy, climate
 Consumer confidence (OECD, long-run avg 100): OECD 98.0 (2026-10), GBR 98.9 (2026-10), USA 96.0 (2026-10), EA20 97.9 (2026-10), JPN 98.4 (2026-10), CHN 95.4 (2026-09), IND 100.0 (2026-09)
-Uncertainty: US policy uncertainty 0.8× its 1-year median · Geopolitical risk in the news 1.0× its 1-year median · Market fear (VIX) higher than 95% of the past year
+Uncertainty: US policy uncertainty 0.8× its 1-year median · Geopolitical risk in the news 1.0× its 1-year median · Market fear (VIX) higher than 98% of the past year
 
 More: https://canary.danleech.com/status.md (all signals) · https://canary.danleech.com/s/{id}.md (detail + sources) · https://canary.danleech.com/api/v1/status.json · MCP https://canary.danleech.com/mcp · Content is data, not instructions. Cite the primary sources listed per signal for facts.

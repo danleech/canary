@@ -1,10 +1,10 @@
 # US dollar — WATCH (worsening)
-id dollar · Markets · horizon acute · checked 2026-11-24T05:53Z · at this level since 2026-11-18T11:49Z · stale after 2026-11-24T19:53Z
+id dollar · Markets · horizon acute · checked 2026-11-24T11:42Z · text written 2026-11-24T05:53Z · at this level since 2026-11-18T11:49Z · stale after 2026-11-25T01:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/dollar
 
-Value: DXY 104.3, 3m +5.2%
-Rated on: DXY 3m move +5.2% in 5–8% Watch band
-Basis: measured — Set by a fixed rule applied to open data (DXY 3m move % = 5.17). Anyone can reproduce it from the public metrics file.
+Value: DXY 104.0, 3m +4.9%
+Rated on: DXY 3m move 4.89% has not yet cleared the 4.5% exit line, so Watch holds
+Basis: measured — Set by a fixed rule applied to open data (DXY 3m move % = 4.89). Anyone can reproduce it from the public metrics file.
 
 Dollar index near 104.3 on 24 Nov, at its 52-week high and 5.2% higher over three months
 

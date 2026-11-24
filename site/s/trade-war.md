@@ -1,5 +1,5 @@
 # Trade war & tariffs — WATCH (stable)
-id trade-war · Geopolitics · horizon acute · checked 2026-11-24T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-24T19:53Z
+id trade-war · Geopolitics · horizon acute · checked 2026-11-24T11:42Z · text written 2026-11-24T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-25T01:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/trade-war
 
 Value: Mexico doubling threat 12 Nov; not in force

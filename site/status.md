@@ -1,5 +1,5 @@
 # Canary — all signals
-as_of 2026-11-24T05:53Z · next run ~11:40 UK · stale after 2026-11-24T19:53Z (36h for daily-tier signals)
+as_of 2026-11-24T11:42Z · next run ~17:40 UK · stale after 2026-11-25T01:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -7,7 +7,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 
 | id | status | trend | basis | value | summary |
 |---|---|---|---|---|---|
-| eu-gas | ALERT | worsening | measured | €91/MWh | European gas near €91/MWh on 23 Nov, above the €70 Alert line, with storage well below last year |
+| eu-gas | ALERT | worsening | measured | €90/MWh | European gas near €91/MWh on 23 Nov, above the €70 Alert line, with storage well below last year |
 | chokepoints | ALERT | stable | judged | 7 tankers hit since 16 Nov; traffic ~65% down | Seven tankers hit near Hormuz since 16 Nov, per JMIC; strait traffic reported about 65% below pre-war levels |
 | freight | ALERT | improving | published | WCI $4,176/FEU (19 Nov), −3% w/w | Drewry container index $4,176 per 40ft on 19 Nov after a fourth weekly fall, still above the $4,000 Alert line |
 | russia-ukraine | ALERT | stable | judged | Dymer toll 11; Russian ships hit off Libya | Dymer strike death toll reaches 11; Ukraine says it sank a Russian corvette off Libya; strikes on Russian refineries |
@@ -20,17 +20,17 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | cholera-dengue | ALERT | stable | judged | Over 3,000 cholera deaths in 2026 (WHO) | WHO counts over 3,000 cholera deaths in 2026, nearly nine in ten in Africa; DR Congo, Sudan and Yemen hard hit |
 | uk-energy-cap | ALERT | worsening | judged | £1,723 now; January rise forecast ~26% | Ofgem announces the January cap on 25 Nov; Cornwall Insight forecasts a 26% rise from £1,723 to about £2,166 |
 | uk-threat-level | ALERT | stable | judged | Threat level: Severe | UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 23 Nov |
-| equity-stress | WATCH | improving | measured | VIX 26.6, S&P -7.4% | S&P 500 closed near 7,237 on 23 Nov, 7.4% below its high; VIX at 26.6, inside the Watch band |
+| equity-stress | WATCH | improving | measured | VIX 28.8, S&P -7.4% | S&P 500 closed near 7,237 on 23 Nov, 7.4% below its high; VIX at 26.6, inside the Watch band |
 | bond-volatility | WATCH | stable | measured | MOVE 101, 10y 4.92% | Treasury volatility index MOVE near 101 on 23 Nov, just above the 100 Watch line; US 10-year yield 4.92% |
-| dollar | WATCH | worsening | measured | DXY 104.3, 3m +5.2% | Dollar index near 104.3 on 24 Nov, at its 52-week high and 5.2% higher over three months |
-| gold | WATCH | stable | measured | $3,633, 3m -22.1% | Gold near $3,633 on 24 Nov, 2.9% lower on the week and 22% lower over three months |
-| crypto | WATCH | stable | measured | BTC $60,663, -30% from high | Bitcoin near $60,660 on 24 Nov, 30% below its high and 22% lower over a month; no de-peg or exchange failure found |
+| dollar | WATCH | worsening | measured | DXY 104.0, 3m +4.9% | Dollar index near 104.3 on 24 Nov, at its 52-week high and 5.2% higher over three months |
+| gold | WATCH | stable | measured | $3,628, 3m -22.2% | Gold near $3,633 on 24 Nov, 2.9% lower on the week and 22% lower over three months |
+| crypto | WATCH | stable | measured | BTC $59,793, -31% from high | Bitcoin near $60,660 on 24 Nov, 30% below its high and 22% lower over a month; no de-peg or exchange failure found |
 | private-credit | WATCH | stable | judged | Nontraded BDC exit requests above 5% cap | Redemption requests at most nontraded BDCs remain above their 5% quarterly caps; no wave of gates or forced sales found |
 | us-inflation | WATCH | worsening | measured | CPI ~4.1% y/y (Oct); rising 3 months | FRED index data imply US CPI inflation of about 4.1% in October, up from 4.0%, inside the 3.0–4.5% Watch band |
 | china-economy | WATCH | stable | judged | Shimao default (Oct); Huafa cut to junk 9 Nov | Developer defaults persist: Shimao defaulted in Oct, a Zhongrong unit faces liquidation, state-owned Huafa cut to junk |
 | central-banks | WATCH | stable | judged | Dec Fed and ECB rises priced; yen near 160 | Markets price December rate rises by the Fed and ECB; Japan warns on the yen near 160 but has not intervened |
 | sovereign-debt | WATCH | stable | judged | France–Bund ~150bp; OAT 10y below 4.9% | French 10-year yield fell back below 4.9% on 20 Nov; France–Bund spread hovers near the 150bp Alert line |
-| oil | WATCH | improving | measured | $85.7, 1m -25% | Brent near $85.7 on 24 Nov, 25% lower over a month; Hormuz flows reduced but no new 2 mb/d outage confirmed |
+| oil | WATCH | improving | measured | $87.1, 1m -24% | Brent near $85.7 on 24 Nov, 25% lower over a month; Hormuz flows reduced but no new 2 mb/d outage confirmed |
 | food-prices | WATCH | improving | published | FAO index 133.9 (Oct), +5.9% y/y | FAO food price index 133.9 in October, below the 135 Alert line but up 5.9% on a year; next release 4 Dec |
 | critical-minerals | WATCH | stable | judged | Rare-earth pause extended to 10 Jan 2027 | China's pause on some rare-earth export controls runs to 10 Jan 2027; April 2025 licensing for heavy rare earths stays |
 | fertiliser | WATCH | stable | judged | Egypt urea $535/t FOB, +17% since Sep | Egyptian urea at $535 a tonne after gas cuts to plants; Gulf tanker attacks continue near Hormuz |
@@ -66,7 +66,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | uk-rates | WATCH | worsening | published | CPI 3.6% (Oct); Bank Rate 4% | UK CPI rose to 3.6% in October from 3.5%; Bank Rate raised to 4% in November with a December rise priced |
 | gilts | WATCH | improving | judged | 10y below 5.2% (23 Nov) | 10-year gilt yield slipped below 5.2% on 23 Nov from above 5.35% on 16 Nov; long yields still near multi-decade highs |
 | nhs-pressure | WATCH | worsening | published | Flu admissions 4.7/100k, rising | UKHSA data to 15 Nov: flu admissions up 24.5% to 4.7 per 100,000 and positivity 11.4%; still below high levels |
-| ftse | NORMAL | stable | measured | 10,481, -3.9% from high | FTSE 100 closed near 10,481 on 23 Nov, 3.9% below its 52-week high; no daily fall above 2.5% this week |
+| ftse | NORMAL | stable | measured | 10,460, -4.1% from high | FTSE 100 closed near 10,481 on 23 Nov, 3.9% below its 52-week high; no daily fall above 2.5% this week |
 | credit-spreads | NORMAL | worsening | measured | HY OAS 3.76% | US high-yield spreads 3.76% on 20 Nov, a one-year high but inside the 4% Watch line |
 | banking-stress | NORMAL | stable | measured | STLFSI -0.87, CISS 0.02 | Financial stress gauges low: St Louis Fed index -0.87 and ECB stress indicator 0.023; no bank failure found |
 | funding-stress | NORMAL | stable | measured | SOFR–IORB +2bp, repo $0.1bn | SOFR 2bp above the Fed's reserve rate on 20 Nov; Fed repo use near zero to 23 Nov |
@@ -83,7 +83,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | heat | NORMAL | stable | judged | No major heatwave warnings (23 Nov) | No heatwave warning across a major region found on 23 Nov; Queensland's severe heatwave ended on 19 Nov |
 | wildfires | NORMAL | stable | measured | GDACS: no orange/red | No GDACS orange or red wildfire alerts on 24 Nov; 77 green-level fire events listed |
 | floods | NORMAL | stable | measured | GDACS: no orange/red | No GDACS orange or red flood alerts on 24 Nov; three green-level flood events listed |
-| earthquakes | NORMAL | stable | measured | Max M6.8, 4× M6+ (7d) | M6.8 off Timor-Leste on 21 Nov and M6.5 near Vanuatu on 23 Nov rated PAGER green; no M7+ in the past week |
+| earthquakes | NORMAL | stable | measured | Max M6.8, 5× M6+ (7d) | M6.8 off Timor-Leste on 21 Nov and M6.5 near Vanuatu on 23 Nov rated PAGER green; no M7+ in the past week |
 | volcanic | NORMAL | stable | judged | No red aviation codes found (23 Nov) | No red aviation codes, VEI 4+ eruptions or ash-related airspace closures found by 23 Nov; Kanlaon at alert level 2 |
 | space-weather | NORMAL | stable | measured | G0 S0 R0 | NOAA scales at G0 S0 R0 in the 24 hours to 24 Nov; no geomagnetic storm forecast |
 | cold-storms | NORMAL | stable | judged | No top-tier cold warnings (23 Nov) | No top-tier cold or winter-storm warning across a major region on 23 Nov; US forecasters see Thanksgiving snow risk |
@@ -92,7 +92,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | novel-outbreaks | NORMAL | stable | judged | No unexplained clusters | No unexplained cluster or novel pathogen under international investigation found by 24 Nov |
 | outages | NORMAL | stable | judged | No cloud/payments outage; Delta IT 22 Nov | No major cloud, CDN or payments outage over 2h found to 24 Nov; a Delta airline IT failure on 22 Nov was fixed that day |
 | displacement | NORMAL | stable | judged | No UN-confirmed event over 500k/month | IOM: Sudan's displaced total barely rose in October; Yemen tops 340,000 since August; no event over 500,000 a month |
-| uk-weather | NORMAL | worsening | measured | 6 yellow warnings (rain, ice) | Six Met Office yellow warnings on 24 Nov: ice in Scotland and North East England, rain in South West England |
+| uk-weather | NORMAL | worsening | measured | 1 warning(s), worst yellow | Six Met Office yellow warnings on 24 Nov: ice in Scotland and North East England, rain in South West England |
 | uk-disruption | NORMAL | stable | judged | No national strike; consultants' action paused | BMA paused the 25–26 Nov consultants' strike for talks; RMT Tube strike on 26 Nov is London-only |
 | uk-supply-margins | NORMAL | stable | judged | No notice in force; 5.9 GW winter margin | No Electricity Margin Notice or Gas Margins Notice found in force on 23 Nov; NESO forecasts a 5.9 GW winter surplus |
 | uk-floods | NORMAL | stable | measured | No flood warnings | No Environment Agency flood warnings in England on 24 Nov; 14 lower-level flood alerts |
