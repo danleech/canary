@@ -1,5 +1,59 @@
 [
  {
+  "t": "2026-11-24T17:47:09Z",
+  "applied": 89,
+  "changed": [],
+  "warnings": [],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 27,
+   "published": 9,
+   "judged": 53
+  },
+  "held": 34,
+  "sources": {
+   "citations": 109,
+   "news_citations": 86,
+   "outlets": 84,
+   "top_news_outlets": [
+    [
+     "aljazeera.com",
+     5
+    ],
+    [
+     "euronews.com",
+     3
+    ],
+    [
+     "itv.com",
+     3
+    ],
+    [
+     "allafrica.com",
+     2
+    ],
+    [
+     "cbsnews.com",
+     2
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 60,
+   "predicted_active": 2,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": [
+    "civil-unrest",
+    "food-prices",
+    "semiconductors",
+    "sovereign-debt",
+    "trade-war"
+   ]
+  }
+ },
+ {
   "t": "2026-11-24T11:42:00Z",
   "applied": 41,
   "changed": [],

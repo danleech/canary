@@ -1,7 +1,7 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-24T11:42Z · next run ~17:40 UK · stale after 2026-11-25T01:42Z (36h for daily-tier signals)
+as_of 2026-11-24T17:47Z · next run ~23:40 UK · stale after 2026-11-25T07:47Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
-Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
+Basis: 27 measured from open data, 9 follow a published figure, 53 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 - 2026-11-23T23:42Z Exploited vulnerabilities [exploited-vulns]: NORMAL→WATCH — CISA added 11 known-exploited vulnerabilities in the seven days to 23 Nov, reaching the 11-a-week Watch line
 - 2026-11-23T23:42Z US equity stress [equity-stress]: ALERT→WATCH — S&P 500 jumped 4.7% on 23 Nov, ending a seven-day slide; VIX eased to 26.6, back below the 30 Alert line
@@ -22,4 +22,3 @@ Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judge
 - 2026-11-18T11:49Z Internet & cloud outages [outages]: NORMAL→WATCH — An Apple internal update took down iCloud, App Store and Apple Pay worldwide on 17 Nov; Chase had an outage on 16 Nov
 - 2026-11-18T11:49Z US dollar [dollar]: NORMAL→WATCH — Dollar index 103.8 on 18 Nov, a 52-week high, up 5.1% over three months, crossing the 5% Watch line
 - 2026-11-17T17:51Z Sovereign debt stress [sovereign-debt]: WATCH→ALERT — France–Bund 10-year spread widened to 155bp on 16 Nov, above the 150bp Alert line for most sessions since late Oct
-- 2026-11-17T11:42Z UK weather warnings [uk-weather]: WATCH→NORMAL — Met Office lists no weather warnings at 11:40 UK on 17 Nov after the morning's yellow snow warnings lapsed

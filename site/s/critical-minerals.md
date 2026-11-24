@@ -1,16 +1,16 @@
 # Critical minerals — WATCH (stable)
-id critical-minerals · Energy & Commodities · horizon acute · checked 2026-11-23T17:52Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-25T05:52Z
+id critical-minerals · Energy & Commodities · horizon acute · checked 2026-11-24T17:47Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-26T05:47Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/critical-minerals
 
-Value: Rare-earth pause extended to 10 Jan 2027
-Rated on: Licensing of heavy rare earths in force = Watch; no export-ban stoppages outside China
+Value: Gallium curb pause extended to 27 Jan 2027
+Rated on: Watch: Chinese export licensing for critical minerals remains; bans paused and no stoppages outside China
 Basis: judged — The AI assessor's reading of 1 source from 1 outlet against the rubric. Check the sources before relying on it.
 
-China's pause on some rare-earth export controls runs to 10 Jan 2027; April 2025 licensing for heavy rare earths stays
+China extends its pause on gallium, germanium and antimony export curbs to the US to 27 Jan; licensing regimes stay
 
-Why it's at this level: On 9 Nov China's commerce ministry extended its suspension of some rare-earth export controls, due to end on 10 Nov, to 10 Jan 2027 (S&P Global). Licensing requirements imposed in April 2025 on seven heavy rare earths, including dysprosium and terbium, remain in force. Searches on 23 Nov found no new controls and no production stoppages outside China linked to export bans, so Watch holds on the licensing regime.
+Why it's at this level: China's commerce ministry on 24 Nov extended by two months, to 27 Jan 2027, its suspension of a halt on approvals for gallium, germanium, antimony and superhard material exports to the US, while keeping its ban on dual-use exports to US military users (Seoul Economic Daily). The extension follows Xi and Trump's 18–19 Nov meeting. Export licensing stays in force, and no production stoppages outside China linked to export bans were found, so Watch holds.
 
-What this means for you: Makers of magnets, electric motors, electronics and defence equipment outside China still need Chinese licences for some heavy rare earths. The current pause runs to 10 Jan 2027, after which wider controls could return.
+What this means for you: UK makers of electronics, magnets, batteries and defence equipment rely on Chinese supplies of these materials; licensing can slow deliveries even while bans are paused.
 
 Why it matters: Rare earths, gallium, germanium and graphite are chokepoints for chips, EVs and defence — and China dominates processing.
 What moves it: Export controls, trade disputes, mine outages, stockpiling.
@@ -18,4 +18,4 @@ What moves it: Export controls, trade disputes, mine outages, stockpiling.
 Rubric — Alert: Export bans in force that are causing reported production stoppages outside China. | Watch: New export controls announced or licensing slowed. | Normal: No new export restrictions in the past month.
 
 Sources:
-- S&P Global — China extends rare earth export suspension to January 2027 (2026-11-09) https://www.spglobal.com/energy/en/news-research/latest-news/metals/110926-china-extends-rare-earth-export-suspension-to-january-2027
+- Seoul Economic Daily — China extends suspension of gallium export curbs ahead of Xi's US trip (2026-11-24) https://en.sedaily.com/world/2026/11/24/china-extends-suspension-of-gallium-export-curbs-ahead-of

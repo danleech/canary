@@ -1,16 +1,16 @@
-# Global food prices — WATCH (improving)
-id food-prices · Energy & Commodities · horizon acute · checked 2026-11-23T17:52Z · at this level since 2026-11-06T17:59Z · stale after 2026-11-25T05:52Z
+# Global food prices — WATCH (stable)
+id food-prices · Energy & Commodities · horizon acute · checked 2026-11-24T17:47Z · at this level since 2026-11-06T17:59Z · stale after 2026-11-26T05:47Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/food-prices
 
 Value: FAO index 133.9 (Oct), +5.9% y/y
-Rated on: FFPI 133.9 within 120–135 and y/y +5.9% > +5% = Watch
-Basis: published — Follows FAO Food Price Index, read from the cited source by the AI assessor and checked against the rubric.
+Rated on: Watch: FAO index +5.9% y/y > +5% line; 133.9 < 135 Alert line; no multi-exporter staple bans
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-FAO food price index 133.9 in October, below the 135 Alert line but up 5.9% on a year; next release 4 Dec
+FAO food price index 133.9 in October, below the 135 Alert line but up 5.9% on a year; India weighs rice export curbs
 
-Why it's at this level: The FAO Food Price Index averaged 133.9 points in October, down 1.2% on September but 5.9% above October 2025, with cereals lower and sugar up for a fourth month (FAO, 6 Nov). The annual rise meets the Watch line while the index stays below 135. Searches on 23 Nov found no staple export bans by several major exporters. The next release is due on 4 Dec.
+Why it's at this level: The FAO Food Price Index averaged 133.9 points in October, down 1.2% on September but 5.9% above a year earlier (FAO via Bizcommunity, 6 Nov). The annual rise meets the Watch line while the index stays below 135. India's government is weighing a 30% duty or a minimum export price on non-basmati rice, reported on 22–23 Nov, but no curb had been imposed (InfoArroz). The next FAO release is due on 4 Dec.
 
-What this means for you: Global food commodity prices are about 6% higher than a year ago, which tends to reach supermarket prices with a lag of several months. Import-dependent lower-income countries are most exposed.
+What this means for you: UK food prices tend to follow global commodity costs with a lag of several months. The ONS publishes monthly food inflation figures.
 
 Why it matters: Food prices drive inflation, hunger and political unrest; poorer countries spend up to half of income on food.
 What moves it: Harvests, weather, fertiliser and energy costs, export bans, conflict in breadbaskets.
@@ -18,5 +18,5 @@ What moves it: Harvests, weather, fertiliser and energy costs, export bans, conf
 Rubric — Alert: FFPI > 135, or multiple major exporters ban exports of a staple. | Watch: FFPI 120–135, or y/y > +5%, or a major exporter restricts exports. | Normal: FAO Food Price Index < 120 and y/y change < +5%.
 
 Sources:
-- FAO — Food Price Index (2026-11-06) https://www.fao.org/worldfoodsituation/FoodPricesIndex
-- Bizcommunity — Global food prices fall in October as sugar rises for fourth month (2026-11-07) https://www.bizcommunity.com/article/global-food-prices-fall-in-october-as-sugar-rises-for-fourth-month-639621a
+- Bizcommunity — Global food prices fall in October as sugar rises for fourth month (2026-11-06) https://www.bizcommunity.com/article/global-food-prices-fall-in-october-as-sugar-rises-for-fourth-month-639621a
+- InfoArroz — India: Govt mulls curbs on rice exports (2026-11-23) https://infoarroz.org/blog/2026/11/23/india-govt-mulls-curbs-on-rice-exports/

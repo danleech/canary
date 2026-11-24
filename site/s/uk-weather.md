@@ -1,5 +1,5 @@
 # UK weather warnings — NORMAL (worsening)
-id uk-weather · UK Watch · horizon acute · checked 2026-11-24T11:42Z · text written 2026-11-24T05:53Z · at this level since 2026-11-17T11:42Z · stale after 2026-11-25T01:42Z
+id uk-weather · UK Watch · horizon acute · checked 2026-11-24T17:47Z · text written 2026-11-24T05:53Z · at this level since 2026-11-17T11:42Z · stale after 2026-11-25T07:47Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/uk-weather
 
 Value: 1 warning(s), worst yellow

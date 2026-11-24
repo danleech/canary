@@ -1,10 +1,10 @@
 # UK flood warnings — NORMAL (stable)
-id uk-floods · UK Watch · horizon acute · checked 2026-11-24T11:42Z · text written 2026-11-24T05:53Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-25T01:42Z
+id uk-floods · UK Watch · horizon acute · checked 2026-11-24T17:47Z · text written 2026-11-24T05:53Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-25T07:47Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/uk-floods
 
-Value: No flood warnings
-Rated on: EA: 0 severe, 0 warnings
-Basis: measured — Set by a fixed rule applied to open data (EA: 0 severe, 0 warnings). Anyone can reproduce it from the public metrics file.
+Value: 0 severe, 1 flood warnings
+Rated on: EA: 0 severe, 1 warnings
+Basis: measured — Set by a fixed rule applied to open data (EA: 0 severe, 1 warnings). Anyone can reproduce it from the public metrics file.
 
 No Environment Agency flood warnings in England on 24 Nov; 14 lower-level flood alerts
 
