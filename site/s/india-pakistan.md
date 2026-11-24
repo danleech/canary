@@ -1,16 +1,16 @@
 # India–Pakistan — WATCH (stable)
-id india-pakistan · Armed Conflict · horizon acute · checked 2026-11-23T23:42Z · text written 2026-11-23T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-24T13:42Z
+id india-pakistan · Armed Conflict · horizon acute · checked 2026-11-24T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-24T19:53Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/india-pakistan
 
 Value: Indus treaty in abeyance; no LoC strike
-Rated on: Watch: treaty suspension (Indus Waters Treaty in abeyance); no cross-border strikes or mobilisation
+Rated on: Watch: treaty suspension (Indus Waters Treaty in abeyance since Apr 2025); no cross-border strikes
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-India says its Indus Waters Treaty stance is unchanged as a Pakistani minister attends a 20–22 Nov SCO forum in Delhi
+Pakistan tells the UN India's Indus treaty suspension is unlawful; no cross-border strike or mobilisation found
 
-Why it's at this level: India's foreign ministry said on 21 Nov there was absolutely no change in its position on the Indus Waters Treaty, held in abeyance since April 2025, as Pakistan's climate minister attended an SCO forum in New Delhi, the first Pakistani ministerial invitation since the May 2025 hostilities (Deccan Herald). Pakistan continues to protest the suspension (The Nation, 20 Nov). No cross-border strike or mobilisation was found to 23 Nov, so Watch holds on the treaty suspension.
+Why it's at this level: At the UN Security Council on 18 Nov Pakistan called India's suspension of the Indus Waters Treaty, in abeyance since April 2025, outlaw behaviour, citing an August arbitration award that found the treaty still in force (Dawn, 19 Nov). Pakistan's airspace ban on Indian aircraft, in place since April 2025, was last notified to run to 23 Nov; any renewal was not confirmed (Airways Magazine). No cross-border strike or mobilisation was found to 24 Nov, so Watch holds on the treaty suspension.
 
-What this means for you: No change for travel; check FCDO travel advice, which advises against travel to areas near the Line of Control.
+What this means for you: Check FCDO travel advice before travel near the Line of Control or the India–Pakistan border, where the FCDO advises against travel to some areas. Indian aircraft have been barred from Pakistani airspace, which lengthens some routes.
 
 Why it matters: Two nuclear-armed neighbours with a history of rapid escalation after terrorist attacks.
 What moves it: Kashmir attacks, Line of Control firing, water disputes (Indus), domestic politics.
@@ -18,5 +18,5 @@ What moves it: Kashmir attacks, Line of Control firing, water disputes (Indus), 
 Rubric — Alert: Cross-border military strikes or mobilisation. | Watch: Ceasefire violations, a major terrorist attack with blame assigned, or treaty suspensions. | Normal: Ceasefire holding along the Line of Control; no major attacks.
 
 Sources:
-- Deccan Herald — India says no change in its position on Indus Waters Treaty as Pakistan minister attends SCO forum in Delhi (2026-11-21) https://www.deccanherald.com/india/india-says-no-change-in-its-position-on-indus-waters-treaty-as-pakistan-minister-attends-sco-forum-in-delhi-4226032
-- The Nation — India's unilateral move on Indus Waters Treaty denounced (2026-11-20) https://www.nation.com.pk/20-Nov-2026/india-s-unilateral-move-indus-waters-treaty-denounced
+- Dawn — India's move on Indus Waters Treaty is 'outlaw behaviour', Pakistan tells UN (2026-11-19) https://www.dawn.com/news/2045644/indias-move-on-indus-waters-treaty-is-outlaw-behaviour-pakistan-tells-un
+- Airways Magazine — Pakistan extends Indian aircraft airspace ban until November 24 (2026-10-17) https://www.airwaysmag.com/new-post/pakistan-indian-aircraft-airspace-ban-november-24-2026

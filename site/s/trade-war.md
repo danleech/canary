@@ -1,16 +1,16 @@
 # Trade war & tariffs — WATCH (stable)
-id trade-war · Geopolitics · horizon acute · checked 2026-11-23T23:42Z · text written 2026-11-23T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-24T13:42Z
+id trade-war · Geopolitics · horizon acute · checked 2026-11-24T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-24T19:53Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/trade-war
 
 Value: Mexico doubling threat 12 Nov; not in force
-Rated on: Watch: new major tariffs threatened between large economies (US threat to double tariffs on Mexico, 12 Nov)
+Rated on: Watch: major new tariffs threatened between large economies (US doubling threat on Mexico, 12 Nov); not in force
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-Trump's 12 Nov threat to double tariffs on Mexico over migrant caravans has not been enacted; Mexico rejected it
+Trump's threat to double tariffs on Mexico is not in force; EU opens a third safeguard probe aimed at Chinese imports
 
-Why it's at this level: On 12 Nov President Trump threatened to double tariffs on Mexican goods with immediate effect unless Mexico stops migrant caravans; President Sheinbaum rejected the threat, saying no caravan has reached the US border since January 2025 (AP via Spectrum News; Bloomberg). Searches to 23 Nov found no doubled tariff in force and no Mexican retaliation, so Watch holds on the threat.
+Why it's at this level: Trump's 12 Nov threat to double tariffs on Mexican goods has not been enacted; Sheinbaum said after meeting Trump on 18 Nov that talks on steel, aluminium and car tariffs were very advanced and she hopes for a deal in December (Rio Times, 19 Nov). On 23 Nov the EU opened a safeguard investigation into resins and glass fibre, its third in under a month aimed mainly at Chinese imports (Aju Press). No broad new tariffs with retaliation under way were found, so Watch holds.
 
-What this means for you: Businesses trading with Mexico face uncertainty over possible higher US duties; prices of some imported goods can rise if tariffs change. No action is required of households.
+What this means for you: Importers and exporters trading with the US, Mexico, China and the EU face uncertainty over tariff rates and possible new safeguard duties. UK businesses can find official guidance on trade rules from the Department for Business and Trade.
 
 Why it matters: Tariffs raise prices, reroute supply chains and slow growth; escalation cycles hurt export-heavy economies like the UK's partners.
 What moves it: US tariff policy, retaliation, court rulings, trade deals, WTO disputes.
@@ -18,5 +18,5 @@ What moves it: US tariff policy, retaliation, court rulings, trade deals, WTO di
 Rubric — Alert: Broad new tariffs in force with retaliation under way, or US average effective tariff rising sharply. | Watch: New major tariffs announced or threatened between large economies. | Normal: Tariff regime stable; no new major measures in the past two weeks.
 
 Sources:
-- Spectrum News (AP) — Sheinbaum rebuffs Trump tariff threat, says no caravans reached U.S. border (2026-11-12) https://spectrumlocalnews.com/nys/binghamton/international/2026/11/12/trump-caravans-mexico-tariff-threat-claudia-sheinbaum-
-- Bloomberg — Trump threatens to double tariffs on Mexican goods over migrants (2026-11-12) https://www.bloomberg.com/news/articles/2026-11-12/trump-threatens-to-double-tariffs-on-mexican-goods-over-migrants
+- Rio Times — Sheinbaum expects US tariff-cut deal in December (2026-11-19) https://www.riotimesonline.com/sheinbaum-expects-us-tariff-cut-deal-december-2026/
+- Aju Press — EU widens trade shields against China (2026-11-24) https://www.ajupress.com/view/20261124035202581
