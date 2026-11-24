@@ -1,10 +1,10 @@
 # UK weather warnings — NORMAL (worsening)
-id uk-weather · UK Watch · horizon acute · checked 2026-11-24T17:47Z · text written 2026-11-24T05:53Z · at this level since 2026-11-17T11:42Z · stale after 2026-11-25T07:47Z
+id uk-weather · UK Watch · horizon acute · checked 2026-11-24T23:41Z · text written 2026-11-24T05:53Z · at this level since 2026-11-17T11:42Z · stale after 2026-11-25T13:41Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/uk-weather
 
-Value: 1 warning(s), worst yellow
-Rated on: worst warning: yellow
-Basis: measured — Set by a fixed rule applied to open data (worst warning: yellow). Anyone can reproduce it from the public metrics file.
+Value: No warnings
+Rated on: worst warning: none
+Basis: measured — Set by a fixed rule applied to open data (worst warning: none). Anyone can reproduce it from the public metrics file.
 
 Six Met Office yellow warnings on 24 Nov: ice in Scotland and North East England, rain in South West England
 

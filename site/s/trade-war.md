@@ -1,5 +1,5 @@
 # Trade war & tariffs — WATCH (worsening)
-id trade-war · Geopolitics · horizon acute · checked 2026-11-24T17:47Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-25T07:47Z
+id trade-war · Geopolitics · horizon acute · checked 2026-11-24T23:41Z · text written 2026-11-24T17:47Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-25T13:41Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/trade-war
 
 Value: US Section 301 tariff hike on China, EU expected

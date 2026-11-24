@@ -1,5 +1,5 @@
 # Nuclear risk — WATCH (stable)
-id nuclear-risk · Armed Conflict · horizon acute · checked 2026-11-24T17:47Z · text written 2026-11-24T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-25T07:47Z
+id nuclear-risk · Armed Conflict · horizon acute · checked 2026-11-24T23:41Z · text written 2026-11-24T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-25T13:41Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/nuclear-risk
 
 Value: No US–Russia treaty limits; satellite warning

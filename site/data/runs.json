@@ -1,5 +1,32 @@
 [
  {
+  "t": "2026-11-24T23:41:50Z",
+  "applied": 41,
+  "changed": [],
+  "warnings": [],
+  "note": "Late-evening run: searches found nothing material after the 17:47 UK texts, so all 20 assessed signals were held.",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 3,
+   "judged": 17
+  },
+  "held": 41,
+  "sources": {
+   "citations": 0,
+   "news_citations": 0,
+   "outlets": 0,
+   "top_news_outlets": []
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 20,
+   "predicted_active": 0,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": []
+  }
+ },
+ {
   "t": "2026-11-24T17:47:09Z",
   "applied": 89,
   "changed": [],
