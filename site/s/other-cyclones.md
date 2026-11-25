@@ -1,9 +1,9 @@
 # Pacific & Indian cyclones — NORMAL (stable)
-id other-cyclones · Weather & Hazards · horizon acute · checked 2026-11-25T05:56Z · at this level since 2026-11-20T05:49Z · stale after 2026-11-25T19:56Z
+id other-cyclones · Weather & Hazards · horizon acute · checked 2026-11-25T11:41Z · text written 2026-11-25T05:56Z · at this level since 2026-11-20T05:49Z · stale after 2026-11-26T01:41Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/other-cyclones
 
 Value: One green-level cyclone
-Rated on: Normal: GDACS cyclone 0 red / 0 orange
+Rated on: GDACS cyclone: 0 red / 0 orange
 Basis: measured — Set by a fixed rule applied to open data (GDACS cyclone: 0 red / 0 orange). Anyone can reproduce it from the public metrics file.
 
 GDACS lists one green-level tropical cyclone on 25 Nov and no orange or red cyclone alerts

@@ -1,9 +1,9 @@
 # Credit spreads — NORMAL (stable)
-id credit-spreads · Markets · horizon acute · checked 2026-11-25T05:56Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-25T19:56Z
+id credit-spreads · Markets · horizon acute · checked 2026-11-25T11:41Z · text written 2026-11-25T05:56Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-26T01:41Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/credit-spreads
 
 Value: HY OAS 3.63%
-Rated on: Normal: HY OAS 3.63% < 4.0%; 1m widening 25bp < 100bp
+Rated on: HY OAS 3.63% below the 4% Watch line
 Basis: measured — Set by a fixed rule applied to open data (HY OAS % = 3.63). Anyone can reproduce it from the public metrics file.
 
 US high-yield spreads 3.63% on 23 Nov, down from a one-year high of 3.76% on 20 Nov; inside the 4% line

@@ -1,5 +1,5 @@
 # Trade war & tariffs — WATCH (stable)
-id trade-war · Geopolitics · horizon acute · checked 2026-11-25T05:56Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-25T19:56Z
+id trade-war · Geopolitics · horizon acute · checked 2026-11-25T11:41Z · text written 2026-11-25T05:56Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-26T01:41Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/trade-war
 
 Value: US Section 301 tariffs on 16 partners pending
