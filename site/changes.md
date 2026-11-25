@@ -1,8 +1,9 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-25T17:54Z · next run ~23:40 UK · stale after 2026-11-26T07:54Z (36h for daily-tier signals)
+as_of 2026-11-25T23:42Z · next run ~05:40 UK · stale after 2026-11-26T13:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 8 follow a published figure, 54 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
+- 2026-11-25T23:42Z Exploited vulnerabilities [exploited-vulns]: NORMAL→WATCH — CISA added 19 known-exploited vulnerabilities in the seven days to 25 Nov, above the 11-a-week Watch line
 - 2026-11-25T17:54Z US equity stress [equity-stress]: WATCH→ALERT — VIX rose to about 31 on 25 Nov, above the 30 Alert line; S&P 500 about 9.1% below its 52-week high
 - 2026-11-25T05:56Z Exploited vulnerabilities [exploited-vulns]: WATCH→NORMAL — CISA added 9 known-exploited vulnerabilities in the seven days to 24 Nov, below the 11-a-week line
 - 2026-11-25T05:56Z US dollar [dollar]: WATCH→NORMAL — Dollar index near 104.0 on 25 Nov, 4.3% higher over three months, back inside the 5% line

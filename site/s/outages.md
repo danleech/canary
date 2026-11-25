@@ -1,5 +1,5 @@
 # Internet & cloud outages — NORMAL (stable)
-id outages · Technology & Cyber · horizon acute · checked 2026-11-25T17:54Z · text written 2026-11-25T05:56Z · at this level since 2026-11-20T05:49Z · stale after 2026-11-26T07:54Z
+id outages · Technology & Cyber · horizon acute · checked 2026-11-25T23:42Z · text written 2026-11-25T05:56Z · at this level since 2026-11-20T05:49Z · stale after 2026-11-26T13:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/outages
 
 Value: No major outage in 48h to 25 Nov
