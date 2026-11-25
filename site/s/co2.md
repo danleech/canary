@@ -1,5 +1,5 @@
 # Atmospheric CO₂ — WATCH (stable)
-id co2 · Climate · horizon chronic · checked 2026-11-24T17:47Z · at this level since 2026-11-14T17:56Z · stale after 2026-11-26T05:47Z
+id co2 · Climate · horizon chronic · checked 2026-11-25T17:54Z · at this level since 2026-11-14T17:56Z · stale after 2026-11-27T05:54Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/co2
 
 Value: 429.02 ppm, +2.18/yr
@@ -9,9 +9,9 @@ Situation: Super El Niño [super-el-nino]
 
 CO₂ 429.02 ppm at Mauna Loa in the week of 15 Nov, up 2.18 ppm on a year, inside the 2–3 ppm Watch band
 
-Why it's at this level: Mauna Loa recorded 429.02 ppm in the week of 15 Nov, 2.18 ppm higher than a year earlier and inside the 2.0–3.0 ppm Watch band (NOAA GML). No newer weekly value was available on 24 Nov, and weekly growth figures are noisy. El Niño years tend to bring faster CO₂ growth as tropical land absorbs less carbon.
+Why it's at this level: Mauna Loa recorded 429.02 ppm in the week of 15 Nov, 2.18 ppm higher than a year earlier and inside the 2.0–3.0 ppm Watch band (NOAA GML). No newer weekly value was available on 25 Nov, and weekly growth figures are noisy. El Niño years tend to bring faster CO₂ growth as tropical land absorbs less carbon.
 
-What this means for you: CO₂ growth is a slow-moving indicator of long-term warming rather than a near-term hazard.
+What this means for you: Faster CO₂ growth adds to long-term warming; it has no immediate day-to-day effect.
 
 Why it matters: CO₂ concentration is the main long-run driver of warming; the growth rate shows whether emissions cuts are biting.
 What moves it: Fossil emissions, land sinks, El Niño (weakens sinks), wildfires.
@@ -19,4 +19,4 @@ What moves it: Fossil emissions, land sinks, El Niño (weakens sinks), wildfires
 Rubric — Alert: > 3.0 ppm. | Watch: 2.0–3.0 ppm. | Normal: Year-on-year growth < 2.0 ppm.
 
 Sources:
-- NOAA GML — Trends in atmospheric CO₂ (Mauna Loa) (2026-11-24) https://gml.noaa.gov/ccgg/trends/
+- NOAA GML — Trends in atmospheric carbon dioxide (2026-11-25) https://gml.noaa.gov/ccgg/trends/

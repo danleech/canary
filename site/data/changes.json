@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-25T17:54:24Z",
+  "id": "equity-stress",
+  "name": "US equity stress",
+  "from": "amber",
+  "to": "red",
+  "reason": "VIX rose to about 31 on 25 Nov, above the 30 Alert line; S&P 500 about 9.1% below its 52-week high"
+ },
+ {
   "t": "2026-11-25T05:56:09Z",
   "id": "exploited-vulns",
   "name": "Exploited vulnerabilities",

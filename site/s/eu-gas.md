@@ -1,10 +1,10 @@
 # European gas (TTF) — ALERT (worsening)
-id eu-gas · Energy & Commodities · horizon acute · checked 2026-11-25T11:41Z · text written 2026-11-25T05:56Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-26T01:41Z
+id eu-gas · Energy & Commodities · horizon acute · checked 2026-11-25T17:54Z · text written 2026-11-25T05:56Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-26T07:54Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/eu-gas
 
-Value: €91/MWh
-Rated on: TTF €91.2/MWh > €70/MWh Alert line
-Basis: measured — Set by a fixed rule applied to open data (TTF €/MWh = 91.22). Anyone can reproduce it from the public metrics file.
+Value: €88/MWh
+Rated on: TTF €88.1/MWh > €70/MWh Alert line
+Basis: measured — Set by a fixed rule applied to open data (TTF €/MWh = 88.10). Anyone can reproduce it from the public metrics file.
 Situation: US–Iran war and Gulf energy shock [us-iran-war]
 
 European gas near €90/MWh on 24 Nov, above the €70 Alert line, with storage well below last year

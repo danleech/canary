@@ -1,8 +1,9 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-25T11:41Z · next run ~17:40 UK · stale after 2026-11-26T01:41Z (36h for daily-tier signals)
+as_of 2026-11-25T17:54Z · next run ~23:40 UK · stale after 2026-11-26T07:54Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 8 follow a published figure, 54 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
+- 2026-11-25T17:54Z US equity stress [equity-stress]: WATCH→ALERT — VIX rose to about 31 on 25 Nov, above the 30 Alert line; S&P 500 about 9.1% below its 52-week high
 - 2026-11-25T05:56Z Exploited vulnerabilities [exploited-vulns]: WATCH→NORMAL — CISA added 9 known-exploited vulnerabilities in the seven days to 24 Nov, below the 11-a-week line
 - 2026-11-25T05:56Z US dollar [dollar]: WATCH→NORMAL — Dollar index near 104.0 on 25 Nov, 4.3% higher over three months, back inside the 5% line
 - 2026-11-23T23:42Z Exploited vulnerabilities [exploited-vulns]: NORMAL→WATCH — CISA added 11 known-exploited vulnerabilities in the seven days to 23 Nov, reaching the 11-a-week Watch line
@@ -20,6 +21,3 @@ Basis: 27 measured from open data, 8 follow a published figure, 54 are AI judgem
 - 2026-11-20T05:49Z Gold (fear gauge) [gold]: WATCH→ALERT — Gold near $3,519 on 20 Nov after an 8.7% weekly fall, beyond the 7% weekly Alert line; down 25% in three months
 - 2026-11-19T17:49Z Sovereign debt stress [sovereign-debt]: ALERT→WATCH — France–Bund 10-year spread eased to about 145–150bp on 19 Nov, near the 150bp Alert line; Alert unconfirmed
 - 2026-11-19T05:51Z Korean peninsula [korea]: WATCH→NORMAL — No North Korean launch found since 4 Nov, outside the rubric's two-week window; no border incident
-- 2026-11-18T17:47Z UK energy price cap [uk-energy-cap]: WATCH→ALERT — Cornwall Insight's final forecast puts the January cap at about £2,166 a year, 26% above today's £1,723
-- 2026-11-18T11:49Z Internet & cloud outages [outages]: NORMAL→WATCH — An Apple internal update took down iCloud, App Store and Apple Pay worldwide on 17 Nov; Chase had an outage on 16 Nov
-- 2026-11-18T11:49Z US dollar [dollar]: NORMAL→WATCH — Dollar index 103.8 on 18 Nov, a 52-week high, up 5.1% over three months, crossing the 5% Watch line

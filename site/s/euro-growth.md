@@ -1,16 +1,16 @@
 # Euro-area economy — NORMAL (stable)
-id euro-growth · Economy · horizon acute · checked 2026-11-24T17:47Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-26T05:47Z
+id euro-growth · Economy · horizon acute · checked 2026-11-25T17:54Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-27T05:54Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/euro-growth
 
-Value: Q3 GDP +0.4%; Nov flash composite PMI 51.7
-Rated on: Normal: Q3 GDP +0.4% (positive) and Nov flash composite PMI 51.7 > 50
+Value: Nov flash composite PMI 51.7; ifo 90.6
+Rated on: Normal: composite PMI 51.7 > 50 and growth positive
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-Euro-area flash composite PMI held at 51.7 in November; Q3 GDP grew 0.4%, so growth stays positive
+Euro-area flash composite PMI held at 51.7 in November and Germany's ifo index rose to 90.6; growth stays positive
 
-Why it's at this level: The flash euro-area composite PMI was unchanged at 51.7 in November, slightly below expectations, with Germany driving growth while France's downturn deepened and the rest of the bloc grew at a six-month low (Trading Economics, 23 Nov). Eurostat put third-quarter GDP growth at 0.4% in the euro area. With growth positive and the PMI above 50, the signal stays Normal.
+Why it's at this level: The flash euro-area composite PMI was unchanged at 51.7 in November, slightly below the 51.9 expected (Trading Economics, 23 Nov). Germany's ifo business climate index rose to 90.6 in November from 90.1, published on 24 Nov (ifo). With the PMI above 50 and no sign of contraction across the bloc as a whole, the signal stays Normal, though France's activity is weakening.
 
-What this means for you: Euro-area activity is still expanding overall, though France is contracting. Households and firms exposed to France face a weaker local economy than the euro-area average suggests.
+What this means for you: Businesses and workers in the euro area face steady but modest growth. Exporters to Europe see demand holding up, with France the weak spot.
 
 Why it matters: The euro area is the UK's largest trading partner; stagnation there hits UK exports and European markets.
 What moves it: Energy prices, German industry, ECB policy, fiscal rules, China demand.
@@ -18,5 +18,5 @@ What moves it: Energy prices, German industry, ECB policy, fiscal rules, China d
 Rubric — Alert: Technical recession, or PMI < 45, or bond-spread fragmentation forcing ECB action. | Watch: Stagnation (GDP ~0), or composite PMI 45–50. | Normal: Positive GDP growth and composite PMI > 50.
 
 Sources:
-- Trading Economics — Eurozone private sector growth holds steady in November (2026-11-23) https://tradingeconomics.com/euro-area/composite-pmi/news/598085
-- Eurostat — GDP up by 0.4% in the euro area and by 0.5% in the EU (2026-10-30) https://ec.europa.eu/eurostat/product?code=2-30102026-ap
+- Trading Economics — Eurozone Private Sector Growth Holds Steady in November (2026-11-23) https://tradingeconomics.com/euro-area/composite-pmi/news/504084
+- ifo Institute — ifo Business Climate Index for Germany (2026-11-24) https://www.ifo.de/en/survey/ifo-business-climate-index
