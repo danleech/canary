@@ -1,16 +1,16 @@
 # Atlantic hurricanes — NORMAL (stable)
-id atlantic-cyclones · Weather & Hazards · horizon acute · checked 2026-11-24T23:41Z · text written 2026-11-24T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-25T13:41Z
+id atlantic-cyclones · Weather & Hazards · horizon acute · checked 2026-11-25T05:56Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-25T19:56Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/atlantic-cyclones
 
 Value: No Atlantic storms
-Rated on: No hurricane active or threatening land within 5 days; NHC expects no formation in 7 days (23 Nov)
-Basis: published — Follows NOAA National Hurricane Center, read from the cited source by the AI assessor and checked against the rubric.
+Rated on: Normal: no hurricane active and none threatening land within 5 days
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-NHC expects no Atlantic tropical cyclone to form in the 7 days from 23 Nov; the 2026 season ends on 30 Nov
+No Atlantic tropical cyclone active or expected; the quiet 2026 season ends on 30 Nov
 
-Why it's at this level: The National Hurricane Center's Atlantic outlook issued at 07:00 EST on 23 Nov covers the North Atlantic, Caribbean Sea and Gulf, and says no tropical cyclone formation is expected in the next seven days (NHC). GDACS's cyclone feed for 17 to 24 Nov lists only Xavier in the South Pacific and Akvan in the North Indian Ocean, both at green, with no Atlantic system (GDACS). With nothing threatening land within five days and the season ending on 30 Nov, the level stays Normal.
+Why it's at this level: No Atlantic tropical storm or hurricane was found active or threatening land in the run to 25 Nov, and GDACS listed no Atlantic cyclone at 05:41 UTC on 25 Nov (GDACS). AccuWeather said on 9 Nov that the window for further development had closed and that it considered the 2026 season over, after 10 named storms and one hurricane, Isaias, which made landfall near Destin, Florida, on 9 Oct (AccuWeather). With nothing threatening land within five days and the season ending on 30 Nov, the level stays Normal.
 
-What this means for you: No Atlantic storm is active or forecast. Anyone travelling to the Caribbean or the US Gulf coast can check the National Hurricane Center and FCDO travel advice before departure.
+What this means for you: No tropical threat is expected. Anyone travelling to the Caribbean or US Gulf coast can check the National Hurricane Center and FCDO travel advice for updates.
 
 Why it matters: Atlantic hurricanes hit the US Gulf coast, Caribbean and Central America — and refinery and insurance markets with them.
 What moves it: Sea-surface temperatures, ENSO, wind shear, season timing (Jun–Nov peak Aug–Oct).
@@ -18,5 +18,5 @@ What moves it: Sea-surface temperatures, ENSO, wind shear, season timing (Jun–
 Rubric — Alert: Category 3+ landfall expected within 72 hours or occurring. | Watch: Tropical storm or hurricane threatening land within 5 days. | Normal: No hurricane active, or none threatening land within 5 days.
 
 Sources:
-- NOAA National Hurricane Center — Graphical Tropical Weather Outlook (Atlantic, 7:00 AM EST 23 Nov) (2026-11-23) https://prod-east-nhc.woc.noaa.gov/mobile/gtwo.html
-- GDACS — Tropical cyclone events, last 3 months (RSS) (2026-11-24) https://gdacs.org/xml/rss_tc_3m.xml
+- AccuWeather — The 2026 Atlantic hurricane season is over (2026-11-09) https://www.accuweather.com/en/hurricane/2026-atlantic-hurricane-season-is-over/1955742
+- GDACS — Global Disaster Alert and Coordination System (2026-11-25) https://www.gdacs.org/

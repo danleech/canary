@@ -1,5 +1,21 @@
 [
  {
+  "t": "2026-11-25T05:56:09Z",
+  "id": "exploited-vulns",
+  "name": "Exploited vulnerabilities",
+  "from": "amber",
+  "to": "green",
+  "reason": "CISA added 9 known-exploited vulnerabilities in the seven days to 24 Nov, below the 11-a-week line"
+ },
+ {
+  "t": "2026-11-25T05:56:09Z",
+  "id": "dollar",
+  "name": "US dollar",
+  "from": "amber",
+  "to": "green",
+  "reason": "Dollar index near 104.0 on 25 Nov, 4.3% higher over three months, back inside the 5% line"
+ },
+ {
   "t": "2026-11-23T23:42:45Z",
   "id": "exploited-vulns",
   "name": "Exploited vulnerabilities",

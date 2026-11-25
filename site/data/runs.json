@@ -1,5 +1,61 @@
 [
  {
+  "t": "2026-11-25T05:56:09Z",
+  "applied": 41,
+  "changed": [
+   "dollar",
+   "exploited-vulns"
+  ],
+  "warnings": [
+   "sources: tradingeconomics.com supplies 4 of 32 news citations (12%); diversify next run (errors above 20%)"
+  ],
+  "note": "",
+  "catalogue": "1.3",
+  "basis": {
+   "measured": 21,
+   "published": 2,
+   "judged": 18
+  },
+  "held": 0,
+  "sources": {
+   "citations": 70,
+   "news_citations": 32,
+   "outlets": 38,
+   "top_news_outlets": [
+    [
+     "tradingeconomics.com",
+     4
+    ],
+    [
+     "aljazeera.com",
+     3
+    ],
+    [
+     "kyivindependent.com",
+     2
+    ],
+    [
+     "wral.com",
+     2
+    ],
+    [
+     "accuweather.com",
+     1
+    ]
+   ]
+  },
+  "triage": {
+   "method": "persistence-v0",
+   "predicted_quiet": 20,
+   "predicted_active": 0,
+   "quiet_but_status_changed": [],
+   "quiet_but_trend_changed": [
+    "russia-nato",
+    "trade-war"
+   ]
+  }
+ },
+ {
   "t": "2026-11-24T23:41:50Z",
   "applied": 41,
   "changed": [],
