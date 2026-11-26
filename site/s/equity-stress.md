@@ -1,10 +1,10 @@
 # US equity stress — ALERT (improving)
-id equity-stress · Markets · horizon acute · checked 2026-11-26T05:47Z · at this level since 2026-11-25T17:54Z · stale after 2026-11-26T19:47Z
+id equity-stress · Markets · horizon acute · checked 2026-11-26T11:44Z · text written 2026-11-26T05:47Z · at this level since 2026-11-25T17:54Z · stale after 2026-11-27T01:44Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/equity-stress
 
-Value: VIX 28.3, S&P -8.1%
-Rated on: VIX 28.3 above the 27 exit line from Alert (entry > 30); S&P drawdown 8.1% in the 5–15% Watch band
-Basis: measured — Set by a fixed rule applied to open data (VIX = 28.29 · S&P drawdown % = 8.14). Anyone can reproduce it from the public metrics file.
+Value: VIX 27.1, S&P -8.1%
+Rated on: VIX 27.1 has not yet cleared the 27 exit line, so Alert holds
+Basis: measured — Set by a fixed rule applied to open data (VIX = 27.07 · S&P drawdown % = 8.14). Anyone can reproduce it from the public metrics file.
 
 VIX eased to 28.3 on 25 Nov from 31, still above the 27 exit line; S&P 500 8.1% below its 52-week high
 
