@@ -1,16 +1,16 @@
 # UK strikes & disruption — NORMAL (stable)
-id uk-disruption · UK Watch · horizon acute · checked 2026-11-25T17:54Z · at this level since 2026-11-13T17:58Z · stale after 2026-11-27T05:54Z
+id uk-disruption · UK Watch · horizon acute · checked 2026-11-26T17:51Z · at this level since 2026-11-13T17:58Z · stale after 2026-11-28T05:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/uk-disruption
 
-Value: No national strike; Tube strike 26–27 Nov
-Rated on: Normal: no national-scale strike; Tube strike is London-only
-Basis: judged — The AI assessor's reading of 1 source from 1 outlet against the rubric. Check the sources before relying on it.
+Value: No national strike; London Tube strikes
+Rated on: No national-scale strike or disruption this week = Normal
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-RMT Tube strike on 26–27 Nov hits London only; no national-scale strike or nationwide infrastructure failure found
+RMT London Underground strikes run from November to February; no national-scale strike or infrastructure failure found
 
-Why it's at this level: RMT members on the London Underground strike from midday on 26 Nov to midday on 27 Nov, with no Piccadilly or Circle line services on 26 Nov; National Rail, the Elizabeth line, DLR, Overground and buses are expected to run normally (Time Out, 24 Nov). The next listed Tube strike is on 17 Dec. Searches on 25 Nov found no national-scale strike or nationwide infrastructure disruption due in the coming week, so the signal stays Normal.
+Why it's at this level: The RMT has announced a series of London Underground strikes running from November 2026 to February 2027, affecting Tube lines in London only (UCL; Londonist). Searches on 26 Nov found no national-scale strike and no nationwide infrastructure disruption due in the coming week, so the signal stays Normal.
 
-What this means for you: London commuters face disruption on 26–27 Nov, mainly on the Piccadilly, Circle and Waterloo & City lines. TfL publishes live service updates.
+What this means for you: Londoners should check TfL journey planners before travelling on strike days; National Rail services are not part of the Tube action.
 
 Why it matters: Strikes and infrastructure failures in rail, health, ports and power disrupt daily life and the economy.
 What moves it: Pay disputes, infrastructure failures, cyber incidents, weather.
@@ -18,4 +18,5 @@ What moves it: Pay disputes, infrastructure failures, cyber incidents, weather.
 Rubric — Alert: Multiple simultaneous national strikes, or nationwide infrastructure failure. | Watch: National strike in one sector or major infrastructure disruption. | Normal: No national-scale strikes or disruption this week.
 
 Sources:
-- Time Out — Tube and train strikes Christmas and winter 2026–2027: full list of dates and lines (2026-11-24) https://www.timeout.com/london/news/tube-and-train-strikes-christmas-winter-2026-2027-full-list-of-dates-and-lines-110626
+- UCL — London Underground strike action November 2026 to February 2027 () https://www.ucl.ac.uk/news/2026/nov/london-underground-strike-action-november-2026-february-2027
+- Londonist — Christmas 2026 Tube strikes: action announced for November–February () https://londonist.com/london/transport/tube-strikes-london-christmas-2026-november-december-january-2027

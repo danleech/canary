@@ -1,16 +1,16 @@
 # Forced displacement — NORMAL (stable)
-id displacement · Humanitarian · horizon acute · checked 2026-11-25T17:54Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-27T05:54Z
+id displacement · Humanitarian · horizon acute · checked 2026-11-26T17:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-28T05:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/displacement
 
 Value: No UN-confirmed event over 500k/month
-Rated on: Normal: no new event displacing more than 500,000 people in a month found
+Rated on: No new event displacing > 500,000 in a month = Normal
 Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 
-175,000 displaced in South Kivu's Mwenga and thousands more in Sudan's Blue Nile; no event over 500,000 a month
+UN says Yemen fighting has displaced 364,000 since August; no event displacing over 500,000 in a month found
 
-Why it's at this level: Civil society in Mwenga, South Kivu, warned on 25 Nov of precarious conditions for 175,000 displaced people (Radio Okapi). IOM said displacement rose in seven Sudanese states in October, and local groups report more than 51,000 newly displaced in Blue Nile. UNHCR and IOM warned on 6 Nov that they can prioritise shelter aid for only about 10% of 15.4 million people in need in Sudan. None amounts to a new event displacing 500,000 people in a month, so the signal stays Normal.
+Why it's at this level: UN humanitarian chief Tom Fletcher said on 25 Nov that renewed fighting in Yemen has displaced more than 364,000 people since August (ABC News). UNHCR said on 10 Nov that about 64,000 people have fled northern Nigeria to Niger this year (DevelopmentAid), and IOM reported more than 5,000 people fleeing North Darfur villages on 10–11 Nov (A News). None amounts to a new event displacing 500,000 people in a month, so the signal stays Normal.
 
-What this means for you: Displaced people in Sudan, eastern DR Congo and the Sahel face shortages of shelter, food and health care. UNHCR and IOM publish current figures.
+What this means for you: UNHCR, IOM and WFP appeals set out the needs of displaced people in Yemen, Sudan and the Sahel.
 
 Why it matters: Over 120 million people are forcibly displaced; new mass displacement drives regional instability and migration politics.
 What moves it: Conflict, disasters, persecution, economic collapse.
@@ -18,6 +18,6 @@ What moves it: Conflict, disasters, persecution, economic collapse.
 Rubric — Alert: A new event displacing > 1 million in a month. | Watch: A new event displacing > 500,000 people in a month. | Normal: No new mass displacement events this month.
 
 Sources:
-- Radio Okapi — La société civile alerte sur les conditions précaires de 175 000 déplacés (2026-11-25) https://www.radiookapi.net/2026/11/25/actualite/securite/la-societe-civile-alerte-sur-les-conditions-precaires-de-175-000
-- AllAfrica — Sudan: Number of displaced people rose in seven Sudan states in October - IOM (2026-11-18) https://allafrica.com/stories/202611180008.html
-- TimesLIVE — Millions of displaced Sudanese risk losing shelter as funds run low, UN warns (2026-11-06) https://www.timeslive.co.za/news/africa/2026-11-06-millions-of-displaced-sudanese-risk-losing-shelter-as-funds-run-low-un-warns/
+- ABC News — Iran live updates (2026-11-26) https://abcnews.com/International/live-updates/iran-live-updates-tehran-strait-hormuz-safe-demands/?id=138369648
+- DevelopmentAid (UNHCR) — Nearly 64,000 flee Nigeria for Niger (2026-11-11) https://www.developmentaid.org/amp/news-stream/post/214696/nearly-64000-flee-nigeria-for-niger-amid-deepening-humanitarian-crisis
+- A News — Over 5,200 displaced from Sudan's North, South Darfur in 3 days: UN agency (2026-11-12) https://anews.com.tr/world/2026/11/12/over-5200-displaced-from-sudans-north-south-darfur-in-3-days-un-agency

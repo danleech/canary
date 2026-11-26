@@ -1,5 +1,5 @@
 # Pacific & Indian cyclones — NORMAL (stable)
-id other-cyclones · Weather & Hazards · horizon acute · checked 2026-11-26T11:44Z · text written 2026-11-26T05:47Z · at this level since 2026-11-20T05:49Z · stale after 2026-11-27T01:44Z
+id other-cyclones · Weather & Hazards · horizon acute · checked 2026-11-26T17:51Z · text written 2026-11-26T05:47Z · at this level since 2026-11-20T05:49Z · stale after 2026-11-27T07:51Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/other-cyclones
 
 Value: One green-level cyclone

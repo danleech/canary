@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-26T17:51:12Z",
+  "id": "equity-stress",
+  "name": "US equity stress",
+  "from": "red",
+  "to": "amber",
+  "reason": "VIX eased to 26.8 by 26 Nov, below the 27 exit line; S&P 500 8.1% below its 52-week high"
+ },
+ {
   "t": "2026-11-25T23:42:00Z",
   "id": "exploited-vulns",
   "name": "Exploited vulnerabilities",
