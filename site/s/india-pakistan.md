@@ -1,5 +1,5 @@
 # India–Pakistan — WATCH (stable)
-id india-pakistan · Armed Conflict · horizon acute · checked 2026-11-26T17:51Z · text written 2026-11-26T05:47Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-27T07:51Z
+id india-pakistan · Armed Conflict · horizon acute · checked 2026-11-26T23:41Z · text written 2026-11-26T05:47Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-27T13:41Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/india-pakistan
 
 Value: Airspace bans in force to 24 Dec

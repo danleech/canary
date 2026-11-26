@@ -1,10 +1,10 @@
 # Canary — world risk status
-as_of 2026-11-26T17:51Z · next run ~23:40 UK · stale after 2026-11-27T07:51Z (36h for daily-tier signals)
+as_of 2026-11-26T23:41Z · next run ~05:40 UK · stale after 2026-11-27T13:41Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 World State 39/100 (Unsettled) · 13 Alert · 45 Watch · 31 Normal
-Headline: Equity stress eases to Watch as the VIX slips below 27. Iran's Guards say two tankers hit mines near Hormuz on 26 Nov, and drone strikes kill civilians in Sudan's Blue Nile; Ukraine, Gulf and Ebola Alerts hold.
+Headline: Iran's Guards say Hormuz stays closed after tankers hit mines on 26 Nov; Russian missile strikes on Kyiv and Houthi–Saudi attacks continue, and the Ebola epidemic in DR Congo has passed 11,500 confirmed cases.
 
 ## Situations (7 cross-domain events; Alerts below are grouped under them)
 - US–Iran war and Gulf energy shock [ALERT, stable]: Iran's Guards say two tankers hit mines off Khasab on 26 Nov; Hormuz crossings fell over 40% on 17–23 Nov; Brent near $91. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight, uk-energy-cap; watch: iran-nuclear, sanctions, oil, fertiliser, semiconductors
@@ -22,7 +22,6 @@ Headline: Equity stress eases to Watch as the VIX slips below 27. Iran's Guards 
 ## Changed in last 24h
 - US equity stress [equity-stress]: ALERT→WATCH — VIX eased to 26.8 by 26 Nov, below the 27 exit line; S&P 500 8.1% below its 52-week high (2026-11-26T17:51Z)
 - Exploited vulnerabilities [exploited-vulns]: NORMAL→WATCH — CISA added 19 known-exploited vulnerabilities in the seven days to 25 Nov, above the 11-a-week Watch line (2026-11-25T23:42Z)
-- US equity stress [equity-stress]: WATCH→ALERT — VIX rose to about 31 on 25 Nov, above the 30 Alert line; S&P 500 about 9.1% below its 52-week high (2026-11-25T17:54Z)
 
 ## Emerging (outside the catalogue; provisional)
 - Cuba humanitarian strain under US fuel blockade [WATCH]: WHO chief urges end to US fuel blockade on Cuba after 24 Nov visit; Cuban life expectancy fell to 74.4 years in 2025

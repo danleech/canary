@@ -1,5 +1,5 @@
 # Canary — all signals
-as_of 2026-11-26T17:51Z · next run ~23:40 UK · stale after 2026-11-27T07:51Z (36h for daily-tier signals)
+as_of 2026-11-26T23:41Z · next run ~05:40 UK · stale after 2026-11-27T13:41Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -22,14 +22,14 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | uk-threat-level | ALERT | stable | judged | Threat level: Severe | UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 26 Nov |
 | equity-stress | WATCH | improving | measured | VIX 26.8, S&P -8.1% | VIX eased to 26.8 by 26 Nov, below the 27 exit line; S&P 500 8.1% below its 52-week high |
 | bond-volatility | WATCH | improving | measured | MOVE 98, 10y 4.85% | Treasury volatility index MOVE near 97.5 on 25 Nov, just below the 100 line; US 10-year yield 4.85% |
-| gold | WATCH | stable | measured | $3,595, 3m -20.6% | Gold near $3,617 on 26 Nov, 1.9% lower on the week and 20% lower over three months |
-| crypto | WATCH | stable | measured | BTC $60,357, -30% from high | Bitcoin near $60,840 on 26 Nov, 30% below its high and 20% lower over a month; no de-peg or exchange failure found |
+| gold | WATCH | stable | measured | $3,592, 3m -20.7% | Gold near $3,617 on 26 Nov, 1.9% lower on the week and 20% lower over three months |
+| crypto | WATCH | stable | measured | BTC $60,358, -30% from high | Bitcoin near $60,840 on 26 Nov, 30% below its high and 20% lower over a month; no de-peg or exchange failure found |
 | private-credit | WATCH | stable | judged | Nontraded BDC exit requests above 5% caps | Redemption requests at nontraded BDCs stay above usual 5% caps; no wave of gates or forced sales found by 26 Nov |
 | us-inflation | WATCH | worsening | measured | CPI ~4.1% y/y (Oct); rising 3 months | US CPI inflation about 4.1% in October, up from 4.0% and rising for three months, inside the 3.0–4.5% Watch band |
 | china-economy | WATCH | stable | judged | New home prices −2.4% y/y (Oct) | China's new home prices fell 2.4% on a year in October, a 40th straight annual fall; the property slump persists |
 | central-banks | WATCH | stable | judged | Fed weighs 50bp; yen ¥159.3/$; BoE 4% | Markets weigh a large Fed rise in December amid White House pressure; yen near ¥159 per dollar; BoE at 4% |
 | sovereign-debt | WATCH | stable | judged | French 10y <4.8%; 5.1% Oct peak | French 10-year yield back below 4.8% after October's 24-year high of 5.1%; no failed G7 auction found by 26 Nov |
-| oil | WATCH | stable | measured | $91.4, 1m -21% | Brent near $91 on 26 Nov, 21% lower over a month; Hormuz traffic down 40% but no new 2 mb/d outage confirmed |
+| oil | WATCH | stable | measured | $91.6, 1m -21% | Brent near $91 on 26 Nov, 21% lower over a month; Hormuz traffic down 40% but no new 2 mb/d outage confirmed |
 | food-prices | WATCH | stable | published | FAO index 133.9 (Oct), +5.9% y/y | FAO food price index 133.9 in October, below the 135 Alert line but up 5.9% on a year; next release due 4 Dec |
 | critical-minerals | WATCH | stable | judged | China export-control pauses run to Jan 2027 | China keeps rare-earth and gallium export-control suspensions in place under the US trade truce; licensing stays |
 | fertiliser | WATCH | stable | judged | Egypt urea ~$535/t (Nov); Hormuz impeded | Egyptian urea near $535 a tonne after gas cuts; Gulf nitrogen exports still depend on an impeded Strait of Hormuz |
@@ -70,7 +70,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | dollar | NORMAL | stable | measured | DXY 103.8, 3m +4.1% | Dollar index near 103.8 on 26 Nov, 4.1% higher over three months and inside the 5% line |
 | banking-stress | NORMAL | worsening | measured | STLFSI -0.07, CISS 0.04 | Stress gauges below Watch lines: St Louis Fed index -0.07, up from -0.87, and ECB indicator 0.029; no bank failure found |
 | funding-stress | NORMAL | stable | measured | SOFR–IORB +4bp, repo $0.0bn | SOFR 4bp above the Fed's reserve rate on 24 Nov; Fed repo use near zero to 25 Nov |
-| yen-carry | NORMAL | stable | measured | ¥159.3/$, 1w -0.2% | Yen near ¥159.2 per dollar on 26 Nov, little changed on the week; no intervention found |
+| yen-carry | NORMAL | stable | measured | ¥159.3/$, 1w -0.3% | Yen near ¥159.2 per dollar on 26 Nov, little changed on the week; no intervention found |
 | us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.24 | Sahm recession indicator 0.00 for October; yield curve +0.24 on 25 Nov; jobless claims 189,000 |
 | euro-growth | NORMAL | stable | judged | Composite PMI 51.7 (Oct); above 50 | Euro-area composite PMI was 51.7 in October, a four-month low but above 50; growth stays positive |
 | global-pmi | NORMAL | improving | published | Global composite 53.2 (Oct), down from 54.3 | J.P.Morgan Global Composite PMI eased to 53.2 in October from 54.3 but stays well above the 51 Watch line |
@@ -92,7 +92,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | novel-outbreaks | NORMAL | stable | judged | No unexplained clusters | No unexplained cluster or novel pathogen under international investigation found by 26 Nov |
 | outages | NORMAL | stable | judged | No major outage in 48h to 26 Nov | No cloud, CDN or payments outage over 2h found in the 48h to 26 Nov; Cloudflare reports a minor Workers API issue |
 | displacement | NORMAL | stable | judged | No UN-confirmed event over 500k/month | UN says Yemen fighting has displaced 364,000 since August; no event displacing over 500,000 in a month found |
-| uk-weather | NORMAL | stable | measured | No warnings | No Met Office weather warnings in force at 05:41 UK on 26 Nov |
+| uk-weather | NORMAL | stable | measured | 5 warning(s), worst yellow | No Met Office weather warnings in force at 05:41 UK on 26 Nov |
 | uk-disruption | NORMAL | stable | judged | No national strike; London Tube strikes | RMT London Underground strikes run from November to February; no national-scale strike or infrastructure failure found |
 | uk-supply-margins | NORMAL | stable | judged | No notice found; 5.9 GW winter margin | No Electricity Margin Notice or Gas Margins Notice found in force on 26 Nov; NESO expects a secure winter |
 | uk-floods | NORMAL | stable | measured | No flood warnings | No Environment Agency flood warnings in England on 26 Nov; two lower-level flood alerts |
