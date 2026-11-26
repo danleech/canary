@@ -1,16 +1,16 @@
 # Korean peninsula — NORMAL (stable)
-id korea · Geopolitics · horizon acute · checked 2026-11-25T23:42Z · text written 2026-11-25T05:56Z · at this level since 2026-11-19T05:51Z · stale after 2026-11-26T13:42Z
+id korea · Geopolitics · horizon acute · checked 2026-11-26T05:47Z · at this level since 2026-11-19T05:51Z · stale after 2026-11-26T19:47Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/korea
 
-Value: Last missile launch 4 Nov
-Rated on: Normal: no missile launches in the past two weeks (last 4 Nov); no nuclear test or border incident
-Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
+Value: Last missile launch 3 Nov
+Rated on: No missile launch in 2 weeks, no border incident = Normal
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-No North Korean missile launch found since 4 Nov; Kim says on 23 Nov the country will widen its foreign ties
+No North Korean missile launch found since 3 Nov; Kim visited nuclear material production sites on 25 Nov
 
-Why it's at this level: South Korea's Joint Chiefs of Staff said North Korea fired multiple missiles, likely under 300 km range, toward the East Sea on 4 Nov; state media said it tested a new air defence system (Korea Herald). State media reported a new torpedo test on 10 Nov (Herald Business). On 23 Nov Kim Jong Un said the country would expand foreign relations and seeks neither supremacy nor expansion (AFP via Manila Times). No missile launch in the past two weeks, nuclear test or border clash was found to 25 Nov, so Normal holds.
+Why it's at this level: South Korea reported a North Korean launch of multiple missiles on 3 Nov, the fourth weapons launch in a month (US News). On 25 Nov Kim Jong Un visited nuclear material production facilities and a research institute, his fourth such visit since September 2024, state media reported (Korea Herald). No missile launch in the past two weeks, nuclear test or border clash was found to 26 Nov, so Normal holds.
 
-What this means for you: No change for travellers; the FCDO advises against all travel to North Korea. South Korea and Japan run routine alert systems that warn residents if a launch threatens their territory.
+What this means for you: No direct effect for most people. Travellers to South Korea should follow FCDO travel advice.
 
 Why it matters: North Korea is a nuclear state with ICBMs; tension here involves the US, China, Japan and Russia simultaneously.
 What moves it: Missile tests, Russia–DPRK military cooperation, US–ROK exercises, border incidents.
@@ -18,6 +18,5 @@ What moves it: Missile tests, Russia–DPRK military cooperation, US–ROK exerc
 Rubric — Alert: Nuclear test, ICBM overflight of Japan, or military clash. | Watch: Ballistic or cruise missile launches, or troop deployments abroad. | Normal: No missile launches in two weeks; no border incidents.
 
 Sources:
-- Korea Herald — N. Korea says it test-fired new air defense missile system (2026-11-05) https://www.koreaherald.com/article/10926441
-- Herald Business — North Korea tests new torpedo in Donghae (2026-11-10) https://mbiz.heraldcorp.com/article/10931320
-- Manila Times (AFP) — NKorea ready to expand ties with other countries (2026-11-24) https://www.manilatimes.net/2026/11/24/world/asia-oceania/nkorea-ready-to-expand-ties-with-other-countries/2476177
+- US News (Reuters) — North Korea fires multiple missiles in fourth weapons launch in a month (2026-11-03) https://www.usnews.com/news/world/articles/2026-11-03/north-korea-fires-unidentified-projectile-toward-sea-off-its-east-coast-seoul-says
+- Korea Herald (Yonhap) — N. Korea's Kim inspects nuclear material sites (2026-11-26) https://www.koreaherald.com/article/10950253

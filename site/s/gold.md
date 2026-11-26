@@ -1,16 +1,16 @@
 # Gold (fear gauge) — WATCH (stable)
-id gold · Markets · horizon acute · checked 2026-11-25T23:42Z · text written 2026-11-25T05:56Z · at this level since 2026-11-23T05:53Z · stale after 2026-11-26T13:42Z
+id gold · Markets · horizon acute · checked 2026-11-26T05:47Z · at this level since 2026-11-23T05:53Z · stale after 2026-11-26T19:47Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/gold
 
-Value: $3,600, 3m -20.5%
-Rated on: 3m fall -20.5% (Watch)
-Basis: measured — Set by a fixed rule applied to open data (Gold 3m gain % = -20.53 · 3m fall -20.5%). Anyone can reproduce it from the public metrics file.
+Value: $3,617, 3m -20.1%
+Rated on: Gold 3m change -20.1%: fall > 8% = Watch; 1w move -1.9% < 7%
+Basis: measured — Set by a fixed rule applied to open data (Gold 3m gain % = -20.14 · 3m fall -20.1%). Anyone can reproduce it from the public metrics file.
 
-Gold near $3,537 on 25 Nov, 4.0% lower on the week and 22% lower over three months
+Gold near $3,617 on 26 Nov, 1.9% lower on the week and 20% lower over three months
 
-Why it's at this level: Gold futures were near $3,537 early on 25 Nov, 4.0% lower on the week, 12.7% lower on the month, 21.9% lower over three months and about 33% below the 52-week high (Yahoo Finance). The weekly fall is inside the 7% single-week Alert line, leaving the three-month fall of more than 8% in the Watch band. The decline has come as the dollar index trades near its 52-week high (Yahoo Finance).
+Why it's at this level: Gold futures were near $3,617 early on 26 Nov, 1.9% lower on the week, 10.7% lower on the month, 20.1% lower over three months and about 32% below the 52-week high of $5,318 (Yahoo Finance). The worst day in five sessions was -4.6%, and the weekly move is inside the 7% Alert line, leaving the three-month fall of more than 8% in the Watch band.
 
-What this means for you: Holders of gold, including through funds, have seen large falls in value over three months. Gold prices also affect jewellery costs and some central bank reserves.
+What this means for you: Gold's sharp fall from its peak signals shifting market conditions; holders of gold or gold funds have seen large valuation swings.
 
 Why it matters: Gold is the oldest crisis hedge; disorderly surges signal fear about currencies, inflation or geopolitics.
 What moves it: Real interest rates, central-bank buying, geopolitical fear, dollar moves.
@@ -18,4 +18,4 @@ What moves it: Real interest rates, central-bank buying, geopolitical fear, doll
 Rubric — Alert: 3-month gain > 20%, or a single-week move > 7% either way. | Watch: 3-month gain 10–20%, or a fall > 8%. | Normal: 3-month change between −8% and +10%.
 
 Sources:
-- Yahoo Finance — Gold futures GC=F (2026-11-24) https://finance.yahoo.com/quote/GC%3DF
+- Yahoo Finance — Gold futures (GC=F) (2026-11-25) https://finance.yahoo.com/quote/GC%3DF
