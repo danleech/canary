@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-27T23:43:31Z",
+  "id": "funding-stress",
+  "name": "Dollar funding stress",
+  "from": "green",
+  "to": "amber",
+  "reason": "Fed overnight repo operations jump to $22.8bn in the latest reading to 27 Nov, above the $15bn Watch line"
+ },
+ {
   "t": "2026-11-26T17:51:12Z",
   "id": "equity-stress",
   "name": "US equity stress",

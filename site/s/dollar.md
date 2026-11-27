@@ -1,10 +1,10 @@
 # US dollar — NORMAL (stable)
-id dollar · Markets · horizon acute · checked 2026-11-27T17:59Z · text written 2026-11-27T05:53Z · at this level since 2026-11-25T05:56Z · stale after 2026-11-28T07:59Z
+id dollar · Markets · horizon acute · checked 2026-11-27T23:43Z · text written 2026-11-27T05:53Z · at this level since 2026-11-25T05:56Z · stale after 2026-11-28T13:43Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/dollar
 
 Value: DXY 104.0, 3m +4.3%
-Rated on: DXY 3m move 4.3% below the 5% Watch line
-Basis: measured — Set by a fixed rule applied to open data (DXY 3m move % = 4.30). Anyone can reproduce it from the public metrics file.
+Rated on: DXY 3m move 4.33% below the 5% Watch line
+Basis: measured — Set by a fixed rule applied to open data (DXY 3m move % = 4.33). Anyone can reproduce it from the public metrics file.
 
 Dollar index near 103.7 on 27 Nov, 4.0% higher over three months and inside the 5% line
 
