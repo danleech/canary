@@ -1,16 +1,16 @@
 # Political instability — NORMAL (stable)
-id political-instability · Geopolitics · horizon acute · checked 2026-11-26T17:51Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-28T05:51Z
+id political-instability · Geopolitics · horizon acute · checked 2026-11-27T17:59Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-29T05:59Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/political-instability
 
 Value: No G20 collapse; Indonesia VP vote 9 Dec
-Rated on: No G20 government collapse, contested election or coup in past month = Normal
+Rated on: Normal: no G20 government collapse, contested election or coup in the past month
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
 Indonesia's assembly will pick a new vice-president on 9 Dec under the constitution; no G20 collapse or coup found
 
-Why it's at this level: Indonesia's People's Consultative Assembly is filling the vice-presidency vacated by Gibran Rakabuming through a constitutional vote, first set for 2 Dec (Jakarta Post, 13 Nov) and then moved to 9 Dec over scheduling and verification (Metro TV). Searches on 26 Nov found no G20 government collapse, contested election or coup anywhere in the past month, so the level stays Normal.
+Why it's at this level: Indonesia's People's Consultative Assembly is filling the vice-presidency vacated by Gibran Rakabuming through a constitutional vote, first set for 2 Dec (Jakarta Post, 13 Nov) and moved on 16 Nov to 9 Dec over scheduling and candidate verification (Metro TV). This is an orderly constitutional process, not a collapse. Searches on 27 Nov found no G20 government collapse, contested election or coup anywhere in the past month, so the level stays Normal.
 
-What this means for you: No direct effect for most readers; a constitutional succession in Indonesia is proceeding on schedule.
+What this means for you: No unusual political disruption is affecting G20 governments. Travellers should check FCDO travel advice for their destination as usual.
 
 Why it matters: Coups, contested elections and constitutional crises in large economies unsettle markets, alliances and policy.
 What moves it: Elections, government collapses, coups, emergency rule, mass protest movements.

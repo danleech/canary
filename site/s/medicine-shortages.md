@@ -1,16 +1,16 @@
 # Medicine shortages — WATCH (stable)
-id medicine-shortages · Global Health · horizon acute · checked 2026-11-26T17:51Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-28T05:51Z
+id medicine-shortages · Global Health · horizon acute · checked 2026-11-27T17:59Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-29T05:59Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/medicine-shortages
 
-Value: UK shortages up to 6.4m items/month (NPA)
-Rated on: Shortages of essential medicines across several systems = Watch; no widespread rationing
-Basis: judged — The AI assessor's reading of 1 source from 1 outlet against the rubric. Check the sources before relying on it.
+Value: US 225 active shortages; chemo drugs short
+Rated on: Watch: shortages of essential medicines including chemotherapy drugs; no widespread rationing
+Basis: judged — The AI assessor's reading of 2 sources from 1 outlet against the rubric. Check the sources before relying on it.
 
-UK pharmacists say shortages hit up to 6.4m prescription items a month in 2026; no widespread rationing reported
+US counts 225 active drug shortages with chemotherapy shortages rising; no widespread rationing reported
 
-Why it's at this level: On 17 Nov the National Pharmacy Association estimated that shortages could have affected up to 6.4 million prescription items a month in 2026, based on government supply notifications, and urged government action (Pharmaceutical Journal). Searches on 26 Nov found no widespread rationing or cancelled treatment across major health systems, so Watch holds.
+Why it's at this level: ASHP counted 225 active US drug shortages in the third quarter, with chemotherapy shortages rising partly after flooding at a Pfizer plant in India that may disrupt supply into 2028 (Becker's Hospital Review, 20 Oct). Irinotecan, bleomycin and cytarabine injections were added to ASHP's shortage list in early October. Searches on 27 Nov found no widespread rationing or cancelled treatment across major health systems, so Watch holds.
 
-What this means for you: If a prescribed medicine is unavailable, speak to your pharmacist or GP about alternatives rather than stopping treatment.
+What this means for you: Patients on affected cancer or hospital medicines are most exposed, as shortages can mean substitutes or delays. Pharmacists and prescribers handle switches; NHS patients can ask their pharmacist about alternatives.
 
 Why it matters: Shipping disruption, factory failures and export curbs can leave essential medicines short, as with US IV fluids after Hurricane Helene in 2024.
 What moves it: Manufacturing concentrated in India and China, shipping, raw materials, demand spikes, regulation.
@@ -18,4 +18,5 @@ What moves it: Manufacturing concentrated in India and China, shipping, raw mate
 Rubric — Alert: Shortages forcing widespread rationing or cancelled treatment across major health systems. | Watch: A shortage of an essential medicine or supply across several countries, or a UK Serious Shortage Protocol for a widely used medicine. | Normal: No widespread shortages of essential medicines in major health systems.
 
 Sources:
-- Pharmaceutical Journal — NPA urges government action on medicines shortages and pharmacist flexibilities (2026-11-17) https://pharmaceutical-journal.com/article/news/npa-urges-government-action-on-medicines-shortages-and-pharmacist-flexibilities
+- Becker's Hospital Review — Cancer drug shortages worsen: 7 notes from ASHP's Q3 report (2026-10-20) https://www.beckershospitalreview.com/pharmacy/cancer-drug-shortages-worsen-7-notes-from-ashps-q3-report/
+- Becker's Hospital Review — New drugs in shortage (2026-10-14) https://www.beckershospitalreview.com/pharmacy/8-new-drugs-in-shortage-3/

@@ -1,16 +1,16 @@
 # Sahel insurgency — WATCH (stable)
-id sahel · Armed Conflict · horizon acute · checked 2026-11-26T17:51Z · at this level since 2026-11-04T17:53Z · stale after 2026-11-28T05:51Z
+id sahel · Armed Conflict · horizon acute · checked 2026-11-27T17:59Z · at this level since 2026-11-04T17:53Z · stale after 2026-11-29T05:59Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/sahel
 
-Value: Niger: 38 killed near Téra 12 Nov
-Rated on: Sustained insurgency at current levels = Watch; no capital blockade or coastal-state mass-casualty attack
+Value: Niger: 13 soldiers killed at Sanam
+Rated on: Watch: sustained insurgency — 13 soldiers killed at Sanam, Niger, announced 26 Nov; no capital blockade
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-Gunmen kill 38 villagers near Téra in western Niger on 12 Nov; insurgency sustained across the Sahel
+Armed group kills 13 National Guard members at Sanam in western Niger; insurgency sustained, no capital blockaded
 
-Why it's at this level: Armed men ambushed villagers travelling to market near Téra in western Niger on 12 Nov, killing 38 including 11 members of a local self-defence group, a former local official told AFP (DH/Belga, 13 Nov). Human Rights Watch reported on 4 Nov that an Islamist armed group in Burkina Faso is targeting civilians. JNIM and Islamic State Sahel Province keep fighting state forces, but no fall or blockade of a capital or mass-casualty attack in a coastal state was found as of 26 Nov, so Watch holds.
+Why it's at this level: Niger's defence ministry said on state television on 26 Nov that an armed group killed 13 National Guard members and injured 20 in an attack at Sanam in the Tillabéri region (AP). Groups linked to al-Qaeda and Islamic State keep fighting state forces across Mali, Burkina Faso and Niger, and ACLED tracks continuing economic warfare by jihadist groups. No blockade or fall of a capital or major city, and no mass-casualty attack in a coastal state, was found as of 27 Nov, so Watch holds.
 
-What this means for you: For travel, follow FCDO advice against all travel to most of Mali, Burkina Faso and Niger.
+What this means for you: The FCDO advises against all or all but essential travel to most of Mali, Burkina Faso and Niger. Violence keeps displacing rural communities and disrupting markets, roads and aid deliveries across the central Sahel.
 
 Why it matters: Jihadist groups control growing territory across Mali, Burkina Faso and Niger, driving displacement and coastal-state spillover.
 What moves it: JNIM/IS-Sahel offensives, juntas, Russian forces, blockades, coastal-state attacks.
@@ -18,5 +18,5 @@ What moves it: JNIM/IS-Sahel offensives, juntas, Russian forces, blockades, coas
 Rubric — Alert: Blockade or fall of a capital or major city, or mass-casualty attacks spreading to coastal states. | Watch: Sustained insurgency at current levels. | Normal: Declining violence trend.
 
 Sources:
-- DH/Belga — Niger: au moins 37 civils tués par des hommes armés dans l'ouest (2026-11-13) https://www.dhnet.be/dernieres-depeches/2026/11/13/niger-au-moins-37-civils-tues-par-des-hommes-armes-dans-louest-JXVUWYB6BNACTIBCPJ3FYPHZV4/
-- Human Rights Watch — Burkina Faso: Islamist armed group targets civilians (2026-11-04) https://www.hrw.org/news/2026/11/04/burkina-faso-islamist-armed-group-targets-civilians
+- ABC News (AP) — Armed group kills 13 soldiers in western Niger attack, defense ministry says (2026-11-27) https://abcnews.com/International/wireStory/armed-group-kills-13-soldiers-western-niger-attack-138477943
+- ACLED — Conflict in the Sahel (2026-11-27) https://acleddata.com/region/conflict-sahel
