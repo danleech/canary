@@ -1,5 +1,5 @@
 # Canary — all signals
-as_of 2026-11-27T05:53Z · next run ~11:40 UK · stale after 2026-11-27T19:53Z (36h for daily-tier signals)
+as_of 2026-11-27T11:42Z · next run ~17:40 UK · stale after 2026-11-28T01:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -7,7 +7,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 
 | id | status | trend | basis | value | summary |
 |---|---|---|---|---|---|
-| eu-gas | ALERT | stable | measured | €88/MWh | European gas near €87.6/MWh on 26 Nov, above the €70 Alert line and 31% higher over three months |
+| eu-gas | ALERT | stable | measured | €85/MWh | European gas near €87.6/MWh on 26 Nov, above the €70 Alert line and 31% higher over three months |
 | chokepoints | ALERT | stable | judged | Hormuz mine strikes 26 Nov; Red Sea attacks | Iran's Guards say two tankers hit Hormuz mines on 26 Nov; UKMTO reports blast off Dubai; Houthis hit Saudi Red Sea ports |
 | freight | ALERT | improving | published | WCI $4,176/FEU (19 Nov), −3% w/w | Drewry container index $4,176 per 40ft on 19 Nov after a fourth weekly fall, still above the $4,000 Alert line |
 | russia-ukraine | ALERT | stable | judged | 10 killed, 58 injured 25–26 Nov | Russian attacks kill 10 and injure 58 on 25–26 Nov as ballistic missiles hit Kyiv; Zelensky warns of a new energy strike |
@@ -20,16 +20,16 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | cholera-dengue | ALERT | stable | judged | Over 3,000 cholera deaths in 2026 (WHO) | WHO counts over 3,000 cholera deaths in 2026, nearly nine in ten in Africa; outbreaks persist in conflict zones |
 | uk-energy-cap | ALERT | worsening | published | Cap £2,166 from 1 Jan, up 26% | Ofgem's price cap for a typical dual-fuel home rises 26% to £2,166 a year from 1 January on higher wholesale gas |
 | uk-threat-level | ALERT | stable | judged | Threat level: Severe | UK national terrorism threat level Severe, meaning an attack is highly likely; no change found as of 26 Nov |
-| equity-stress | WATCH | improving | measured | VIX 26.8, S&P -8.1% | VIX at 26.8 on 26 Nov, down from 35.9 on 20 Nov; S&P 500 8.1% below its 52-week high |
+| equity-stress | WATCH | improving | measured | VIX 25.0, S&P -8.1% | VIX at 26.8 on 26 Nov, down from 35.9 on 20 Nov; S&P 500 8.1% below its 52-week high |
 | bond-volatility | WATCH | improving | measured | MOVE 98, 10y 4.85% | Treasury volatility index MOVE near 97.5 on 25 Nov, just under the 100 line; US 10-year yield 4.85% |
-| gold | WATCH | stable | measured | $3,686, 3m -18.6% | Gold near $3,686 on 27 Nov, flat on the week and 18.6% lower over three months |
-| crypto | WATCH | stable | measured | BTC $61,619, -29% from high | Bitcoin near $61,600 on 27 Nov, 29% below its 52-week high and 19% lower over a month |
+| gold | WATCH | stable | measured | $3,706, 3m -18.2% | Gold near $3,686 on 27 Nov, flat on the week and 18.6% lower over three months |
+| crypto | WATCH | stable | measured | BTC $61,738, -29% from high | Bitcoin near $61,600 on 27 Nov, 29% below its 52-week high and 19% lower over a month |
 | private-credit | WATCH | stable | judged | Nontraded BDC exit requests above 5% caps | Redemption requests at nontraded BDCs stay above usual 5% caps; no wave of gates or forced sales found by 26 Nov |
 | us-inflation | WATCH | worsening | measured | CPI ~4.1% y/y (Oct); rising 3 months | US CPI inflation about 4.1% in October, up from 4.0% and rising for three months, inside the 3.0–4.5% Watch band |
 | china-economy | WATCH | stable | judged | New home prices −2.4% y/y (Oct) | China's new home prices fell 2.4% on a year in October, a 40th straight annual fall; the property slump persists |
 | central-banks | WATCH | stable | judged | Fed weighs 50bp; yen ¥159.3/$; BoE 4% | Markets weigh a large Fed rise in December amid White House pressure; yen near ¥159 per dollar; BoE at 4% |
 | sovereign-debt | WATCH | stable | judged | French 10y <4.8%; 5.1% Oct peak | French 10-year yield back below 4.8% after October's 24-year high of 5.1%; no failed G7 auction found by 26 Nov |
-| oil | WATCH | stable | measured | $92.9, 1m -19% | Brent near $93 on 27 Nov, 19% lower over a month; Saudi Jazan refinery hit on 26 Nov |
+| oil | WATCH | stable | measured | $92.1, 1m -20% | Brent near $93 on 27 Nov, 19% lower over a month; Saudi Jazan refinery hit on 26 Nov |
 | food-prices | WATCH | stable | published | FAO index 133.9 (Oct), +5.9% y/y | FAO food price index 133.9 in October, below the 135 Alert line but up 5.9% on a year; next release due 4 Dec |
 | critical-minerals | WATCH | stable | judged | China export-control pauses run to Jan 2027 | China keeps rare-earth and gallium export-control suspensions in place under the US trade truce; licensing stays |
 | fertiliser | WATCH | stable | judged | Egypt urea ~$535/t (Nov); Hormuz impeded | Egyptian urea near $535 a tonne after gas cuts; Gulf nitrogen exports still depend on an impeded Strait of Hormuz |
@@ -65,12 +65,12 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | uk-rates | WATCH | worsening | published | CPI 3.6% (Oct); Bank Rate 4% | UK CPI rose to 3.6% in October; the Bank of England raised Bank Rate to 4% on 5 Nov, its first rise since 2023 |
 | gilts | WATCH | stable | judged | 10y ~5.3% (18 Nov) | 10-year gilt yield near 5.3% after UK inflation data on 18 Nov; long yields remain near multi-decade highs |
 | nhs-pressure | WATCH | worsening | published | Flu above baseline and rising | UKHSA surveillance shows flu in England above baseline and rising early; week 48 report published 26 Nov |
-| ftse | NORMAL | worsening | measured | 10,609, -2.8% from high | FTSE 100 near 10,609 on 26 Nov, 2.5% higher on the week and 2.8% below its 52-week high |
+| ftse | NORMAL | worsening | measured | 10,692, -2.0% from high | FTSE 100 near 10,609 on 26 Nov, 2.5% higher on the week and 2.8% below its 52-week high |
 | credit-spreads | NORMAL | worsening | measured | HY OAS 3.72% | US high-yield spreads 3.72% on 24 Nov, near a one-year high and 42bp wider on the month; inside the 4% line |
-| dollar | NORMAL | stable | measured | DXY 103.7, 3m +4.0% | Dollar index near 103.7 on 27 Nov, 4.0% higher over three months and inside the 5% line |
+| dollar | NORMAL | stable | measured | DXY 103.8, 3m +4.1% | Dollar index near 103.7 on 27 Nov, 4.0% higher over three months and inside the 5% line |
 | banking-stress | NORMAL | worsening | measured | STLFSI -0.07, CISS 0.04 | Stress gauges below Watch lines: St Louis Fed index -0.07 in the week to 20 Nov, ECB indicator 0.038 on 25 Nov |
 | funding-stress | NORMAL | stable | measured | SOFR–IORB +4bp, repo $0.0bn | SOFR 4bp above the Fed's reserve rate on 24 Nov; Fed repo use near zero to 25 Nov |
-| yen-carry | NORMAL | stable | measured | ¥159.3/$, 1w +0.2% | Yen near ¥159.3 per dollar on 27 Nov, little changed on the week |
+| yen-carry | NORMAL | stable | measured | ¥159.5/$, 1w +0.3% | Yen near ¥159.3 per dollar on 27 Nov, little changed on the week |
 | us-recession | NORMAL | stable | measured | Sahm 0.00, 10y–2y +0.24 | Sahm recession indicator 0.00 for October; yield curve +0.24 on 25 Nov; jobless claims 189,000 |
 | euro-growth | NORMAL | stable | judged | Composite PMI 51.7 (Oct); above 50 | Euro-area composite PMI was 51.7 in October, a four-month low but above 50; growth stays positive |
 | global-pmi | NORMAL | improving | published | Global composite 53.2 (Oct), down from 54.3 | J.P.Morgan Global Composite PMI eased to 53.2 in October from 54.3 but stays well above the 51 Watch line |
@@ -92,7 +92,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | novel-outbreaks | NORMAL | stable | judged | No unexplained clusters | No unexplained cluster or novel pathogen under international investigation found by 27 Nov |
 | outages | NORMAL | stable | judged | No major outage in 48h to 27 Nov | No cloud, CDN or payments outage over 2h found in the 48h to 27 Nov; last major ones Microsoft 365 and Apple, 12–17 Nov |
 | displacement | NORMAL | stable | judged | No UN-confirmed event over 500k/month | UN says Yemen fighting has displaced 364,000 since August; no event displacing over 500,000 in a month found |
-| uk-weather | NORMAL | worsening | measured | 5 yellow ice warnings | Met Office yellow ice warnings for northern and central England on 27 Nov; no amber or red warning |
+| uk-weather | NORMAL | worsening | measured | No warnings | Met Office yellow ice warnings for northern and central England on 27 Nov; no amber or red warning |
 | uk-disruption | NORMAL | stable | judged | No national strike; London Tube strikes | RMT London Underground strikes run from November to February; no national-scale strike or infrastructure failure found |
 | uk-supply-margins | NORMAL | stable | judged | No notice found; 5.9 GW winter margin | No Electricity Margin Notice or Gas Margins Notice found in force on 26 Nov; NESO expects a secure winter |
 | uk-floods | NORMAL | stable | measured | No flood warnings | No Environment Agency flood warnings in England on 27 Nov; five lower-level flood alerts |

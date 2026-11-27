@@ -1,5 +1,5 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-27T05:53Z · next run ~11:40 UK · stale after 2026-11-27T19:53Z (36h for daily-tier signals)
+as_of 2026-11-27T11:42Z · next run ~17:40 UK · stale after 2026-11-28T01:42Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -17,4 +17,3 @@ Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judge
 - 2026-11-20T17:50Z Gold (fear gauge) [gold]: WATCH→ALERT — Gold near $3,531 on 20 Nov, down 8.4% on the week, past the 7% single-week Alert line, as Fed rate-rise bets lift the dollar
 - 2026-11-20T17:50Z FTSE 100 [ftse]: NORMAL→WATCH — FTSE 100 near 10,346 on 20 Nov, 5.2% below its high and 4.9% lower on the week as global shares fell
 - 2026-11-20T17:50Z US equity stress [equity-stress]: WATCH→ALERT — VIX rose to about 32 on 20 Nov, above the 30 Alert line, after the S&P 500 entered a correction on 19 Nov
-- 2026-11-20T11:42Z Gold (fear gauge) [gold]: ALERT→WATCH — Gold near $3,591 on 20 Nov, down 6.8% on the week, inside the 7% Alert line; down 23.5% over three months

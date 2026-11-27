@@ -1,10 +1,10 @@
 # UK weather warnings — NORMAL (worsening)
-id uk-weather · UK Watch · horizon acute · checked 2026-11-27T05:53Z · at this level since 2026-11-17T11:42Z · stale after 2026-11-27T19:53Z
+id uk-weather · UK Watch · horizon acute · checked 2026-11-27T11:42Z · text written 2026-11-27T05:53Z · at this level since 2026-11-17T11:42Z · stale after 2026-11-28T01:42Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/uk-weather
 
-Value: 5 yellow ice warnings
-Rated on: Yellow ice warnings only; no amber or red
-Basis: measured — Set by a fixed rule applied to open data (worst warning: yellow). Anyone can reproduce it from the public metrics file.
+Value: No warnings
+Rated on: worst warning: none
+Basis: measured — Set by a fixed rule applied to open data (worst warning: none). Anyone can reproduce it from the public metrics file.
 
 Met Office yellow ice warnings for northern and central England on 27 Nov; no amber or red warning
 
