@@ -1,7 +1,7 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-26T23:41Z · next run ~05:40 UK · stale after 2026-11-27T13:41Z (36h for daily-tier signals)
+as_of 2026-11-27T05:53Z · next run ~11:40 UK · stale after 2026-11-27T19:53Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
-Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
+Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 - 2026-11-26T17:51Z US equity stress [equity-stress]: ALERT→WATCH — VIX eased to 26.8 by 26 Nov, below the 27 exit line; S&P 500 8.1% below its 52-week high
 - 2026-11-25T23:42Z Exploited vulnerabilities [exploited-vulns]: NORMAL→WATCH — CISA added 19 known-exploited vulnerabilities in the seven days to 25 Nov, above the 11-a-week Watch line
@@ -18,6 +18,3 @@ Basis: 27 measured from open data, 11 follow a published figure, 51 are AI judge
 - 2026-11-20T17:50Z FTSE 100 [ftse]: NORMAL→WATCH — FTSE 100 near 10,346 on 20 Nov, 5.2% below its high and 4.9% lower on the week as global shares fell
 - 2026-11-20T17:50Z US equity stress [equity-stress]: WATCH→ALERT — VIX rose to about 32 on 20 Nov, above the 30 Alert line, after the S&P 500 entered a correction on 19 Nov
 - 2026-11-20T11:42Z Gold (fear gauge) [gold]: ALERT→WATCH — Gold near $3,591 on 20 Nov, down 6.8% on the week, inside the 7% Alert line; down 23.5% over three months
-- 2026-11-20T05:49Z Internet & cloud outages [outages]: WATCH→NORMAL — No major cloud or payments outage found since Apple's on 17 Nov; officials say the US outage wave was not an attack
-- 2026-11-20T05:49Z Pacific & Indian cyclones [other-cyclones]: WATCH→NORMAL — Cyclone Akvan weakened and crossed the Odisha–Andhra coast near Gopalpur early on 20 Nov; GDACS green
-- 2026-11-20T05:49Z Gold (fear gauge) [gold]: WATCH→ALERT — Gold near $3,519 on 20 Nov after an 8.7% weekly fall, beyond the 7% weekly Alert line; down 25% in three months
