@@ -1,16 +1,16 @@
 # Canary — world risk status
-as_of 2026-11-27T23:43Z · next run ~05:40 UK · stale after 2026-11-28T13:43Z (36h for daily-tier signals)
+as_of 2026-11-28T05:54Z · next run ~11:40 UK · stale after 2026-11-28T19:54Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
-Basis: 27 measured from open data, 9 follow a published figure, 53 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
+Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
-World State 40/100 (Strained) · 13 Alert · 46 Watch · 30 Normal
-Headline: Gulf war spreads to Kuwait, where two died in a 26 Nov drone attack, as Hormuz oil flows run near half of prewar; Russian strikes cut power in six Ukrainian regions on 27 Nov; Fed repo use jumps to $22.8bn.
+World State 40/100 (Strained) · 13 Alert · 47 Watch · 29 Normal
+Headline: The US–Iran war, Russia's strikes on Ukraine and DR Congo's Ebola epidemic remain the main Alerts on 28 Nov. A UK DWP cyber incident and a Lloyds banking outage on 27 Nov lift cyber and outage risk.
 
 ## Situations (7 cross-domain events; Alerts below are grouped under them)
-- US–Iran war and Gulf energy shock [ALERT, stable]: Kuwait says two died in an Iranian drone attack on 26 Nov; Jazan refinery hit the same day; Hormuz oil flows ~54% of prewar to 24 Nov. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight, uk-energy-cap; watch: iran-nuclear, sanctions, oil, fertiliser, semiconductors
-- Russia–Ukraine war and NATO's flank [ALERT, stable]: Russian attacks killed 6 and injured 25 to 27 Nov as 155 drones cut power in six regions; a Russian drone entered Polish airspace on 23 Nov. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
+- US–Iran war and Gulf energy shock [ALERT, stable]: Italy says Iranian drones hit Kuwaiti sites on 26 Nov, killing two Italians; Iran denies. Hormuz transits 26+ a day to 19 Nov amid tanker attacks. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight, uk-energy-cap; watch: iran-nuclear, sanctions, oil, fertiliser, semiconductors
+- Russia–Ukraine war and NATO's flank [ALERT, stable]: Russia launched 155 drones overnight to 27 Nov, hitting energy and rail in nine regions; a Russian drone entered Polish airspace on 23 Nov. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
 - Super El Niño [ALERT, worsening]: ONI +2.46 for Aug–Oct; global temperature 2.14°C above pre-industrial on 21 Nov, a record for the date; FAO–WFP flag famine risk in Sudan. → alert: enso, global-temp; watch: drought, co2, famine
-- Ebola outbreak, DR Congo [ALERT, worsening]: ECDC counts 12,021 confirmed Ebola cases and 5,904 deaths in DR Congo to 24 Nov, up from 11,504 cases a week earlier. → alert: ebola; watch: who-emergencies
+- Ebola outbreak, DR Congo [ALERT, worsening]: WHO counts 11,613 confirmed Ebola cases and 5,678 deaths in DR Congo to 17 Nov; Kenya and Nigeria report imported cases. → alert: ebola; watch: who-emergencies
 - Sudan war [ALERT, worsening]: RSF drone strikes killed 14 to 19 civilians in Damazin on 24 Nov; FAO and WFP warn on 27 Nov of famine risk in 13 areas. → alert: sudan; watch: famine
 - France: debt stress and protests [WATCH, stable]: French 10-year yield 4.74% on 26 Nov after a 24-year high in October; protest turnout fell to 82,500 on 21 Nov. → watch: sovereign-debt, civil-unrest
 - Energy shock feeding inflation [WATCH, worsening]: US CPI about 4.1% in Oct and UK CPI 3.6%; markets weigh a large Fed rise on 8–9 Dec; Ofgem cap up 26% from 1 Jan. → watch: us-inflation, central-banks, uk-rates, bond-volatility, gilts; normal: em-stress
@@ -20,16 +20,17 @@ Headline: Gulf war spreads to Kuwait, where two died in a 26 Nov drone attack, a
 - UK terrorism threat level [uk-threat-level] stable, AI-judged: UK national terrorism threat level is Severe, meaning an attack is highly likely; no change found as of 27 Nov
 
 ## Changed in last 24h
+- Internet & cloud outages [outages]: NORMAL→WATCH — Lloyds, Halifax and Bank of Scotland apps down for hours on 27 Nov; Allstate's site and app down since 23 Nov (2026-11-28T05:54Z)
 - Dollar funding stress [funding-stress]: NORMAL→WATCH — Fed overnight repo operations jump to $22.8bn in the latest reading to 27 Nov, above the $15bn Watch line (2026-11-27T23:43Z)
 
 ## Emerging (outside the catalogue; provisional)
-- Cuba humanitarian strain under US fuel blockade [WATCH]: WHO chief Tedros urged the US on 24–25 Nov to lift its fuel blockade on Cuba; Cuba reports long daily blackouts and medicine shortages
+- Cuba humanitarian strain under US fuel blockade [WATCH]: WHO chief Tedros urged the US on 24–25 Nov to lift its fuel blockade on Cuba; outages of over 20 hours a day reported on 27 Nov
 
 ## Watch (ids; detail at /s/{id}.md)
-equity-stress, bond-volatility, gold, crypto, funding-stress, private-credit, us-inflation, china-economy, central-banks, sovereign-debt, oil, food-prices, critical-minerals, fertiliser, nuclear-plants, us-china, russia-nato, iran-nuclear, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, drought, sea-ice, co2, who-emergencies, mpox, measles, respiratory, medicine-shortages, cyber, cables-gnss, semiconductors, ai-governance, exploited-vulns, famine, civil-unrest, aid-funding, uk-rates, gilts, nhs-pressure
+equity-stress, bond-volatility, gold, crypto, funding-stress, private-credit, us-inflation, china-economy, central-banks, sovereign-debt, oil, food-prices, critical-minerals, fertiliser, nuclear-plants, us-china, russia-nato, iran-nuclear, trade-war, sanctions, hybrid-threats, drc-east, sahel, myanmar, india-pakistan, nuclear-risk, other-conflicts, drought, sea-ice, co2, who-emergencies, mpox, measles, respiratory, medicine-shortages, cyber, outages, cables-gnss, semiconductors, ai-governance, exploited-vulns, famine, civil-unrest, aid-funding, uk-rates, gilts, nhs-pressure
 
 ## Sentiment (measured from open data; context only, never changes a status)
-News tone vs own past 6 months (GDELT, 7 days to 2026-11-26; number = % of past weeks less negative): gloomier: tech (90); brighter: conflict (19), energy (8), trade (19), disasters (0), health (6); typical: economy, climate, migration
+News tone vs own past 6 months (GDELT, 7 days to 2026-11-27; number = % of past weeks less negative): gloomier: tech (89); brighter: conflict (21), energy (12), disasters (2), health (8); typical: economy, trade, climate, migration
 Consumer confidence (OECD, long-run avg 100): OECD 98.0 (2026-10), GBR 98.9 (2026-10), USA 96.0 (2026-10), EA20 97.9 (2026-10), JPN 98.4 (2026-10), CHN 95.4 (2026-09), IND 100.0 (2026-09)
 Uncertainty: US policy uncertainty 0.8× its 1-year median · Geopolitical risk in the news 1.0× its 1-year median · Market fear (VIX) higher than 88% of the past year
 

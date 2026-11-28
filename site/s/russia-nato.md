@@ -1,17 +1,17 @@
 # Russia–NATO — WATCH (stable)
-id russia-nato · Geopolitics · horizon acute · checked 2026-11-27T23:43Z · text written 2026-11-27T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-28T13:43Z
+id russia-nato · Geopolitics · horizon acute · checked 2026-11-28T05:54Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-28T19:54Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/russia-nato
 
 Value: Drone in Polish airspace 23 Nov; no Article 4
-Rated on: Drone and airspace violations on NATO territory; no Article 4 or clash
-Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
+Rated on: Drone airspace violation on NATO territory = Watch; no Article 4 or clash
+Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 Situation: Russia–Ukraine war and NATO's flank [russia-ukraine-war]
 
-Russian drone entered Polish airspace 23 Nov; Finland says a Russian helicopter may have crossed its border on 21 Nov
+Russian drone briefly entered Polish airspace on 23 Nov; NATO sending surveillance aircraft to Poland
 
-Why it's at this level: A Russian drone briefly entered Polish airspace late on 23 Nov while Russia struck western Ukraine; Poland authorised a shoot-down but held fire when it turned east, and NATO agreed to send an AWACS aircraft to Poland (ABC News via Yahoo). Finland said a Russian helicopter may have entered its airspace off Loviisa on 21 Nov and summoned Russia's ambassador, after three Kh-101 missiles fell in Poland on 19–20 Nov (Euromaidan Press). No Article 4 request was found, so Watch holds.
+Why it's at this level: A Russian drone briefly violated Polish airspace on 23 Nov during a strike on western Ukraine and was not shot down (Kiprinform), and NATO said on 24 Nov it would send surveillance aircraft to Poland after Russian missile strikes near the border (Notes from Poland). An IISS study reported on 27 Nov that Russian sabotage attacks in Europe rose 16% (NBC News). No Article 4 request or direct clash was found to 28 Nov, so Watch holds.
 
-What this means for you: Repeated airspace violations on NATO's eastern flank raise the risk of incidents. Travellers to the region should follow FCDO travel advice.
+What this means for you: Airspace incidents on NATO's eastern flank can disrupt flights near the Polish and Baltic borders. Travellers should follow FCDO travel advice.
 
 Why it matters: Direct Russia–NATO confrontation is the most likely path to a European war involving the UK.
 What moves it: Airspace and drone incursions, sabotage, Baltic incidents, nuclear signalling, Ukraine war spillover.
@@ -19,5 +19,6 @@ What moves it: Airspace and drone incursions, sabotage, Baltic incidents, nuclea
 Rubric — Alert: Article 4 consultations, a direct military clash, or an attack on NATO territory. | Watch: Airspace/drone violations, sabotage attributed to Russia, or explicit threats against members. | Normal: No notable incidents on NATO territory in the past two weeks.
 
 Sources:
-- ABC News via Yahoo — Russian drone flies into Poland during overnight strikes on Ukraine, Warsaw says (2026-11-24) https://www.yahoo.com/news/world/articles/russian-drone-flies-poland-during-094807280.html
-- Euromaidan Press — Kh-101s, a helicopter, and drones: five days of airspace incidents on NATO's and Moldova's edges (2026-11-24) https://euromaidanpress.com/2026/11/24/kh-101s-a-helicopter-and-drones-five-days-of-airspace-incidents-on-natos-and-moldovas-edges
+- Notes from Poland — NATO to send surveillance aircraft to Poland after Russian missile strikes (2026-11-24) https://notesfrompoland.com/2026/11/24/nato-to-send-surveillance-aircraft-to-poland-after-russian-missile-strikes/
+- NBC News — Russian sabotage attacks in Europe up 16%, new report says (2026-11-27) https://www.nbcnews.com/world/russia/russian-sabotage-attacks-europe-16-ukraine-supply-lines-targeted-new-r-rcna611533
+- Kiprinform — Russian drone briefly violates Polish airspace during strike on western Ukraine (2026-11-24) https://www.kiprinform.com/en/news/russian-drone-briefly-violates-polish-airspace-during-strike-on-western-ukraine-not-shot-down/

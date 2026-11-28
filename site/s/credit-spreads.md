@@ -1,16 +1,16 @@
 # Credit spreads — NORMAL (worsening)
-id credit-spreads · Markets · horizon acute · checked 2026-11-27T23:43Z · text written 2026-11-27T05:53Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-28T13:43Z
+id credit-spreads · Markets · horizon acute · checked 2026-11-28T05:54Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-28T19:54Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/credit-spreads
 
 Value: HY OAS 3.77%
-Rated on: HY OAS 3.77% below the 4% Watch line
+Rated on: HY OAS 3.77% < 4.0%; 1m widening 63bp < 100bp
 Basis: measured — Set by a fixed rule applied to open data (HY OAS % = 3.77). Anyone can reproduce it from the public metrics file.
 
-US high-yield spreads 3.72% on 24 Nov, near a one-year high and 42bp wider on the month; inside the 4% line
+US high-yield spreads 3.77% on 26 Nov, a one-year high and 63bp wider on the month; inside the 4% line
 
-Why it's at this level: The US high-yield option-adjusted spread was 3.72% on 24 Nov, close to its one-year high of 3.76% and 42bp wider than a month earlier (FRED). Both the level and the monthly change are inside the 4% and 100bp Watch lines, so Normal holds, though spreads have widened 41% over three months.
+Why it's at this level: The US high-yield option-adjusted spread was 3.77% on 26 Nov, its highest in a year and 63bp wider than a month earlier (FRED). Both the level and the monthly change are inside the 4% and 100bp Watch lines, so Normal holds, though spreads have widened 43% over three months.
 
-What this means for you: Borrowing costs for riskier US companies have risen but remain within normal ranges.
+What this means for you: Borrowing costs for lower-rated US companies are rising but remain within normal ranges. Companies that refinance debt are the most exposed if spreads keep widening.
 
 Why it matters: High-yield spreads show how much lenders demand to fund weaker companies — an early warning of defaults and credit crunches.
 What moves it: Default expectations, risk appetite, rates, private-credit stress, fund outflows.
@@ -18,4 +18,4 @@ What moves it: Default expectations, risk appetite, rates, private-credit stress
 Rubric — Alert: HY OAS > 6.0%, or widened > 200bp in a month. | Watch: HY OAS 4.0–6.0%, or widened > 100bp in a month. | Normal: US HY option-adjusted spread < 4.0%.
 
 Sources:
-- FRED — ICE BofA US High Yield OAS (BAMLH0A0HYM2) (2026-11-27) https://fred.stlouisfed.org/series/BAMLH0A0HYM2
+- FRED — ICE BofA US High Yield OAS (BAMLH0A0HYM2) (2026-11-28) https://fred.stlouisfed.org/series/BAMLH0A0HYM2

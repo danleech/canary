@@ -1,8 +1,9 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-27T23:43Z · next run ~05:40 UK · stale after 2026-11-28T13:43Z (36h for daily-tier signals)
+as_of 2026-11-28T05:54Z · next run ~11:40 UK · stale after 2026-11-28T19:54Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
-Basis: 27 measured from open data, 9 follow a published figure, 53 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
+Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
+- 2026-11-28T05:54Z Internet & cloud outages [outages]: NORMAL→WATCH — Lloyds, Halifax and Bank of Scotland apps down for hours on 27 Nov; Allstate's site and app down since 23 Nov
 - 2026-11-27T23:43Z Dollar funding stress [funding-stress]: NORMAL→WATCH — Fed overnight repo operations jump to $22.8bn in the latest reading to 27 Nov, above the $15bn Watch line
 - 2026-11-26T17:51Z US equity stress [equity-stress]: ALERT→WATCH — VIX eased to 26.8 by 26 Nov, below the 27 exit line; S&P 500 8.1% below its 52-week high
 - 2026-11-25T23:42Z Exploited vulnerabilities [exploited-vulns]: NORMAL→WATCH — CISA added 19 known-exploited vulnerabilities in the seven days to 25 Nov, above the 11-a-week Watch line

@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-28T05:54:25Z",
+  "id": "outages",
+  "name": "Internet & cloud outages",
+  "from": "green",
+  "to": "amber",
+  "reason": "Lloyds, Halifax and Bank of Scotland apps down for hours on 27 Nov; Allstate's site and app down since 23 Nov"
+ },
+ {
   "t": "2026-11-27T23:43:31Z",
   "id": "funding-stress",
   "name": "Dollar funding stress",
