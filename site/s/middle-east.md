@@ -1,5 +1,5 @@
 # Israel, Gaza & region — ALERT (stable)
-id middle-east · Armed Conflict · horizon acute · checked 2026-11-28T11:43Z · text written 2026-11-28T05:54Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-29T01:43Z
+id middle-east · Armed Conflict · horizon acute · checked 2026-11-28T17:52Z · text written 2026-11-28T05:54Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-29T07:52Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/middle-east
 
 Value: Saudi–Houthi strikes; 11 killed in Taiz 27 Nov

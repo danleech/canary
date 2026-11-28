@@ -1,5 +1,13 @@
 [
  {
+  "t": "2026-11-28T17:52:24Z",
+  "id": "co2",
+  "name": "Atmospheric CO₂",
+  "from": "amber",
+  "to": "red",
+  "reason": "CO₂ 430.07 ppm at Mauna Loa in the week of 22 Nov, up 3.24 ppm on a year, above the 3.0 ppm Alert line"
+ },
+ {
   "t": "2026-11-28T05:54:25Z",
   "id": "outages",
   "name": "Internet & cloud outages",

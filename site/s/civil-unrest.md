@@ -1,17 +1,17 @@
 # Civil unrest — WATCH (improving)
-id civil-unrest · Humanitarian · horizon acute · checked 2026-11-27T17:59Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-29T05:59Z
+id civil-unrest · Humanitarian · horizon acute · checked 2026-11-28T17:52Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-30T05:52Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/civil-unrest
 
-Value: France protests shrink; Greece strike
-Rated on: Watch: significant protests in several countries — France 82,500 on 21 Nov, Greek strike; no deadly nationwide unrest
+Value: France living-cost protests shrinking
+Rated on: Watch: significant protests (France, 106,000 on 14 Nov); no deadly nationwide unrest in a major country
 Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 Situation: France: debt stress and protests [france-fiscal-stress]
 
-French living-cost protests shrink to 82,500 on 21 Nov; general strike in Greece; no deadly nationwide unrest found
+France's weekly living-cost protests shrink from 320,000 on 31 Oct to 106,000 on 14 Nov; no deadly nationwide unrest
 
-Why it's at this level: France's interior ministry counted 82,500 protesters nationwide on 21 Nov, the sixth consecutive Saturday of living-cost protests, against 150,000 claimed by unions (France 24). A strike brought Greece to a standstill, and deadly protests have been reported in Kenya over the building of an Ebola quarantine facility (Morning Star, 26 Nov). Significant protests in several countries keep Watch; no deadly nationwide unrest or major state crackdown in a large country was found as of 27 Nov.
+Why it's at this level: France's interior ministry counted 320,000 living-cost protesters nationwide on 31 Oct, down from 550,000 on 17 Oct (Reuters via Devdiscourse), and about 106,000 on 14 Nov, the fifth weekend, when police used tear gas in Paris, Bordeaux and Nantes (Türkiye Today). Turnout has kept falling since. Significant protests keep Watch, trending down; searches on 28 Nov found no deadly nationwide unrest or state crackdown in a major country.
 
-What this means for you: Protests and strikes can disrupt transport and public services at short notice. Travellers can check FCDO travel advice for France, Greece and Kenya, which covers demonstrations and strike action.
+What this means for you: People travelling in or through France may meet marches and transport strikes at weekends. FCDO travel advice lists current demonstrations and their effect on travel.
 
 Why it matters: Mass protest and state crackdowns signal political fragility and can topple governments.
 What moves it: Cost of living, elections, corruption, repression, food and fuel prices.
@@ -19,5 +19,5 @@ What moves it: Cost of living, elections, corruption, repression, food and fuel 
 Rubric — Alert: Deadly nationwide unrest or a state crackdown in a major country. | Watch: Significant protests in several countries or deadly unrest in one. | Normal: No deadly mass unrest in large countries.
 
 Sources:
-- France 24 — French interior ministry says 82,500 people protest across country, unions claim 150,000 (2026-11-21) https://www.france24.com/en/france/20261121-live-france-braces-for-fresh-protests-as-social-unrest-enters-sixth-week
-- Morning Star — World in brief: November 26, 2026 (2026-11-26) https://morningstaronline.co.uk/article/world-brief-67
+- Türkiye Today — France's weekend rallies draw 106,000 by official count while unions claim 200,000 (2026-11-14) https://www.turkiyetoday.com/world/frances-weekend-rallies-draw-106000-by-official-count-while-unions-claim-200000-3232407
+- Devdiscourse (Reuters) — Turnout for French protests lower than during previous Saturdays, interior ministry says (2026-10-31) https://www.devdiscourse.com/article/international/4000145-turnout-for-french-protests-lower-than-during-previous-saturdays-interior-ministry-says

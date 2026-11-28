@@ -1,16 +1,16 @@
 # Humanitarian funding gap — WATCH (stable)
-id aid-funding · Humanitarian · horizon acute · checked 2026-11-27T17:59Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-29T05:59Z
+id aid-funding · Humanitarian · horizon acute · checked 2026-11-28T17:52Z · at this level since 2026-11-01T17:51Z · stale after 2026-11-30T05:52Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/aid-funding
 
-Value: WFP 2026 appeal half funded; Sudan aid cut
-Rated on: Watch: major ration cuts — WFP 2026 appeal half funded; 900,000 lost food aid in Sudan (12 Nov)
-Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
+Value: WFP 2027 appeal $12.1bn for 91m people
+Rated on: Watch: major ration cuts announced (WFP Gaza caseload cut by about 500,000); no large-scale aid suspension found
+Basis: judged — The AI assessor's reading of 2 sources from 1 outlet against the rubric. Check the sources before relying on it.
 
-WFP says its 2026 appeal is half funded and 900,000 people in Sudan have lost food aid; no large-scale suspension found
+WFP seeks $12.1bn to help 91 million people in 2027 amid constrained funding; ration cuts continue
 
-Why it's at this level: WFP launched a $12 billion appeal for 2027 on 20 Nov targeting 91 million people, down from 110 million in 2026, and said its $13 billion 2026 appeal is only half funded (Reuters via Arab News). Funding cuts have reduced WFP's Sudan caseload from more than 4 million people in August to just over 3 million, with about 900,000 losing food assistance (UN News, 12 Nov). Major ration cuts meet Watch; no large-scale suspension of food or health aid in a famine-risk country was found as of 27 Nov.
+Why it's at this level: WFP's 2027 Global Outlook, issued on 20 Nov, seeks $12.1 billion to assist 91 million people and says constrained funding is forcing hard choices. WFP said on 19 Oct that funding cuts meant about half a million people in Gaza would lose assistance and rations were halved to one parcel. Major ration cuts meet Watch; searches on 28 Nov found no large-scale suspension of food or health aid in a famine-risk country.
 
-What this means for you: Shortfalls fall hardest on refugees and displaced people in Sudan, Gaza, Yemen and the Sahel. Smaller rations tend to raise malnutrition, onward migration and pressure on host countries.
+What this means for you: People relying on food aid in Gaza, Sudan and other crisis areas are most exposed. Ration cuts tend to show up in rising malnutrition months later.
 
 Why it matters: When appeals go unfunded, food aid and health services are cut first; funding gaps lead famine and displacement by months.
 What moves it: Donor budgets and aid cuts, new crises competing for funds, access constraints.
@@ -18,5 +18,5 @@ What moves it: Donor budgets and aid cuts, new crises competing for funds, acces
 Rubric — Alert: Pipeline breaks forcing large-scale suspension of food or health aid in famine-risk countries. | Watch: Funding more than 10 percentage points behind recent years at the same point, or major ration cuts announced. | Normal: UN global appeal funding in line with recent years; no major ration cuts.
 
 Sources:
-- Arab News (Reuters) — UN cuts food aid target despite looming hunger crisis (2026-11-20) https://www.arabnews.pk/world/un-cuts-food-aid-target-despite-looming-hunger-crisis-3007617
-- UN News — Aid is the 'only hope' for millions in Sudan, WFP chief warns, as funding cuts deepen hunger crisis (2026-11-12) https://news.un.org/en/story/2026/11/1168793
+- WFP — WFP Global Outlook 2027 (2026-11-20) https://www.wfp.org/publications/wfp-global-outlook
+- WFP — Funding cuts force WFP to drastically reduce lifesaving assistance in Gaza (2026-10-19) https://www.wfp.org/news/funding-cuts-force-wfp-drastically-reduce-lifesaving-assistance-gaza

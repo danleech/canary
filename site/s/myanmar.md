@@ -1,16 +1,16 @@
 # Myanmar — WATCH (stable)
-id myanmar · Armed Conflict · horizon acute · checked 2026-11-27T17:59Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-29T05:59Z
+id myanmar · Armed Conflict · horizon acute · checked 2026-11-28T17:52Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-30T05:52Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/myanmar
 
 Value: Airstrikes continue; no major city falls
-Rated on: Watch: civil war at sustained intensity — airstrikes killed 4 in Pauktaw by 24 Nov; no major city falls
-Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
+Rated on: Watch: civil war at sustained intensity (airstrike killed 12 on 13 Nov); no major city fall or cross-border escalation
+Basis: judged — The AI assessor's reading of 2 sources from 2 outlets against the rubric. Check the sources before relying on it.
 
-Military airstrikes keep killing civilians in Rakhine and Sagaing; no major city changes hands as of 27 Nov
+Military airstrikes keep killing civilians, including 12 at a Rakhine camp on 13 Nov; no major city changes hands
 
-Why it's at this level: Military airstrikes in Pauktaw Township, Rakhine State, killed four civilians including an infant and injured 13 over the weekend before 24 Nov, locals said (Myanmar Now). Mizzima reported three civilians, including a child, killed in a bombing in Ayadaw on 26 Nov, and a strike on a Rakhine displacement camp killed 12 in mid-November (New Straits Times). The civil war continues at sustained intensity; searches on 27 Nov found no major city changing hands and no cross-border escalation, so Watch holds.
+Why it's at this level: A military airstrike on the Byar La displacement camp in Ponnagyun, Rakhine State, on the evening of 13 Nov killed 12 people, including a five-year-old, a rescue group said (AFP via New Straits Times). The military said it seized 11 resistance bases on the Bago–Mon border between 3 and 8 Nov, including an NUG regional command (The Irrawaddy). The civil war continues at sustained intensity; searches on 28 Nov found no major city changing hands and no cross-border escalation, so Watch holds.
 
-What this means for you: The FCDO advises against all travel to large parts of Myanmar. Airstrikes and fighting keep displacing civilians, including Rohingya and other communities in Rakhine, and disrupt trade routes with China, Thailand and India.
+What this means for you: FCDO advises against all or all but essential travel to much of Myanmar. Civilians in Rakhine, Sagaing and border areas are most exposed to airstrikes; offensives tend to bring new displacement.
 
 Why it matters: A multi-sided civil war affecting 50 million people, with spillover to China, Thailand, India and Bangladesh.
 What moves it: Resistance offensives, junta airstrikes, Chinese mediation, elections, humanitarian access.
@@ -18,6 +18,5 @@ What moves it: Resistance offensives, junta airstrikes, Chinese mediation, elect
 Rubric — Alert: Major city falls, mass-casualty airstrikes, or cross-border escalation. | Watch: Civil war at sustained intensity. | Normal: Nationwide ceasefire holding.
 
 Sources:
-- Myanmar Now — Myanmar junta airstrikes kill four in Pauktaw, including an infant (2026-11-24) https://myanmar-now.org/en/news/myanmar-junta-airstrikes-kill-four-in-pauktaw-including-an-infant/
-- Mizzima — Three civilians, including a five-year-old child, killed in junta bombing in Ayadaw (2026-11-26) https://eng.mizzima.com/2026/11/26/41212
-- New Straits Times — Myanmar airstrike on displaced persons camp kills 12 (2026-11-15) https://www.nst.com.my/amp/world/region/2026/11/1577704/myanmar-airstrike-displaced-persons-camp-kills-12
+- New Straits Times — Myanmar airstrike on displaced persons camp kills 12 (2026-11-14) https://www.nst.com.my/amp/world/region/2026/11/1577704/myanmar-airstrike-displaced-persons-camp-kills-12
+- The Irrawaddy — Myanmar regime routs resistance HQ on Bago–Mon border (2026-11-10) https://www.irrawaddy.com/?p=156457

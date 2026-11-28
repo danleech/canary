@@ -1,8 +1,9 @@
 # Canary — status changes, last 7 days
-as_of 2026-11-28T11:43Z · next run ~17:40 UK · stale after 2026-11-29T01:43Z (36h for daily-tier signals)
+as_of 2026-11-28T17:52Z · next run ~23:40 UK · stale after 2026-11-29T07:52Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
-Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
+Basis: 27 measured from open data, 9 follow a published figure, 53 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
+- 2026-11-28T17:52Z Atmospheric CO₂ [co2]: WATCH→ALERT — CO₂ 430.07 ppm at Mauna Loa in the week of 22 Nov, up 3.24 ppm on a year, above the 3.0 ppm Alert line
 - 2026-11-28T05:54Z Internet & cloud outages [outages]: NORMAL→WATCH — Lloyds, Halifax and Bank of Scotland apps down for hours on 27 Nov; Allstate's site and app down since 23 Nov
 - 2026-11-27T23:43Z Dollar funding stress [funding-stress]: NORMAL→WATCH — Fed overnight repo operations jump to $22.8bn in the latest reading to 27 Nov, above the $15bn Watch line
 - 2026-11-26T17:51Z US equity stress [equity-stress]: ALERT→WATCH — VIX eased to 26.8 by 26 Nov, below the 27 exit line; S&P 500 8.1% below its 52-week high
@@ -15,4 +16,3 @@ Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judge
 - 2026-11-23T17:52Z FTSE 100 [ftse]: WATCH→NORMAL — FTSE 100 near 10,481 on 23 Nov, 3.9% below its 52-week high after recovering from the 20 Nov low
 - 2026-11-23T05:53Z Gold (fear gauge) [gold]: ALERT→WATCH — Gold near $3,620 on 23 Nov, 6.3% lower on the week and 22% lower over three months; weekly fall now inside the 7% line
 - 2026-11-22T17:52Z China economy [china-economy]: NORMAL→WATCH — Developer defaults resume: Shimao defaulted in Oct, a Zhongrong unit faces liquidation, state-owned Huafa cut to junk
-- 2026-11-21T17:52Z Extreme heat [heat]: WATCH→NORMAL — Queensland's severe heatwave warning ended on 19 Nov; Philippine danger-level heat indices are local; no deadly heatwave

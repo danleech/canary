@@ -1,5 +1,5 @@
 # Major cyber incidents — WATCH (worsening)
-id cyber · Technology & Cyber · horizon acute · checked 2026-11-28T11:43Z · text written 2026-11-28T05:54Z · at this level since 2026-11-16T05:51Z · stale after 2026-11-29T01:43Z
+id cyber · Technology & Cyber · horizon acute · checked 2026-11-28T17:52Z · text written 2026-11-28T05:54Z · at this level since 2026-11-16T05:51Z · stale after 2026-11-29T07:52Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/cyber
 
 Value: DWP services offline after cyber incident

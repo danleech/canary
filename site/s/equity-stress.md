@@ -1,5 +1,5 @@
 # US equity stress — WATCH (improving)
-id equity-stress · Markets · horizon acute · checked 2026-11-28T11:43Z · text written 2026-11-28T05:54Z · at this level since 2026-11-26T17:51Z · stale after 2026-11-29T01:43Z
+id equity-stress · Markets · horizon acute · checked 2026-11-28T17:52Z · text written 2026-11-28T05:54Z · at this level since 2026-11-26T17:51Z · stale after 2026-11-29T07:52Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/equity-stress
 
 Value: VIX 23.8, S&P -6.7%
