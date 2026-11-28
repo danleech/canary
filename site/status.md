@@ -1,5 +1,5 @@
 # Canary — all signals
-as_of 2026-11-28T05:54Z · next run ~11:40 UK · stale after 2026-11-28T19:54Z (36h for daily-tier signals)
+as_of 2026-11-28T11:43Z · next run ~17:40 UK · stale after 2026-11-29T01:43Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
@@ -8,12 +8,12 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | id | status | trend | basis | value | summary |
 |---|---|---|---|---|---|
 | eu-gas | ALERT | stable | measured | €85/MWh | European gas near €84.9/MWh on 27 Nov, above the €70 Alert line and 22% higher over three months |
-| chokepoints | ALERT | stable | judged | Hormuz under attack; Red Sea disrupted | Hormuz transits recover to 26+ a day to 19 Nov as Iranian attacks on tankers intensify; Red Sea fighting continues |
+| chokepoints | ALERT | stable | judged | Hormuz under attack; Red Sea disrupted | US disables a blockade runner in the Gulf of Oman on 26 Nov; Hormuz traffic impeded and Red Sea disrupted |
 | freight | ALERT | improving | published | WCI $4,032/FEU (26 Nov), −3% w/w | Drewry container index $4,032 per 40ft on 26 Nov after a fifth weekly fall, just above the $4,000 Alert line |
-| russia-ukraine | ALERT | stable | judged | 155 drones overnight 27 Nov; 4 killed | Russia launched 155 drones overnight to 27 Nov, hitting rail and energy in nine regions and cutting power in six |
+| russia-ukraine | ALERT | stable | judged | 162 drones overnight 28 Nov; 7 killed in Nizhyn | Russia launched 162 drones overnight to 28 Nov; the toll from a 27 Nov strike in Nizhyn rose to seven killed |
 | middle-east | ALERT | stable | judged | Saudi–Houthi strikes; 11 killed in Taiz 27 Nov | Houthi media say a Saudi strike killed 11 civilians in Taiz on 27 Nov; coalition says it downed a drone aimed at Riyadh |
 | sudan | ALERT | stable | judged | RSF drones kill 14–19 in Damazin 24 Nov | RSF drone strikes kill 14 to 19 civilians in Damazin on 24 Nov; the UN warns of a rising toll from drone attacks |
-| gulf-iran | ALERT | stable | judged | Kuwait radar site hit 26 Nov; tanker attacks | Italy says Iranian drones hit Kuwaiti military sites on 26 Nov, killing two Italians; Iran denies, offers a probe |
+| gulf-iran | ALERT | stable | judged | Iranian-made drone hit Kuwait site 26 Nov | Italy says a Kuwaiti inquiry shows an Iranian-made drone killed two Italians on 26 Nov; Iran denies it |
 | global-temp | ALERT (c) | worsening | measured | +2.14°C vs pre-industrial (21 Nov) | Global temperature 2.14°C above pre-industrial on 21 Nov, a record for the date and above the 1.6°C Alert line |
 | enso | ALERT (s) | worsening | measured | ONI +2.46 (El Niño) | Very strong El Niño: Oceanic Niño Index +2.46°C for Aug–Oct; next value due early December |
 | ebola | ALERT | worsening | published | 11,613 confirmed, 5,678 deaths (17 Nov) | WHO counts 11,613 confirmed Bundibugyo Ebola cases and 5,678 deaths in DR Congo to 17 Nov; Kenya and Nigeria hit |
@@ -23,7 +23,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | equity-stress | WATCH | improving | measured | VIX 23.8, S&P -6.7% | VIX near 23.8 on 27 Nov, down 11% on the week; S&P 500 6.7% below its 52-week high |
 | bond-volatility | WATCH | improving | measured | MOVE 95, 10y 4.94% | Treasury volatility index MOVE near 95 on 27 Nov, below the 100 line; US 10-year yield 4.94% |
 | gold | WATCH | stable | measured | $3,668, 3m -18.1% | Gold near $3,668 on 27 Nov, 4.4% higher on the week but 18.1% lower over three months |
-| crypto | WATCH | stable | measured | BTC $59,706, -31% from high | Bitcoin near $59,700 on 28 Nov, 31% below its 52-week high and 21% lower over a month |
+| crypto | WATCH | stable | measured | BTC $59,141, -32% from high | Bitcoin near $59,700 on 28 Nov, 31% below its 52-week high and 21% lower over a month |
 | funding-stress | WATCH | worsening | measured | SOFR–IORB +5bp, repo $22.8bn | Fed overnight repo operations at $22.8bn on 27 Nov, above the $15bn Watch line; SOFR 5bp over IORB |
 | private-credit | WATCH | stable | judged | BDC exits above 5% caps; OBDC ~25% below NAV | Nontraded BDC redemption requests stay above usual 5% caps and listed BDCs trade at wide discounts; no wave of gates |
 | us-inflation | WATCH | worsening | measured | CPI ~4.1% y/y (Oct); rising 3 months | US CPI inflation about 4.1% in October, up from 4.0% and rising for three months, inside the 3.0–4.5% Watch band |
@@ -84,7 +84,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | heat | NORMAL | stable | judged | No major heatwave warnings (27 Nov) | No heatwave warning across a major region found on 27 Nov; recent heat in Brazil and Queensland has eased |
 | wildfires | NORMAL | stable | measured | GDACS: no orange/red | No GDACS orange or red wildfire alerts on 28 Nov; 82 green-level fire events listed |
 | floods | NORMAL | stable | measured | GDACS: no orange/red | No GDACS orange or red flood alerts on 28 Nov; two green-level flood events listed |
-| earthquakes | NORMAL | stable | measured | Max M6.8, 3× M6+ (7d) | M6.8 off Timor-Leste on 21 Nov was the largest quake in seven days; no M7+ or PAGER orange alert |
+| earthquakes | NORMAL | stable | measured | Max M6.5, 2× M6+ (7d) | M6.8 off Timor-Leste on 21 Nov was the largest quake in seven days; no M7+ or PAGER orange alert |
 | volcanic | NORMAL | stable | judged | Routine ash advisories; no red codes (27 Nov) | Routine ash advisories on 27 Nov for volcanoes in Indonesia, Latin America and Kamchatka; no red codes or closures |
 | space-weather | NORMAL | stable | measured | G0 S0 R0 | NOAA scales at G0 S0 R0 in the 24 hours to 28 Nov; no storm forecast |
 | cold-storms | NORMAL | stable | judged | No top-tier cold warnings (27 Nov) | No top-tier cold or winter-storm warning across a major region on 27 Nov; UK and US snow so far has been limited |
@@ -92,7 +92,7 @@ status: ALERT acute/material risk now · WATCH elevated · NORMAL background · 
 | h5n1 | NORMAL | stable | judged | Sporadic cases; China traveller case | China reports an H5N1 case in a traveller from Vietnam on 23 Nov; US cases stay animal-linked, no human spread |
 | novel-outbreaks | NORMAL | stable | judged | No unexplained clusters | No unexplained cluster or novel pathogen under international investigation found by 28 Nov |
 | displacement | NORMAL | stable | judged | No UN-confirmed event over 500k/month | IOM reports 15,310 newly displaced in Kordofan in November; no event displacing over 500,000 in a month found |
-| uk-weather | NORMAL | improving | measured | No warnings | No Met Office weather warnings in force on 28 Nov |
+| uk-weather | NORMAL | improving | measured | 2 warning(s), worst yellow | No Met Office weather warnings in force on 28 Nov |
 | uk-disruption | NORMAL | stable | judged | No national strike; London Tube strikes | RMT Tube driver strikes hit London on 26–27 Nov, with more due on 17–20 Dec; no national-scale strike found |
 | uk-supply-margins | NORMAL | stable | judged | No notice found; 5.9 GW winter margin | No Electricity Margin Notice or Gas Margins Notice found for late November; NESO expects a secure winter |
 | uk-floods | NORMAL | stable | measured | No flood warnings | No Environment Agency flood warnings in England on 28 Nov; five lower-level flood alerts |

@@ -1,17 +1,17 @@
 # Russia–Ukraine — ALERT (stable)
-id russia-ukraine · Armed Conflict · horizon acute · checked 2026-11-28T05:54Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-28T19:54Z
+id russia-ukraine · Armed Conflict · horizon acute · checked 2026-11-28T11:43Z · at this level since 2026-10-31T11:26Z · stale after 2026-11-29T01:43Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/russia-ukraine
 
-Value: 155 drones overnight 27 Nov; 4 killed
-Rated on: Mass drone strikes on energy and rail across nine regions = significant escalation
+Value: 162 drones overnight 28 Nov; 7 killed in Nizhyn
+Rated on: Sustained mass-casualty strikes on energy = Alert
 Basis: judged — The AI assessor's reading of 3 sources from 3 outlets against the rubric. Check the sources before relying on it.
 Situation: Russia–Ukraine war and NATO's flank [russia-ukraine-war]
 
-Russia launched 155 drones overnight to 27 Nov, hitting rail and energy in nine regions and cutting power in six
+Russia launched 162 drones overnight to 28 Nov; the toll from a 27 Nov strike in Nizhyn rose to seven killed
 
-Why it's at this level: Ukraine said Russia launched 155 attack drones overnight to 27 Nov, 110 of them downed; Prime Minister Koretskyi said railway, energy and civilian sites were hit in nine regions, and power was cut in parts of six (Euronews, Ukrinform). Ukrainian officials reported two killed in Nizhyn, one in Izium and one in Kryvyi Rih (Euronews). Sustained mass strikes on energy and rail keep the Alert.
+Why it's at this level: Ukraine's Air Force said Russia launched 162 drones overnight to 28 Nov, 141 of them intercepted; Russian attacks killed 10 and injured 55 over the past day, according to regional officials (Kyiv Independent). The State Emergency Service said on 28 Nov that a strike on a business in Nizhyn on 27 Nov killed seven people (Kyiv Post). Drones hit energy infrastructure in Mykolaiv region on 27 Nov (LB.ua). Sustained mass strikes on energy keep the Alert.
 
-What this means for you: Travel to Ukraine carries severe risk; follow FCDO travel advice. Strikes on energy can affect regional power supplies through the winter.
+What this means for you: Follow FCDO travel advice against all travel to Ukraine. Strikes on energy infrastructure can affect European power and gas markets.
 
 Why it matters: Europe's largest war since 1945 shapes European security, energy, food exports and defence budgets.
 What moves it: Front-line offensives, strike campaigns on energy, Western aid, negotiations, nuclear plant safety.
@@ -19,6 +19,6 @@ What moves it: Front-line offensives, strike campaigns on energy, Western aid, n
 Rubric — Alert: Significant escalation — major new offensive, mass-casualty strikes, a nuclear-plant safety incident, or new state involvement. | Watch: Active war at sustained intensity, or a ceasefire under strain. | Normal: Ceasefire or peace deal holding.
 
 Sources:
-- Euronews — Russian drone strikes hit Ukraine's energy, rail and civilian infrastructure (2026-11-27) https://www.euronews.com/2026/11/27/russian-drone-strikes-hit-ukraines-energy-rail-and-civilian-infrastructure-causing-deaths
-- Ukrinform — Russian strikes hit railways and energy infrastructure in nine Ukrainian regions (2026-11-27) https://www.ukrinform.net/rubric-ato/4189218-russian-strikes-hit-railways-and-energy-infrastructure-in-nine-ukrainian-regions-overnight-pm-koretskyi.html
-- LB.ua — Russians strike substations and power grids (2026-11-27) https://en.lb.ua/news/2026/11/27/51690_russians_strike_substations.html
+- Kyiv Independent — Russian attacks kill 10, injure 55 across Ukraine over past day (2026-11-28) https://kyivindependent.com/russian-attacks-kill-10-injure-55-across-ukraine-over-past-day-as-deadly-strike-hits-chernihiv-oblast-businesses/
+- Kyiv Post — Death toll from Russian strike on Nizhyn enterprise rises to 7 (2026-11-28) https://www.kyivpost.com/post/91478
+- LB.ua — Russia strikes energy infrastructure in Mykolaiv region (2026-11-28) https://en.lb.ua/news/2026/11/28/51890_russia_strikes_energy.html

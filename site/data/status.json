@@ -20,9 +20,9 @@
    ],
    "value": "VIX 23.8, S&P -6.7%",
    "value_num": 23.81,
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-11-26T17:51:12Z",
-   "rubric_hit": "VIX 23.8 in 20–30 Watch band; S&P drawdown 6.7% in 5–15% band",
+   "rubric_hit": "VIX 23.8 ≥ 20 Watch line; S&P drawdown 6.67% ≥ 5% Watch line",
    "basis": "measured",
    "basis_detail": "VIX=23.81; S&P drawdown %=6.67",
    "assessed_at": "2026-11-28T05:54:32Z"
@@ -42,9 +42,9 @@
    ],
    "value": "10,699, -1.9% from high",
    "value_num": 10698.81,
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-11-23T17:52:18Z",
-   "rubric_hit": "FTSE drawdown 1.9% < 5%; worst day -0.4% > -2.5%",
+   "rubric_hit": "FTSE drawdown 1.94% below the 5% Watch line",
    "basis": "measured",
    "basis_detail": "FTSE drawdown %=1.94",
    "assessed_at": "2026-11-28T05:54:32Z"
@@ -68,10 +68,10 @@
     }
    ],
    "value": "MOVE 95, 10y 4.94%",
-   "value_num": 95.3,
-   "checked_at": "2026-11-28T05:54:32Z",
+   "value_num": 95.295,
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "Data floor Watch: MOVE 95 near 100 line; 10y 1m move 5bp < 40bp",
+   "rubric_hit": "MOVE 95.3 has not yet cleared the 90 exit line, so Watch holds",
    "basis": "measured",
    "basis_detail": "MOVE=95.30; US10y 1m move bp=5.30",
    "assessed_at": "2026-11-28T05:54:32Z"
@@ -91,9 +91,9 @@
    ],
    "value": "HY OAS 3.77%",
    "value_num": 3.77,
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "HY OAS 3.77% < 4.0%; 1m widening 63bp < 100bp",
+   "rubric_hit": "HY OAS 3.77% below the 4% Watch line",
    "basis": "measured",
    "basis_detail": "HY OAS %=3.77",
    "assessed_at": "2026-11-28T05:54:32Z"
@@ -117,10 +117,10 @@
     }
    ],
    "value": "DXY 104.0, 3m +4.6%",
-   "value_num": 104.01,
-   "checked_at": "2026-11-28T05:54:32Z",
+   "value_num": 104.014,
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-11-25T05:56:09Z",
-   "rubric_hit": "DXY 3m move 4.6% < 5%; level 104.0 inside 90–108",
+   "rubric_hit": "DXY 3m move 4.61% below the 5% Watch line",
    "basis": "measured",
    "basis_detail": "DXY 3m move %=4.61",
    "assessed_at": "2026-11-28T05:54:32Z"
@@ -144,10 +144,10 @@
     }
    ],
    "value": "STLFSI -0.07, CISS 0.04",
-   "value_num": -0.07,
-   "checked_at": "2026-11-28T05:54:32Z",
+   "value_num": -0.0697,
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "STLFSI -0.07 < 0; ECB CISS 0.038 < 0.25",
+   "rubric_hit": "STLFSI -0.07 below the 0 Watch line; ECB CISS 0.04 below the 0.25 Watch line",
    "basis": "measured",
    "basis_detail": "STLFSI=-0.07; ECB CISS=0.04",
    "assessed_at": "2026-11-28T05:54:32Z"
@@ -167,9 +167,9 @@
    ],
    "value": "$3,668, 3m -18.1%",
    "value_num": 3668.5,
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-11-23T05:53:09Z",
-   "rubric_hit": "Gold 3m fall 18.1% > 8% Watch line; 1w move 4.4% < 7%",
+   "rubric_hit": "3m fall -18.1% (Watch)",
    "basis": "measured",
    "basis_detail": "Gold 3m gain %=-18.14; 3m fall -18.1%",
    "assessed_at": "2026-11-28T05:54:32Z"
@@ -192,13 +192,13 @@
      "date": "2026-11-27"
     }
    ],
-   "value": "BTC $59,706, -31% from high",
-   "value_num": 59706,
-   "checked_at": "2026-11-28T05:54:32Z",
+   "value": "BTC $59,141, -32% from high",
+   "value_num": 59141.23,
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-11-14T23:42:22Z",
-   "rubric_hit": "BTC drawdown 31% in 25–45% Watch band; no de-peg or exchange failure",
+   "rubric_hit": "BTC drawdown 31.7% ≥ 25% Watch line",
    "basis": "measured",
-   "basis_detail": "BTC drawdown %=31.06",
+   "basis_detail": "BTC drawdown %=31.71",
    "assessed_at": "2026-11-28T05:54:32Z"
   },
   "us-recession": {
@@ -226,9 +226,9 @@
    ],
    "value": "Sahm 0.00, 10y–2y +0.25",
    "value_num": 0.0,
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "Sahm 0.00 < 0.30; no negative GDP quarter in latest releases",
+   "rubric_hit": "Sahm 0 below the 0.3 Watch line",
    "basis": "measured",
    "basis_detail": "Sahm=0.00",
    "assessed_at": "2026-11-28T05:54:32Z"
@@ -405,9 +405,9 @@
    ],
    "value": "$90.8, 1m -21%",
    "value_num": 90.84,
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-11-06T17:59:39Z",
-   "rubric_hit": "Brent $90.8 in $85–110 Watch band; 1m change -21%",
+   "rubric_hit": "Brent $90.8 ≥ $85 Watch line",
    "basis": "measured",
    "basis_detail": "Brent $=90.84; Brent 1m %=-20.93",
    "assessed_at": "2026-11-28T05:54:32Z"
@@ -432,9 +432,9 @@
    ],
    "value": "€85/MWh",
    "value_num": 84.85,
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "TTF €84.9/MWh > €70 Alert line",
+   "rubric_hit": "TTF €84.8/MWh > €70/MWh Alert line",
    "basis": "measured",
    "basis_detail": "TTF €/MWh=84.85",
    "assessed_at": "2026-11-28T05:54:32Z"
@@ -442,34 +442,29 @@
   "chokepoints": {
    "status": "red",
    "trend": "flat",
-   "summary": "Hormuz transits recover to 26+ a day to 19 Nov as Iranian attacks on tankers intensify; Red Sea fighting continues",
-   "state": "Vortexa data reported by Bloomberg on 26 Nov show tankers crossing Hormuz above 26 a day on a seven-day average through 19 Nov, up from below 25 on most October days, while Iran intensified attacks and added tugboats to its no-transit list; insurance costs are near wartime highs (gCaptain). The Saudi-led coalition said on 27 Nov it downed a Houthi drone aimed at Riyadh (Al Jazeera). Two chokepoints remain disrupted.",
-   "for_you": "Shipping disruption in the Gulf and Red Sea can delay deliveries and raise costs for imported goods and fuel. Mariners should follow UKMTO guidance.",
+   "summary": "US disables a blockade runner in the Gulf of Oman on 26 Nov; Hormuz traffic impeded and Red Sea disrupted",
+   "state": "US Central Command said it disabled the Palau-flagged Pacific Archer in the Gulf of Oman on 26 Nov, at least the 15th vessel disabled since the US blockade began in April, and has redirected 158 ships since July (Al Jazeera). The US–Iran war continues to impede Hormuz traffic (CNBC, 27 Nov), and the Red Sea remains disrupted by Saudi–Houthi fighting. Two chokepoints disrupted keep the Alert.",
+   "for_you": "Shipping disruption can delay deliveries and raise prices for imported goods and fuel. Seafarers and operators should follow UKMTO advisories for the region.",
    "sources": [
     {
-     "title": "Bloomberg — Hormuz tanker traffic rises this month even as attacks increase",
-     "url": "https://www.bloomberg.com/news/articles/2026-11-26/hormuz-tanker-traffic-rises-this-month-even-as-attacks-increase",
-     "date": "2026-11-26"
+     "title": "Al Jazeera — US military says it disabled merchant ship trying to breach Iran blockade",
+     "url": "https://www.aljazeera.com/news/2026/11/27/us-military-says-it-disabled-merchant-ship-trying-to-breach-iran-blockade",
+     "date": "2026-11-27"
     },
     {
-     "title": "gCaptain — Hormuz tanker traffic rises this month even as attacks increase",
-     "url": "https://gcaptain.com/hormuz-tanker-traffic-rises-this-month-even-as-attacks-increase/",
-     "date": "2026-11-26"
-    },
-    {
-     "title": "Al Jazeera — Saudi strike kills '11 civilians' in Yemen's Taiz: Houthi media",
-     "url": "https://www.aljazeera.com/news/2026/11/27/saudi-strike-kills-11-civilians-in-yemens-taiz-houthi-media",
+     "title": "CNBC — Two Italians killed in Kuwait drone attack; Trump says Iran war ends 'whenever I want it'",
+     "url": "https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html",
      "date": "2026-11-27"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Hormuz under attack; Red Sea disrupted",
-   "rubric_hit": "Hormuz materially impeded by attacks, with Red Sea disrupted: two chokepoints",
+   "rubric_hit": "Hormuz traffic materially impeded; two chokepoints disrupted = Alert",
    "basis": "judged",
    "basis_detail": "",
    "value_num": 54,
-   "assessed_at": "2026-11-28T05:54:32Z"
+   "assessed_at": "2026-11-28T11:43:07Z"
   },
   "freight": {
    "status": "red",
@@ -570,7 +565,7 @@
      "date": "2026-11-25"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-11-07T05:46:46Z",
    "value": "Fujian landing drill under way 27 Nov",
    "rubric_hit": "Large-scale PLA exercise and new US trade measures = Watch; no blockade or clash",
@@ -602,7 +597,7 @@
      "date": "2026-11-24"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Drone in Polish airspace 23 Nov; no Article 4",
    "rubric_hit": "Drone airspace violation on NATO territory = Watch; no Article 4 or clash",
@@ -629,7 +624,7 @@
      "date": "2026-11-13"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No IAEA access; US strike threat 26 Nov",
    "rubric_hit": "Inspector access curtailed and credible strike threats = Watch",
@@ -656,7 +651,7 @@
      "date": "2026-11-27"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-11-19T05:51:11Z",
    "value": "Last missile launch 3 Nov",
    "rubric_hit": "No missile launch in two weeks; no nuclear test or border clash",
@@ -683,7 +678,7 @@
      "date": "2026-11-26"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "US proposes Section 301 tariffs on 14 partners",
    "rubric_hit": "Major new tariffs proposed between large economies = Watch; not yet in force",
@@ -749,34 +744,34 @@
   "russia-ukraine": {
    "status": "red",
    "trend": "flat",
-   "summary": "Russia launched 155 drones overnight to 27 Nov, hitting rail and energy in nine regions and cutting power in six",
-   "state": "Ukraine said Russia launched 155 attack drones overnight to 27 Nov, 110 of them downed; Prime Minister Koretskyi said railway, energy and civilian sites were hit in nine regions, and power was cut in parts of six (Euronews, Ukrinform). Ukrainian officials reported two killed in Nizhyn, one in Izium and one in Kryvyi Rih (Euronews). Sustained mass strikes on energy and rail keep the Alert.",
-   "for_you": "Travel to Ukraine carries severe risk; follow FCDO travel advice. Strikes on energy can affect regional power supplies through the winter.",
+   "summary": "Russia launched 162 drones overnight to 28 Nov; the toll from a 27 Nov strike in Nizhyn rose to seven killed",
+   "state": "Ukraine's Air Force said Russia launched 162 drones overnight to 28 Nov, 141 of them intercepted; Russian attacks killed 10 and injured 55 over the past day, according to regional officials (Kyiv Independent). The State Emergency Service said on 28 Nov that a strike on a business in Nizhyn on 27 Nov killed seven people (Kyiv Post). Drones hit energy infrastructure in Mykolaiv region on 27 Nov (LB.ua). Sustained mass strikes on energy keep the Alert.",
+   "for_you": "Follow FCDO travel advice against all travel to Ukraine. Strikes on energy infrastructure can affect European power and gas markets.",
    "sources": [
     {
-     "title": "Euronews — Russian drone strikes hit Ukraine's energy, rail and civilian infrastructure",
-     "url": "https://www.euronews.com/2026/11/27/russian-drone-strikes-hit-ukraines-energy-rail-and-civilian-infrastructure-causing-deaths",
-     "date": "2026-11-27"
+     "title": "Kyiv Independent — Russian attacks kill 10, injure 55 across Ukraine over past day",
+     "url": "https://kyivindependent.com/russian-attacks-kill-10-injure-55-across-ukraine-over-past-day-as-deadly-strike-hits-chernihiv-oblast-businesses/",
+     "date": "2026-11-28"
     },
     {
-     "title": "Ukrinform — Russian strikes hit railways and energy infrastructure in nine Ukrainian regions",
-     "url": "https://www.ukrinform.net/rubric-ato/4189218-russian-strikes-hit-railways-and-energy-infrastructure-in-nine-ukrainian-regions-overnight-pm-koretskyi.html",
-     "date": "2026-11-27"
+     "title": "Kyiv Post — Death toll from Russian strike on Nizhyn enterprise rises to 7",
+     "url": "https://www.kyivpost.com/post/91478",
+     "date": "2026-11-28"
     },
     {
-     "title": "LB.ua — Russians strike substations and power grids",
-     "url": "https://en.lb.ua/news/2026/11/27/51690_russians_strike_substations.html",
-     "date": "2026-11-27"
+     "title": "LB.ua — Russia strikes energy infrastructure in Mykolaiv region",
+     "url": "https://en.lb.ua/news/2026/11/28/51890_russia_strikes_energy.html",
+     "date": "2026-11-28"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "value": "155 drones overnight 27 Nov; 4 killed",
-   "value_num": 155,
-   "rubric_hit": "Mass drone strikes on energy and rail across nine regions = significant escalation",
+   "value": "162 drones overnight 28 Nov; 7 killed in Nizhyn",
+   "value_num": 162,
+   "rubric_hit": "Sustained mass-casualty strikes on energy = Alert",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-28T05:54:32Z"
+   "assessed_at": "2026-11-28T11:43:07Z"
   },
   "middle-east": {
    "status": "red",
@@ -801,7 +796,7 @@
      "date": "2026-11-27"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Saudi–Houthi strikes; 11 killed in Taiz 27 Nov",
    "rubric_hit": "Major cross-border strikes between Saudi-led coalition and Houthis, plus Gulf attacks = multi-front",
@@ -944,7 +939,7 @@
      "date": "2026-11-27"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Airspace bans in force to 24 Dec",
    "rubric_hit": "Treaty and airspace suspensions in force = Watch; no cross-border strikes",
@@ -970,7 +965,7 @@
      "date": "2026-11-27"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Kim urges battlefield nuclear deployment",
    "rubric_hit": "Explicit nuclear expansion and doctrine statements = Watch; no test or alert change",
@@ -996,7 +991,7 @@
      "date": "2026-11-28"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No Atlantic storms",
    "rubric_hit": "No hurricane active or threatening land within 5 days",
@@ -1018,7 +1013,7 @@
      "date": "2026-11-28"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-11-20T05:49:33Z",
    "value": "No active cyclones",
    "rubric_hit": "GDACS cyclone: 0 red / 0 orange",
@@ -1067,10 +1062,10 @@
      "date": "2026-11-28"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
-   "rubric_hit": "GDACS wildfire: 0 red / 0 orange; no major evacuations",
+   "rubric_hit": "GDACS wildfire: 0 red / 0 orange",
    "basis": "measured",
    "basis_detail": "GDACS wildfire: 0 red / 0 orange",
    "assessed_at": "2026-11-28T05:54:32Z",
@@ -1089,7 +1084,7 @@
      "date": "2026-11-28"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "GDACS: no orange/red",
    "rubric_hit": "GDACS flood: 0 red / 0 orange",
@@ -1116,13 +1111,13 @@
      "date": "2026-11-21"
     }
    ],
-   "value": "Max M6.8, 3× M6+ (7d)",
-   "value_num": 6.8,
-   "checked_at": "2026-11-28T05:54:32Z",
+   "value": "Max M6.5, 2× M6+ (7d)",
+   "value_num": 6.5,
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "Max M6.8 < M7; highest PAGER yellow",
+   "rubric_hit": "max magnitude 6.5 below the 7 Watch line",
    "basis": "measured",
-   "basis_detail": "max magnitude=6.80",
+   "basis_detail": "max magnitude=6.50",
    "assessed_at": "2026-11-28T05:54:32Z"
   },
   "volcanic": {
@@ -1189,9 +1184,9 @@
    ],
    "value": "G0 S0 R0",
    "value_num": 0,
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-10-31T11:26:06Z",
-   "rubric_hit": "NOAA G0 S0 R0 inside G0–G2, S0–S1, R0–R2",
+   "rubric_hit": "NOAA G0 S0 R0 (24h max)",
    "basis": "measured",
    "basis_detail": "NOAA G0 S0 R0 (24h max)",
    "assessed_at": "2026-11-28T05:54:32Z"
@@ -1329,7 +1324,7 @@
      "date": "2026-11-17"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Ebola PHEIC in force",
    "value_num": 1,
@@ -1356,7 +1351,7 @@
      "date": "2026-11-19"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "11,613 confirmed, 5,678 deaths (17 Nov)",
    "value_num": 11613,
@@ -1383,7 +1378,7 @@
      "date": "2026-11-02"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "Sporadic cases; China traveller case",
    "rubric_hit": "Sporadic animal-to-human cases only",
@@ -1496,7 +1491,7 @@
      "date": "2026-11-28"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "No unexplained clusters",
    "rubric_hit": "No unexplained clusters under international investigation",
@@ -1523,7 +1518,7 @@
      "date": "2026-11-27"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-11-16T05:51:59Z",
    "value": "DWP services offline after cyber incident",
    "rubric_hit": "Attack disrupting a critical government service = Watch; no national-scale attack",
@@ -1555,7 +1550,7 @@
      "date": "2026-11-27"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-11-28T05:54:25Z",
    "value": "Lloyds app outage 27 Nov; Allstate down 5 days",
    "rubric_hit": "Major payments outage > 2h in the past 48h (Lloyds, 27 Nov)",
@@ -1761,7 +1756,7 @@
      "date": "2026-11-28"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-10-31T11:26:06Z",
    "value": "10y 5.18% (27 Nov)",
    "value_num": 5.18,
@@ -1810,13 +1805,13 @@
      "date": "2026-11-28"
     }
    ],
-   "value": "No warnings",
-   "checked_at": "2026-11-28T05:54:32Z",
+   "value": "2 warning(s), worst yellow",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-11-17T11:42:50Z",
    "value_num": 5,
-   "rubric_hit": "No Met Office warnings in force",
+   "rubric_hit": "worst warning: yellow",
    "basis": "measured",
-   "basis_detail": "worst warning: none",
+   "basis_detail": "worst warning: yellow",
    "assessed_at": "2026-11-28T05:54:32Z"
   },
   "nhs-pressure": {
@@ -1894,11 +1889,11 @@
    "status": "amber",
    "trend": "up",
    "value": "SOFR–IORB +5bp, repo $22.8bn",
-   "value_num": 22.75,
+   "value_num": 5.0,
    "summary": "Fed overnight repo operations at $22.8bn on 27 Nov, above the $15bn Watch line; SOFR 5bp over IORB",
    "state": "Fed overnight repo operations reached $22.75bn on 27 Nov in the latest FRED reading, above the $15bn Watch line and up from near zero in previous weeks (FRED). SOFR was 3.95% on 25 Nov, 5bp above the Fed's 3.90% interest on reserves and inside the 10bp line (FRED). No use of emergency Fed liquidity facilities was found, so the level is Watch, not Alert.",
    "for_you": "Short-term dollar funding markets show some strain heading into month-end. This mainly affects banks and money-market funds rather than households directly.",
-   "rubric_hit": "Fed repo ops $22.8bn in $15–50bn Watch band; SOFR–IORB 5bp < 10bp",
+   "rubric_hit": "Fed repo ops 5d max $22.8bn ≥ $15bn Watch line",
    "sources": [
     {
      "title": "FRED — Overnight repurchase agreements (RPONTSYD)",
@@ -1911,7 +1906,7 @@
      "date": "2026-11-28"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-11-27T23:43:31Z",
    "basis": "measured",
    "basis_detail": "SOFR–IORB 5d max bp=5.00; Fed repo ops 5d max $bn=22.75",
@@ -1948,11 +1943,11 @@
    "status": "green",
    "trend": "flat",
    "value": "¥159.5/$, 1w +0.4%",
-   "value_num": 159.52,
+   "value_num": 159.515,
    "summary": "Yen near ¥159.5 per dollar on 28 Nov, little changed on the week",
    "state": "The dollar was near ¥159.5 early on 28 Nov, 0.4% higher on the week and 1.1% higher on the month, inside the 3% weekly and 6% monthly Watch lines (Yahoo Finance). The yen is about 2.7% stronger than its 52-week low near ¥163.9, and no sharp move consistent with currency intervention appears in the data.",
    "for_you": "The yen is weak but stable. No sign of a disorderly unwinding of carry trades that could spill into other markets.",
-   "rubric_hit": "USD/JPY 1w move 0.4% < 3%; 1m move 1.1% < 6%",
+   "rubric_hit": "USD/JPY 1w move 0.37% below the 3% Watch line; USD/JPY 1m move 1.08% below the 6% Watch line",
    "sources": [
     {
      "title": "Yahoo Finance — USD/JPY (JPY=X)",
@@ -1960,7 +1955,7 @@
      "date": "2026-11-28"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "USD/JPY 1w move %=0.37; USD/JPY 1m move %=1.08",
@@ -2089,7 +2084,7 @@
      "date": "2026-11-20"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
@@ -2099,33 +2094,33 @@
   "gulf-iran": {
    "status": "red",
    "trend": "flat",
-   "value": "Kuwait radar site hit 26 Nov; tanker attacks",
-   "summary": "Italy says Iranian drones hit Kuwaiti military sites on 26 Nov, killing two Italians; Iran denies, offers a probe",
-   "state": "Italy's foreign minister Tajani said several Iranian drones struck Kuwaiti military facilities on 26 Nov, including an air-defence radar centre where two Italian contractors were killed; Kuwait called it Iranian aggression and Saudi Arabia, Bahrain, Qatar and the UAE condemned it (Euronews). Iran's foreign minister Araghchi denied involvement and offered a joint investigation (Euronews, Gulf News). Attacks on Gulf states and shipping keep the Alert.",
-   "for_you": "Travel to Iran and parts of the Gulf carries high risk; follow FCDO travel advice. Gulf disruption can raise fuel and shipping costs.",
+   "value": "Iranian-made drone hit Kuwait site 26 Nov",
+   "summary": "Italy says a Kuwaiti inquiry shows an Iranian-made drone killed two Italians on 26 Nov; Iran denies it",
+   "state": "Italian foreign minister Tajani said on 28 Nov that Kuwaiti investigations confirm the drone that killed two Italian technicians at a Kuwaiti radar site on 26 Nov was made in Iran; Tehran denies launching it and offers a joint inquiry (Al Jazeera, NBC News). Kuwait summoned Iran's ambassador, and Italy said it will relocate its troops from Kuwait (Arab Times). Attacks on Gulf states and shipping keep the Alert.",
+   "for_you": "Follow FCDO travel advice for Kuwait and the Gulf states, and register for alerts if you are in the region. Fuel and shipping costs remain exposed to further attacks.",
    "rubric_hit": "Active strikes on Gulf states and shipping = Alert",
    "sources": [
     {
-     "title": "Euronews — Iran denies responsibility for Kuwait drone strike that killed two Italians",
-     "url": "https://www.euronews.com/2026/11/27/iran-denies-responsibility-for-kuwait-drone-strike-that-killed-two-italians",
+     "title": "Al Jazeera — Iran war live: Italy says drone in deadly Kuwait attack was made in Iran",
+     "url": "https://www.aljazeera.com/news/liveblog/2026/11/28/iran-war-live-italy-says-drone-in-deadly-kuwait-attack-was-made-in-iran",
+     "date": "2026-11-28"
+    },
+    {
+     "title": "Arab Times — Iran-made drone killed two Italian technicians in Kuwait",
+     "url": "https://www.arabtimesonline.com/news/iran-made-drone-killed-two-italian-technicians-in-kuwait/",
      "date": "2026-11-27"
     },
     {
-     "title": "CNBC — Two Italians killed in Kuwait drone attack",
-     "url": "https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html",
-     "date": "2026-11-27"
-    },
-    {
-     "title": "Gulf News — Iran offers Kuwait drone probe",
-     "url": "https://gulfnews.com/world/mena/middle-east-tensions-trump-signals-victory-as-iran-offers-kuwait-drone-probe-1.500762639",
+     "title": "NBC News — Two Italians killed in attack on Kuwait site, Iran denies involvement",
+     "url": "https://www.nbcnews.com/world/middle-east/two-italians-killed-attack-kuwait-site-iran-denies-involvement-rcna611491",
      "date": "2026-11-27"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "judged",
    "basis_detail": "",
-   "assessed_at": "2026-11-28T05:54:32Z"
+   "assessed_at": "2026-11-28T11:43:07Z"
   },
   "other-conflicts": {
    "status": "amber",
@@ -2242,7 +2237,7 @@
    "summary": "CISA added 18 known-exploited vulnerabilities in the seven days to 27 Nov, above the 11-a-week Watch line",
    "state": "CISA's Known Exploited Vulnerabilities catalogue gained 18 entries in the seven days to 27 Nov and 44 in 30 days (CISA). Additions on 27 Nov include two OSGeo GeoServer flaws and one in Drupal Core, after HPE Juniper Session Smart Router and Vates Xen Orchestra on 25 Nov. The weekly count crosses the 11 line; no emergency directive for mass exploitation was found, so the measured level is Watch.",
    "for_you": "Organisations running affected products should follow CISA and NCSC guidance on patching. Home users should keep devices updated.",
-   "rubric_hit": "18 KEV additions in 7 days ≥ 11 Watch line; no emergency directive",
+   "rubric_hit": "KEV additions 7d 18 ≥ 11 Watch line",
    "sources": [
     {
      "title": "CISA — Known Exploited Vulnerabilities Catalog",
@@ -2250,7 +2245,7 @@
      "date": "2026-11-28"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-11-25T23:42:00Z",
    "basis": "measured",
    "basis_detail": "KEV additions 7d=18.00",
@@ -2318,7 +2313,7 @@
    "summary": "No Environment Agency flood warnings in England on 28 Nov; five lower-level flood alerts",
    "state": "The Environment Agency had no flood warnings or severe flood warnings in force in England at 05:43 UTC on 28 Nov, and five lower-level flood alerts (Environment Agency). This is well within the Normal band of fewer than 10 flood warnings.",
    "for_you": "No flood warnings are in force. Check the GOV.UK flood service if you live near a river or the coast.",
-   "rubric_hit": "EA: 0 severe, 0 warnings < 10",
+   "rubric_hit": "EA: 0 severe, 0 warnings",
    "sources": [
     {
      "title": "Environment Agency — Check for flooding",
@@ -2326,15 +2321,15 @@
      "date": "2026-11-28"
     }
    ],
-   "checked_at": "2026-11-28T05:54:32Z",
+   "checked_at": "2026-11-28T11:43:07Z",
    "changed_at": "2026-11-01T17:51:27Z",
    "basis": "measured",
    "basis_detail": "EA: 0 severe, 0 warnings",
    "assessed_at": "2026-11-28T05:54:32Z"
   }
  },
- "headline": "The US–Iran war, Russia's strikes on Ukraine and DR Congo's Ebola epidemic remain the main Alerts on 28 Nov. A UK DWP cyber incident and a Lloyds banking outage on 27 Nov lift cyber and outage risk.",
- "generated_at": "2026-11-28T05:54:32Z",
+ "headline": "Russia launched 162 drones at Ukraine overnight to 28 Nov; Italy says an Iranian-made drone killed two Italians in Kuwait; Ebola cases in DR Congo exceed 11,600.",
+ "generated_at": "2026-11-28T11:43:07Z",
  "world": {
   "score": 40,
   "band": "Strained",
@@ -2365,7 +2360,7 @@
    "name": "US–Iran war and Gulf energy shock",
    "status": "red",
    "trend": "flat",
-   "summary": "Italy says Iranian drones hit Kuwaiti sites on 26 Nov, killing two Italians; Iran denies. Hormuz transits 26+ a day to 19 Nov amid tanker attacks.",
+   "summary": "Italy says on 28 Nov a Kuwaiti inquiry found an Iranian-made drone killed two Italians on 26 Nov; US disables a blockade runner on 26 Nov.",
    "signals": [
     "gulf-iran",
     "middle-east",
@@ -2385,7 +2380,7 @@
    "name": "Russia–Ukraine war and NATO's flank",
    "status": "red",
    "trend": "flat",
-   "summary": "Russia launched 155 drones overnight to 27 Nov, hitting energy and rail in nine regions; a Russian drone entered Polish airspace on 23 Nov.",
+   "summary": "Russia launched 162 drones overnight to 28 Nov; seven killed in a 27 Nov strike on Nizhyn; a Russian drone entered Polish airspace on 23 Nov.",
    "signals": [
     "russia-ukraine",
     "russia-nato",

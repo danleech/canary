@@ -1,14 +1,14 @@
 # Canary — world risk status
-as_of 2026-11-28T05:54Z · next run ~11:40 UK · stale after 2026-11-28T19:54Z (36h for daily-tier signals)
+as_of 2026-11-28T11:43Z · next run ~17:40 UK · stale after 2026-11-29T01:43Z (36h for daily-tier signals)
 Assessed by an AI model (Anthropic Claude) against published rubrics; attention levels, not forecasts or advice. CC BY 4.0 · https://canary.danleech.com
 Basis: 27 measured from open data, 10 follow a published figure, 52 are AI judgements from news reports (weigh these with more caution). Known limitations: https://canary.danleech.com/methodology#known-limits
 
 World State 40/100 (Strained) · 13 Alert · 47 Watch · 29 Normal
-Headline: The US–Iran war, Russia's strikes on Ukraine and DR Congo's Ebola epidemic remain the main Alerts on 28 Nov. A UK DWP cyber incident and a Lloyds banking outage on 27 Nov lift cyber and outage risk.
+Headline: Russia launched 162 drones at Ukraine overnight to 28 Nov; Italy says an Iranian-made drone killed two Italians in Kuwait; Ebola cases in DR Congo exceed 11,600.
 
 ## Situations (7 cross-domain events; Alerts below are grouped under them)
-- US–Iran war and Gulf energy shock [ALERT, stable]: Italy says Iranian drones hit Kuwaiti sites on 26 Nov, killing two Italians; Iran denies. Hormuz transits 26+ a day to 19 Nov amid tanker attacks. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight, uk-energy-cap; watch: iran-nuclear, sanctions, oil, fertiliser, semiconductors
-- Russia–Ukraine war and NATO's flank [ALERT, stable]: Russia launched 155 drones overnight to 27 Nov, hitting energy and rail in nine regions; a Russian drone entered Polish airspace on 23 Nov. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
+- US–Iran war and Gulf energy shock [ALERT, stable]: Italy says on 28 Nov a Kuwaiti inquiry found an Iranian-made drone killed two Italians on 26 Nov; US disables a blockade runner on 26 Nov. → alert: gulf-iran, middle-east, eu-gas, chokepoints, freight, uk-energy-cap; watch: iran-nuclear, sanctions, oil, fertiliser, semiconductors
+- Russia–Ukraine war and NATO's flank [ALERT, stable]: Russia launched 162 drones overnight to 28 Nov; seven killed in a 27 Nov strike on Nizhyn; a Russian drone entered Polish airspace on 23 Nov. → alert: russia-ukraine; watch: russia-nato, nuclear-plants
 - Super El Niño [ALERT, worsening]: ONI +2.46 for Aug–Oct; global temperature 2.14°C above pre-industrial on 21 Nov, a record for the date; FAO–WFP flag famine risk in Sudan. → alert: enso, global-temp; watch: drought, co2, famine
 - Ebola outbreak, DR Congo [ALERT, worsening]: WHO counts 11,613 confirmed Ebola cases and 5,678 deaths in DR Congo to 17 Nov; Kenya and Nigeria report imported cases. → alert: ebola; watch: who-emergencies
 - Sudan war [ALERT, worsening]: RSF drone strikes killed 14 to 19 civilians in Damazin on 24 Nov; FAO and WFP warn on 27 Nov of famine risk in 13 areas. → alert: sudan; watch: famine

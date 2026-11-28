@@ -1,5 +1,5 @@
 # Internet & cloud outages — WATCH (worsening)
-id outages · Technology & Cyber · horizon acute · checked 2026-11-28T05:54Z · at this level since 2026-11-28T05:54Z · stale after 2026-11-28T19:54Z
+id outages · Technology & Cyber · horizon acute · checked 2026-11-28T11:43Z · text written 2026-11-28T05:54Z · at this level since 2026-11-28T05:54Z · stale after 2026-11-29T01:43Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/outages
 
 Value: Lloyds app outage 27 Nov; Allstate down 5 days

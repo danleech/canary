@@ -1,9 +1,9 @@
 # Dollar funding stress — WATCH (worsening)
-id funding-stress · Markets · horizon acute · checked 2026-11-28T05:54Z · at this level since 2026-11-27T23:43Z · stale after 2026-11-28T19:54Z
+id funding-stress · Markets · horizon acute · checked 2026-11-28T11:43Z · text written 2026-11-28T05:54Z · at this level since 2026-11-27T23:43Z · stale after 2026-11-29T01:43Z
 Assessed by an AI model (Anthropic Claude) against published rubrics; not a forecast or advice · CC BY 4.0 · https://canary.danleech.com/s/funding-stress
 
 Value: SOFR–IORB +5bp, repo $22.8bn
-Rated on: Fed repo ops $22.8bn in $15–50bn Watch band; SOFR–IORB 5bp < 10bp
+Rated on: Fed repo ops 5d max $22.8bn ≥ $15bn Watch line
 Basis: measured — Set by a fixed rule applied to open data (SOFR–IORB 5d max bp = 5.00 · Fed repo ops 5d max $bn = 22.75). Anyone can reproduce it from the public metrics file.
 
 Fed overnight repo operations at $22.8bn on 27 Nov, above the $15bn Watch line; SOFR 5bp over IORB
